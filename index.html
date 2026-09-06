@@ -6,6 +6,12 @@
   <title>小说行业头部内容追踪 · Novel Tracker</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='0.5' y='8' width='4' height='8' rx='0.5' fill='%23e6488a'/><rect x='6' y='4' width='4' height='12' rx='0.5' fill='%23ff6b35'/><rect x='11.5' y='6' width='4' height='10' rx='0.5' fill='%23c83c23'/><rect x='0.5' y='7' width='4' height='1.5' fill='%23ffd700'/><rect x='6' y='3' width='4' height='1.5' fill='%23ffd700'/><rect x='11.5' y='5' width='4' height='1.5' fill='%23ffd700'/></svg>">
   <style>
+    /* ===== Web Fonts（MiSans 正文 · 霞鹜文楷标题） ===== */
+    @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Regular.min.css");
+    @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Medium.min.css");
+    @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Semibold.min.css");
+    @import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css");
+
     :root {
       --bg: #0f1117;
       --card: #1a1d28;
@@ -111,7 +117,7 @@
     /* ===== Dashboard ===== */
     .dash-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -233,7 +239,7 @@
     /* ===== 题材分布对比 — 纯展示数据卡片 ===== */
     .tag-distribution {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -281,7 +287,7 @@
     }
     .new-entries-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
     .new-entries-column {
@@ -361,7 +367,7 @@
     }
     .summary-items {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
     .summary-item {
@@ -820,6 +826,194 @@
       height: 10px;
       border-radius: 50%;
     }
+
+    /* ==========================================================
+       GLASS THEME — 毛玻璃清新版（主题覆盖层 · 样张 2026-09-06）
+       仅视觉覆盖：不改 DOM 结构与数据逻辑；删除本段即回滚深色原版
+       ========================================================== */
+    :root {
+      --bg: #eef2f9;
+      --card: rgba(255,255,255,0.34);
+      --card-hover: rgba(255,255,255,0.50);
+      --border: rgba(255,255,255,0.55);
+      --text: #232946;
+      --text-dim: #4d5464;
+      --tag-bg: rgba(35,41,70,0.05);
+      --tag-border: rgba(35,41,70,0.09);
+      --green: #1f9d55;
+      --red: #e03131;
+      --gold: #d9a400;
+      --glass-blur: blur(26px) saturate(170%);
+      --glass-shadow: 0 8px 32px rgba(60,72,120,0.14);
+    }
+
+    /* 弥散风横版背景：固定全屏背景层（fixed 伪元素，确保覆盖整个网页到底） */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(rgba(255,255,255,0.30), rgba(255,255,255,0.20)),
+        url("assets/bg-diffused-wide.jpg") center / cover no-repeat,
+        #f2f0ec;
+    }
+
+    /* Header 玻璃条 */
+    .header {
+      background: rgba(255,255,255,0.38);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 16px rgba(60,72,120,0.06);
+    }
+    .header h1 {
+      background: linear-gradient(135deg, #e8601c, #d63384, #b0301e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Tab 导航玻璃 pill */
+    .tab-nav {
+      background: rgba(255,255,255,0.30);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border);
+    }
+    .tab-btn:hover { color: var(--text); background: rgba(255,255,255,0.6); }
+    .tab-btn.active { color: #fff; box-shadow: 0 4px 14px rgba(60,72,120,0.18); }
+
+    /* 全部卡片/容器统一玻璃化 */
+    .dash-card, .insight-card, .tag-dist-card, .new-entries-column,
+    .platform-summary, .tag-stats-bar, .trend-chart-container,
+    .book-item, .search-input, .filter-select, .filter-btn,
+    #aiOverallSection > div, #crossPlatformSection > div {
+      background: var(--card);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border);
+      box-shadow: var(--glass-shadow);
+    }
+    .book-item:hover { background: var(--card-hover); }
+    .search-input:focus {
+      border-color: rgba(99,102,241,0.5);
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+    }
+    .filter-select option { background: #f6f8fd; color: var(--text); }
+    .filter-btn:hover { border-color: rgba(35,41,70,0.2); color: var(--text); }
+    .filter-btn.active {
+      background: rgba(217,164,0,0.12);
+      border-color: rgba(217,164,0,0.45);
+      color: #a87900;
+    }
+    .filter-btn.sort-active {
+      background: rgba(234,132,12,0.12);
+      border-color: rgba(234,132,12,0.4);
+      color: #d97706;
+    }
+
+    /* 子榜切换 pill */
+    .sub-tab-nav {
+      background: rgba(255,255,255,0.45);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--border);
+    }
+    .sub-tab-btn:hover { background: rgba(255,255,255,0.6); color: var(--text); }
+
+    /* 浅色下的分隔线与底衬 */
+    .dash-top-list li, .new-entry-item { border-bottom-color: rgba(35,41,70,0.06); }
+    .tag-bar { background: rgba(35,41,70,0.07); }
+    .summary-item { background: rgba(255,255,255,0.5); }
+    .book-abstract { border-left-color: rgba(35,41,70,0.08); }
+    .book-meta .sep { color: rgba(35,41,70,0.25); }
+    .dash-rank.rn, .book-rank.rn { background: rgba(35,41,70,0.07); }
+    .tag-stat-item .tag-count { background: rgba(35,41,70,0.07); }
+
+    /* 浅底下文字可读性修正（深底亮色 → 深色系语义色） */
+    .book-tag.primary {
+      background: rgba(79,70,229,0.08);
+      border-color: rgba(79,70,229,0.25);
+      color: #4f46e5;
+    }
+    .book-days .days-num { color: #ea7d0c; }
+    .score-item .score-val { color: #c99700; }
+    .book-change.new { color: #a87900; }
+    .chart-svg text { fill: #5c6372; }
+    .loading .spinner { border-color: rgba(35,41,70,0.12); border-top-color: var(--accent-fanqie); }
+
+    /* 数字等宽对齐 */
+    .insight-card-value, .change-num, .days-num, .score-val, .dash-rank, .book-rank {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ===== v2 调整（sherry 反馈 2026-09-06）===== */
+    /* 1) 拿掉模块卡片的彩色装饰条 */
+    .dash-card::before, .new-entries-column::before { display: none; }
+    .summary-item { border-left: none; }
+
+    /* 2) 选中 Tab 改为磨砂玻璃按钮（不再实色填充） */
+    .tab-btn.active, .tab-btn.active[data-tab],
+    .sub-tab-btn.active, #jjwxcContent .sub-tab-btn.active, #fanqieContent .sub-tab-btn.active {
+      background: rgba(255,255,255,0.55) !important;
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      color: var(--text) !important;
+      border: 1px solid rgba(255,255,255,0.75);
+      box-shadow: 0 4px 16px rgba(60,72,120,0.15), inset 0 1px 0 rgba(255,255,255,0.65);
+      font-weight: 600;
+    }
+
+    /* 4) 题材占比条磨砂化 */
+    .tag-bar-fill { opacity: 0.5; }
+
+    /* 5) 字体：MiSans 全局（清新圆润几何，匹配弥散玻璃风） */
+    body {
+      font-family: 'MiSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+
+    /* 5b) 标题用霞鹜文楷（文学气质，贴小说主题） */
+    .header h1, .platform-title, .insight-section h3, .new-entries h3,
+    .platform-summary h3, .trend-section h3, .dash-card-title {
+      font-family: 'LXGW WenKai', 'MiSans', 'PingFang SC', serif;
+    }
+
+    /* 6) 三平台始终并列（原 CSS ≤1200px 塌 2 列 → 3 平台变 2+1；881px 以上保持 3 列） */
+    @media (min-width: 881px) {
+      .dash-grid, .tag-distribution, .summary-items, .new-entries-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+    }
+
+    /* 7) 平台页榜单卡 · 竖分割线贯穿每张卡顶到底
+       原 .book-info { align-items: flex-start } → 简介高度随文字行数变化，
+       border-left 竖线跟着短长不一、左侧标签行数差又让整卡高度参差，整体看着乱。
+       改为 stretch 后 .book-abstract 与 .book-left 同高，竖线满高贯穿每张卡，
+       跨卡看也只在各自卡内完整统一，不破坏列表节奏。 */
+    .book-item .book-info { align-items: stretch; }
+
+    /* 8) 书卡格式完全一致：简介完整展开不省略 + 卡内容顶部对齐（等高由 JS 对齐统一，见脚本尾部） */
+    .book-item .book-abstract {
+      -webkit-line-clamp: unset;      /* 取消 3 行截断，简介完整显示 */
+      overflow: visible;
+      text-overflow: clip;
+      align-self: stretch;            /* 撑满整行高 → 竖线满高 */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;    /* 内容顶部对齐：等高后所有卡标题/简介起点跨卡一致，留白统一落底部 */
+    }
+
+    /* 9) 竖分割线跨卡同一 x 对齐：左列（书名+作者+标签）固定统一宽度，
+       简介 border-left 竖线钉在同一竖直线上，不再随标签数量漂移 */
+    @media (min-width: 601px) {
+      .book-item .book-left {
+        width: 240px;
+        min-width: 240px;
+        max-width: 240px;
+        flex: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -835,7 +1029,6 @@
       <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
       <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
       <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
-      <button class="tab-btn" data-tab="qimao" onclick="switchTab('qimao')">🐱 七猫小说</button>
     </div>
   </div>
 </div>
@@ -928,15 +1121,6 @@
     </div>
     <div id="changpeiContent" style="display:none;"></div>
   </div>
-
-  <!-- ===== 七猫 Tab ===== -->
-  <div class="tab-content" id="tab-qimao">
-    <div class="loading" id="qimaoLoading">
-      <div class="spinner"></div>
-      <div>正在加载七猫小说数据...</div>
-    </div>
-    <div id="qimaoContent" style="display:none;"></div>
-  </div>
 </div>
 
 <script>
@@ -952,7 +1136,6 @@ const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
   { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
-  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '大热榜 Top20' },
 ];
 
 const CHART_COLORS = [
@@ -962,11 +1145,44 @@ const CHART_COLORS = [
 ];
 
 // ========== 数据加载 ==========
+/* ========== 标签归一化：界面统一显示「耽美」（数据里晋江/长佩原词为「纯爱」） ========== */
+const TAG_TERM_MAP = { '纯爱': '耽美' };
+function normTag(t) { return TAG_TERM_MAP[t] || t; }
+function mergeStats(stats) {
+  const out = {};
+  for (const [k, v] of Object.entries(stats)) {
+    const nk = normTag(k);
+    out[nk] = (out[nk] || 0) + v;
+  }
+  return out;
+}
+function normalizeTags(o) {
+  if (!o || typeof o !== 'object') return o;
+  if (Array.isArray(o.books)) {
+    o.books.forEach(b => {
+      if (!b || typeof b !== 'object') return;
+      if (b.primary_tag) b.primary_tag = normTag(b.primary_tag);
+      if (Array.isArray(b.all_tags)) b.all_tags = b.all_tags.map(normTag);
+      if (b.channel) b.channel = normTag(b.channel);
+      if (b.gender) b.gender = normTag(b.gender);
+    });
+  }
+  Object.keys(o).forEach(k => {
+    const v = o[k];
+    if (v && typeof v === 'object' && !Array.isArray(v) && /(tag_stats|gender_stats|stats)$/.test(k)) {
+      o[k] = mergeStats(v);
+    }
+  });
+  return o;
+}
+/* AI 文案兜底替换（仅用于展示层，不改原始 JSON） */
+function cx(s) { return (s || '').replace(/纯爱/g, '耽美'); }
+
 async function loadJSON(path) {
   try {
     const res = await fetch(path);
     if (!res.ok) return null;
-    return await res.json();
+    return normalizeTags(await res.json());
   } catch { return null; }
 }
 
@@ -1194,12 +1410,12 @@ function renderPlatformSummary() {
   if (hasAI && ai.overall_summary) {
     const overallSection = document.getElementById('aiOverallSection');
     overallSection.style.display = 'block';
-    document.getElementById('aiOverallSummary').textContent = ai.overall_summary;
+    document.getElementById('aiOverallSummary').textContent = cx(ai.overall_summary);
     
     // 信号标签
     if (ai.notable_signals?.length > 0) {
       document.getElementById('aiSignals').innerHTML = ai.notable_signals.map(s => 
-        `<span style="display:inline-block;padding:4px 12px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.25);border-radius:6px;font-size:12px;color:#ffd700;cursor:default;">🔔 ${s}</span>`
+        `<span style="display:inline-block;padding:4px 12px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.25);border-radius:6px;font-size:12px;color:#ffd700;cursor:default;">🔔 ${cx(s)}</span>`
       ).join('');
     }
   }
@@ -1217,8 +1433,8 @@ function renderPlatformSummary() {
       return `
         <div class="summary-item ${p.id}">
           <h4>${p.icon} ${p.name}</h4>
-          <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${pa.headline || ''}</p>
-          <p>${pa.analysis || ''}</p>
+          <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${cx(pa.headline) || ''}</p>
+          <p>${cx(pa.analysis) || ''}</p>
         </div>
       `;
     }
@@ -1237,7 +1453,7 @@ function renderPlatformSummary() {
   if (hasAI && ai.cross_platform_insights) {
     const crossSection = document.getElementById('crossPlatformSection');
     crossSection.style.display = 'block';
-    document.getElementById('crossPlatformText').textContent = ai.cross_platform_insights;
+    document.getElementById('crossPlatformText').textContent = cx(ai.cross_platform_insights);
   }
 }
 
@@ -1264,13 +1480,13 @@ function generatePlatformInsight(platformId, data) {
     const platformAudience = {
       fanqie: { desc: '番茄小说以免费阅读模式吸引了大量下沉市场用户', maleReason: '男性向轻阅读内容更符合碎片化消费场景', femaleReason: '女性向甜宠、爽文迎合了年轻女性快消需求' },
       qidian: { desc: '起点作为付费网文龙头平台，用户粘性高、付费意愿强', maleReason: '男频是起点的传统强势领域，长期积累了大量硬核书迷', femaleReason: '起点女频近年发力明显，持续争夺市场份额' },
-      jjwxc: { desc: '晋江以原创女性向内容为核心定位', pureaiReason: '纯爱（BL）是晋江最具标志性的品类，IP改编热度高', yanqingReason: '言情仍是晋江基盘，古言/现代言情受众稳定' },
+      jjwxc: { desc: '晋江以原创女性向内容为核心定位', pureaiReason: '耽美（BL）是晋江最具标志性的品类，IP改编热度高', yanqingReason: '言情仍是晋江基盘，古言/现代言情受众稳定' },
     };
     const aud = platformAudience[platformId] || {};
     
     if (topPct >= 60) {
       if (platformId === 'jjwxc') {
-        const reason = topGender === '纯爱' ? (aud.pureaiReason || '') : (aud.yanqingReason || '');
+        const reason = topGender === '耽美' ? (aud.pureaiReason || '') : (aud.yanqingReason || '');
         insights.push(`${topGender}类作品占比${topPct}%，主导地位明显。${reason ? reason + '。' : ''}`);
       } else {
         const reason = topGender.includes('男') ? (aud.maleReason || '') : (aud.femaleReason || '');
@@ -1296,7 +1512,7 @@ function generatePlatformInsight(platformId, data) {
       '游戏': '游戏题材的火热反映了Z世代读者群体的娱乐偏好',
       '历史': '历史类作品往往字数较长、读者忠诚度高',
       '武侠': '武侠是经典但较小众的品类，核心粉丝忠实',
-      '纯爱': '纯爱（BL）内容的IP改编价值极高，是影视剧热门选题',
+      '耽美': '耽美（BL）内容的IP改编价值极高，是影视剧热门选题',
       '言情': '言情是女性向阅读的基石品类，市场规模最大',
       '甜文': '甜宠文迎合了读者的情感慰藉需求，完读率通常很高',
       '快穿': '快穿题材节奏快、设定新颖，是近年女频的热门方向',
@@ -2298,9 +2514,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
 
     <div class="sub-tab-nav">
       <button class="sub-tab-btn active" data-subtab="all" onclick="switchChangpeiSubTab('all')">📊 总榜畅销榜</button>
-      <button class="sub-tab-btn" data-subtab="purelove" onclick="switchChangpeiSubTab('purelove')">💜 纯爱畅销榜</button>
-      <button class="sub-tab-btn" data-subtab="new" onclick="switchChangpeiSubTab('new')">🆕 纯爱新书榜</button>
-      <button class="sub-tab-btn" data-subtab="completed" onclick="switchChangpeiSubTab('completed')">✅ 纯爱完结榜</button>
+      <button class="sub-tab-btn" data-subtab="purelove" onclick="switchChangpeiSubTab('purelove')">💜 耽美畅销榜</button>
+      <button class="sub-tab-btn" data-subtab="new" onclick="switchChangpeiSubTab('new')">🆕 耽美新书榜</button>
+      <button class="sub-tab-btn" data-subtab="completed" onclick="switchChangpeiSubTab('completed')">✅ 耽美完结榜</button>
     </div>
 
     <!-- 总榜畅销榜 -->
@@ -2395,12 +2611,12 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
       </div>
     </div>
 
-    <!-- 纯爱畅销榜 -->
+    <!-- 耽美畅销榜 -->
     <div class="sub-tab-content" id="changpei-sub-purelove">
       ${!pureloveBseller?.books?.length
-        ? '<div class="empty-state">纯爱畅销榜数据尚未抓取</div>'
+        ? '<div class="empty-state">耽美畅销榜数据尚未抓取</div>'
         : `
-          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">纯爱·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">耽美·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
           <div class="tag-stats-bar">
             ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2419,12 +2635,12 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         `}
     </div>
 
-    <!-- 纯爱新书榜 -->
+    <!-- 耽美新书榜 -->
     <div class="sub-tab-content" id="changpei-sub-new">
       ${!pureloveNew?.books?.length
-        ? '<div class="empty-state">纯爱新书榜数据尚未抓取</div>'
+        ? '<div class="empty-state">耽美新书榜数据尚未抓取</div>'
         : `
-          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">纯爱·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">耽美·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
           <div class="tag-stats-bar">
             ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2443,12 +2659,12 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         `}
     </div>
 
-    <!-- 纯爱完结榜 -->
+    <!-- 耽美完结榜 -->
     <div class="sub-tab-content" id="changpei-sub-completed">
       ${!pureloveCompleted?.books?.length
-        ? '<div class="empty-state">纯爱完结榜数据尚未抓取</div>'
+        ? '<div class="empty-state">耽美完结榜数据尚未抓取</div>'
         : `
-          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">纯爱·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">耽美·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
           <div class="tag-stats-bar">
             ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2483,6 +2699,32 @@ async function init() {
 }
 
 init();
+
+// ========== 书卡等高对齐（所有书卡格式完全一致） ==========
+// 每个 .book-list 内取内容最高的一张卡为基准，其余卡补齐 min-height，
+// 简介完整展开不省略（CSS 规则 8），内容顶部对齐、底部统一留白。
+function alignBookItems() {
+  document.querySelectorAll('.book-list').forEach(list => {
+    const items = Array.from(list.querySelectorAll('.book-item'));
+    if (items.length < 2) return;
+    items.forEach(el => { el.style.minHeight = ''; });           // 先重置再量
+    let maxH = 0;
+    items.forEach(el => {
+      const h = el.offsetHeight;
+      if (h > maxH) maxH = h;
+    });
+    if (maxH > 0) items.forEach(el => { el.style.minHeight = maxH + 'px'; });
+  });
+}
+// 列表是异步渲染 + 切换 tab/筛选/排序/新书按钮会重绘 → 监听 DOM 变化自动对齐（防抖）
+const _bookListObserver = new MutationObserver(() => {
+  clearTimeout(_bookListObserver._t);
+  _bookListObserver._t = setTimeout(alignBookItems, 60);
+});
+_bookListObserver.observe(document.body, { childList: true, subtree: true });
+// 首次数据加载完成兜底
+window.addEventListener('load', () => setTimeout(alignBookItems, 400));
+setTimeout(alignBookItems, 1200);
 </script>
 
 </body>
