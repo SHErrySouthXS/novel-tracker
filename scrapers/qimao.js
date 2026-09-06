@@ -5,8 +5,8 @@
  * API: https://siweimidu.github.io/QiMaoRankTracker2/api/
  * 
  * 抓取:
- *   1. 男生大热日榜 Top20
- *   2. 女生日榜 Top20（如果有的话）
+ *   1. 女生日榜 Top20（默认 + --girl）
+ *   2. 男生日榜 Top20（默认；--girl 时跳过，--boy 时只抓男频）
  */
 
 const fs = require('fs');
@@ -17,7 +17,7 @@ const { computeRankChange } = require('./rank-change');
 const DATA_DIR = path.join(__dirname, '..', 'data', 'qimao');
 const API_BASE = 'https://siweimidu.github.io/QiMaoRankTracker2/api';
 
-// 榜单配置：抓取男生日榜和女生日榜
+// 榜单配置：默认抓女生日榜 + 男生日榜；--girl 只抓女生日榜（当前 daily-scrape 用法）
 const RANKINGS = [
   { id: 'boy_hot', name: '男生日榜', slug: 'boy-hot-date', file: 'boy_hot.json' },
   { id: 'girl_hot', name: '女生日榜', slug: 'girl-hot-date', file: 'girl_hot.json' },
@@ -130,12 +130,18 @@ async function main() {
   console.log(`七猫小说 榜单爬虫 - ${fmtDateTime(now)}`);
   console.log('='.repeat(60));
 
+  // 支持 --girl / --boy 只抓单频榜（daily-scrape 目前只用女频 --girl）
+  const onlyFlag = process.argv.find(a => /^--(girl|boy)$/.test(a));
+  const rankings = onlyFlag === '--girl' ? RANKINGS.filter(r => r.id.startsWith('girl'))
+                 : onlyFlag === '--boy' ? RANKINGS.filter(r => r.id.startsWith('boy'))
+                 : RANKINGS;
+
   ensureDir(DATA_DIR);
   ensureDir(path.join(DATA_DIR, 'history'));
 
   try {
     const results = [];
-    for (const ranking of RANKINGS) {
+    for (const ranking of rankings) {
       const result = await scrapeRanking(ranking, now);
       if (result) results.push(result);
       await sleep(1000);

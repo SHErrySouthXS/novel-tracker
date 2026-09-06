@@ -1155,7 +1155,7 @@ const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
   { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
-  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '男女频大热榜 Top40' },
+  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '女频大热榜 Top20' },
 ];
 
 const CHART_COLORS = [
@@ -1206,36 +1206,22 @@ async function loadJSON(path) {
   } catch { return null; }
 }
 
-// ===== 七猫数据适配：爬虫输出男女频分榜（girl_hot/boy_hot，各 Top20），
-// 无 latest.json。此处合并为单一数据集（按 popularity 全局热度排序、rank 重编 1-40），
+// ===== 七猫数据适配：爬虫只产女生日榜 girl_hot.json（Top20，--girl），
+// 无 latest.json。此处直接使用女频榜单数据（rank 保持 1-20，gender 统一补标"女频"），
 // 使下游渲染（概览卡/题材分布/新上榜/平台页列表与筛选）全部通用生效。=====
 async function loadQimaoData() {
-  const [girl, boy] = await Promise.all([
-    loadJSON('data/qimao/girl_hot.json'),
-    loadJSON('data/qimao/boy_hot.json')
-  ]);
-  if (!girl?.books || !boy?.books) return null;
+  const girl = await loadJSON('data/qimao/girl_hot.json');
+  if (!girl?.books) return null;
 
-  const tag = (b, g) => ({ ...b, gender: g, channel: b.channel || b.primary_tag || '' });
-  const all = [
-    ...girl.books.map(b => tag(b, '女频')),
-    ...boy.books.map(b => tag(b, '男频')),
-  ].sort((a, b) => (Number(b.popularity) || 0) - (Number(a.popularity) || 0))
-   .map((b, i) => ({ ...b, rank: i + 1 }));
-
-  // 合并 tag_stats / status_stats（同键计数相加）
-  const sumStats = (x, y) => {
-    const o = { ...(x || {}) };
-    for (const [k, v] of Object.entries(y || {})) o[k] = (o[k] || 0) + v;
-    return o;
-  };
+  const tag = (b) => ({ ...b, gender: '女频', channel: b.channel || b.primary_tag || '' });
+  const all = girl.books.map((b, i) => tag({ ...b, rank: i + 1 }));
 
   return {
     books: all,
     total_count: all.length,
-    tag_stats: sumStats(girl.tag_stats, boy.tag_stats),
-    status_stats: sumStats(girl.status_stats, boy.status_stats),
-    gender_stats: { 女频: girl.books.length, 男频: boy.books.length },
+    tag_stats: girl.tag_stats || {},
+    status_stats: girl.status_stats || {},
+    gender_stats: { 女频: all.length },
     platform: girl.platform, platform_name: girl.platform_name,
     source: girl.source, source_url: girl.source_url,
     update_date: girl.update_date, update_time: girl.update_time,
