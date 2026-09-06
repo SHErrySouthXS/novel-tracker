@@ -47,6 +47,11 @@ jobs:
         continue-on-error: true
         timeout-minutes: 10
 
+      # 长佩总榜流行总结（纯规则引擎，离线，无需 API）
+      - name: Changpei Trend Summary (今日流行总结)
+        run: node scrapers/changpei-summary.js
+        continue-on-error: true
+
       # 七猫小说 (公开API，无需浏览器；看板只展示女频，故 --girl 只抓女生日榜)
       - name: Scrape Qimao (七猫小说·女频日榜)
         run: node scrapers/qimao.js --girl

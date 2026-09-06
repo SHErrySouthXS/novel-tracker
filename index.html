@@ -1023,6 +1023,54 @@
         flex: none;
       }
     }
+
+    /* 10) 长佩总榜 · 今日流行总结（整行横幅置顶，替代爆款新书） */
+    .summary-banner {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      backdrop-filter: blur(18px) saturate(1.5);
+      -webkit-backdrop-filter: blur(18px) saturate(1.5);
+    }
+    .summary-banner-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .summary-banner-title {
+      font-family: 'LXGW WenKai', 'MiSans', 'PingFang SC', serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .summary-banner-date {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .summary-banner-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .summary-block-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .summary-line {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text);
+      padding: 2px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .summary-line:last-child { border-bottom: none; }
+    @media (max-width: 880px) {
+      .summary-banner-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -2542,10 +2590,23 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
   const historyIndex = state.history['changpei']?.index || [];
   const coverageDays = historyIndex.length || 0;
 
+  // 加载今日流行总结（summary.json，由 changpei-summary.js 每日生成；加载失败 → 占位）
+  const summaryData = await loadJSON('data/changpei/summary.json');
+  const summaryBlocks = summaryData?.blocks || [];
+
   // 渲染子榜单标签栏
   function renderSubBookList(bookData, subId) {
     if (!bookData?.books?.length) return '<div class="empty-state">暂无数据</div>';
     return renderBookList(bookData.books, subId);
+  }
+
+  // summary block → 横幅内子块（title + 行，毛玻璃横幅网格三列）
+  function summaryCardHTML(blk) {
+    if (!blk?.title || !blk?.lines?.length) return '';
+    return `<div class="summary-block">
+      <div class="summary-block-title">${blk.title}</div>
+      ${blk.lines.map(l => `<div class="summary-line">${l}</div>`).join('')}
+    </div>`;
   }
 
   contentEl.innerHTML = `
@@ -2570,6 +2631,19 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
       <!-- 题材洞察 -->
       <div class="insight-section" style="margin-bottom:20px;">
         <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
+
+        <!-- 今日流行总结（整行横幅置顶 · 替代原爆款新书） -->
+        <div class="summary-banner">
+          <div class="summary-banner-head">
+            <span class="summary-banner-title">📝 今日流行总结</span>
+            ${summaryData?.date ? `<span class="summary-banner-date">${summaryData.date}</span>` : ''}
+          </div>
+          ${summaryBlocks.length > 0
+            ? `<div class="summary-banner-grid">${summaryBlocks.map(summaryCardHTML).join('')}</div>`
+            : '<div style="color:var(--text-dim);font-size:13px;">每日 08:00 自动生成 · 明日可见</div>'
+          }
+        </div>
+
         <div class="insight-cards">
           <!-- 7天趋势 -->
           <div class="insight-card">
@@ -2599,21 +2673,6 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
                 </div>
               `).join('')
               : '<div style="color:var(--text-dim);font-size:13px;">暂无明显蓝海题材</div>'
-            }
-          </div>
-
-          <!-- 爆款新书 -->
-          <div class="insight-card">
-            <div class="insight-card-title">🔥 爆款新书</div>
-            <div style="color:var(--text-dim);font-size:12px;margin-bottom:6px;">新上榜书籍</div>
-            ${(data.insights?.viral_books || []).length > 0
-              ? data.insights.viral_books.slice(0, 5).map(b => `
-                <div style="padding:4px 0;border-bottom:1px solid var(--border);">
-                  <div style="font-size:13px;font-weight:500;">${b.book_name}</div>
-                  <div style="font-size:12px;color:var(--text-dim);">${b.author} · ${b.word_count} · ${b.tags.slice(0,3).join('/')}</div>
-                </div>
-              `).join('')
-              : '<div style="color:var(--text-dim);font-size:13px;">今日无新上榜书籍</div>'
             }
           </div>
         </div>
