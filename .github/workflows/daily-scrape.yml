@@ -36,11 +36,6 @@ jobs:
         run: node scrapers/fanqie.js
         continue-on-error: true
 
-      # 起点中文网 (Playwright)
-      - name: Scrape Qidian (起点中文网)
-        run: node scrapers/qidian.js
-        continue-on-error: true
-
       # 晋江文学城 (原生 HTTP)
       - name: Scrape JJWXC (晋江文学城)
         run: node scrapers/jjwxc.js
@@ -51,19 +46,6 @@ jobs:
         run: node scrapers/changpei.js
         continue-on-error: true
         timeout-minutes: 10
-
-      # 起点收藏榜 Top1000 (每月1号更新 或 手动触发时运行，50页1000本)
-      - name: Scrape Qidian Collection (起点收藏榜)
-        run: |
-          DOM=$(date -u +%d)
-          if [ "$DOM" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "Running collection scraper (day=$DOM, event=${{ github.event_name }})"
-            node scrapers/qidian-collection.js
-          else
-            echo "Skipping collection scraper (only runs on 1st of month or manual trigger)"
-          fi
-        continue-on-error: true
-        timeout-minutes: 20
 
       # 晋江积分榜 Top1000 (每月1号更新 或 手动触发时运行，10页1000本)
       - name: Scrape JJWXC Score1000 (晋江积分榜Top1000)
