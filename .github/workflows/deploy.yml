@@ -31,6 +31,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 拉全历史：哨兵需 diff 上一个提交(before)与当前(after)，浅克隆下 before 不在本地
 
       # ============================================================
       # 前端保护哨兵：防止其他 agent / 误操作把 index.html 回退成
@@ -44,13 +46,14 @@ jobs:
       - name: Frontend guard - 校验设计签名（防误回退）
         run: |
           set -e
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "OK: 手动触发部署（workflow_dispatch），跳过哨兵"
+            exit 0
+          fi
           BEFORE="${{ github.event.before }}"
           AFTER="${{ github.event.after }}"
-          if [ -n "$BEFORE" ] && [ -n "$AFTER" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
-            CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" || true)
-          else
-            CHANGED=$(git diff --name-only HEAD^ HEAD 2>/dev/null || true)
-          fi
+          # fail-closed：diff 拿不到改动范围时直接报错退出，绝不静默放行
+          CHANGED=$(git diff --name-only "$BEFORE" "$AFTER")
           if ! echo "$CHANGED" | grep -qE '^(index\.html|assets/)'; then
             echo "OK: 本次未改动前端文件（index.html/assets），跳过签名校验"
             exit 0
