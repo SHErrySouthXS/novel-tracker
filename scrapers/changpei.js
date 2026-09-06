@@ -116,12 +116,18 @@ async function main() {
 
   // 启动浏览器
   console.log('\n🌐 启动浏览器...');
-  const browser = await chromium.launch({ 
+  const launchOpts = { 
     headless: true,
-    executablePath: '/home/ubuntu/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome',
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    proxy: { server: 'socks5://127.0.0.1:7890' },
-  });
+  };
+  // 本地环境用 SOCKS5 代理（GitHub Actions 不需要）
+  const localChrome = '/home/ubuntu/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome';
+  const fs = require('fs');
+  if (fs.existsSync(localChrome)) {
+    launchOpts.executablePath = localChrome;
+    launchOpts.proxy = { server: 'socks5://127.0.0.1:7890' };
+  }
+  const browser = await chromium.launch(launchOpts);
   const context = await browser.newContext({
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
     viewport: { width: 1280, height: 900 },

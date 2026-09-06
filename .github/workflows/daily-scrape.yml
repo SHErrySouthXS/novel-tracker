@@ -46,6 +46,12 @@ jobs:
         run: node scrapers/jjwxc.js
         continue-on-error: true
 
+      # 长佩文学 (Playwright)
+      - name: Scrape Changpei (长佩文学)
+        run: node scrapers/changpei.js
+        continue-on-error: true
+        timeout-minutes: 10
+
       # 起点收藏榜 Top1000 (每月1号更新 或 手动触发时运行，50页1000本)
       - name: Scrape Qidian Collection (起点收藏榜)
         run: |
