@@ -6,12 +6,6 @@
   <title>小说行业头部内容追踪 · Novel Tracker</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='0.5' y='8' width='4' height='8' rx='0.5' fill='%23e6488a'/><rect x='6' y='4' width='4' height='12' rx='0.5' fill='%23ff6b35'/><rect x='11.5' y='6' width='4' height='10' rx='0.5' fill='%23c83c23'/><rect x='0.5' y='7' width='4' height='1.5' fill='%23ffd700'/><rect x='6' y='3' width='4' height='1.5' fill='%23ffd700'/><rect x='11.5' y='5' width='4' height='1.5' fill='%23ffd700'/></svg>">
   <style>
-    /* ===== Web Fonts（MiSans 正文 · 霞鹜文楷标题） ===== */
-    @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Regular.min.css");
-    @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Medium.min.css");
-    @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Semibold.min.css");
-    @import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css");
-
     :root {
       --bg: #0f1117;
       --card: #1a1d28;
@@ -117,7 +111,7 @@
     /* ===== Dashboard ===== */
     .dash-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -239,7 +233,7 @@
     /* ===== 题材分布对比 — 纯展示数据卡片 ===== */
     .tag-distribution {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -287,7 +281,7 @@
     }
     .new-entries-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
     .new-entries-column {
@@ -367,7 +361,7 @@
     }
     .summary-items {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
     .summary-item {
@@ -826,158 +820,6 @@
       height: 10px;
       border-radius: 50%;
     }
-
-    /* ==========================================================
-       GLASS THEME — 毛玻璃清新版（主题覆盖层 · 样张 2026-09-06）
-       仅视觉覆盖：不改 DOM 结构与数据逻辑；删除本段即回滚深色原版
-       ========================================================== */
-    :root {
-      --bg: #eef2f9;
-      --card: rgba(255,255,255,0.34);
-      --card-hover: rgba(255,255,255,0.50);
-      --border: rgba(255,255,255,0.55);
-      --text: #232946;
-      --text-dim: #4d5464;
-      --tag-bg: rgba(35,41,70,0.05);
-      --tag-border: rgba(35,41,70,0.09);
-      --green: #1f9d55;
-      --red: #e03131;
-      --gold: #d9a400;
-      --glass-blur: blur(26px) saturate(170%);
-      --glass-shadow: 0 8px 32px rgba(60,72,120,0.14);
-    }
-
-    /* 弥散风横版背景：固定全屏背景层（fixed 伪元素，确保覆盖整个网页到底） */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      background:
-        linear-gradient(rgba(255,255,255,0.30), rgba(255,255,255,0.20)),
-        url("assets/bg-diffused-wide.jpg") center / cover no-repeat,
-        #f2f0ec;
-    }
-
-    /* Header 玻璃条 */
-    .header {
-      background: rgba(255,255,255,0.38);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border-bottom: 1px solid var(--border);
-      box-shadow: 0 2px 16px rgba(60,72,120,0.06);
-    }
-    .header h1 {
-      background: linear-gradient(135deg, #e8601c, #d63384, #b0301e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    /* Tab 导航玻璃 pill */
-    .tab-nav {
-      background: rgba(255,255,255,0.30);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border: 1px solid var(--border);
-    }
-    .tab-btn:hover { color: var(--text); background: rgba(255,255,255,0.6); }
-    .tab-btn.active { color: #fff; box-shadow: 0 4px 14px rgba(60,72,120,0.18); }
-
-    /* 全部卡片/容器统一玻璃化 */
-    .dash-card, .insight-card, .tag-dist-card, .new-entries-column,
-    .platform-summary, .tag-stats-bar, .trend-chart-container,
-    .book-item, .search-input, .filter-select, .filter-btn,
-    #aiOverallSection > div, #crossPlatformSection > div {
-      background: var(--card);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border: 1px solid var(--border);
-      box-shadow: var(--glass-shadow);
-    }
-    .book-item:hover { background: var(--card-hover); }
-    .search-input:focus {
-      border-color: rgba(99,102,241,0.5);
-      box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
-    }
-    .filter-select option { background: #f6f8fd; color: var(--text); }
-    .filter-btn:hover { border-color: rgba(35,41,70,0.2); color: var(--text); }
-    .filter-btn.active {
-      background: rgba(217,164,0,0.12);
-      border-color: rgba(217,164,0,0.45);
-      color: #a87900;
-    }
-    .filter-btn.sort-active {
-      background: rgba(234,132,12,0.12);
-      border-color: rgba(234,132,12,0.4);
-      color: #d97706;
-    }
-
-    /* 子榜切换 pill */
-    .sub-tab-nav {
-      background: rgba(255,255,255,0.45);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      border: 1px solid var(--border);
-    }
-    .sub-tab-btn:hover { background: rgba(255,255,255,0.6); color: var(--text); }
-
-    /* 浅色下的分隔线与底衬 */
-    .dash-top-list li, .new-entry-item { border-bottom-color: rgba(35,41,70,0.06); }
-    .tag-bar { background: rgba(35,41,70,0.07); }
-    .summary-item { background: rgba(255,255,255,0.5); }
-    .book-abstract { border-left-color: rgba(35,41,70,0.08); }
-    .book-meta .sep { color: rgba(35,41,70,0.25); }
-    .dash-rank.rn, .book-rank.rn { background: rgba(35,41,70,0.07); }
-    .tag-stat-item .tag-count { background: rgba(35,41,70,0.07); }
-
-    /* 浅底下文字可读性修正（深底亮色 → 深色系语义色） */
-    .book-tag.primary {
-      background: rgba(79,70,229,0.08);
-      border-color: rgba(79,70,229,0.25);
-      color: #4f46e5;
-    }
-    .book-days .days-num { color: #ea7d0c; }
-    .score-item .score-val { color: #c99700; }
-    .book-change.new { color: #a87900; }
-    .chart-svg text { fill: #5c6372; }
-    .loading .spinner { border-color: rgba(35,41,70,0.12); border-top-color: var(--accent-fanqie); }
-
-    /* 数字等宽对齐 */
-    .insight-card-value, .change-num, .days-num, .score-val, .dash-rank, .book-rank {
-      font-variant-numeric: tabular-nums;
-    }
-
-    /* ===== v2 调整（sherry 反馈 2026-09-06）===== */
-    /* 1) 拿掉模块卡片的彩色装饰条 */
-    .dash-card::before, .new-entries-column::before { display: none; }
-    .summary-item { border-left: none; }
-
-    /* 2) 选中 Tab 改为磨砂玻璃按钮（不再实色填充） */
-    .tab-btn.active, .tab-btn.active[data-tab],
-    .sub-tab-btn.active, #jjwxcContent .sub-tab-btn.active, #fanqieContent .sub-tab-btn.active {
-      background: rgba(255,255,255,0.55) !important;
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      color: var(--text) !important;
-      border: 1px solid rgba(255,255,255,0.75);
-      box-shadow: 0 4px 16px rgba(60,72,120,0.15), inset 0 1px 0 rgba(255,255,255,0.65);
-      font-weight: 600;
-    }
-
-    /* 4) 题材占比条磨砂化 */
-    .tag-bar-fill { opacity: 0.5; }
-
-    /* 5) 字体：MiSans 全局（清新圆润几何，匹配弥散玻璃风） */
-    body {
-      font-family: 'MiSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-    }
-
-    /* 5b) 标题用霞鹜文楷（文学气质，贴小说主题） */
-    .header h1, .platform-title, .insight-section h3, .new-entries h3,
-    .platform-summary h3, .trend-section h3, .dash-card-title {
-      font-family: 'LXGW WenKai', 'MiSans', 'PingFang SC', serif;
-    }
   </style>
 </head>
 <body>
@@ -993,6 +835,7 @@
       <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
       <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
       <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
+      <button class="tab-btn" data-tab="qimao" onclick="switchTab('qimao')">🐱 七猫小说</button>
     </div>
   </div>
 </div>
@@ -1085,6 +928,15 @@
     </div>
     <div id="changpeiContent" style="display:none;"></div>
   </div>
+
+  <!-- ===== 七猫 Tab ===== -->
+  <div class="tab-content" id="tab-qimao">
+    <div class="loading" id="qimaoLoading">
+      <div class="spinner"></div>
+      <div>正在加载七猫小说数据...</div>
+    </div>
+    <div id="qimaoContent" style="display:none;"></div>
+  </div>
 </div>
 
 <script>
@@ -1100,6 +952,7 @@ const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
   { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
+  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '大热榜 Top20' },
 ];
 
 const CHART_COLORS = [
