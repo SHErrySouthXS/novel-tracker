@@ -6,6 +6,7 @@
  * 
  * DOM 结构: .novel-item > img区 + .novel区
  *   链接顺序: [状态badge, 书名, 作者, 状态text, 标签1, 标签2, ...]
+ *   简介: <p> 标签内
  *   分页: .pages > .page (每页10本，共10页)
  */
 
@@ -18,7 +19,6 @@ const { computeRankChange } = require('./rank-change');
 const DATA_DIR = path.join(__dirname, '..', 'data', 'changpei');
 const TARGET_COUNT = 50;
 const RANK_URL = 'https://www.gongzicp.com/home/ranking';
-const REQUEST_DELAY = 800;
 
 // ========== 工具函数 ==========
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -45,6 +45,19 @@ async function extractBooksFromDOM(page) {
       const links = item.querySelectorAll('a');
       const metaDiv = item.querySelector('.novel');
       const metaText = metaDiv?.textContent || '';
+      
+      // 提取简介（<p> 标签内）
+      const pEl = item.querySelector('p');
+      let abstract = '';
+      if (pEl) {
+        abstract = pEl.textContent.trim();
+        // 清理：去掉开头的类型标签描述（如"竹马竹马（10-15w）"）
+        abstract = abstract.replace(/^[^\n]*?[（(]\d+-\d+w[）)]\s*/, '');
+        // 去掉换行，合并为空格
+        abstract = abstract.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
+        // 截取到200字
+        abstract = abstract.substring(0, 200);
+      }
       
       if (links.length < 3) return;
       
@@ -97,7 +110,7 @@ async function extractBooksFromDOM(page) {
           tags,
           all_tags: tags,
           primary_tag: tags[0] || '',
-          abstract: '',
+          abstract,
           word_count: wordCount,
           popularity,
           status,
@@ -110,39 +123,6 @@ async function extractBooksFromDOM(page) {
     
     return books;
   });
-}
-
-// ========== 从详情页获取简介 ==========
-async function fetchBookAbstract(page, bookUrl) {
-  try {
-    await page.goto(bookUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
-    await sleep(1500);
-    
-    const abstract = await page.evaluate(() => {
-      const allText = document.body.innerText;
-      const introIdx = allText.indexOf('作品简介');
-      if (introIdx < 0) return '';
-      
-      // 取"作品简介"之后的文本
-      let afterIntro = allText.substring(introIdx + 4).trim();
-      
-      // 去掉日期前缀
-      afterIntro = afterIntro.replace(/^\d{4}-\d{2}-\d{2}\s*/, '');
-      
-      // 截取到"展开"之前
-      const expandIdx = afterIntro.indexOf('展开');
-      if (expandIdx > 0) afterIntro = afterIntro.substring(0, expandIdx);
-      
-      // 清理：去掉空行，合并为一行
-      const lines = afterIntro.split('\n').map(s => s.trim()).filter(Boolean);
-      return lines.join('').substring(0, 200);
-    });
-    
-    return abstract;
-  } catch (e) {
-    console.log(`    [WARN] 简介获取失败: ${e.message}`);
-    return '';
-  }
 }
 
 // ========== 主函数 ==========
@@ -225,24 +205,6 @@ async function main() {
     
     console.log(`\n  ✅ 共提取 ${allBooks.length} 本`);
 
-    // 阶段二：获取简介
-    console.log('\n📖 阶段二：获取书籍简介');
-    for (let i = 0; i < allBooks.length; i++) {
-      const book = allBooks[i];
-      if (book.book_url) {
-        process.stdout.write(`  [${i+1}/${allBooks.length}] ${book.book_name} `);
-        const abstract = await fetchBookAbstract(page, book.book_url);
-        if (abstract) {
-          book.abstract = abstract;
-          process.stdout.write('✓');
-        } else {
-          process.stdout.write('✗');
-        }
-        console.log('');
-        if (i < allBooks.length - 1) await sleep(REQUEST_DELAY);
-      }
-    }
-
     // 计算排名变化
     console.log('\n📈 计算排名变化');
     computeRankChange(allBooks, DATA_DIR, fmtDate(now), 'book_name');
@@ -288,7 +250,7 @@ async function main() {
     console.log(`   数据: ${latestPath}`);
     console.log(`\n   前5本:`);
     allBooks.slice(0, 5).forEach(b => {
-      const abs = b.abstract ? b.abstract.substring(0, 30) + '...' : '无简介';
+      const abs = b.abstract ? b.abstract.substring(0, 40) + '...' : '无简介';
       console.log(`   ${b.rank}. ${b.book_name} - ${b.author} [${b.status}] ${abs}`);
     });
 
