@@ -985,6 +985,18 @@
         grid-template-columns: repeat(3, 1fr) !important;
       }
     }
+
+    /* 7) 平台页榜单卡 · 竖分割线贯穿每张卡顶到底
+       原 .book-info { align-items: flex-start } → 简介高度随文字行数变化，
+       border-left 竖线跟着短长不一、左侧标签行数差又让整卡高度参差，整体看着乱。
+       改为 stretch 后 .book-abstract 与 .book-left 同高，竖线满高贯穿每张卡，
+       跨卡看也只在各自卡内完整统一，不破坏列表节奏。 */
+    .book-item .book-info { align-items: stretch; }
+    .book-item .book-abstract {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;   /* 简介文字垂直居中于玻璃框，竖线满高 + 文字居中 → 卡内信息块整齐感 */
+    }
   </style>
 </head>
 <body>
