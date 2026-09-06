@@ -1,0 +1,607 @@
+{
+  "update_time": "2026-09-06 21:48:34",
+  "update_date": "2026-09-06",
+  "total_count": 20,
+  "source": "七猫小说·男生日榜",
+  "source_url": "https://www.qimao.com/paihang",
+  "platform": "qimao",
+  "platform_name": "七猫小说",
+  "ranking_id": "boy_hot",
+  "ranking_name": "男生日榜",
+  "tag_stats": {
+    "都市高武": 2,
+    "架空历史": 4,
+    "都市高手": 3,
+    "东方玄幻": 7,
+    "都市生活": 1,
+    "商战职场": 1,
+    "王朝争霸": 1,
+    "现代军事": 1
+  },
+  "status_stats": {
+    "连载中": 19,
+    "已完结": 1
+  },
+  "books": [
+    {
+      "rank": 1,
+      "book_name": "盖世神医",
+      "book_url": "https://www.qimao.com/shuku/195958/",
+      "author": "狐颜乱语",
+      "author_url": "https://www.qimao.com/zuozhe/%E7%8B%90%E9%A2%9C%E4%B9%B1%E8%AF%AD_14/",
+      "tags": [
+        "都市高武"
+      ],
+      "all_tags": [
+        "都市高武"
+      ],
+      "primary_tag": "都市高武",
+      "abstract": "任你权势滔天，任你富可敌国，在我面前不要嚣张。\n我是叶秋，能救你的命，也能要你的命！",
+      "word_count": "904.3万字",
+      "popularity": "1313000",
+      "status": "连载中",
+      "update_time": "2026-09-05 22:57:30",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 33000,
+      "is_new": false,
+      "badge": "蝉联榜首",
+      "latest_chapter": " 第4411章  门没锁",
+      "boards_count": 4,
+      "category": "都市高武",
+      "history_days": 1
+    },
+    {
+      "rank": 2,
+      "book_name": "逍遥四公子",
+      "book_url": "https://www.qimao.com/shuku/1809361/",
+      "author": "修果",
+      "author_url": "https://www.qimao.com/zuozhe/%E4%BF%AE%E6%9E%9C_14/",
+      "tags": [
+        "架空历史"
+      ],
+      "all_tags": [
+        "架空历史"
+      ],
+      "primary_tag": "架空历史",
+      "abstract": "网剧《逍遥四公子》原著改编，腾讯独播。\n短剧《逍遥四公子》原著，已上线。\n又名《阁下不讲道理，在下也略懂拳脚》《逍遥小郎君》《极品四公子》\n宁宸穿越到了一个历史中从未出现过的朝代，本想一心搞钱，做个快乐逍遥的富家翁，三妻四妾，安度余生...可结果一不小心声名鹊起，名动大玄皇朝。\n少年扬刀，诛奸臣，平四夷，南征北战，再回首已是‘封狼居胥’，名动天下！",
+      "word_count": "605.62万字",
+      "popularity": "767000",
+      "status": "连载中",
+      "update_time": "2026-09-05 07:02:18",
+      "channel": "历史",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -11000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第2853章  这人被老冯给阴了",
+      "boards_count": 2,
+      "category": "架空历史",
+      "history_days": 1
+    },
+    {
+      "rank": 3,
+      "book_name": "警报！真龙出狱！",
+      "book_url": "https://www.qimao.com/shuku/1834789/",
+      "author": "红透半边天",
+      "author_url": "https://www.qimao.com/zuozhe/%E7%BA%A2%E9%80%8F%E5%8D%8A%E8%BE%B9%E5%A4%A9_14/",
+      "tags": [
+        "都市高手"
+      ],
+      "all_tags": [
+        "都市高手"
+      ],
+      "primary_tag": "都市高手",
+      "abstract": "叶楚替兄长顶罪入狱，机缘巧合拜药皇为师，习逆天医术，三年后王者归来。面对无耻的家人，叶楚直接断绝关系，对给他关爱的妻子，叶楚拼命守护。且看叶楚如何在滚滚红尘中，闯出一条通天路。\n【短剧《警报！叶楚出狱》原著！】",
+      "word_count": "369.18万字",
+      "popularity": "621000",
+      "status": "连载中",
+      "update_time": "2026-09-05 20:57:14",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 11000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第1798章  沈白馨的告知",
+      "boards_count": 2,
+      "category": "都市高手",
+      "history_days": 1
+    },
+    {
+      "rank": 4,
+      "book_name": "鸿蒙霸体诀",
+      "book_url": "https://www.qimao.com/shuku/1655407/",
+      "author": "鱼初见",
+      "author_url": "https://www.qimao.com/zuozhe/%E9%B1%BC%E5%88%9D%E8%A7%81_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "十万年前，九位风姿卓绝，独断万古的女帝，妖后，被封印于鸿蒙金塔之中。\n十万年后，少年萧诺，被家族迫害，沦为弃子。阴差阳错之下，开启鸿蒙金塔，修炼霸体神诀，成就无上神体。\n自此诸天仙魔，皆将烟消云散。",
+      "word_count": "968.75万字",
+      "popularity": "510000",
+      "status": "连载中",
+      "update_time": "2026-09-06 02:22:23",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 1000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第3473章  傲世心剑和生灭天罗火融合",
+      "boards_count": 3,
+      "category": "东方玄幻",
+      "history_days": 1
+    },
+    {
+      "rank": 5,
+      "book_name": "吞天神体",
+      "book_url": "https://www.qimao.com/shuku/1880008/",
+      "author": "化十",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%8C%96%E5%8D%81_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "【传统玄幻】【杀伐果断】【热血】【剑修】【微群像】\n秦云意外开启太古封神殿，遇到绝色神女，被迫重铸吞天神脉。\n世间万物，皆可吞噬为自身所用。\n天道？\n一样吞噬！",
+      "word_count": "386.46万字",
+      "popularity": "456000",
+      "status": "连载中",
+      "update_time": "2026-09-06 00:11:14",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 12000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第1721章  副宫主亲自查办！",
+      "boards_count": 3,
+      "category": "东方玄幻",
+      "history_days": 1
+    },
+    {
+      "rank": 6,
+      "book_name": "葬神棺",
+      "book_url": "https://www.qimao.com/shuku/1761978/",
+      "author": "浮生一诺",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%B5%AE%E7%94%9F%E4%B8%80%E8%AF%BA_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "【传统玄幻】【背景逆天】【剑修】【无系统】\n亿万年前，鸿蒙时代，混沌初开，宇宙本源为了阻止万灵无休止的生长，造成更庞大的负荷，以混沌为体，鸿蒙为气，黑洞为口，星辰为盖，凝聚了一座灭世神棺，用来吞四海、镇八荒，焚万古、炼诸天！\n千万年前，众神一战中，灭世神棺凭空出现，葬灭了大战中的诸神，更是送葬了整个众神之界，自此，葬神棺下落不明，同时，葬神棺名动宇宙万界，威慑诸天神魔！\n千万年后，一名少年被活埋，与葬他的棺材融合在一起，自此，送葬少年名震八荒。\n“救人，我不在行，埋人，我倒是很善长！”\n少年面容冷峻，继续低吟：“我有一座混沌神棺，葬天，葬地，葬人，葬仙亦葬神！",
+      "word_count": "755.04万字",
+      "popularity": "448000",
+      "status": "连载中",
+      "update_time": "2026-09-05 18:02:21",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 17000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第2896章  彼岸修罗！",
+      "boards_count": 3,
+      "category": "东方玄幻",
+      "history_days": 1
+    },
+    {
+      "rank": 7,
+      "book_name": "荒古武神",
+      "book_url": "https://www.qimao.com/shuku/216404/",
+      "author": "化十",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%8C%96%E5%8D%81_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "武灵被夺，修为被废，意外获得荒古秘境，从而脚踏凡域，刀破古神域……一代古武神，刀之所向，无人可敌。神挡杀神！魔阻斩魔！",
+      "word_count": "864.16万字",
+      "popularity": "400000",
+      "status": "已完结",
+      "update_time": "2026-04-22 00:17:41",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -6000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第3863章  另一个世界（大结局）",
+      "boards_count": 4,
+      "category": "东方玄幻",
+      "history_days": 1
+    },
+    {
+      "rank": 8,
+      "book_name": "步步登阶",
+      "book_url": "https://www.qimao.com/shuku/1982360/",
+      "author": "江湖如梦",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%B1%9F%E6%B9%96%E5%A6%82%E6%A2%A6_14/",
+      "tags": [
+        "都市生活"
+      ],
+      "all_tags": [
+        "都市生活"
+      ],
+      "primary_tag": "都市生活",
+      "abstract": "【本作品同名精品有声剧正在热播中，收听平台：懒人听书、QQ音乐、酷狗音乐、酷我音乐，欢迎关注！】那年，高中毕业的我投奔她进城打工，见识到了大城市的灯红酒绿，也见识到了人性的复杂与险恶……",
+      "word_count": "278.82万字",
+      "popularity": "392000",
+      "status": "连载中",
+      "update_time": "2026-09-05 23:47:11",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 1000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第1327章  我觉得她是有点想法的",
+      "boards_count": 2,
+      "category": "都市生活",
+      "history_days": 1
+    },
+    {
+      "rank": 9,
+      "book_name": "边关兵王",
+      "book_url": "https://www.qimao.com/shuku/1995023/",
+      "author": "青岳",
+      "author_url": "https://www.qimao.com/zuozhe/%E9%9D%92%E5%B2%B3_14/",
+      "tags": [
+        "架空历史"
+      ],
+      "all_tags": [
+        "架空历史"
+      ],
+      "primary_tag": "架空历史",
+      "abstract": "又名《边关兵王：从领娶罪女开始崛起》《边军武神》\n现代人凌川穿越成大周王朝的一名边关小卒，凭一己之力为民族铸骨凝魂，打造沙场雄甲，刀锋所指，战旗所至，便是敌人噩梦的开始！\n边关的烽火铁骑，江湖的快意风流，朝堂的纵横捭阖，请诸君入坑！",
+      "word_count": "273.46万字",
+      "popularity": "365000",
+      "status": "连载中",
+      "update_time": "2026-09-05 06:02:11",
+      "channel": "历史",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -12000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第1322章  妖僧妄尘",
+      "boards_count": 2,
+      "category": "架空历史",
+      "history_days": 1
+    },
+    {
+      "rank": 10,
+      "book_name": "桃花劫",
+      "book_url": "https://www.qimao.com/shuku/2028957/",
+      "author": "推窗望岳",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%8E%A8%E7%AA%97%E6%9C%9B%E5%B2%B3_14/",
+      "tags": [
+        "商战职场"
+      ],
+      "all_tags": [
+        "商战职场"
+      ],
+      "primary_tag": "商战职场",
+      "abstract": "人这一生，应该在适当的时候，癫一下。\n因为几个女人，肖义权癫了那么一下，就癫出一份别样的人生……",
+      "word_count": "151.17万字",
+      "popularity": "361000",
+      "status": "连载中",
+      "update_time": "2026-09-05 13:48:06",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -8000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第697章  问不得",
+      "boards_count": 2,
+      "category": "商战职场",
+      "history_days": 1
+    },
+    {
+      "rank": 11,
+      "book_name": "大周第一武夫",
+      "book_url": "https://www.qimao.com/shuku/2074426/",
+      "author": "醉不致死",
+      "author_url": "https://www.qimao.com/zuozhe/%E9%86%89%E4%B8%8D%E8%87%B4%E6%AD%BB_14/",
+      "tags": [
+        "王朝争霸"
+      ],
+      "all_tags": [
+        "王朝争霸"
+      ],
+      "primary_tag": "王朝争霸",
+      "abstract": "穿越大周，本是将军府后厨杂役的陈玄，从将军府大夫人的床上醒来。\n　　看着这弱肉强食，落魄飘摇的大周，陈玄决定将这世道变他一变！",
+      "word_count": "202.44万字",
+      "popularity": "325000",
+      "status": "连载中",
+      "update_time": "2026-09-05 19:11:08",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 36000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第938章  瞬秒元神中期",
+      "boards_count": 2,
+      "category": "王朝争霸",
+      "history_days": 1
+    },
+    {
+      "rank": 12,
+      "book_name": "舔狗反派只想苟，女主不按套路走！",
+      "book_url": "https://www.qimao.com/shuku/1710753/",
+      "author": "我是愤怒",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%88%91%E6%98%AF%E6%84%A4%E6%80%92_14/",
+      "tags": [
+        "都市高手"
+      ],
+      "all_tags": [
+        "都市高手"
+      ],
+      "primary_tag": "都市高手",
+      "abstract": "一次车祸，让我穿越到了都市爽文里当反派。\n只要苟到大结局，就能带着丰厚的报酬回到现实世界给母亲治病。\n但是！女主怎么不去围着主角转啊？天天当我一个反派的跟屁虫，是嫌我死的不够快吗？\n既然天命归我，那老子干脆和主角一决高下！\n谁是主角，还特么说不定呢！",
+      "word_count": "626.4万字",
+      "popularity": "281000",
+      "status": "连载中",
+      "update_time": "2026-09-05 21:07:20",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 0,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第2635章  折寿之门",
+      "boards_count": 3,
+      "category": "都市高手",
+      "history_days": 1
+    },
+    {
+      "rank": 13,
+      "book_name": "从骑奴到大乾武圣",
+      "book_url": "https://www.qimao.com/shuku/12465015/",
+      "author": "一嘟噜葡萄",
+      "author_url": "https://www.qimao.com/zuozhe/%E4%B8%80%E5%98%9F%E5%99%9C%E8%91%A1%E8%90%84_14/",
+      "tags": [
+        "架空历史"
+      ],
+      "all_tags": [
+        "架空历史"
+      ],
+      "primary_tag": "架空历史",
+      "abstract": "主母捉奸，主子躲进床底，让作为奴仆的陈实上床顶替！主母逼迫之下，陈实不得不假戏真做。但让他更没想到的是，事后主子又交给他一件差事，竟然让他……\n说好的奇遇，怎么都是艳遇，在一位位绝代佳人的扶持下，陈实从一介卑贱骑奴，成为大乾武圣！",
+      "word_count": "52.85万字",
+      "popularity": "266000",
+      "status": "连载中",
+      "update_time": "2026-09-05 08:25:03",
+      "channel": "历史",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -17000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第247章  请冯二爷以后避我锋芒",
+      "boards_count": 2,
+      "category": "架空历史",
+      "history_days": 1
+    },
+    {
+      "rank": 14,
+      "book_name": "傲世潜龙",
+      "book_url": "https://www.qimao.com/shuku/207105/",
+      "author": "西装暴徒",
+      "author_url": "https://www.qimao.com/zuozhe/%E8%A5%BF%E8%A3%85%E6%9A%B4%E5%BE%92_14/",
+      "tags": [
+        "都市高手"
+      ],
+      "all_tags": [
+        "都市高手"
+      ],
+      "primary_tag": "都市高手",
+      "abstract": "藏锋慰忠骨，出鞘镇山河！回归都市，王东当起夜班司机，自此他的人生如鱼得水……",
+      "word_count": "822.83万字",
+      "popularity": "260000",
+      "status": "连载中",
+      "update_time": "2026-09-05 13:37:26",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -7000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第4037章  只身前往",
+      "boards_count": 2,
+      "category": "都市高手",
+      "history_days": 1
+    },
+    {
+      "rank": 15,
+      "book_name": "边军悍卒",
+      "book_url": "https://www.qimao.com/shuku/1882754/",
+      "author": "木有金箍",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%9C%A8%E6%9C%89%E9%87%91%E7%AE%8D_14/",
+      "tags": [
+        "架空历史"
+      ],
+      "all_tags": [
+        "架空历史"
+      ],
+      "primary_tag": "架空历史",
+      "abstract": "大宗三年，冬。铁真族犯边，大宗王朝镇西军边城被困，战事吃紧。内有符王赵争，勾结黑巾盗起兵谋反，连下数城。\n大宗王朝顿时处在内忧外困，风雨飘摇之中。\n同年冬，林丰意外穿越至距边城八十里的胡西铺乡，岭兜子村烽火台，成为一名镇西军戍守烽火台的步弓手...\n同名有声小说全平台上线，头部主播领衔演播，欢迎收听！",
+      "word_count": "402.15万字",
+      "popularity": "255000",
+      "status": "连载中",
+      "update_time": "2026-09-05 08:27:14",
+      "channel": "历史",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 1000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第1890章  只有死战",
+      "boards_count": 2,
+      "category": "架空历史",
+      "history_days": 1
+    },
+    {
+      "rank": 16,
+      "book_name": "混沌塔",
+      "book_url": "https://www.qimao.com/shuku/1767940/",
+      "author": "惊蛰落月",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%83%8A%E8%9B%B0%E8%90%BD%E6%9C%88_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "女大三，抱金砖。女大三千，位列仙班。女大三十万，神界说了算。女大三千万，万界任你转。可我家娘子，大了9999万岁……",
+      "word_count": "426.22万字",
+      "popularity": "255000",
+      "status": "连载中",
+      "update_time": "2026-09-06 00:37:15",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -1000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第2112章  拿出玄天宝莲",
+      "boards_count": 2,
+      "category": "东方玄幻",
+      "history_days": 1
+    },
+    {
+      "rank": 17,
+      "book_name": "四次入伍，我被军区拉进黑名单！",
+      "book_url": "https://www.qimao.com/shuku/12179937/",
+      "author": "因果逆转",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%9B%A0%E6%9E%9C%E9%80%86%E8%BD%AC_14/",
+      "tags": [
+        "现代军事"
+      ],
+      "all_tags": [
+        "现代军事"
+      ],
+      "primary_tag": "现代军事",
+      "abstract": "林毅，偷鸡摸狗霍霍猪的“军营钉子户”，终于第三次戴上大红花，光荣退伍！\n战友们哭得稀里哗啦——终于送走这个让全连破防的男人了！\n六年，整整六年！\n你知道班长们是怎么过的吗？\n偷过炊事班的鸡，吓跑过养殖场的猪，三次入伍三次退伍，愣是把义务兵当成了“终身职业。”\n如今他终于滚蛋了！\n花花世界，灯红酒绿，老子自由了！\n下一秒，脑海炸响：\n【叮！系统已绑定。请宿主即刻提交入伍申请表。】\n林毅：？？？我刚退伍仨小时，你就让我回去？\n刚进家门，老爹一拍桌子：“明天相亲！李家姑娘，今年结婚，明年生娃，你敢说个不字试试？”\n一边是逼他回部队的系统，一边是逼他传宗接代的亲爹。\n林毅深吸一口气，放下筷子，露出一个让全家人血压飙升的笑容。\n“爸，爷爷，我决定了，我要第四次入伍！”",
+      "word_count": "85.43万字",
+      "popularity": "242000",
+      "status": "连载中",
+      "update_time": "2026-09-05 11:21:05",
+      "channel": "军事",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 15000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第380章  还是一招秒，特战之王！",
+      "boards_count": 3,
+      "category": "现代军事",
+      "history_days": 1
+    },
+    {
+      "rank": 18,
+      "book_name": "吞噬九重天",
+      "book_url": "https://www.qimao.com/shuku/1655967/",
+      "author": "屠刀成佛",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%B1%A0%E5%88%80%E6%88%90%E4%BD%9B_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "【传统玄幻：杀伐果断+大帝+剑道+神魔煅体+神念师……】\n少年许辰，遭逢背叛，险些惨死之时，天帝殿现，一朝传承，逆天改命！\n帝阶武学，信手捏来。\n……\n世间一直有天帝殿的传说。\n殿中有绝世大帝传承。\n镇古绝今的噬天大帝。\n《吞噬帝诀》，噬天噬地噬万物，练至大成，连大道都可吞噬。\n战天斗地的战天大帝。\n《战天诀》，天战斗地，盖世无敌，练到大成，战力提升256倍，拳破寰宇，弹指灭星辰。\n气吞寰宇的黄泉大帝。\n惊才绝艳的虚空大帝。\n……",
+      "word_count": "1087.32万字",
+      "popularity": "240000",
+      "status": "连载中",
+      "update_time": "2026-09-05 23:47:27",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": -20000,
+      "is_new": false,
+      "badge": "",
+      "latest_chapter": " 第4000章  两兽相争，必有一伤（加更2）",
+      "boards_count": 3,
+      "category": "东方玄幻",
+      "history_days": 1
+    },
+    {
+      "rank": 19,
+      "book_name": "我在都市修了个野仙",
+      "book_url": "https://www.qimao.com/shuku/2078908/",
+      "author": "大温柔",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%A4%A7%E6%B8%A9%E6%9F%94_14/",
+      "tags": [
+        "都市高武"
+      ],
+      "all_tags": [
+        "都市高武"
+      ],
+      "primary_tag": "都市高武",
+      "abstract": "林子东遭女友背叛，侥幸得到修仙传承，他幻想中的修仙是小说中那般神挡杀神佛挡杀佛，逍遥世间，怎么到了自己这里全是美人关？",
+      "word_count": "231.23万字",
+      "popularity": "216000",
+      "status": "连载中",
+      "update_time": "2026-09-05 22:42:09",
+      "channel": "都市",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 0,
+      "is_new": true,
+      "badge": "飙升20名",
+      "latest_chapter": " 第1114章  这个我熟啊！",
+      "boards_count": 2,
+      "category": "都市高武",
+      "history_days": 1
+    },
+    {
+      "rank": 20,
+      "book_name": "九阴九阳",
+      "book_url": "https://www.qimao.com/shuku/2063605/",
+      "author": "仗剑修真",
+      "author_url": "https://www.qimao.com/zuozhe/%E4%BB%97%E5%89%91%E4%BF%AE%E7%9C%9F_14/",
+      "tags": [
+        "东方玄幻"
+      ],
+      "all_tags": [
+        "东方玄幻"
+      ],
+      "primary_tag": "东方玄幻",
+      "abstract": "吞噬阴元即可提升修为？\n林辰九世轮回归来，觉醒混沌鼎，并成为极乐峰上唯一的男弟子！\n小师妹的纯阴之体？炼作灵源！\n大师姐的玄冰灵根？炼为道基！\n宗门圣女的星辰血脉？炼入己身！\n女帝的至尊道骨？炼成无上神通！\n炼！炼！！炼！！！\n这一世，他以三千红颜为鼎炉，诸天法则为薪柴，誓要焚尽万世枷锁，炼出一条独断万古的长生大道！",
+      "word_count": "222.61万字",
+      "popularity": "210000",
+      "status": "连载中",
+      "update_time": "2026-09-06 01:34:06",
+      "channel": "玄幻奇幻",
+      "gender": "",
+      "rank_change": null,
+      "heat_change": 0,
+      "is_new": true,
+      "badge": "",
+      "latest_chapter": " 第740章  进入魔界！诛仙剑阵大发神威！",
+      "boards_count": 1,
+      "category": "东方玄幻",
+      "history_days": 1
+    }
+  ]
+}
