@@ -992,10 +992,27 @@
        改为 stretch 后 .book-abstract 与 .book-left 同高，竖线满高贯穿每张卡，
        跨卡看也只在各自卡内完整统一，不破坏列表节奏。 */
     .book-item .book-info { align-items: stretch; }
+
+    /* 8) 书卡格式完全一致：简介完整展开不省略 + 卡内容顶部对齐（等高由 JS 对齐统一，见脚本尾部） */
     .book-item .book-abstract {
+      -webkit-line-clamp: unset;      /* 取消 3 行截断，简介完整显示 */
+      overflow: visible;
+      text-overflow: clip;
+      align-self: stretch;            /* 撑满整行高 → 竖线满高 */
       display: flex;
       flex-direction: column;
-      justify-content: center;   /* 简介文字垂直居中于玻璃框，竖线满高 + 文字居中 → 卡内信息块整齐感 */
+      justify-content: flex-start;    /* 内容顶部对齐：等高后所有卡标题/简介起点跨卡一致，留白统一落底部 */
+    }
+
+    /* 9) 竖分割线跨卡同一 x 对齐：左列（书名+作者+标签）固定统一宽度，
+       简介 border-left 竖线钉在同一竖直线上，不再随标签数量漂移 */
+    @media (min-width: 601px) {
+      .book-item .book-left {
+        width: 240px;
+        min-width: 240px;
+        max-width: 240px;
+        flex: none;
+      }
     }
   </style>
 </head>
@@ -2682,6 +2699,32 @@ async function init() {
 }
 
 init();
+
+// ========== 书卡等高对齐（所有书卡格式完全一致） ==========
+// 每个 .book-list 内取内容最高的一张卡为基准，其余卡补齐 min-height，
+// 简介完整展开不省略（CSS 规则 8），内容顶部对齐、底部统一留白。
+function alignBookItems() {
+  document.querySelectorAll('.book-list').forEach(list => {
+    const items = Array.from(list.querySelectorAll('.book-item'));
+    if (items.length < 2) return;
+    items.forEach(el => { el.style.minHeight = ''; });           // 先重置再量
+    let maxH = 0;
+    items.forEach(el => {
+      const h = el.offsetHeight;
+      if (h > maxH) maxH = h;
+    });
+    if (maxH > 0) items.forEach(el => { el.style.minHeight = maxH + 'px'; });
+  });
+}
+// 列表是异步渲染 + 切换 tab/筛选/排序/新书按钮会重绘 → 监听 DOM 变化自动对齐（防抖）
+const _bookListObserver = new MutationObserver(() => {
+  clearTimeout(_bookListObserver._t);
+  _bookListObserver._t = setTimeout(alignBookItems, 60);
+});
+_bookListObserver.observe(document.body, { childList: true, subtree: true });
+// 首次数据加载完成兜底
+window.addEventListener('load', () => setTimeout(alignBookItems, 400));
+setTimeout(alignBookItems, 1200);
 </script>
 
 </body>
