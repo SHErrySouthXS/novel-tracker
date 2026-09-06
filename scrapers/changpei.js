@@ -1,13 +1,14 @@
 /**
- * 长佩文学 畅销榜爬虫
+ * 长佩文学 多榜单爬虫
  * 
- * 数据源: https://www.gongzicp.com/home/ranking
- * 长佩是 Vue SPA，需要用 Playwright 渲染后抓取
+ * 抓取:
+ *   1. 总榜畅销榜 Top50
+ *   2. 纯爱-畅销榜 Top50
+ *   3. 纯爱-新书榜 Top50
+ *   4. 纯爱-完结榜 Top50
  * 
- * DOM 结构: .novel-item > img区 + .novel区
- *   链接顺序: [状态badge, 书名, 作者, 状态text, 标签1, 标签2, ...]
- *   简介: <p> 标签内
- *   分页: .pages > .page (每页10本，共10页)
+ * 数据源: https://www.gongzicp.com/home/ranking (总榜)
+ *         https://www.gongzicp.com/home/indexRanking?tid=75 (纯爱)
  */
 
 const { chromium } = require('playwright');
@@ -18,7 +19,14 @@ const { computeRankChange } = require('./rank-change');
 // ========== 配置 ==========
 const DATA_DIR = path.join(__dirname, '..', 'data', 'changpei');
 const TARGET_COUNT = 50;
-const RANK_URL = 'https://www.gongzicp.com/home/ranking';
+
+// 榜单配置
+const RANKINGS = [
+  { id: 'bestseller', name: '总榜·畅销榜', url: 'https://www.gongzicp.com/home/ranking', file: 'latest.json' },
+  { id: 'purelove_bestseller', name: '纯爱·畅销榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75', file: 'purelove_bestseller.json' },
+  { id: 'purelove_new', name: '纯爱·新书榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75&rankType=new', file: 'purelove_new.json' },
+  { id: 'purelove_completed', name: '纯爱·完结榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75&rid=5', file: 'purelove_completed.json' },
+];
 
 // ========== 工具函数 ==========
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -51,11 +59,8 @@ async function extractBooksFromDOM(page) {
       let abstract = '';
       if (pEl) {
         abstract = pEl.textContent.trim();
-        // 清理：去掉开头的类型标签描述（如"竹马竹马（10-15w）"）
         abstract = abstract.replace(/^[^\n]*?[（(]\d+-\d+w[）)]\s*/, '');
-        // 去掉换行，合并为空格
         abstract = abstract.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-        // 截取到200字
         abstract = abstract.substring(0, 200);
       }
       
@@ -125,11 +130,94 @@ async function extractBooksFromDOM(page) {
   });
 }
 
+// ========== 抓取单个榜单 ==========
+async function scrapeRanking(page, ranking, now) {
+  console.log(`\n📊 抓取: ${ranking.name}`);
+  await page.goto(ranking.url, { waitUntil: 'networkidle', timeout: 30000 });
+  await sleep(3000);
+  
+  let allBooks = [];
+  const totalPages = Math.ceil(TARGET_COUNT / 10);
+  
+  for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+    console.log(`  📄 第 ${pageNum} 页...`);
+    
+    const pageBooks = await extractBooksFromDOM(page);
+    allBooks = allBooks.concat(pageBooks);
+    console.log(`    本页 ${pageBooks.length} 本，累计 ${allBooks.length} 本`);
+    
+    if (allBooks.length >= TARGET_COUNT) break;
+    
+    if (pageNum < totalPages) {
+      const nextPageNum = String(pageNum + 1);
+      const clicked = await page.evaluate((targetNum) => {
+        const pages = document.querySelectorAll('.pages .page');
+        for (const p of pages) {
+          if (p.textContent.trim() === targetNum) {
+            p.click();
+            return true;
+          }
+        }
+        return false;
+      }, nextPageNum);
+      
+      if (clicked) {
+        await sleep(2000);
+        await page.waitForSelector('.novel-item', { timeout: 10000 }).catch(() => {});
+        await sleep(1000);
+      } else {
+        break;
+      }
+    }
+  }
+  
+  allBooks = allBooks.slice(0, TARGET_COUNT);
+  allBooks.forEach((b, i) => b.rank = i + 1);
+  
+  if (allBooks.length === 0) {
+    console.log(`  [WARN] ${ranking.name} 未提取到数据`);
+    return null;
+  }
+  
+  // 计算排名变化
+  computeRankChange(allBooks, DATA_DIR, fmtDate(now), 'book_name');
+  
+  // 统计
+  const tagStats = {};
+  for (const b of allBooks) {
+    if (b.all_tags.length > 0) tagStats[b.all_tags[0]] = (tagStats[b.all_tags[0]] || 0) + 1;
+  }
+  const statusStats = {};
+  for (const b of allBooks) { statusStats[b.status] = (statusStats[b.status] || 0) + 1; }
+  
+  const result = {
+    update_time: fmtDateTime(now),
+    update_date: fmtDate(now),
+    total_count: allBooks.length,
+    source: `长佩文学·${ranking.name}`,
+    source_url: ranking.url,
+    platform: 'changpei',
+    platform_name: '长佩文学',
+    ranking_id: ranking.id,
+    ranking_name: ranking.name,
+    tag_stats: tagStats,
+    status_stats: statusStats,
+    books: allBooks,
+  };
+  
+  // 保存文件
+  const filePath = path.join(DATA_DIR, ranking.file);
+  fs.writeFileSync(filePath, JSON.stringify(result, null, 2), 'utf-8');
+  
+  console.log(`  ✅ ${ranking.name}: ${allBooks.length} 本`);
+  return result;
+}
+
 // ========== 主函数 ==========
 async function main() {
   const now = getNowBJT();
   console.log('='.repeat(60));
-  console.log(`长佩文学 畅销榜爬虫 - ${fmtDateTime(now)}`);
+  console.log(`长佩文学 多榜单爬虫 - ${fmtDateTime(now)}`);
   console.log('='.repeat(60));
 
   ensureDir(DATA_DIR);
@@ -154,87 +242,30 @@ async function main() {
   const page = await context.newPage();
 
   try {
-    // 阶段一：抓取榜单
-    console.log('\n📊 阶段一：抓取畅销榜');
-    await page.goto(RANK_URL, { waitUntil: 'networkidle', timeout: 30000 });
-    await sleep(3000);
-    
-    let allBooks = [];
-    const totalPages = Math.ceil(TARGET_COUNT / 10);
-    
-    for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
-      console.log(`  📄 第 ${pageNum} 页...`);
-      
-      const pageBooks = await extractBooksFromDOM(page);
-      allBooks = allBooks.concat(pageBooks);
-      console.log(`    本页 ${pageBooks.length} 本，累计 ${allBooks.length} 本`);
-      
-      if (allBooks.length >= TARGET_COUNT) break;
-      
-      if (pageNum < totalPages) {
-        const nextPageNum = String(pageNum + 1);
-        const clicked = await page.evaluate((targetNum) => {
-          const pages = document.querySelectorAll('.pages .page');
-          for (const p of pages) {
-            if (p.textContent.trim() === targetNum) {
-              p.click();
-              return true;
-            }
-          }
-          return false;
-        }, nextPageNum);
-        
-        if (clicked) {
-          await sleep(2000);
-          await page.waitForSelector('.novel-item', { timeout: 10000 }).catch(() => {});
-          await sleep(1000);
-        } else {
-          break;
-        }
-      }
+    // 抓取所有榜单
+    const results = [];
+    for (const ranking of RANKINGS) {
+      const result = await scrapeRanking(page, ranking, now);
+      if (result) results.push(result);
     }
     
-    allBooks = allBooks.slice(0, TARGET_COUNT);
-    allBooks.forEach((b, i) => b.rank = i + 1);
-    
-    if (allBooks.length === 0) {
-      console.log('  [ERROR] 未能提取到任何书籍数据！');
-      await page.screenshot({ path: path.join(DATA_DIR, 'debug_screenshot.png'), fullPage: true });
-      process.exit(1);
-    }
-    
-    console.log(`\n  ✅ 共提取 ${allBooks.length} 本`);
-
-    // 计算排名变化
-    console.log('\n📈 计算排名变化');
-    computeRankChange(allBooks, DATA_DIR, fmtDate(now), 'book_name');
-
-    // 统计
-    const tagStats = {};
-    for (const b of allBooks) {
-      if (b.all_tags.length > 0) tagStats[b.all_tags[0]] = (tagStats[b.all_tags[0]] || 0) + 1;
-    }
-    const statusStats = {};
-    for (const b of allBooks) { statusStats[b.status] = (statusStats[b.status] || 0) + 1; }
-
-    const result = {
-      update_time: fmtDateTime(now),
-      update_date: fmtDate(now),
-      total_count: allBooks.length,
-      source: '长佩文学·畅销榜',
-      source_url: RANK_URL,
-      platform: 'changpei',
-      platform_name: '长佩文学',
-      tag_stats: tagStats,
-      status_stats: statusStats,
-      books: allBooks,
-    };
-
-    const latestPath = path.join(DATA_DIR, 'latest.json');
-    fs.writeFileSync(latestPath, JSON.stringify(result, null, 2), 'utf-8');
+    // 保存历史
     const histPath = path.join(DATA_DIR, 'history', `${fmtDate(now)}.json`);
-    fs.writeFileSync(histPath, JSON.stringify(result, null, 2), 'utf-8');
-
+    const histData = {};
+    for (const r of results) {
+      histData[r.ranking_id] = {
+        count: r.total_count,
+        tag_stats: r.tag_stats,
+        status_stats: r.status_stats,
+      };
+    }
+    fs.writeFileSync(histPath, JSON.stringify({
+      date: fmtDate(now),
+      update_time: fmtDateTime(now),
+      rankings: histData,
+    }, null, 2), 'utf-8');
+    
+    // 更新历史索引
     const idxPath = path.join(DATA_DIR, 'history_index.json');
     let idx = [];
     if (fs.existsSync(idxPath)) { try { idx = JSON.parse(fs.readFileSync(idxPath, 'utf-8')); } catch(e){} }
@@ -244,15 +275,11 @@ async function main() {
     fs.writeFileSync(idxPath, JSON.stringify(idx, null, 2), 'utf-8');
 
     console.log(`\n${'='.repeat(60)}`);
-    console.log(`🎉 完成！共 ${allBooks.length} 本`);
-    console.log(`   状态: ${JSON.stringify(statusStats)}`);
-    console.log(`   标签: ${JSON.stringify(tagStats)}`);
-    console.log(`   数据: ${latestPath}`);
-    console.log(`\n   前5本:`);
-    allBooks.slice(0, 5).forEach(b => {
-      const abs = b.abstract ? b.abstract.substring(0, 40) + '...' : '无简介';
-      console.log(`   ${b.rank}. ${b.book_name} - ${b.author} [${b.status}] ${abs}`);
-    });
+    console.log(`🎉 全部完成！`);
+    for (const r of results) {
+      console.log(`   ${r.ranking_name}: ${r.total_count} 本`);
+    }
+    console.log(`\n   数据目录: ${DATA_DIR}`);
 
   } catch(e) {
     console.error('致命错误:', e);

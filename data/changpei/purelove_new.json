@@ -2,16 +2,15 @@
   "update_time": "2026-09-06 18:16:35",
   "update_date": "2026-09-06",
   "total_count": 50,
-  "source": "长佩文学·总榜·畅销榜",
-  "source_url": "https://www.gongzicp.com/home/ranking",
+  "source": "长佩文学·纯爱·新书榜",
+  "source_url": "https://www.gongzicp.com/home/indexRanking?tid=75&rankType=new",
   "platform": "changpei",
   "platform_name": "长佩文学",
-  "ranking_id": "bestseller",
-  "ranking_name": "总榜·畅销榜",
+  "ranking_id": "purelove_new",
+  "ranking_name": "纯爱·新书榜",
   "tag_stats": {
     "青春": 2,
-    "都市": 27,
-    "现代": 1,
+    "都市": 28,
     "综合": 9,
     "架空": 8,
     "推理": 1,
@@ -153,35 +152,6 @@
     },
     {
       "rank": 5,
-      "book_name": "太阳心下",
-      "book_url": "https://www.gongzicp.com/novel-2205683.html",
-      "author": "祈破",
-      "author_url": "https://www.gongzicp.com/zone/author-175722.html",
-      "tags": [
-        "现代",
-        "gl",
-        "HE",
-        "青梅"
-      ],
-      "all_tags": [
-        "现代",
-        "gl",
-        "HE",
-        "青梅"
-      ],
-      "primary_tag": "现代",
-      "abstract": "郭台 X 杨下 毒舌and炸毛（maybe “你这么了解她？” “我这么了解她，纯粹是因为我出生的时候就认识她了。” “有时候觉得，你们两个好像啊。” “有人抄袭我吧。” “我是说这种随时随地让人无语的感觉。” “哦，那全是她教我的。” “你是说你们两个躺在一张床上，然后开始睡觉？” “朋友那我问你，人类发明一个垫子加四条腿儿的东西不是用来睡觉的？” - 我竟然觉得她说得很有道理 你觉得呢？ （对",
-      "word_count": "35.60万",
-      "popularity": "1,703.08万",
-      "status": "连载中",
-      "update_time": "昨天 20:30",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 1
-    },
-    {
-      "rank": 6,
       "book_name": "跟踪日记",
       "book_url": "https://www.gongzicp.com/novel-1887978.html",
       "author": "长烟",
@@ -218,7 +188,7 @@
       "history_days": 1
     },
     {
-      "rank": 7,
+      "rank": 6,
       "book_name": "苦艾保质期",
       "book_url": "https://www.gongzicp.com/novel-2024713.html",
       "author": "林啸也",
@@ -259,7 +229,7 @@
       "history_days": 1
     },
     {
-      "rank": 8,
+      "rank": 7,
       "book_name": "老实人饲养手册",
       "book_url": "https://www.gongzicp.com/novel-2157831.html",
       "author": "金币小兔",
@@ -290,7 +260,7 @@
       "history_days": 1
     },
     {
-      "rank": 9,
+      "rank": 8,
       "book_name": "殊途同归",
       "book_url": "https://www.gongzicp.com/novel-1748632.html",
       "author": "独山凡鸟",
@@ -318,7 +288,7 @@
       "primary_tag": "架空",
       "abstract": "私生子上将A x 贵公子军医O 一纸婚约，和将近百分百的信息素匹配，将两个不合适的人紧紧绑在了一起。 燕兰章如愿以偿，梁文声誓死抗拒。 燕兰章，出生在权贵家族，分化为最矜贵的S级Omega。他的人生几乎毫无挫折，唯一例外便是梁文声。 他哑着嗓子对梁文声说：“我连你最差劲的一面都爱，怎么不算爱你的全部？” 梁文声，见不得光的私生子，竟成为联邦帝国最出色的上将。 外人评价他心狠手辣、冷漠无情。 然而只",
       "word_count": "22.86万",
-      "popularity": "898.89万",
+      "popularity": "898.90万",
       "status": "完结",
       "update_time": "17 小时前",
       "channel": "",
@@ -327,7 +297,7 @@
       "history_days": 1
     },
     {
-      "rank": 10,
+      "rank": 9,
       "book_name": "哥哥喜欢猫",
       "book_url": "https://www.gongzicp.com/novel-2097831.html",
       "author": "二蛋",
@@ -356,7 +326,7 @@
       "history_days": 1
     },
     {
-      "rank": 11,
+      "rank": 10,
       "book_name": "真的没有勾引你啊",
       "book_url": "https://www.gongzicp.com/novel-2008915.html",
       "author": "叹酸",
@@ -391,7 +361,7 @@
       "history_days": 1
     },
     {
-      "rank": 12,
+      "rank": 11,
       "book_name": "野狗",
       "book_url": "https://www.gongzicp.com/novel-2199914.html",
       "author": "都市累人",
@@ -424,7 +394,7 @@
       "history_days": 1
     },
     {
-      "rank": 13,
+      "rank": 12,
       "book_name": "月光沦陷",
       "book_url": "https://www.gongzicp.com/novel-1177160.html",
       "author": "冰块儿",
@@ -459,7 +429,7 @@
       "history_days": 1
     },
     {
-      "rank": 14,
+      "rank": 13,
       "book_name": "游鱼习惯",
       "book_url": "https://www.gongzicp.com/novel-1981406.html",
       "author": "小斤小斤鱼",
@@ -496,7 +466,7 @@
       "history_days": 1
     },
     {
-      "rank": 15,
+      "rank": 14,
       "book_name": "错误取向",
       "book_url": "https://www.gongzicp.com/novel-1883448.html",
       "author": "掷生",
@@ -537,7 +507,7 @@
       "history_days": 1
     },
     {
-      "rank": 16,
+      "rank": 15,
       "book_name": "替身之上",
       "book_url": "https://www.gongzicp.com/novel-2206235.html",
       "author": "一维马赛克",
@@ -580,7 +550,7 @@
       "history_days": 1
     },
     {
-      "rank": 17,
+      "rank": 16,
       "book_name": "我闪现追你",
       "book_url": "https://www.gongzicp.com/novel-2194430.html",
       "author": "海鶄落",
@@ -613,7 +583,7 @@
       "history_days": 1
     },
     {
-      "rank": 18,
+      "rank": 17,
       "book_name": "我们的存在",
       "book_url": "https://www.gongzicp.com/novel-2127379.html",
       "author": "电子熊",
@@ -652,7 +622,7 @@
       "history_days": 1
     },
     {
-      "rank": 19,
+      "rank": 18,
       "book_name": "虚构热恋99%",
       "book_url": "https://www.gongzicp.com/novel-2195082.html",
       "author": "柚子小狗",
@@ -691,7 +661,7 @@
       "history_days": 1
     },
     {
-      "rank": 20,
+      "rank": 19,
       "book_name": "面包鸳鸯乳果",
       "book_url": "https://www.gongzicp.com/novel-2160725.html",
       "author": "斋饮地",
@@ -732,7 +702,7 @@
       "history_days": 1
     },
     {
-      "rank": 21,
+      "rank": 20,
       "book_name": "失格落日",
       "book_url": "https://www.gongzicp.com/novel-2175901.html",
       "author": "花溱",
@@ -769,7 +739,7 @@
       "history_days": 1
     },
     {
-      "rank": 22,
+      "rank": 21,
       "book_name": "错误预感",
       "book_url": "https://www.gongzicp.com/novel-2199394.html",
       "author": "青水幸",
@@ -812,7 +782,7 @@
       "history_days": 1
     },
     {
-      "rank": 23,
+      "rank": 22,
       "book_name": "心动存单",
       "book_url": "https://www.gongzicp.com/novel-2211496.html",
       "author": "颍川月下",
@@ -847,7 +817,7 @@
       "history_days": 1
     },
     {
-      "rank": 24,
+      "rank": 23,
       "book_name": "通俗爱情",
       "book_url": "https://www.gongzicp.com/novel-2244903.html",
       "author": "半缘修道",
@@ -878,7 +848,7 @@
       "history_days": 1
     },
     {
-      "rank": 25,
+      "rank": 24,
       "book_name": "欢迎收听禾边鬼",
       "book_url": "https://www.gongzicp.com/novel-1999698.html",
       "author": "晏山乔",
@@ -907,7 +877,7 @@
       "history_days": 1
     },
     {
-      "rank": 26,
+      "rank": 25,
       "book_name": "完美情人",
       "book_url": "https://www.gongzicp.com/novel-2165172.html",
       "author": "拯救瑶光星",
@@ -942,7 +912,7 @@
       "history_days": 1
     },
     {
-      "rank": 27,
+      "rank": 26,
       "book_name": "盘中餐",
       "book_url": "https://www.gongzicp.com/novel-2065941.html",
       "author": "久陆",
@@ -983,7 +953,7 @@
       "history_days": 1
     },
     {
-      "rank": 28,
+      "rank": 27,
       "book_name": "天气晴 去殉情",
       "book_url": "https://www.gongzicp.com/novel-2127392.html",
       "author": "Llosa",
@@ -1014,7 +984,7 @@
       "history_days": 1
     },
     {
-      "rank": 29,
+      "rank": 28,
       "book_name": "囡囡",
       "book_url": "https://www.gongzicp.com/novel-2217586.html",
       "author": "木更木更",
@@ -1041,7 +1011,7 @@
       "history_days": 1
     },
     {
-      "rank": 30,
+      "rank": 29,
       "book_name": "林总监的领带",
       "book_url": "https://www.gongzicp.com/novel-2233049.html",
       "author": "方浅",
@@ -1080,7 +1050,7 @@
       "history_days": 1
     },
     {
-      "rank": 31,
+      "rank": 30,
       "book_name": "火烧日",
       "book_url": "https://www.gongzicp.com/novel-1990932.html",
       "author": "一颗牙疼",
@@ -1117,7 +1087,7 @@
       "history_days": 1
     },
     {
-      "rank": 32,
+      "rank": 31,
       "book_name": "铩羽",
       "book_url": "https://www.gongzicp.com/novel-1910372.html",
       "author": "兑水了了",
@@ -1156,7 +1126,7 @@
       "history_days": 1
     },
     {
-      "rank": 33,
+      "rank": 32,
       "book_name": "宴菩萨",
       "book_url": "https://www.gongzicp.com/novel-2099195.html",
       "author": "商曾",
@@ -1189,7 +1159,7 @@
       "history_days": 1
     },
     {
-      "rank": 34,
+      "rank": 33,
       "book_name": "不在意谎言",
       "book_url": "https://www.gongzicp.com/novel-1867160.html",
       "author": "持续转向",
@@ -1218,7 +1188,7 @@
       "history_days": 1
     },
     {
-      "rank": 35,
+      "rank": 34,
       "book_name": "塑料夫夫观察实录",
       "book_url": "https://www.gongzicp.com/novel-2117538.html",
       "author": "姜可颂",
@@ -1249,7 +1219,7 @@
       "history_days": 1
     },
     {
-      "rank": 36,
+      "rank": 35,
       "book_name": "健忘症",
       "book_url": "https://www.gongzicp.com/novel-2153371.html",
       "author": "姜双柏",
@@ -1290,7 +1260,7 @@
       "history_days": 1
     },
     {
-      "rank": 37,
+      "rank": 36,
       "book_name": "初恋制造",
       "book_url": "https://www.gongzicp.com/novel-2036503.html",
       "author": "猛猪出闸",
@@ -1333,7 +1303,7 @@
       "history_days": 1
     },
     {
-      "rank": 38,
+      "rank": 37,
       "book_name": "恶莺",
       "book_url": "https://www.gongzicp.com/novel-1894915.html",
       "author": "吴百万",
@@ -1372,7 +1342,7 @@
       "history_days": 1
     },
     {
-      "rank": 39,
+      "rank": 38,
       "book_name": "再骂一句试试",
       "book_url": "https://www.gongzicp.com/novel-1466467.html",
       "author": "盒家欢乐",
@@ -1405,7 +1375,7 @@
       "history_days": 1
     },
     {
-      "rank": 40,
+      "rank": 39,
       "book_name": "乱流",
       "book_url": "https://www.gongzicp.com/novel-2222125.html",
       "author": "折周",
@@ -1438,7 +1408,7 @@
       "history_days": 1
     },
     {
-      "rank": 41,
+      "rank": 40,
       "book_name": "植物学家的儿子",
       "book_url": "https://www.gongzicp.com/novel-1662676.html",
       "author": "Lryan",
@@ -1473,7 +1443,7 @@
       "history_days": 1
     },
     {
-      "rank": 42,
+      "rank": 41,
       "book_name": "霓虹时代",
       "book_url": "https://www.gongzicp.com/novel-1316461.html",
       "author": "明月南楼",
@@ -1514,7 +1484,7 @@
       "history_days": 1
     },
     {
-      "rank": 43,
+      "rank": 42,
       "book_name": "别看，是恶评",
       "book_url": "https://www.gongzicp.com/novel-2112632.html",
       "author": "水墨鸿",
@@ -1549,7 +1519,7 @@
       "history_days": 1
     },
     {
-      "rank": 44,
+      "rank": 43,
       "book_name": "废土乐园",
       "book_url": "https://www.gongzicp.com/novel-2200595.html",
       "author": "冻柠红",
@@ -1578,7 +1548,7 @@
       "history_days": 1
     },
     {
-      "rank": 45,
+      "rank": 44,
       "book_name": "顽疾",
       "book_url": "https://www.gongzicp.com/novel-1977599.html",
       "author": "二十迷川",
@@ -1613,7 +1583,7 @@
       "history_days": 1
     },
     {
-      "rank": 46,
+      "rank": 45,
       "book_name": "仙人观我",
       "book_url": "https://www.gongzicp.com/novel-2188104.html",
       "author": "蔓越鸥",
@@ -1656,7 +1626,7 @@
       "history_days": 1
     },
     {
-      "rank": 47,
+      "rank": 46,
       "book_name": "赐我美梦一场",
       "book_url": "https://www.gongzicp.com/novel-1970414.html",
       "author": "向衔",
@@ -1685,7 +1655,7 @@
       "history_days": 1
     },
     {
-      "rank": 48,
+      "rank": 47,
       "book_name": "绊心",
       "book_url": "https://www.gongzicp.com/novel-2047444.html",
       "author": "一只狌狌",
@@ -1714,7 +1684,7 @@
       "history_days": 1
     },
     {
-      "rank": 49,
+      "rank": 48,
       "book_name": "非得我当0？",
       "book_url": "https://www.gongzicp.com/novel-1743216.html",
       "author": "野真",
@@ -1753,7 +1723,7 @@
       "history_days": 1
     },
     {
-      "rank": 50,
+      "rank": 49,
       "book_name": "野孩子",
       "book_url": "https://www.gongzicp.com/novel-2043634.html",
       "author": "风月归我",
@@ -1786,6 +1756,41 @@
       "popularity": "404.45万",
       "status": "连载中",
       "update_time": "昨天 00:03",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 1
+    },
+    {
+      "rank": 50,
+      "book_name": "春天游泳",
+      "book_url": "https://www.gongzicp.com/novel-1606937.html",
+      "author": "孔瓷",
+      "author_url": "https://www.gongzicp.com/zone/author-73743.html",
+      "tags": [
+        "都市",
+        "见色起意",
+        "推推拉拉",
+        "群像出没",
+        "娱乐圈大于商战",
+        "但也有商战",
+        "商战少乃因作者文盲故"
+      ],
+      "all_tags": [
+        "都市",
+        "见色起意",
+        "推推拉拉",
+        "群像出没",
+        "娱乐圈大于商战",
+        "但也有商战",
+        "商战少乃因作者文盲故"
+      ],
+      "primary_tag": "都市",
+      "abstract": "郎保仪x溥pǔ思敏 颜控闷烧名流权贵x36线小牌大耍臭脸小明星 - 郎保仪从不跨入河流，而溥思敏就像他人生中的一场意外，他全身都被淋湿。 两块钱的门票，溥思敏买到了一个完全不一样的人生，整个电影学院没有人比他更相信电影可以改变人的一生。 可十年过去，人不可能靠好运气过一辈子。业内共识，孩子情商低，神仙也难捧。溥思敏脸赞脾气差，此生难以脱离36线小明星之列。他决定这次结完片酬就收拾东西回云南老家种地",
+      "word_count": "24.01万",
+      "popularity": "190.73万",
+      "status": "连载中",
+      "update_time": "前天 18:09",
       "channel": "",
       "gender": "",
       "rank_change": null,

@@ -1508,6 +1508,11 @@ function renderPlatformTab(platformId) {
     renderJjwxcWithSubTabs(platform, data, contentEl);
     return;
   }
+  // 长佩有子榜单（总榜 + 纯爱畅销/新书/完结）
+  if (platformId === 'changpei') {
+    renderChangpeiWithSubTabs(platform, data, contentEl);
+    return;
+  }
 
   const books = data.books;
   const tagStats = data.tag_stats || {};
@@ -1912,6 +1917,7 @@ function switchSubTab(contentId, prefix, subTabId) {
 function switchQidianSubTab(subTabId) { switchSubTab('qidianContent', 'qidian', subTabId); }
 function switchJjwxcSubTab(subTabId) { switchSubTab('jjwxcContent', 'jjwxc', subTabId); }
 function switchFanqieSubTab(subTabId) { switchSubTab('fanqieContent', 'fanqie', subTabId); }
+function switchChangpeiSubTab(subTabId) { switchSubTab('changpeiContent', 'changpei', subTabId); }
 
 // ========== 番茄子榜单渲染（最热榜 Top50 + 巅峰榜 Top30）==========
 async function renderFanqieWithSubTabs(platform, data, contentEl) {
@@ -2258,6 +2264,157 @@ function renderScoreBookList(books) {
       </div>
     `;
   }).join('');
+}
+
+// ========== 长佩子榜单渲染（总榜 + 纯爱畅销/新书/完结）==========
+async function renderChangpeiWithSubTabs(platform, data, contentEl) {
+  // 加载纯爱子榜单数据
+  const pureloveBseller = await loadJSON('data/changpei/purelove_bestseller.json');
+  const pureloveNew = await loadJSON('data/changpei/purelove_new.json');
+  const pureloveCompleted = await loadJSON('data/changpei/purelove_completed.json');
+  
+  state.data.changpei_purelove_bestseller = pureloveBseller;
+  state.data.changpei_purelove_new = pureloveNew;
+  state.data.changpei_purelove_completed = pureloveCompleted;
+
+  const books = data.books;
+  const tagStats = data.tag_stats || {};
+  const historyIndex = state.history['changpei']?.index || [];
+  const coverageDays = historyIndex.length || 0;
+
+  // 渲染子榜单标签栏
+  function renderSubBookList(bookData, subId) {
+    if (!bookData?.books?.length) return '<div class="empty-state">暂无数据</div>';
+    return renderBookList(bookData.books, subId);
+  }
+
+  contentEl.innerHTML = `
+    <div class="platform-header">
+      <div>
+        <div class="platform-title">${platform.icon} ${platform.name}</div>
+        <div class="platform-meta">更新时间: ${data.update_time || '未知'}</div>
+      </div>
+    </div>
+
+    <div class="sub-tab-nav">
+      <button class="sub-tab-btn active" data-subtab="all" onclick="switchChangpeiSubTab('all')">📊 总榜畅销榜</button>
+      <button class="sub-tab-btn" data-subtab="purelove" onclick="switchChangpeiSubTab('purelove')">💜 纯爱畅销榜</button>
+      <button class="sub-tab-btn" data-subtab="new" onclick="switchChangpeiSubTab('new')">🆕 纯爱新书榜</button>
+      <button class="sub-tab-btn" data-subtab="completed" onclick="switchChangpeiSubTab('completed')">✅ 纯爱完结榜</button>
+    </div>
+
+    <!-- 总榜畅销榜 -->
+    <div class="sub-tab-content active" id="changpei-sub-all">
+      <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
+
+      <div class="tag-stats-bar">
+        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+          <span class="tag-stat-item">
+            <span class="tag-name">${tag}</span>
+            <span class="tag-count">${count}</span>
+          </span>
+        `).join('')}
+      </div>
+
+      <div class="filter-bar">
+        <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-changpei" oninput="filterBooks('changpei')">
+        <button class="filter-btn" id="newonly-changpei" onclick="toggleNewOnly('changpei')">🆕 新上榜</button>
+        <button class="filter-btn" id="sortdays-changpei" onclick="toggleSort('changpei','days')" title="按累计上榜天数排序">📅 上榜天数</button>
+        <button class="filter-btn" id="sortchange-changpei" onclick="toggleSort('changpei','change')" title="按昨日涨跌幅排序">📈 昨日涨幅</button>
+        <select class="filter-select" id="tag-changpei" onchange="filterBooks('changpei')">
+          <option value="">全部题材</option>
+          ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="status-changpei" onchange="filterBooks('changpei')">
+          <option value="">全部状态</option>
+          <option value="连载中">连载中</option>
+          <option value="完结">完结</option>
+        </select>
+        ${historyIndex.length >= 1 ? `
+          <select class="filter-select" id="history-changpei" onchange="loadHistoryData('changpei', this.value)">
+            <option value="">当前数据</option>
+            ${historyIndex.map(d => `<option value="${d}">${d}</option>`).join('')}
+          </select>
+        ` : ''}
+      </div>
+
+      <div class="book-list" id="bookList-changpei">
+        ${renderBookList(books, 'changpei')}
+      </div>
+    </div>
+
+    <!-- 纯爱畅销榜 -->
+    <div class="sub-tab-content" id="changpei-sub-purelove">
+      ${!pureloveBseller?.books?.length
+        ? '<div class="empty-state">纯爱畅销榜数据尚未抓取</div>'
+        : `
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">纯爱·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
+          <div class="tag-stats-bar">
+            ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+              <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
+            `).join('')}
+          </div>
+          <div class="filter-bar">
+            <input class="search-input" type="text" placeholder="搜索..." id="search-changpei_purelove_bestseller" oninput="filterBooks('changpei_purelove_bestseller')">
+            <select class="filter-select" id="tag-changpei_purelove_bestseller" onchange="filterBooks('changpei_purelove_bestseller')">
+              <option value="">全部题材</option>
+              ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+            </select>
+          </div>
+          <div class="book-list" id="bookList-changpei_purelove_bestseller">
+            ${renderBookList(pureloveBseller.books, 'changpei_purelove_bestseller')}
+          </div>
+        `}
+    </div>
+
+    <!-- 纯爱新书榜 -->
+    <div class="sub-tab-content" id="changpei-sub-new">
+      ${!pureloveNew?.books?.length
+        ? '<div class="empty-state">纯爱新书榜数据尚未抓取</div>'
+        : `
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">纯爱·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
+          <div class="tag-stats-bar">
+            ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+              <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
+            `).join('')}
+          </div>
+          <div class="filter-bar">
+            <input class="search-input" type="text" placeholder="搜索..." id="search-changpei_purelove_new" oninput="filterBooks('changpei_purelove_new')">
+            <select class="filter-select" id="tag-changpei_purelove_new" onchange="filterBooks('changpei_purelove_new')">
+              <option value="">全部题材</option>
+              ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+            </select>
+          </div>
+          <div class="book-list" id="bookList-changpei_purelove_new">
+            ${renderBookList(pureloveNew.books, 'changpei_purelove_new')}
+          </div>
+        `}
+    </div>
+
+    <!-- 纯爱完结榜 -->
+    <div class="sub-tab-content" id="changpei-sub-completed">
+      ${!pureloveCompleted?.books?.length
+        ? '<div class="empty-state">纯爱完结榜数据尚未抓取</div>'
+        : `
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">纯爱·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
+          <div class="tag-stats-bar">
+            ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+              <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
+            `).join('')}
+          </div>
+          <div class="filter-bar">
+            <input class="search-input" type="text" placeholder="搜索..." id="search-changpei_purelove_completed" oninput="filterBooks('changpei_purelove_completed')">
+            <select class="filter-select" id="tag-changpei_purelove_completed" onchange="filterBooks('changpei_purelove_completed')">
+              <option value="">全部题材</option>
+              ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+            </select>
+          </div>
+          <div class="book-list" id="bookList-changpei_purelove_completed">
+            ${renderBookList(pureloveCompleted.books, 'changpei_purelove_completed')}
+          </div>
+        `}
+    </div>
+  `;
 }
 
 // ========== 初始化 ==========
