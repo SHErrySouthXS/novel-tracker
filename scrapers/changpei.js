@@ -189,7 +189,71 @@ async function scrapeRanking(page, ranking, now) {
   }
   const statusStats = {};
   for (const b of allBooks) { statusStats[b.status] = (statusStats[b.status] || 0) + 1; }
-  
+
+  // 题材洞察分析
+  // 1. 蓝海题材：人气高但竞争少的 tag（上榜<3本，平均人气>整体中位数）
+  const tagPopularity = {};
+  for (const b of allBooks) {
+    const pop = parseFloat(b.popularity.replace(/,/g, '')) || 0;
+    for (const tag of b.all_tags) {
+      if (!tagPopularity[tag]) tagPopularity[tag] = [];
+      tagPopularity[tag].push(pop);
+    }
+  }
+  const allPops = allBooks.map(b => parseFloat(b.popularity.replace(/,/g, '')) || 0).sort((a,b) => b-a);
+  const medianPop = allPops[Math.floor(allPops.length / 2)] || 0;
+  const blueOcean = [];
+  for (const [tag, pops] of Object.entries(tagPopularity)) {
+    const avg = pops.reduce((s,v) => s+v, 0) / pops.length;
+    if (pops.length <= 3 && avg > medianPop * 1.5) {
+      blueOcean.push({ tag, count: pops.length, avg_popularity: Math.round(avg) });
+    }
+  }
+  blueOcean.sort((a,b) => b.avg_popularity - a.avg_popularity);
+
+  // 2. 爆款新书：rank_change === 'new' 的书
+  const viralBooks = allBooks.filter(b => b.rank_change === 'new').map(b => ({
+    rank: b.rank,
+    book_name: b.book_name,
+    author: b.author,
+    tags: b.all_tags,
+    word_count: b.word_count,
+    popularity: b.popularity,
+    abstract: b.abstract,
+  }));
+
+  // 3. 题材趋势（读历史数据计算）
+  const trendData = { tag_trends_7d: {}, tag_trends_30d: {} };
+  try {
+    const histDir = path.join(DATA_DIR, 'history');
+    if (fs.existsSync(histDir)) {
+      const histFiles = fs.readdirSync(histDir).filter(f => f.endsWith('.json')).sort().reverse();
+      const todayStr = fmtDate(now);
+      
+      for (const daysBack of [7, 30]) {
+        const targetDate = new Date(now.getTime() - daysBack * 86400000);
+        const targetStr = fmtDate(targetDate);
+        const histFile = histFiles.find(f => f.replace('.json', '') <= targetStr);
+        
+        if (histFile && histFile.replace('.json', '') !== todayStr) {
+          try {
+            const histData = JSON.parse(fs.readFileSync(path.join(histDir, histFile), 'utf-8'));
+            const histTagStats = histData.rankings?.[ranking.id]?.tag_stats || {};
+            const trends = {};
+            
+            for (const [tag, count] of Object.entries(tagStats)) {
+              const histCount = histTagStats[tag] || 0;
+              trends[tag] = { current: count, previous: histCount, change: count - histCount };
+            }
+            
+            if (daysBack === 7) trendData.tag_trends_7d = trends;
+            else trendData.tag_trends_30d = trends;
+          } catch(e) {}
+        }
+      }
+    }
+  } catch(e) {}
+
   const result = {
     update_time: fmtDateTime(now),
     update_date: fmtDate(now),
@@ -203,6 +267,13 @@ async function scrapeRanking(page, ranking, now) {
     tag_stats: tagStats,
     status_stats: statusStats,
     books: allBooks,
+    // 题材洞察
+    insights: {
+      blue_ocean: blueOcean.slice(0, 5),
+      viral_books: viralBooks,
+      tag_trends_7d: trendData.tag_trends_7d,
+      tag_trends_30d: trendData.tag_trends_30d,
+    },
   };
   
   // 保存文件
