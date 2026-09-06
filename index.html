@@ -111,7 +111,7 @@
     /* ===== Dashboard ===== */
     .dash-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -233,7 +233,7 @@
     /* ===== 题材分布对比 — 纯展示数据卡片 ===== */
     .tag-distribution {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -281,7 +281,7 @@
     }
     .new-entries-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
     .new-entries-column {
@@ -361,7 +361,7 @@
     }
     .summary-items {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
     }
     .summary-item {
@@ -835,7 +835,6 @@
       <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
       <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
       <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
-      <button class="tab-btn" data-tab="qidian" onclick="switchTab('qidian')">📖 起点中文网</button>
     </div>
   </div>
 </div>
@@ -911,15 +910,6 @@
     <div id="fanqieContent" style="display:none;"></div>
   </div>
 
-  <!-- ===== 起点 Tab ===== -->
-  <div class="tab-content" id="tab-qidian">
-    <div class="loading" id="qidianLoading">
-      <div class="spinner"></div>
-      <div>正在加载起点中文网数据...</div>
-    </div>
-    <div id="qidianContent" style="display:none;"></div>
-  </div>
-
   <!-- ===== 晋江 Tab ===== -->
   <div class="tab-content" id="tab-jjwxc">
     <div class="loading" id="jjwxcLoading">
@@ -942,7 +932,7 @@
 <script>
 // ========== 全局状态 ==========
 const state = {
-  data: {},        // { fanqie, qidian, jjwxc, changpei }
+  data: {},        // { fanqie, jjwxc, changpei }
   history: {},     // { fanqie: { index, data }, ... }
   analysis: null,  // AI 分析结果
   loaded: {},
@@ -952,7 +942,6 @@ const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
   { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
-  { id: 'qidian', name: '起点中文网', icon: '📖', color: '#c83c23', source: '畅销榜 Top50' },
 ];
 
 const CHART_COLORS = [
