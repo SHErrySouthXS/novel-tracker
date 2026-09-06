@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>小说行业头部内容追踪 · Novel Tracker</title>
+  <title>网文平台日榜追踪 · Novel Tracker</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='0.5' y='8' width='4' height='8' rx='0.5' fill='%23e6488a'/><rect x='6' y='4' width='4' height='12' rx='0.5' fill='%23ff6b35'/><rect x='11.5' y='6' width='4' height='10' rx='0.5' fill='%23c83c23'/><rect x='0.5' y='7' width='4' height='1.5' fill='%23ffd700'/><rect x='6' y='3' width='4' height='1.5' fill='%23ffd700'/><rect x='11.5' y='5' width='4' height='1.5' fill='%23ffd700'/></svg>">
   <style>
     /* ===== Web Fonts（MiSans 正文 · 霞鹜文楷标题） ===== */
@@ -1116,16 +1116,79 @@
       transition: width 0.6s ease;
       opacity: 0.55;
     }
+
+    /* 12) Header 吸顶窄高导航栏（2026-09-07 sherry 要求：缩高、只留 标题+tab、
+       更新时间右下角贴底不占高、整体作为 navigation bar） */
+    .header { padding: 7px 0; }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      position: relative;
+    }
+    .header h1 {
+      font-size: 17px;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .tab-nav {
+      margin-top: 0;
+      padding: 3px;
+      border-radius: 9px;
+    }
+    .tab-btn {
+      padding: 5px 13px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .update-info {
+      position: absolute;
+      right: 2px;
+      bottom: -1px;
+      margin: 0;
+      font-size: 10px;
+      line-height: 1;
+      opacity: 0.55;
+      text-align: right;
+      white-space: nowrap;
+      max-width: 46%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      pointer-events: none;
+    }
+    @media (max-width: 900px) {
+      .header { padding: 6px 0; }
+      .tab-btn { padding: 5px 10px; font-size: 12.5px; }
+      .update-info { max-width: 62%; }
+    }
+    @media (max-width: 720px) {
+      .header-inner { flex-direction: column; align-items: flex-start; gap: 7px; }
+      .tab-nav {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .tab-btn { flex: none; }
+      .update-info { max-width: 100%; }
+    }
+
+    /* 12b) summary-banner-grid 动态列数（晋江/七猫可能只有 1 个 block 或 AI 前占位） */
+    .summary-banner-grid.cols1 { grid-template-columns: 1fr; }
+    .summary-banner-grid.cols2 { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 880px) {
+      .summary-banner-grid.cols1,
+      .summary-banner-grid.cols2,
+      .summary-banner-grid.cols3 { grid-template-columns: 1fr !important; }
+    }
   </style>
 </head>
 <body>
 
 <div class="header">
   <div class="header-inner">
-    <h1>📚 小说行业头部内容追踪</h1>
-    <div class="header-subtitle">晋江 · 长佩 · 番茄 · 七猫 — 每日榜单与热度追踪</div>
-    <div class="update-info" id="updateInfo">加载中...</div>
-    
+    <h1>📚 网文平台日榜追踪</h1>
     <div class="tab-nav">
       <button class="tab-btn active" data-tab="dashboard" onclick="switchTab('dashboard')">📊 概览</button>
       <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
@@ -1133,6 +1196,7 @@
       <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
       <button class="tab-btn" data-tab="qimao" onclick="switchTab('qimao')">🐱 七猫小说</button>
     </div>
+    <div class="update-info" id="updateInfo">加载中...</div>
   </div>
 </div>
 
@@ -1828,7 +1892,59 @@ function drawTrendChart(container, trendData) {
 }
 
 // ========== 平台独立 Tab 渲染 ==========
-function renderPlatformTab(platformId) {
+// ===== 平台页顶部题材洞察（2026-09-07：长佩总榜版式扩展到 晋江月榜/七猫）=====
+// 流行总结横幅：blocks 为空 → 占位一行；有内容 → 按 block 数动态等宽分列
+function summaryBannerHTML(summaryData) {
+  const blocks = (summaryData?.blocks || []).filter(b => b?.title && b?.lines?.length);
+  const head = `<div class="summary-banner-head">
+      <span class="summary-banner-title">📝 今日流行总结</span>
+      ${summaryData?.date ? `<span class="summary-banner-date">${summaryData.date}</span>` : ''}
+    </div>`;
+  if (!blocks.length) {
+    return `<div class="summary-banner">${head}<div style="color:var(--text-dim);font-size:13px;">每日 08:00 自动生成 · 明日可见</div></div>`;
+  }
+  const cols = Math.min(blocks.length, 3);
+  const grid = blocks.map(b => `
+        <div class="summary-block">
+          <div class="summary-block-title">${b.title}</div>
+          ${b.lines.map(l => `<div class="summary-line">${l}</div>`).join('')}
+        </div>`).join('');
+  return `<div class="summary-banner">${head}<div class="summary-banner-grid cols${cols}">${grid}</div></div>`;
+}
+
+// 题材/频道分布 → 概览页同款百分比条卡（独立卡，默认整行宽）
+function distCardHTML(tagStats, platform, label) {
+  const entries = Object.entries(tagStats || {}).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  if (!entries.length) return '';
+  const total = entries.reduce((s, [, v]) => s + v, 0);
+  return `<div class="insight-card">
+      <div class="insight-card-title">${label}</div>
+      ${entries.map(([tag, count]) => {
+        const pctv = total > 0 ? Math.round(count / total * 100) : 0;
+        return `
+        <div class="tag-bar-container">
+          <div class="tag-bar-label">
+            <span>${tag}</span>
+            <span>${count}本 (${pctv}%)</span>
+          </div>
+          <div class="tag-bar">
+            <div class="tag-bar-fill" style="width:${pctv}%;background:${platform.color};"></div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`;
+}
+
+// 题材洞察区：流行总结横幅（置顶）+ 分布卡（单榜/无 insights 平台：晋江月榜、七猫女频）
+function topInsightHTML(summaryData, tagStats, platform, distLabel) {
+  return `<div class="insight-section" style="margin-bottom:20px;">
+      <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
+      ${summaryBannerHTML(summaryData)}
+      ${distCardHTML(tagStats, platform, distLabel)}
+    </div>`;
+}
+
+async function renderPlatformTab(platformId) {
   const platform = PLATFORMS.find(p => p.id === platformId);
   const data = state.data[platformId];
   const loadingEl = document.getElementById(`${platformId}Loading`);
@@ -1875,6 +1991,20 @@ function renderPlatformTab(platformId) {
   // 获取该平台实际抓到的天数
   const coverageDays = (state.history[platformId]?.index?.length) || 0;
 
+  // 七猫单榜页：加载今日流行总结（data/qimao/summary.json 由 platform-summary.js 每日 AI 生成；无则横幅占位）
+  const summaryData = platformId === 'qimao' ? await loadJSON('data/qimao/summary.json') : null;
+  // 顶部模块：七猫 → 长佩同款 题材洞察（横幅 + 题材分布百分比条；单榜无 insights 故不展示 7天/蓝海卡）
+  const topBlockHTML = platformId === 'qimao'
+    ? topInsightHTML(summaryData, tagStats, platform, '📊 题材分布')
+    : `<div class="tag-stats-bar">
+        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+          <span class="tag-stat-item">
+            <span class="tag-name">${tag}</span>
+            <span class="tag-count">${count}</span>
+          </span>
+        `).join('')}
+      </div>`;
+
   // 构建页面
   contentEl.innerHTML = `
     <div class="platform-header">
@@ -1884,15 +2014,7 @@ function renderPlatformTab(platformId) {
       </div>
     </div>
 
-    <!-- 题材统计 — 纯展示样式 -->
-    <div class="tag-stats-bar">
-      ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-        <span class="tag-stat-item">
-          <span class="tag-name">${tag}</span>
-          <span class="tag-count">${count}</span>
-        </span>
-      `).join('')}
-    </div>
+    ${topBlockHTML}
 
     <!-- 筛选工具栏 -->
     <div class="filter-bar">
@@ -2458,6 +2580,9 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
   const scoreData = await loadJSON('data/jjwxc/score1000.json');
   state.data.jjwxc_score = scoreData;
 
+  // 今日流行总结（data/jjwxc/summary.json 由 platform-summary.js 每日 AI 生成；无则横幅占位）
+  const summaryData = await loadJSON('data/jjwxc/summary.json');
+
   // 月榜 Top50 数据
   const books = data.books;
   const tagStats = data.tag_stats || {};
@@ -2493,14 +2618,8 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
     <div class="sub-tab-content active" id="jjwxc-sub-monthrank">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
-      <div class="tag-stats-bar">
-        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-          <span class="tag-stat-item">
-            <span class="tag-name">${tag}</span>
-            <span class="tag-count">${count}</span>
-          </span>
-        `).join('')}
-      </div>
+      <!-- 题材洞察（与长佩总榜同版式：流行总结横幅 + 频道分布百分比条；晋江月榜无 insights 故不展示 7天/蓝海卡） -->
+      ${topInsightHTML(summaryData, tagStats, platform, '📊 频道分布')}
 
       <div class="filter-bar">
         <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-jjwxc" oninput="filterBooks('jjwxc')">
