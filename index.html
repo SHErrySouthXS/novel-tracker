@@ -1116,11 +1116,44 @@ const CHART_COLORS = [
 ];
 
 // ========== 数据加载 ==========
+/* ========== 标签归一化：界面统一显示「耽美」（数据里晋江/长佩原词为「纯爱」） ========== */
+const TAG_TERM_MAP = { '纯爱': '耽美' };
+function normTag(t) { return TAG_TERM_MAP[t] || t; }
+function mergeStats(stats) {
+  const out = {};
+  for (const [k, v] of Object.entries(stats)) {
+    const nk = normTag(k);
+    out[nk] = (out[nk] || 0) + v;
+  }
+  return out;
+}
+function normalizeTags(o) {
+  if (!o || typeof o !== 'object') return o;
+  if (Array.isArray(o.books)) {
+    o.books.forEach(b => {
+      if (!b || typeof b !== 'object') return;
+      if (b.primary_tag) b.primary_tag = normTag(b.primary_tag);
+      if (Array.isArray(b.all_tags)) b.all_tags = b.all_tags.map(normTag);
+      if (b.channel) b.channel = normTag(b.channel);
+      if (b.gender) b.gender = normTag(b.gender);
+    });
+  }
+  Object.keys(o).forEach(k => {
+    const v = o[k];
+    if (v && typeof v === 'object' && !Array.isArray(v) && /(tag_stats|gender_stats|stats)$/.test(k)) {
+      o[k] = mergeStats(v);
+    }
+  });
+  return o;
+}
+/* AI 文案兜底替换（仅用于展示层，不改原始 JSON） */
+function cx(s) { return (s || '').replace(/纯爱/g, '耽美'); }
+
 async function loadJSON(path) {
   try {
     const res = await fetch(path);
     if (!res.ok) return null;
-    return await res.json();
+    return normalizeTags(await res.json());
   } catch { return null; }
 }
 
@@ -1348,12 +1381,12 @@ function renderPlatformSummary() {
   if (hasAI && ai.overall_summary) {
     const overallSection = document.getElementById('aiOverallSection');
     overallSection.style.display = 'block';
-    document.getElementById('aiOverallSummary').textContent = ai.overall_summary;
+    document.getElementById('aiOverallSummary').textContent = cx(ai.overall_summary);
     
     // 信号标签
     if (ai.notable_signals?.length > 0) {
       document.getElementById('aiSignals').innerHTML = ai.notable_signals.map(s => 
-        `<span style="display:inline-block;padding:4px 12px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.25);border-radius:6px;font-size:12px;color:#ffd700;cursor:default;">🔔 ${s}</span>`
+        `<span style="display:inline-block;padding:4px 12px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.25);border-radius:6px;font-size:12px;color:#ffd700;cursor:default;">🔔 ${cx(s)}</span>`
       ).join('');
     }
   }
@@ -1371,8 +1404,8 @@ function renderPlatformSummary() {
       return `
         <div class="summary-item ${p.id}">
           <h4>${p.icon} ${p.name}</h4>
-          <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${pa.headline || ''}</p>
-          <p>${pa.analysis || ''}</p>
+          <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${cx(pa.headline) || ''}</p>
+          <p>${cx(pa.analysis) || ''}</p>
         </div>
       `;
     }
@@ -1391,7 +1424,7 @@ function renderPlatformSummary() {
   if (hasAI && ai.cross_platform_insights) {
     const crossSection = document.getElementById('crossPlatformSection');
     crossSection.style.display = 'block';
-    document.getElementById('crossPlatformText').textContent = ai.cross_platform_insights;
+    document.getElementById('crossPlatformText').textContent = cx(ai.cross_platform_insights);
   }
 }
 
@@ -1418,13 +1451,13 @@ function generatePlatformInsight(platformId, data) {
     const platformAudience = {
       fanqie: { desc: '番茄小说以免费阅读模式吸引了大量下沉市场用户', maleReason: '男性向轻阅读内容更符合碎片化消费场景', femaleReason: '女性向甜宠、爽文迎合了年轻女性快消需求' },
       qidian: { desc: '起点作为付费网文龙头平台，用户粘性高、付费意愿强', maleReason: '男频是起点的传统强势领域，长期积累了大量硬核书迷', femaleReason: '起点女频近年发力明显，持续争夺市场份额' },
-      jjwxc: { desc: '晋江以原创女性向内容为核心定位', pureaiReason: '纯爱（BL）是晋江最具标志性的品类，IP改编热度高', yanqingReason: '言情仍是晋江基盘，古言/现代言情受众稳定' },
+      jjwxc: { desc: '晋江以原创女性向内容为核心定位', pureaiReason: '耽美（BL）是晋江最具标志性的品类，IP改编热度高', yanqingReason: '言情仍是晋江基盘，古言/现代言情受众稳定' },
     };
     const aud = platformAudience[platformId] || {};
     
     if (topPct >= 60) {
       if (platformId === 'jjwxc') {
-        const reason = topGender === '纯爱' ? (aud.pureaiReason || '') : (aud.yanqingReason || '');
+        const reason = topGender === '耽美' ? (aud.pureaiReason || '') : (aud.yanqingReason || '');
         insights.push(`${topGender}类作品占比${topPct}%，主导地位明显。${reason ? reason + '。' : ''}`);
       } else {
         const reason = topGender.includes('男') ? (aud.maleReason || '') : (aud.femaleReason || '');
@@ -1450,7 +1483,7 @@ function generatePlatformInsight(platformId, data) {
       '游戏': '游戏题材的火热反映了Z世代读者群体的娱乐偏好',
       '历史': '历史类作品往往字数较长、读者忠诚度高',
       '武侠': '武侠是经典但较小众的品类，核心粉丝忠实',
-      '纯爱': '纯爱（BL）内容的IP改编价值极高，是影视剧热门选题',
+      '耽美': '耽美（BL）内容的IP改编价值极高，是影视剧热门选题',
       '言情': '言情是女性向阅读的基石品类，市场规模最大',
       '甜文': '甜宠文迎合了读者的情感慰藉需求，完读率通常很高',
       '快穿': '快穿题材节奏快、设定新颖，是近年女频的热门方向',
@@ -2452,9 +2485,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
 
     <div class="sub-tab-nav">
       <button class="sub-tab-btn active" data-subtab="all" onclick="switchChangpeiSubTab('all')">📊 总榜畅销榜</button>
-      <button class="sub-tab-btn" data-subtab="purelove" onclick="switchChangpeiSubTab('purelove')">💜 纯爱畅销榜</button>
-      <button class="sub-tab-btn" data-subtab="new" onclick="switchChangpeiSubTab('new')">🆕 纯爱新书榜</button>
-      <button class="sub-tab-btn" data-subtab="completed" onclick="switchChangpeiSubTab('completed')">✅ 纯爱完结榜</button>
+      <button class="sub-tab-btn" data-subtab="purelove" onclick="switchChangpeiSubTab('purelove')">💜 耽美畅销榜</button>
+      <button class="sub-tab-btn" data-subtab="new" onclick="switchChangpeiSubTab('new')">🆕 耽美新书榜</button>
+      <button class="sub-tab-btn" data-subtab="completed" onclick="switchChangpeiSubTab('completed')">✅ 耽美完结榜</button>
     </div>
 
     <!-- 总榜畅销榜 -->
@@ -2549,12 +2582,12 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
       </div>
     </div>
 
-    <!-- 纯爱畅销榜 -->
+    <!-- 耽美畅销榜 -->
     <div class="sub-tab-content" id="changpei-sub-purelove">
       ${!pureloveBseller?.books?.length
-        ? '<div class="empty-state">纯爱畅销榜数据尚未抓取</div>'
+        ? '<div class="empty-state">耽美畅销榜数据尚未抓取</div>'
         : `
-          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">纯爱·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">耽美·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
           <div class="tag-stats-bar">
             ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2573,12 +2606,12 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         `}
     </div>
 
-    <!-- 纯爱新书榜 -->
+    <!-- 耽美新书榜 -->
     <div class="sub-tab-content" id="changpei-sub-new">
       ${!pureloveNew?.books?.length
-        ? '<div class="empty-state">纯爱新书榜数据尚未抓取</div>'
+        ? '<div class="empty-state">耽美新书榜数据尚未抓取</div>'
         : `
-          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">纯爱·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">耽美·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
           <div class="tag-stats-bar">
             ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2597,12 +2630,12 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         `}
     </div>
 
-    <!-- 纯爱完结榜 -->
+    <!-- 耽美完结榜 -->
     <div class="sub-tab-content" id="changpei-sub-completed">
       ${!pureloveCompleted?.books?.length
-        ? '<div class="empty-state">纯爱完结榜数据尚未抓取</div>'
+        ? '<div class="empty-state">耽美完结榜数据尚未抓取</div>'
         : `
-          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">纯爱·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">耽美·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
           <div class="tag-stats-bar">
             ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
