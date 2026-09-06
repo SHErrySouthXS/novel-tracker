@@ -980,10 +980,18 @@
       font-family: 'LXGW WenKai', 'MiSans', 'PingFang SC', serif;
     }
 
-    /* 6) 三平台始终并列（原 CSS ≤1200px 塌 2 列 → 3 平台变 2+1；881px 以上保持 3 列） */
-    @media (min-width: 881px) {
+    /* 6) 概览平台区版式（现 4 平台并列：晋江/长佩/番茄/七猫）
+       原 CSS ≤1200px 塌 2 列；3 平台时期 881px+ 恒 3 列。
+       现 4 平台：>1200px 整行 4 列；881–1200px 2×2 整齐排布
+       （杜绝 3+1 / 2+1 孤卡）；≤880px 交给原 CSS 单列/堆叠。 */
+    @media (min-width: 1201px) {
       .dash-grid, .tag-distribution, .summary-items, .new-entries-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
+    @media (min-width: 881px) and (max-width: 1200px) {
+      .dash-grid, .tag-distribution, .summary-items, .new-entries-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
       }
     }
 
@@ -1030,6 +1038,7 @@
       <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
       <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
       <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
+      <button class="tab-btn" data-tab="qimao" onclick="switchTab('qimao')">🐱 七猫小说</button>
     </div>
   </div>
 </div>
@@ -1105,6 +1114,15 @@
     <div id="fanqieContent" style="display:none;"></div>
   </div>
 
+  <!-- ===== 七猫 Tab ===== -->
+  <div class="tab-content" id="tab-qimao">
+    <div class="loading" id="qimaoLoading">
+      <div class="spinner"></div>
+      <div>正在加载七猫小说数据...</div>
+    </div>
+    <div id="qimaoContent" style="display:none;"></div>
+  </div>
+
   <!-- ===== 晋江 Tab ===== -->
   <div class="tab-content" id="tab-jjwxc">
     <div class="loading" id="jjwxcLoading">
@@ -1137,6 +1155,7 @@ const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
   { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
+  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '男女频大热榜 Top40' },
 ];
 
 const CHART_COLORS = [
@@ -1187,8 +1206,46 @@ async function loadJSON(path) {
   } catch { return null; }
 }
 
+// ===== 七猫数据适配：爬虫输出男女频分榜（girl_hot/boy_hot，各 Top20），
+// 无 latest.json。此处合并为单一数据集（按 popularity 全局热度排序、rank 重编 1-40），
+// 使下游渲染（概览卡/题材分布/新上榜/平台页列表与筛选）全部通用生效。=====
+async function loadQimaoData() {
+  const [girl, boy] = await Promise.all([
+    loadJSON('data/qimao/girl_hot.json'),
+    loadJSON('data/qimao/boy_hot.json')
+  ]);
+  if (!girl?.books || !boy?.books) return null;
+
+  const tag = (b, g) => ({ ...b, gender: g, channel: b.channel || b.primary_tag || '' });
+  const all = [
+    ...girl.books.map(b => tag(b, '女频')),
+    ...boy.books.map(b => tag(b, '男频')),
+  ].sort((a, b) => (Number(b.popularity) || 0) - (Number(a.popularity) || 0))
+   .map((b, i) => ({ ...b, rank: i + 1 }));
+
+  // 合并 tag_stats / status_stats（同键计数相加）
+  const sumStats = (x, y) => {
+    const o = { ...(x || {}) };
+    for (const [k, v] of Object.entries(y || {})) o[k] = (o[k] || 0) + v;
+    return o;
+  };
+
+  return {
+    books: all,
+    total_count: all.length,
+    tag_stats: sumStats(girl.tag_stats, boy.tag_stats),
+    status_stats: sumStats(girl.status_stats, boy.status_stats),
+    gender_stats: { 女频: girl.books.length, 男频: boy.books.length },
+    platform: girl.platform, platform_name: girl.platform_name,
+    source: girl.source, source_url: girl.source_url,
+    update_date: girl.update_date, update_time: girl.update_time,
+  };
+}
+
 async function loadAllData() {
-  const promises = PLATFORMS.map(p => loadJSON(`data/${p.id}/latest.json`));
+  const promises = PLATFORMS.map(p => p.id === 'qimao'
+    ? loadQimaoData()
+    : loadJSON(`data/${p.id}/latest.json`));
   const results = await Promise.all(promises);
   
   PLATFORMS.forEach((p, i) => {
