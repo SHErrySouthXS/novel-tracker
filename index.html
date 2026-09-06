@@ -978,6 +978,13 @@
     .platform-summary h3, .trend-section h3, .dash-card-title {
       font-family: 'LXGW WenKai', 'MiSans', 'PingFang SC', serif;
     }
+
+    /* 6) 三平台始终并列（原 CSS ≤1200px 塌 2 列 → 3 平台变 2+1；881px 以上保持 3 列） */
+    @media (min-width: 881px) {
+      .dash-grid, .tag-distribution, .summary-items, .new-entries-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+    }
   </style>
 </head>
 <body>
