@@ -832,10 +832,10 @@
     
     <div class="tab-nav">
       <button class="tab-btn active" data-tab="dashboard" onclick="switchTab('dashboard')">📊 概览</button>
-      <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
-      <button class="tab-btn" data-tab="qidian" onclick="switchTab('qidian')">📖 起点中文网</button>
       <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
       <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
+      <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
+      <button class="tab-btn" data-tab="qidian" onclick="switchTab('qidian')">📖 起点中文网</button>
     </div>
   </div>
 </div>
@@ -928,22 +928,31 @@
     </div>
     <div id="jjwxcContent" style="display:none;"></div>
   </div>
+
+  <!-- ===== 长佩 Tab ===== -->
+  <div class="tab-content" id="tab-changpei">
+    <div class="loading" id="changpeiLoading">
+      <div class="spinner"></div>
+      <div>正在加载长佩文学数据...</div>
+    </div>
+    <div id="changpeiContent" style="display:none;"></div>
+  </div>
 </div>
 
 <script>
 // ========== 全局状态 ==========
 const state = {
-  data: {},        // { fanqie, qidian, jjwxc }
+  data: {},        // { fanqie, qidian, jjwxc, changpei }
   history: {},     // { fanqie: { index, data }, ... }
   analysis: null,  // AI 分析结果
   loaded: {},
 };
 
 const PLATFORMS = [
-  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
-  { id: 'qidian', name: '起点中文网', icon: '📖', color: '#c83c23', source: '畅销榜 Top50' },
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
+  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
+  { id: 'qidian', name: '起点中文网', icon: '📖', color: '#c83c23', source: '畅销榜 Top50' },
 ];
 
 const CHART_COLORS = [
