@@ -233,7 +233,7 @@
     /* ===== 题材分布对比 — 纯展示数据卡片 ===== */
     .tag-distribution {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
       margin-bottom: 24px;
     }
@@ -281,7 +281,7 @@
     }
     .new-entries-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
     .new-entries-column {
@@ -361,7 +361,7 @@
     }
     .summary-items {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
     .summary-item {
@@ -692,6 +692,9 @@
     }
 
     /* ===== Responsive ===== */
+    @media (max-width: 1200px) {
+      .dash-grid, .tag-distribution, .summary-items, .new-entries-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 900px) {
       .dash-grid, .tag-distribution, .summary-items, .new-entries-grid { grid-template-columns: 1fr; }
       .tab-nav { flex-wrap: wrap; }
