@@ -1052,7 +1052,14 @@
     .summary-banner-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+    }
+    /* 三 block 之间竖分割线，形成三个独立分区（同在一个 banner 内） */
+    .summary-block {
+      padding-right: 16px;
+    }
+    .summary-block + .summary-block {
+      padding-left: 16px;
+      border-left: 1px solid var(--border);
     }
     .summary-block-title {
       font-size: 13px;
@@ -1070,6 +1077,44 @@
     .summary-line:last-child { border-bottom: none; }
     @media (max-width: 880px) {
       .summary-banner-grid { grid-template-columns: 1fr; }
+      .summary-block { padding-right: 0; }
+      .summary-block + .summary-block {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding-top: 10px;
+        margin-top: 6px;
+      }
+    }
+
+    /* 11) 长佩总榜 · 题材分布百分比条卡（概览页同款 tag-bar 视觉） */
+    .dist-card-sub {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 10px;
+    }
+    .insight-card .tag-bar-container {
+      margin-bottom: 7px;
+    }
+    .insight-card .tag-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+    .insight-card .tag-bar-label span:first-child { color: var(--text); }
+    .insight-card .tag-bar-label span:last-child { color: var(--text-dim); }
+    .insight-card .tag-bar {
+      height: 5px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .insight-card .tag-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.6s ease;
+      opacity: 0.55;
     }
   </style>
 </head>
@@ -2609,6 +2654,28 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
     </div>`;
   }
 
+  // 题材分布 → 概览页同款百分比条（长佩平台色）
+  function distBarHTML() {
+    const entries = Object.entries(tagStats).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    const total = entries.reduce((s, [, v]) => s + v, 0);
+    return `<div class="insight-card">
+      <div class="insight-card-title">📊 题材分布</div>
+      ${entries.map(([tag, count]) => {
+        const pct = total > 0 ? Math.round(count / total * 100) : 0;
+        return `
+        <div class="tag-bar-container">
+          <div class="tag-bar-label">
+            <span>${tag}</span>
+            <span>${count}本 (${pct}%)</span>
+          </div>
+          <div class="tag-bar">
+            <div class="tag-bar-fill" style="width:${pct}%;background:${platform.color};"></div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`;
+  }
+
   contentEl.innerHTML = `
     <div class="platform-header">
       <div>
@@ -2675,16 +2742,10 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
               : '<div style="color:var(--text-dim);font-size:13px;">暂无明显蓝海题材</div>'
             }
           </div>
-        </div>
-      </div>
 
-      <div class="tag-stats-bar">
-        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-          <span class="tag-stat-item">
-            <span class="tag-name">${tag}</span>
-            <span class="tag-count">${count}</span>
-          </span>
-        `).join('')}
+          <!-- 题材分布（概览同款百分比条） -->
+          ${distBarHTML()}
+        </div>
       </div>
 
       <div class="filter-bar">
