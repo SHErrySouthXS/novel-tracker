@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小说行业头部内容追踪 · Novel Tracker</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='0.5' y='8' width='4' height='8' rx='0.5' fill='%23e6488a'/><rect x='6' y='4' width='4' height='12' rx='0.5' fill='%23ff6b35'/><rect x='11.5' y='6' width='4' height='10' rx='0.5' fill='%23c83c23'/><rect x='0.5' y='7' width='4' height='1.5' fill='%23ffd700'/><rect x='6' y='3' width='4' height='1.5' fill='%23ffd700'/><rect x='11.5' y='5' width='4' height='1.5' fill='%23ffd700'/></svg>">
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #1a1d28;
+      --card-hover: #222636;
+      --border: #2a2e3d;
+      --text: #e4e6eb;
+      --text-dim: #8b8fa3;
+      --accent-fanqie: #ff6b35;
+      --accent-qidian: #c83c23;
+      --accent-jjwxc: #e6488a;
+      --accent-changpei: #6c5ce7;
+      --green: #2ecc71;
+      --red: #e74c3c;
+      --gold: #ffd700;
+      --silver: #c0c0c0;
+      --bronze: #cd7f32;
+      --tag-bg: rgba(255,255,255,0.06);
+      --tag-border: rgba(255,255,255,0.1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ===== Header ===== */
+    .header {
+      background: linear-gradient(135deg, #1a1d28 0%, #252940 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ff6b35, #e6488a, #c83c23);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header-subtitle {
+      color: var(--text-dim);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+    .update-info {
+      color: var(--text-dim);
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    /* ===== Tab Navigation ===== */
+    .tab-nav {
+      display: flex;
+      gap: 4px;
+      margin-top: 16px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 4px;
+      width: fit-content;
+    }
+    .tab-btn {
+      padding: 8px 20px;
+      border: none;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .tab-btn:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+    .tab-btn.active {
+      color: #fff;
+      font-weight: 600;
+    }
+    .tab-btn.active[data-tab="dashboard"] { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .tab-btn.active[data-tab="fanqie"] { background: var(--accent-fanqie); }
+    .tab-btn.active[data-tab="qidian"] { background: var(--accent-qidian); }
+    .tab-btn.active[data-tab="jjwxc"] { background: var(--accent-jjwxc); }
+    .tab-btn.active[data-tab="changpei"] { background: var(--accent-changpei); }
+
+    /* ===== Main Content ===== */
+    .main { max-width: 1400px; margin: 0 auto; padding: 24px; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* ===== Dashboard ===== */
+    .dash-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .dash-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .dash-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .dash-card.fanqie::before { background: var(--accent-fanqie); }
+    .dash-card.qidian::before { background: var(--accent-qidian); }
+    .dash-card.jjwxc::before { background: var(--accent-jjwxc); }
+    .dash-card.changpei::before { background: var(--accent-changpei); }
+    
+    .dash-card-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .dash-card-subtitle {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 16px;
+    }
+    .dash-top-list {
+      list-style: none;
+    }
+    .dash-top-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 13px;
+    }
+    .dash-top-list li:last-child { border-bottom: none; }
+    .dash-rank {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .dash-rank.r1 { background: var(--gold); color: #000; }
+    .dash-rank.r2 { background: var(--silver); color: #000; }
+    .dash-rank.r3 { background: var(--bronze); color: #fff; }
+    .dash-rank.rn { background: var(--tag-bg); color: var(--text-dim); }
+    .dash-book-name {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .dash-tag {
+      font-size: 11px;
+      color: var(--text-dim);
+      background: var(--tag-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    /* ===== Summary Insight Cards — 纯展示样式，不可点击 ===== */
+    .insight-section {
+      margin-bottom: 24px;
+    }
+    .insight-section h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .insight-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
+    }
+    .insight-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      /* 明确不可点击的视觉风格 */
+      cursor: default;
+      user-select: text;
+    }
+    .insight-card-title {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .insight-card-title .icon { font-size: 16px; }
+    .insight-card-value {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .insight-card-detail {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* ===== 题材分布对比 — 纯展示数据卡片 ===== */
+    .tag-distribution {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .tag-dist-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      cursor: default;
+    }
+    .tag-dist-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tag-bar-container {
+      margin-bottom: 8px;
+    }
+    .tag-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+    .tag-bar-label span:first-child { color: var(--text); }
+    .tag-bar-label span:last-child { color: var(--text-dim); }
+    .tag-bar {
+      height: 6px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .tag-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.6s ease;
+    }
+
+    /* ===== 新上榜作品（三站分列） ===== */
+    .new-entries {
+      margin-bottom: 24px;
+    }
+    .new-entries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .new-entries-column {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .new-entries-column::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .new-entries-column.fanqie::before { background: var(--accent-fanqie); }
+    .new-entries-column.qidian::before { background: var(--accent-qidian); }
+    .new-entries-column.jjwxc::before { background: var(--accent-jjwxc); }
+    .new-entries-col-header {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .new-entries-col-count {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+    .new-entry-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: default;
+    }
+    .new-entry-item:last-child { border-bottom: none; }
+    .new-entry-info { flex: 1; min-width: 0; }
+    .new-entry-name {
+      font-size: 13px;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .new-entry-meta {
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+    .new-entry-rank {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+    .new-entries-empty {
+      font-size: 12px;
+      color: var(--text-dim);
+      padding: 12px 0;
+    }
+
+    /* ===== 站点特点总结 ===== */
+    .platform-summary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      cursor: default;
+    }
+    .platform-summary h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .summary-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .summary-item {
+      padding: 14px;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+      border-left: 3px solid;
+    }
+    .summary-item.fanqie { border-left-color: var(--accent-fanqie); }
+    .summary-item.qidian { border-left-color: var(--accent-qidian); }
+    .summary-item.jjwxc { border-left-color: var(--accent-jjwxc); }
+    .summary-item h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .summary-item p {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    /* ===== Platform Tab (各站独立页面) ===== */
+    .platform-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .platform-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .platform-meta {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* ===== 题材统计栏 — 纯展示，非按钮样式 ===== */
+    .tag-stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+      padding: 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      cursor: default;
+    }
+    .tag-stats-bar::before {
+      content: '📊 题材分布';
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 4px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .tag-stat-item {
+      /* 纯展示 pill — 无 hover 效果、无 cursor pointer */
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--text-dim);
+      cursor: default;
+      user-select: text;
+      /* 明确去掉按钮感 */
+      pointer-events: none;
+    }
+    .tag-stat-item .tag-name { color: var(--text); font-weight: 500; }
+    .tag-stat-item .tag-count {
+      background: rgba(255,255,255,0.08);
+      padding: 1px 6px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* ===== Filter / Search Bar ===== */
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .search-input {
+      flex: 1;
+      min-width: 200px;
+      max-width: 360px;
+      padding: 8px 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-input:focus { border-color: rgba(255,255,255,0.3); }
+    .search-input::placeholder { color: var(--text-dim); }
+    
+    .filter-select {
+      padding: 8px 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+    }
+    .filter-select option { background: var(--card); }
+
+    .filter-btn {
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      color: var(--text-dim);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover { border-color: rgba(255,255,255,0.25); color: var(--text); }
+    .filter-btn.active {
+      background: rgba(255, 215, 0, 0.12);
+      border-color: rgba(255, 215, 0, 0.4);
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* ===== Book List ===== */
+    .book-list { display: flex; flex-direction: column; gap: 8px; }
+    .book-item {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
+      padding: 14px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: background 0.2s;
+    }
+    .book-item:hover { background: var(--card-hover); }
+
+    .book-rank {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .book-rank.r1 { background: linear-gradient(135deg, #ffd700, #ffb800); color: #000; }
+    .book-rank.r2 { background: linear-gradient(135deg, #c0c0c0, #a8a8a8); color: #000; }
+    .book-rank.r3 { background: linear-gradient(135deg, #cd7f32, #b8722d); color: #fff; }
+    .book-rank.rn { background: var(--tag-bg); color: var(--text-dim); }
+
+    .book-info { flex: 1; min-width: 0; display: flex; gap: 16px; align-items: flex-start; }
+    .book-left { flex-shrink: 0; min-width: 180px; max-width: 280px; }
+    .book-name {
+      font-size: 15px;
+      font-weight: 600;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .book-name a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .book-name a:hover { text-decoration: underline; }
+    .book-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--text-dim);
+      flex-wrap: wrap;
+    }
+    .book-meta .sep { color: rgba(255,255,255,0.15); }
+    .book-tags {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .book-tag {
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: 4px;
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: var(--text-dim);
+      cursor: default;
+    }
+    .book-tag.primary {
+      background: rgba(102, 126, 234, 0.15);
+      border-color: rgba(102, 126, 234, 0.3);
+      color: #8b9cf7;
+      font-weight: 500;
+    }
+
+    .book-abstract {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.6;
+      flex: 1;
+      min-width: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-top: 2px;
+      border-left: 1px solid rgba(255,255,255,0.06);
+      padding-left: 16px;
+    }
+
+    /* ===== 晋江积分榜Top1000 · 单行横向布局（方案A）===== */
+    .score-item { align-items: center; padding: 10px 16px; }
+    .score-item .score-name { flex-shrink: 0; width: 210px; min-width: 210px; }
+    .score-item .book-meta { margin-top: 3px; }
+    .score-item .score-tags {
+      flex-shrink: 0; width: 320px;
+      display: flex; flex-wrap: wrap; gap: 4px;
+      align-content: center;
+      max-height: 46px; overflow: hidden;
+    }
+    .score-item .score-abs {
+      flex: 1; min-width: 0;
+      font-size: 12px; color: var(--text-dim);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      padding: 0 8px;
+    }
+    .score-item .score-num { flex-shrink: 0; width: 78px; text-align: right; line-height: 1.25; }
+    .score-item .score-val { color: #ffd700; font-weight: 700; font-size: 14px; display: block; }
+    .score-item .score-lbl { font-size: 10px; color: var(--text-dim); }
+    @media (max-width: 768px) {
+      .score-item { flex-wrap: wrap; align-items: flex-start; }
+      .score-item .score-name { width: 100%; min-width: 0; }
+      .score-item .score-tags { width: 100%; max-height: none; }
+      .score-item .score-abs { white-space: normal; padding: 0; }
+      .score-item .score-num { width: auto; text-align: left; }
+    }
+
+    .book-change {
+      flex-shrink: 0;
+      min-width: 54px;
+      text-align: center;
+      align-self: center;
+      line-height: 1.1;
+    }
+    .book-change .change-num {
+      font-size: 16px;
+      font-weight: 700;
+      display: block;
+    }
+    .book-change .change-label {
+      font-size: 10px;
+      color: var(--text-dim);
+      display: block;
+      margin-top: 1px;
+    }
+    .book-change.up .change-num { color: var(--green); }
+    .book-change.down .change-num { color: var(--red); }
+    .book-change.same .change-num { color: var(--text-dim); }
+    .book-change.new {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold);
+      padding-top: 4px;
+    }
+
+    /* 上榜天数列 */
+    .book-days {
+      flex-shrink: 0;
+      min-width: 48px;
+      text-align: center;
+      align-self: center;
+      line-height: 1.1;
+    }
+    .book-days .days-num {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffa94d;
+      display: block;
+    }
+    .book-days .days-label {
+      font-size: 10px;
+      color: var(--text-dim);
+      display: block;
+      margin-top: 1px;
+    }
+
+    /* 排序按钮 active 态 */
+    .filter-btn.sort-active {
+      background: rgba(255,169,77,0.18);
+      color: #ffa94d;
+      border-color: rgba(255,169,77,0.4);
+    }
+
+    /* ===== History Date Picker ===== */
+    .history-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .history-bar label {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) {
+      .dash-grid, .tag-distribution, .summary-items, .new-entries-grid { grid-template-columns: 1fr; }
+      .tab-nav { flex-wrap: wrap; }
+      .filter-bar { flex-direction: column; }
+      .search-input { max-width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .main { padding: 12px; }
+      .header-inner { padding: 0 12px; }
+      .book-item { flex-wrap: wrap; }
+      .book-info { flex-direction: column; }
+      .book-left { max-width: 100%; }
+      .book-abstract { border-left: none; padding-left: 0; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 8px; margin-top: 6px; -webkit-line-clamp: 2; }
+      .insight-cards { grid-template-columns: 1fr; }
+      .new-entry-list { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Sub-Tab Navigation (起点子榜切换) ===== */
+    .sub-tab-nav {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 3px;
+      width: fit-content;
+    }
+    .sub-tab-btn {
+      padding: 6px 16px;
+      border: none;
+      background: transparent;
+      color: var(--text-dim);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .sub-tab-btn:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+    .sub-tab-btn.active {
+      color: #fff;
+      background: var(--accent-qidian);
+      font-weight: 600;
+    }
+    #jjwxcContent .sub-tab-btn.active { background: var(--accent-jjwxc); }
+    #fanqieContent .sub-tab-btn.active { background: var(--accent-fanqie); }
+    .sub-tab-content { display: none; }
+    .sub-tab-content.active { display: block; }
+
+    /* ===== Loading ===== */
+    .loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-dim);
+    }
+    .loading .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent-fanqie);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 12px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    /* ===== Trend Chart Area ===== */
+    .trend-section {
+      margin-bottom: 24px;
+    }
+    .trend-section h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .trend-chart-container {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      min-height: 300px;
+      position: relative;
+    }
+    .trend-chart-placeholder {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+
+    /* Simple SVG chart styles */
+    .chart-svg {
+      width: 100%;
+      height: 280px;
+    }
+    .chart-svg text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .chart-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+      justify-content: center;
+    }
+    .chart-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--text-dim);
+      cursor: default;
+    }
+    .chart-legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <h1>📚 小说行业头部内容追踪</h1>
+    <div class="header-subtitle">番茄小说 · 起点中文网 · 晋江文学城 — 每日 Top50 榜单监测</div>
+    <div class="update-info" id="updateInfo">加载中...</div>
+    
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="dashboard" onclick="switchTab('dashboard')">📊 概览</button>
+      <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
+      <button class="tab-btn" data-tab="qidian" onclick="switchTab('qidian')">📖 起点中文网</button>
+      <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
+      <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <!-- ===== Dashboard Tab ===== -->
+  <div class="tab-content active" id="tab-dashboard">
+    <div class="loading" id="dashLoading">
+      <div class="spinner"></div>
+      <div>正在加载数据...</div>
+    </div>
+    <div id="dashContent" style="display:none;">
+      <!-- 快速统计卡片 -->
+      <div class="insight-section">
+        <h3>📈 今日快照</h3>
+        <div class="insight-cards" id="insightCards"></div>
+      </div>
+
+      <!-- 四站 Top10 速览 -->
+      <div class="dash-grid" id="dashTopGrid"></div>
+
+      <!-- 题材分布对比 -->
+      <div class="insight-section">
+        <h3>🎯 题材分布对比</h3>
+        <div class="tag-distribution" id="tagDistribution"></div>
+      </div>
+
+      <!-- 新上榜作品（三站分列） -->
+      <div class="new-entries">
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;">🆕 今日新上榜作品</h3>
+        <div class="new-entries-grid" id="newEntryGrid"></div>
+      </div>
+
+      <!-- AI 总览（如有 AI 分析） -->
+      <div id="aiOverallSection" style="display:none;margin-bottom:24px;">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;">
+          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;">🤖 AI 每日洞察</h3>
+          <p id="aiOverallSummary" style="font-size:14px;color:var(--text);line-height:1.8;"></p>
+          <div id="aiSignals" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;"></div>
+        </div>
+      </div>
+
+      <!-- 各站内容特点总结 -->
+      <div class="platform-summary" id="platformSummary">
+        <h3>💡 各站内容特点</h3>
+        <div class="summary-items" id="summaryItems"></div>
+      </div>
+
+      <!-- 跨平台对比洞察（AI） -->
+      <div id="crossPlatformSection" style="display:none;margin-bottom:24px;">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;">
+          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;">🔄 跨平台对比</h3>
+          <p id="crossPlatformText" style="font-size:13px;color:var(--text-dim);line-height:1.8;"></p>
+        </div>
+      </div>
+
+      <!-- 题材趋势折线图 -->
+      <div class="trend-section">
+        <h3>📉 题材趋势变化（近7日）</h3>
+        <div class="trend-chart-container" id="trendChart">
+          <div class="trend-chart-placeholder">需要至少2天历史数据才能展示趋势</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 番茄 Tab ===== -->
+  <div class="tab-content" id="tab-fanqie">
+    <div class="loading" id="fanqieLoading">
+      <div class="spinner"></div>
+      <div>正在加载番茄小说数据...</div>
+    </div>
+    <div id="fanqieContent" style="display:none;"></div>
+  </div>
+
+  <!-- ===== 起点 Tab ===== -->
+  <div class="tab-content" id="tab-qidian">
+    <div class="loading" id="qidianLoading">
+      <div class="spinner"></div>
+      <div>正在加载起点中文网数据...</div>
+    </div>
+    <div id="qidianContent" style="display:none;"></div>
+  </div>
+
+  <!-- ===== 晋江 Tab ===== -->
+  <div class="tab-content" id="tab-jjwxc">
+    <div class="loading" id="jjwxcLoading">
+      <div class="spinner"></div>
+      <div>正在加载晋江文学城数据...</div>
+    </div>
+    <div id="jjwxcContent" style="display:none;"></div>
+  </div>
+</div>
+
+<script>
+// ========== 全局状态 ==========
+const state = {
+  data: {},        // { fanqie, qidian, jjwxc }
+  history: {},     // { fanqie: { index, data }, ... }
+  analysis: null,  // AI 分析结果
+  loaded: {},
+};
+
+const PLATFORMS = [
+  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
+  { id: 'qidian', name: '起点中文网', icon: '📖', color: '#c83c23', source: '畅销榜 Top50' },
+  { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
+  { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
+];
+
+const CHART_COLORS = [
+  '#667eea', '#e6488a', '#ff6b35', '#2ecc71', '#ffd700',
+  '#9b59b6', '#3498db', '#e74c3c', '#1abc9c', '#f39c12',
+  '#8e44ad', '#2980b9', '#d35400', '#27ae60', '#c0392b',
+];
+
+// ========== 数据加载 ==========
+async function loadJSON(path) {
+  try {
+    const res = await fetch(path);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch { return null; }
+}
+
+async function loadAllData() {
+  const promises = PLATFORMS.map(p => loadJSON(`data/${p.id}/latest.json`));
+  const results = await Promise.all(promises);
+  
+  PLATFORMS.forEach((p, i) => {
+    state.data[p.id] = results[i];
+  });
+  
+  // 也尝试加载历史索引
+  for (const p of PLATFORMS) {
+    try {
+      const idx = await loadJSON(`data/${p.id}/history_index.json`);
+      state.history[p.id] = { index: idx || [] };
+    } catch { state.history[p.id] = { index: [] }; }
+  }
+
+  // 月度榜单的月份索引（起点收藏榜 / 晋江积分榜Top1000）
+  try {
+    const ci = await loadJSON('data/qidian/collection_index.json');
+    state.history.qidian_collection = { index: ci || [] };
+  } catch { state.history.qidian_collection = { index: [] }; }
+  try {
+    const si = await loadJSON('data/jjwxc/score1000_index.json');
+    state.history.jjwxc_score = { index: si || [] };
+  } catch { state.history.jjwxc_score = { index: [] }; }
+  try {
+    const pi = await loadJSON('data/fanqie/peak_index.json');
+    state.history.fanqie_peak = { index: pi || [] };
+  } catch { state.history.fanqie_peak = { index: [] }; }
+
+  // 加载 AI 分析结果
+  state.analysis = await loadJSON('data/analysis.json');
+}
+
+// ========== Tab 切换 ==========
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById(`tab-${tabId}`).classList.add('active');
+  document.querySelector(`.tab-btn[data-tab="${tabId}"]`).classList.add('active');
+
+  if (tabId === 'dashboard') {
+    renderDashboard();
+  } else {
+    renderPlatformTab(tabId);
+  }
+}
+
+// ========== Dashboard 渲染 ==========
+function renderDashboard() {
+  const hasAnyData = Object.values(state.data).some(d => d?.books?.length > 0);
+  if (!hasAnyData) {
+    document.getElementById('dashLoading').innerHTML = '<div class="empty-state">暂无数据，请先运行爬虫脚本获取数据</div>';
+    return;
+  }
+
+  document.getElementById('dashLoading').style.display = 'none';
+  document.getElementById('dashContent').style.display = 'block';
+
+  renderInsightCards();
+  renderDashTopGrid();
+  renderTagDistribution();
+  renderNewEntries();
+  renderPlatformSummary();
+  renderTrendChart();
+  updateUpdateInfo();
+}
+
+function updateUpdateInfo() {
+  const times = PLATFORMS.map(p => state.data[p.id]?.update_time).filter(Boolean);
+  if (times.length > 0) {
+    document.getElementById('updateInfo').textContent = `最近更新: ${times[0]} | 仅供学习研究使用`;
+  }
+}
+
+function renderInsightCards() {
+  const container = document.getElementById('insightCards');
+  const cards = [];
+
+  // 总监控书目数
+  let totalBooks = 0;
+  PLATFORMS.forEach(p => { totalBooks += state.data[p.id]?.books?.length || 0; });
+  cards.push({
+    icon: '📚', title: '总监控书目', value: totalBooks,
+    detail: PLATFORMS.map(p => `${p.name}: ${state.data[p.id]?.books?.length || 0}本`).join(' | ')
+  });
+
+  // 今日新上榜数
+  let totalNew = 0;
+  PLATFORMS.forEach(p => {
+    const books = state.data[p.id]?.books || [];
+    totalNew += books.filter(b => b.rank_change === 'new').length;
+  });
+  cards.push({
+    icon: '🆕', title: '今日新上榜', value: totalNew,
+    detail: PLATFORMS.map(p => {
+      const n = (state.data[p.id]?.books || []).filter(b => b.rank_change === 'new').length;
+      return `${p.name}: ${n}`;
+    }).join(' | ')
+  });
+
+  // 涨幅最大
+  let biggestRise = null;
+  PLATFORMS.forEach(p => {
+    const books = state.data[p.id]?.books || [];
+    for (const b of books) {
+      if (typeof b.rank_change === 'number' && b.rank_change > 0) {
+        if (!biggestRise || b.rank_change > biggestRise.change) {
+          biggestRise = { name: b.book_name, change: b.rank_change, platform: p.name };
+        }
+      }
+    }
+  });
+  cards.push({
+    icon: '🚀', title: '今日最大涨幅',
+    value: biggestRise ? `↑${biggestRise.change}` : '-',
+    detail: biggestRise ? `《${biggestRise.name}》(${biggestRise.platform})` : '暂无排名变化数据'
+  });
+
+  container.innerHTML = cards.map(c => `
+    <div class="insight-card">
+      <div class="insight-card-title"><span class="icon">${c.icon}</span> ${c.title}</div>
+      <div class="insight-card-value">${c.value}</div>
+      <div class="insight-card-detail">${c.detail}</div>
+    </div>
+  `).join('');
+}
+
+function renderDashTopGrid() {
+  const container = document.getElementById('dashTopGrid');
+  container.innerHTML = PLATFORMS.map(p => {
+    const data = state.data[p.id];
+    const books = data?.books?.slice(0, 10) || [];
+    const isEmpty = books.length === 0;
+
+    return `
+      <div class="dash-card ${p.id}">
+        <div class="dash-card-title">${p.icon} ${p.name}</div>
+        <div class="dash-card-subtitle">${p.source}${data ? ` · ${data.update_date || ''}` : ''}</div>
+        ${isEmpty ? '<div class="empty-state" style="padding:20px;">暂无数据</div>' : `
+          <ul class="dash-top-list">
+            ${books.map((b, i) => `
+              <li>
+                <span class="dash-rank ${i < 3 ? 'r'+(i+1) : 'rn'}">${b.rank}</span>
+                <span class="dash-book-name" title="${b.book_name}">${b.book_name}</span>
+                <span class="dash-tag">${b.primary_tag || b.all_tags?.[0] || ''}</span>
+              </li>
+            `).join('')}
+          </ul>
+        `}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderTagDistribution() {
+  const container = document.getElementById('tagDistribution');
+  
+  container.innerHTML = PLATFORMS.map(p => {
+    const data = state.data[p.id];
+    if (!data?.tag_stats) return `<div class="tag-dist-card"><div class="tag-dist-title">${p.icon} ${p.name}</div><div style="color:var(--text-dim);font-size:13px;">暂无数据</div></div>`;
+    
+    const stats = Object.entries(data.tag_stats).sort((a, b) => b[1] - a[1]);
+    const total = stats.reduce((s, [, v]) => s + v, 0);
+    const top = stats.slice(0, 8);
+
+    return `
+      <div class="tag-dist-card">
+        <div class="tag-dist-title">${p.icon} ${p.name}</div>
+        ${top.map(([tag, count]) => {
+          const pct = total > 0 ? (count / total * 100).toFixed(0) : 0;
+          return `
+            <div class="tag-bar-container">
+              <div class="tag-bar-label">
+                <span>${tag}</span>
+                <span>${count}本 (${pct}%)</span>
+              </div>
+              <div class="tag-bar">
+                <div class="tag-bar-fill" style="width:${pct}%;background:${p.color};"></div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderNewEntries() {
+  const container = document.getElementById('newEntryGrid');
+  
+  container.innerHTML = PLATFORMS.map(p => {
+    const books = state.data[p.id]?.books || [];
+    const newBooks = books.filter(b => b.rank_change === 'new');
+    
+    return `
+      <div class="new-entries-column ${p.id}">
+        <div class="new-entries-col-header">${p.icon} ${p.name}</div>
+        <div class="new-entries-col-count">${newBooks.length > 0 ? `${newBooks.length} 部新上榜` : '无新上榜'}</div>
+        ${newBooks.length === 0 
+          ? '<div class="new-entries-empty">今日无变动（或首次运行无对比数据）</div>'
+          : newBooks.map(b => `
+            <div class="new-entry-item">
+              <div class="new-entry-info">
+                <div class="new-entry-name" title="${b.book_name}">${b.book_name}</div>
+                <div class="new-entry-meta">${b.author} · ${b.primary_tag || ''} · ${b.gender || b.channel || ''}</div>
+              </div>
+              <div class="new-entry-rank">#${b.rank}</div>
+            </div>
+          `).join('')}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderPlatformSummary() {
+  const container = document.getElementById('summaryItems');
+  const ai = state.analysis;
+  const hasAI = ai && ai.platforms && !ai.parse_error;
+
+  // === 渲染 AI 总览 ===
+  if (hasAI && ai.overall_summary) {
+    const overallSection = document.getElementById('aiOverallSection');
+    overallSection.style.display = 'block';
+    document.getElementById('aiOverallSummary').textContent = ai.overall_summary;
+    
+    // 信号标签
+    if (ai.notable_signals?.length > 0) {
+      document.getElementById('aiSignals').innerHTML = ai.notable_signals.map(s => 
+        `<span style="display:inline-block;padding:4px 12px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.25);border-radius:6px;font-size:12px;color:#ffd700;cursor:default;">🔔 ${s}</span>`
+      ).join('');
+    }
+  }
+
+  // === 渲染各站分析 ===
+  container.innerHTML = PLATFORMS.map(p => {
+    const data = state.data[p.id];
+    if (!data?.books?.length) {
+      return `<div class="summary-item ${p.id}"><h4>${p.icon} ${p.name}</h4><p>暂无数据</p></div>`;
+    }
+    
+    // 优先使用 AI 分析
+    if (hasAI && ai.platforms[p.id]) {
+      const pa = ai.platforms[p.id];
+      return `
+        <div class="summary-item ${p.id}">
+          <h4>${p.icon} ${p.name}</h4>
+          <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${pa.headline || ''}</p>
+          <p>${pa.analysis || ''}</p>
+        </div>
+      `;
+    }
+    
+    // 降级：使用本地分析引擎
+    const analysis = generatePlatformInsight(p.id, data);
+    return `
+      <div class="summary-item ${p.id}">
+        <h4>${p.icon} ${p.name}</h4>
+        <p>${analysis}</p>
+      </div>
+    `;
+  }).join('');
+
+  // === 渲染跨平台对比 ===
+  if (hasAI && ai.cross_platform_insights) {
+    const crossSection = document.getElementById('crossPlatformSection');
+    crossSection.style.display = 'block';
+    document.getElementById('crossPlatformText').textContent = ai.cross_platform_insights;
+  }
+}
+
+// ========== 智能分析引擎 ==========
+// 基于数据特征匹配的洞察生成，不依赖外部 API
+function generatePlatformInsight(platformId, data) {
+  const books = data.books;
+  const tagStats = data.tag_stats || {};
+  const genderStats = data.gender_stats || {};
+  const total = books.length;
+  
+  const sortedTags = Object.entries(tagStats).sort((a, b) => b[1] - a[1]);
+  const sortedGenders = Object.entries(genderStats).sort((a, b) => b[1] - a[1]);
+  const newBooks = books.filter(b => b.rank_change === 'new');
+  const risingBooks = books.filter(b => typeof b.rank_change === 'number' && b.rank_change > 0).sort((a, b) => b.rank_change - a.rank_change);
+  
+  const insights = [];
+  
+  // === 1. 频道/受众分析 ===
+  if (sortedGenders.length > 0) {
+    const [topGender, topCount] = sortedGenders[0];
+    const topPct = Math.round(topCount / total * 100);
+    
+    const platformAudience = {
+      fanqie: { desc: '番茄小说以免费阅读模式吸引了大量下沉市场用户', maleReason: '男性向轻阅读内容更符合碎片化消费场景', femaleReason: '女性向甜宠、爽文迎合了年轻女性快消需求' },
+      qidian: { desc: '起点作为付费网文龙头平台，用户粘性高、付费意愿强', maleReason: '男频是起点的传统强势领域，长期积累了大量硬核书迷', femaleReason: '起点女频近年发力明显，持续争夺市场份额' },
+      jjwxc: { desc: '晋江以原创女性向内容为核心定位', pureaiReason: '纯爱（BL）是晋江最具标志性的品类，IP改编热度高', yanqingReason: '言情仍是晋江基盘，古言/现代言情受众稳定' },
+    };
+    const aud = platformAudience[platformId] || {};
+    
+    if (topPct >= 60) {
+      if (platformId === 'jjwxc') {
+        const reason = topGender === '纯爱' ? (aud.pureaiReason || '') : (aud.yanqingReason || '');
+        insights.push(`${topGender}类作品占比${topPct}%，主导地位明显。${reason ? reason + '。' : ''}`);
+      } else {
+        const reason = topGender.includes('男') ? (aud.maleReason || '') : (aud.femaleReason || '');
+        insights.push(`${topGender}内容占比${topPct}%，优势显著。${reason ? reason + '。' : ''}`);
+      }
+    } else if (sortedGenders.length >= 2) {
+      insights.push(`${sortedGenders.map(([g, c]) => `${g}${Math.round(c/total*100)}%`).join('、')}，内容分布相对均衡。`);
+    }
+  }
+  
+  // === 2. 题材特色分析 ===
+  if (sortedTags.length > 0) {
+    const [topTag, topTagCount] = sortedTags[0];
+    const topTagPct = Math.round(topTagCount / total * 100);
+    
+    // 题材 → 行业解读知识库
+    const tagInsights = {
+      '都市': '都市题材贴近生活、易于代入，在免费阅读平台尤其受欢迎',
+      '玄幻': '玄幻是网文最经典的品类之一，读者基础庞大且粘性高',
+      '仙侠': '仙侠是中式幻想的代表题材，在男频市场有深厚的读者根基',
+      '科幻': '科幻题材正处上升期，受到影视改编和科技热潮双重利好',
+      '悬疑': '悬疑推理类作品适合短平快阅读，在移动端有天然优势',
+      '游戏': '游戏题材的火热反映了Z世代读者群体的娱乐偏好',
+      '历史': '历史类作品往往字数较长、读者忠诚度高',
+      '武侠': '武侠是经典但较小众的品类，核心粉丝忠实',
+      '纯爱': '纯爱（BL）内容的IP改编价值极高，是影视剧热门选题',
+      '言情': '言情是女性向阅读的基石品类，市场规模最大',
+      '甜文': '甜宠文迎合了读者的情感慰藉需求，完读率通常很高',
+      '快穿': '快穿题材节奏快、设定新颖，是近年女频的热门方向',
+      '宫斗': '宫斗类作品与影视改编高度契合，有成熟的商业变现路径',
+      '校园': '校园题材吸引年轻读者，也是轻体量影视改编的热门素材',
+    };
+    
+    if (topTagPct >= 20) {
+      const tagNote = tagInsights[topTag] || '';
+      insights.push(`「${topTag}」题材以${topTagPct}%领跑。${tagNote ? tagNote + '。' : ''}`);
+    }
+    
+    // 题材集中度分析
+    const top3Sum = sortedTags.slice(0, 3).reduce((s, [, c]) => s + c, 0);
+    const top3Pct = Math.round(top3Sum / total * 100);
+    if (top3Pct >= 70) {
+      insights.push(`Top3题材（${sortedTags.slice(0,3).map(([t])=>t).join('、')}）合计占${top3Pct}%，内容集中度高。`);
+    } else if (top3Pct <= 45 && sortedTags.length >= 5) {
+      insights.push(`题材分布较为分散（Top3仅占${top3Pct}%），说明平台内容生态多样化。`);
+    }
+  }
+  
+  // === 3. 新上榜作品分析 ===
+  if (newBooks.length > 0) {
+    const newTags = {};
+    newBooks.forEach(b => { newTags[b.primary_tag] = (newTags[b.primary_tag] || 0) + 1; });
+    const topNewTag = Object.entries(newTags).sort((a, b) => b[1] - a[1])[0];
+    
+    let newInsight = `今日有${newBooks.length}部新作上榜`;
+    if (topNewTag && topNewTag[1] >= 2) {
+      newInsight += `，其中「${topNewTag[0]}」题材最多（${topNewTag[1]}部），表明该方向近期热度正在上升`;
+    } else if (newBooks.length > 0) {
+      const firstNew = newBooks[0];
+      newInsight += `，排名最高的是《${firstNew.book_name}》(#${firstNew.rank})，题材为「${firstNew.primary_tag || '未分类'}」`;
+    }
+    insights.push(newInsight + '。');
+  }
+  
+  // === 4. 排名波动分析 ===
+  if (risingBooks.length > 0) {
+    const bigRiser = risingBooks[0];
+    if (bigRiser.rank_change >= 5) {
+      insights.push(`《${bigRiser.book_name}》上升${bigRiser.rank_change}位，势头强劲，值得关注。`);
+    }
+  }
+  
+  // === 5. 平台级总结（兜底） ===
+  if (insights.length === 0) {
+    insights.push('数据分析中，更多维度的洞察需要积累多天数据后呈现。');
+  }
+  
+  return insights.join('');
+}
+
+function renderTrendChart() {
+  const container = document.getElementById('trendChart');
+  // 趋势图需要多天历史数据 — 收集各平台历史索引看看有没有
+  const allHaveHistory = PLATFORMS.some(p => state.history[p.id]?.index?.length >= 2);
+  
+  if (!allHaveHistory) {
+    container.innerHTML = '<div class="trend-chart-placeholder">📊 需要至少2天历史数据才能展示趋势图<br><br>每日运行爬虫后，这里会自动显示各题材在三站的热度变化折线图</div>';
+    return;
+  }
+
+  // 收集近7天数据
+  loadTrendData().then(trendData => {
+    if (!trendData || Object.keys(trendData).length === 0) {
+      container.innerHTML = '<div class="trend-chart-placeholder">暂无足够的趋势数据</div>';
+      return;
+    }
+    drawTrendChart(container, trendData);
+  });
+}
+
+async function loadTrendData() {
+  const trendData = {}; // { date: { platform: { tag: count } } }
+  
+  for (const p of PLATFORMS) {
+    const idx = state.history[p.id]?.index || [];
+    const recent = idx.slice(0, 7); // 最近7天
+    
+    for (const date of recent) {
+      const data = await loadJSON(`data/${p.id}/history/${date}.json`);
+      if (data?.tag_stats) {
+        if (!trendData[date]) trendData[date] = {};
+        trendData[date][p.id] = data.tag_stats;
+      }
+    }
+  }
+  
+  return trendData;
+}
+
+function drawTrendChart(container, trendData) {
+  const dates = Object.keys(trendData).sort();
+  if (dates.length < 2) {
+    container.innerHTML = '<div class="trend-chart-placeholder">需要更多历史数据</div>';
+    return;
+  }
+  
+  // 找出所有平台中出现最多的题材 top5
+  const tagTotals = {};
+  for (const date of dates) {
+    for (const pid of Object.keys(trendData[date] || {})) {
+      for (const [tag, count] of Object.entries(trendData[date][pid])) {
+        tagTotals[tag] = (tagTotals[tag] || 0) + count;
+      }
+    }
+  }
+  const topTags = Object.entries(tagTotals).sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
+  
+  // 构建各平台各题材的时间序列
+  const series = [];
+  let colorIdx = 0;
+  for (const p of PLATFORMS) {
+    for (const tag of topTags.slice(0, 3)) { // 每平台取top3题材
+      const values = dates.map(d => trendData[d]?.[p.id]?.[tag] || 0);
+      if (values.some(v => v > 0)) {
+        series.push({ label: `${p.name}-${tag}`, values, color: CHART_COLORS[colorIdx % CHART_COLORS.length] });
+        colorIdx++;
+      }
+    }
+  }
+
+  // SVG 绘制
+  const W = 900, H = 260, pad = { t: 20, r: 20, b: 40, l: 45 };
+  const chartW = W - pad.l - pad.r;
+  const chartH = H - pad.t - pad.b;
+  
+  const maxVal = Math.max(...series.flatMap(s => s.values), 1);
+  const xStep = dates.length > 1 ? chartW / (dates.length - 1) : chartW;
+
+  let svgContent = `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+  
+  // 网格线
+  for (let i = 0; i <= 4; i++) {
+    const y = pad.t + (chartH / 4) * i;
+    const val = Math.round(maxVal * (1 - i / 4));
+    svgContent += `<line x1="${pad.l}" y1="${y}" x2="${W-pad.r}" y2="${y}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>`;
+    svgContent += `<text x="${pad.l-8}" y="${y+4}" text-anchor="end" fill="#8b8fa3" font-size="10">${val}</text>`;
+  }
+  
+  // X 轴日期标签
+  dates.forEach((d, i) => {
+    const x = pad.l + i * xStep;
+    svgContent += `<text x="${x}" y="${H-10}" text-anchor="middle" fill="#8b8fa3" font-size="10">${d.slice(5)}</text>`;
+  });
+
+  // 折线
+  for (const s of series) {
+    const points = s.values.map((v, i) => {
+      const x = pad.l + i * xStep;
+      const y = pad.t + chartH - (v / maxVal) * chartH;
+      return `${x},${y}`;
+    }).join(' ');
+    svgContent += `<polyline points="${points}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round"/>`;
+    // 数据点
+    s.values.forEach((v, i) => {
+      const x = pad.l + i * xStep;
+      const y = pad.t + chartH - (v / maxVal) * chartH;
+      svgContent += `<circle cx="${x}" cy="${y}" r="3" fill="${s.color}"/>`;
+    });
+  }
+
+  svgContent += '</svg>';
+
+  // 图例
+  const legendHtml = series.map(s => `
+    <span class="chart-legend-item">
+      <span class="chart-legend-dot" style="background:${s.color}"></span>
+      ${s.label}
+    </span>
+  `).join('');
+
+  container.innerHTML = svgContent + `<div class="chart-legend">${legendHtml}</div>`;
+}
+
+// ========== 平台独立 Tab 渲染 ==========
+function renderPlatformTab(platformId) {
+  const platform = PLATFORMS.find(p => p.id === platformId);
+  const data = state.data[platformId];
+  const loadingEl = document.getElementById(`${platformId}Loading`);
+  const contentEl = document.getElementById(`${platformId}Content`);
+
+  if (!data?.books?.length) {
+    loadingEl.innerHTML = `<div class="empty-state">暂无${platform.name}数据，请先运行爬虫脚本</div>`;
+    return;
+  }
+
+  loadingEl.style.display = 'none';
+  contentEl.style.display = 'block';
+
+  // 如果已渲染且数据未变，跳过
+  if (state.loaded[platformId]) return;
+  state.loaded[platformId] = true;
+
+  // 番茄有子榜单（最热榜 Top50 + 巅峰榜 Top30）
+  if (platformId === 'fanqie') {
+    renderFanqieWithSubTabs(platform, data, contentEl);
+    return;
+  }
+  // 起点有子榜单（畅销榜 + 收藏榜）
+  if (platformId === 'qidian') {
+    renderQidianWithSubTabs(platform, data, contentEl);
+    return;
+  }
+  // 晋江有子榜单（积分月榜 Top50 + 积分榜 Top1000）
+  if (platformId === 'jjwxc') {
+    renderJjwxcWithSubTabs(platform, data, contentEl);
+    return;
+  }
+
+  const books = data.books;
+  const tagStats = data.tag_stats || {};
+  const genderStats = data.gender_stats || {};
+  const historyIndex = state.history[platformId]?.index || [];
+
+  // 获取该平台实际抓到的天数
+  const coverageDays = (state.history[platformId]?.index?.length) || 0;
+
+  // 构建页面
+  contentEl.innerHTML = `
+    <div class="platform-header">
+      <div>
+        <div class="platform-title">${platform.icon} ${platform.name} — ${platform.source}</div>
+        <div class="platform-meta">更新时间: ${data.update_time || '未知'} | 来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
+      </div>
+    </div>
+
+    <!-- 题材统计 — 纯展示样式 -->
+    <div class="tag-stats-bar">
+      ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+        <span class="tag-stat-item">
+          <span class="tag-name">${tag}</span>
+          <span class="tag-count">${count}</span>
+        </span>
+      `).join('')}
+    </div>
+
+    <!-- 筛选工具栏 -->
+    <div class="filter-bar">
+      <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-${platformId}" oninput="filterBooks('${platformId}')">
+      <button class="filter-btn" id="newonly-${platformId}" onclick="toggleNewOnly('${platformId}')">🆕 新上榜</button>
+      <button class="filter-btn" id="sortdays-${platformId}" onclick="toggleSort('${platformId}','days')" title="按累计上榜天数排序">📅 上榜天数</button>
+      <button class="filter-btn" id="sortchange-${platformId}" onclick="toggleSort('${platformId}','change')" title="按昨日涨跌幅排序">📈 昨日涨幅</button>
+      <select class="filter-select" id="gender-${platformId}" onchange="filterBooks('${platformId}')">
+        <option value="">全部频道</option>
+        ${Object.keys(genderStats).map(g => `<option value="${g}">${g} (${genderStats[g]})</option>`).join('')}
+      </select>
+      <select class="filter-select" id="tag-${platformId}" onchange="filterBooks('${platformId}')">
+        <option value="">全部题材</option>
+        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+      </select>
+      <select class="filter-select" id="status-${platformId}" onchange="filterBooks('${platformId}')">
+        <option value="">全部状态</option>
+        <option value="连载中">连载中</option>
+        <option value="完结">完结</option>
+      </select>
+      ${historyIndex.length >= 1 ? `
+        <select class="filter-select" id="history-${platformId}" onchange="loadHistoryData('${platformId}', this.value)">
+          <option value="">当前数据</option>
+          ${historyIndex.map(d => `<option value="${d}">${d}</option>`).join('')}
+        </select>
+      ` : ''}
+    </div>
+
+    <!-- 书籍列表 -->
+    <div class="book-list" id="bookList-${platformId}">
+      ${renderBookList(books, platformId)}
+    </div>
+  `;
+}
+
+function renderBookList(books, platformId) {
+  return books.map(b => {
+    const rankClass = b.rank <= 3 ? `r${b.rank}` : 'rn';
+    let changeHtml = '';
+    if (b.rank_change === 'new') {
+      changeHtml = '<span class="book-change new">NEW</span>';
+    } else if (typeof b.rank_change === 'number') {
+      if (b.rank_change > 0) changeHtml = `<span class="book-change up"><span class="change-num">↑${b.rank_change}</span><span class="change-label">昨日</span></span>`;
+      else if (b.rank_change < 0) changeHtml = `<span class="book-change down"><span class="change-num">↓${Math.abs(b.rank_change)}</span><span class="change-label">昨日</span></span>`;
+      else changeHtml = '<span class="book-change same"><span class="change-num">—</span><span class="change-label">持平</span></span>';
+    } else {
+      changeHtml = '<span class="book-change same"><span class="change-num">—</span><span class="change-label">—</span></span>';
+    }
+
+    const tagsHtml = (b.all_tags || []).map((t, i) => 
+      `<span class="book-tag ${i === 0 ? 'primary' : ''}">${t}</span>`
+    ).join('');
+
+    const genderLabel = b.gender || b.channel || '';
+    const scoreLabel = b.score_display ? ` · 积分 ${b.score_display}` : '';
+
+    const daysNum = b.history_days || 1;
+    const daysHtml = `<div class="book-days" title="累计上榜 ${daysNum} 天"><span class="days-num">${daysNum}</span><span class="days-label">天</span></div>`;
+
+    return `
+      <div class="book-item" data-name="${(b.book_name||'').toLowerCase()}" data-author="${(b.author||'').toLowerCase()}" data-gender="${b.gender || b.channel || ''}" data-tag="${b.primary_tag || ''}" data-status="${b.status || ''}" data-change="${b.rank_change}" data-days="${daysNum}">
+        <span class="book-rank ${rankClass}">${b.rank}</span>
+        <div class="book-info">
+          <div class="book-left">
+            <div class="book-name"><a href="${b.book_url}" target="_blank">${b.book_name}</a></div>
+            <div class="book-meta">
+              <span>${b.author}</span>
+              ${genderLabel ? `<span class="sep">·</span><span>${genderLabel}</span>` : ''}
+              <span class="sep">·</span><span>${b.status || '未知'}</span>
+              ${scoreLabel}
+            </div>
+            ${tagsHtml ? `<div class="book-tags">${tagsHtml}</div>` : ''}
+          </div>
+          ${b.abstract && b.abstract !== '暂无简介' ? `<div class="book-abstract">${b.abstract}</div>` : ''}
+        </div>
+        ${daysHtml}
+        ${changeHtml}
+      </div>
+    `;
+  }).join('');
+}
+
+function filterBooks(platformId) {
+  const search = (document.getElementById(`search-${platformId}`)?.value || '').toLowerCase();
+  const gender = document.getElementById(`gender-${platformId}`)?.value || '';
+  const tag = document.getElementById(`tag-${platformId}`)?.value || '';
+  const status = document.getElementById(`status-${platformId}`)?.value || '';
+  const year = document.getElementById(`year-${platformId}`)?.value || '';
+  const newOnlyBtn = document.getElementById(`newonly-${platformId}`);
+  const newOnly = newOnlyBtn?.classList.contains('active') || false;
+
+  const listEl = document.getElementById(`bookList-${platformId}`);
+  const items = listEl.querySelectorAll('.book-item');
+  items.forEach(el => {
+    const name = el.dataset.name || '';
+    const author = el.dataset.author || '';
+    const elGender = el.dataset.gender || '';
+    const elTag = el.dataset.tag || '';
+    const elStatus = el.dataset.status || '';
+    const elChange = el.dataset.change || '';
+    const elYear = el.dataset.year || '';
+
+    let show = true;
+    if (search && !name.includes(search) && !author.includes(search)) show = false;
+    if (gender && elGender !== gender) show = false;
+    if (tag && elTag !== tag) show = false;
+    if (status && elStatus !== status) show = false;
+    if (year && elYear !== year) show = false;
+    if (newOnly && elChange !== 'new') show = false;
+
+    el.style.display = show ? '' : 'none';
+  });
+
+  // 应用当前排序状态（如果有）
+  applySortOrder(platformId);
+}
+
+// 排序状态：state._sort[platformId] = { key: 'days'|'change'|null, dir: 'desc'|'asc' }
+function toggleSort(platformId, key) {
+  if (!state._sort) state._sort = {};
+  const cur = state._sort[platformId] || { key: null, dir: 'desc' };
+  let next;
+  if (cur.key !== key) {
+    // 切到新维度，默认 desc（持续力/涨幅大的在前）
+    next = { key, dir: 'desc' };
+  } else if (cur.dir === 'desc') {
+    next = { key, dir: 'asc' };
+  } else {
+    // 已经 asc → 取消排序，恢复 rank 原序
+    next = { key: null, dir: 'desc' };
+  }
+  state._sort[platformId] = next;
+
+  // 更新按钮视觉
+  const daysBtn = document.getElementById(`sortdays-${platformId}`);
+  const changeBtn = document.getElementById(`sortchange-${platformId}`);
+  if (daysBtn) {
+    daysBtn.classList.toggle('sort-active', next.key === 'days');
+    daysBtn.textContent = next.key === 'days'
+      ? (next.dir === 'desc' ? '📅 上榜天数 ↓' : '📅 上榜天数 ↑')
+      : '📅 上榜天数';
+  }
+  if (changeBtn) {
+    changeBtn.classList.toggle('sort-active', next.key === 'change');
+    changeBtn.textContent = next.key === 'change'
+      ? (next.dir === 'desc' ? '📈 昨日涨幅 ↓' : '📈 昨日涨幅 ↑')
+      : '📈 昨日涨幅';
+  }
+
+  applySortOrder(platformId);
+}
+
+function applySortOrder(platformId) {
+  const sort = state._sort?.[platformId];
+  const listEl = document.getElementById(`bookList-${platformId}`);
+  if (!listEl) return;
+  const items = Array.from(listEl.querySelectorAll('.book-item'));
+
+  // 把 data-rank 缓存到 element 上（用于恢复原序）
+  items.forEach((el, i) => {
+    if (!el.dataset.origIndex) el.dataset.origIndex = String(i);
+  });
+
+  let sorted;
+  if (!sort || !sort.key) {
+    // 恢复原榜单顺序（rank 从低到高）
+    sorted = items.slice().sort((a, b) => Number(a.dataset.origIndex) - Number(b.dataset.origIndex));
+  } else if (sort.key === 'days') {
+    sorted = items.slice().sort((a, b) => {
+      const da = Number(a.dataset.days) || 0;
+      const db = Number(b.dataset.days) || 0;
+      return sort.dir === 'desc' ? db - da : da - db;
+    });
+  } else if (sort.key === 'change') {
+    // 'new' 视为最大值（持续新品关注度高）；null 视为 0；数字按原值
+    const rank = (v) => {
+      if (v === 'new') return Number.POSITIVE_INFINITY;
+      if (v === 'null' || v === '' || v === null || v === undefined) return 0;
+      const n = Number(v);
+      return isNaN(n) ? 0 : n;
+    };
+    sorted = items.slice().sort((a, b) => {
+      const ra = rank(a.dataset.change);
+      const rb = rank(b.dataset.change);
+      return sort.dir === 'desc' ? rb - ra : ra - rb;
+    });
+  }
+
+  // 重排 DOM
+  const frag = document.createDocumentFragment();
+  sorted.forEach(el => frag.appendChild(el));
+  listEl.appendChild(frag);
+}
+
+function toggleNewOnly(platformId) {
+  const btn = document.getElementById(`newonly-${platformId}`);
+  btn.classList.toggle('active');
+  filterBooks(platformId);
+}
+
+async function loadHistoryData(platformId, date) {
+  if (!date) {
+    // 恢复当前数据
+    const data = state.data[platformId];
+    if (data?.books) {
+      document.getElementById(`bookList-${platformId}`).innerHTML = renderBookList(data.books, platformId);
+    }
+    return;
+  }
+  
+  const histData = await loadJSON(`data/${platformId}/history/${date}.json`);
+  if (histData?.books) {
+    document.getElementById(`bookList-${platformId}`).innerHTML = renderBookList(histData.books, platformId);
+  }
+}
+
+/**
+ * 通用月度榜单历史加载（起点收藏榜 / 晋江积分榜Top1000）
+ * @param {string} dataKey  state.data 里的键，也用作 fallback 当前数据（如 'qidian_collection'）
+ * @param {string} value    选中的月份（如 '2026-07'），空则恢复最新版
+ * @param {object} opts     { pathPrefix, targetId, renderFn }
+ *   pathPrefix: 月度存档目录（如 'data/qidian/collection_history'）
+ *   targetId:   书目列表容器 id（如 'qidian_coll'）
+ *   renderFn:   渲染函数名（'collection' | 'score'）
+ */
+async function loadMonthlyHistory(dataKey, value, opts) {
+  const listEl = document.getElementById(`bookList-${opts.targetId}`);
+  if (!listEl) return;
+  const render = (books) => opts.renderFn === 'peak'
+    ? renderPeakBookList(books)
+    : opts.renderFn === 'score'
+    ? renderScoreBookList(books)
+    : renderCollectionBookList(books);
+
+  if (!value) {
+    const data = state.data[dataKey];
+    if (data?.books) listEl.innerHTML = render(data.books);
+    return;
+  }
+  const histData = await loadJSON(`${opts.pathPrefix}/${value}.json`);
+  if (histData?.books) listEl.innerHTML = render(histData.books);
+}
+
+// ========== 起点子榜单渲染 ==========
+async function renderQidianWithSubTabs(platform, data, contentEl) {
+  // 尝试加载收藏榜数据
+  const collectionData = await loadJSON('data/qidian/collection.json');
+  state.data.qidian_collection = collectionData;
+
+  const books = data.books;
+  const tagStats = data.tag_stats || {};
+  const genderStats = data.gender_stats || {};
+  const historyIndex = state.history['qidian']?.index || [];
+  const coverageDays = historyIndex.length || 0;
+
+  // 收藏榜数据
+  const collBooks = collectionData?.books || [];
+  const collTagStats = collectionData?.tag_stats || {};
+  const collGenderStats = collectionData?.gender_stats || {};
+  const collMonthIndex = state.history.qidian_collection?.index || [];
+
+  contentEl.innerHTML = `
+    <div class="platform-header">
+      <div>
+        <div class="platform-title">${platform.icon} ${platform.name}</div>
+        <div class="platform-meta">更新时间: ${data.update_time || '未知'}</div>
+      </div>
+    </div>
+
+    <!-- 子榜单切换 -->
+    <div class="sub-tab-nav">
+      <button class="sub-tab-btn active" data-subtab="hotsales" onclick="switchQidianSubTab('hotsales')">🔥 畅销榜 Top50</button>
+      <button class="sub-tab-btn" data-subtab="collection" onclick="switchQidianSubTab('collection')">⭐ 收藏榜 Top1000</button>
+    </div>
+
+    <!-- 畅销榜内容 -->
+    <div class="sub-tab-content active" id="qidian-sub-hotsales">
+      <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
+
+      <div class="tag-stats-bar">
+        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+          <span class="tag-stat-item">
+            <span class="tag-name">${tag}</span>
+            <span class="tag-count">${count}</span>
+          </span>
+        `).join('')}
+      </div>
+
+      <div class="filter-bar">
+        <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-qidian" oninput="filterBooks('qidian')">
+        <button class="filter-btn" id="newonly-qidian" onclick="toggleNewOnly('qidian')">🆕 新上榜</button>
+        <button class="filter-btn" id="sortdays-qidian" onclick="toggleSort('qidian','days')" title="按累计上榜天数排序">📅 上榜天数</button>
+        <button class="filter-btn" id="sortchange-qidian" onclick="toggleSort('qidian','change')" title="按昨日涨跌幅排序">📈 昨日涨幅</button>
+        <select class="filter-select" id="gender-qidian" onchange="filterBooks('qidian')">
+          <option value="">全部频道</option>
+          ${Object.keys(genderStats).map(g => `<option value="${g}">${g} (${genderStats[g]})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="tag-qidian" onchange="filterBooks('qidian')">
+          <option value="">全部题材</option>
+          ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="status-qidian" onchange="filterBooks('qidian')">
+          <option value="">全部状态</option>
+          <option value="连载中">连载中</option>
+          <option value="完结">完结</option>
+        </select>
+        ${historyIndex.length >= 1 ? `
+          <select class="filter-select" id="history-qidian" onchange="loadHistoryData('qidian', this.value)">
+            <option value="">当前数据</option>
+            ${historyIndex.map(d => `<option value="${d}">${d}</option>`).join('')}
+          </select>
+        ` : ''}
+      </div>
+
+      <div class="book-list" id="bookList-qidian">
+        ${renderBookList(books, 'qidian')}
+      </div>
+    </div>
+
+    <!-- 收藏榜内容 -->
+    <div class="sub-tab-content" id="qidian-sub-collection">
+      ${collBooks.length === 0 
+        ? '<div class="empty-state">收藏榜数据尚未抓取，请先运行 <code>node scrapers/qidian-collection.js</code></div>'
+        : `
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${collectionData.source_url}" target="_blank" style="color:${platform.color};">${collectionData.source}</a> · 更新时间: ${collectionData.update_time || '未知'} · 共 ${collBooks.length} 本</div>
+
+          <div class="tag-stats-bar">
+            ${Object.entries(collTagStats).sort((a,b) => b[1] - a[1]).slice(0, 15).map(([tag, count]) => `
+              <span class="tag-stat-item">
+                <span class="tag-name">${tag}</span>
+                <span class="tag-count">${count}</span>
+              </span>
+            `).join('')}
+          </div>
+
+          <div class="filter-bar">
+            <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-qidian_coll" oninput="filterBooks('qidian_coll')">
+            <select class="filter-select" id="gender-qidian_coll" onchange="filterBooks('qidian_coll')">
+              <option value="">全部频道</option>
+              ${Object.keys(collGenderStats).map(g => `<option value="${g}">${g} (${collGenderStats[g]})</option>`).join('')}
+            </select>
+            <select class="filter-select" id="tag-qidian_coll" onchange="filterBooks('qidian_coll')">
+              <option value="">全部题材</option>
+              ${Object.entries(collTagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+            </select>
+            ${collMonthIndex.length >= 1 ? `
+              <select class="filter-select" id="month-qidian_coll" onchange="loadMonthlyHistory('qidian_collection', this.value, {pathPrefix:'data/qidian/collection_history', targetId:'qidian_coll', renderFn:'collection'})">
+                ${collMonthIndex.map((m, i) => `<option value="${m}"${i === 0 ? ' selected' : ''}>${fmtMonthLabel(m)}</option>`).join('')}
+              </select>
+            ` : ''}
+          </div>
+
+          <div class="book-list" id="bookList-qidian_coll">
+            ${renderCollectionBookList(collBooks)}
+          </div>
+        `}
+    </div>
+  `;
+}
+
+// 月份 '2026-07' → '2026年7月'
+function fmtMonthLabel(m) {
+  if (!m || !/^\d{4}-\d{2}$/.test(m)) return m || '';
+  const [y, mo] = m.split('-');
+  return `${y}年${parseInt(mo, 10)}月`;
+}
+
+// 通用子tab切换：contentId 为平台内容容器（如 'qidianContent'），prefix 为子tab id 前缀（如 'qidian'）
+function switchSubTab(contentId, prefix, subTabId) {
+  document.querySelectorAll(`#${contentId} .sub-tab-content`).forEach(el => el.classList.remove('active'));
+  document.querySelectorAll(`#${contentId} .sub-tab-btn`).forEach(el => el.classList.remove('active'));
+  document.getElementById(`${prefix}-sub-${subTabId}`).classList.add('active');
+  document.querySelector(`#${contentId} .sub-tab-btn[data-subtab="${subTabId}"]`).classList.add('active');
+}
+function switchQidianSubTab(subTabId) { switchSubTab('qidianContent', 'qidian', subTabId); }
+function switchJjwxcSubTab(subTabId) { switchSubTab('jjwxcContent', 'jjwxc', subTabId); }
+function switchFanqieSubTab(subTabId) { switchSubTab('fanqieContent', 'fanqie', subTabId); }
+
+// ========== 番茄子榜单渲染（最热榜 Top50 + 巅峰榜 Top30）==========
+async function renderFanqieWithSubTabs(platform, data, contentEl) {
+  const peakData = await loadJSON('data/fanqie/peak.json');
+  state.data.fanqie_peak = peakData;
+
+  const books = data.books;
+  const tagStats = data.tag_stats || {};
+  const genderStats = data.gender_stats || {};
+  const historyIndex = state.history['fanqie']?.index || [];
+  const coverageDays = historyIndex.length || 0;
+
+  const peakBooks = peakData?.books || [];
+  const peakTagStats = peakData?.tag_stats || {};
+  const peakGenderStats = peakData?.gender_stats || {};
+  const peakMonthIndex = state.history.fanqie_peak?.index || [];
+
+  contentEl.innerHTML = `
+    <div class="platform-header">
+      <div>
+        <div class="platform-title">${platform.icon} ${platform.name}</div>
+        <div class="platform-meta">更新时间: ${data.update_time || '未知'}</div>
+      </div>
+    </div>
+
+    <div class="sub-tab-nav">
+      <button class="sub-tab-btn active" data-subtab="hot" onclick="switchFanqieSubTab('hot')">🔥 最热榜 Top50</button>
+      <button class="sub-tab-btn" data-subtab="peak" onclick="switchFanqieSubTab('peak')">👑 巅峰榜 Top30</button>
+    </div>
+
+    <div class="sub-tab-content active" id="fanqie-sub-hot">
+      <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
+
+      <div class="tag-stats-bar">
+        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+          <span class="tag-stat-item">
+            <span class="tag-name">${tag}</span>
+            <span class="tag-count">${count}</span>
+          </span>
+        `).join('')}
+      </div>
+
+      <div class="filter-bar">
+        <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-fanqie" oninput="filterBooks('fanqie')">
+        <button class="filter-btn" id="newonly-fanqie" onclick="toggleNewOnly('fanqie')">🆕 新上榜</button>
+        <button class="filter-btn" id="sortdays-fanqie" onclick="toggleSort('fanqie','days')" title="按累计上榜天数排序">📅 上榜天数</button>
+        <button class="filter-btn" id="sortchange-fanqie" onclick="toggleSort('fanqie','change')" title="按昨日涨跌幅排序">📈 昨日涨幅</button>
+        <select class="filter-select" id="gender-fanqie" onchange="filterBooks('fanqie')">
+          <option value="">全部频道</option>
+          ${Object.keys(genderStats).map(g => `<option value="${g}">${g} (${genderStats[g]})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="tag-fanqie" onchange="filterBooks('fanqie')">
+          <option value="">全部题材</option>
+          ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="status-fanqie" onchange="filterBooks('fanqie')">
+          <option value="">全部状态</option>
+          <option value="连载中">连载中</option>
+          <option value="完结">完结</option>
+        </select>
+        ${historyIndex.length >= 1 ? `
+          <select class="filter-select" id="history-fanqie" onchange="loadHistoryData('fanqie', this.value)">
+            <option value="">当前数据</option>
+            ${historyIndex.map(d => `<option value="${d}">${d}</option>`).join('')}
+          </select>
+        ` : ''}
+      </div>
+
+      <div class="book-list" id="bookList-fanqie">
+        ${renderBookList(books, 'fanqie')}
+      </div>
+    </div>
+
+    <div class="sub-tab-content" id="fanqie-sub-peak">
+      ${peakBooks.length === 0
+        ? '<div class="empty-state">巅峰榜数据尚未抓取，请先运行 <code>node scrapers/fanqie-rank.js</code></div>'
+        : `
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${peakData.source_url}" target="_blank" style="color:${platform.color};">${peakData.source}</a> · 根据作品好评、人气、互动等综合得分排行 · 每月更新 · 共 ${peakBooks.length} 本</div>
+
+          <div class="tag-stats-bar">
+            ${Object.entries(peakTagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+              <span class="tag-stat-item">
+                <span class="tag-name">${tag}</span>
+                <span class="tag-count">${count}</span>
+              </span>
+            `).join('')}
+          </div>
+
+          <div class="filter-bar">
+            <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-fanqie_peak" oninput="filterBooks('fanqie_peak')">
+            <select class="filter-select" id="gender-fanqie_peak" onchange="filterBooks('fanqie_peak')">
+              <option value="">全部频道</option>
+              ${Object.keys(peakGenderStats).map(g => `<option value="${g}">${g} (${peakGenderStats[g]})</option>`).join('')}
+            </select>
+            <select class="filter-select" id="tag-fanqie_peak" onchange="filterBooks('fanqie_peak')">
+              <option value="">全部题材</option>
+              ${Object.entries(peakTagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+            </select>
+            <select class="filter-select" id="status-fanqie_peak" onchange="filterBooks('fanqie_peak')">
+              <option value="">全部状态</option>
+              <option value="连载中">连载中</option>
+              <option value="完结">完结</option>
+            </select>
+            ${peakMonthIndex.length >= 1 ? `
+              <select class="filter-select" id="month-fanqie_peak" onchange="loadMonthlyHistory('fanqie_peak', this.value, {pathPrefix:'data/fanqie/peak_history', targetId:'fanqie_peak', renderFn:'peak'})">
+                ${peakMonthIndex.map((m, i) => `<option value="${m}"${i === 0 ? ' selected' : ''}>${fmtMonthLabel(m)}</option>`).join('')}
+              </select>
+            ` : ''}
+          </div>
+
+          <div class="book-list" id="bookList-fanqie_peak">
+            ${renderPeakBookList(peakBooks)}
+          </div>
+        `}
+    </div>
+  `;
+}
+
+// 巅峰榜 Top30 卡片（横向单行：排名 | 书名+作者 | 标签 | 简介 | 月度涨跌）
+function renderPeakBookList(books) {
+  return books.map(b => {
+    const rankClass = b.rank <= 3 ? `r${b.rank}` : 'rn';
+    const tagsHtml = (b.all_tags || []).map((t, i) =>
+      `<span class="book-tag ${i === 0 ? 'primary' : ''}">${t}</span>`
+    ).join('');
+    const absText = (b.abstract && b.abstract !== '暂无简介') ? b.abstract : '';
+    let changeHtml = '<span class="score-val" style="opacity:.35">—</span>';
+    if (b.rank_change === 'new') changeHtml = '<span class="score-val" style="color:#40c057;">NEW</span>';
+    else if (typeof b.rank_change === 'number' && b.rank_change > 0) changeHtml = `<span class="score-val" style="color:#ff6b6b;">↑${b.rank_change}</span>`;
+    else if (typeof b.rank_change === 'number' && b.rank_change < 0) changeHtml = `<span class="score-val" style="color:#51cf66;">↓${Math.abs(b.rank_change)}</span>`;
+    else if (b.rank_change === 0) changeHtml = '<span class="score-val" style="opacity:.6;">—</span>';
+
+    return `
+      <div class="book-item score-item" data-name="${(b.book_name||'').toLowerCase()}" data-author="${(b.author||'').toLowerCase()}" data-gender="${b.gender || ''}" data-tag="${b.primary_tag || ''}" data-status="${b.status || ''}">
+        <span class="book-rank ${rankClass}">${b.rank}</span>
+        <div class="score-name">
+          <div class="book-name"><a href="${b.book_url}" target="_blank">${b.book_name}</a></div>
+          <div class="book-meta">
+            <span>${b.author}</span>
+            ${b.gender && b.gender !== '未知' ? `<span class="sep">·</span><span>${b.gender}</span>` : ''}
+            <span class="sep">·</span><span>${b.status || '未知'}</span>
+          </div>
+        </div>
+        <div class="score-tags">${tagsHtml}</div>
+        <div class="score-abs" title="${(absText||'').replace(/"/g,'&quot;')}">${absText || '<span style="opacity:.35">——</span>'}</div>
+        <div class="score-num">${changeHtml}<span class="score-lbl">较上月</span></div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderCollectionBookList(books) {
+  return books.map(b => {
+    const rankClass = b.rank <= 3 ? `r${b.rank}` : 'rn';
+    const tagsHtml = (b.all_tags || []).map((t, i) =>
+      `<span class="book-tag ${i === 0 ? 'primary' : ''}">${t}</span>`
+    ).join('');
+    const genderLabel = b.gender || '';
+
+    return `
+      <div class="book-item" data-name="${(b.book_name||'').toLowerCase()}" data-author="${(b.author||'').toLowerCase()}" data-gender="${b.gender || ''}" data-tag="${b.primary_tag || ''}" data-status="${b.status || ''}">
+        <span class="book-rank ${rankClass}">${b.rank}</span>
+        <div class="book-info">
+          <div class="book-left">
+            <div class="book-name"><a href="${b.book_url}" target="_blank">${b.book_name}</a></div>
+            <div class="book-meta">
+              <span>${b.author}</span>
+              ${genderLabel ? `<span class="sep">·</span><span>${genderLabel}</span>` : ''}
+              <span class="sep">·</span><span>${b.status || '完结'}</span>
+              ${b.word_count ? `<span class="sep">·</span><span>${b.word_count}</span>` : ''}
+              ${b.collections ? `<span class="sep">·</span><span style="color:#ffd700;">收藏 ${b.collections}</span>` : ''}
+            </div>
+            ${tagsHtml ? `<div class="book-tags">${tagsHtml}</div>` : ''}
+          </div>
+          ${b.abstract && b.abstract !== '暂无简介' ? `<div class="book-abstract">${b.abstract}</div>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ========== 晋江子榜单渲染（积分月榜 Top50 + 积分榜 Top1000）==========
+async function renderJjwxcWithSubTabs(platform, data, contentEl) {
+  // 加载积分榜 Top1000
+  const scoreData = await loadJSON('data/jjwxc/score1000.json');
+  state.data.jjwxc_score = scoreData;
+
+  // 月榜 Top50 数据
+  const books = data.books;
+  const tagStats = data.tag_stats || {};
+  const genderStats = data.gender_stats || {};
+  const historyIndex = state.history['jjwxc']?.index || [];
+  const coverageDays = historyIndex.length || 0;
+
+  // 积分榜 Top1000 数据
+  const sBooks = scoreData?.books || [];
+  const sTagStats = scoreData?.tag_stats || {};
+  const sGenderStats = scoreData?.gender_stats || {};
+  const sMonthIndex = state.history.jjwxc_score?.index || [];
+  // 首发年份分布（降序），用于年份筛选下拉
+  const sYearStats = {};
+  sBooks.forEach(b => { const y = (b.publish_time || '').slice(0, 4); if (/^\d{4}$/.test(y)) sYearStats[y] = (sYearStats[y] || 0) + 1; });
+  const sYears = Object.keys(sYearStats).sort((a, b) => b.localeCompare(a));
+
+  contentEl.innerHTML = `
+    <div class="platform-header">
+      <div>
+        <div class="platform-title">${platform.icon} ${platform.name}</div>
+        <div class="platform-meta">更新时间: ${data.update_time || '未知'}</div>
+      </div>
+    </div>
+
+    <!-- 子榜单切换 -->
+    <div class="sub-tab-nav">
+      <button class="sub-tab-btn active" data-subtab="monthrank" onclick="switchJjwxcSubTab('monthrank')">🔥 积分月榜 Top50</button>
+      <button class="sub-tab-btn" data-subtab="score1000" onclick="switchJjwxcSubTab('score1000')">⭐ 积分榜 Top1000</button>
+    </div>
+
+    <!-- 积分月榜 Top50 内容 -->
+    <div class="sub-tab-content active" id="jjwxc-sub-monthrank">
+      <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
+
+      <div class="tag-stats-bar">
+        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
+          <span class="tag-stat-item">
+            <span class="tag-name">${tag}</span>
+            <span class="tag-count">${count}</span>
+          </span>
+        `).join('')}
+      </div>
+
+      <div class="filter-bar">
+        <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-jjwxc" oninput="filterBooks('jjwxc')">
+        <button class="filter-btn" id="newonly-jjwxc" onclick="toggleNewOnly('jjwxc')">🆕 新上榜</button>
+        <button class="filter-btn" id="sortdays-jjwxc" onclick="toggleSort('jjwxc','days')" title="按累计上榜天数排序">📅 上榜天数</button>
+        <button class="filter-btn" id="sortchange-jjwxc" onclick="toggleSort('jjwxc','change')" title="按昨日涨跌幅排序">📈 昨日涨幅</button>
+        <select class="filter-select" id="gender-jjwxc" onchange="filterBooks('jjwxc')">
+          <option value="">全部频道</option>
+          ${Object.keys(genderStats).map(g => `<option value="${g}">${g} (${genderStats[g]})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="tag-jjwxc" onchange="filterBooks('jjwxc')">
+          <option value="">全部题材</option>
+          ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+        </select>
+        <select class="filter-select" id="status-jjwxc" onchange="filterBooks('jjwxc')">
+          <option value="">全部状态</option>
+          <option value="连载中">连载中</option>
+          <option value="完结">完结</option>
+        </select>
+        ${historyIndex.length >= 1 ? `
+          <select class="filter-select" id="history-jjwxc" onchange="loadHistoryData('jjwxc', this.value)">
+            <option value="">当前数据</option>
+            ${historyIndex.map(d => `<option value="${d}">${d}</option>`).join('')}
+          </select>
+        ` : ''}
+      </div>
+
+      <div class="book-list" id="bookList-jjwxc">
+        ${renderBookList(books, 'jjwxc')}
+      </div>
+    </div>
+
+    <!-- 积分榜 Top1000 内容 -->
+    <div class="sub-tab-content" id="jjwxc-sub-score1000">
+      ${sBooks.length === 0
+        ? '<div class="empty-state">积分榜Top1000数据尚未抓取，请先运行 <code>node scrapers/jjwxc-score.js</code></div>'
+        : `
+          <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${scoreData.source_url}" target="_blank" style="color:${platform.color};">${scoreData.source}</a> · 更新时间: ${scoreData.update_time || '未知'} · 共 ${sBooks.length} 本 · 按作品总积分排序</div>
+
+          <div class="tag-stats-bar">
+            ${Object.entries(sTagStats).sort((a,b) => b[1] - a[1]).slice(0, 15).map(([tag, count]) => `
+              <span class="tag-stat-item">
+                <span class="tag-name">${tag}</span>
+                <span class="tag-count">${count}</span>
+              </span>
+            `).join('')}
+          </div>
+
+          <div class="filter-bar">
+            <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-jjwxc_score" oninput="filterBooks('jjwxc_score')">
+            <select class="filter-select" id="gender-jjwxc_score" onchange="filterBooks('jjwxc_score')">
+              <option value="">全部频道</option>
+              ${Object.keys(sGenderStats).map(g => `<option value="${g}">${g} (${sGenderStats[g]})</option>`).join('')}
+            </select>
+            <select class="filter-select" id="tag-jjwxc_score" onchange="filterBooks('jjwxc_score')">
+              <option value="">全部题材</option>
+              ${Object.entries(sTagStats).sort((a,b) => b[1] - a[1]).map(([t, c]) => `<option value="${t}">${t} (${c})</option>`).join('')}
+            </select>
+            <select class="filter-select" id="status-jjwxc_score" onchange="filterBooks('jjwxc_score')">
+              <option value="">全部状态</option>
+              <option value="连载中">连载中</option>
+              <option value="完结">完结</option>
+            </select>
+            ${sYears.length >= 1 ? `
+              <select class="filter-select" id="year-jjwxc_score" onchange="filterBooks('jjwxc_score')">
+                <option value="">全部首发年份</option>
+                ${sYears.map(y => `<option value="${y}">${y}年 (${sYearStats[y]})</option>`).join('')}
+              </select>
+            ` : ''}
+            ${sMonthIndex.length >= 1 ? `
+              <select class="filter-select" id="month-jjwxc_score" onchange="loadMonthlyHistory('jjwxc_score', this.value, {pathPrefix:'data/jjwxc/score1000_history', targetId:'jjwxc_score', renderFn:'score'})">
+                ${sMonthIndex.map((m, i) => `<option value="${m}"${i === 0 ? ' selected' : ''}>${fmtMonthLabel(m)}</option>`).join('')}
+              </select>
+            ` : ''}
+          </div>
+
+          <div class="book-list" id="bookList-jjwxc_score">
+            ${renderScoreBookList(sBooks)}
+          </div>
+        `}
+    </div>
+  `;
+}
+
+// 晋江积分榜 Top1000 列表渲染（展示积分 + 首发时间）
+function renderScoreBookList(books) {
+  // 方案A · 单行横向：排名 | 书名+作者 | 标签(全部,最多两行) | 简介(单行省略) | 积分(右)
+  return books.map(b => {
+    const rankClass = b.rank <= 3 ? `r${b.rank}` : 'rn';
+    const tagsHtml = (b.all_tags || []).map((t, i) =>
+      `<span class="book-tag ${i === 0 ? 'primary' : ''}">${t}</span>`
+    ).join('');
+    const channelLabel = b.channel || '';
+    const scoreLabel = b.score_display || (b.score != null ? String(b.score) : '');
+    const firstPub = (b.publish_time || '').slice(0, 10);
+    const pubYear = (b.publish_time || '').slice(0, 4);
+    const absText = (b.abstract && b.abstract !== '暂无简介') ? b.abstract : '';
+
+    return `
+      <div class="book-item score-item" data-name="${(b.book_name||'').toLowerCase()}" data-author="${(b.author||'').toLowerCase()}" data-gender="${b.channel || ''}" data-tag="${b.primary_tag || ''}" data-status="${b.status || ''}" data-year="${pubYear}">
+        <span class="book-rank ${rankClass}">${b.rank}</span>
+        <div class="score-name">
+          <div class="book-name"><a href="${b.book_url}" target="_blank">${b.book_name}</a></div>
+          <div class="book-meta">
+            <span>${b.author}</span>
+            ${channelLabel ? `<span class="sep">·</span><span>${channelLabel}</span>` : ''}
+            <span class="sep">·</span><span>${b.status || '未知'}</span>
+            ${firstPub ? `<span class="sep">·</span><span>${firstPub}</span>` : ''}
+          </div>
+        </div>
+        <div class="score-tags">${tagsHtml}</div>
+        <div class="score-abs" title="${(absText||'').replace(/"/g,'&quot;')}">${absText || '<span style="opacity:.35">——</span>'}</div>
+        <div class="score-num"><span class="score-val">${scoreLabel}</span><span class="score-lbl">积分</span></div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ========== 初始化 ==========
+async function init() {
+  await loadAllData();
+  renderDashboard();
+  
+  // 预渲染各平台 tab
+  PLATFORMS.forEach(p => {
+    if (state.data[p.id]) {
+      // 预加载但不渲染（等用户切换时再渲染）
+    }
+  });
+}
+
+init();
+</script>
+
+</body>
+</html>

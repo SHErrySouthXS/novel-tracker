@@ -1,0 +1,126 @@
+name: Daily Novel Scrape & Deploy
+
+on:
+  schedule:
+    # 每天北京时间 08:00 运行 (UTC 00:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: novel-scrape
+  cancel-in-progress: true
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright browsers
+        run: npx playwright install chromium --with-deps
+
+      # 番茄小说 (原生 HTTP，无需 Playwright)
+      - name: Scrape Fanqie (番茄小说)
+        run: node scrapers/fanqie.js
+        continue-on-error: true
+
+      # 起点中文网 (Playwright)
+      - name: Scrape Qidian (起点中文网)
+        run: node scrapers/qidian.js
+        continue-on-error: true
+
+      # 晋江文学城 (原生 HTTP)
+      - name: Scrape JJWXC (晋江文学城)
+        run: node scrapers/jjwxc.js
+        continue-on-error: true
+
+      # 起点收藏榜 Top1000 (每月1号更新 或 手动触发时运行，50页1000本)
+      - name: Scrape Qidian Collection (起点收藏榜)
+        run: |
+          DOM=$(date -u +%d)
+          if [ "$DOM" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Running collection scraper (day=$DOM, event=${{ github.event_name }})"
+            node scrapers/qidian-collection.js
+          else
+            echo "Skipping collection scraper (only runs on 1st of month or manual trigger)"
+          fi
+        continue-on-error: true
+        timeout-minutes: 20
+
+      # 晋江积分榜 Top1000 (每月1号更新 或 手动触发时运行，10页1000本)
+      - name: Scrape JJWXC Score1000 (晋江积分榜Top1000)
+        run: |
+          DOM=$(date -u +%d)
+          if [ "$DOM" = "01" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Running jjwxc score1000 scraper (day=$DOM, event=${{ github.event_name }})"
+            node scrapers/jjwxc-score.js
+          else
+            echo "Skipping jjwxc score1000 scraper (only runs on 1st of month or manual trigger)"
+          fi
+        continue-on-error: true
+        timeout-minutes: 15
+
+      # 番茄巅峰榜 Top30 (每月2号更新 或 手动触发时运行；番茄官网巅峰榜每月1号刷新，2号抓保险)
+      - name: Scrape Fanqie Peak (番茄巅峰榜Top30)
+        run: |
+          DOM=$(date -u +%d)
+          if [ "$DOM" = "02" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Running fanqie peak scraper (day=$DOM, event=${{ github.event_name }})"
+            node scrapers/fanqie-rank.js
+          else
+            echo "Skipping fanqie peak scraper (only runs on 2nd of month or manual trigger)"
+          fi
+        continue-on-error: true
+        timeout-minutes: 10
+
+      # AI 智能分析
+      - name: AI Analysis (通义千问)
+        run: node scrapers/analyze.js
+        env:
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+        continue-on-error: true
+
+      - name: Commit & Push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "📊 update: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # Handle potential conflicts from concurrent pushes
+          for i in 1 2 3; do
+            git push && break
+            echo "Push failed, attempt $i. Pulling and retrying..."
+            git pull --rebase origin main --strategy-option=theirs || true
+            sleep 2
+          done
+
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest data
+        run: git pull origin main
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,18 @@
+{
+  "name": "novel-tracker",
+  "version": "1.0.0",
+  "description": "小说行业头部内容追踪 — 番茄小说 / 起点中文网 / 晋江文学城 每日 Top50 榜单监测",
+  "private": true,
+  "scripts": {
+    "scrape:fanqie": "node scrapers/fanqie.js",
+    "scrape:qidian": "node scrapers/qidian.js",
+    "scrape:jjwxc": "node scrapers/jjwxc.js",
+    "scrape:changpei": "node scrapers/changpei.js",
+    "scrape:all": "node scrapers/fanqie.js && node scrapers/qidian.js && node scrapers/jjwxc.js && node scrapers/changpei.js",
+    "analyze": "node scrapers/analyze.js",
+    "run:all": "node scrapers/fanqie.js && node scrapers/qidian.js && node scrapers/jjwxc.js && node scrapers/changpei.js && node scrapers/analyze.js"
+  },
+  "dependencies": {
+    "playwright": "^1.61.1"
+  }
+}
