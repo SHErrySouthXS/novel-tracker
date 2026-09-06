@@ -23,8 +23,8 @@ const TARGET_COUNT = 50;
 // 榜单配置
 const RANKINGS = [
   { id: 'bestseller', name: '总榜·畅销榜', url: 'https://www.gongzicp.com/home/ranking', file: 'latest.json' },
-  { id: 'purelove_bestseller', name: '纯爱·畅销榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75', file: 'purelove_bestseller.json' },
-  { id: 'purelove_new', name: '纯爱·新书榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75&rankType=new', file: 'purelove_new.json' },
+  { id: 'purelove_bestseller', name: '纯爱·畅销榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75&rid=1', file: 'purelove_bestseller.json' },
+  { id: 'purelove_new', name: '纯爱·新书榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75&rid=7', file: 'purelove_new.json' },
   { id: 'purelove_completed', name: '纯爱·完结榜', url: 'https://www.gongzicp.com/home/indexRanking?tid=75&rid=5', file: 'purelove_completed.json' },
 ];
 
