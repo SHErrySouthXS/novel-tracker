@@ -18,6 +18,7 @@ const { computeRankChange } = require('./rank-change');
 const DATA_DIR = path.join(__dirname, '..', 'data', 'changpei');
 const TARGET_COUNT = 50;
 const RANK_URL = 'https://www.gongzicp.com/home/ranking';
+const REQUEST_DELAY = 800;
 
 // ========== 工具函数 ==========
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -47,38 +48,38 @@ async function extractBooksFromDOM(page) {
       
       if (links.length < 3) return;
       
-      // 链接顺序: [封面+状态badge, 书名, 作者, 状态text, 标签1, 标签2, ...]
-      const linkTexts = Array.from(links).map(a => a.textContent.trim());
+      const linkData = Array.from(links).map(a => ({
+        text: a.textContent.trim(),
+        href: a.href || '',
+      }));
       
-      // 过滤掉空文本和纯状态文本，找有意义的链接
-      const meaningful = linkTexts.filter(t => 
-        t && t !== '连载' && t !== '完结'
+      const meaningful = linkData.filter(l => 
+        l.text && l.text !== '连载' && l.text !== '完结'
       );
       
-      let bookName = '', author = '', status = '连载中';
+      let bookName = '', author = '', bookUrl = '', authorUrl = '', status = '连载中';
       const tags = [];
       
       if (meaningful.length >= 2) {
-        bookName = meaningful[0];
-        author = meaningful[1];
+        bookName = meaningful[0].text;
+        bookUrl = meaningful[0].href;
+        author = meaningful[1].text;
+        authorUrl = meaningful[1].href;
       } else if (meaningful.length === 1) {
-        bookName = meaningful[0];
+        bookName = meaningful[0].text;
+        bookUrl = meaningful[0].href;
       }
       
-      // 状态
-      if (linkTexts.includes('完结')) status = '完结';
+      if (linkData.some(l => l.text === '完结')) status = '完结';
       
-      // 标签（跳过书名和作者）
       const usedSet = new Set([bookName, author]);
-      for (let i = 0; i < linkTexts.length; i++) {
-        const t = linkTexts[i];
-        if (t && !usedSet.has(t) && t !== '连载' && t !== '完结' && t.length < 15) {
-          tags.push(t);
-          usedSet.add(t);
+      for (const l of linkData) {
+        if (l.text && !usedSet.has(l.text) && l.text !== '连载' && l.text !== '完结' && l.text.length < 15) {
+          tags.push(l.text);
+          usedSet.add(l.text);
         }
       }
       
-      // 提取字数/人气/更新时间
       const wordMatch = metaText.match(/字数:\s*([\d.]+万?)/);
       const wordCount = wordMatch ? wordMatch[1] : '';
       const popMatch = metaText.match(/人气:\s*([\d,.]+万?)/);
@@ -88,20 +89,60 @@ async function extractBooksFromDOM(page) {
       
       if (bookName) {
         books.push({
-          rank: 0, // 后面统一编号
+          rank: 0,
           book_name: bookName,
+          book_url: bookUrl || '',
           author,
+          author_url: authorUrl || '',
           tags,
+          all_tags: tags,
+          primary_tag: tags[0] || '',
+          abstract: '',
           word_count: wordCount,
           popularity,
           status,
           update_time: updateTime,
+          channel: '',
+          gender: '',
         });
       }
     });
     
     return books;
   });
+}
+
+// ========== 从详情页获取简介 ==========
+async function fetchBookAbstract(page, bookUrl) {
+  try {
+    await page.goto(bookUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
+    await sleep(1500);
+    
+    const abstract = await page.evaluate(() => {
+      const allText = document.body.innerText;
+      const introIdx = allText.indexOf('作品简介');
+      if (introIdx < 0) return '';
+      
+      // 取"作品简介"之后的文本
+      let afterIntro = allText.substring(introIdx + 4).trim();
+      
+      // 去掉日期前缀
+      afterIntro = afterIntro.replace(/^\d{4}-\d{2}-\d{2}\s*/, '');
+      
+      // 截取到"展开"之前
+      const expandIdx = afterIntro.indexOf('展开');
+      if (expandIdx > 0) afterIntro = afterIntro.substring(0, expandIdx);
+      
+      // 清理：去掉空行，合并为一行
+      const lines = afterIntro.split('\n').map(s => s.trim()).filter(Boolean);
+      return lines.join('').substring(0, 200);
+    });
+    
+    return abstract;
+  } catch (e) {
+    console.log(`    [WARN] 简介获取失败: ${e.message}`);
+    return '';
+  }
 }
 
 // ========== 主函数 ==========
@@ -120,9 +161,7 @@ async function main() {
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   };
-  // 本地环境用 SOCKS5 代理（GitHub Actions 不需要）
   const localChrome = '/home/ubuntu/.cache/ms-playwright/chromium-1217/chrome-linux64/chrome';
-  const fs = require('fs');
   if (fs.existsSync(localChrome)) {
     launchOpts.executablePath = localChrome;
     launchOpts.proxy = { server: 'socks5://127.0.0.1:7890' };
@@ -135,28 +174,24 @@ async function main() {
   const page = await context.newPage();
 
   try {
-    // 加载页面
-    console.log('\n📊 加载畅销榜...');
+    // 阶段一：抓取榜单
+    console.log('\n📊 阶段一：抓取畅销榜');
     await page.goto(RANK_URL, { waitUntil: 'networkidle', timeout: 30000 });
     await sleep(3000);
     
     let allBooks = [];
     const totalPages = Math.ceil(TARGET_COUNT / 10);
     
-    // 翻页抓取
     for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
       console.log(`  📄 第 ${pageNum} 页...`);
       
       const pageBooks = await extractBooksFromDOM(page);
       allBooks = allBooks.concat(pageBooks);
-      
       console.log(`    本页 ${pageBooks.length} 本，累计 ${allBooks.length} 本`);
       
       if (allBooks.length >= TARGET_COUNT) break;
       
-      // 点击下一页
       if (pageNum < totalPages) {
-        // 用页面编号文本定位，而不是 nth-child（active 页会改变索引）
         const nextPageNum = String(pageNum + 1);
         const clicked = await page.evaluate((targetNum) => {
           const pages = document.querySelectorAll('.pages .page');
@@ -174,13 +209,11 @@ async function main() {
           await page.waitForSelector('.novel-item', { timeout: 10000 }).catch(() => {});
           await sleep(1000);
         } else {
-          console.log('    [WARN] 找不到下一页按钮');
           break;
         }
       }
     }
     
-    // 统一编号
     allBooks = allBooks.slice(0, TARGET_COUNT);
     allBooks.forEach((b, i) => b.rank = i + 1);
     
@@ -192,6 +225,24 @@ async function main() {
     
     console.log(`\n  ✅ 共提取 ${allBooks.length} 本`);
 
+    // 阶段二：获取简介
+    console.log('\n📖 阶段二：获取书籍简介');
+    for (let i = 0; i < allBooks.length; i++) {
+      const book = allBooks[i];
+      if (book.book_url) {
+        process.stdout.write(`  [${i+1}/${allBooks.length}] ${book.book_name} `);
+        const abstract = await fetchBookAbstract(page, book.book_url);
+        if (abstract) {
+          book.abstract = abstract;
+          process.stdout.write('✓');
+        } else {
+          process.stdout.write('✗');
+        }
+        console.log('');
+        if (i < allBooks.length - 1) await sleep(REQUEST_DELAY);
+      }
+    }
+
     // 计算排名变化
     console.log('\n📈 计算排名变化');
     computeRankChange(allBooks, DATA_DIR, fmtDate(now), 'book_name');
@@ -199,7 +250,7 @@ async function main() {
     // 统计
     const tagStats = {};
     for (const b of allBooks) {
-      if (b.tags.length > 0) tagStats[b.tags[0]] = (tagStats[b.tags[0]] || 0) + 1;
+      if (b.all_tags.length > 0) tagStats[b.all_tags[0]] = (tagStats[b.all_tags[0]] || 0) + 1;
     }
     const statusStats = {};
     for (const b of allBooks) { statusStats[b.status] = (statusStats[b.status] || 0) + 1; }
@@ -222,7 +273,6 @@ async function main() {
     const histPath = path.join(DATA_DIR, 'history', `${fmtDate(now)}.json`);
     fs.writeFileSync(histPath, JSON.stringify(result, null, 2), 'utf-8');
 
-    // 更新历史索引
     const idxPath = path.join(DATA_DIR, 'history_index.json');
     let idx = [];
     if (fs.existsSync(idxPath)) { try { idx = JSON.parse(fs.readFileSync(idxPath, 'utf-8')); } catch(e){} }
@@ -238,7 +288,8 @@ async function main() {
     console.log(`   数据: ${latestPath}`);
     console.log(`\n   前5本:`);
     allBooks.slice(0, 5).forEach(b => {
-      console.log(`   ${b.rank}. ${b.book_name} - ${b.author} [${b.status}] ${b.word_count} 人气${b.popularity}`);
+      const abs = b.abstract ? b.abstract.substring(0, 30) + '...' : '无简介';
+      console.log(`   ${b.rank}. ${b.book_name} - ${b.author} [${b.status}] ${abs}`);
     });
 
   } catch(e) {

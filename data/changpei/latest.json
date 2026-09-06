@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-09-06 10:13:27",
+  "update_time": "2026-09-06 12:32:43",
   "update_date": "2026-09-06",
   "total_count": 50,
   "source": "长佩文学·畅销榜",
@@ -24,7 +24,9 @@
     {
       "rank": 1,
       "book_name": "初恋是件坏事",
+      "book_url": "https://www.gongzicp.com/novel-2232295.html",
       "author": "成江入海",
+      "author_url": "https://www.gongzicp.com/zone/author-662591.html",
       "tags": [
         "青春",
         "竹马竹马",
@@ -32,49 +34,84 @@
         "温馨",
         "成长"
       ],
+      "all_tags": [
+        "青春",
+        "竹马竹马",
+        "甜宠",
+        "温馨",
+        "成长"
+      ],
+      "primary_tag": "青春",
+      "abstract": "竹马竹马（10-15w）程庭x祝嘉宜祝嘉宜的暑期生活：和程庭学",
       "word_count": "16.47万",
-      "popularity": "3,535.89万",
+      "popularity": "3,577.10万",
       "status": "完结",
       "update_time": "09-01",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 2,
       "book_name": "霸气金丝雀",
+      "book_url": "https://www.gongzicp.com/novel-2258154.html",
       "author": "木三观",
+      "author_url": "https://www.gongzicp.com/zone/author-163.html",
       "tags": [
         "都市",
         "HE",
         "包养出真爱"
       ],
-      "word_count": "21.47万",
-      "popularity": "1,418.07万",
+      "all_tags": [
+        "都市",
+        "HE",
+        "包养出真爱"
+      ],
+      "primary_tag": "都市",
+      "abstract": "路人甲：商清徽，你神气什么？还以为你是商家的大少爷吗？你现在只是厉总养的一只金丝雀而已！商清徽：你知道我是厉总的人，还敢惹我？！吃我的巴掌——啪啪啪！故人：商清徽！你居然沦落至此！你忘了你的钢琴家梦想了",
+      "word_count": "21.79万",
+      "popularity": "1,437.32万",
       "status": "连载中",
-      "update_time": "昨天 11:23",
+      "update_time": "1 小时前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 3,
       "book_name": "荒诞文学",
+      "book_url": "https://www.gongzicp.com/novel-2081535.html",
       "author": "空菊",
+      "author_url": "https://www.gongzicp.com/zone/author-58177.html",
       "tags": [
         "都市",
         "狗血",
         "HE"
       ],
+      "all_tags": [
+        "都市",
+        "狗血",
+        "HE"
+      ],
+      "primary_tag": "都市",
+      "abstract": "一个作家的成名史和一个怨夫的养成史",
       "word_count": "26.77万",
-      "popularity": "6,522.08万",
+      "popularity": "6,531.83万",
       "status": "连载中",
       "update_time": "昨天 13:03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 4,
       "book_name": "本能失陷",
+      "book_url": "https://www.gongzicp.com/novel-2036416.html",
       "author": "二师叔",
+      "author_url": "https://www.gongzicp.com/zone/author-93277.html",
       "tags": [
         "都市",
         "年下",
@@ -88,34 +125,65 @@
         "职业",
         "轻松"
       ],
-      "word_count": "28.96万",
-      "popularity": "1,458.75万",
+      "all_tags": [
+        "都市",
+        "年下",
+        "入室抢劫型恋人攻",
+        "冰山美人受",
+        "体型差",
+        "年龄差",
+        "肤色差",
+        "HE",
+        "甜宠",
+        "职业",
+        "轻松"
+      ],
+      "primary_tag": "都市",
+      "abstract": "表面阳光的年下疯狗傲娇毒舌的冰山美人26岁，陈育痕和初恋男友结婚，五年间付出一切，",
+      "word_count": "29.30万",
+      "popularity": "1,466.02万",
       "status": "完结",
-      "update_time": "昨天 12:05",
+      "update_time": "25 分钟前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 5,
       "book_name": "太阳心下",
+      "book_url": "https://www.gongzicp.com/novel-2205683.html",
       "author": "祈破",
+      "author_url": "https://www.gongzicp.com/zone/author-175722.html",
       "tags": [
         "现代",
         "gl",
         "HE",
         "青梅"
       ],
+      "all_tags": [
+        "现代",
+        "gl",
+        "HE",
+        "青梅"
+      ],
+      "primary_tag": "现代",
+      "abstract": "郭台 X 杨下毒舌and炸毛（maybe",
       "word_count": "35.59万",
-      "popularity": "1,691.16万",
+      "popularity": "1,694.21万",
       "status": "连载中",
       "update_time": "昨天 20:30",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 6,
       "book_name": "跟踪日记",
+      "book_url": "https://www.gongzicp.com/novel-1887978.html",
       "author": "长烟",
+      "author_url": "https://www.gongzicp.com/zone/author-10394.html",
       "tags": [
         "综合",
         "搞笑",
@@ -126,17 +194,33 @@
         "沙雕",
         "轻松"
       ],
+      "all_tags": [
+        "综合",
+        "搞笑",
+        "攻痛受也会痛",
+        "树精受",
+        "不算破镜的重圆",
+        "甜宠",
+        "沙雕",
+        "轻松"
+      ],
+      "primary_tag": "综合",
+      "abstract": "冬天的某个夜里，方一槐在江野的大房子里睡得迷迷糊糊的，忽然听见手机响了。他摸过来一看---是江野",
       "word_count": "16.59万",
-      "popularity": "2,746.41万",
+      "popularity": "2,752.59万",
       "status": "完结",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 7,
       "book_name": "苦艾保质期",
+      "book_url": "https://www.gongzicp.com/novel-2024713.html",
       "author": "林啸也",
+      "author_url": "https://www.gongzicp.com/zone/author-23134.html",
       "tags": [
         "都市",
         "追妻",
@@ -149,17 +233,35 @@
         "两人身心只有彼此",
         "狗血"
       ],
+      "all_tags": [
+        "都市",
+        "追妻",
+        "年上养成",
+        "上位者为爱发疯",
+        "分离焦虑爹系攻",
+        "直球人机小狗受",
+        "甜宠互宠",
+        "竹马一起长大",
+        "两人身心只有彼此",
+        "狗血"
+      ],
+      "primary_tag": "都市",
+      "abstract": "前冷静控场后分离焦虑爹系攻×超直球的人机萌萌小臭狗陈在在七岁被送",
       "word_count": "39.94万",
-      "popularity": "6,006.41万",
+      "popularity": "6,011.65万",
       "status": "完结",
       "update_time": "08-20",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 8,
       "book_name": "老实人饲养手册",
+      "book_url": "https://www.gongzicp.com/novel-2157831.html",
       "author": "金币小兔",
+      "author_url": "https://www.gongzicp.com/zone/author-1012469.html",
       "tags": [
         "都市",
         "甜宠",
@@ -167,17 +269,30 @@
         "豪门",
         "情投意合"
       ],
+      "all_tags": [
+        "都市",
+        "甜宠",
+        "轻松",
+        "豪门",
+        "情投意合"
+      ],
+      "primary_tag": "都市",
+      "abstract": "袁满是乡下来的老实人文盲，第一次站在灯红酒绿的城市里，小心翼翼生怕惹人笑话。施承泽是施家太子爷，横行霸道",
       "word_count": "21.45万",
-      "popularity": "425.93万",
+      "popularity": "431.42万",
       "status": "完结",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 9,
       "book_name": "殊途同归",
+      "book_url": "https://www.gongzicp.com/novel-1748632.html",
       "author": "独山凡鸟",
+      "author_url": "https://www.gongzicp.com/zone/author-793406.html",
       "tags": [
         "架空",
         "ABO",
@@ -188,34 +303,62 @@
         "虐恋",
         "HE"
       ],
+      "all_tags": [
+        "架空",
+        "ABO",
+        "狗血",
+        "强制爱",
+        "受强制爱",
+        "相爱相杀",
+        "虐恋",
+        "HE"
+      ],
+      "primary_tag": "架空",
+      "abstract": "私生子上将A x 贵公子军医O一纸婚约，和将近百分百的信息素匹配，将两个不合适的人紧紧绑在了一起。燕兰章如愿以偿，梁文声誓死抗拒。",
       "word_count": "22.86万",
-      "popularity": "885.49万",
+      "popularity": "890.69万",
       "status": "完结",
-      "update_time": "9 小时前",
+      "update_time": "12 小时前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 10,
       "book_name": "哥哥喜欢猫",
+      "book_url": "https://www.gongzicp.com/novel-2097831.html",
       "author": "二蛋",
+      "author_url": "https://www.gongzicp.com/zone/author-17067.html",
       "tags": [
         "综合",
         "变猫",
         "强制爱",
         "年上"
       ],
+      "all_tags": [
+        "综合",
+        "变猫",
+        "强制爱",
+        "年上"
+      ],
+      "primary_tag": "综合",
+      "abstract": "冷淡爱猫哥x阴郁厌猫弟（无血缘）姜禾安一直讨厌猫，他觉得猫很坏，喜怒无常，动辄挠人哈人。讨厌家猫，家猫奸懒馋滑、无功受禄；讨厌野猫，野猫牙尖嘴利，破坏城市生态。",
       "word_count": "15.80万",
-      "popularity": "955.24万",
+      "popularity": "957.67万",
       "status": "连载中",
       "update_time": "昨天 04:32",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 11,
       "book_name": "真的没有勾引你啊",
+      "book_url": "https://www.gongzicp.com/novel-2008915.html",
       "author": "叹酸",
+      "author_url": "https://www.gongzicp.com/zone/author-1051337.html",
       "tags": [
         "青春",
         "甜宠",
@@ -225,17 +368,32 @@
         "暗恋",
         "HE"
       ],
+      "all_tags": [
+        "青春",
+        "甜宠",
+        "轻松",
+        "帅1萌0",
+        "直掰弯",
+        "暗恋",
+        "HE"
+      ],
+      "primary_tag": "青春",
+      "abstract": "楚睿（Reed）x池佳贝（Bae）自我攻略1x天然撩0池佳贝在参加艺术市集时，遇到了圈内久",
       "word_count": "24.62万",
-      "popularity": "1,143.41万",
+      "popularity": "1,145.96万",
       "status": "完结",
       "update_time": "08-28",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 12,
       "book_name": "野狗",
+      "book_url": "https://www.gongzicp.com/novel-2199914.html",
       "author": "都市累人",
+      "author_url": "https://www.gongzicp.com/zone/author-916315.html",
       "tags": [
         "都市",
         "暗恋",
@@ -244,17 +402,31 @@
         "狗血",
         "虐恋"
       ],
+      "all_tags": [
+        "都市",
+        "暗恋",
+        "年下",
+        "强强",
+        "狗血",
+        "虐恋"
+      ],
+      "primary_tag": "都市",
+      "abstract": "为哥痴狂年下攻*高高在上女王受阎弋*阎武阎武这辈子最大的错误，就是捡回了阎弋。",
       "word_count": "28.90万",
-      "popularity": "636.47万",
+      "popularity": "641.06万",
       "status": "完结",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 13,
       "book_name": "月光沦陷",
+      "book_url": "https://www.gongzicp.com/novel-1177160.html",
       "author": "冰块儿",
+      "author_url": "https://www.gongzicp.com/zone/author-6694.html",
       "tags": [
         "综合",
         "强强",
@@ -264,17 +436,32 @@
         "HE",
         "剧情"
       ],
+      "all_tags": [
+        "综合",
+        "强强",
+        "甜宠",
+        "无限流",
+        "轻松",
+        "HE",
+        "剧情"
+      ],
+      "primary_tag": "综合",
+      "abstract": "风靡全球的开放世界全息游戏《Mirage》，号称能读取玩家记忆，打造专属角色。游昕一开始不知道这意味着什么，直",
       "word_count": "72.84万",
-      "popularity": "5,746.01万",
+      "popularity": "5,747.33万",
       "status": "连载中",
       "update_time": "昨天 00:29",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 14,
       "book_name": "游鱼习惯",
+      "book_url": "https://www.gongzicp.com/novel-1981406.html",
       "author": "小斤小斤鱼",
+      "author_url": "https://www.gongzicp.com/zone/author-794470.html",
       "tags": [
         "架空",
         "ABO",
@@ -285,17 +472,33 @@
         "论坛体",
         "竹马竹马"
       ],
+      "all_tags": [
+        "架空",
+        "ABO",
+        "酸甜",
+        "婚后生活",
+        "HE",
+        "娱乐圈",
+        "论坛体",
+        "竹马竹马"
+      ],
+      "primary_tag": "架空",
+      "abstract": "俞斯祈x祝禾乐纯情酷哥Ax有点呆的直球O",
       "word_count": "21.94万",
-      "popularity": "673.83万",
+      "popularity": "676.83万",
       "status": "完结",
       "update_time": "09-01",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 15,
       "book_name": "错误取向",
+      "book_url": "https://www.gongzicp.com/novel-1883448.html",
       "author": "掷生",
+      "author_url": "https://www.gongzicp.com/zone/author-772808.html",
       "tags": [
         "都市",
         "破镜重圆",
@@ -308,17 +511,35 @@
         "直掰弯",
         "阴差阳错"
       ],
+      "all_tags": [
+        "都市",
+        "破镜重圆",
+        "酸涩",
+        "虐恋",
+        "娱乐圈",
+        "追妻火葬场",
+        "现代",
+        "狗血",
+        "直掰弯",
+        "阴差阳错"
+      ],
+      "primary_tag": "都市",
+      "abstract": "【傲娇嘴毒闷骚花孔雀攻vs老实温柔偏执犟种受】陆闲是洁癖，姜璨是他最讨厌的脏东西。圈里人都说他陪酒，陪男人，没想到陪来陪去，这家伙竟胆大包",
       "word_count": "25.88万",
-      "popularity": "466.64万",
+      "popularity": "471.70万",
       "status": "完结",
       "update_time": "前天 01:47",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 16,
       "book_name": "替身之上",
+      "book_url": "https://www.gongzicp.com/novel-2206235.html",
       "author": "一维马赛克",
+      "author_url": "https://www.gongzicp.com/zone/author-60241.html",
       "tags": [
         "都市",
         "爽文",
@@ -332,17 +553,36 @@
         "狗血",
         "替身"
       ],
+      "all_tags": [
+        "都市",
+        "爽文",
+        "追妻火葬场",
+        "恨海情天",
+        "破镜重圆",
+        "酸涩",
+        "甜宠",
+        "HE",
+        "职业",
+        "狗血",
+        "替身"
+      ],
+      "primary_tag": "都市",
+      "abstract": "赵屿这辈子最危险的决定，是顶替双胞胎弟弟的身份，去欺骗顾寒声的感情。这个男人敏锐、危险、笑里藏刀，习惯掌控一切，让他的骗局步步维艰。他学着弟弟的样子说话、笑、靠近，以为自己的演技天衣无缝，骗到钱就能全身而退——却在顾寒声一",
       "word_count": "31.90万",
-      "popularity": "2,835.06万",
+      "popularity": "2,837.11万",
       "status": "完结",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 17,
       "book_name": "我闪现追你",
+      "book_url": "https://www.gongzicp.com/novel-2194430.html",
       "author": "海鶄落",
+      "author_url": "https://www.gongzicp.com/zone/author-9.html",
       "tags": [
         "综合",
         "搞笑",
@@ -351,17 +591,31 @@
         "沙雕",
         "爽文"
       ],
+      "all_tags": [
+        "综合",
+        "搞笑",
+        "HE",
+        "电竞",
+        "沙雕",
+        "爽文"
+      ],
+      "primary_tag": "综合",
+      "abstract": "【嘴硬主播霍晟攻x嘴毒野王钟见微受】-联盟十四支队",
       "word_count": "35.89万",
-      "popularity": "3,230.73万",
+      "popularity": "3,234.79万",
       "status": "完结",
       "update_time": "08-19",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 18,
       "book_name": "我们的存在",
+      "book_url": "https://www.gongzicp.com/novel-2127379.html",
       "author": "电子熊",
+      "author_url": "https://www.gongzicp.com/zone/author-18512.html",
       "tags": [
         "都市",
         "年上",
@@ -373,17 +627,34 @@
         "致郁",
         "受追攻"
       ],
+      "all_tags": [
+        "都市",
+        "年上",
+        "暗恋",
+        "酷哥攻",
+        "小狼狗受",
+        "酸涩",
+        "HE",
+        "致郁",
+        "受追攻"
+      ],
+      "primary_tag": "都市",
+      "abstract": "抑郁症冷淡纹身师攻×直掰弯小狼狗俊帅受裴疏雨×章斐 年上</",
       "word_count": "28.11万",
-      "popularity": "1,884.08万",
+      "popularity": "1,885.29万",
       "status": "完结",
       "update_time": "08-29",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 19,
       "book_name": "虚构热恋99%",
+      "book_url": "https://www.gongzicp.com/novel-2195082.html",
       "author": "柚子小狗",
+      "author_url": "https://www.gongzicp.com/zone/author-917082.html",
       "tags": [
         "都市",
         "甜宠",
@@ -395,17 +666,34 @@
         "旮旯给木的错误玩法",
         "现充死宅恋爱真难"
       ],
+      "all_tags": [
+        "都市",
+        "甜宠",
+        "年上",
+        "攻宠受",
+        "鸡同鸭讲",
+        "绅士先生大变色鬼",
+        "呆萌宝贝防御力点满",
+        "旮旯给木的错误玩法",
+        "现充死宅恋爱真难"
+      ],
+      "primary_tag": "都市",
+      "abstract": "对黎镜心的示好，孟容济最初是拒绝的。他极力维持的精英人设光鲜亮丽，不能出现任何污点。可偏偏黎镜心长得实在是太漂亮也太合他胃口了。",
       "word_count": "23.02万",
-      "popularity": "394.06万",
+      "popularity": "397.75万",
       "status": "连载中",
-      "update_time": "9 小时前",
+      "update_time": "11 小时前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 20,
       "book_name": "面包鸳鸯乳果",
+      "book_url": "https://www.gongzicp.com/novel-2160725.html",
       "author": "斋饮地",
+      "author_url": "https://www.gongzicp.com/zone/author-1028444.html",
       "tags": [
         "架空",
         "ABO",
@@ -418,17 +706,35 @@
         "有一点狗血",
         "高科技生子"
       ],
-      "word_count": "38.39万",
-      "popularity": "744.11万",
+      "all_tags": [
+        "架空",
+        "ABO",
+        "甜宠",
+        "先婚后爱",
+        "酸甜",
+        "年上",
+        "攻宠受养成系",
+        "强攻弱受帅攻美受",
+        "有一点狗血",
+        "高科技生子"
+      ],
+      "primary_tag": "架空",
+      "abstract": "自我攻略成熟人夫Ax破碎感美乖萌小哑巴O32x19放手一搏嫁给只见过两面的Alpha后，逆来顺受的Omega以为人生大概就这么稀里糊涂过",
+      "word_count": "38.70万",
+      "popularity": "749.11万",
       "status": "完结",
-      "update_time": "昨天 12:42",
+      "update_time": "30 分钟前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 21,
       "book_name": "失格落日",
+      "book_url": "https://www.gongzicp.com/novel-2175901.html",
       "author": "花溱",
+      "author_url": "https://www.gongzicp.com/zone/author-1156287.html",
       "tags": [
         "架空",
         "ABO",
@@ -439,17 +745,33 @@
         "伪强制",
         "HE"
       ],
+      "all_tags": [
+        "架空",
+        "ABO",
+        "狗血",
+        "暗恋",
+        "掉马",
+        "他逃他追",
+        "伪强制",
+        "HE"
+      ],
+      "primary_tag": "架空",
+      "abstract": "温澈，omega，医学生，暗恋一位遥不可及的S级alpha校友。迫于生计，他为一位患有信息素紊乱的神秘alpha提供信息素安抚。alpha身形颀长，身材优越。他戴着面具，一上来就要假装标记温",
       "word_count": "25.83万",
-      "popularity": "4,182.08万",
+      "popularity": "4,184.56万",
       "status": "完结",
       "update_time": "08-19",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 22,
       "book_name": "错误预感",
+      "book_url": "https://www.gongzicp.com/novel-2199394.html",
       "author": "青水幸",
+      "author_url": "https://www.gongzicp.com/zone/author-1046881.html",
       "tags": [
         "都市",
         "喜剧",
@@ -463,17 +785,36 @@
         "双向暗恋",
         "自我攻略"
       ],
+      "all_tags": [
+        "都市",
+        "喜剧",
+        "酸甜",
+        "甜宠",
+        "轻松",
+        "搞笑",
+        "职业",
+        "年上",
+        "破镜重圆",
+        "双向暗恋",
+        "自我攻略"
+      ],
+      "primary_tag": "都市",
+      "abstract": "闷骚假正经×清冷真深情谢延这人最近邪门得很。加班加到深夜是常态，睡眠稀碎之后，他反而多了个特异功能——做的梦会成真。小到梦见咖啡洒了，",
       "word_count": "25.21万",
-      "popularity": "733.10万",
+      "popularity": "734.82万",
       "status": "完结",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 23,
       "book_name": "心动存单",
+      "book_url": "https://www.gongzicp.com/novel-2211496.html",
       "author": "颍川月下",
+      "author_url": "https://www.gongzicp.com/zone/author-828111.html",
       "tags": [
         "都市",
         "直掰弯",
@@ -483,17 +824,32 @@
         "轻松",
         "搞笑"
       ],
+      "all_tags": [
+        "都市",
+        "直掰弯",
+        "甜宠",
+        "HE",
+        "职业",
+        "轻松",
+        "搞笑"
+      ],
+      "primary_tag": "都市",
+      "abstract": "传说这是一张存单引发的公案…被银行各种kpi压得喘不过气还惨遭老板欺压同事霸凌的某支行直男社畜小行长",
       "word_count": "25.74万",
-      "popularity": "872.46万",
+      "popularity": "874.06万",
       "status": "完结",
       "update_time": "前天 00:01",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 24,
       "book_name": "通俗爱情",
+      "book_url": "https://www.gongzicp.com/novel-2244903.html",
       "author": "半缘修道",
+      "author_url": "https://www.gongzicp.com/zone/author-69948.html",
       "tags": [
         "综合",
         "甜宠",
@@ -501,34 +857,59 @@
         "一见钟情",
         "市井生活"
       ],
+      "all_tags": [
+        "综合",
+        "甜宠",
+        "HE",
+        "一见钟情",
+        "市井生活"
+      ],
+      "primary_tag": "综合",
+      "abstract": "江雪镜有一张漂亮的不正经的脸，但有一颗纯爱的心。聂和聿看着是个正经人，其实蛮肤浅，第一次见江雪镜的时候就觉得他肯定有男朋友",
       "word_count": "15.89万",
-      "popularity": "2,470.48万",
+      "popularity": "2,472.19万",
       "status": "完结",
       "update_time": "08-07",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 25,
       "book_name": "欢迎收听禾边鬼",
+      "book_url": "https://www.gongzicp.com/novel-1999698.html",
       "author": "晏山乔",
+      "author_url": "https://www.gongzicp.com/zone/author-241172.html",
       "tags": [
         "都市",
         "强强",
         "HE",
         "年下"
       ],
+      "all_tags": [
+        "都市",
+        "强强",
+        "HE",
+        "年下"
+      ],
+      "primary_tag": "都市",
+      "abstract": "真薄情真流氓x假精明假正经魏燎（攻）x陈文峥（受）17岁的猪头少年陈文峥被魏燎的花言巧语迷得晕头转向，暗暗发誓要一直陪",
       "word_count": "20.59万",
-      "popularity": "306.93万",
+      "popularity": "308.40万",
       "status": "连载中",
       "update_time": "前天 21:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 26,
       "book_name": "完美情人",
+      "book_url": "https://www.gongzicp.com/novel-2165172.html",
       "author": "拯救瑶光星",
+      "author_url": "https://www.gongzicp.com/zone/author-449472.html",
       "tags": [
         "都市",
         "追夫",
@@ -538,17 +919,32 @@
         "虐恋",
         "强取豪夺"
       ],
+      "all_tags": [
+        "都市",
+        "追夫",
+        "狗血",
+        "娱乐圈",
+        "谁逃谁追谁发疯",
+        "虐恋",
+        "强取豪夺"
+      ],
+      "primary_tag": "都市",
+      "abstract": "美强惨清醒明星攻楚决x斯文败类傲慢金主受傅斯然傅斯然和楚决的合约写得清楚，甲乙双方平等互利，有利益无爱",
       "word_count": "29.35万",
-      "popularity": "291.67万",
+      "popularity": "291.96万",
       "status": "完结",
       "update_time": "09-01",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 27,
       "book_name": "盘中餐",
+      "book_url": "https://www.gongzicp.com/novel-2065941.html",
       "author": "久陆",
+      "author_url": "https://www.gongzicp.com/zone/author-115876.html",
       "tags": [
         "综合",
         "烂俗狗血",
@@ -561,17 +957,35 @@
         "很会叫的受",
         "甜宠"
       ],
+      "all_tags": [
+        "综合",
+        "烂俗狗血",
+        "破镜重圆",
+        "追妻",
+        "HE",
+        "强强",
+        "酸涩",
+        "很会装的攻",
+        "很会叫的受",
+        "甜宠"
+      ],
+      "primary_tag": "综合",
+      "abstract": "很会装的天之骄子坏种攻 x 很会叫的过街老鼠疯狗受秦颂（攻）x 连容（受）连容是下道城很会叫的疯狗，给上道城无痛无情无爱的三无人员秦颂做了三",
       "word_count": "20.86万",
-      "popularity": "424.32万",
+      "popularity": "425.95万",
       "status": "连载中",
       "update_time": "昨天 22:45",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 28,
       "book_name": "天气晴 去殉情",
+      "book_url": "https://www.gongzicp.com/novel-2127392.html",
       "author": "Llosa",
+      "author_url": "https://www.gongzicp.com/zone/author-447945.html",
       "tags": [
         "都市",
         "HE",
@@ -579,33 +993,57 @@
         "不算甜宠倒也不虐",
         "其实有点破镜重圆"
       ],
+      "all_tags": [
+        "都市",
+        "HE",
+        "经典霸道总裁配美人",
+        "不算甜宠倒也不虐",
+        "其实有点破镜重圆"
+      ],
+      "primary_tag": "都市",
+      "abstract": "父母死后第十年，华尧光发现，可能存在其他真相。他开始寻找当年的证人，试图获得线索。",
       "word_count": "16.15万",
-      "popularity": "557.70万",
+      "popularity": "559.20万",
       "status": "连载中",
-      "update_time": "2 小时前",
+      "update_time": "4 小时前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 29,
       "book_name": "囡囡",
+      "book_url": "https://www.gongzicp.com/novel-2217586.html",
       "author": "木更木更",
+      "author_url": "https://www.gongzicp.com/zone/author-272.html",
       "tags": [
         "都市",
         "甜宠",
         "HE"
       ],
+      "all_tags": [
+        "都市",
+        "甜宠",
+        "HE"
+      ],
+      "primary_tag": "都市",
+      "abstract": "罗囡上学的时候被人唾弃是“小三”的孩子，后来宋争渡又争又抢地要当他的“小三”。争取月底开攻转受&自以为“小三”攻",
       "word_count": "12.83万",
-      "popularity": "1,431.68万",
+      "popularity": "1,432.95万",
       "status": "完结",
       "update_time": "08-09",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 30,
       "book_name": "林总监的领带",
+      "book_url": "https://www.gongzicp.com/novel-2233049.html",
       "author": "方浅",
+      "author_url": "https://www.gongzicp.com/zone/author-159837.html",
       "tags": [
         "都市",
         "熟男拉扯",
@@ -617,17 +1055,34 @@
         "拉扯",
         "欢喜冤家"
       ],
-      "word_count": "23.35万",
-      "popularity": "677.59万",
+      "all_tags": [
+        "都市",
+        "熟男拉扯",
+        "职业",
+        "正剧",
+        "HE",
+        "年上",
+        "强强",
+        "拉扯",
+        "欢喜冤家"
+      ],
+      "primary_tag": "都市",
+      "abstract": "梁政卓 攻x 林峥 受林峥离职闹得很不愉快，上司拍桌子，他摔文件，顺带扯下工牌往旁边一扔。<",
+      "word_count": "23.98万",
+      "popularity": "680.62万",
       "status": "连载中",
-      "update_time": "昨天 11:37",
+      "update_time": "1 小时前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 31,
       "book_name": "火烧日",
+      "book_url": "https://www.gongzicp.com/novel-1990932.html",
       "author": "一颗牙疼",
+      "author_url": "https://www.gongzicp.com/zone/author-911708.html",
       "tags": [
         "都市",
         "追妻火葬场",
@@ -638,17 +1093,33 @@
         "狗血",
         "HE"
       ],
+      "all_tags": [
+        "都市",
+        "追妻火葬场",
+        "虐恋",
+        "年下",
+        "攻前期恶劣",
+        "掉马后会成长",
+        "狗血",
+        "HE"
+      ],
+      "primary_tag": "都市",
+      "abstract": "腹黑绿茶X成熟克制贺焚野X郑文旭二十三岁的贺焚野，爱过一个人，也",
       "word_count": "25.71万",
-      "popularity": "651.81万",
+      "popularity": "652.02万",
       "status": "连载中",
       "update_time": "昨天 21:02",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 32,
       "book_name": "铩羽",
+      "book_url": "https://www.gongzicp.com/novel-1910372.html",
       "author": "兑水了了",
+      "author_url": "https://www.gongzicp.com/zone/author-180835.html",
       "tags": [
         "推理",
         "刑侦",
@@ -660,17 +1131,34 @@
         "双队长",
         "剧情"
       ],
+      "all_tags": [
+        "推理",
+        "刑侦",
+        "强强",
+        "双卧底",
+        "HE",
+        "年上",
+        "直掰弯",
+        "双队长",
+        "剧情"
+      ],
+      "primary_tag": "推理",
+      "abstract": "庄寂x孟锍（liǔ）孟锍，卧底归来，空降为港湾市临港分局刑侦",
       "word_count": "43.31万",
-      "popularity": "552.40万",
+      "popularity": "553.39万",
       "status": "完结",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 33,
       "book_name": "宴菩萨",
+      "book_url": "https://www.gongzicp.com/novel-2099195.html",
       "author": "商曾",
+      "author_url": "https://www.gongzicp.com/zone/author-1116881.html",
       "tags": [
         "宫廷",
         "虐恋",
@@ -679,34 +1167,60 @@
         "相爱相杀",
         "权谋"
       ],
+      "all_tags": [
+        "宫廷",
+        "虐恋",
+        "剧情",
+        "强强",
+        "相爱相杀",
+        "权谋"
+      ],
+      "primary_tag": "宫廷",
+      "abstract": "疯批阴郁傀儡皇帝攻×天之骄子明媚王爷受世人都道，当今圣上是个从庙里请回来的“泥菩萨”",
       "word_count": "43.67万",
-      "popularity": "974.31万",
+      "popularity": "974.87万",
       "status": "连载中",
-      "update_time": "9 小时前",
+      "update_time": "12 小时前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 34,
       "book_name": "不在意谎言",
+      "book_url": "https://www.gongzicp.com/novel-1867160.html",
       "author": "持续转向",
+      "author_url": "https://www.gongzicp.com/zone/author-399855.html",
       "tags": [
         "综合",
         "虐恋",
         "追妻",
         "HE"
       ],
+      "all_tags": [
+        "综合",
+        "虐恋",
+        "追妻",
+        "HE"
+      ],
+      "primary_tag": "综合",
+      "abstract": "宋之远有钱有势，在学校极受欢迎。陈昂穷惯了，经常被欺负。每天放学之后，陈昂都会远远跟在宋之远后面，走到没人的地方才敢喊他等等自",
       "word_count": "24.53万",
-      "popularity": "1,615.98万",
+      "popularity": "1,617.62万",
       "status": "完结",
       "update_time": "08-24",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 35,
       "book_name": "塑料夫夫观察实录",
+      "book_url": "https://www.gongzicp.com/novel-2117538.html",
       "author": "姜可颂",
+      "author_url": "https://www.gongzicp.com/zone/author-711134.html",
       "tags": [
         "架空",
         "对抗路情侣",
@@ -714,17 +1228,30 @@
         "HE",
         "娱乐圈"
       ],
+      "all_tags": [
+        "架空",
+        "对抗路情侣",
+        "ABO",
+        "HE",
+        "娱乐圈"
+      ],
+      "primary_tag": "架空",
+      "abstract": "口是心非继承人A×钓系清醒美人O叛逆少爷被迫接受家里安排的端庄温婉的老婆，本来以为对方很无聊想给人晾一边结果没想到对方是个黑心的妖精反被吃得死死的，醋老婆心里的白月光",
       "word_count": "23.00万",
-      "popularity": "597.92万",
+      "popularity": "600.98万",
       "status": "连载中",
       "update_time": "昨天 19:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 36,
       "book_name": "健忘症",
+      "book_url": "https://www.gongzicp.com/novel-2153371.html",
       "author": "姜双柏",
+      "author_url": "https://www.gongzicp.com/zone/author-1144071.html",
       "tags": [
         "都市",
         "狗血",
@@ -737,17 +1264,35 @@
         "娱乐圈",
         "酸甜"
       ],
+      "all_tags": [
+        "都市",
+        "狗血",
+        "破镜重圆",
+        "虽然狗血但是纯爱",
+        "半娱乐圈",
+        "帅1美0",
+        "酸涩",
+        "骄傲者低头",
+        "娱乐圈",
+        "酸甜"
+      ],
+      "primary_tag": "都市",
+      "abstract": "*记性特别好的嘴硬深情酷哥x记性不太好的漂亮（伪）花蝴蝶｜谭明琛x林融圈内都传，林融之所以这么多年我行我素，是因为有位",
       "word_count": "18.41万",
-      "popularity": "437.46万",
+      "popularity": "438.95万",
       "status": "连载中",
       "update_time": "昨天 20:30",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 37,
       "book_name": "初恋制造",
+      "book_url": "https://www.gongzicp.com/novel-2036503.html",
       "author": "猛猪出闸",
+      "author_url": "https://www.gongzicp.com/zone/author-20426.html",
       "tags": [
         "都市",
         "甜宠",
@@ -761,17 +1306,36 @@
         "轻松",
         "白切黑"
       ],
+      "all_tags": [
+        "都市",
+        "甜宠",
+        "搞笑",
+        "虐恋",
+        "看似是替身其实不是",
+        "替身",
+        "年上",
+        "换攻",
+        "但重点不在换攻",
+        "轻松",
+        "白切黑"
+      ],
+      "primary_tag": "都市",
+      "abstract": "外热内冷带点疯批的白切黑酷哥x萌萌的美人技师（正规的）<",
       "word_count": "20.92万",
-      "popularity": "307.30万",
+      "popularity": "307.49万",
       "status": "连载中",
       "update_time": "昨天 21:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 38,
       "book_name": "恶莺",
+      "book_url": "https://www.gongzicp.com/novel-1894915.html",
       "author": "吴百万",
+      "author_url": "https://www.gongzicp.com/zone/author-61334.html",
       "tags": [
         "都市",
         "双向暗恋",
@@ -783,17 +1347,34 @@
         "白切黑",
         "黑切白"
       ],
-      "word_count": "23.49万",
-      "popularity": "451.00万",
+      "all_tags": [
+        "都市",
+        "双向暗恋",
+        "竹马竹马",
+        "强强",
+        "救赎",
+        "欢喜冤家",
+        "死对头",
+        "白切黑",
+        "黑切白"
+      ],
+      "primary_tag": "都市",
+      "abstract": "乔翊贫民窟出身，一心想攀高枝，勾引顶豪家族的大老板。几次蓄意接近失败，乔翊穷途末路，不得不找上他最讨厌的人——周听澜。",
+      "word_count": "23.86万",
+      "popularity": "452.71万",
       "status": "连载中",
-      "update_time": "昨天 12:01",
+      "update_time": "29 分钟前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 39,
       "book_name": "再骂一句试试",
+      "book_url": "https://www.gongzicp.com/novel-1466467.html",
       "author": "盒家欢乐",
+      "author_url": "https://www.gongzicp.com/zone/author-99413.html",
       "tags": [
         "都市",
         "HE",
@@ -802,17 +1383,31 @@
         "治愈",
         "市井生活"
       ],
+      "all_tags": [
+        "都市",
+        "HE",
+        "天作之合",
+        "甜宠",
+        "治愈",
+        "市井生活"
+      ],
+      "primary_tag": "都市",
+      "abstract": "靳南与家里闹翻，被坑到城乡结合部连电梯都没有的破楼合租，前脚刚签下合同，后脚性格温软长相可爱的室友就变身霸王龙，叉着腰对邻居",
       "word_count": "20.32万",
-      "popularity": "300.06万",
+      "popularity": "301.97万",
       "status": "连载中",
       "update_time": "昨天 18:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 40,
       "book_name": "乱流",
+      "book_url": "https://www.gongzicp.com/novel-2222125.html",
       "author": "折周",
+      "author_url": "https://www.gongzicp.com/zone/author-12320.html",
       "tags": [
         "架空",
         "ABO",
@@ -821,17 +1416,31 @@
         "强强",
         "HE"
       ],
+      "all_tags": [
+        "架空",
+        "ABO",
+        "剧情",
+        "但剧情很抽象",
+        "强强",
+        "HE"
+      ],
+      "primary_tag": "架空",
+      "abstract": "甘阅明选择跟季谣离婚的原因，外界众说纷纭。最初的说法是季谣不如外表那般温顺体贴，实则唯利是图、精于算计，甘少心生嫌隙；另一种",
       "word_count": "20.80万",
-      "popularity": "604.21万",
+      "popularity": "604.48万",
       "status": "连载中",
       "update_time": "09-03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 41,
       "book_name": "植物学家的儿子",
+      "book_url": "https://www.gongzicp.com/novel-1662676.html",
       "author": "Lryan",
+      "author_url": "https://www.gongzicp.com/zone/author-43.html",
       "tags": [
         "都市",
         "追妻火葬场",
@@ -841,17 +1450,32 @@
         "女装受",
         "受追攻"
       ],
+      "all_tags": [
+        "都市",
+        "追妻火葬场",
+        "年上",
+        "初恋",
+        "狗血",
+        "女装受",
+        "受追攻"
+      ],
+      "primary_tag": "都市",
+      "abstract": "钓系海王老男人x女装穿lo直球少年言博岚x沐童，33x19沐童十八岁的盛夏，爱上一个不该染指的男",
       "word_count": "18.89万",
-      "popularity": "174.69万",
+      "popularity": "176.57万",
       "status": "连载中",
       "update_time": "昨天 23:01",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 42,
       "book_name": "霓虹时代",
+      "book_url": "https://www.gongzicp.com/novel-1316461.html",
       "author": "明月南楼",
+      "author_url": "https://www.gongzicp.com/zone/author-530641.html",
       "tags": [
         "都市",
         "受追攻",
@@ -864,17 +1488,35 @@
         "1V1",
         "破镜重圆"
       ],
+      "all_tags": [
+        "都市",
+        "受追攻",
+        "前半段旅居后半段都市",
+        "直球受",
+        "追妻",
+        "救赎",
+        "酸甜",
+        "HE",
+        "1V1",
+        "破镜重圆"
+      ],
+      "primary_tag": "都市",
+      "abstract": "桀骜不驯天之骄子X自由洒脱北京电影人双向奔赴/攻后期不穷程树言因电影制作受挫，避世到四川阿坝州的小城，却意外遇到了一个容",
       "word_count": "44.99万",
-      "popularity": "362.30万",
+      "popularity": "364.61万",
       "status": "完结",
       "update_time": "前天 17:06",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 43,
       "book_name": "别看，是恶评",
+      "book_url": "https://www.gongzicp.com/novel-2112632.html",
       "author": "水墨鸿",
+      "author_url": "https://www.gongzicp.com/zone/author-1052143.html",
       "tags": [
         "都市",
         "强制爱",
@@ -884,34 +1526,61 @@
         "虐恋",
         "现代"
       ],
+      "all_tags": [
+        "都市",
+        "强制爱",
+        "成年人恋爱",
+        "高情商毒舌受",
+        "顶级野心家",
+        "虐恋",
+        "现代"
+      ],
+      "primary_tag": "都市",
+      "abstract": "章*温资本大佬×私募交际花章劭回国那天，北京的秋风很冷",
       "word_count": "18.53万",
-      "popularity": "231.62万",
+      "popularity": "232.67万",
       "status": "连载中",
       "update_time": "昨天 19:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 44,
       "book_name": "废土乐园",
+      "book_url": "https://www.gongzicp.com/novel-2200595.html",
       "author": "冻柠红",
+      "author_url": "https://www.gongzicp.com/zone/author-65105.html",
       "tags": [
         "都市",
         "HE",
         "破镜重圆",
         "恨海情天"
       ],
+      "all_tags": [
+        "都市",
+        "HE",
+        "破镜重圆",
+        "恨海情天"
+      ],
+      "primary_tag": "都市",
+      "abstract": "戚尘喜欢骄纵的少爷许知乐。许知乐的眼睛明亮动人，但灵魂愚蠢肤浅，爱慕着一个富二代草包，却将戚",
       "word_count": "26.27万",
-      "popularity": "443.22万",
+      "popularity": "443.35万",
       "status": "连载中",
       "update_time": "昨天 21:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 45,
       "book_name": "顽疾",
+      "book_url": "https://www.gongzicp.com/novel-1977599.html",
       "author": "二十迷川",
+      "author_url": "https://www.gongzicp.com/zone/author-431417.html",
       "tags": [
         "架空",
         "追妻火葬场",
@@ -921,17 +1590,32 @@
         "HE",
         "狗血"
       ],
-      "word_count": "26.04万",
-      "popularity": "352.45万",
+      "all_tags": [
+        "架空",
+        "追妻火葬场",
+        "强制爱",
+        "破镜重圆",
+        "ABO",
+        "HE",
+        "狗血"
+      ],
+      "primary_tag": "架空",
+      "abstract": "薄情寡义A×温柔人妻O梁观×裴廷玉裴廷玉四年前进入梁家，",
+      "word_count": "26.39万",
+      "popularity": "353.79万",
       "status": "连载中",
-      "update_time": "昨天 11:32",
+      "update_time": "5 分钟前",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 46,
       "book_name": "仙人观我",
+      "book_url": "https://www.gongzicp.com/novel-2188104.html",
       "author": "蔓越鸥",
+      "author_url": "https://www.gongzicp.com/zone/author-832687.html",
       "tags": [
         "玄幻",
         "师徒年上",
@@ -945,51 +1629,94 @@
         "师徒",
         "仙侠"
       ],
+      "all_tags": [
+        "玄幻",
+        "师徒年上",
+        "年上",
+        "HE",
+        "强强",
+        "圣人攻",
+        "受唯一怕的只有师父",
+        "别抽了我认错",
+        "骗你的认错也抽",
+        "师徒",
+        "仙侠"
+      ],
+      "primary_tag": "玄幻",
+      "abstract": "长崤有仙山，山上有仙人。某日，此山来了个大逆不道的混账崽子。混账崽子乌袍黑发，剑眉星目，持一柄竹剑搅得满山鸡犬不宁。掌门拿他没辙，正想将他",
       "word_count": "18.22万",
-      "popularity": "345.68万",
+      "popularity": "346.44万",
       "status": "连载中",
       "update_time": "昨天 20:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 47,
       "book_name": "赐我美梦一场",
+      "book_url": "https://www.gongzicp.com/novel-1970414.html",
       "author": "向衔",
+      "author_url": "https://www.gongzicp.com/zone/author-1012051.html",
       "tags": [
         "都市",
         "追妻",
         "年上",
         "酸涩"
       ],
+      "all_tags": [
+        "都市",
+        "追妻",
+        "年上",
+        "酸涩"
+      ],
+      "primary_tag": "都市",
+      "abstract": "程然有一个深埋心底的秘密，他暗恋自己的哥哥。七岁，从他被接进梁家开始，无数个日日夜夜，是梁渡远陪伴在他身",
       "word_count": "27.43万",
-      "popularity": "2,007.80万",
+      "popularity": "2,008.03万",
       "status": "完结",
       "update_time": "08-24",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 48,
       "book_name": "绊心",
+      "book_url": "https://www.gongzicp.com/novel-2047444.html",
       "author": "一只狌狌",
+      "author_url": "https://www.gongzicp.com/zone/author-473204.html",
       "tags": [
         "架空",
         "狗血",
         "破镜重圆",
         "HE"
       ],
+      "all_tags": [
+        "架空",
+        "狗血",
+        "破镜重圆",
+        "HE"
+      ],
+      "primary_tag": "架空",
+      "abstract": "温星被送给陆烬的那个夜晚，暴雨倾盆，他因为紧张害怕倒茶时洒了一点，被罚在门外跪了一夜。那时的陆烬，是翻手为云覆手为雨的上位者",
       "word_count": "15.96万",
-      "popularity": "160.89万",
+      "popularity": "161.51万",
       "status": "连载中",
       "update_time": "前天 23:59",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 49,
       "book_name": "非得我当0？",
+      "book_url": "https://www.gongzicp.com/novel-1743216.html",
       "author": "野真",
+      "author_url": "https://www.gongzicp.com/zone/author-477821.html",
       "tags": [
         "综合",
         "强制爱",
@@ -1001,17 +1728,34 @@
         "缺心眼倒霉0",
         "狗血"
       ],
+      "all_tags": [
+        "综合",
+        "强制爱",
+        "受很老实但身材很辣",
+        "美1帅0",
+        "混血攻貌美体力很猛",
+        "搞笑",
+        "渴肤攻强抱直男受",
+        "缺心眼倒霉0",
+        "狗血"
+      ],
+      "primary_tag": "综合",
+      "abstract": "一朝落魄，褚然被父亲坑了800万贷款，唯一能帮他的，竟是反目成仇的情敌。褚然搓手",
       "word_count": "23.74万",
-      "popularity": "572.66万",
+      "popularity": "573.27万",
       "status": "连载中",
       "update_time": "昨天 22:00",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     },
     {
       "rank": 50,
       "book_name": "野孩子",
+      "book_url": "https://www.gongzicp.com/novel-2043634.html",
       "author": "风月归我",
+      "author_url": "https://www.gongzicp.com/zone/author-77879.html",
       "tags": [
         "综合",
         "出租屋文学",
@@ -1023,10 +1767,25 @@
         "竹马竹马",
         "治愈"
       ],
+      "all_tags": [
+        "综合",
+        "出租屋文学",
+        "破镜重圆",
+        "酸甜",
+        "年上",
+        "日常",
+        "双向奔赴",
+        "竹马竹马",
+        "治愈"
+      ],
+      "primary_tag": "综合",
+      "abstract": "会哄但不停酷哥X乖巧可爱哥控小狗被豪门认回那天，孟迁无比憧憬。",
       "word_count": "21.00万",
-      "popularity": "402.74万",
+      "popularity": "403.32万",
       "status": "连载中",
       "update_time": "昨天 00:03",
+      "channel": "",
+      "gender": "",
       "rank_change": null,
       "history_days": 1
     }
