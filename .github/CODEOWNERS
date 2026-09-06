@@ -1,0 +1,5 @@
+# 前端文件所有者：sherry 本人
+# 任何修改 index.html / assets 的 PR 必须由 sherry 审批后才能合并
+# 详细规则见 FRONTEND-GUARD.md
+/index.html    @SherrySouthXS
+/assets/       @SherrySouthXS

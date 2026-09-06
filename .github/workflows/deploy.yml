@@ -32,6 +32,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ============================================================
+      # 前端保护哨兵：防止其他 agent / 误操作把 index.html 回退成
+      # 旧版（历史上 2b9e606 曾基于旧文件提交、整段删除玻璃主题层上线）。
+      # 规则：本次 push 若改动 index.html，产物必须保留设计签名
+      # （bg-diffused-wide 弥散背景 + alignBookItems 等高对齐 JS）；
+      # 签名缺失 = 疑似被旧版回退/篡改 → 拒绝部署，线上保持最新设计。
+      # 合法"主动重设计"逃生舱：commit message 含 [fe:authorized] 可放行。
+      # 只拦前端文件改动；data/**（每日爬虫）与纯文档改动不受影响。
+      # ============================================================
+      - name: Frontend guard - 校验设计签名（防误回退）
+        run: |
+          set -e
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.event.after }}"
+          if [ -n "$BEFORE" ] && [ -n "$AFTER" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+            CHANGED=$(git diff --name-only "$BEFORE" "$AFTER" || true)
+          else
+            CHANGED=$(git diff --name-only HEAD^ HEAD 2>/dev/null || true)
+          fi
+          if ! echo "$CHANGED" | grep -qE '^(index\.html|assets/)'; then
+            echo "OK: 本次未改动前端文件（index.html/assets），跳过签名校验"
+            exit 0
+          fi
+          echo "前端文件被改动，执行设计签名校验 ..."
+          SIG_OK=true
+          grep -q 'bg-diffused-wide' index.html || SIG_OK=false
+          grep -q 'alignBookItems'  index.html || SIG_OK=false
+          MSG="${{ github.event.head_commit.message }}"
+          if [ "$SIG_OK" = "true" ]; then
+            echo "OK: 设计签名在位（bg-diffused-wide + alignBookItems），放行部署"
+          elif echo "$MSG" | grep -q '\[fe:authorized\]'; then
+            echo "OK: 签名缺失但提交声明 [fe:authorized]（主动重设计），放行部署"
+          else
+            echo "::error::前端文件被改动但设计签名缺失！"
+            echo "::error::疑似基于旧版 index.html 提交/删除主题层（如同 2b9e606 事件）。"
+            echo "::error::本次拒绝部署，线上保持最新设计。合法改动需在 commit message 加 [fe:authorized]。"
+            exit 1
+          fi
+
       - uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
