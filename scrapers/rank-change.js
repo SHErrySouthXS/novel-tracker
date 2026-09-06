@@ -41,7 +41,10 @@ function computeRankChange(todayBooks, dataDir, todayDateStr, bookKey = 'book_id
     }
   }
 
-  // 2) 读昨天的 latest.json 用于算具体涨跌幅
+  // 2) 检查是否有历史数据（不含今天）
+  const hasAnyHistory = appearDays.size > 0;
+
+  // 3) 读昨天的 latest.json 用于算具体涨跌幅
   const latestPath = path.join(dataDir, 'latest.json');
   let prevMap = null;
   if (fs.existsSync(latestPath)) {
@@ -69,8 +72,9 @@ function computeRankChange(todayBooks, dataDir, todayDateStr, bookKey = 'book_id
     const hasHistory = !!(everSet && everSet.size > 0);
 
     if (!hasHistory) {
-      b.rank_change = 'new';
-      strictNew++;
+      // 没有任何历史数据时（第一天追踪），不标 new
+      b.rank_change = hasAnyHistory ? 'new' : null;
+      if (hasAnyHistory) strictNew++;
     } else if (prevMap && id in prevMap) {
       b.rank_change = prevMap[id] - b.rank;
       ranked++;
