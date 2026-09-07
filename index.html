@@ -560,7 +560,6 @@
       height: 100%;
       border-radius: 2px;
       background: currentColor;
-      opacity: 0.85;
       transition: width 0.6s ease;
     }
     @media (max-width: 720px) {
@@ -1116,8 +1115,10 @@
       font-weight: 600;
     }
 
-    /* 4) 题材占比条磨砂化 */
+    /* 4) 题材占比条磨砂化（概览题材分布 = 各平台细分题材的统一标准，sherry 2026-09-07） */
     .tag-bar-fill { opacity: 0.5; }
+    .subcat-module .subtag-bar-fill,
+    .subcat-module .l1-bar-fill { opacity: 0.5; }
 
     /* 5) 字体：MiSans 全局（清新圆润几何，匹配弥散玻璃风） */
     body {
@@ -2221,7 +2222,7 @@ function subCategoryHTML(books, platformId, opts = {}) {
         <span class="l1-dist-title">一级题材占比</span>
         ${topL1.map(l1 => {
           const pct = fullTotal > 0 ? Math.round(l1Map[l1].total / fullTotal * 100) : 0;
-          return `<span class="l1-dist-item" style="color:${color};"><b>${cx(l1)}</b><span class="l1-dist-pct">${pct}%</span><span class="l1-bar"><span class="l1-bar-fill" style="width:${pct}%;"></span></span></span>`;
+          return `<span class="l1-dist-item" style="color:${color};"><b>${cx(l1)}</b><span class="l1-dist-pct">${pct}%</span><span class="l1-bar"><span class="l1-bar-fill" style="width:${pct}%;background:${color};"></span></span></span>`;
         }).join('<span class="l1-dist-sep">·</span>')}
       </div>`
     : '';
