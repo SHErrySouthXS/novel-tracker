@@ -4,6 +4,9 @@ on:
   schedule:
     # 每天北京时间 08:00 运行 (UTC 00:00)
     - cron: '0 0 * * *'
+    # 冗余兜底 08:30 (UTC 00:30)：GitHub schedule 不保证执行，双触发点提高命中概率；
+    # 若 08:00 已跑完，08:30 重抓 diff 为空则不会重复 commit；若仍在跑则被 concurrency 取消重来
+    - cron: '30 0 * * *'
   workflow_dispatch:
 
 permissions:
