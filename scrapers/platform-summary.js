@@ -6,7 +6,8 @@
  * 背景：晋江「积分月榜 Top50」与七猫「女频大热榜 Top20」的标签体系与长佩不同
  * （晋江只有 频道+年代+内容类型 标签、七猫每本仅 1 个一级题材标签），
  * 无法用 changpei-summary.js 那套"人设×情感"规则词典产出同款内容。
- * 故本脚本改用通义千问（qwen-plus，复用 analyze.js 管道与 QWEN_API_KEY）：
+ * 故本脚本调用 LLM（默认通义千问 qwen-plus；可经 env 切小米 MiMo 等 OpenAI 兼容服务，
+ *   复用 analyze.js 统一 LLM 管道：LLM_API_KEY / LLM_BASE_URL / LLM_MODEL）：
  *   读书名 + 全部标签 + 简介，按与长佩 banner 一致的三个维度输出：
  *     🎭 情感主旋律 / 💑 热门 CP 人设 / 📊 题材与结构
  * 输出 data/<platform>/summary.json（blocks[]，前端直接复用 summary-banner 版式）。
@@ -19,8 +20,13 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const QWEN_API_KEY = process.env.QWEN_API_KEY || '';
-const QWEN_API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+// ===== LLM 配置（默认通义千问；可经 env 切换任意 OpenAI 兼容服务，如小米 MiMo Token Plan:
+// LLM_BASE_URL=https://token-plan-cn.xiaomimimo.com/v1 LLM_MODEL=mimo-v2.5-pro） =====
+const LLM_API_KEY = process.env.LLM_API_KEY || process.env.MIMO_API_KEY || process.env.QWEN_API_KEY || '';
+const LLM_BASE_URL = (process.env.LLM_BASE_URL || 'https://dashscope.aliyuncs.com/compatible-mode/v1').replace(/\/+$/, '');
+const LLM_MODEL = process.env.LLM_MODEL || 'qwen-plus';
+const LLM_API_URL = `${LLM_BASE_URL}/chat/completions`;
+const IS_MIMO = /mimo/i.test(LLM_MODEL); // MiMo 用 max_completion_tokens；thinking 下 temperature/top_p 强制 1.0/0.95（无碍）
 
 // ========== 平台配置 ==========
 const PLATFORM_CONF = {
@@ -102,16 +108,19 @@ function buildContext(conf, data) {
   };
 }
 
-// ========== 调用通义千问 ==========
-function callQwen(messages) {
+// ========== 调用 LLM（OpenAI 兼容） ==========
+function callLLM(messages) {
   return new Promise((resolve, reject) => {
-    const payload = JSON.stringify({ model: 'qwen-plus', messages, temperature: 0.4, max_tokens: 1600 });
-    const url = new URL(QWEN_API_URL);
+    const body = { model: LLM_MODEL, messages, temperature: 0.4 };
+    if (IS_MIMO) body.max_completion_tokens = 3000; // 含 reasoning tokens，给足防正文被挤占
+    else body.max_tokens = 1600;
+    const payload = JSON.stringify(body);
+    const url = new URL(LLM_API_URL);
     const req = https.request({
       hostname: url.hostname, port: 443, path: url.pathname, method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${QWEN_API_KEY}`,
+        'Authorization': `Bearer ${LLM_API_KEY}`,
         'Content-Length': Buffer.byteLength(payload),
       },
       timeout: 60000,
@@ -189,7 +198,7 @@ async function main() {
   console.log(`  ${conf.ranking}: ${ctx.total} 本`);
 
   // ---- AI 路径 ----
-  if (QWEN_API_KEY) {
+  if (LLM_API_KEY) {
     const systemPrompt = `你是网文榜单分析师。请针对「${conf.name}」${conf.ranking}今日榜单，写"今日流行总结"。
 背景：${conf.note}
 
@@ -218,8 +227,8 @@ ${ctx.topBooks}
 请生成三段式流行总结 JSON。`;
 
     try {
-      console.log('🤖 正在调用通义千问生成...');
-      const text = await callQwen([
+      console.log(`🤖 正在调用 LLM(${LLM_MODEL}) 生成...`);
+      const text = await callLLM([
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
       ]);
@@ -246,7 +255,7 @@ ${ctx.topBooks}
         total_count: ctx.total,
         blocks: cleaned,
         mode: 'ai',
-        model: 'qwen-plus',
+        model: LLM_MODEL,
       };
       fs.writeFileSync(outPath, JSON.stringify(summary, null, 2), 'utf-8');
       console.log(`  ✓ AI 生成完成: ${outPath}`);
@@ -260,7 +269,7 @@ ${ctx.topBooks}
       console.log('  降级为 fallback...');
     }
   } else {
-    console.warn('⚠️ 未设置 QWEN_API_KEY，走 fallback（仅为结构占位，AI 版将在 daily-scrape 中生成）');
+    console.warn('⚠️ 未设置 LLM_API_KEY（或 MIMO_API_KEY / QWEN_API_KEY），走 fallback（仅为结构占位，AI 版将在 daily-scrape 中生成）');
   }
 
   const fb = buildFallback(ctx, { id: platformId, name: conf.name, ranking: conf.ranking }, data, today);

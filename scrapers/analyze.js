@@ -9,10 +9,15 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-// ========== 配置 ==========
+// ========== LLM 配置 ==========
+// 默认走通义千问（DashScope OpenAI 兼容端点）；可通过 env 切换任意 OpenAI 兼容服务，
+// 如小米 MiMo Token Plan: LLM_BASE_URL=https://token-plan-cn.xiaomimimo.com/v1 LLM_MODEL=mimo-v2.5-pro
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const QWEN_API_KEY = process.env.QWEN_API_KEY || '';
-const QWEN_API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
+const LLM_API_KEY = process.env.LLM_API_KEY || process.env.MIMO_API_KEY || process.env.QWEN_API_KEY || '';
+const LLM_BASE_URL = (process.env.LLM_BASE_URL || 'https://dashscope.aliyuncs.com/compatible-mode/v1').replace(/\/+$/, '');
+const LLM_MODEL = process.env.LLM_MODEL || 'qwen-plus';
+const LLM_API_URL = `${LLM_BASE_URL}/chat/completions`;
+const IS_MIMO = /mimo/i.test(LLM_MODEL); // MiMo 用 max_completion_tokens；thinking 下 temperature/top_p 会被其强制覆盖为 1.0/0.95（无碍）
 
 // ========== 工具函数 ==========
 function getNowBJT() {
@@ -36,16 +41,15 @@ function readJSON(filePath) {
 }
 
 // ========== 调用通义千问 API ==========
-function callQwenAPI(messages) {
+function callLLM(messages) {
   return new Promise((resolve, reject) => {
-    const payload = JSON.stringify({
-      model: 'qwen-plus',
-      messages,
-      temperature: 0.7,
-      max_tokens: 2000,
-    });
+    const body = { model: LLM_MODEL, messages, temperature: 0.7 };
+    // MiMo 兼容 OpenAI 新字段（含 reasoning tokens 预算，给足防正文被挤占）
+    if (IS_MIMO) body.max_completion_tokens = 4000;
+    else body.max_tokens = 2000;
+    const payload = JSON.stringify(body);
 
-    const url = new URL(QWEN_API_URL);
+    const url = new URL(LLM_API_URL);
     const options = {
       hostname: url.hostname,
       port: 443,
@@ -53,7 +57,7 @@ function callQwenAPI(messages) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${QWEN_API_KEY}`,
+        'Authorization': `Bearer ${LLM_API_KEY}`,
         'Content-Length': Buffer.byteLength(payload),
       },
       timeout: 60000,
@@ -137,8 +141,8 @@ async function main() {
   console.log(`AI 智能分析模块 - ${fmtDateTime(now)}`);
   console.log('='.repeat(60));
 
-  if (!QWEN_API_KEY) {
-    console.error('❌ 未设置 QWEN_API_KEY 环境变量');
+  if (!LLM_API_KEY) {
+    console.error('❌ 未设置 LLM_API_KEY（或 MIMO_API_KEY / QWEN_API_KEY）环境变量');
     process.exit(1);
   }
 
@@ -202,7 +206,7 @@ async function main() {
   console.log('\n🤖 正在调用 AI 分析...');
   
   try {
-    const response = await callQwenAPI([
+    const response = await callLLM([
       { role: 'system', content: systemPrompt },
       { role: 'user', content: userPrompt },
     ]);
@@ -235,7 +239,7 @@ async function main() {
 
     // 添加元信息
     analysis.generated_at = fmtDateTime(now);
-    analysis.model = 'qwen-plus';
+    analysis.model = LLM_MODEL;
 
     // 保存
     const analysisPath = path.join(DATA_DIR, 'analysis.json');

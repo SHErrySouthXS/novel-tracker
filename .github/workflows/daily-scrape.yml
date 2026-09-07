@@ -44,11 +44,13 @@ jobs:
         run: node scrapers/jjwxc.js
         continue-on-error: true
 
-      # 晋江月榜 · 今日流行总结（AI，通义千问；前端横幅与长佩同款）
+      # 晋江月榜 · 今日流行总结（AI，LLM=小米 MiMo Token Plan；前端横幅与长佩同款）
       - name: JJWXC Trend Summary (今日流行总结)
         run: node scrapers/platform-summary.js jjwxc
         env:
-          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          LLM_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          LLM_BASE_URL: https://token-plan-cn.xiaomimimo.com/v1
+          LLM_MODEL: mimo-v2.5-pro
         continue-on-error: true
 
       # 长佩文学 (Playwright)
@@ -67,11 +69,13 @@ jobs:
         run: node scrapers/qimao.js --girl
         continue-on-error: true
 
-      # 七猫女频 · 今日流行总结（AI，通义千问；前端横幅与长佩同款）
+      # 七猫女频 · 今日流行总结（AI，LLM=小米 MiMo Token Plan；前端横幅与长佩同款）
       - name: Qimao Trend Summary (今日流行总结)
         run: node scrapers/platform-summary.js qimao
         env:
-          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          LLM_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          LLM_BASE_URL: https://token-plan-cn.xiaomimimo.com/v1
+          LLM_MODEL: mimo-v2.5-pro
         continue-on-error: true
 
       # 晋江积分榜 Top1000 (每月1号更新 或 手动触发时运行，10页1000本)
@@ -101,10 +105,12 @@ jobs:
         timeout-minutes: 10
 
       # AI 智能分析
-      - name: AI Analysis (通义千问)
+      - name: AI Analysis (概览深度分析)
         run: node scrapers/analyze.js
         env:
-          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          LLM_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          LLM_BASE_URL: https://token-plan-cn.xiaomimimo.com/v1
+          LLM_MODEL: mimo-v2.5-pro
         continue-on-error: true
 
       - name: Commit & Push data
