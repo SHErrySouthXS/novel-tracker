@@ -1,6 +1,9 @@
 /**
  * 番茄小说热门榜单爬虫 v4 (novel-tracker 版)
- * 
+ *
+ * 榜单口径：番茄书库「女频」最热榜 Top50（gender=0，对应网站 audience0 频道）。
+ * 看板只展示女频，2026-09-07 起由原全性别(gender=-1)改为女频；男频书不再抓取。
+ *
  * 标签获取策略（按优先级）：
  * 1. top_book_list/v1 API → category 字段（未加密，覆盖部分热门书）
  * 2. 按分类遍历 book_list API → book_id→category 映射
@@ -81,15 +84,15 @@ async function buildCategoryGenderMap() {
   return map;
 }
 
-// ========== 步骤2: 获取热榜排名列表 ==========
+// ========== 步骤2: 获取热榜排名列表（女频，gender=0 = 网站 audience0 频道；看板只展示女频） ==========
 async function fetchHotRankList() {
-  console.log('  获取热榜排名...');
+  console.log('  获取女频热榜排名...');
   const allBooks = [];
   const pagesNeeded = Math.ceil(TARGET_COUNT / PAGE_SIZE);
   for (let page = 0; page < pagesNeeded; page++) {
     const params = new URLSearchParams({
       page_count: PAGE_SIZE, page_index: page,
-      gender: -1, category_id: -1, creation_status: -1,
+      gender: 0, category_id: -1, creation_status: -1,
       word_count: -1, book_type: -1, sort: 0,
     });
     try {
@@ -601,8 +604,8 @@ async function main() {
     update_time: fmtDateTime(now),
     update_date: fmtDate(now),
     total_count: books.length,
-    source: '番茄小说书库·最热榜',
-    source_url: 'https://fanqienovel.com/library?enter_from=menu',
+    source: '番茄小说书库·女频最热榜',
+    source_url: 'https://fanqienovel.com/library/audience0/page_1?sort=hottes',
     platform: 'fanqie',
     platform_name: '番茄小说',
     tag_stats: tagStats,

@@ -1311,7 +1311,7 @@ const state = {
 const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
-  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '最热榜 Top50' },
+  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '女频最热榜 Top50' },
   { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '女频大热榜 Top20' },
 ];
 
@@ -1962,7 +1962,7 @@ async function renderPlatformTab(platformId) {
   if (state.loaded[platformId]) return;
   state.loaded[platformId] = true;
 
-  // 番茄有子榜单（最热榜 Top50 + 巅峰榜 Top30）
+  // 番茄有子榜单（女频最热榜 Top50 + 巅峰榜 Top30）
   if (platformId === 'fanqie') {
     renderFanqieWithSubTabs(platform, data, contentEl);
     return;
@@ -2394,10 +2394,13 @@ function switchJjwxcSubTab(subTabId) { switchSubTab('jjwxcContent', 'jjwxc', sub
 function switchFanqieSubTab(subTabId) { switchSubTab('fanqieContent', 'fanqie', subTabId); }
 function switchChangpeiSubTab(subTabId) { switchSubTab('changpeiContent', 'changpei', subTabId); }
 
-// ========== 番茄子榜单渲染（最热榜 Top50 + 巅峰榜 Top30）==========
+// ========== 番茄子榜单渲染（女频最热榜 Top50 + 巅峰榜 Top30）==========
 async function renderFanqieWithSubTabs(platform, data, contentEl) {
   const peakData = await loadJSON('data/fanqie/peak.json');
   state.data.fanqie_peak = peakData;
+
+  // 今日流行总结（data/fanqie/summary.json 由 platform-summary.js 每日 AI 生成；无则横幅占位）
+  const summaryData = await loadJSON('data/fanqie/summary.json');
 
   const books = data.books;
   const tagStats = data.tag_stats || {};
@@ -2419,21 +2422,15 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
     </div>
 
     <div class="sub-tab-nav">
-      <button class="sub-tab-btn active" data-subtab="hot" onclick="switchFanqieSubTab('hot')">🔥 最热榜 Top50</button>
+      <button class="sub-tab-btn active" data-subtab="hot" onclick="switchFanqieSubTab('hot')">🔥 女频最热榜 Top50</button>
       <button class="sub-tab-btn" data-subtab="peak" onclick="switchFanqieSubTab('peak')">👑 巅峰榜 Top30</button>
     </div>
 
     <div class="sub-tab-content active" id="fanqie-sub-hot">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
-      <div class="tag-stats-bar">
-        ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-          <span class="tag-stat-item">
-            <span class="tag-name">${tag}</span>
-            <span class="tag-count">${count}</span>
-          </span>
-        `).join('')}
-      </div>
+      <!-- 题材洞察（与长佩/晋江月榜同版式：流行总结横幅 + 题材分布百分比条；番茄女频无 insights 故不展示 7天/蓝海卡） -->
+      ${topInsightHTML(summaryData, tagStats, platform, '📊 题材分布')}
 
       <div class="filter-bar">
         <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-fanqie" oninput="filterBooks('fanqie')">

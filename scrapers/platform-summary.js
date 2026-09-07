@@ -1,9 +1,10 @@
 /**
- * 平台总榜 · 今日流行总结生成器（AI 版 · 晋江 / 七猫）
+ * 平台总榜 · 今日流行总结生成器（AI 版 · 晋江 / 七猫 / 番茄女频）
  *
- * 用法: node scrapers/platform-summary.js <jjwxc|qimao>
+ * 用法: node scrapers/platform-summary.js <jjwxc|qimao|fanqie>
  *
- * 背景：晋江「积分月榜 Top50」与七猫「女频大热榜 Top20」的标签体系与长佩不同
+ * 背景：晋江「积分月榜 Top50」、七猫「女频大热榜 Top20」、番茄「女频最热榜 Top50」的
+ * 标签体系与长佩不同
  * （晋江只有 频道+年代+内容类型 标签、七猫每本仅 1 个一级题材标签），
  * 无法用 changpei-summary.js 那套"人设×情感"规则词典产出同款内容。
  * 故本脚本调用 LLM（默认通义千问 qwen-plus；可经 env 切小米 MiMo 等 OpenAI 兼容服务，
@@ -43,6 +44,13 @@ const PLATFORM_CONF = {
     name: '七猫小说·女频',
     ranking: '女频大热榜 Top20',
     note: '七猫女频大热榜每本只有一个一级题材标签（总裁豪门/宫闱宅斗等），人设/情感信息主要藏在简介里，请从简介提炼 CP 与节奏',
+  },
+  fanqie: {
+    dir: path.join(__dirname, '..', 'data', 'fanqie'),
+    file: 'latest.json',
+    name: '番茄小说·女频',
+    ranking: '女频最热榜 Top50',
+    note: '番茄女频最热榜（书库 audience0 频道）每本含频道题材 primary_tag + 多个细分标签（all_tags，如 甜宠/马甲/穿书…），简介信息量大；请从标签与简介提炼情感节奏、CP 人设与题材结构',
   },
 };
 
@@ -178,7 +186,7 @@ async function main() {
   const platformId = process.argv[2];
   const conf = PLATFORM_CONF[platformId];
   if (!conf) {
-    console.error('❌ 用法: node scrapers/platform-summary.js <jjwxc|qimao>');
+    console.error('❌ 用法: node scrapers/platform-summary.js <jjwxc|qimao|fanqie>');
     process.exit(1);
   }
   const data = readJSON(path.join(conf.dir, conf.file));

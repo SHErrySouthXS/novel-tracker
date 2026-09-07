@@ -34,9 +34,18 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install chromium --with-deps
 
-      # 番茄小说 (原生 HTTP，无需 Playwright)
-      - name: Scrape Fanqie (番茄小说)
+      # 番茄小说 (原生 HTTP，无需 Playwright；看板只展示女频，爬虫内置 gender=0 女频最热榜)
+      - name: Scrape Fanqie (番茄小说·女频最热榜)
         run: node scrapers/fanqie.js
+        continue-on-error: true
+
+      # 番茄女频 · 今日流行总结（AI，LLM=小米 MiMo Token Plan；前端横幅与长佩同款）
+      - name: Fanqie Trend Summary (今日流行总结)
+        run: node scrapers/platform-summary.js fanqie
+        env:
+          LLM_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          LLM_BASE_URL: https://token-plan-cn.xiaomimimo.com/v1
+          LLM_MODEL: mimo-v2.5-pro
         continue-on-error: true
 
       # 晋江文学城 (原生 HTTP)
