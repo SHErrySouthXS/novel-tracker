@@ -45,7 +45,7 @@ function callLLM(messages) {
   return new Promise((resolve, reject) => {
     const body = { model: LLM_MODEL, messages, temperature: 0.7 };
     // MiMo 兼容 OpenAI 新字段（含 reasoning tokens 预算，给足防正文被挤占）
-    if (IS_MIMO) body.max_completion_tokens = 4000;
+    if (IS_MIMO) body.max_completion_tokens = 8192; // thinking 可能消耗数千 tokens，预算不足会 length 截断正文为空
     else body.max_tokens = 2000;
     const payload = JSON.stringify(body);
 

@@ -112,7 +112,7 @@ function buildContext(conf, data) {
 function callLLM(messages) {
   return new Promise((resolve, reject) => {
     const body = { model: LLM_MODEL, messages, temperature: 0.4 };
-    if (IS_MIMO) body.max_completion_tokens = 3000; // 含 reasoning tokens，给足防正文被挤占
+    if (IS_MIMO) body.max_completion_tokens = 8192; // mimo-v2.5-pro thinking 可能消耗数千 tokens；预算不足会 finish_reason=length 且正文为空，故给足
     else body.max_tokens = 1600;
     const payload = JSON.stringify(body);
     const url = new URL(LLM_API_URL);
