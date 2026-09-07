@@ -2,10 +2,10 @@
  * 长佩文学 多榜单爬虫
  * 
  * 抓取:
- *   1. 总榜畅销榜 Top50
- *   2. 纯爱-畅销榜 Top50
- *   3. 纯爱-新书榜 Top50
- *   4. 纯爱-完结榜 Top50
+ *   1. 总榜畅销榜 Top200
+ *   2. 纯爱-畅销榜 Top200
+ *   3. 纯爱-新书榜 Top200
+ *   4. 纯爱-完结榜 Top200
  * 
  * 数据源: https://www.gongzicp.com/home/ranking (总榜)
  *         https://www.gongzicp.com/home/indexRanking?tid=75 (纯爱)
@@ -18,7 +18,7 @@ const { computeRankChange } = require('./rank-change');
 
 // ========== 配置 ==========
 const DATA_DIR = path.join(__dirname, '..', 'data', 'changpei');
-const TARGET_COUNT = 50;
+const TARGET_COUNT = 200;
 
 // 榜单配置
 const RANKINGS = [

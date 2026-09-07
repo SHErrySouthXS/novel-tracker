@@ -17,7 +17,7 @@ const { withRetry } = require('./retry');
 
 // ========== 配置 ==========
 const DATA_DIR = path.join(__dirname, '..', 'data', 'jjwxc');
-const TARGET_COUNT = 50;
+const TARGET_COUNT = 200;
 const RANK_URL = 'https://www.jjwxc.net/topten.php?orderstr=5&t=2';
 const REQUEST_DELAY = 800;
 const HEADERS = {

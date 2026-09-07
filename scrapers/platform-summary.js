@@ -3,7 +3,7 @@
  *
  * 用法: node scrapers/platform-summary.js <jjwxc|qimao|fanqie>
  *
- * 背景：晋江「积分月榜 Top50」、七猫「女频大热榜 Top20」、番茄「女频最热榜 Top50」的
+ * 背景：晋江「积分月榜 Top200」、七猫「女频大热榜 Top20」、番茄「女频最热榜 Top200」的
  * 标签体系与长佩不同
  * （晋江只有 频道+年代+内容类型 标签、七猫每本仅 1 个一级题材标签），
  * 无法用 changpei-summary.js 那套"人设×情感"规则词典产出同款内容。
@@ -35,7 +35,7 @@ const PLATFORM_CONF = {
     dir: path.join(__dirname, '..', 'data', 'jjwxc'),
     file: 'latest.json',
     name: '晋江文学城',
-    ranking: '积分月榜 Top50',
+    ranking: '积分月榜 Top200',
     note: '晋江以女性向言情/耽美/百合为主，频道与题材标签混合（原创/爱情/近代现代/架空历史…），简介常点明人设与剧情钩子',
   },
   qimao: {
@@ -49,7 +49,7 @@ const PLATFORM_CONF = {
     dir: path.join(__dirname, '..', 'data', 'fanqie'),
     file: 'latest.json',
     name: '番茄小说·女频',
-    ranking: '女频最热榜 Top50',
+    ranking: '女频最热榜 Top200',
     note: '番茄女频最热榜（书库 audience0 频道）每本含频道题材 primary_tag + 多个细分标签（all_tags，如 甜宠/马甲/穿书…），简介信息量大；请从标签与简介提炼情感节奏、CP 人设与题材结构',
   },
 };

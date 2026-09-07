@@ -66,7 +66,7 @@ jobs:
       - name: Scrape Changpei (长佩文学)
         run: node scrapers/changpei.js
         continue-on-error: true
-        timeout-minutes: 10
+        timeout-minutes: 45
 
       # 长佩总榜流行总结（纯规则引擎，离线，无需 API）
       - name: Changpei Trend Summary (今日流行总结)

@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 setup-dirs.ps1
 data/*/debug_*.html
+
+# local research scratch (tag-study)
+tag-study/

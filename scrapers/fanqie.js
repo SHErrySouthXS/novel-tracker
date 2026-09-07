@@ -1,7 +1,7 @@
 /**
  * 番茄小说热门榜单爬虫 v4 (novel-tracker 版)
  *
- * 榜单口径：番茄书库「女频」最热榜 Top50（gender=0，对应网站 audience0 频道）。
+ * 榜单口径：番茄书库「女频」最热榜 Top200（gender=0，对应网站 audience0 频道）。
  * 看板只展示女频，2026-09-07 起由原全性别(gender=-1)改为女频；男频书不再抓取。
  *
  * 标签获取策略（按优先级）：
@@ -30,7 +30,7 @@ const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36',
   'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
 };
-const TARGET_COUNT = 50;
+const TARGET_COUNT = 200;
 const PAGE_SIZE = 18;
 const REQUEST_DELAY = 600;
 
@@ -262,7 +262,7 @@ async function fetchBookCategoryMap(catGenderMap) {
   const categories = Object.entries(catGenderMap);
   for (const [catName, catInfo] of categories) {
     for (const gender of [1, 0]) {
-      // 只请求第1页（18本），足以覆盖 Top50 中属于该分类的书
+      // 只请求第1页（18本），足以覆盖 Top200 中属于该分类的书
       const params = new URLSearchParams({
         page_count: 18, page_index: 0,
         gender, category_id: catInfo.id, creation_status: -1,

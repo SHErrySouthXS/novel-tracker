@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN" data-page-node-id="qH1iTF3g1ryJgSY7i4JRLU">
+<head data-page-node-id="ggYq3pYb6XOXc0FAAvQfB1">
+  <meta charset="UTF-8" data-page-node-id="QEjpv2KqyieXmvc9O473T3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="W8OCRZxoU3V6ZPcwS1fjye">
   <title>网文平台日榜追踪 · Novel Tracker</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='0.5' y='8' width='4' height='8' rx='0.5' fill='%23e6488a'/><rect x='6' y='4' width='4' height='12' rx='0.5' fill='%23ff6b35'/><rect x='11.5' y='6' width='4' height='10' rx='0.5' fill='%23c83c23'/><rect x='0.5' y='7' width='4' height='1.5' fill='%23ffd700'/><rect x='6' y='3' width='4' height='1.5' fill='%23ffd700'/><rect x='11.5' y='5' width='4' height='1.5' fill='%23ffd700'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' data-page-node-id="lsRqFB4Ov3yjXtgdcr5fVg"><rect x='0.5' y='8' width='4' height='8' rx='0.5' fill='%23e6488a' data-page-node-id="MRNBy3yDntAy4tn24eG9YK"/><rect x='6' y='4' width='4' height='12' rx='0.5' fill='%23ff6b35' data-page-node-id="CwPU1WojKgUxFJz97bY41Q"/><rect x='11.5' y='6' width='4' height='10' rx='0.5' fill='%23c83c23' data-page-node-id="OIdqmk0Wz07uJJnh9CXrl3"/><rect x='0.5' y='7' width='4' height='1.5' fill='%23ffd700' data-page-node-id="L3bgEVOR3RCbkPLOrHaHi8"/><rect x='6' y='3' width='4' height='1.5' fill='%23ffd700' data-page-node-id="pz3nz7MnhIByJ0RFqu1LhH"/><rect x='11.5' y='5' width='4' height='1.5' fill='%23ffd700' data-page-node-id="1RWXTaffgzghKERic9cySo"/></svg>">
   <style>
     /* ===== Web Fonts（MiSans 正文 · 霞鹜文楷标题） ===== */
     @import url("https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Regular.min.css");
@@ -661,6 +661,42 @@
 
     /* ===== Book List ===== */
     .book-list { display: flex; flex-direction: column; gap: 8px; }
+
+    /* ===== 榜单分页（Top200 榜单每页 50 本）===== */
+    .pagination-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 16px 0 4px;
+    }
+    .pagination-btn {
+      min-width: 34px;
+      height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      color: var(--text-dim);
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pagination-btn:hover { border-color: rgba(255,255,255,0.25); color: var(--text); }
+    .pagination-btn.active {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.3);
+      color: var(--text);
+      font-weight: 700;
+    }
+    .pagination-info {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-align: center;
+      margin: 0 0 12px;
+      opacity: 0.8;
+    }
     .book-item {
       display: flex;
       align-items: stretch;
@@ -1335,114 +1371,114 @@
     }
   </style>
 </head>
-<body>
+<body data-page-node-id="T999yuh8XNEONm6SzSQFVX">
 
-<div class="header">
-  <div class="header-inner">
-    <h1>📚 网文平台日榜追踪</h1>
-    <div class="tab-nav">
-      <button class="tab-btn active" data-tab="dashboard" onclick="switchTab('dashboard')">📊 概览</button>
-      <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')">🌸 晋江文学城</button>
-      <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')">💜 长佩文学</button>
-      <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')">🍅 番茄小说</button>
-      <button class="tab-btn" data-tab="qimao" onclick="switchTab('qimao')">🐱 七猫小说</button>
+<div class="header" data-page-node-id="C9LQc1k5LJRObfAW89mCAk">
+  <div class="header-inner" data-page-node-id="NEOpZHlANsZmbcvnEEXC8W">
+    <h1 data-page-node-id="3NYF2pNVBIaPxdo14trJzH">📚 网文平台日榜追踪</h1>
+    <div class="tab-nav" data-page-node-id="2l4tBDhHjn6HahA33k55H2">
+      <button class="tab-btn active" data-tab="dashboard" onclick="switchTab('dashboard')" data-page-node-id="Bau5yfmPGoDHc732yJWEL8">📊 概览</button>
+      <button class="tab-btn" data-tab="jjwxc" onclick="switchTab('jjwxc')" data-page-node-id="4PokERV9Ht9JXa9lcc9Mki">🌸 晋江文学城</button>
+      <button class="tab-btn" data-tab="changpei" onclick="switchTab('changpei')" data-page-node-id="WjLzbcpGiHv1YJhraTIIBP">💜 长佩文学</button>
+      <button class="tab-btn" data-tab="fanqie" onclick="switchTab('fanqie')" data-page-node-id="QpVrKTTzzDChZxMI0F4v7e">🍅 番茄小说</button>
+      <button class="tab-btn" data-tab="qimao" onclick="switchTab('qimao')" data-page-node-id="TBWzkBM9JTAny8Gv7H3RHL">🐱 七猫小说</button>
     </div>
-    <div class="update-info" id="updateInfo">加载中...</div>
+    <div class="update-info" id="updateInfo" data-page-node-id="Gx3Mui3KsxPbQmXvFkQNdW">加载中...</div>
   </div>
 </div>
 
-<div class="main">
+<div class="main" data-page-node-id="XsTEe5d4MTPX5oftvvoya0">
   <!-- ===== Dashboard Tab ===== -->
-  <div class="tab-content active" id="tab-dashboard">
-    <div class="loading" id="dashLoading">
-      <div class="spinner"></div>
-      <div>正在加载数据...</div>
+  <div class="tab-content active" id="tab-dashboard" data-page-node-id="DyfhzmGwdE4OfEWGKY0AG6">
+    <div class="loading" id="dashLoading" data-page-node-id="983GZOlHChFt4qZlmsxYCK">
+      <div class="spinner" data-page-node-id="vFXzxzHVHm7pHL7eDB17Va"></div>
+      <div data-page-node-id="HHVcNf0Sw5SRHKdoffopSc">正在加载数据...</div>
     </div>
-    <div id="dashContent" style="display:none;">
+    <div id="dashContent" style="display:none;" data-page-node-id="hh10jw4RY3cj1mGNK1ozog">
       <!-- 快速统计卡片 -->
-      <div class="insight-section">
-        <h3>📈 今日快照</h3>
-        <div class="insight-cards" id="insightCards"></div>
+      <div class="insight-section" data-page-node-id="Z8GzhB6adDUtuGmUWqJsu4">
+        <h3 data-page-node-id="MJC3NF3VbOhyWhYwt3SIp6">📈 今日快照</h3>
+        <div class="insight-cards" id="insightCards" data-page-node-id="gli8gDINfrDlyGZUuGLKXq"></div>
       </div>
 
       <!-- 四站 Top10 速览 -->
-      <div class="dash-grid" id="dashTopGrid"></div>
+      <div class="dash-grid" id="dashTopGrid" data-page-node-id="txTXdsiWkxdx0yaaczlLEo"></div>
 
       <!-- 题材分布对比 -->
-      <div class="insight-section">
-        <h3>🎯 题材分布对比</h3>
-        <div class="tag-distribution" id="tagDistribution"></div>
+      <div class="insight-section" data-page-node-id="pFz8M8EP7Dj19MDm0L1GhQ">
+        <h3 data-page-node-id="Juftv4c8RKfw9FlUebbcjF">🎯 题材分布对比</h3>
+        <div class="tag-distribution" id="tagDistribution" data-page-node-id="kgzFmM5NbrmHKGvfIQ97Cm"></div>
       </div>
 
       <!-- 新上榜作品（三站分列） -->
-      <div class="new-entries">
-        <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;">🆕 今日新上榜作品</h3>
-        <div class="new-entries-grid" id="newEntryGrid"></div>
+      <div class="new-entries" data-page-node-id="4B4aAGqCasYizr6DiPvGaz">
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;" data-page-node-id="HKriLkfw8Y9RFU4ghdrVOF">🆕 今日新上榜作品</h3>
+        <div class="new-entries-grid" id="newEntryGrid" data-page-node-id="NLuOe11EZQKvIgQhIRS6TI"></div>
       </div>
 
       <!-- AI 总览（如有 AI 分析） -->
-      <div id="aiOverallSection" style="display:none;margin-bottom:24px;">
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;">
-          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;">🤖 AI 每日洞察</h3>
-          <p id="aiOverallSummary" style="font-size:14px;color:var(--text);line-height:1.8;"></p>
-          <div id="aiSignals" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;"></div>
+      <div id="aiOverallSection" style="display:none;margin-bottom:24px;" data-page-node-id="7Rlv1PHH10R4p5gqybJnGV">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;" data-page-node-id="1Cp451l4Eb8WR8sHujSvQl">
+          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;" data-page-node-id="kYEXDs0DQiH4gXptAtQwK3">🤖 AI 每日洞察</h3>
+          <p id="aiOverallSummary" style="font-size:14px;color:var(--text);line-height:1.8;" data-page-node-id="t1rdVwB32mZXtAK6A4yDPL"></p>
+          <div id="aiSignals" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;" data-page-node-id="KoHUqpFUsxRBk7hrChNyEB"></div>
         </div>
       </div>
 
       <!-- 各站内容特点总结 -->
-      <div class="platform-summary" id="platformSummary">
-        <h3>💡 各站内容特点</h3>
-        <div class="summary-items" id="summaryItems"></div>
+      <div class="platform-summary" id="platformSummary" data-page-node-id="C4uElGSF2JhV2E2626kd7C">
+        <h3 data-page-node-id="fE91M1s68Ztyc8GcWwElo1">💡 各站内容特点</h3>
+        <div class="summary-items" id="summaryItems" data-page-node-id="Vaewsomd6ntUEE8tsP2Hpa"></div>
       </div>
 
       <!-- 跨平台对比洞察（AI） -->
-      <div id="crossPlatformSection" style="display:none;margin-bottom:24px;">
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;">
-          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;">🔄 跨平台对比</h3>
-          <p id="crossPlatformText" style="font-size:13px;color:var(--text-dim);line-height:1.8;"></p>
+      <div id="crossPlatformSection" style="display:none;margin-bottom:24px;" data-page-node-id="yoCPnwzY6xjKdI9NNnTOGG">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;" data-page-node-id="hY62Qk5WFYBCKuzlSnqgMf">
+          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;" data-page-node-id="c2pdcaIUeA5lXEl14p7PkP">🔄 跨平台对比</h3>
+          <p id="crossPlatformText" style="font-size:13px;color:var(--text-dim);line-height:1.8;" data-page-node-id="AxNPkbFTGwMbR2i7WoveEB"></p>
         </div>
       </div>
 
       <!-- 题材趋势折线图 -->
-      <div class="trend-section">
-        <h3>📉 题材趋势变化（近7日）</h3>
-        <div class="trend-chart-container" id="trendChart">
-          <div class="trend-chart-placeholder">需要至少2天历史数据才能展示趋势</div>
+      <div class="trend-section" data-page-node-id="wQxtDTNC5EL6TviFcZAyDn">
+        <h3 data-page-node-id="jA2Jy0DpUAF5MnECydcwAl">📉 题材趋势变化（近7日）</h3>
+        <div class="trend-chart-container" id="trendChart" data-page-node-id="fMf6ecQdGwyZyzUFMeJUOq">
+          <div class="trend-chart-placeholder" data-page-node-id="tobsW7BHk9ienytFOMAgf4">需要至少2天历史数据才能展示趋势</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ===== 番茄 Tab ===== -->
-  <div class="tab-content" id="tab-fanqie">
-    <div class="loading" id="fanqieLoading">
-      <div class="spinner"></div>
-      <div>正在加载番茄小说数据...</div>
+  <div class="tab-content" id="tab-fanqie" data-page-node-id="WMKdkiUVZZHn71d5p7ypio">
+    <div class="loading" id="fanqieLoading" data-page-node-id="piZXuHH9zeVqvcQGD2393F">
+      <div class="spinner" data-page-node-id="6ggYCRO4vd7B7feqs024sp"></div>
+      <div data-page-node-id="Dux0SX77bX4kNawlgrtaHV">正在加载番茄小说数据...</div>
     </div>
-    <div id="fanqieContent" style="display:none;"></div>
+    <div id="fanqieContent" style="display:none;" data-page-node-id="jg7A7ToRKAEMTpQLEARCZx"></div>
   </div>
 
   <!-- ===== 七猫 Tab ===== -->
-  <div class="tab-content" id="tab-qimao">
-    <div class="loading" id="qimaoLoading">
-      <div class="spinner"></div>
-      <div>正在加载七猫小说数据...</div>
+  <div class="tab-content" id="tab-qimao" data-page-node-id="9sshHNtWMejRGbEQQHAzZ0">
+    <div class="loading" id="qimaoLoading" data-page-node-id="pBPthHuY5UTjSLJYGKiCSm">
+      <div class="spinner" data-page-node-id="KUIsGtMJjzEmBbBkY0mBD4"></div>
+      <div data-page-node-id="XpF4sYjM05MqVqYYXGmyxc">正在加载七猫小说数据...</div>
     </div>
-    <div id="qimaoContent" style="display:none;"></div>
+    <div id="qimaoContent" style="display:none;" data-page-node-id="beKUBgwr79aW73Szn6mGT8"></div>
   </div>
 
   <!-- ===== 晋江 Tab ===== -->
-  <div class="tab-content" id="tab-jjwxc">
-    <div class="loading" id="jjwxcLoading">
-      <div class="spinner"></div>
-      <div>正在加载晋江文学城数据...</div>
+  <div class="tab-content" id="tab-jjwxc" data-page-node-id="iegdzufLg9FBBgWBVRa6Sv">
+    <div class="loading" id="jjwxcLoading" data-page-node-id="h1lFOTF67MafOxoBRcXkwO">
+      <div class="spinner" data-page-node-id="1A2bAkyIjXDksPfpuHAA5A"></div>
+      <div data-page-node-id="VQ6D6lZuEPMeOx7P0y7mNN">正在加载晋江文学城数据...</div>
     </div>
-    <div id="jjwxcContent" style="display:none;"></div>
+    <div id="jjwxcContent" style="display:none;" data-page-node-id="3cD5rjwuH32TKecgaVUFAu"></div>
   </div>
 
   <!-- ===== 长佩 Tab ===== -->
-  <div class="tab-content" id="tab-changpei">
-    <div class="loading" id="changpeiLoading">
+  <div class="tab-content" id="tab-changpei" data-page-node-id="6YDIg2eZE8CGeuKuBdGzMW">
+    <div class="loading" id="changpeiLoading" data-page-node-id="fapYqeCxPFb4morIl1m3TA">
       <div class="spinner"></div>
       <div>正在加载长佩文学数据...</div>
     </div>
@@ -1460,9 +1496,9 @@ const state = {
 };
 
 const PLATFORMS = [
-  { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top50' },
-  { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top50' },
-  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '女频最热榜 Top50' },
+  { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top200' },
+  { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top200' },
+  { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '女频最热榜 Top200' },
   { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '女频大热榜 Top20' },
 ];
 
@@ -2255,7 +2291,7 @@ async function renderPlatformTab(platformId) {
   if (state.loaded[platformId]) return;
   state.loaded[platformId] = true;
 
-  // 番茄有子榜单（女频最热榜 Top50 + 巅峰榜 Top30）
+  // 番茄有子榜单（女频最热榜 Top200 + 巅峰榜 Top30）
   if (platformId === 'fanqie') {
     renderFanqieWithSubTabs(platform, data, contentEl);
     return;
@@ -2394,7 +2430,140 @@ function renderBookList(books, platformId) {
   }).join('');
 }
 
+// ========== 榜单分页（Top200 榜单默认每页 50 本；数据驱动 + 全集过滤） ==========
+// 每个需要分页的榜单在此注册：dataKey 取全集 books 的 state 路径；filterControls 为
+// 读取过滤条件的 DOM id 前缀（缺省同 listId）；perPage 默认 50。
+// 渲染入口统一走 renderPagedBookList(listId, page)，页码状态存 state._pg[listId]。
+const PAGED_OPTIONS = {
+  fanqie:            { dataKey: 'fanqie',  perPage: 50 },
+  jjwxc:             { dataKey: 'jjwxc',   perPage: 50 },
+  changpei:          { dataKey: 'changpei', perPage: 50 },
+  changpei_purelove_bestseller: { dataKey: 'changpei_purelove_bestseller', perPage: 50, filter: ['search', 'tag'] },
+  changpei_purelove_new:        { dataKey: 'changpei_purelove_new',        perPage: 50, filter: ['search', 'tag'] },
+  changpei_purelove_completed:  { dataKey: 'changpei_purelove_completed',  perPage: 50, filter: ['search', 'tag'] },
+};
+
+function pgState(listId) {
+  if (!state._pg) state._pg = {};
+  if (!state._pg[listId]) state._pg[listId] = { page: 1 };
+  return state._pg[listId];
+}
+
+function pagedBooks(listId) {
+  const opt = PAGED_OPTIONS[listId];
+  // 历史回看时 _pgSrc 存的是临时全集（优先生效）；否则从 state.data 对应 key 读取
+  if (state._pgSrc?.[listId]) return state._pgSrc[listId].slice();
+  const data = state.data[opt?.dataKey || listId];
+  return (data?.books || []).slice();
+}
+
+// 读取该榜单过滤栏当前条件（search-{id}/gender-{id}/tag-{id}/status-{id}…，可存在即读）
+function readListFilters(listId) {
+  const f = {};
+  for (const key of ['search', 'gender', 'tag', 'status', 'year']) {
+    const el = document.getElementById(`${key}-${listId}`);
+    if (el) f[key] = key === 'search' ? (el.value || '').toLowerCase() : (el.value || '');
+  }
+  const newBtn = document.getElementById(`newonly-${listId}`);
+  f.newOnly = newBtn ? newBtn.classList.contains('active') : false;
+  const sort = state._sort?.[listId];
+  f.sortKey = sort?.key || null;
+  f.sortDir = sort?.dir || 'desc';
+  return f;
+}
+
+function filterPagedBooks(listId, books) {
+  const f = readListFilters(listId);
+  let arr = books.filter(b => {
+    if (f.search) {
+      const n = (b.book_name || '').toLowerCase();
+      const a = (b.author || '').toLowerCase();
+      if (!n.includes(f.search) && !a.includes(f.search)) return false;
+    }
+    if (f.gender) {
+      const g = (b.gender || b.channel || '');
+      if (g !== f.gender) return false;
+    }
+    if (f.tag && (b.primary_tag || '') !== f.tag) return false;
+    if (f.status && (b.status || '') !== f.status) return false;
+    if (f.year && (b.publish_time || '').slice(0, 4) !== f.year) return false;
+    if (f.newOnly && b.rank_change !== 'new') return false;
+    return true;
+  });
+  if (f.sortKey === 'days') {
+    arr.sort((a, b) => f.sortDir === 'desc' ? (b.history_days || 0) - (a.history_days || 0) : (a.history_days || 0) - (b.history_days || 0));
+  } else if (f.sortKey === 'change') {
+    const v = (b) => b.rank_change === 'new' ? Number.POSITIVE_INFINITY : (typeof b.rank_change === 'number' ? b.rank_change : 0);
+    arr.sort((a, b) => f.sortDir === 'desc' ? v(b) - v(a) : v(a) - v(b));
+  } else {
+    arr.sort((a, b) => (a.rank || 0) - (b.rank || 0));
+  }
+  return arr;
+}
+
+function renderPagedBookList(listId, page) {
+  const opt = PAGED_OPTIONS[listId];
+  const perPage = opt?.perPage || 50;
+  const st = pgState(listId);
+  const all = filterPagedBooks(listId, pagedBooks(listId));
+  const totalPages = Math.max(1, Math.ceil(all.length / perPage));
+  if (page) st.page = Math.min(Math.max(1, page), totalPages);
+  const cur = st.page;
+  const start = (cur - 1) * perPage;
+  const slice = all.slice(start, start + perPage);
+  const listEl = document.getElementById(`bookList-${listId}`);
+  if (listEl) listEl.innerHTML = renderBookList(slice, listId);
+  const pgEl = document.getElementById(`pager-${listId}`);
+  if (pgEl) {
+    let h = `<button class="pagination-btn" ${cur===1?'disabled':''} onclick="goBookPage('${listId}', ${cur-1})">‹</button>`;
+    for (let i = 1; i <= totalPages; i++) {
+      h += `<button class="pagination-btn ${i===cur?'active':''}" onclick="goBookPage('${listId}', ${i})">${i}</button>`;
+    }
+    h += `<button class="pagination-btn" ${cur===totalPages?'disabled':''} onclick="goBookPage('${listId}', ${cur+1})">›</button>`;
+    pgEl.innerHTML = h;
+  }
+  const infoEl = document.getElementById(`pagerInfo-${listId}`);
+  if (infoEl) infoEl.textContent = `共 ${all.length} 本 · 第 ${cur}/${totalPages} 页 · 每页 ${perPage} 本`;
+}
+
+function goBookPage(listId, page) {
+  if (!PAGED_OPTIONS[listId]) return;
+  renderPagedBookList(listId, page);
+}
+
+// 供榜单初次渲染/历史切换调用：注册 + 渲染第 1 页
+function initPagedList(listId, booksSource) {
+  if (!PAGED_OPTIONS[listId]) return;
+  const opt = PAGED_OPTIONS[listId];
+  if (booksSource) {
+    // 局部 data（非 state.data）时临时注入一个可读源
+    if (!state._pgSrc) state._pgSrc = {};
+    state._pgSrc[listId] = booksSource;
+  }
+  pgState(listId).page = 1;
+  renderPagedBookList(listId);
+}
+
+// 兼容现有 filterBooks：PAGED 榜单 → 数据驱动重绘（重置到第1页 + 应用过滤/排序）；
+// 非 PAGED（如 jjwxc_score / qidian_coll 千级 DOM）→ 保留原 DOM show/hide 逻辑。
+function isPagedList(platformId) { return !!PAGED_OPTIONS[platformId]; }
+
+function applyListFilters(platformId) {
+  if (isPagedList(platformId)) {
+    pgState(platformId).page = 1;
+    renderPagedBookList(platformId);
+    return true;
+  }
+  return false;
+}
+
 function filterBooks(platformId) {
+  // Top200 分页榜：数据驱动全集过滤（跨页搜索/筛选都有效），不走 DOM show/hide
+  if (isPagedList(platformId)) {
+    applyListFilters(platformId);
+    return;
+  }
+
   const search = (document.getElementById(`search-${platformId}`)?.value || '').toLowerCase();
   const gender = document.getElementById(`gender-${platformId}`)?.value || '';
   const tag = document.getElementById(`tag-${platformId}`)?.value || '';
@@ -2465,9 +2634,14 @@ function toggleSort(platformId, key) {
 }
 
 function applySortOrder(platformId) {
-  const sort = state._sort?.[platformId];
   const listEl = document.getElementById(`bookList-${platformId}`);
   if (!listEl) return;
+  // Top200 分页榜：排序由数据驱动 renderPagedBookList 完成（DOM 排序不适用）
+  if (isPagedList(platformId)) {
+    applyListFilters(platformId);
+    return;
+  }
+  const sort = state._sort?.[platformId];
   const items = Array.from(listEl.querySelectorAll('.book-item'));
 
   // 把 data-rank 缓存到 element 上（用于恢复原序）
@@ -2517,14 +2691,26 @@ async function loadHistoryData(platformId, date) {
     // 恢复当前数据
     const data = state.data[platformId];
     if (data?.books) {
-      document.getElementById(`bookList-${platformId}`).innerHTML = renderBookList(data.books, platformId);
+      if (isPagedList(platformId)) {
+        renderPagedBookList(platformId, 1);
+      } else {
+        document.getElementById(`bookList-${platformId}`).innerHTML = renderBookList(data.books, platformId);
+      }
     }
     return;
   }
   
   const histData = await loadJSON(`data/${platformId}/history/${date}.json`);
   if (histData?.books) {
-    document.getElementById(`bookList-${platformId}`).innerHTML = renderBookList(histData.books, platformId);
+    if (isPagedList(platformId)) {
+      // 历史数据临时替换源并回第 1 页
+      if (!state._pgSrc) state._pgSrc = {};
+      state._pgSrc[platformId] = histData.books;
+      state._pg[platformId] = { page: 1 };
+      renderPagedBookList(platformId, 1);
+    } else {
+      document.getElementById(`bookList-${platformId}`).innerHTML = renderBookList(histData.books, platformId);
+    }
   }
 }
 
@@ -2691,7 +2877,7 @@ function switchJjwxcSubTab(subTabId) { switchSubTab('jjwxcContent', 'jjwxc', sub
 function switchFanqieSubTab(subTabId) { switchSubTab('fanqieContent', 'fanqie', subTabId); }
 function switchChangpeiSubTab(subTabId) { switchSubTab('changpeiContent', 'changpei', subTabId); }
 
-// ========== 番茄子榜单渲染（女频最热榜 Top50 + 巅峰榜 Top30）==========
+// ========== 番茄子榜单渲染（女频最热榜 Top200 + 巅峰榜 Top30）==========
 async function renderFanqieWithSubTabs(platform, data, contentEl) {
   const peakData = await loadJSON('data/fanqie/peak.json');
   state.data.fanqie_peak = peakData;
@@ -2719,7 +2905,7 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
     </div>
 
     <div class="sub-tab-nav">
-      <button class="sub-tab-btn active" data-subtab="hot" onclick="switchFanqieSubTab('hot')">🔥 女频最热榜 Top50</button>
+      <button class="sub-tab-btn active" data-subtab="hot" onclick="switchFanqieSubTab('hot')">🔥 女频最热榜 Top200</button>
       <button class="sub-tab-btn" data-subtab="peak" onclick="switchFanqieSubTab('peak')">👑 巅峰榜 Top30</button>
     </div>
 
@@ -2760,8 +2946,9 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
       </div>
 
       <div class="book-list" id="bookList-fanqie">
-        ${renderBookList(books, 'fanqie')}
       </div>
+      <div class="pagination-info" id="pagerInfo-fanqie"></div>
+      <div class="pagination-nav" id="pager-fanqie"></div>
     </div>
 
     <div class="sub-tab-content" id="fanqie-sub-peak">
@@ -2809,6 +2996,8 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
         `}
     </div>
   `;
+  // Top200 女频热榜：分页容器初始化（每页 50；数据源 state.data.fanqie）
+  initPagedList('fanqie');
 }
 
 // 巅峰榜 Top30 卡片（横向单行：排名 | 书名+作者 | 标签 | 简介 | 月度涨跌）
@@ -2883,7 +3072,7 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
   // 今日流行总结（data/jjwxc/summary.json 由 platform-summary.js 每日 AI 生成；无则横幅占位）
   const summaryData = await loadJSON('data/jjwxc/summary.json');
 
-  // 月榜 Top50 数据
+  // 月榜 Top200 数据
   const books = data.books;
   const tagStats = data.tag_stats || {};
   const genderStats = data.gender_stats || {};
@@ -2910,11 +3099,11 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
 
     <!-- 子榜单切换 -->
     <div class="sub-tab-nav">
-      <button class="sub-tab-btn active" data-subtab="monthrank" onclick="switchJjwxcSubTab('monthrank')">🔥 积分月榜 Top50</button>
+      <button class="sub-tab-btn active" data-subtab="monthrank" onclick="switchJjwxcSubTab('monthrank')">🔥 积分月榜 Top200</button>
       <button class="sub-tab-btn" data-subtab="score1000" onclick="switchJjwxcSubTab('score1000')">⭐ 积分榜 Top1000</button>
     </div>
 
-    <!-- 积分月榜 Top50 内容 -->
+    <!-- 积分月榜 Top200 内容 -->
     <div class="sub-tab-content active" id="jjwxc-sub-monthrank">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
@@ -2952,8 +3141,9 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
       </div>
 
       <div class="book-list" id="bookList-jjwxc">
-        ${renderBookList(books, 'jjwxc')}
       </div>
+      <div class="pagination-info" id="pagerInfo-jjwxc"></div>
+      <div class="pagination-nav" id="pager-jjwxc"></div>
     </div>
 
     <!-- 积分榜 Top1000 内容 -->
@@ -3006,6 +3196,8 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
         `}
     </div>
   `;
+  // Top200 积分月榜：分页容器初始化（数据源 state.data.jjwxc）
+  initPagedList('jjwxc');
 }
 
 // 晋江积分榜 Top1000 列表渲染（展示积分 + 首发时间）
@@ -3161,8 +3353,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
       </div>
 
       <div class="book-list" id="bookList-changpei">
-        ${renderBookList(books, 'changpei')}
       </div>
+      <div class="pagination-info" id="pagerInfo-changpei"></div>
+      <div class="pagination-nav" id="pager-changpei"></div>
     </div>
 
     <!-- 耽美畅销榜 -->
@@ -3187,8 +3380,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
             </select>
           </div>
           <div class="book-list" id="bookList-changpei_purelove_bestseller">
-            ${renderBookList(pureloveBseller.books, 'changpei_purelove_bestseller')}
           </div>
+          <div class="pagination-info" id="pagerInfo-changpei_purelove_bestseller"></div>
+          <div class="pagination-nav" id="pager-changpei_purelove_bestseller"></div>
         `}
     </div>
 
@@ -3214,8 +3408,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
             </select>
           </div>
           <div class="book-list" id="bookList-changpei_purelove_new">
-            ${renderBookList(pureloveNew.books, 'changpei_purelove_new')}
           </div>
+          <div class="pagination-info" id="pagerInfo-changpei_purelove_new"></div>
+          <div class="pagination-nav" id="pager-changpei_purelove_new"></div>
         `}
     </div>
 
@@ -3241,11 +3436,17 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
             </select>
           </div>
           <div class="book-list" id="bookList-changpei_purelove_completed">
-            ${renderBookList(pureloveCompleted.books, 'changpei_purelove_completed')}
           </div>
+          <div class="pagination-info" id="pagerInfo-changpei_purelove_completed"></div>
+          <div class="pagination-nav" id="pager-changpei_purelove_completed"></div>
         `}
     </div>
   `;
+  // Top200 四榜（总榜/畅销/新书/完结）：分页容器初始化
+  initPagedList('changpei');
+  initPagedList('changpei_purelove_bestseller');
+  initPagedList('changpei_purelove_new');
+  initPagedList('changpei_purelove_completed');
 }
 
 // ========== 初始化 ==========
