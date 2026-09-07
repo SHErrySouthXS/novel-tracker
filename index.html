@@ -420,6 +420,100 @@
       border-radius: 10px;
       cursor: default;
     }
+
+    /* ===== 细分品类模块 — 4 平台统一两级 ===== */
+    .subcat-module {
+      margin: 0 0 20px 0;
+      padding: 16px 18px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .subcat-head-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+      gap: 8px;
+    }
+    .subcat-module-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin: 0;
+      letter-spacing: 0.3px;
+    }
+    .subcat-module-meta {
+      font-size: 10px;
+      color: var(--text-dim);
+    }
+    .subcat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+    .subcat-card {
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      min-width: 0;
+    }
+    .subcat-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px dashed var(--border);
+    }
+    .subcat-title {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    .subcat-total {
+      font-size: 10px;
+      color: var(--text-dim);
+    }
+    .subtag-row {
+      margin-bottom: 6px;
+    }
+    .subtag-row:last-child {
+      margin-bottom: 0;
+    }
+    .subtag-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 10px;
+      color: var(--text-primary);
+      margin-bottom: 2px;
+      gap: 6px;
+    }
+    .subtag-count {
+      color: var(--text-dim);
+      font-size: 10px;
+      flex-shrink: 0;
+    }
+    .subtag-bar {
+      height: 5px;
+      background: rgba(0,0,0,0.08);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .subtag-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+    @media (max-width: 720px) {
+      .subcat-grid { grid-template-columns: 1fr 1fr; }
+      .subcat-module { padding: 12px 14px; }
+    }
+    @media (max-width: 480px) {
+      .subcat-grid { grid-template-columns: 1fr; }
+    }
     .tag-stats-bar::before {
       content: '📊 题材分布';
       display: block;
@@ -1944,6 +2038,137 @@ function topInsightHTML(summaryData, tagStats, platform, distLabel) {
     </div>`;
 }
 
+// ========== 细分品类（按一级下钻） — 4 平台统一两级模块 ==========
+// 一级：大题材/频道（晋江 channel / 长佩 tags[0] / 番茄 primary_tag / 七猫 channel）
+// 二级：该一级下细分 tag（取自 books.tags / all_tags，按平台规则剥离一级本身与通用项）
+// 同义 tag 通过 SUBTAG_NORMALIZE 词典归一（长佩 CP/人设型归并为主；其他平台原样保留）
+const SUBTAG_NORMALIZE = {
+  // 长佩 — CP / 人设
+  '年上养成': '年上', '其他年上': '年上', '年上': '年上',
+  '年下攻': '年下', '年下': '年下',
+  '双强': '强强', '强强联手': '强强',
+  '1v1': 'HE', '1V1': 'HE', 'Happy Ending': 'HE', 'happy ending': 'HE', 'HE': 'HE',
+  'BE': 'BE', '悲剧': 'BE', '虐文': 'BE',
+  '甜文': '甜宠', '小甜文': '甜宠', '甜': '甜宠',
+  '狗血': '狗血', '虐恋': '狗血', '虐恋情深': '狗血',
+  '暗恋': '暗恋', '单箭头': '暗恋',
+  '现代': '都市', '近代现代': '都市',
+  '古风': '架空', '古代': '架空',
+  // 长佩 — 标签统一（与 cx() 等价）
+  '纯爱': '耽美'
+};
+
+function normalizeChip(chip, platformId) {
+  if (!chip) return '';
+  const t = String(chip).trim();
+  // 长佩应用归一化词典 + 全平台「纯爱」→「耽美」
+  if (platformId === 'changpei' && SUBTAG_NORMALIZE[t]) return SUBTAG_NORMALIZE[t];
+  if (t === '纯爱') return '耽美';
+  return t;
+}
+
+function getPrimaryTag(book, platformId) {
+  if (platformId === 'jjwxc') return book.channel || '';
+  if (platformId === 'changpei') return (book.tags && book.tags[0]) || '';
+  if (platformId === 'fanqie') return book.primary_tag || '';
+  if (platformId === 'qimao') return book.channel || '';
+  return '';
+}
+
+function getSubTags(book, platformId) {
+  const all = book.all_tags || book.tags || [];
+  if (!Array.isArray(all)) return [];
+  let tags = all.slice();
+  if (platformId === 'jjwxc') {
+    // 晋江 chips：[原创, 频道, 细分1, 细分2, ...] — 跳过前 2 项
+    tags = tags.slice(2);
+  } else if (platformId === 'changpei') {
+    // 长佩：[大题材, CP/风格, 设定, ...] — 跳过 tags[0]
+    tags = tags.slice(1);
+  } else if (platformId === 'fanqie') {
+    // 番茄：去掉与 primary_tag 重叠项 + 通用占位（女频/原创）
+    const primary = book.primary_tag || '';
+    tags = tags.filter(x => x && x !== primary && x !== '女频' && x !== '原创' && x !== '现代言情');
+  } else if (platformId === 'qimao') {
+    const ch = book.channel || '';
+    tags = tags.filter(x => x && x !== ch);
+  }
+  return tags.filter(Boolean);
+}
+
+// 细分品类模块（两级：横向一级 chip + 每 chip 内嵌二级细分条形图）
+function subCategoryHTML(books, platformId, opts = {}) {
+  const {
+    color = '#888',
+    maxL1 = 8,
+    maxL2 = 4,
+    label = '细分品类（按一级下钻）',
+    showHeader = true
+  } = opts;
+  if (!Array.isArray(books) || !books.length) return '';
+
+  // 1) 聚合 一级 → 二级
+  const l1Map = {};   // { l1: { total, l2Map } }
+  const l1Order = [];
+  for (const b of books) {
+    const l1Raw = getPrimaryTag(b, platformId);
+    if (!l1Raw) continue;
+    const l1 = platformId === 'changpei' ? cx(l1Raw) : cx(l1Raw);
+    if (!l1Map[l1]) { l1Map[l1] = { total: 0, l2Map: {} }; l1Order.push(l1); }
+    l1Map[l1].total += 1;
+    const l2List = getSubTags(b, platformId);
+    for (const raw of l2List) {
+      const t = normalizeChip(raw, platformId);
+      if (!t) continue;
+      l1Map[l1].l2Map[t] = (l1Map[l1].l2Map[t] || 0) + 1;
+    }
+  }
+
+  if (!l1Order.length) return '';
+
+  // 2) 一级按 total 降序，取 Top N
+  l1Order.sort((a, b) => l1Map[b].total - l1Map[a].total);
+  const topL1 = l1Order.slice(0, maxL1);
+  const overall = topL1.reduce((s, k) => s + l1Map[k].total, 0);
+
+  // 3) 渲染卡片网格
+  const cards = topL1.map(l1 => {
+    const { total, l2Map } = l1Map[l1];
+    const l2Entries = Object.entries(l2Map)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, maxL2);
+    const l2HTML = l2Entries.length
+      ? l2Entries.map(([tag, count]) => {
+          const pct = total > 0 ? Math.round(count / total * 100) : 0;
+          return `<div class="subtag-row">
+            <div class="subtag-label">
+              <span>${cx(tag)}</span>
+              <span class="subtag-count">${count} · ${pct}%</span>
+            </div>
+            <div class="subtag-bar"><div class="subtag-bar-fill" style="width:${pct}%;background:${color};"></div></div>
+          </div>`;
+        }).join('')
+      : '<div style="font-size:10px;color:var(--text-dim);padding:4px 0;">暂无细分 tag</div>';
+    const overallPct = overall > 0 ? Math.round(total / overall * 100) : 0;
+    return `<div class="subcat-card">
+        <div class="subcat-head">
+          <span class="subcat-title" style="color:${color};">${cx(l1)}</span>
+          <span class="subcat-total">${total} 本 · ${overallPct}%</span>
+        </div>
+        ${l2HTML}
+      </div>`;
+  }).join('');
+
+  const headerHTML = showHeader
+    ? `<div class="subcat-head-row">
+        <h3 class="subcat-module-title">📊 ${label}</h3>
+        <span class="subcat-module-meta">一级 Top ${topL1.length} · 每级 Top ${maxL2}</span>
+      </div>`
+    : '';
+
+  return `<div class="subcat-module">${headerHTML}<div class="subcat-grid">${cards}</div></div>`;
+}
+
 async function renderPlatformTab(platformId) {
   const platform = PLATFORMS.find(p => p.id === platformId);
   const data = state.data[platformId];
@@ -1993,9 +2218,13 @@ async function renderPlatformTab(platformId) {
 
   // 七猫单榜页：加载今日流行总结（data/qimao/summary.json 由 platform-summary.js 每日 AI 生成；无则横幅占位）
   const summaryData = platformId === 'qimao' ? await loadJSON('data/qimao/summary.json') : null;
-  // 顶部模块：七猫 → 长佩同款 题材洞察（横幅 + 题材分布百分比条；单榜无 insights 故不展示 7天/蓝海卡）
+  // 顶部模块：七猫 → 细分品类两级模块（其他平台非 qimao 走默认 tag-stats-bar）
   const topBlockHTML = platformId === 'qimao'
-    ? topInsightHTML(summaryData, tagStats, platform, '📊 题材分布')
+    ? `<div class="insight-section" style="margin-bottom:20px;">
+         <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
+         ${summaryBannerHTML(summaryData)}
+         ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 2, maxL2: 4, label: '细分品类（按一级下钻）' })}
+       </div>`
     : `<div class="tag-stats-bar">
         ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
           <span class="tag-stat-item">
@@ -2429,8 +2658,12 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
     <div class="sub-tab-content active" id="fanqie-sub-hot">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
-      <!-- 题材洞察（与长佩/晋江月榜同版式：流行总结横幅 + 题材分布百分比条；番茄女频无 insights 故不展示 7天/蓝海卡） -->
-      ${topInsightHTML(summaryData, tagStats, platform, '📊 题材分布')}
+      <!-- 题材洞察（细分品类两级模块：一级=大题材分类，二级=该题材下细分 tag） -->
+      <div class="insight-section" style="margin-bottom:20px;">
+        <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
+        ${summaryBannerHTML(summaryData)}
+        ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 8, maxL2: 3, label: '细分品类（按一级下钻）' })}
+      </div>
 
       <div class="filter-bar">
         <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-fanqie" oninput="filterBooks('fanqie')">
@@ -2468,6 +2701,8 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
         ? '<div class="empty-state">巅峰榜数据尚未抓取，请先运行 <code>node scrapers/fanqie-rank.js</code></div>'
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${peakData.source_url}" target="_blank" style="color:${platform.color};">${peakData.source}</a> · 根据作品好评、人气、互动等综合得分排行 · 每月更新 · 共 ${peakBooks.length} 本</div>
+
+          ${subCategoryHTML(peakBooks, platform.id, { color: platform.color, maxL1: 6, maxL2: 3, label: '细分品类（按一级下钻）' })}
 
           <div class="tag-stats-bar">
             ${Object.entries(peakTagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
@@ -2615,8 +2850,12 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
     <div class="sub-tab-content active" id="jjwxc-sub-monthrank">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
-      <!-- 题材洞察（与长佩总榜同版式：流行总结横幅 + 频道分布百分比条；晋江月榜无 insights 故不展示 7天/蓝海卡） -->
-      ${topInsightHTML(summaryData, tagStats, platform, '📊 频道分布')}
+      <!-- 题材洞察（与长佩总榜同版式：流行总结横幅 + 细分品类两级模块；晋江月榜无 insights 故不展示 7天/蓝海卡） -->
+      <div class="insight-section" style="margin-bottom:20px;">
+        <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
+        ${summaryBannerHTML(summaryData)}
+        ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 3, maxL2: 3, label: '细分品类（按频道下钻）' })}
+      </div>
 
       <div class="filter-bar">
         <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-jjwxc" oninput="filterBooks('jjwxc')">
@@ -2843,25 +3082,10 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
               : '<div style="color:var(--text-dim);font-size:13px;">需积累7天数据后自动生效</div>'
             }
           </div>
-
-          <!-- 蓝海题材 -->
-          <div class="insight-card">
-            <div class="insight-card-title">🌊 蓝海题材</div>
-            <div style="color:var(--text-dim);font-size:12px;margin-bottom:6px;">高人气 · 低竞争</div>
-            ${(data.insights?.blue_ocean || []).length > 0
-              ? data.insights.blue_ocean.map(b => `
-                <div style="display:flex;justify-content:space-between;padding:3px 0;font-size:13px;">
-                  <span>${b.tag}</span>
-                  <span style="color:var(--gold);">${b.count}本 · 平均${(b.avg_popularity/10000).toFixed(0)}万人气</span>
-                </div>
-              `).join('')
-              : '<div style="color:var(--text-dim);font-size:13px;">暂无明显蓝海题材</div>'
-            }
-          </div>
-
-          <!-- 题材分布（概览同款百分比条） -->
-          ${distBarHTML()}
         </div>
+
+        <!-- 细分品类（按大题材下钻）— 蓝海题材已移除，单列题材分布被本模块替代 -->
+        ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分品类（按大题材下钻）' })}
       </div>
 
       <div class="filter-bar">
@@ -2897,6 +3121,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         ? '<div class="empty-state">耽美畅销榜数据尚未抓取</div>'
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">耽美·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
+
+          ${subCategoryHTML(pureloveBseller.books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分品类（按大题材下钻）' })}
+
           <div class="tag-stats-bar">
             ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2921,6 +3148,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         ? '<div class="empty-state">耽美新书榜数据尚未抓取</div>'
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">耽美·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
+
+          ${subCategoryHTML(pureloveNew.books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分品类（按大题材下钻）' })}
+
           <div class="tag-stats-bar">
             ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
@@ -2945,6 +3175,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         ? '<div class="empty-state">耽美完结榜数据尚未抓取</div>'
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">耽美·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
+
+          ${subCategoryHTML(pureloveCompleted.books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分品类（按大题材下钻）' })}
+
           <div class="tag-stats-bar">
             ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
               <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
