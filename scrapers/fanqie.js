@@ -37,6 +37,34 @@ const REQUEST_DELAY = 600;
 // ========== 工具函数 ==========
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
+// ========== 番茄 PUA 混淆解码 ==========
+// 番茄对 book_list 等 API 的数值/单位字符做字体反爬：服务端替换为私用区(PUA)字符，
+// 页面加载自定义字体(@font-face family=fKts9tCXDjS49UhH, lf6-awef.bytetos.com/awesome-font)渲染成数字。
+// 2026-09-08 通过下载字体+渲染解码得到 0-9 与万/字/人/在 的映射（字体 cmap 共 362 PUA 字符，此处仅收录
+// 榜单字段实际出现的 14 个；若解码后仍有残留 PUA 说明映射轮换或出现新字符，需重新拉字体解码更新本表）。
+const PUA_MAP = {
+  '\ue54f': '1', // U+E54F
+  '\ue4e7': '2', // U+E4E7
+  '\ue504': '3', // U+E504
+  '\ue4b0': '0', // U+E4B0
+  '\ue4f6': '5', // U+E4F6
+  '\ue556': '6', // U+E556
+  '\ue53c': '7', // U+E53C
+  '\ue47a': '8', // U+E47A
+  '\ue474': '9', // U+E474
+  '\ue49e': '4', // U+E49E
+  '\ue3f7': '万', // U+E3F7
+  '\ue4a0': '字', // U+E4A0
+  '\ue41c': '人', // U+E41C
+  '\ue53f': '在', // U+E53F
+};
+function decodePua(s) {
+  if (!s) return s;
+  let out = '';
+  for (const ch of s) out += PUA_MAP[ch] !== undefined ? PUA_MAP[ch] : ch;
+  return out;
+}
+
 function httpGet(url, extraHeaders = {}) {
   return new Promise((resolve, reject) => {
     const lib = url.startsWith('https') ? https : http;
@@ -563,9 +591,10 @@ async function main() {
     const abstract = detailInfo.description || '暂无简介';
     const thumbUrl = detailInfo.hdImage || topInfo.thumb_url || rawBook.thumb_url || '';
 
-    // 2026-09-08 新增: 透传 在读 + 字数(优先 topInfo 未加密源, rawBook 兜底)
-    const readCount = topInfo.read_count ?? rawBook.read_count ?? '';
-    const wordCount = topInfo.word_count ?? rawBook.word_count ?? '';
+    // 2026-09-08 透传 在读 + 字数。实测 top_book_list 不返回这两字段(空串)、book_list 返回 PUA 混淆值，
+    // 需经 decodePua 还原为明文(例: E54F E4E7 E504... → "123.3万人在读" / "313.1万字")
+    const readCount = decodePua(topInfo.read_count ?? rawBook.read_count ?? '');
+    const wordCount = decodePua(topInfo.word_count ?? rawBook.word_count ?? '');
 
     console.log(`${bookName} [${primaryTag}] 在读=${readCount} 字数=${wordCount}`);
 
