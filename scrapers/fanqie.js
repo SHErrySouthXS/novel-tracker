@@ -131,6 +131,9 @@ async function fetchTopBookList() {
           category: b.category,
           creation_status: b.creation_status,
           thumb_url: b.thumb_url,
+          // 2026-09-08 新增：透传 在读/字数（未加密 top_book_list 为明文源）
+          read_count: b.read_count,
+          word_count: b.word_count,
         };
       }
       console.log(`  → 获取到 ${Object.keys(map).length} 本未加密数据`);
@@ -560,7 +563,11 @@ async function main() {
     const abstract = detailInfo.description || '暂无简介';
     const thumbUrl = detailInfo.hdImage || topInfo.thumb_url || rawBook.thumb_url || '';
 
-    console.log(`${bookName} [${primaryTag}]`);
+    // 2026-09-08 新增: 透传 在读 + 字数(优先 topInfo 未加密源, rawBook 兜底)
+    const readCount = topInfo.read_count ?? rawBook.read_count ?? '';
+    const wordCount = topInfo.word_count ?? rawBook.word_count ?? '';
+
+    console.log(`${bookName} [${primaryTag}] 在读=${readCount} 字数=${wordCount}`);
 
     books.push({
       rank,
@@ -576,6 +583,8 @@ async function main() {
       thumb_url: thumbUrl,
       book_url: `https://fanqienovel.com/page/${bookId}`,
       rank_change: null,
+      read_count: readCount,
+      word_count: wordCount,
     });
 
     if (i < hotRankList.length - 1) await sleep(REQUEST_DELAY);
