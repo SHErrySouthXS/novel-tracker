@@ -2861,12 +2861,13 @@ async function renderQidianWithSubTabs(platform, data, contentEl) {
   `;
 }
 
-// 字数展示格式化: 纯数字补"字"(晋江列表页部分书为纯数字), 已带单位(万/万字/亿)则原样
+// 字数展示格式化: 已带"字"则原样(番茄/七猫 "313.1万字"), 否则补"字"统一格式
+// 例: 纯数字 "4503"→"4503字"; 带万 "17.03万"→"17.03万字"; "17.03万字"→原样
 function fmtWc(w) {
   if (!w && w !== 0) return '';
   const s = String(w).trim();
   if (!s) return '';
-  return /^[\d.]+$/.test(s) ? s + '字' : s;
+  return s.includes('字') ? s : s + '字';
 }
 
 // 月份 '2026-07' → '2026年7月'
