@@ -1,0 +1,99 @@
+{
+ "platform": "qimao",
+ "platform_name": "七猫小说",
+ "generated_at": "2026-09-08 15:33:43",
+ "dimension": {
+  "key": "minor",
+  "name": "官方细分",
+  "note": "官方细分（总裁豪门/宫闱宅斗…）"
+ },
+ "list": null,
+ "days": 2,
+ "dates": [
+  "2026-09-07",
+  "2026-09-08"
+ ],
+ "totals": [
+  20,
+  20
+ ],
+ "tags": [
+  {
+   "tag": "总裁豪门",
+   "counts": [
+    10,
+    9
+   ],
+   "shares": [
+    50,
+    45
+   ],
+   "delta_share": -5,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 9,
+    "share": 45
+   }
+  },
+  {
+   "tag": "宫闱宅斗",
+   "counts": [
+    8,
+    9
+   ],
+   "shares": [
+    40,
+    45
+   ],
+   "delta_share": 5,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 9,
+    "share": 45
+   }
+  },
+  {
+   "tag": "年代重生",
+   "counts": [
+    1,
+    1
+   ],
+   "shares": [
+    5,
+    5
+   ],
+   "delta_share": 0,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 1,
+    "share": 5
+   }
+  },
+  {
+   "tag": "都市奇幻",
+   "counts": [
+    1,
+    1
+   ],
+   "shares": [
+    5,
+    5
+   ],
+   "delta_share": 0,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 1,
+    "share": 5
+   }
+  }
+ ],
+ "flows": {
+  "dates": [],
+  "new_in": [],
+  "left_out": []
+ },
+ "summary": {
+  "date": "2026-09-08",
+  "text": "七猫小说「官方细分」追踪仅 2 天（2026-09-07 起），构成初现：总裁豪门 9 本(45%)、宫闱宅斗 9 本(45%)。趋势图随每日归档自动积累。"
+ }
+}

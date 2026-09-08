@@ -1,0 +1,297 @@
+{
+ "platform": "changpei",
+ "platform_name": "长佩文学",
+ "generated_at": "2026-09-08 15:33:43",
+ "dimension": {
+  "key": "primary_tag",
+  "name": "官方主题材",
+  "note": "官方 11 大类（青春/都市/架空/综合…）"
+ },
+ "list": null,
+ "days": 3,
+ "dates": [
+  "2026-09-06",
+  "2026-09-07",
+  "2026-09-08"
+ ],
+ "totals": [
+  50,
+  50,
+  100
+ ],
+ "tags": [
+  {
+   "tag": "都市",
+   "counts": [
+    27,
+    26,
+    45
+   ],
+   "shares": [
+    54,
+    52,
+    45
+   ],
+   "delta_share": -9,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 45,
+    "share": 45
+   }
+  },
+  {
+   "tag": "综合",
+   "counts": [
+    9,
+    8,
+    18
+   ],
+   "shares": [
+    18,
+    16,
+    18
+   ],
+   "delta_share": 0,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 18,
+    "share": 18
+   }
+  },
+  {
+   "tag": "架空",
+   "counts": [
+    8,
+    10,
+    18
+   ],
+   "shares": [
+    16,
+    20,
+    18
+   ],
+   "delta_share": 2,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 18,
+    "share": 18
+   }
+  },
+  {
+   "tag": "宫廷",
+   "counts": [
+    1,
+    1,
+    4
+   ],
+   "shares": [
+    2,
+    2,
+    4
+   ],
+   "delta_share": 2,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 4,
+    "share": 4
+   }
+  },
+  {
+   "tag": "现代",
+   "counts": [
+    1,
+    1,
+    3
+   ],
+   "shares": [
+    2,
+    2,
+    3
+   ],
+   "delta_share": 1,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 3,
+    "share": 3
+   }
+  },
+  {
+   "tag": "推理",
+   "counts": [
+    1,
+    1,
+    3
+   ],
+   "shares": [
+    2,
+    2,
+    3
+   ],
+   "delta_share": 1,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 3,
+    "share": 3
+   }
+  },
+  {
+   "tag": "玄幻",
+   "counts": [
+    1,
+    1,
+    3
+   ],
+   "shares": [
+    2,
+    2,
+    3
+   ],
+   "delta_share": 1,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 3,
+    "share": 3
+   }
+  },
+  {
+   "tag": "青春",
+   "counts": [
+    2,
+    2,
+    2
+   ],
+   "shares": [
+    4,
+    4,
+    2
+   ],
+   "delta_share": -2,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 2,
+    "share": 2
+   }
+  },
+  {
+   "tag": "武侠",
+   "counts": [
+    0,
+    0,
+    2
+   ],
+   "shares": [
+    0,
+    0,
+    2
+   ],
+   "delta_share": 2,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 2,
+    "share": 2
+   }
+  },
+  {
+   "tag": "科幻",
+   "counts": [
+    0,
+    0,
+    1
+   ],
+   "shares": [
+    0,
+    0,
+    1
+   ],
+   "delta_share": 1,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 1,
+    "share": 1
+   }
+  },
+  {
+   "tag": "幻想",
+   "counts": [
+    0,
+    0,
+    1
+   ],
+   "shares": [
+    0,
+    0,
+    1
+   ],
+   "delta_share": 1,
+   "delta_share_30d": null,
+   "latest": {
+    "count": 1,
+    "share": 1
+   }
+  }
+ ],
+ "flows": {
+  "dates": [],
+  "new_in": [
+   {
+    "date": "2026-09-06",
+    "count": null,
+    "books": []
+   },
+   {
+    "date": "2026-09-07",
+    "count": 5,
+    "books": [
+     "甜点抗辩",
+     "衔尾蛇",
+     "替魔",
+     "窃玉",
+     "春天游泳"
+    ]
+   },
+   {
+    "date": "2026-09-08",
+    "count": 49,
+    "books": [
+     "夏岛阳春",
+     "哑囚",
+     "尽人皆知",
+     "南湾岛潮汐",
+     "如何饲养恶毒美人"
+    ]
+   }
+  ],
+  "left_out": [
+   {
+    "date": "2026-09-06",
+    "count": null,
+    "books": []
+   },
+   {
+    "date": "2026-09-07",
+    "count": 5,
+    "books": [
+     "我们的存在",
+     "通俗爱情",
+     "乱流",
+     "废土乐园",
+     "野孩子"
+    ]
+   },
+   {
+    "date": "2026-09-08",
+    "count": 4,
+    "books": [
+     "我闪现追你",
+     "我们的存在",
+     "失格落日",
+     "通俗爱情"
+    ]
+   }
+  ]
+ },
+ "summary": {
+  "date": "2026-09-08",
+  "text": "2026-09-08 榜单官方主题材构成：都市 45 本(45%)、综合 18 本(18%)、架空 18 本(18%)。近窗口变动：都市 降 9pp。今日新上榜（近7日不在榜）49 本，含 《夏岛阳春》《哑囚》《尽人皆知》。"
+ }
+}
