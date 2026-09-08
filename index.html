@@ -2417,6 +2417,8 @@ function renderBookList(books, platformId) {
               <span>${b.author}</span>
               ${genderLabel ? `<span class="sep">·</span><span>${genderLabel}</span>` : ''}
               <span class="sep">·</span><span>${b.status || '未知'}</span>
+              ${b.word_count ? `<span class="sep">·</span><span>${fmtWc(b.word_count)}</span>` : ''}
+              ${platformId === 'fanqie' && b.read_count ? `<span class="sep">·</span><span class="reading-count">${b.read_count}</span>` : ''}
               ${scoreLabel}
             </div>
             ${tagsHtml ? `<div class="book-tags">${tagsHtml}</div>` : ''}
@@ -2858,6 +2860,14 @@ async function renderQidianWithSubTabs(platform, data, contentEl) {
   `;
 }
 
+// 字数展示格式化: 纯数字补"字"(晋江列表页部分书为纯数字), 已带单位(万/万字/亿)则原样
+function fmtWc(w) {
+  if (!w && w !== 0) return '';
+  const s = String(w).trim();
+  if (!s) return '';
+  return /^[\d.]+$/.test(s) ? s + '字' : s;
+}
+
 // 月份 '2026-07' → '2026年7月'
 function fmtMonthLabel(m) {
   if (!m || !/^\d{4}-\d{2}$/.test(m)) return m || '';
@@ -3023,6 +3033,8 @@ function renderPeakBookList(books) {
             <span>${b.author}</span>
             ${b.gender && b.gender !== '未知' ? `<span class="sep">·</span><span>${b.gender}</span>` : ''}
             <span class="sep">·</span><span>${b.status || '未知'}</span>
+            ${b.word_count ? `<span class="sep">·</span><span>${fmtWc(b.word_count)}</span>` : ''}
+            ${b.read_count ? `<span class="sep">·</span><span>${b.read_count}</span>` : ''}
           </div>
         </div>
         <div class="score-tags">${tagsHtml}</div>
@@ -3224,6 +3236,7 @@ function renderScoreBookList(books) {
             ${channelLabel ? `<span class="sep">·</span><span>${channelLabel}</span>` : ''}
             <span class="sep">·</span><span>${b.status || '未知'}</span>
             ${firstPub ? `<span class="sep">·</span><span>${firstPub}</span>` : ''}
+            ${b.word_count ? `<span class="sep">·</span><span>${fmtWc(b.word_count)}</span>` : ''}
           </div>
         </div>
         <div class="score-tags">${tagsHtml}</div>
