@@ -1,6 +1,6 @@
 {
   "date": "2026-09-08",
-  "update_time": "2026-09-08 18:51:06",
+  "update_time": "2026-09-08 21:33:56",
   "rankings": {
     "bestseller": {
       "count": 100,
@@ -55,7 +55,8 @@
         "推理": 1
       },
       "status_stats": {
-        "连载中": 59
+        "连载中": 57,
+        "完结": 2
       }
     },
     "purelove_completed": {
