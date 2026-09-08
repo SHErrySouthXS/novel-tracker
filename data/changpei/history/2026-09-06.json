@@ -17,7 +17,1477 @@
       "status_stats": {
         "完结": 24,
         "连载中": 26
-      }
+      },
+      "books": [
+        {
+          "rank": 1,
+          "book_name": "初恋是件坏事",
+          "author": "成江入海",
+          "tags": [
+            "青春",
+            "竹马竹马",
+            "甜宠",
+            "温馨",
+            "成长"
+          ],
+          "all_tags": [
+            "青春",
+            "竹马竹马",
+            "甜宠",
+            "温馨",
+            "成长"
+          ],
+          "primary_tag": "青春",
+          "popularity": "3,642.58万",
+          "word_count": "16.47万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 2,
+          "book_name": "霸气金丝雀",
+          "author": "木三观",
+          "tags": [
+            "都市",
+            "HE",
+            "包养出真爱"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "包养出真爱"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,475.75万",
+          "word_count": "21.79万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 3,
+          "book_name": "荒诞文学",
+          "author": "空菊",
+          "tags": [
+            "都市",
+            "狗血",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "6,583.12万",
+          "word_count": "27.17万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 4,
+          "book_name": "本能失陷",
+          "author": "二师叔",
+          "tags": [
+            "都市",
+            "年下",
+            "入室抢劫型恋人攻",
+            "冰山美人受",
+            "体型差",
+            "年龄差",
+            "肤色差",
+            "HE",
+            "甜宠",
+            "职业",
+            "轻松"
+          ],
+          "all_tags": [
+            "都市",
+            "年下",
+            "入室抢劫型恋人攻",
+            "冰山美人受",
+            "体型差",
+            "年龄差",
+            "肤色差",
+            "HE",
+            "甜宠",
+            "职业",
+            "轻松"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,479.90万",
+          "word_count": "29.30万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 5,
+          "book_name": "太阳心下",
+          "author": "祈破",
+          "tags": [
+            "现代",
+            "gl",
+            "HE",
+            "青梅"
+          ],
+          "all_tags": [
+            "现代",
+            "gl",
+            "HE",
+            "青梅"
+          ],
+          "primary_tag": "现代",
+          "popularity": "1,703.98万",
+          "word_count": "35.60万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 6,
+          "book_name": "跟踪日记",
+          "author": "长烟",
+          "tags": [
+            "综合",
+            "搞笑",
+            "攻痛受也会痛",
+            "树精受",
+            "不算破镜的重圆",
+            "甜宠",
+            "沙雕",
+            "轻松"
+          ],
+          "all_tags": [
+            "综合",
+            "搞笑",
+            "攻痛受也会痛",
+            "树精受",
+            "不算破镜的重圆",
+            "甜宠",
+            "沙雕",
+            "轻松"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,766.75万",
+          "word_count": "16.59万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 7,
+          "book_name": "苦艾保质期",
+          "author": "林啸也",
+          "tags": [
+            "都市",
+            "追妻",
+            "年上养成",
+            "上位者为爱发疯",
+            "分离焦虑爹系攻",
+            "直球人机小狗受",
+            "甜宠互宠",
+            "竹马一起长大",
+            "两人身心只有彼此",
+            "狗血"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻",
+            "年上养成",
+            "上位者为爱发疯",
+            "分离焦虑爹系攻",
+            "直球人机小狗受",
+            "甜宠互宠",
+            "竹马一起长大",
+            "两人身心只有彼此",
+            "狗血"
+          ],
+          "primary_tag": "都市",
+          "popularity": "6,020.47万",
+          "word_count": "39.94万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 8,
+          "book_name": "老实人饲养手册",
+          "author": "金币小兔",
+          "tags": [
+            "都市",
+            "甜宠",
+            "轻松",
+            "豪门",
+            "情投意合"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "轻松",
+            "豪门",
+            "情投意合"
+          ],
+          "primary_tag": "都市",
+          "popularity": "442.70万",
+          "word_count": "21.45万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 9,
+          "book_name": "殊途同归",
+          "author": "独山凡鸟",
+          "tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "强制爱",
+            "受强制爱",
+            "相爱相杀",
+            "虐恋",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "强制爱",
+            "受强制爱",
+            "相爱相杀",
+            "虐恋",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "899.23万",
+          "word_count": "22.86万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 10,
+          "book_name": "哥哥喜欢猫",
+          "author": "二蛋",
+          "tags": [
+            "综合",
+            "变猫",
+            "强制爱",
+            "年上"
+          ],
+          "all_tags": [
+            "综合",
+            "变猫",
+            "强制爱",
+            "年上"
+          ],
+          "primary_tag": "综合",
+          "popularity": "963.18万",
+          "word_count": "15.80万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 11,
+          "book_name": "真的没有勾引你啊",
+          "author": "叹酸",
+          "tags": [
+            "青春",
+            "甜宠",
+            "轻松",
+            "帅1萌0",
+            "直掰弯",
+            "暗恋",
+            "HE"
+          ],
+          "all_tags": [
+            "青春",
+            "甜宠",
+            "轻松",
+            "帅1萌0",
+            "直掰弯",
+            "暗恋",
+            "HE"
+          ],
+          "primary_tag": "青春",
+          "popularity": "1,150.97万",
+          "word_count": "24.62万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 12,
+          "book_name": "野狗",
+          "author": "都市累人",
+          "tags": [
+            "都市",
+            "暗恋",
+            "年下",
+            "强强",
+            "狗血",
+            "虐恋"
+          ],
+          "all_tags": [
+            "都市",
+            "暗恋",
+            "年下",
+            "强强",
+            "狗血",
+            "虐恋"
+          ],
+          "primary_tag": "都市",
+          "popularity": "653.64万",
+          "word_count": "28.90万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 13,
+          "book_name": "月光沦陷",
+          "author": "冰块儿",
+          "tags": [
+            "综合",
+            "强强",
+            "甜宠",
+            "无限流",
+            "轻松",
+            "HE",
+            "剧情"
+          ],
+          "all_tags": [
+            "综合",
+            "强强",
+            "甜宠",
+            "无限流",
+            "轻松",
+            "HE",
+            "剧情"
+          ],
+          "primary_tag": "综合",
+          "popularity": "5,751.07万",
+          "word_count": "72.84万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 14,
+          "book_name": "游鱼习惯",
+          "author": "小斤小斤鱼",
+          "tags": [
+            "架空",
+            "ABO",
+            "酸甜",
+            "婚后生活",
+            "HE",
+            "娱乐圈",
+            "论坛体",
+            "竹马竹马"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "酸甜",
+            "婚后生活",
+            "HE",
+            "娱乐圈",
+            "论坛体",
+            "竹马竹马"
+          ],
+          "primary_tag": "架空",
+          "popularity": "681.22万",
+          "word_count": "21.94万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 15,
+          "book_name": "错误取向",
+          "author": "掷生",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "酸涩",
+            "虐恋",
+            "娱乐圈",
+            "追妻火葬场",
+            "现代",
+            "狗血",
+            "直掰弯",
+            "阴差阳错"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "酸涩",
+            "虐恋",
+            "娱乐圈",
+            "追妻火葬场",
+            "现代",
+            "狗血",
+            "直掰弯",
+            "阴差阳错"
+          ],
+          "primary_tag": "都市",
+          "popularity": "479.16万",
+          "word_count": "25.88万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 16,
+          "book_name": "替身之上",
+          "author": "一维马赛克",
+          "tags": [
+            "都市",
+            "爽文",
+            "追妻火葬场",
+            "恨海情天",
+            "破镜重圆",
+            "酸涩",
+            "甜宠",
+            "HE",
+            "职业",
+            "狗血",
+            "替身"
+          ],
+          "all_tags": [
+            "都市",
+            "爽文",
+            "追妻火葬场",
+            "恨海情天",
+            "破镜重圆",
+            "酸涩",
+            "甜宠",
+            "HE",
+            "职业",
+            "狗血",
+            "替身"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,843.03万",
+          "word_count": "31.90万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 17,
+          "book_name": "我闪现追你",
+          "author": "海鶄落",
+          "tags": [
+            "综合",
+            "搞笑",
+            "HE",
+            "电竞",
+            "沙雕",
+            "爽文"
+          ],
+          "all_tags": [
+            "综合",
+            "搞笑",
+            "HE",
+            "电竞",
+            "沙雕",
+            "爽文"
+          ],
+          "primary_tag": "综合",
+          "popularity": "3,241.63万",
+          "word_count": "35.89万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 18,
+          "book_name": "我们的存在",
+          "author": "电子熊",
+          "tags": [
+            "都市",
+            "年上",
+            "暗恋",
+            "酷哥攻",
+            "小狼狗受",
+            "酸涩",
+            "HE",
+            "致郁",
+            "受追攻"
+          ],
+          "all_tags": [
+            "都市",
+            "年上",
+            "暗恋",
+            "酷哥攻",
+            "小狼狗受",
+            "酸涩",
+            "HE",
+            "致郁",
+            "受追攻"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,888.63万",
+          "word_count": "28.11万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 19,
+          "book_name": "虚构热恋99%",
+          "author": "柚子小狗",
+          "tags": [
+            "都市",
+            "甜宠",
+            "年上",
+            "攻宠受",
+            "鸡同鸭讲",
+            "绅士先生大变色鬼",
+            "呆萌宝贝防御力点满",
+            "旮旯给木的错误玩法",
+            "现充死宅恋爱真难"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "年上",
+            "攻宠受",
+            "鸡同鸭讲",
+            "绅士先生大变色鬼",
+            "呆萌宝贝防御力点满",
+            "旮旯给木的错误玩法",
+            "现充死宅恋爱真难"
+          ],
+          "primary_tag": "都市",
+          "popularity": "404.46万",
+          "word_count": "23.02万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 20,
+          "book_name": "面包鸳鸯乳果",
+          "author": "斋饮地",
+          "tags": [
+            "架空",
+            "ABO",
+            "甜宠",
+            "先婚后爱",
+            "酸甜",
+            "年上",
+            "攻宠受养成系",
+            "强攻弱受帅攻美受",
+            "有一点狗血",
+            "高科技生子"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "甜宠",
+            "先婚后爱",
+            "酸甜",
+            "年上",
+            "攻宠受养成系",
+            "强攻弱受帅攻美受",
+            "有一点狗血",
+            "高科技生子"
+          ],
+          "primary_tag": "架空",
+          "popularity": "757.99万",
+          "word_count": "38.70万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 21,
+          "book_name": "失格落日",
+          "author": "花溱",
+          "tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "暗恋",
+            "掉马",
+            "他逃他追",
+            "伪强制",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "暗恋",
+            "掉马",
+            "他逃他追",
+            "伪强制",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "4,188.90万",
+          "word_count": "25.83万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 22,
+          "book_name": "错误预感",
+          "author": "青水幸",
+          "tags": [
+            "都市",
+            "喜剧",
+            "酸甜",
+            "甜宠",
+            "轻松",
+            "搞笑",
+            "职业",
+            "年上",
+            "破镜重圆",
+            "双向暗恋",
+            "自我攻略"
+          ],
+          "all_tags": [
+            "都市",
+            "喜剧",
+            "酸甜",
+            "甜宠",
+            "轻松",
+            "搞笑",
+            "职业",
+            "年上",
+            "破镜重圆",
+            "双向暗恋",
+            "自我攻略"
+          ],
+          "primary_tag": "都市",
+          "popularity": "739.07万",
+          "word_count": "25.21万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 23,
+          "book_name": "心动存单",
+          "author": "颍川月下",
+          "tags": [
+            "都市",
+            "直掰弯",
+            "甜宠",
+            "HE",
+            "职业",
+            "轻松",
+            "搞笑"
+          ],
+          "all_tags": [
+            "都市",
+            "直掰弯",
+            "甜宠",
+            "HE",
+            "职业",
+            "轻松",
+            "搞笑"
+          ],
+          "primary_tag": "都市",
+          "popularity": "877.18万",
+          "word_count": "25.74万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 24,
+          "book_name": "通俗爱情",
+          "author": "半缘修道",
+          "tags": [
+            "综合",
+            "甜宠",
+            "HE",
+            "一见钟情",
+            "市井生活"
+          ],
+          "all_tags": [
+            "综合",
+            "甜宠",
+            "HE",
+            "一见钟情",
+            "市井生活"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,475.78万",
+          "word_count": "15.89万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 25,
+          "book_name": "欢迎收听禾边鬼",
+          "author": "晏山乔",
+          "tags": [
+            "都市",
+            "强强",
+            "HE",
+            "年下"
+          ],
+          "all_tags": [
+            "都市",
+            "强强",
+            "HE",
+            "年下"
+          ],
+          "primary_tag": "都市",
+          "popularity": "310.82万",
+          "word_count": "20.59万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 26,
+          "book_name": "完美情人",
+          "author": "拯救瑶光星",
+          "tags": [
+            "都市",
+            "追夫",
+            "狗血",
+            "娱乐圈",
+            "谁逃谁追谁发疯",
+            "虐恋",
+            "强取豪夺"
+          ],
+          "all_tags": [
+            "都市",
+            "追夫",
+            "狗血",
+            "娱乐圈",
+            "谁逃谁追谁发疯",
+            "虐恋",
+            "强取豪夺"
+          ],
+          "primary_tag": "都市",
+          "popularity": "293.58万",
+          "word_count": "29.35万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 27,
+          "book_name": "盘中餐",
+          "author": "久陆",
+          "tags": [
+            "综合",
+            "烂俗狗血",
+            "破镜重圆",
+            "追妻",
+            "HE",
+            "强强",
+            "酸涩",
+            "很会装的攻",
+            "很会叫的受",
+            "甜宠"
+          ],
+          "all_tags": [
+            "综合",
+            "烂俗狗血",
+            "破镜重圆",
+            "追妻",
+            "HE",
+            "强强",
+            "酸涩",
+            "很会装的攻",
+            "很会叫的受",
+            "甜宠"
+          ],
+          "primary_tag": "综合",
+          "popularity": "428.45万",
+          "word_count": "20.86万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 28,
+          "book_name": "天气晴 去殉情",
+          "author": "Llosa",
+          "tags": [
+            "都市",
+            "HE",
+            "经典霸道总裁配美人",
+            "不算甜宠倒也不虐",
+            "其实有点破镜重圆"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "经典霸道总裁配美人",
+            "不算甜宠倒也不虐",
+            "其实有点破镜重圆"
+          ],
+          "primary_tag": "都市",
+          "popularity": "560.95万",
+          "word_count": "16.13万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 29,
+          "book_name": "囡囡",
+          "author": "木更木更",
+          "tags": [
+            "都市",
+            "甜宠",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,435.61万",
+          "word_count": "12.83万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 30,
+          "book_name": "林总监的领带",
+          "author": "方浅",
+          "tags": [
+            "都市",
+            "熟男拉扯",
+            "职业",
+            "正剧",
+            "HE",
+            "年上",
+            "强强",
+            "拉扯",
+            "欢喜冤家"
+          ],
+          "all_tags": [
+            "都市",
+            "熟男拉扯",
+            "职业",
+            "正剧",
+            "HE",
+            "年上",
+            "强强",
+            "拉扯",
+            "欢喜冤家"
+          ],
+          "primary_tag": "都市",
+          "popularity": "683.90万",
+          "word_count": "23.98万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 31,
+          "book_name": "火烧日",
+          "author": "一颗牙疼",
+          "tags": [
+            "都市",
+            "追妻火葬场",
+            "虐恋",
+            "年下",
+            "攻前期恶劣",
+            "掉马后会成长",
+            "狗血",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻火葬场",
+            "虐恋",
+            "年下",
+            "攻前期恶劣",
+            "掉马后会成长",
+            "狗血",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "653.10万",
+          "word_count": "25.71万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 32,
+          "book_name": "铩羽",
+          "author": "兑水了了",
+          "tags": [
+            "推理",
+            "刑侦",
+            "强强",
+            "双卧底",
+            "HE",
+            "年上",
+            "直掰弯",
+            "双队长",
+            "剧情"
+          ],
+          "all_tags": [
+            "推理",
+            "刑侦",
+            "强强",
+            "双卧底",
+            "HE",
+            "年上",
+            "直掰弯",
+            "双队长",
+            "剧情"
+          ],
+          "primary_tag": "推理",
+          "popularity": "557.48万",
+          "word_count": "43.31万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 33,
+          "book_name": "宴菩萨",
+          "author": "商曾",
+          "tags": [
+            "宫廷",
+            "虐恋",
+            "剧情",
+            "强强",
+            "相爱相杀",
+            "权谋"
+          ],
+          "all_tags": [
+            "宫廷",
+            "虐恋",
+            "剧情",
+            "强强",
+            "相爱相杀",
+            "权谋"
+          ],
+          "primary_tag": "宫廷",
+          "popularity": "976.62万",
+          "word_count": "43.67万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 34,
+          "book_name": "不在意谎言",
+          "author": "持续转向",
+          "tags": [
+            "综合",
+            "虐恋",
+            "追妻",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "虐恋",
+            "追妻",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1,620.30万",
+          "word_count": "24.53万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 35,
+          "book_name": "塑料夫夫观察实录",
+          "author": "姜可颂",
+          "tags": [
+            "架空",
+            "对抗路情侣",
+            "ABO",
+            "HE",
+            "娱乐圈"
+          ],
+          "all_tags": [
+            "架空",
+            "对抗路情侣",
+            "ABO",
+            "HE",
+            "娱乐圈"
+          ],
+          "primary_tag": "架空",
+          "popularity": "602.61万",
+          "word_count": "23.00万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 36,
+          "book_name": "健忘症",
+          "author": "姜双柏",
+          "tags": [
+            "都市",
+            "狗血",
+            "破镜重圆",
+            "虽然狗血但是纯爱",
+            "半娱乐圈",
+            "帅1美0",
+            "酸涩",
+            "骄傲者低头",
+            "娱乐圈",
+            "酸甜"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "破镜重圆",
+            "虽然狗血但是纯爱",
+            "半娱乐圈",
+            "帅1美0",
+            "酸涩",
+            "骄傲者低头",
+            "娱乐圈",
+            "酸甜"
+          ],
+          "primary_tag": "都市",
+          "popularity": "441.62万",
+          "word_count": "18.41万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 37,
+          "book_name": "初恋制造",
+          "author": "猛猪出闸",
+          "tags": [
+            "都市",
+            "甜宠",
+            "搞笑",
+            "虐恋",
+            "看似是替身其实不是",
+            "替身",
+            "年上",
+            "换攻",
+            "但重点不在换攻",
+            "轻松",
+            "白切黑"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "搞笑",
+            "虐恋",
+            "看似是替身其实不是",
+            "替身",
+            "年上",
+            "换攻",
+            "但重点不在换攻",
+            "轻松",
+            "白切黑"
+          ],
+          "primary_tag": "都市",
+          "popularity": "308.39万",
+          "word_count": "20.92万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 38,
+          "book_name": "恶莺",
+          "author": "吴百万",
+          "tags": [
+            "都市",
+            "双向暗恋",
+            "竹马竹马",
+            "强强",
+            "救赎",
+            "欢喜冤家",
+            "死对头",
+            "白切黑",
+            "黑切白"
+          ],
+          "all_tags": [
+            "都市",
+            "双向暗恋",
+            "竹马竹马",
+            "强强",
+            "救赎",
+            "欢喜冤家",
+            "死对头",
+            "白切黑",
+            "黑切白"
+          ],
+          "primary_tag": "都市",
+          "popularity": "454.49万",
+          "word_count": "23.86万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 39,
+          "book_name": "再骂一句试试",
+          "author": "盒家欢乐",
+          "tags": [
+            "都市",
+            "HE",
+            "天作之合",
+            "甜宠",
+            "治愈",
+            "市井生活"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "天作之合",
+            "甜宠",
+            "治愈",
+            "市井生活"
+          ],
+          "primary_tag": "都市",
+          "popularity": "304.91万",
+          "word_count": "20.63万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 40,
+          "book_name": "乱流",
+          "author": "折周",
+          "tags": [
+            "架空",
+            "ABO",
+            "剧情",
+            "但剧情很抽象",
+            "强强",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "剧情",
+            "但剧情很抽象",
+            "强强",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "605.39万",
+          "word_count": "20.80万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 41,
+          "book_name": "植物学家的儿子",
+          "author": "Lryan",
+          "tags": [
+            "都市",
+            "追妻火葬场",
+            "年上",
+            "初恋",
+            "狗血",
+            "女装受",
+            "受追攻"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻火葬场",
+            "年上",
+            "初恋",
+            "狗血",
+            "女装受",
+            "受追攻"
+          ],
+          "primary_tag": "都市",
+          "popularity": "178.54万",
+          "word_count": "18.89万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 42,
+          "book_name": "霓虹时代",
+          "author": "明月南楼",
+          "tags": [
+            "都市",
+            "受追攻",
+            "前半段旅居后半段都市",
+            "直球受",
+            "追妻",
+            "救赎",
+            "酸甜",
+            "HE",
+            "1V1",
+            "破镜重圆"
+          ],
+          "all_tags": [
+            "都市",
+            "受追攻",
+            "前半段旅居后半段都市",
+            "直球受",
+            "追妻",
+            "救赎",
+            "酸甜",
+            "HE",
+            "1V1",
+            "破镜重圆"
+          ],
+          "primary_tag": "都市",
+          "popularity": "369.48万",
+          "word_count": "44.99万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 43,
+          "book_name": "别看，是恶评",
+          "author": "水墨鸿",
+          "tags": [
+            "都市",
+            "强制爱",
+            "成年人恋爱",
+            "高情商毒舌受",
+            "顶级野心家",
+            "虐恋",
+            "现代"
+          ],
+          "all_tags": [
+            "都市",
+            "强制爱",
+            "成年人恋爱",
+            "高情商毒舌受",
+            "顶级野心家",
+            "虐恋",
+            "现代"
+          ],
+          "primary_tag": "都市",
+          "popularity": "234.44万",
+          "word_count": "18.53万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 44,
+          "book_name": "废土乐园",
+          "author": "冻柠红",
+          "tags": [
+            "都市",
+            "HE",
+            "破镜重圆",
+            "恨海情天"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "破镜重圆",
+            "恨海情天"
+          ],
+          "primary_tag": "都市",
+          "popularity": "444.32万",
+          "word_count": "26.52万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 45,
+          "book_name": "顽疾",
+          "author": "二十迷川",
+          "tags": [
+            "架空",
+            "追妻火葬场",
+            "强制爱",
+            "破镜重圆",
+            "ABO",
+            "HE",
+            "狗血"
+          ],
+          "all_tags": [
+            "架空",
+            "追妻火葬场",
+            "强制爱",
+            "破镜重圆",
+            "ABO",
+            "HE",
+            "狗血"
+          ],
+          "primary_tag": "架空",
+          "popularity": "356.09万",
+          "word_count": "26.39万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 46,
+          "book_name": "仙人观我",
+          "author": "蔓越鸥",
+          "tags": [
+            "玄幻",
+            "师徒年上",
+            "年上",
+            "HE",
+            "强强",
+            "圣人攻",
+            "受唯一怕的只有师父",
+            "别抽了我认错",
+            "骗你的认错也抽",
+            "师徒",
+            "仙侠"
+          ],
+          "all_tags": [
+            "玄幻",
+            "师徒年上",
+            "年上",
+            "HE",
+            "强强",
+            "圣人攻",
+            "受唯一怕的只有师父",
+            "别抽了我认错",
+            "骗你的认错也抽",
+            "师徒",
+            "仙侠"
+          ],
+          "primary_tag": "玄幻",
+          "popularity": "347.34万",
+          "word_count": "18.22万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 47,
+          "book_name": "赐我美梦一场",
+          "author": "向衔",
+          "tags": [
+            "都市",
+            "追妻",
+            "年上",
+            "酸涩"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻",
+            "年上",
+            "酸涩"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,009.15万",
+          "word_count": "27.43万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 48,
+          "book_name": "绊心",
+          "author": "一只狌狌",
+          "tags": [
+            "架空",
+            "狗血",
+            "破镜重圆",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "狗血",
+            "破镜重圆",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "163.01万",
+          "word_count": "15.96万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 49,
+          "book_name": "非得我当0？",
+          "author": "野真",
+          "tags": [
+            "综合",
+            "强制爱",
+            "受很老实但身材很辣",
+            "美1帅0",
+            "混血攻貌美体力很猛",
+            "搞笑",
+            "渴肤攻强抱直男受",
+            "缺心眼倒霉0",
+            "狗血"
+          ],
+          "all_tags": [
+            "综合",
+            "强制爱",
+            "受很老实但身材很辣",
+            "美1帅0",
+            "混血攻貌美体力很猛",
+            "搞笑",
+            "渴肤攻强抱直男受",
+            "缺心眼倒霉0",
+            "狗血"
+          ],
+          "primary_tag": "综合",
+          "popularity": "574.81万",
+          "word_count": "23.74万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 50,
+          "book_name": "野孩子",
+          "author": "风月归我",
+          "tags": [
+            "综合",
+            "出租屋文学",
+            "破镜重圆",
+            "酸甜",
+            "年上",
+            "日常",
+            "双向奔赴",
+            "竹马竹马",
+            "治愈"
+          ],
+          "all_tags": [
+            "综合",
+            "出租屋文学",
+            "破镜重圆",
+            "酸甜",
+            "年上",
+            "日常",
+            "双向奔赴",
+            "竹马竹马",
+            "治愈"
+          ],
+          "primary_tag": "综合",
+          "popularity": "404.43万",
+          "word_count": "21.00万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        }
+      ]
     },
     "purelove_bestseller": {
       "count": 50,
@@ -33,7 +1503,1483 @@
       "status_stats": {
         "完结": 24,
         "连载中": 26
-      }
+      },
+      "books": [
+        {
+          "rank": 1,
+          "book_name": "初恋是件坏事",
+          "author": "成江入海",
+          "tags": [
+            "青春",
+            "竹马竹马",
+            "甜宠",
+            "温馨",
+            "成长"
+          ],
+          "all_tags": [
+            "青春",
+            "竹马竹马",
+            "甜宠",
+            "温馨",
+            "成长"
+          ],
+          "primary_tag": "青春",
+          "popularity": "3,642.58万",
+          "word_count": "16.47万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 2,
+          "book_name": "霸气金丝雀",
+          "author": "木三观",
+          "tags": [
+            "都市",
+            "HE",
+            "包养出真爱"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "包养出真爱"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,475.75万",
+          "word_count": "21.79万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 3,
+          "book_name": "荒诞文学",
+          "author": "空菊",
+          "tags": [
+            "都市",
+            "狗血",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "6,583.12万",
+          "word_count": "27.17万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 4,
+          "book_name": "本能失陷",
+          "author": "二师叔",
+          "tags": [
+            "都市",
+            "年下",
+            "入室抢劫型恋人攻",
+            "冰山美人受",
+            "体型差",
+            "年龄差",
+            "肤色差",
+            "HE",
+            "甜宠",
+            "职业",
+            "轻松"
+          ],
+          "all_tags": [
+            "都市",
+            "年下",
+            "入室抢劫型恋人攻",
+            "冰山美人受",
+            "体型差",
+            "年龄差",
+            "肤色差",
+            "HE",
+            "甜宠",
+            "职业",
+            "轻松"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,479.90万",
+          "word_count": "29.30万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 5,
+          "book_name": "跟踪日记",
+          "author": "长烟",
+          "tags": [
+            "综合",
+            "搞笑",
+            "攻痛受也会痛",
+            "树精受",
+            "不算破镜的重圆",
+            "甜宠",
+            "沙雕",
+            "轻松"
+          ],
+          "all_tags": [
+            "综合",
+            "搞笑",
+            "攻痛受也会痛",
+            "树精受",
+            "不算破镜的重圆",
+            "甜宠",
+            "沙雕",
+            "轻松"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,766.75万",
+          "word_count": "16.59万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 6,
+          "book_name": "苦艾保质期",
+          "author": "林啸也",
+          "tags": [
+            "都市",
+            "追妻",
+            "年上养成",
+            "上位者为爱发疯",
+            "分离焦虑爹系攻",
+            "直球人机小狗受",
+            "甜宠互宠",
+            "竹马一起长大",
+            "两人身心只有彼此",
+            "狗血"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻",
+            "年上养成",
+            "上位者为爱发疯",
+            "分离焦虑爹系攻",
+            "直球人机小狗受",
+            "甜宠互宠",
+            "竹马一起长大",
+            "两人身心只有彼此",
+            "狗血"
+          ],
+          "primary_tag": "都市",
+          "popularity": "6,020.47万",
+          "word_count": "39.94万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 7,
+          "book_name": "老实人饲养手册",
+          "author": "金币小兔",
+          "tags": [
+            "都市",
+            "甜宠",
+            "轻松",
+            "豪门",
+            "情投意合"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "轻松",
+            "豪门",
+            "情投意合"
+          ],
+          "primary_tag": "都市",
+          "popularity": "442.70万",
+          "word_count": "21.45万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 8,
+          "book_name": "殊途同归",
+          "author": "独山凡鸟",
+          "tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "强制爱",
+            "受强制爱",
+            "相爱相杀",
+            "虐恋",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "强制爱",
+            "受强制爱",
+            "相爱相杀",
+            "虐恋",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "899.23万",
+          "word_count": "22.86万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 9,
+          "book_name": "哥哥喜欢猫",
+          "author": "二蛋",
+          "tags": [
+            "综合",
+            "变猫",
+            "强制爱",
+            "年上"
+          ],
+          "all_tags": [
+            "综合",
+            "变猫",
+            "强制爱",
+            "年上"
+          ],
+          "primary_tag": "综合",
+          "popularity": "963.18万",
+          "word_count": "15.80万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 10,
+          "book_name": "真的没有勾引你啊",
+          "author": "叹酸",
+          "tags": [
+            "青春",
+            "甜宠",
+            "轻松",
+            "帅1萌0",
+            "直掰弯",
+            "暗恋",
+            "HE"
+          ],
+          "all_tags": [
+            "青春",
+            "甜宠",
+            "轻松",
+            "帅1萌0",
+            "直掰弯",
+            "暗恋",
+            "HE"
+          ],
+          "primary_tag": "青春",
+          "popularity": "1,150.97万",
+          "word_count": "24.62万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 11,
+          "book_name": "野狗",
+          "author": "都市累人",
+          "tags": [
+            "都市",
+            "暗恋",
+            "年下",
+            "强强",
+            "狗血",
+            "虐恋"
+          ],
+          "all_tags": [
+            "都市",
+            "暗恋",
+            "年下",
+            "强强",
+            "狗血",
+            "虐恋"
+          ],
+          "primary_tag": "都市",
+          "popularity": "653.64万",
+          "word_count": "28.90万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 12,
+          "book_name": "月光沦陷",
+          "author": "冰块儿",
+          "tags": [
+            "综合",
+            "强强",
+            "甜宠",
+            "无限流",
+            "轻松",
+            "HE",
+            "剧情"
+          ],
+          "all_tags": [
+            "综合",
+            "强强",
+            "甜宠",
+            "无限流",
+            "轻松",
+            "HE",
+            "剧情"
+          ],
+          "primary_tag": "综合",
+          "popularity": "5,751.07万",
+          "word_count": "72.84万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 13,
+          "book_name": "游鱼习惯",
+          "author": "小斤小斤鱼",
+          "tags": [
+            "架空",
+            "ABO",
+            "酸甜",
+            "婚后生活",
+            "HE",
+            "娱乐圈",
+            "论坛体",
+            "竹马竹马"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "酸甜",
+            "婚后生活",
+            "HE",
+            "娱乐圈",
+            "论坛体",
+            "竹马竹马"
+          ],
+          "primary_tag": "架空",
+          "popularity": "681.23万",
+          "word_count": "21.94万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 14,
+          "book_name": "错误取向",
+          "author": "掷生",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "酸涩",
+            "虐恋",
+            "娱乐圈",
+            "追妻火葬场",
+            "现代",
+            "狗血",
+            "直掰弯",
+            "阴差阳错"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "酸涩",
+            "虐恋",
+            "娱乐圈",
+            "追妻火葬场",
+            "现代",
+            "狗血",
+            "直掰弯",
+            "阴差阳错"
+          ],
+          "primary_tag": "都市",
+          "popularity": "479.16万",
+          "word_count": "25.88万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 15,
+          "book_name": "替身之上",
+          "author": "一维马赛克",
+          "tags": [
+            "都市",
+            "爽文",
+            "追妻火葬场",
+            "恨海情天",
+            "破镜重圆",
+            "酸涩",
+            "甜宠",
+            "HE",
+            "职业",
+            "狗血",
+            "替身"
+          ],
+          "all_tags": [
+            "都市",
+            "爽文",
+            "追妻火葬场",
+            "恨海情天",
+            "破镜重圆",
+            "酸涩",
+            "甜宠",
+            "HE",
+            "职业",
+            "狗血",
+            "替身"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,843.03万",
+          "word_count": "31.90万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 16,
+          "book_name": "我闪现追你",
+          "author": "海鶄落",
+          "tags": [
+            "综合",
+            "搞笑",
+            "HE",
+            "电竞",
+            "沙雕",
+            "爽文"
+          ],
+          "all_tags": [
+            "综合",
+            "搞笑",
+            "HE",
+            "电竞",
+            "沙雕",
+            "爽文"
+          ],
+          "primary_tag": "综合",
+          "popularity": "3,241.63万",
+          "word_count": "35.89万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 17,
+          "book_name": "我们的存在",
+          "author": "电子熊",
+          "tags": [
+            "都市",
+            "年上",
+            "暗恋",
+            "酷哥攻",
+            "小狼狗受",
+            "酸涩",
+            "HE",
+            "致郁",
+            "受追攻"
+          ],
+          "all_tags": [
+            "都市",
+            "年上",
+            "暗恋",
+            "酷哥攻",
+            "小狼狗受",
+            "酸涩",
+            "HE",
+            "致郁",
+            "受追攻"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,888.63万",
+          "word_count": "28.11万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 18,
+          "book_name": "虚构热恋99%",
+          "author": "柚子小狗",
+          "tags": [
+            "都市",
+            "甜宠",
+            "年上",
+            "攻宠受",
+            "鸡同鸭讲",
+            "绅士先生大变色鬼",
+            "呆萌宝贝防御力点满",
+            "旮旯给木的错误玩法",
+            "现充死宅恋爱真难"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "年上",
+            "攻宠受",
+            "鸡同鸭讲",
+            "绅士先生大变色鬼",
+            "呆萌宝贝防御力点满",
+            "旮旯给木的错误玩法",
+            "现充死宅恋爱真难"
+          ],
+          "primary_tag": "都市",
+          "popularity": "404.46万",
+          "word_count": "23.02万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 19,
+          "book_name": "面包鸳鸯乳果",
+          "author": "斋饮地",
+          "tags": [
+            "架空",
+            "ABO",
+            "甜宠",
+            "先婚后爱",
+            "酸甜",
+            "年上",
+            "攻宠受养成系",
+            "强攻弱受帅攻美受",
+            "有一点狗血",
+            "高科技生子"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "甜宠",
+            "先婚后爱",
+            "酸甜",
+            "年上",
+            "攻宠受养成系",
+            "强攻弱受帅攻美受",
+            "有一点狗血",
+            "高科技生子"
+          ],
+          "primary_tag": "架空",
+          "popularity": "757.99万",
+          "word_count": "38.70万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 20,
+          "book_name": "失格落日",
+          "author": "花溱",
+          "tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "暗恋",
+            "掉马",
+            "他逃他追",
+            "伪强制",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "狗血",
+            "暗恋",
+            "掉马",
+            "他逃他追",
+            "伪强制",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "4,188.90万",
+          "word_count": "25.83万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 21,
+          "book_name": "错误预感",
+          "author": "青水幸",
+          "tags": [
+            "都市",
+            "喜剧",
+            "酸甜",
+            "甜宠",
+            "轻松",
+            "搞笑",
+            "职业",
+            "年上",
+            "破镜重圆",
+            "双向暗恋",
+            "自我攻略"
+          ],
+          "all_tags": [
+            "都市",
+            "喜剧",
+            "酸甜",
+            "甜宠",
+            "轻松",
+            "搞笑",
+            "职业",
+            "年上",
+            "破镜重圆",
+            "双向暗恋",
+            "自我攻略"
+          ],
+          "primary_tag": "都市",
+          "popularity": "739.07万",
+          "word_count": "25.21万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 22,
+          "book_name": "心动存单",
+          "author": "颍川月下",
+          "tags": [
+            "都市",
+            "直掰弯",
+            "甜宠",
+            "HE",
+            "职业",
+            "轻松",
+            "搞笑"
+          ],
+          "all_tags": [
+            "都市",
+            "直掰弯",
+            "甜宠",
+            "HE",
+            "职业",
+            "轻松",
+            "搞笑"
+          ],
+          "primary_tag": "都市",
+          "popularity": "877.18万",
+          "word_count": "25.74万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 23,
+          "book_name": "通俗爱情",
+          "author": "半缘修道",
+          "tags": [
+            "综合",
+            "甜宠",
+            "HE",
+            "一见钟情",
+            "市井生活"
+          ],
+          "all_tags": [
+            "综合",
+            "甜宠",
+            "HE",
+            "一见钟情",
+            "市井生活"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,475.78万",
+          "word_count": "15.89万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 24,
+          "book_name": "欢迎收听禾边鬼",
+          "author": "晏山乔",
+          "tags": [
+            "都市",
+            "强强",
+            "HE",
+            "年下"
+          ],
+          "all_tags": [
+            "都市",
+            "强强",
+            "HE",
+            "年下"
+          ],
+          "primary_tag": "都市",
+          "popularity": "310.82万",
+          "word_count": "20.59万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 25,
+          "book_name": "完美情人",
+          "author": "拯救瑶光星",
+          "tags": [
+            "都市",
+            "追夫",
+            "狗血",
+            "娱乐圈",
+            "谁逃谁追谁发疯",
+            "虐恋",
+            "强取豪夺"
+          ],
+          "all_tags": [
+            "都市",
+            "追夫",
+            "狗血",
+            "娱乐圈",
+            "谁逃谁追谁发疯",
+            "虐恋",
+            "强取豪夺"
+          ],
+          "primary_tag": "都市",
+          "popularity": "293.58万",
+          "word_count": "29.35万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 26,
+          "book_name": "盘中餐",
+          "author": "久陆",
+          "tags": [
+            "综合",
+            "烂俗狗血",
+            "破镜重圆",
+            "追妻",
+            "HE",
+            "强强",
+            "酸涩",
+            "很会装的攻",
+            "很会叫的受",
+            "甜宠"
+          ],
+          "all_tags": [
+            "综合",
+            "烂俗狗血",
+            "破镜重圆",
+            "追妻",
+            "HE",
+            "强强",
+            "酸涩",
+            "很会装的攻",
+            "很会叫的受",
+            "甜宠"
+          ],
+          "primary_tag": "综合",
+          "popularity": "428.45万",
+          "word_count": "20.86万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 27,
+          "book_name": "天气晴 去殉情",
+          "author": "Llosa",
+          "tags": [
+            "都市",
+            "HE",
+            "经典霸道总裁配美人",
+            "不算甜宠倒也不虐",
+            "其实有点破镜重圆"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "经典霸道总裁配美人",
+            "不算甜宠倒也不虐",
+            "其实有点破镜重圆"
+          ],
+          "primary_tag": "都市",
+          "popularity": "560.95万",
+          "word_count": "16.13万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 28,
+          "book_name": "囡囡",
+          "author": "木更木更",
+          "tags": [
+            "都市",
+            "甜宠",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,435.61万",
+          "word_count": "12.83万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 29,
+          "book_name": "林总监的领带",
+          "author": "方浅",
+          "tags": [
+            "都市",
+            "熟男拉扯",
+            "职业",
+            "正剧",
+            "HE",
+            "年上",
+            "强强",
+            "拉扯",
+            "欢喜冤家"
+          ],
+          "all_tags": [
+            "都市",
+            "熟男拉扯",
+            "职业",
+            "正剧",
+            "HE",
+            "年上",
+            "强强",
+            "拉扯",
+            "欢喜冤家"
+          ],
+          "primary_tag": "都市",
+          "popularity": "683.90万",
+          "word_count": "23.98万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 30,
+          "book_name": "火烧日",
+          "author": "一颗牙疼",
+          "tags": [
+            "都市",
+            "追妻火葬场",
+            "虐恋",
+            "年下",
+            "攻前期恶劣",
+            "掉马后会成长",
+            "狗血",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻火葬场",
+            "虐恋",
+            "年下",
+            "攻前期恶劣",
+            "掉马后会成长",
+            "狗血",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "653.10万",
+          "word_count": "25.71万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 31,
+          "book_name": "铩羽",
+          "author": "兑水了了",
+          "tags": [
+            "推理",
+            "刑侦",
+            "强强",
+            "双卧底",
+            "HE",
+            "年上",
+            "直掰弯",
+            "双队长",
+            "剧情"
+          ],
+          "all_tags": [
+            "推理",
+            "刑侦",
+            "强强",
+            "双卧底",
+            "HE",
+            "年上",
+            "直掰弯",
+            "双队长",
+            "剧情"
+          ],
+          "primary_tag": "推理",
+          "popularity": "557.48万",
+          "word_count": "43.31万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 32,
+          "book_name": "宴菩萨",
+          "author": "商曾",
+          "tags": [
+            "宫廷",
+            "虐恋",
+            "剧情",
+            "强强",
+            "相爱相杀",
+            "权谋"
+          ],
+          "all_tags": [
+            "宫廷",
+            "虐恋",
+            "剧情",
+            "强强",
+            "相爱相杀",
+            "权谋"
+          ],
+          "primary_tag": "宫廷",
+          "popularity": "976.62万",
+          "word_count": "43.67万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 33,
+          "book_name": "不在意谎言",
+          "author": "持续转向",
+          "tags": [
+            "综合",
+            "虐恋",
+            "追妻",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "虐恋",
+            "追妻",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1,620.30万",
+          "word_count": "24.53万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 34,
+          "book_name": "塑料夫夫观察实录",
+          "author": "姜可颂",
+          "tags": [
+            "架空",
+            "对抗路情侣",
+            "ABO",
+            "HE",
+            "娱乐圈"
+          ],
+          "all_tags": [
+            "架空",
+            "对抗路情侣",
+            "ABO",
+            "HE",
+            "娱乐圈"
+          ],
+          "primary_tag": "架空",
+          "popularity": "602.61万",
+          "word_count": "23.00万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 35,
+          "book_name": "健忘症",
+          "author": "姜双柏",
+          "tags": [
+            "都市",
+            "狗血",
+            "破镜重圆",
+            "虽然狗血但是纯爱",
+            "半娱乐圈",
+            "帅1美0",
+            "酸涩",
+            "骄傲者低头",
+            "娱乐圈",
+            "酸甜"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "破镜重圆",
+            "虽然狗血但是纯爱",
+            "半娱乐圈",
+            "帅1美0",
+            "酸涩",
+            "骄傲者低头",
+            "娱乐圈",
+            "酸甜"
+          ],
+          "primary_tag": "都市",
+          "popularity": "441.62万",
+          "word_count": "18.41万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 36,
+          "book_name": "初恋制造",
+          "author": "猛猪出闸",
+          "tags": [
+            "都市",
+            "甜宠",
+            "搞笑",
+            "虐恋",
+            "看似是替身其实不是",
+            "替身",
+            "年上",
+            "换攻",
+            "但重点不在换攻",
+            "轻松",
+            "白切黑"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "搞笑",
+            "虐恋",
+            "看似是替身其实不是",
+            "替身",
+            "年上",
+            "换攻",
+            "但重点不在换攻",
+            "轻松",
+            "白切黑"
+          ],
+          "primary_tag": "都市",
+          "popularity": "308.39万",
+          "word_count": "20.92万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 37,
+          "book_name": "恶莺",
+          "author": "吴百万",
+          "tags": [
+            "都市",
+            "双向暗恋",
+            "竹马竹马",
+            "强强",
+            "救赎",
+            "欢喜冤家",
+            "死对头",
+            "白切黑",
+            "黑切白"
+          ],
+          "all_tags": [
+            "都市",
+            "双向暗恋",
+            "竹马竹马",
+            "强强",
+            "救赎",
+            "欢喜冤家",
+            "死对头",
+            "白切黑",
+            "黑切白"
+          ],
+          "primary_tag": "都市",
+          "popularity": "454.49万",
+          "word_count": "23.86万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 38,
+          "book_name": "再骂一句试试",
+          "author": "盒家欢乐",
+          "tags": [
+            "都市",
+            "HE",
+            "天作之合",
+            "甜宠",
+            "治愈",
+            "市井生活"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "天作之合",
+            "甜宠",
+            "治愈",
+            "市井生活"
+          ],
+          "primary_tag": "都市",
+          "popularity": "304.91万",
+          "word_count": "20.63万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 39,
+          "book_name": "乱流",
+          "author": "折周",
+          "tags": [
+            "架空",
+            "ABO",
+            "剧情",
+            "但剧情很抽象",
+            "强强",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "剧情",
+            "但剧情很抽象",
+            "强强",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "605.39万",
+          "word_count": "20.80万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 40,
+          "book_name": "植物学家的儿子",
+          "author": "Lryan",
+          "tags": [
+            "都市",
+            "追妻火葬场",
+            "年上",
+            "初恋",
+            "狗血",
+            "女装受",
+            "受追攻"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻火葬场",
+            "年上",
+            "初恋",
+            "狗血",
+            "女装受",
+            "受追攻"
+          ],
+          "primary_tag": "都市",
+          "popularity": "178.54万",
+          "word_count": "18.89万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 41,
+          "book_name": "霓虹时代",
+          "author": "明月南楼",
+          "tags": [
+            "都市",
+            "受追攻",
+            "前半段旅居后半段都市",
+            "直球受",
+            "追妻",
+            "救赎",
+            "酸甜",
+            "HE",
+            "1V1",
+            "破镜重圆"
+          ],
+          "all_tags": [
+            "都市",
+            "受追攻",
+            "前半段旅居后半段都市",
+            "直球受",
+            "追妻",
+            "救赎",
+            "酸甜",
+            "HE",
+            "1V1",
+            "破镜重圆"
+          ],
+          "primary_tag": "都市",
+          "popularity": "369.48万",
+          "word_count": "44.99万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 42,
+          "book_name": "别看，是恶评",
+          "author": "水墨鸿",
+          "tags": [
+            "都市",
+            "强制爱",
+            "成年人恋爱",
+            "高情商毒舌受",
+            "顶级野心家",
+            "虐恋",
+            "现代"
+          ],
+          "all_tags": [
+            "都市",
+            "强制爱",
+            "成年人恋爱",
+            "高情商毒舌受",
+            "顶级野心家",
+            "虐恋",
+            "现代"
+          ],
+          "primary_tag": "都市",
+          "popularity": "234.44万",
+          "word_count": "18.53万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 43,
+          "book_name": "废土乐园",
+          "author": "冻柠红",
+          "tags": [
+            "都市",
+            "HE",
+            "破镜重圆",
+            "恨海情天"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "破镜重圆",
+            "恨海情天"
+          ],
+          "primary_tag": "都市",
+          "popularity": "444.32万",
+          "word_count": "26.52万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 44,
+          "book_name": "顽疾",
+          "author": "二十迷川",
+          "tags": [
+            "架空",
+            "追妻火葬场",
+            "强制爱",
+            "破镜重圆",
+            "ABO",
+            "HE",
+            "狗血"
+          ],
+          "all_tags": [
+            "架空",
+            "追妻火葬场",
+            "强制爱",
+            "破镜重圆",
+            "ABO",
+            "HE",
+            "狗血"
+          ],
+          "primary_tag": "架空",
+          "popularity": "356.09万",
+          "word_count": "26.39万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 45,
+          "book_name": "仙人观我",
+          "author": "蔓越鸥",
+          "tags": [
+            "玄幻",
+            "师徒年上",
+            "年上",
+            "HE",
+            "强强",
+            "圣人攻",
+            "受唯一怕的只有师父",
+            "别抽了我认错",
+            "骗你的认错也抽",
+            "师徒",
+            "仙侠"
+          ],
+          "all_tags": [
+            "玄幻",
+            "师徒年上",
+            "年上",
+            "HE",
+            "强强",
+            "圣人攻",
+            "受唯一怕的只有师父",
+            "别抽了我认错",
+            "骗你的认错也抽",
+            "师徒",
+            "仙侠"
+          ],
+          "primary_tag": "玄幻",
+          "popularity": "347.34万",
+          "word_count": "18.22万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 46,
+          "book_name": "赐我美梦一场",
+          "author": "向衔",
+          "tags": [
+            "都市",
+            "追妻",
+            "年上",
+            "酸涩"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻",
+            "年上",
+            "酸涩"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,009.15万",
+          "word_count": "27.43万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 47,
+          "book_name": "绊心",
+          "author": "一只狌狌",
+          "tags": [
+            "架空",
+            "狗血",
+            "破镜重圆",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "狗血",
+            "破镜重圆",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "163.01万",
+          "word_count": "15.96万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 48,
+          "book_name": "非得我当0？",
+          "author": "野真",
+          "tags": [
+            "综合",
+            "强制爱",
+            "受很老实但身材很辣",
+            "美1帅0",
+            "混血攻貌美体力很猛",
+            "搞笑",
+            "渴肤攻强抱直男受",
+            "缺心眼倒霉0",
+            "狗血"
+          ],
+          "all_tags": [
+            "综合",
+            "强制爱",
+            "受很老实但身材很辣",
+            "美1帅0",
+            "混血攻貌美体力很猛",
+            "搞笑",
+            "渴肤攻强抱直男受",
+            "缺心眼倒霉0",
+            "狗血"
+          ],
+          "primary_tag": "综合",
+          "popularity": "574.81万",
+          "word_count": "23.74万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 49,
+          "book_name": "野孩子",
+          "author": "风月归我",
+          "tags": [
+            "综合",
+            "出租屋文学",
+            "破镜重圆",
+            "酸甜",
+            "年上",
+            "日常",
+            "双向奔赴",
+            "竹马竹马",
+            "治愈"
+          ],
+          "all_tags": [
+            "综合",
+            "出租屋文学",
+            "破镜重圆",
+            "酸甜",
+            "年上",
+            "日常",
+            "双向奔赴",
+            "竹马竹马",
+            "治愈"
+          ],
+          "primary_tag": "综合",
+          "popularity": "404.43万",
+          "word_count": "21.00万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 50,
+          "book_name": "春天游泳",
+          "author": "孔瓷",
+          "tags": [
+            "都市",
+            "见色起意",
+            "推推拉拉",
+            "群像出没",
+            "娱乐圈大于商战",
+            "但也有商战",
+            "商战少乃因作者文盲故"
+          ],
+          "all_tags": [
+            "都市",
+            "见色起意",
+            "推推拉拉",
+            "群像出没",
+            "娱乐圈大于商战",
+            "但也有商战",
+            "商战少乃因作者文盲故"
+          ],
+          "primary_tag": "都市",
+          "popularity": "190.87万",
+          "word_count": "24.01万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        }
+      ]
     },
     "purelove_new": {
       "count": 50,
@@ -50,7 +2996,1465 @@
       },
       "status_stats": {
         "连载中": 50
-      }
+      },
+      "books": [
+        {
+          "rank": 1,
+          "book_name": "加拉蒂亚之证",
+          "author": "半穆半云",
+          "tags": [
+            "科幻",
+            "强强",
+            "星际科幻",
+            "欧风",
+            "西幻",
+            "架空宇宙",
+            "竹马竹马",
+            "救赎",
+            "末世",
+            "克苏鲁",
+            "群像"
+          ],
+          "all_tags": [
+            "科幻",
+            "强强",
+            "星际科幻",
+            "欧风",
+            "西幻",
+            "架空宇宙",
+            "竹马竹马",
+            "救赎",
+            "末世",
+            "克苏鲁",
+            "群像"
+          ],
+          "primary_tag": "科幻",
+          "popularity": "7.51万",
+          "word_count": "4.86万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 2,
+          "book_name": "鱼刺",
+          "author": "都市累人",
+          "tags": [
+            "都市",
+            "先婚后爱",
+            "追妻火葬场",
+            "年上",
+            "狗血",
+            "强制爱"
+          ],
+          "all_tags": [
+            "都市",
+            "先婚后爱",
+            "追妻火葬场",
+            "年上",
+            "狗血",
+            "强制爱"
+          ],
+          "primary_tag": "都市",
+          "popularity": "4.64万",
+          "word_count": "9",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 3,
+          "book_name": "联姻不能停",
+          "author": "错落椰",
+          "tags": [
+            "都市",
+            "搞笑",
+            "竹马竹马",
+            "先婚后爱",
+            "欢喜冤家"
+          ],
+          "all_tags": [
+            "都市",
+            "搞笑",
+            "竹马竹马",
+            "先婚后爱",
+            "欢喜冤家"
+          ],
+          "primary_tag": "都市",
+          "popularity": "10.03万",
+          "word_count": "2.47万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 4,
+          "book_name": "墙上的正字",
+          "author": "风干果",
+          "tags": [
+            "都市",
+            "年代",
+            "酸涩",
+            "年龄差",
+            "虐恋",
+            "年下",
+            "HE",
+            "死缠烂打"
+          ],
+          "all_tags": [
+            "都市",
+            "年代",
+            "酸涩",
+            "年龄差",
+            "虐恋",
+            "年下",
+            "HE",
+            "死缠烂打"
+          ],
+          "primary_tag": "都市",
+          "popularity": "5.52万",
+          "word_count": "3.62万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 5,
+          "book_name": "错位",
+          "author": "青小雨",
+          "tags": [
+            "架空",
+            "互攻",
+            "娱乐圈",
+            "穿越",
+            "正剧",
+            "强强",
+            "HE",
+            "励志",
+            "日久生情"
+          ],
+          "all_tags": [
+            "架空",
+            "互攻",
+            "娱乐圈",
+            "穿越",
+            "正剧",
+            "强强",
+            "HE",
+            "励志",
+            "日久生情"
+          ],
+          "primary_tag": "架空",
+          "popularity": "6.76万",
+          "word_count": "5.10万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 6,
+          "book_name": "心照不宣",
+          "author": "盛星斗",
+          "tags": [
+            "青春",
+            "HE",
+            "情投意合"
+          ],
+          "all_tags": [
+            "青春",
+            "HE",
+            "情投意合"
+          ],
+          "primary_tag": "青春",
+          "popularity": "4.35万",
+          "word_count": "1.24万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 7,
+          "book_name": "今夜不回家",
+          "author": "五年三载",
+          "tags": [
+            "都市",
+            "熟男",
+            "赛车手",
+            "自1为是",
+            "市井生活",
+            "年上",
+            "强强",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "熟男",
+            "赛车手",
+            "自1为是",
+            "市井生活",
+            "年上",
+            "强强",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "6.54万",
+          "word_count": "6.29万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 8,
+          "book_name": "我有老婆你没有",
+          "author": "宋昭昭",
+          "tags": [
+            "综合",
+            "甜宠",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "甜宠",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "5.62万",
+          "word_count": "1.37万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 9,
+          "book_name": "暴风雪",
+          "author": "雪花旅途",
+          "tags": [
+            "架空",
+            "HE",
+            "破镜重圆",
+            "强强",
+            "狗血",
+            "追妻火葬场"
+          ],
+          "all_tags": [
+            "架空",
+            "HE",
+            "破镜重圆",
+            "强强",
+            "狗血",
+            "追妻火葬场"
+          ],
+          "primary_tag": "架空",
+          "popularity": "6,886",
+          "word_count": "1.44万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 10,
+          "book_name": "野鬼",
+          "author": "归来山",
+          "tags": [
+            "综合",
+            "公路文",
+            "酸甜",
+            "番外HE",
+            "年上",
+            "丧系酷哥攻",
+            "快乐小狗美人受",
+            "我保证正文是甜的",
+            "不甜我打你们"
+          ],
+          "all_tags": [
+            "综合",
+            "公路文",
+            "酸甜",
+            "番外HE",
+            "年上",
+            "丧系酷哥攻",
+            "快乐小狗美人受",
+            "我保证正文是甜的",
+            "不甜我打你们"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2.44万",
+          "word_count": "9",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 11,
+          "book_name": "寂寞岛",
+          "author": "丧鱼",
+          "tags": [
+            "都市",
+            "狗血",
+            "老房子着火",
+            "强制爱",
+            "封建大爹"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "老房子着火",
+            "强制爱",
+            "封建大爹"
+          ],
+          "primary_tag": "都市",
+          "popularity": "12.83万",
+          "word_count": "4.34万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 12,
+          "book_name": "楼郁，饭否？",
+          "author": "轻怀",
+          "tags": [
+            "都市",
+            "年上",
+            "职场",
+            "救赎",
+            "治愈"
+          ],
+          "all_tags": [
+            "都市",
+            "年上",
+            "职场",
+            "救赎",
+            "治愈"
+          ],
+          "primary_tag": "都市",
+          "popularity": "7.68万",
+          "word_count": "3.71万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 13,
+          "book_name": "风雪鸣镝录",
+          "author": "满心如愿",
+          "tags": [
+            "综合",
+            "剧情",
+            "正剧",
+            "权谋",
+            "历史",
+            "架空",
+            "战争",
+            "群像",
+            "年上",
+            "强强",
+            "瑞朝异闻录"
+          ],
+          "all_tags": [
+            "综合",
+            "剧情",
+            "正剧",
+            "权谋",
+            "历史",
+            "架空",
+            "战争",
+            "群像",
+            "年上",
+            "强强",
+            "瑞朝异闻录"
+          ],
+          "primary_tag": "综合",
+          "popularity": "5.63万",
+          "word_count": "5.45万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 14,
+          "book_name": "泐土寻香",
+          "author": "琴叶珊瑚",
+          "tags": [
+            "综合",
+            "女装",
+            "掉马",
+            "失忆",
+            "追妻",
+            "HE",
+            "乡土",
+            "少数民族",
+            "民俗"
+          ],
+          "all_tags": [
+            "综合",
+            "女装",
+            "掉马",
+            "失忆",
+            "追妻",
+            "HE",
+            "乡土",
+            "少数民族",
+            "民俗"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2.83万",
+          "word_count": "3.18万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 15,
+          "book_name": "纤维",
+          "author": "逐天",
+          "tags": [
+            "综合",
+            "公路",
+            "现实向",
+            "旅行",
+            "救赎",
+            "情投意合",
+            "一直在路上",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "公路",
+            "现实向",
+            "旅行",
+            "救赎",
+            "情投意合",
+            "一直在路上",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "11.13万",
+          "word_count": "5.09万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 16,
+          "book_name": "在流浪",
+          "author": "Ch1ves",
+          "tags": [
+            "都市",
+            "职业",
+            "剧情",
+            "成长",
+            "强强",
+            "HE",
+            "甜宠",
+            "日久生情",
+            "市井",
+            "轻松"
+          ],
+          "all_tags": [
+            "都市",
+            "职业",
+            "剧情",
+            "成长",
+            "强强",
+            "HE",
+            "甜宠",
+            "日久生情",
+            "市井",
+            "轻松"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2.70万",
+          "word_count": "4.57万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 17,
+          "book_name": "血蝶",
+          "author": "財高八斗",
+          "tags": [
+            "灵异",
+            "虐恋",
+            "相爱相杀",
+            "破镜重圆",
+            "前世今生",
+            "病娇攻",
+            "坚强受",
+            "恨海情天"
+          ],
+          "all_tags": [
+            "灵异",
+            "虐恋",
+            "相爱相杀",
+            "破镜重圆",
+            "前世今生",
+            "病娇攻",
+            "坚强受",
+            "恨海情天"
+          ],
+          "primary_tag": "灵异",
+          "popularity": "7.16万",
+          "word_count": "5.86万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 18,
+          "book_name": "失控关系",
+          "author": "一兜薯饼",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "HE",
+            "强强",
+            "烂人真心",
+            "现代架空",
+            "狗血",
+            "甜宠",
+            "甜虐交织"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "HE",
+            "强强",
+            "烂人真心",
+            "现代架空",
+            "狗血",
+            "甜宠",
+            "甜虐交织"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1.57万",
+          "word_count": "3.67万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 19,
+          "book_name": "今天也在维修世界的bug",
+          "author": "月下潮汐",
+          "tags": [
+            "科幻",
+            "正剧",
+            "剧情",
+            "悬疑",
+            "HE"
+          ],
+          "all_tags": [
+            "科幻",
+            "正剧",
+            "剧情",
+            "悬疑",
+            "HE"
+          ],
+          "primary_tag": "科幻",
+          "popularity": "7,068",
+          "word_count": "1.28万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 20,
+          "book_name": "第九秒",
+          "author": "冻火",
+          "tags": [
+            "综合",
+            "年下",
+            "双重生",
+            "狗血",
+            "破镜重圆",
+            "双向救赎",
+            "双箭头",
+            "为爱做0"
+          ],
+          "all_tags": [
+            "综合",
+            "年下",
+            "双重生",
+            "狗血",
+            "破镜重圆",
+            "双向救赎",
+            "双箭头",
+            "为爱做0"
+          ],
+          "primary_tag": "综合",
+          "popularity": "3.24万",
+          "word_count": "3.72万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 21,
+          "book_name": "寂寞花园",
+          "author": "么嗷猫",
+          "tags": [
+            "都市",
+            "狗血",
+            "离婚",
+            "虐恋",
+            "破镜重圆",
+            "年上",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "离婚",
+            "虐恋",
+            "破镜重圆",
+            "年上",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "8,287",
+          "word_count": "9",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 22,
+          "book_name": "桃墓迷情",
+          "author": "火烧袅",
+          "tags": [
+            "奇幻",
+            "都市",
+            "强强",
+            "悬疑",
+            "救赎",
+            "年下",
+            "美强惨",
+            "长生",
+            "志怪",
+            "宿命"
+          ],
+          "all_tags": [
+            "奇幻",
+            "都市",
+            "强强",
+            "悬疑",
+            "救赎",
+            "年下",
+            "美强惨",
+            "长生",
+            "志怪",
+            "宿命"
+          ],
+          "primary_tag": "奇幻",
+          "popularity": "1.47万",
+          "word_count": "1.82万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 23,
+          "book_name": "捡到星星的森林",
+          "author": "路时溪",
+          "tags": [
+            "青春",
+            "甜宠",
+            "市井"
+          ],
+          "all_tags": [
+            "青春",
+            "甜宠",
+            "市井"
+          ],
+          "primary_tag": "青春",
+          "popularity": "1.82万",
+          "word_count": "5.25万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 24,
+          "book_name": "本初子午",
+          "author": "有鸟鸣见",
+          "tags": [
+            "综合",
+            "狗血",
+            "虐恋",
+            "HE",
+            "竹马竹马",
+            "年下",
+            "追妻火葬场"
+          ],
+          "all_tags": [
+            "综合",
+            "狗血",
+            "虐恋",
+            "HE",
+            "竹马竹马",
+            "年下",
+            "追妻火葬场"
+          ],
+          "primary_tag": "综合",
+          "popularity": "6.70万",
+          "word_count": "5.01万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 25,
+          "book_name": "今日转晴",
+          "author": "生啃花岗岩",
+          "tags": [
+            "都市",
+            "换受",
+            "年下",
+            "HE",
+            "直播",
+            "受追攻"
+          ],
+          "all_tags": [
+            "都市",
+            "换受",
+            "年下",
+            "HE",
+            "直播",
+            "受追攻"
+          ],
+          "primary_tag": "都市",
+          "popularity": "3.91万",
+          "word_count": "1.77万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 26,
+          "book_name": "银镜反应",
+          "author": "就吃丝瓜",
+          "tags": [
+            "都市",
+            "职业",
+            "破镜重圆",
+            "HE",
+            "狗血",
+            "拉扯",
+            "回避型x钓系"
+          ],
+          "all_tags": [
+            "都市",
+            "职业",
+            "破镜重圆",
+            "HE",
+            "狗血",
+            "拉扯",
+            "回避型x钓系"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1.57万",
+          "word_count": "3.23万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 27,
+          "book_name": "祸水难休",
+          "author": "林宝橙",
+          "tags": [
+            "综合",
+            "一见钟情",
+            "先婚后爱",
+            "甜宠",
+            "救赎",
+            "钓系",
+            "强强",
+            "古风",
+            "权谋",
+            "双向奔赴",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "一见钟情",
+            "先婚后爱",
+            "甜宠",
+            "救赎",
+            "钓系",
+            "强强",
+            "古风",
+            "权谋",
+            "双向奔赴",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "7,184",
+          "word_count": "2.42万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 28,
+          "book_name": "千幕戏",
+          "author": "乔可荔",
+          "tags": [
+            "都市",
+            "娱乐圈",
+            "狗血",
+            "虐恋",
+            "强强",
+            "不正宗的港风别嘲笑我",
+            "没钱那个是攻",
+            "久别重逢"
+          ],
+          "all_tags": [
+            "都市",
+            "娱乐圈",
+            "狗血",
+            "虐恋",
+            "强强",
+            "不正宗的港风别嘲笑我",
+            "没钱那个是攻",
+            "久别重逢"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2.78万",
+          "word_count": "5.20万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 29,
+          "book_name": "谁爱谁孙子",
+          "author": "狗血炖肉",
+          "tags": [
+            "都市",
+            "强强",
+            "HE",
+            "一点寡妇文学",
+            "正剧"
+          ],
+          "all_tags": [
+            "都市",
+            "强强",
+            "HE",
+            "一点寡妇文学",
+            "正剧"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1.56万",
+          "word_count": "5.26万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 30,
+          "book_name": "青苹末",
+          "author": "银荷里",
+          "tags": [
+            "综合",
+            "狗血",
+            "强制爱",
+            "虐恋",
+            "古早"
+          ],
+          "all_tags": [
+            "综合",
+            "狗血",
+            "强制爱",
+            "虐恋",
+            "古早"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,540",
+          "word_count": "3",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 31,
+          "book_name": "你要瘸腿小猫不要",
+          "author": "粉蒸右",
+          "tags": [
+            "综合",
+            "HE",
+            "年上",
+            "救赎",
+            "市井",
+            "县城文学",
+            "年上差九岁"
+          ],
+          "all_tags": [
+            "综合",
+            "HE",
+            "年上",
+            "救赎",
+            "市井",
+            "县城文学",
+            "年上差九岁"
+          ],
+          "primary_tag": "综合",
+          "popularity": "8,374",
+          "word_count": "2.27万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 32,
+          "book_name": "狩猎高岭之花",
+          "author": "南洋咪师傅",
+          "tags": [
+            "综合",
+            "强强",
+            "虐恋",
+            "强制爱",
+            "HE",
+            "剧情",
+            "末世",
+            "物理火葬场",
+            "ABO",
+            "狗血",
+            "强取豪夺"
+          ],
+          "all_tags": [
+            "综合",
+            "强强",
+            "虐恋",
+            "强制爱",
+            "HE",
+            "剧情",
+            "末世",
+            "物理火葬场",
+            "ABO",
+            "狗血",
+            "强取豪夺"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2.88万",
+          "word_count": "3.70万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 33,
+          "book_name": "龙的热恋史",
+          "author": "松风翠",
+          "tags": [
+            "玄幻",
+            "强强",
+            "仙侠",
+            "悬疑",
+            "甜宠",
+            "扮猪吃老虎",
+            "天作之合",
+            "情有独钟"
+          ],
+          "all_tags": [
+            "玄幻",
+            "强强",
+            "仙侠",
+            "悬疑",
+            "甜宠",
+            "扮猪吃老虎",
+            "天作之合",
+            "情有独钟"
+          ],
+          "primary_tag": "玄幻",
+          "popularity": "3.15万",
+          "word_count": "6.75万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 34,
+          "book_name": "滋生",
+          "author": "折溯",
+          "tags": [
+            "综合",
+            "虐恋"
+          ],
+          "all_tags": [
+            "综合",
+            "虐恋"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1.62万",
+          "word_count": "9",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 35,
+          "book_name": "喂喂喂，神来了！",
+          "author": "刀刀木",
+          "tags": [
+            "都市",
+            "金手指",
+            "HE",
+            "神兆感知",
+            "轻松日常"
+          ],
+          "all_tags": [
+            "都市",
+            "金手指",
+            "HE",
+            "神兆感知",
+            "轻松日常"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1.57万",
+          "word_count": "4.83万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 36,
+          "book_name": "错时沦陷",
+          "author": "一颗赛艇兔",
+          "tags": [
+            "推理",
+            "HE",
+            "悬疑",
+            "刑侦",
+            "替身梗"
+          ],
+          "all_tags": [
+            "推理",
+            "HE",
+            "悬疑",
+            "刑侦",
+            "替身梗"
+          ],
+          "primary_tag": "推理",
+          "popularity": "1.07万",
+          "word_count": "2.91万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 37,
+          "book_name": "反串演员",
+          "author": "醉金",
+          "tags": [
+            "都市",
+            "剧情",
+            "先婚后爱",
+            "男扮女装",
+            "HE",
+            "酸甜适中"
+          ],
+          "all_tags": [
+            "都市",
+            "剧情",
+            "先婚后爱",
+            "男扮女装",
+            "HE",
+            "酸甜适中"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1.32万",
+          "word_count": "4.61万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 38,
+          "book_name": "冬雪",
+          "author": "柒枂",
+          "tags": [
+            "综合",
+            "破镜重圆",
+            "酸涩",
+            "酸甜",
+            "救赎",
+            "市井",
+            "久别重逢",
+            "竹马竹马"
+          ],
+          "all_tags": [
+            "综合",
+            "破镜重圆",
+            "酸涩",
+            "酸甜",
+            "救赎",
+            "市井",
+            "久别重逢",
+            "竹马竹马"
+          ],
+          "primary_tag": "综合",
+          "popularity": "7,852",
+          "word_count": "2.41万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 39,
+          "book_name": "小嘴巴，不说话",
+          "author": "茄子包",
+          "tags": [
+            "综合",
+            "HE",
+            "年下",
+            "日常",
+            "轻松",
+            "老夫老夫",
+            "情投意合",
+            "酸甜",
+            "相爱相杀",
+            "甜宠",
+            "温馨"
+          ],
+          "all_tags": [
+            "综合",
+            "HE",
+            "年下",
+            "日常",
+            "轻松",
+            "老夫老夫",
+            "情投意合",
+            "酸甜",
+            "相爱相杀",
+            "甜宠",
+            "温馨"
+          ],
+          "primary_tag": "综合",
+          "popularity": "4,234",
+          "word_count": "1.19万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 40,
+          "book_name": "第四十一天",
+          "author": "长耳大白兔",
+          "tags": [
+            "都市",
+            "追妻",
+            "虐恋",
+            "火葬场"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻",
+            "虐恋",
+            "火葬场"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2.54万",
+          "word_count": "7.42万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 41,
+          "book_name": "动心悖论",
+          "author": "小包菜菜",
+          "tags": [
+            "综合",
+            "年上",
+            "暧昧",
+            "双掉马",
+            "直播",
+            "HE",
+            "轻松",
+            "酸甜",
+            "自我攻略",
+            "占有欲",
+            "拉扯"
+          ],
+          "all_tags": [
+            "综合",
+            "年上",
+            "暧昧",
+            "双掉马",
+            "直播",
+            "HE",
+            "轻松",
+            "酸甜",
+            "自我攻略",
+            "占有欲",
+            "拉扯"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1.91万",
+          "word_count": "5.21万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 42,
+          "book_name": "地平线",
+          "author": "乌龙山ovo",
+          "tags": [
+            "都市",
+            "市井",
+            "治愈",
+            "情投意合",
+            "暗恋",
+            "酸甜",
+            "马甲",
+            "HE",
+            "短佩"
+          ],
+          "all_tags": [
+            "都市",
+            "市井",
+            "治愈",
+            "情投意合",
+            "暗恋",
+            "酸甜",
+            "马甲",
+            "HE",
+            "短佩"
+          ],
+          "primary_tag": "都市",
+          "popularity": "9,951",
+          "word_count": "1.14万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 43,
+          "book_name": "不和传闻",
+          "author": "气球酒",
+          "tags": [
+            "都市",
+            "HE",
+            "破镜重圆",
+            "双向奔赴",
+            "年下",
+            "强强",
+            "娱乐圈",
+            "狗血",
+            "非典型追爱火葬场"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "破镜重圆",
+            "双向奔赴",
+            "年下",
+            "强强",
+            "娱乐圈",
+            "狗血",
+            "非典型追爱火葬场"
+          ],
+          "primary_tag": "都市",
+          "popularity": "9,877",
+          "word_count": "3.39万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 44,
+          "book_name": "回头",
+          "author": "鹤别山",
+          "tags": [
+            "综合",
+            "穿越",
+            "救赎",
+            "温馨治愈",
+            "双向奔赴"
+          ],
+          "all_tags": [
+            "综合",
+            "穿越",
+            "救赎",
+            "温馨治愈",
+            "双向奔赴"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1.32万",
+          "word_count": "4.01万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 45,
+          "book_name": "最后一盏灯",
+          "author": "蒲米袄",
+          "tags": [
+            "综合",
+            "破镜重圆",
+            "HE",
+            "惊悚",
+            "年下",
+            "轻松搞笑"
+          ],
+          "all_tags": [
+            "综合",
+            "破镜重圆",
+            "HE",
+            "惊悚",
+            "年下",
+            "轻松搞笑"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1.02万",
+          "word_count": "2.73万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 46,
+          "book_name": "百年只有一个夏天",
+          "author": "满倾芦酒",
+          "tags": [
+            "综合",
+            "现代",
+            "成长",
+            "竹马竹马"
+          ],
+          "all_tags": [
+            "综合",
+            "现代",
+            "成长",
+            "竹马竹马"
+          ],
+          "primary_tag": "综合",
+          "popularity": "7,152",
+          "word_count": "2.39万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 47,
+          "book_name": "专属酒单",
+          "author": "江米配茶",
+          "tags": [
+            "都市",
+            "HE",
+            "强强",
+            "治愈",
+            "双向救赎",
+            "占有欲",
+            "一见钟情",
+            "甜宠"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "强强",
+            "治愈",
+            "双向救赎",
+            "占有欲",
+            "一见钟情",
+            "甜宠"
+          ],
+          "primary_tag": "都市",
+          "popularity": "5,511",
+          "word_count": "1.39万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 48,
+          "book_name": "春天见面",
+          "author": "荷叶杯",
+          "tags": [
+            "青春",
+            "HE",
+            "第一人称",
+            "短佩"
+          ],
+          "all_tags": [
+            "青春",
+            "HE",
+            "第一人称",
+            "短佩"
+          ],
+          "primary_tag": "青春",
+          "popularity": "2.01万",
+          "word_count": "6.04万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 49,
+          "book_name": "围坡里的绿宝石",
+          "author": "破笼",
+          "tags": [
+            "都市",
+            "狗血",
+            "暗恋",
+            "强制",
+            "救赎",
+            "恨海情天"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "暗恋",
+            "强制",
+            "救赎",
+            "恨海情天"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2.34万",
+          "word_count": "6.74万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 50,
+          "book_name": "当心，夜晚不止有人",
+          "author": "昭如妍姝",
+          "tags": [
+            "灵异",
+            "强强",
+            "甜宠",
+            "HE",
+            "民俗",
+            "鬼攻",
+            "社畜受",
+            "人外",
+            "都市"
+          ],
+          "all_tags": [
+            "灵异",
+            "强强",
+            "甜宠",
+            "HE",
+            "民俗",
+            "鬼攻",
+            "社畜受",
+            "人外",
+            "都市"
+          ],
+          "primary_tag": "灵异",
+          "popularity": "5,969",
+          "word_count": "1.98万",
+          "status": "连载中",
+          "rank_change": null,
+          "history_days": 1
+        }
+      ]
     },
     "purelove_completed": {
       "count": 50,
@@ -66,7 +4470,1517 @@
       },
       "status_stats": {
         "完结": 50
-      }
+      },
+      "books": [
+        {
+          "rank": 1,
+          "book_name": "下个雪季见",
+          "author": "图南鲸",
+          "tags": [
+            "综合",
+            "强强",
+            "年下",
+            "滑雪",
+            "逃跑被抓",
+            "双向救赎",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "强强",
+            "年下",
+            "滑雪",
+            "逃跑被抓",
+            "双向救赎",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "9,073.59万",
+          "word_count": "23.73万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 2,
+          "book_name": "本能之上",
+          "author": "绊倒铁盒",
+          "tags": [
+            "架空",
+            "ABO",
+            "暗恋变明恋",
+            "想咬又标记不了",
+            "HE"
+          ],
+          "all_tags": [
+            "架空",
+            "ABO",
+            "暗恋变明恋",
+            "想咬又标记不了",
+            "HE"
+          ],
+          "primary_tag": "架空",
+          "popularity": "4,945.10万",
+          "word_count": "17.02万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 3,
+          "book_name": "秩序之外",
+          "author": "Fine不Fine",
+          "tags": [
+            "都市",
+            "直掰弯",
+            "年上",
+            "HE",
+            "职业",
+            "轻松"
+          ],
+          "all_tags": [
+            "都市",
+            "直掰弯",
+            "年上",
+            "HE",
+            "职业",
+            "轻松"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,414.50万",
+          "word_count": "26.83万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 4,
+          "book_name": "爱播先别急",
+          "author": "落回",
+          "tags": [
+            "综合",
+            "直播",
+            "网恋",
+            "马甲",
+            "年上",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "直播",
+            "网恋",
+            "马甲",
+            "年上",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "5,010.37万",
+          "word_count": "20.40万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 5,
+          "book_name": "漂泊季节",
+          "author": "金丝棠",
+          "tags": [
+            "都市",
+            "HE",
+            "暗恋",
+            "职业"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "暗恋",
+            "职业"
+          ],
+          "primary_tag": "都市",
+          "popularity": "5,681.64万",
+          "word_count": "21.91万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 6,
+          "book_name": "出宫",
+          "author": "寒鸦",
+          "tags": [
+            "宫廷",
+            "封建大爹",
+            "温柔人妻",
+            "狗血",
+            "还是狗血",
+            "很多美食",
+            "年上",
+            "HE",
+            "掌控欲极强的王爷",
+            "很会做饭的厨子"
+          ],
+          "all_tags": [
+            "宫廷",
+            "封建大爹",
+            "温柔人妻",
+            "狗血",
+            "还是狗血",
+            "很多美食",
+            "年上",
+            "HE",
+            "掌控欲极强的王爷",
+            "很会做饭的厨子"
+          ],
+          "primary_tag": "宫廷",
+          "popularity": "4,163.41万",
+          "word_count": "27.65万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 7,
+          "book_name": "恋爱脑专治精神病",
+          "author": "沉默橙本",
+          "tags": [
+            "都市",
+            "HE",
+            "但凡有一个正常人",
+            "都没法在一起",
+            "职业",
+            "温馨治愈",
+            "甜宠"
+          ],
+          "all_tags": [
+            "都市",
+            "HE",
+            "但凡有一个正常人",
+            "都没法在一起",
+            "职业",
+            "温馨治愈",
+            "甜宠"
+          ],
+          "primary_tag": "都市",
+          "popularity": "4,096.88万",
+          "word_count": "24.85万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 8,
+          "book_name": "养不熟",
+          "author": "浪山",
+          "tags": [
+            "青春",
+            "年上",
+            "养成",
+            "甜宠",
+            "HE"
+          ],
+          "all_tags": [
+            "青春",
+            "年上",
+            "养成",
+            "甜宠",
+            "HE"
+          ],
+          "primary_tag": "青春",
+          "popularity": "6,202.67万",
+          "word_count": "31.20万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 9,
+          "book_name": "末日小团圆",
+          "author": "杨溯",
+          "tags": [
+            "综合",
+            "强强",
+            "末日",
+            "囤货",
+            "重生",
+            "日常"
+          ],
+          "all_tags": [
+            "综合",
+            "强强",
+            "末日",
+            "囤货",
+            "重生",
+            "日常"
+          ],
+          "primary_tag": "综合",
+          "popularity": "8,359.25万",
+          "word_count": "30.97万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 10,
+          "book_name": "第四婚",
+          "author": "成江入海",
+          "tags": [
+            "综合",
+            "先婚后爱",
+            "前世今生",
+            "灵异",
+            "酸甜",
+            "温暖"
+          ],
+          "all_tags": [
+            "综合",
+            "先婚后爱",
+            "前世今生",
+            "灵异",
+            "酸甜",
+            "温暖"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1,385.47万",
+          "word_count": "25.01万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 11,
+          "book_name": "赛前分手",
+          "author": "依个芸",
+          "tags": [
+            "综合",
+            "破镜重圆",
+            "电竞",
+            "职业",
+            "HE",
+            "1V1",
+            "年下"
+          ],
+          "all_tags": [
+            "综合",
+            "破镜重圆",
+            "电竞",
+            "职业",
+            "HE",
+            "1V1",
+            "年下"
+          ],
+          "primary_tag": "综合",
+          "popularity": "3,518.12万",
+          "word_count": "45.90万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 12,
+          "book_name": "糟糕，老婆要辞职！",
+          "author": "月芽尖尖",
+          "tags": [
+            "都市",
+            "攻暗恋",
+            "轻职场",
+            "小甜饼",
+            "帅攻美受",
+            "忠犬女王",
+            "恋爱脑超爱",
+            "嘴会说话也会亲",
+            "漂亮万人迷受"
+          ],
+          "all_tags": [
+            "都市",
+            "攻暗恋",
+            "轻职场",
+            "小甜饼",
+            "帅攻美受",
+            "忠犬女王",
+            "恋爱脑超爱",
+            "嘴会说话也会亲",
+            "漂亮万人迷受"
+          ],
+          "primary_tag": "都市",
+          "popularity": "3,390.49万",
+          "word_count": "24.40万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 13,
+          "book_name": "乱春",
+          "author": "块陶",
+          "tags": [
+            "灵异",
+            "走出科学",
+            "不知不觉就gay了",
+            "民俗",
+            "惊悚",
+            "1V1",
+            "轻微幼驯染"
+          ],
+          "all_tags": [
+            "灵异",
+            "走出科学",
+            "不知不觉就gay了",
+            "民俗",
+            "惊悚",
+            "1V1",
+            "轻微幼驯染"
+          ],
+          "primary_tag": "灵异",
+          "popularity": "1,474.40万",
+          "word_count": "26.19万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 14,
+          "book_name": "朝阳昨夜轻拥我",
+          "author": "云雨无凭",
+          "tags": [
+            "都市",
+            "追妻火葬场",
+            "年下",
+            "HE",
+            "律师受",
+            "社畜攻",
+            "破镜重圆",
+            "感情流",
+            "职业",
+            "虐恋",
+            "狗血"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻火葬场",
+            "年下",
+            "HE",
+            "律师受",
+            "社畜攻",
+            "破镜重圆",
+            "感情流",
+            "职业",
+            "虐恋",
+            "狗血"
+          ],
+          "primary_tag": "都市",
+          "popularity": "914.60万",
+          "word_count": "34.49万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 15,
+          "book_name": "危险体",
+          "author": "鸦无渡",
+          "tags": [
+            "架空",
+            "互宠",
+            "暗恋",
+            "强强",
+            "疯批",
+            "相爱相杀",
+            "ABO",
+            "悬疑",
+            "年上"
+          ],
+          "all_tags": [
+            "架空",
+            "互宠",
+            "暗恋",
+            "强强",
+            "疯批",
+            "相爱相杀",
+            "ABO",
+            "悬疑",
+            "年上"
+          ],
+          "primary_tag": "架空",
+          "popularity": "1,694.06万",
+          "word_count": "82.22万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 16,
+          "book_name": "下等绯闻",
+          "author": "斟满我杯",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "狗血",
+            "娱乐圈",
+            "久别重逢",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "狗血",
+            "娱乐圈",
+            "久别重逢",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "5,934.25万",
+          "word_count": "26.58万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 17,
+          "book_name": "山蛇",
+          "author": "阿哩兔",
+          "tags": [
+            "综合",
+            "HE",
+            "痴迷斯内克的人",
+            "一心报仇的蛇"
+          ],
+          "all_tags": [
+            "综合",
+            "HE",
+            "痴迷斯内克的人",
+            "一心报仇的蛇"
+          ],
+          "primary_tag": "综合",
+          "popularity": "4,604.80万",
+          "word_count": "25.22万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 18,
+          "book_name": "俗滥小镇",
+          "author": "你爸爸",
+          "tags": [
+            "都市",
+            "市井",
+            "县城爱情故事",
+            "竹马",
+            "年上",
+            "家长里短",
+            "直播",
+            "日常"
+          ],
+          "all_tags": [
+            "都市",
+            "市井",
+            "县城爱情故事",
+            "竹马",
+            "年上",
+            "家长里短",
+            "直播",
+            "日常"
+          ],
+          "primary_tag": "都市",
+          "popularity": "974.93万",
+          "word_count": "25.74万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 19,
+          "book_name": "贪吃树",
+          "author": "金迈奇",
+          "tags": [
+            "都市",
+            "恨海情天",
+            "年上",
+            "烂人真心",
+            "自我攻略",
+            "竹马竹马",
+            "现代",
+            "酸涩",
+            "拉扯",
+            "狗血",
+            "久别重逢"
+          ],
+          "all_tags": [
+            "都市",
+            "恨海情天",
+            "年上",
+            "烂人真心",
+            "自我攻略",
+            "竹马竹马",
+            "现代",
+            "酸涩",
+            "拉扯",
+            "狗血",
+            "久别重逢"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,102.07万",
+          "word_count": "29.28万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 20,
+          "book_name": "月火焚身",
+          "author": "崖生",
+          "tags": [
+            "都市",
+            "甜宠",
+            "狗血",
+            "年上",
+            "养成",
+            "爹系美人攻",
+            "可爱作精受",
+            "强制爱",
+            "血族"
+          ],
+          "all_tags": [
+            "都市",
+            "甜宠",
+            "狗血",
+            "年上",
+            "养成",
+            "爹系美人攻",
+            "可爱作精受",
+            "强制爱",
+            "血族"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,540.77万",
+          "word_count": "24.98万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 21,
+          "book_name": "书店今日营业",
+          "author": "问君几许",
+          "tags": [
+            "综合",
+            "猫1狗0",
+            "咸鱼攻",
+            "受追攻",
+            "懒猫猫攻",
+            "小狗受",
+            "年上",
+            "治愈",
+            "美人攻",
+            "互宠",
+            "市井"
+          ],
+          "all_tags": [
+            "综合",
+            "猫1狗0",
+            "咸鱼攻",
+            "受追攻",
+            "懒猫猫攻",
+            "小狗受",
+            "年上",
+            "治愈",
+            "美人攻",
+            "互宠",
+            "市井"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1,117.85万",
+          "word_count": "24.38万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 22,
+          "book_name": "错吻",
+          "author": "七月清风",
+          "tags": [
+            "架空",
+            "虐恋",
+            "生子",
+            "追夫火葬场",
+            "甜宠",
+            "HE",
+            "作精受",
+            "强攻弱受",
+            "哭包受",
+            "破镜重圆",
+            "狗血"
+          ],
+          "all_tags": [
+            "架空",
+            "虐恋",
+            "生子",
+            "追夫火葬场",
+            "甜宠",
+            "HE",
+            "作精受",
+            "强攻弱受",
+            "哭包受",
+            "破镜重圆",
+            "狗血"
+          ],
+          "primary_tag": "架空",
+          "popularity": "1,428.74万",
+          "word_count": "39.80万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 23,
+          "book_name": "合规关系",
+          "author": "无夜雪",
+          "tags": [
+            "都市",
+            "职业",
+            "强强",
+            "甜宠",
+            "日久生情",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "职业",
+            "强强",
+            "甜宠",
+            "日久生情",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,255.28万",
+          "word_count": "35.62万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 24,
+          "book_name": "失忆三分钟",
+          "author": "讽喻诗",
+          "tags": [
+            "青春",
+            "HE",
+            "幼驯染",
+            "对抗路",
+            "甜宠",
+            "暗恋",
+            "温馨",
+            "欢喜冤家",
+            "青梅竹马"
+          ],
+          "all_tags": [
+            "青春",
+            "HE",
+            "幼驯染",
+            "对抗路",
+            "甜宠",
+            "暗恋",
+            "温馨",
+            "欢喜冤家",
+            "青梅竹马"
+          ],
+          "primary_tag": "青春",
+          "popularity": "2,778.33万",
+          "word_count": "23.56万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 25,
+          "book_name": "师兄百年不遇",
+          "author": "归我庭柯",
+          "tags": [
+            "综合",
+            "养成",
+            "年下",
+            "仙侠",
+            "重生",
+            "强制爱",
+            "强强",
+            "破镜重圆",
+            "HE",
+            "救赎"
+          ],
+          "all_tags": [
+            "综合",
+            "养成",
+            "年下",
+            "仙侠",
+            "重生",
+            "强制爱",
+            "强强",
+            "破镜重圆",
+            "HE",
+            "救赎"
+          ],
+          "primary_tag": "综合",
+          "popularity": "306.77万",
+          "word_count": "47.02万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 26,
+          "book_name": "求你别咬",
+          "author": "四畔灯郎",
+          "tags": [
+            "架空",
+            "强制爱",
+            "死遁",
+            "先婚后爱",
+            "狗血",
+            "ABO",
+            "AB",
+            "年上",
+            "甜宠"
+          ],
+          "all_tags": [
+            "架空",
+            "强制爱",
+            "死遁",
+            "先婚后爱",
+            "狗血",
+            "ABO",
+            "AB",
+            "年上",
+            "甜宠"
+          ],
+          "primary_tag": "架空",
+          "popularity": "3,172.13万",
+          "word_count": "27.14万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 27,
+          "book_name": "空山",
+          "author": "万籁",
+          "tags": [
+            "玄幻",
+            "强制爱",
+            "竹马竹马",
+            "强强",
+            "疯批攻",
+            "纯情受"
+          ],
+          "all_tags": [
+            "玄幻",
+            "强制爱",
+            "竹马竹马",
+            "强强",
+            "疯批攻",
+            "纯情受"
+          ],
+          "primary_tag": "玄幻",
+          "popularity": "966.50万",
+          "word_count": "24.28万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 28,
+          "book_name": "拾荒",
+          "author": "冬祭",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "强强",
+            "久别重逢",
+            "年上",
+            "现实向",
+            "救赎"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "强强",
+            "久别重逢",
+            "年上",
+            "现实向",
+            "救赎"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,490.52万",
+          "word_count": "31.76万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 29,
+          "book_name": "柳河风声",
+          "author": "逐柳天司",
+          "tags": [
+            "青春",
+            "年上",
+            "华南民俗",
+            "甜宠",
+            "sweettalk",
+            "市井生活",
+            "老婆奴x老公脑",
+            "高强度暧昧",
+            "孤僻小狗x粘人甜心",
+            "民间法事",
+            "久别重逢"
+          ],
+          "all_tags": [
+            "青春",
+            "年上",
+            "华南民俗",
+            "甜宠",
+            "sweettalk",
+            "市井生活",
+            "老婆奴x老公脑",
+            "高强度暧昧",
+            "孤僻小狗x粘人甜心",
+            "民间法事",
+            "久别重逢"
+          ],
+          "primary_tag": "青春",
+          "popularity": "2,028.29万",
+          "word_count": "24.84万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 30,
+          "book_name": "摧眉",
+          "author": "移住南山",
+          "tags": [
+            "都市",
+            "病弱",
+            "破镜重圆",
+            "追妻火葬场",
+            "正剧",
+            "虐恋",
+            "HE",
+            "美强惨"
+          ],
+          "all_tags": [
+            "都市",
+            "病弱",
+            "破镜重圆",
+            "追妻火葬场",
+            "正剧",
+            "虐恋",
+            "HE",
+            "美强惨"
+          ],
+          "primary_tag": "都市",
+          "popularity": "964.02万",
+          "word_count": "31.05万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 31,
+          "book_name": "求婚大作法",
+          "author": "木三观",
+          "tags": [
+            "综合",
+            "HE"
+          ],
+          "all_tags": [
+            "综合",
+            "HE"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,155.93万",
+          "word_count": "23.57万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 32,
+          "book_name": "与他同谋",
+          "author": "月昼",
+          "tags": [
+            "都市",
+            "换攻",
+            "狗血",
+            "攻非受非",
+            "娱乐圈",
+            "年上渣苏控场攻",
+            "自私自厌自毁受",
+            "攻受曾是大学师生",
+            "受中途辍学",
+            "金主追妻火葬场没追到"
+          ],
+          "all_tags": [
+            "都市",
+            "换攻",
+            "狗血",
+            "攻非受非",
+            "娱乐圈",
+            "年上渣苏控场攻",
+            "自私自厌自毁受",
+            "攻受曾是大学师生",
+            "受中途辍学",
+            "金主追妻火葬场没追到"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,560.87万",
+          "word_count": "22.84万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 33,
+          "book_name": "冬天有翅膀",
+          "author": "甜梅星",
+          "tags": [
+            "青春",
+            "甜宠",
+            "年上",
+            "市井",
+            "追妻",
+            "HE",
+            "直掰弯",
+            "第一人称",
+            "情投意合",
+            "欢喜冤家",
+            "校园"
+          ],
+          "all_tags": [
+            "青春",
+            "甜宠",
+            "年上",
+            "市井",
+            "追妻",
+            "HE",
+            "直掰弯",
+            "第一人称",
+            "情投意合",
+            "欢喜冤家",
+            "校园"
+          ],
+          "primary_tag": "青春",
+          "popularity": "294.87万",
+          "word_count": "25.17万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 34,
+          "book_name": "银河不入眠",
+          "author": "清沐白",
+          "tags": [
+            "综合",
+            "久别重逢",
+            "破镜重圆",
+            "虐恋",
+            "直掰弯",
+            "暗恋",
+            "酸涩",
+            "好友禁忌",
+            "不要爱上直男",
+            "但直男自己弯了"
+          ],
+          "all_tags": [
+            "综合",
+            "久别重逢",
+            "破镜重圆",
+            "虐恋",
+            "直掰弯",
+            "暗恋",
+            "酸涩",
+            "好友禁忌",
+            "不要爱上直男",
+            "但直男自己弯了"
+          ],
+          "primary_tag": "综合",
+          "popularity": "1,239.25万",
+          "word_count": "31.01万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 35,
+          "book_name": "于是法师召唤恶魔",
+          "author": "matthia",
+          "tags": [
+            "奇幻",
+            "法师",
+            "HE",
+            "欧风",
+            "恶魔",
+            "轻喜剧",
+            "西幻",
+            "甜"
+          ],
+          "all_tags": [
+            "奇幻",
+            "法师",
+            "HE",
+            "欧风",
+            "恶魔",
+            "轻喜剧",
+            "西幻",
+            "甜"
+          ],
+          "primary_tag": "奇幻",
+          "popularity": "1,274.13万",
+          "word_count": "67.13万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 36,
+          "book_name": "问心有愧",
+          "author": "松子茶",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "死性不改"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "死性不改"
+          ],
+          "primary_tag": "都市",
+          "popularity": "589.59万",
+          "word_count": "19.74万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 37,
+          "book_name": "余额归零",
+          "author": "酒渍红袍",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "年上",
+            "职业",
+            "强强",
+            "双向奔赴",
+            "虐攻",
+            "美人攻",
+            "虐恋",
+            "现实向",
+            "久别重逢"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "年上",
+            "职业",
+            "强强",
+            "双向奔赴",
+            "虐攻",
+            "美人攻",
+            "虐恋",
+            "现实向",
+            "久别重逢"
+          ],
+          "primary_tag": "都市",
+          "popularity": "449.24万",
+          "word_count": "29.40万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 38,
+          "book_name": "而已",
+          "author": "今日有狗",
+          "tags": [
+            "都市",
+            "先婚后爱",
+            "破镜重圆",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "先婚后爱",
+            "破镜重圆",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,606.34万",
+          "word_count": "22.77万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 39,
+          "book_name": "蝴蝶降落伞",
+          "author": "咽危石",
+          "tags": [
+            "都市",
+            "追妻火葬场",
+            "狗血",
+            "豪门",
+            "强取豪夺",
+            "修罗场",
+            "替身",
+            "年上",
+            "拉扯",
+            "破镜重圆",
+            "妒夫"
+          ],
+          "all_tags": [
+            "都市",
+            "追妻火葬场",
+            "狗血",
+            "豪门",
+            "强取豪夺",
+            "修罗场",
+            "替身",
+            "年上",
+            "拉扯",
+            "破镜重圆",
+            "妒夫"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,207.58万",
+          "word_count": "34.29万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 40,
+          "book_name": "如果你冷",
+          "author": "小岛Land",
+          "tags": [
+            "青春",
+            "竹马竹马",
+            "HE",
+            "年上",
+            "养成"
+          ],
+          "all_tags": [
+            "青春",
+            "竹马竹马",
+            "HE",
+            "年上",
+            "养成"
+          ],
+          "primary_tag": "青春",
+          "popularity": "2,571.68万",
+          "word_count": "30.51万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 41,
+          "book_name": "被前男友捡回家了",
+          "author": "柠佰",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "年上",
+            "直播",
+            "甜宠",
+            "协议恋爱",
+            "攻宠受",
+            "酸涩",
+            "HE"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "年上",
+            "直播",
+            "甜宠",
+            "协议恋爱",
+            "攻宠受",
+            "酸涩",
+            "HE"
+          ],
+          "primary_tag": "都市",
+          "popularity": "203.02万",
+          "word_count": "15.81万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 42,
+          "book_name": "不期而遇",
+          "author": "李书锦",
+          "tags": [
+            "都市",
+            "年上",
+            "HE",
+            "甜宠",
+            "非典型包养变真爱",
+            "直掰弯",
+            "娱乐圈",
+            "又争又抢",
+            "万人迷受",
+            "阴差阳错"
+          ],
+          "all_tags": [
+            "都市",
+            "年上",
+            "HE",
+            "甜宠",
+            "非典型包养变真爱",
+            "直掰弯",
+            "娱乐圈",
+            "又争又抢",
+            "万人迷受",
+            "阴差阳错"
+          ],
+          "primary_tag": "都市",
+          "popularity": "2,756.33万",
+          "word_count": "22.74万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 43,
+          "book_name": "恋爱天分缺失",
+          "author": "十三颗豌豆",
+          "tags": [
+            "青春",
+            "直掰弯",
+            "酸甜口",
+            "竹马",
+            "攻超级需要直男受的爱",
+            "直男很直但直男爱他",
+            "HE"
+          ],
+          "all_tags": [
+            "青春",
+            "直掰弯",
+            "酸甜口",
+            "竹马",
+            "攻超级需要直男受的爱",
+            "直男很直但直男爱他",
+            "HE"
+          ],
+          "primary_tag": "青春",
+          "popularity": "1,601.93万",
+          "word_count": "23.84万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 44,
+          "book_name": "白眼狼实在美丽",
+          "author": "万小迷",
+          "tags": [
+            "都市",
+            "破镜重圆",
+            "直掰弯",
+            "直装弯"
+          ],
+          "all_tags": [
+            "都市",
+            "破镜重圆",
+            "直掰弯",
+            "直装弯"
+          ],
+          "primary_tag": "都市",
+          "popularity": "994.11万",
+          "word_count": "35.60万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 45,
+          "book_name": "今夜换乘",
+          "author": "云上飞鱼",
+          "tags": [
+            "综合",
+            "换攻",
+            "HE",
+            "点击就看b王巧取妙夺",
+            "冷美人竟然如此斯哈",
+            "这样的老婆都不要",
+            "究竟是道德的沦丧",
+            "还是人性的泯灭"
+          ],
+          "all_tags": [
+            "综合",
+            "换攻",
+            "HE",
+            "点击就看b王巧取妙夺",
+            "冷美人竟然如此斯哈",
+            "这样的老婆都不要",
+            "究竟是道德的沦丧",
+            "还是人性的泯灭"
+          ],
+          "primary_tag": "综合",
+          "popularity": "993.46万",
+          "word_count": "21.35万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 46,
+          "book_name": "仿玉",
+          "author": "虞渊",
+          "tags": [
+            "都市",
+            "强强",
+            "豪门",
+            "商战",
+            "正剧",
+            "剧情",
+            "HE",
+            "攻受身心皆只有彼此"
+          ],
+          "all_tags": [
+            "都市",
+            "强强",
+            "豪门",
+            "商战",
+            "正剧",
+            "剧情",
+            "HE",
+            "攻受身心皆只有彼此"
+          ],
+          "primary_tag": "都市",
+          "popularity": "689.27万",
+          "word_count": "34.08万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 47,
+          "book_name": "诱捕法则",
+          "author": "夏正年轻",
+          "tags": [
+            "都市",
+            "年上爹系",
+            "横刀夺爱",
+            "硬挖墙脚"
+          ],
+          "all_tags": [
+            "都市",
+            "年上爹系",
+            "横刀夺爱",
+            "硬挖墙脚"
+          ],
+          "primary_tag": "都市",
+          "popularity": "116.64万",
+          "word_count": "21.91万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 48,
+          "book_name": "焚风过境时",
+          "author": "何厌",
+          "tags": [
+            "都市",
+            "狗血",
+            "破镜重圆",
+            "娱乐圈",
+            "年上"
+          ],
+          "all_tags": [
+            "都市",
+            "狗血",
+            "破镜重圆",
+            "娱乐圈",
+            "年上"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,667.17万",
+          "word_count": "25.11万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 49,
+          "book_name": "鸠鸟",
+          "author": "苔邺",
+          "tags": [
+            "都市",
+            "酸甜口",
+            "HE",
+            "真假少爷",
+            "老美食家",
+            "睡眠良好",
+            "微强制"
+          ],
+          "all_tags": [
+            "都市",
+            "酸甜口",
+            "HE",
+            "真假少爷",
+            "老美食家",
+            "睡眠良好",
+            "微强制"
+          ],
+          "primary_tag": "都市",
+          "popularity": "1,129.70万",
+          "word_count": "23.20万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        },
+        {
+          "rank": 50,
+          "book_name": "世子我养虎为患",
+          "author": "宋昭昭",
+          "tags": [
+            "综合",
+            "年上",
+            "甜宠",
+            "虐恋",
+            "狗血",
+            "竹马竹马",
+            "双向暗恋",
+            "破镜重圆",
+            "古代",
+            "古风",
+            "酸涩"
+          ],
+          "all_tags": [
+            "综合",
+            "年上",
+            "甜宠",
+            "虐恋",
+            "狗血",
+            "竹马竹马",
+            "双向暗恋",
+            "破镜重圆",
+            "古代",
+            "古风",
+            "酸涩"
+          ],
+          "primary_tag": "综合",
+          "popularity": "2,711.21万",
+          "word_count": "28.27万",
+          "status": "完结",
+          "rank_change": null,
+          "history_days": 1
+        }
+      ]
     }
   }
 }

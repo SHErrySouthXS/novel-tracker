@@ -14,7 +14,6 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
-const { computeRankChange } = require('./rank-change');
 
 // ========== 配置 ==========
 const DATA_DIR = path.join(__dirname, '..', 'data', 'changpei');
@@ -130,6 +129,49 @@ async function extractBooksFromDOM(page) {
   });
 }
 
+// ========== 排名变化/在榜天数（长佩专属：按榜单 id 读自家 history 归档）==========
+// rank_change: 'new'=该榜历史从未出现 / 数字=昨同榜 rank-今日 rank（正=升）/ null=历史出现过但昨不在该榜
+// history_days: 该书名在"该榜单"历史出现过的唯一天数（含今天）
+function computeListRankChange(allBooks, rankingId, dateStr) {
+  const histDir = path.join(DATA_DIR, 'history');
+  const files = fs.existsSync(histDir)
+    ? fs.readdirSync(histDir).filter(f => f.endsWith('.json') && f.replace('.json', '') < dateStr).sort()
+    : [];
+  const appearDays = new Map();   // book_name -> Set(YYYY-MM-DD)
+  const dayRanks = new Map();     // YYYY-MM-DD -> Map(book_name -> rank)
+  for (const f of files) {
+    const fDate = f.replace('.json', '');
+    let d = null;
+    try { d = JSON.parse(fs.readFileSync(path.join(histDir, f), 'utf-8')); } catch (e) { continue; }
+    const listBooks = (d.rankings && d.rankings[rankingId] && d.rankings[rankingId].books) || [];
+    const ranks = new Map();
+    for (const b of listBooks) {
+      const id = String(b.book_name || '');
+      if (!id) continue;
+      if (!appearDays.has(id)) appearDays.set(id, new Set());
+      appearDays.get(id).add(fDate);
+      ranks.set(id, b.rank);
+    }
+    dayRanks.set(fDate, ranks);
+  }
+  const hasAnyHistory = dayRanks.size > 0;
+  const prevDate = [...dayRanks.keys()].sort().slice(-1)[0];
+  const prevRank = prevDate ? dayRanks.get(prevDate) : new Map();
+  for (const b of allBooks) {
+    const id = String(b.book_name || '');
+    if (!id) { b.rank_change = null; b.history_days = 1; continue; }
+    const ever = appearDays.get(id);
+    if (!ever || ever.size === 0) {
+      b.rank_change = hasAnyHistory ? 'new' : null;
+    } else if (prevRank.has(id)) {
+      b.rank_change = prevRank.get(id) - b.rank;
+    } else {
+      b.rank_change = null;
+    }
+    b.history_days = (ever ? ever.size : 0) + 1;
+  }
+}
+
 // ========== 抓取单个榜单 ==========
 async function scrapeRanking(page, ranking, now) {
   console.log(`\n📊 抓取: ${ranking.name}`);
@@ -179,8 +221,8 @@ async function scrapeRanking(page, ranking, now) {
     return null;
   }
   
-  // 计算排名变化
-  computeRankChange(allBooks, DATA_DIR, fmtDate(now), 'book_name');
+  // 计算排名变化（按榜单读自家历史归档）
+  computeListRankChange(allBooks, ranking.id, fmtDate(now));
   
   // 统计
   const tagStats = {};
@@ -320,7 +362,7 @@ async function main() {
       if (result) results.push(result);
     }
     
-    // 保存历史
+    // 保存历史（书级：整榜 books 归档，供题材趋势/新书流入/留存分析）
     const histPath = path.join(DATA_DIR, 'history', `${fmtDate(now)}.json`);
     const histData = {};
     for (const r of results) {
@@ -328,6 +370,19 @@ async function main() {
         count: r.total_count,
         tag_stats: r.tag_stats,
         status_stats: r.status_stats,
+        books: r.books.map(b => ({
+          rank: b.rank,
+          book_name: b.book_name,
+          author: b.author,
+          tags: b.all_tags,
+          all_tags: b.all_tags,
+          primary_tag: b.primary_tag,
+          popularity: b.popularity,
+          word_count: b.word_count,
+          status: b.status,
+          rank_change: b.rank_change ?? null,
+          history_days: b.history_days ?? 1,
+        })),
       };
     }
     fs.writeFileSync(histPath, JSON.stringify({
