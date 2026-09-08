@@ -2,11 +2,12 @@ name: Daily Novel Scrape & Deploy
 
 on:
   schedule:
-    # 每天北京时间 08:00 运行 (UTC 00:00)
-    - cron: '0 0 * * *'
-    # 冗余兜底 08:30 (UTC 00:30)：GitHub schedule 不保证执行，双触发点提高命中概率；
-    # 若 08:00 已跑完，08:30 重抓 diff 为空则不会重复 commit；若仍在跑则被 concurrency 取消重来
-    - cron: '30 0 * * *'
+    # 每天北京时间 02:00 运行 (UTC 18:00)
+    - cron: '0 18 * * *'
+    # 冗余兜底 05:00 (UTC 21:00)：GitHub schedule 不保证执行且常延迟 3-5h，双触发点提高命中概率；
+    # 凌晨时段抓取 = 前一日 24h 热度沉淀后的稳定快照（晋江积分月榜/番茄最热/长佩畅销均为滚动榜，无 0 点日切风险）；
+    # 延迟缓冲：02:00 触发即使拖到 05-06 点，08 点前必到位；若 02:00 已跑完，05:00 重抓 diff 为空则不会重复 commit；若仍在跑则被 concurrency 取消重来
+    - cron: '0 21 * * *'
   workflow_dispatch:
 
 permissions:
