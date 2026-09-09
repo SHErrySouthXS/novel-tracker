@@ -182,10 +182,29 @@ function parseDetailPage(html) {
     if (nm) info.book_name = nm[1].trim();
   }
   
-  // 简介
-  const dm = html.match(/<meta\s+name="description"\s+content="([^"]*)"/);
-  if (dm) {
-    info.description = dm[1].replace(/^番茄小说提供.*?番茄小说网[。.]?\s*/, '').trim();
+  // 简介：优先抓详情页「作品简介」区块（SSR 完整多段，200-600 字）
+  // 番茄的 <meta name="description"> 是平台截断的预览（约 53 字一句话，读起来信息量不足），
+  // 完整简介在 <div class="page-abstract-content">…</div>（2026-09-09 实测 5/5 本命中，296-513 字）。
+  // meta description 仅作为兜底（个别书 SSR 无该区块时）。
+  const ab = html.match(/<div class="page-abstract-content">([\s\S]*?)<\/div>/);
+  if (ab) {
+    info.description = ab[1]
+      .replace(/<p[^>]*>/g, '')
+      .replace(/<\/p>/g, '\n')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/\n{2,}/g, '\n')
+      .trim();
+  }
+  if (!info.description) {
+    const dm = html.match(/<meta\s+name="description"\s+content="([^"]*)"/);
+    if (dm) info.description = dm[1].replace(/^番茄小说提供.*?番茄小说网[。.]?\s*/, '').trim();
   }
   
   // 作者 (keywords)

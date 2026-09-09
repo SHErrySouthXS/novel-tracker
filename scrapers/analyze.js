@@ -156,7 +156,9 @@ const DIMENSION_GUIDE = `请基于「全部上榜书目」统计共性，按四�
 5. 全部字段为中文，字段值为纯文本字符串（可含标点）。`;
 
 // ========== 构建逐本素材（书名+频道+标签+简介截断） ==========
-function buildBooksBlock(data, maxIntro = 140) {
+// 2026-09-09f：简介源升级为完整版（番茄 SSR 完整简介 200-600 字），全长档 140→200、压缩档 60→90，
+// 让完整简介的设定/人设/冲突信息更多进入模型（仍防单平台输入过大触发推理挤空输出的坑）
+function buildBooksBlock(data, maxIntro = 200) {
   if (!data?.books?.length) return '（无数据）';
   const lines = [];
   for (const b of data.books) {
@@ -245,11 +247,11 @@ async function main() {
       console.log(`  ⚠️ ${p.name} 无数据，跳过`);
       continue;
     }
-    // 素材两级备选：全长（140字简介）→ 超长或失败时压缩（60字简介）
+    // 素材两级备选：全长（200字简介）→ 超长或失败时压缩（90字简介）
     // 2026-09-09c: 晋江 200 本全量素材 36k chars，mimo-v2.5-pro 推理过重会 length 截断正文为空。
     //   超过 25k 直接首轮就用压缩素材；全长失败时再自动降级压缩素材重试 1 次。
     const fullBlock = buildBooksBlock(data);
-    const compactBlock = buildBooksBlock(data, 60);
+    const compactBlock = buildBooksBlock(data, 90);
     let candidates = fullBlock.length > 25000
       ? [{ label: `压缩素材(${Math.round(compactBlock.length/1000)}k)`, block: compactBlock }]
       : [{ label: `全长素材(${Math.round(fullBlock.length/1000)}k)`, block: fullBlock },

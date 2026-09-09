@@ -121,9 +121,10 @@ function buildContext(conf, data) {
   const status = {};
   for (const b of books) status[b.status || '未知'] = (status[b.status || '未知'] || 0) + 1;
 
-  // 全榜逐本素材（两档：长 100 字简介 / 压缩 60 字简介；>25k 用压缩档，对标 analyze.js 教训）
-  const fullBlock = buildBooksBlock(books, 100);
-  const compactBlock = buildBooksBlock(books, 60);
+  // 全榜逐本素材（两档：长 200 字简介 / 压缩 90 字简介；>25k 用压缩档。
+  // 2026-09-09f：简介源升级为完整版（番茄 SSR 完整简介 200-600 字），截断上限同步上调 100→200 / 60→90）
+  const fullBlock = buildBooksBlock(books, 200);
+  const compactBlock = buildBooksBlock(books, 90);
 
   return {
     total,
@@ -230,7 +231,7 @@ async function main() {
   if (LLM_API_KEY) {
     // 全榜素材选档：>25k chars 用压缩简介档（60字/本），否则全长 100字/本（对标 analyze.js 防上下文超限教训）
     ctx.booksBlock = ctx.fullChars > 25000 ? ctx.compactBlock : ctx.fullBlock;
-    console.log(`  素材: 全榜 ${ctx.total} 本逐本注入（${Math.round((ctx.booksBlock.length)/1000)}k chars，${ctx.fullChars > 25000 ? '压缩档60字/本' : '全长档100字/本'}）`);
+    console.log(`  素材: 全榜 ${ctx.total} 本逐本注入（${Math.round((ctx.booksBlock.length)/1000)}k chars，${ctx.fullChars > 25000 ? '压缩档90字/本' : '全长档200字/本'}）`);
     const systemPrompt = `你是网文榜单分析师。请针对「${conf.name}」${conf.ranking}今日榜单，写"今日流行总结"。
 背景：${conf.note}
 
