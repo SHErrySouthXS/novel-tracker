@@ -84,17 +84,26 @@ function readJSON(fp) {
 // 书名归一（jjwxc 用 name，qimao 用 book_name）
 const bookName = (b) => cx(b.book_name || b.name || '');
 const bookTags = (b) => cx((b.all_tags || b.tags || []).join(' / ')) || '未分类';
-const bookAbs = (b) => {
-  const a = (b.abstract || '').replace(/\s+/g, ' ').trim();
-  return a.length > 80 ? a.slice(0, 80) + '…' : a;
-};
 
-// ========== 统计上下文（喂给模型，约束其不编造数字） ==========
+// ========== 统计上下文 + 全榜书目素材（喂给模型） ==========
+// 2026-09-09e：从「聚合统计 + Top10 画像」升级为「全榜逐本素材注入」（对标 analyze.js buildBooksBlock）——
+// 情感/CP/题材的结论必须建立在读全榜每本书的 简介+全部标签 之上，而不是只靠标签词频反推。
+function buildBooksBlock(books, maxAbs) {
+  return books.map(b => {
+    const name = bookName(b);
+    const tags = bookTags(b);
+    const chg = b.rank_change === 'new' ? '[新上榜]' : (typeof b.rank_change === 'number' && b.rank_change ? `[${b.rank_change > 0 ? '↑' : '↓'}${Math.abs(b.rank_change)}]` : '');
+    let abs = String(b.abstract || '').replace(/\s+/g, ' ').trim();
+    if (abs.length > maxAbs) abs = abs.slice(0, maxAbs) + '…';
+    return `#${b.rank}《${name}》${chg} 标签:${tags} 简介:${abs || '(无简介)'}`;
+  }).join('\n');
+}
+
 function buildContext(conf, data) {
   const books = data.books || [];
   const total = books.length;
 
-  // 全量标签词频（不分级，直接统计）
+  // 全量标签词频（不分级，直接统计，供模型快速对齐占比；结论仍以逐本素材为准）
   const tagFreq = {};
   for (const b of books) for (const t of (b.all_tags || b.tags || [])) tagFreq[cx(t)] = (tagFreq[cx(t)] || 0) + 1;
   const topTags = Object.entries(tagFreq).sort((a, b) => b[1] - a[1]).slice(0, 20)
@@ -112,17 +121,19 @@ function buildContext(conf, data) {
   const status = {};
   for (const b of books) status[b.status || '未知'] = (status[b.status || '未知'] || 0) + 1;
 
-  // Top10 书目画像
-  const topBooks = books.slice(0, 10).map(b =>
-    `#${b.rank}《${bookName(b)}》[${bookTags(b)}|${b.status || ''}] 人气${b.popularity || b.score || '-'}\n   简介: ${bookAbs(b) || '(无简介)'}`
-  ).join('\n');
+  // 全榜逐本素材（两档：长 100 字简介 / 压缩 60 字简介；>25k 用压缩档，对标 analyze.js 教训）
+  const fullBlock = buildBooksBlock(books, 100);
+  const compactBlock = buildBooksBlock(books, 60);
 
   return {
     total,
     topTags,
     dist: dist.join('\n'),
     status: Object.entries(status).map(([s, n]) => `${s} ${n}本(${pct(n, total)}%)`).join('、'),
-    topBooks,
+    fullBlock,
+    compactBlock,
+    fullChars: fullBlock.length,
+    compactChars: compactBlock.length,
   };
 }
 
@@ -217,6 +228,9 @@ async function main() {
 
   // ---- AI 路径 ----
   if (LLM_API_KEY) {
+    // 全榜素材选档：>25k chars 用压缩简介档（60字/本），否则全长 100字/本（对标 analyze.js 防上下文超限教训）
+    ctx.booksBlock = ctx.fullChars > 25000 ? ctx.compactBlock : ctx.fullBlock;
+    console.log(`  素材: 全榜 ${ctx.total} 本逐本注入（${Math.round((ctx.booksBlock.length)/1000)}k chars，${ctx.fullChars > 25000 ? '压缩档60字/本' : '全长档100字/本'}）`);
     const systemPrompt = `你是网文榜单分析师。请针对「${conf.name}」${conf.ranking}今日榜单，写"今日流行总结"。
 背景：${conf.note}
 
@@ -229,21 +243,23 @@ async function main() {
   ]
 }
 行格式硬性要求（对标榜单整体总结，严禁罗列）：
-1. 每条是「整体共性结论 + 数字/占比佐证」的归纳句（如"穿书重生设定活跃：穿越19%·重生16%构成上位爽感主力"），必须基于我提供的统计口径说话，读起来像人写的总结而非标签清单。
+1. 每条是「整体共性结论 + 数字/占比佐证」的归纳句（如"穿书重生设定活跃：穿越19%·重生16%构成上位爽感主力"），读起来像人写的总结而非标签清单。
 2. 全书单只允许出现 1 处《书名》作共性佐证（证明该共性的头部代表，格式《书名》#排名）；禁止每条都挂书名、禁止列 2 本以上书单、禁止写成单书点评（如"《xx》#3穿书上位"这类逐书陈列必须改写为整体结论）。
-3. 数量与占比只能引用我提供的统计，禁止编造任何数字或未出现的书名。
+3. 数字占比必须来自对【全榜书目逐本素材】的统计或我给出的标签统计——两处口径不一致时以逐本素材为准；禁止编造素材里不存在的数字/标签/书名。
 4. 标签用词与我提供的统计一致（禁用「纯爱」，一律用「耽美」）。
-5. 三个维度都要给；每条 1-2 句、≤80 字；某维度信息薄弱时给 1-2 条基于简介观感的印象式整体结论，不要硬凑书名。`;
+5. 三个维度都要给；每条 1-2 句、≤80 字；某维度信息薄弱时给 1-2 条基于全榜简介观感的印象式整体结论，不要硬凑书名。`;
     const userPrompt = `【${conf.name} · ${conf.ranking} · ${today}】
 总本数: ${ctx.total}
+
+【全榜书目逐本素材】（以下为榜单全部 ${ctx.total} 本，每本含 排名/全部标签/简介——请通读后综合归纳，勿只盯头部）
+${ctx.booksBlock}
+
+【标签与状态统计】（辅助对齐占比口径；若与逐本素材有出入，以逐本素材为准）
 标签词频: ${ctx.topTags}
 ${ctx.dist}
 状态: ${ctx.status}
 
-【Top10 书目】
-${ctx.topBooks}
-
-请生成三段式流行总结 JSON。`;
+请基于全榜素材生成三段式流行总结 JSON。`;
 
     try {
       console.log(`🤖 正在调用 LLM(${LLM_MODEL}) 生成...`);
