@@ -1370,6 +1370,39 @@
       .summary-banner-grid.cols2,
       .summary-banner-grid.cols3 { grid-template-columns: 1fr !important; }
     }
+
+    /* ============================================================
+       v3 概览楼层（2026-09-09 sherry 对齐）：楼层自适应不等高；
+       同一楼层内的 4 张平台卡彼此等高，哪张内容超高就在该卡内部
+       滚动（溢出部分模块内滚动轴），不撑破楼层。
+       适用楼层：Top10(dash-card) / 题材分布(tag-dist-card) /
+       各站特点(summary-item) / 新上榜(new-entries-column)。
+       快照/趋势等全局模块不参与等高，保持原样。
+       等高由 JS 渲染后统一对齐（见脚本尾部 equalizeOverviewCards），
+       CSS 只负责：卡片纵向排布 + 列表区超高滚动。
+       ============================================================ */
+    /* 让层内卡片可纵向排布（头部固定 + 列表区滚动） */
+    #dashTopGrid .dash-card,
+    #tagDistribution .tag-dist-card,
+    #summaryItems .summary-item,
+    #newEntryGrid .new-entries-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+    }
+    /* 卡内滚动区：超高时模块内滚动轴 */
+    #dashTopGrid .dash-card .dash-top-list,
+    #tagDistribution .tag-dist-card .tag-dist-bars,
+    #newEntryGrid .new-entries-column .new-entries-scroll,
+    #summaryItems .summary-item .summary-scroll {
+      overflow-y: auto;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+    /* 新上榜与题材分布的条目包裹层：让条目竖向排列 */
+    #newEntryGrid .new-entries-column .new-entries-scroll { display: flex; flex-direction: column; }
+    #tagDistribution .tag-dist-card .tag-dist-bars { display: flex; flex-direction: column; }
   </style>
 </head>
 <body data-page-node-id="T999yuh8XNEONm6SzSQFVX">
@@ -1396,56 +1429,54 @@
       <div data-page-node-id="HHVcNf0Sw5SRHKdoffopSc">正在加载数据...</div>
     </div>
     <div id="dashContent" style="display:none;" data-page-node-id="hh10jw4RY3cj1mGNK1ozog">
-      <!-- 快速统计卡片 -->
+      <!-- ① 快速统计卡片 -->
       <div class="insight-section" data-page-node-id="Z8GzhB6adDUtuGmUWqJsu4">
         <h3 data-page-node-id="MJC3NF3VbOhyWhYwt3SIp6">📈 今日快照</h3>
         <div class="insight-cards" id="insightCards" data-page-node-id="gli8gDINfrDlyGZUuGLKXq"></div>
       </div>
 
-      <!-- 四站 Top10 速览 -->
-      <div class="dash-grid" id="dashTopGrid" data-page-node-id="txTXdsiWkxdx0yaaczlLEo"></div>
-
-      <!-- 题材分布对比 -->
-      <div class="insight-section" data-page-node-id="pFz8M8EP7Dj19MDm0L1GhQ">
-        <h3 data-page-node-id="Juftv4c8RKfw9FlUebbcjF">🎯 题材分布对比</h3>
-        <div class="tag-distribution" id="tagDistribution" data-page-node-id="kgzFmM5NbrmHKGvfIQ97Cm"></div>
-      </div>
-
-      <!-- 新上榜作品（三站分列） -->
-      <div class="new-entries" data-page-node-id="4B4aAGqCasYizr6DiPvGaz">
-        <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;" data-page-node-id="HKriLkfw8Y9RFU4ghdrVOF">🆕 今日新上榜作品</h3>
-        <div class="new-entries-grid" id="newEntryGrid" data-page-node-id="NLuOe11EZQKvIgQhIRS6TI"></div>
-      </div>
-
-      <!-- AI 总览（如有 AI 分析） -->
+      <!-- ② AI 总览（如有 AI 分析） -->
       <div id="aiOverallSection" style="display:none;margin-bottom:24px;" data-page-node-id="7Rlv1PHH10R4p5gqybJnGV">
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;" data-page-node-id="1Cp451l4Eb8WR8sHujSvQl">
-          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;" data-page-node-id="kYEXDs0DQiH4gXptAtQwK3">🤖 AI 每日洞察</h3>
-          <p id="aiOverallSummary" style="font-size:14px;color:var(--text);line-height:1.8;" data-page-node-id="t1rdVwB32mZXtAK6A4yDPL"></p>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;color:#1a1a1a;" data-page-node-id="1Cp451l4Eb8WR8sHujSvQl">
+          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;color:#1a1a1a;" data-page-node-id="kYEXDs0DQiH4gXptAtQwK3">🤖 AI 每日洞察</h3>
+          <p id="aiOverallSummary" style="font-size:14px;color:#1a1a1a;line-height:1.8;" data-page-node-id="t1rdVwB32mZXtAK6A4yDPL"></p>
           <div id="aiSignals" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;" data-page-node-id="KoHUqpFUsxRBk7hrChNyEB"></div>
         </div>
       </div>
 
-      <!-- 各站内容特点总结 -->
+      <!-- ③ 各站内容特点总结 + 跨平台对比洞察（同一 module） -->
       <div class="platform-summary" id="platformSummary" data-page-node-id="C4uElGSF2JhV2E2626kd7C">
         <h3 data-page-node-id="fE91M1s68Ztyc8GcWwElo1">💡 各站内容特点</h3>
         <div class="summary-items" id="summaryItems" data-page-node-id="Vaewsomd6ntUEE8tsP2Hpa"></div>
-      </div>
-
-      <!-- 跨平台对比洞察（AI） -->
-      <div id="crossPlatformSection" style="display:none;margin-bottom:24px;" data-page-node-id="yoCPnwzY6xjKdI9NNnTOGG">
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;cursor:default;" data-page-node-id="hY62Qk5WFYBCKuzlSnqgMf">
-          <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;" data-page-node-id="c2pdcaIUeA5lXEl14p7PkP">🔄 跨平台对比</h3>
-          <p id="crossPlatformText" style="font-size:13px;color:var(--text-dim);line-height:1.8;" data-page-node-id="AxNPkbFTGwMbR2i7WoveEB"></p>
+        <div id="crossPlatformSection" style="display:none;margin-top:18px;padding-top:16px;border-top:1px solid var(--border);" data-page-node-id="yoCPnwzY6xjKdI9NNnTOGG">
+          <div style="cursor:default;" data-page-node-id="hY62Qk5WFYBCKuzlSnqgMf">
+            <h3 style="font-size:16px;font-weight:600;margin-bottom:10px;" data-page-node-id="c2pdcaIUeA5lXEl14p7PkP">🔄 跨平台对比</h3>
+            <p id="crossPlatformText" style="font-size:13px;color:var(--text-dim);line-height:1.8;" data-page-node-id="AxNPkbFTGwMbR2i7WoveEB"></p>
+          </div>
         </div>
       </div>
 
-      <!-- 题材趋势折线图 -->
+      <!-- ④ 四站 Top10 速览 -->
+      <div class="dash-grid" id="dashTopGrid" data-page-node-id="txTXdsiWkxdx0yaaczlLEo"></div>
+
+      <!-- ⑤ 题材趋势折线图 -->
       <div class="trend-section" data-page-node-id="wQxtDTNC5EL6TviFcZAyDn">
         <h3 data-page-node-id="jA2Jy0DpUAF5MnECydcwAl">📉 题材趋势变化（近7日）</h3>
         <div class="trend-chart-container" id="trendChart" data-page-node-id="fMf6ecQdGwyZyzUFMeJUOq">
           <div class="trend-chart-placeholder" data-page-node-id="tobsW7BHk9ienytFOMAgf4">需要至少2天历史数据才能展示趋势</div>
         </div>
+      </div>
+
+      <!-- ⑥ 题材分布对比 -->
+      <div class="insight-section" data-page-node-id="pFz8M8EP7Dj19MDm0L1GhQ">
+        <h3 data-page-node-id="Juftv4c8RKfw9FlUebbcjF">🎯 题材分布对比</h3>
+        <div class="tag-distribution" id="tagDistribution" data-page-node-id="kgzFmM5NbrmHKGvfIQ97Cm"></div>
+      </div>
+
+      <!-- ⑦ 新上榜作品（三站分列） -->
+      <div class="new-entries" data-page-node-id="4B4aAGqCasYizr6DiPvGaz">
+        <h3 style="font-size:16px;font-weight:600;margin-bottom:12px;" data-page-node-id="HKriLkfw8Y9RFU4ghdrVOF">🆕 今日新上榜作品</h3>
+        <div class="new-entries-grid" id="newEntryGrid" data-page-node-id="NLuOe11EZQKvIgQhIRS6TI"></div>
       </div>
     </div>
   </div>
@@ -1641,6 +1672,40 @@ function renderDashboard() {
   renderPlatformSummary();
   renderTrendChart();
   updateUpdateInfo();
+  requestAnimationFrame(equalizeOverviewCards);
+}
+
+/* ========== 概览楼层内卡片等高 + 超高卡内滚动（v3, 2026-09-09）==========
+   每层 4 张平台卡彼此等高：以该层内容最多的卡为准，但设上限 cap——
+   超出 cap 的层整体截到 cap，内容在卡内滚动；没超则 4 卡等高于自然最高卡。
+   窄屏单列时不做等高（每卡自适应自然高度）。 */
+function equalizeOverviewCards() {
+  const isNarrow = window.matchMedia('(max-width: 880px)').matches;
+  const LAYERS = [
+    { id: 'dashTopGrid',      cardSel: '.dash-card',           cap: 480 },
+    { id: 'tagDistribution',  cardSel: '.tag-dist-card',       cap: 520 },
+    { id: 'summaryItems',     cardSel: '.summary-item',        cap: 460 },
+    { id: 'newEntryGrid',     cardSel: '.new-entries-column',  cap: 560 },
+  ];
+  LAYERS.forEach(L => {
+    const box = document.getElementById(L.id);
+    if (!box) return;
+    const cards = [...box.querySelectorAll(':scope > ' + L.cardSel)];
+    if (cards.length === 0) return;
+    // 先复位高度再测自然高度
+    cards.forEach(c => c.style.height = 'auto');
+    if (isNarrow) return; // 窄屏单列：自适应即可
+    const natural = Math.max(...cards.map(c => c.scrollHeight || 0));
+    const h = Math.min(natural, L.cap);
+    cards.forEach(c => c.style.height = h + 'px');
+  });
+}
+if (window.matchMedia) {
+  let rzTimer = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(rzTimer);
+    rzTimer = setTimeout(equalizeOverviewCards, 200);
+  });
 }
 
 function updateUpdateInfo() {
@@ -1730,34 +1795,70 @@ function renderDashTopGrid() {
   }).join('');
 }
 
+/* ========== 题材分布 · final 一级池（sherry 2026-09-09）==========
+   一级池词表来自飞书《novel-tracker 分类池》06-09 表：
+   晋江 = channel 频道词(6)；长佩 = 频道词 tags[0](15)；
+   番茄 = 官方主分类一级(23，all_tags 命中)；七猫 = major(3)。
+   池外命中不到的书归入「其他」。 */
+const L1_POOLS = {
+  jjwxc:   { field: 'channel',    words: ['纯爱','言情','无CP','百合','多元','未知'] },
+  changpei:{ field: 'primary_tag',words: ['都市','综合','架空','青春','宫廷','奇幻','推理','现代','玄幻','科幻','武侠','灵异','民国','脑洞','小说'] },
+  fanqie:  { field: 'all_tags',   words: ['古风世情','科幻末世','游戏体育','女频衍生','玄幻言情','种田','年代','现言脑洞','宫斗宅斗','悬疑脑洞','古言脑洞','快穿','青春甜宠','星光璀璨','女频悬疑','职场婚恋','豪门总裁','民国言情','双男主','无CP','双女主','纯爱','男频衍生'] },
+  qimao:   { field: 'channel',    words: ['现代言情','古代言情','幻想言情'] },
+};
+
+// 返回书的一级池词；匹配不到返回 null（调用方归「其他」）
+function bookL1(platformId, b) {
+  const def = L1_POOLS[platformId];
+  if (!def || !b) return null;
+  if (def.field === 'all_tags') {
+    const tags = b.all_tags || [];
+    for (const t of tags) if (def.words.includes(t)) return t;
+    return null;
+  }
+  const v = b[def.field];
+  return (v && def.words.includes(v)) ? v : null;
+}
+
 function renderTagDistribution() {
   const container = document.getElementById('tagDistribution');
   
   container.innerHTML = PLATFORMS.map(p => {
     const data = state.data[p.id];
-    if (!data?.tag_stats) return `<div class="tag-dist-card"><div class="tag-dist-title">${p.icon} ${p.name}</div><div style="color:var(--text-dim);font-size:13px;">暂无数据</div></div>`;
+    const books = data?.books || [];
+    if (!books.length) return `<div class="tag-dist-card"><div class="tag-dist-title">${p.icon} ${p.name}</div><div style="color:var(--text-dim);font-size:13px;">暂无数据</div></div>`;
     
-    const stats = Object.entries(data.tag_stats).sort((a, b) => b[1] - a[1]);
-    const total = stats.reduce((s, [, v]) => s + v, 0);
-    const top = stats.slice(0, 8);
+    // 按 final 一级池统计（池外归「其他」）
+    const cnt = { __other: 0 };
+    books.forEach(b => {
+      const l1 = bookL1(p.id, b);
+      if (l1) cnt[l1] = (cnt[l1] || 0) + 1;
+      else cnt.__other++;
+    });
+    const total = books.length;
+    const entries = Object.entries(cnt).filter(([, n]) => n > 0)
+      .sort((a, b) => b[1] - a[1])
+      .map(([tag, n]) => tag === '__other' ? ['其他', n] : [normTag(tag), n]);
 
     return `
       <div class="tag-dist-card">
         <div class="tag-dist-title">${p.icon} ${p.name}</div>
-        ${top.map(([tag, count]) => {
-          const pct = total > 0 ? (count / total * 100).toFixed(0) : 0;
-          return `
-            <div class="tag-bar-container">
-              <div class="tag-bar-label">
-                <span>${tag}</span>
-                <span>${count}本 (${pct}%)</span>
+        <div class="tag-dist-bars">
+          ${entries.map(([tag, count]) => {
+            const pct = (count / total * 100).toFixed(0);
+            return `
+              <div class="tag-bar-container">
+                <div class="tag-bar-label">
+                  <span>${tag}</span>
+                  <span>${count}本 (${pct}%)</span>
+                </div>
+                <div class="tag-bar">
+                  <div class="tag-bar-fill" style="width:${pct}%;background:${p.color};"></div>
+                </div>
               </div>
-              <div class="tag-bar">
-                <div class="tag-bar-fill" style="width:${pct}%;background:${p.color};"></div>
-              </div>
-            </div>
-          `;
-        }).join('')}
+            `;
+          }).join('')}
+        </div>
       </div>
     `;
   }).join('');
@@ -1774,17 +1875,19 @@ function renderNewEntries() {
       <div class="new-entries-column ${p.id}">
         <div class="new-entries-col-header">${p.icon} ${p.name}</div>
         <div class="new-entries-col-count">${newBooks.length > 0 ? `${newBooks.length} 部新上榜` : '无新上榜'}</div>
-        ${newBooks.length === 0 
-          ? '<div class="new-entries-empty">今日无变动（或首次运行无对比数据）</div>'
-          : newBooks.map(b => `
-            <div class="new-entry-item">
-              <div class="new-entry-info">
-                <div class="new-entry-name" title="${b.book_name}">${b.book_name}</div>
-                <div class="new-entry-meta">${b.author} · ${b.primary_tag || ''} · ${b.gender || b.channel || ''}</div>
+        <div class="new-entries-scroll">
+          ${newBooks.length === 0 
+            ? '<div class="new-entries-empty">今日无变动（或首次运行无对比数据）</div>'
+            : newBooks.map(b => `
+              <div class="new-entry-item">
+                <div class="new-entry-info">
+                  <div class="new-entry-name" title="${b.book_name}">${b.book_name}</div>
+                  <div class="new-entry-meta">${b.author} · ${b.primary_tag || ''} · ${b.gender || b.channel || ''}</div>
+                </div>
+                <div class="new-entry-rank">#${b.rank}</div>
               </div>
-              <div class="new-entry-rank">#${b.rank}</div>
-            </div>
-          `).join('')}
+            `).join('')}
+        </div>
       </div>
     `;
   }).join('');
@@ -1804,7 +1907,7 @@ function renderPlatformSummary() {
     // 信号标签
     if (ai.notable_signals?.length > 0) {
       document.getElementById('aiSignals').innerHTML = ai.notable_signals.map(s => 
-        `<span style="display:inline-block;padding:4px 12px;background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.25);border-radius:6px;font-size:12px;color:#ffd700;cursor:default;">🔔 ${cx(s)}</span>`
+        `<span style="display:inline-block;padding:4px 12px;background:rgba(106,76,0,0.08);border:1px solid rgba(106,76,0,0.22);border-radius:6px;font-size:12px;color:#6b4c00;cursor:default;">🔔 ${cx(s)}</span>`
       ).join('');
     }
   }
@@ -1813,7 +1916,7 @@ function renderPlatformSummary() {
   container.innerHTML = PLATFORMS.map(p => {
     const data = state.data[p.id];
     if (!data?.books?.length) {
-      return `<div class="summary-item ${p.id}"><h4>${p.icon} ${p.name}</h4><p>暂无数据</p></div>`;
+      return `<div class="summary-item ${p.id}"><h4>${p.icon} ${p.name}</h4><div class="summary-scroll"><p>暂无数据</p></div></div>`;
     }
     
     // 优先使用 AI 分析
@@ -1822,8 +1925,10 @@ function renderPlatformSummary() {
       return `
         <div class="summary-item ${p.id}">
           <h4>${p.icon} ${p.name}</h4>
-          <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${cx(pa.headline) || ''}</p>
-          <p>${cx(pa.analysis) || ''}</p>
+          <div class="summary-scroll">
+            <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${cx(pa.headline) || ''}</p>
+            <p>${cx(pa.analysis) || ''}</p>
+          </div>
         </div>
       `;
     }
@@ -1833,7 +1938,7 @@ function renderPlatformSummary() {
     return `
       <div class="summary-item ${p.id}">
         <h4>${p.icon} ${p.name}</h4>
-        <p>${analysis}</p>
+        <div class="summary-scroll"><p>${analysis}</p></div>
       </div>
     `;
   }).join('');
