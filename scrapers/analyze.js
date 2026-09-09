@@ -1,8 +1,12 @@
 /**
  * 每日 AI 智能分析模块
  * 
- * 在三个爬虫跑完后执行，读取三站最新数据，
- * 调用通义千问 API 生成深度分析，保存为 analysis.json 供前端展示
+ * 在四个爬虫跑完后执行，读取四站（晋江/长佩/番茄/七猫）最新数据，
+ * 调用 LLM API 生成深度分析，保存为 analysis.json 供前端概览展示
+ * （各站内容特点 = platforms.<id>.headline + analysis）
+ * 
+ * 2026-09-09: 平台清单 fanqie/qidian/jjwxc → jjwxc/changpei/fanqie/qimao
+ * （对齐前端 4 tab；起点 qidian 已无前端展示/无爬虫，停止为其烧 token）
  */
 
 const https = require('https');
@@ -96,16 +100,26 @@ function buildDataSummary(platformName, data) {
   const books = data.books;
   const tagStats = data.tag_stats || {};
   const genderStats = data.gender_stats || {};
+  // 部分平台（长佩/七猫）无 gender_stats 顶层字段 → 用书的 channel（大类）字段兜底聚合
+  const chanStats = {};
+  for (const b of books) {
+    const ch = (b.channel || '').trim();
+    if (ch) chanStats[ch] = (chanStats[ch] || 0) + 1;
+  }
   
   const sortedTags = Object.entries(tagStats).sort((a, b) => b[1] - a[1]);
   const sortedGenders = Object.entries(genderStats).sort((a, b) => b[1] - a[1]);
+  const sortedChans = Object.entries(chanStats).sort((a, b) => b[1] - a[1]);
   const newBooks = books.filter(b => b.rank_change === 'new');
   const risingBooks = books.filter(b => typeof b.rank_change === 'number' && b.rank_change > 3);
   const fallingBooks = books.filter(b => typeof b.rank_change === 'number' && b.rank_change < -3);
   
   let summary = `【${platformName}】(来源: ${data.source})\n`;
   summary += `总计: ${books.length}本\n`;
-  summary += `频道分布: ${sortedGenders.map(([g, c]) => `${g}${c}本(${Math.round(c/books.length*100)}%)`).join('、')}\n`;
+  const genderLine = sortedGenders.length > 0
+    ? sortedGenders.map(([g, c]) => `${g}${c}本(${Math.round(c/books.length*100)}%)`).join('、')
+    : sortedChans.map(([g, c]) => `${g}${c}本(${Math.round(c/books.length*100)}%)`).join('、');
+  if (genderLine) summary += `频道/大类分布: ${genderLine}\n`;
   summary += `题材分布(Top8): ${sortedTags.slice(0, 8).map(([t, c]) => `${t}${c}本`).join('、')}\n`;
   
   // Top5 书目
@@ -146,18 +160,19 @@ async function main() {
     process.exit(1);
   }
 
-  // 读取三站数据
+  // 读取四站数据（与前端概览 PLATFORMS 对齐）
   const platforms = [
-    { id: 'fanqie', name: '番茄小说' },
-    { id: 'qidian', name: '起点中文网' },
-    { id: 'jjwxc', name: '晋江文学城' },
+    { id: 'jjwxc',   name: '晋江文学城', file: 'latest.json' },
+    { id: 'changpei', name: '长佩文学',   file: 'latest.json' },
+    { id: 'fanqie',  name: '番茄小说',   file: 'latest.json' },
+    { id: 'qimao',   name: '七猫小说',   file: 'girl_hot.json' },
   ];
 
   const allData = {};
   const summaries = [];
 
   for (const p of platforms) {
-    const data = readJSON(path.join(DATA_DIR, p.id, 'latest.json'));
+    const data = readJSON(path.join(DATA_DIR, p.id, p.file));
     allData[p.id] = data;
     summaries.push(buildDataSummary(p.name, data));
     console.log(`  ${p.name}: ${data?.books?.length || 0} 本`);
@@ -167,31 +182,36 @@ async function main() {
   const today = fmtDate(now);
   const dataBlock = summaries.join('\n\n');
 
-  const systemPrompt = `你是一位资深的网络文学行业分析师，对中国网文市场有深入了解。你熟悉番茄小说、起点中文网、晋江文学城三大平台的定位和用户画像差异：
+  const systemPrompt = `你是一位资深的网络文学行业分析师，对中国网文市场有深入了解。你熟悉晋江文学城、长佩文学、番茄小说、七猫小说四大平台的定位和用户画像差异：
 
-- **番茄小说**：字节跳动旗下免费阅读平台，用户以下沉市场为主，年龄层较广，男女均衡，偏好快节奏、易入坑的内容，广告变现模式。
-- **起点中文网**：阅文集团核心平台，付费阅读模式，男频为传统强势领域，用户付费意愿强、忠诚度高，是网文精品化的标杆。
-- **晋江文学城**：女性向原创文学社区，以纯爱(BL)、言情为主力品类，IP改编价值极高，用户以年轻女性为主，社区氛围浓厚。
+- **晋江文学城**：女性向原创文学社区，以纯爱(BL)、言情为主力品类，IP改编价值极高，用户以年轻女性为主，社区氛围浓厚。榜单是积分月榜（Top200）。
+- **长佩文学**：偏耽美向原创文学网站，标签体系为 15 个频道词（都市/架空/综合/青春/宫廷…）+ 大量人设/情感母题标签（竹马竹马、甜宠、破镜重圆…），用户偏好情感浓度高、人设鲜明的作品。
+- **番茄小说**：字节跳动旗下免费阅读平台，用户以下沉市场为主，年龄层较广，男女均衡，偏好快节奏、易入坑的内容，广告变现模式。榜单为女频最热榜。
+- **七猫小说**：免费阅读平台，女频大热榜每本书带官方两级题材：大类 major（现代言情/古代言情/幻想言情）+ 细分 minor（总裁豪门/宫闱宅斗/年代重生…），用户偏好豪门、宫斗等强戏剧冲突题材。
 
 请基于以下今日数据进行专业分析，输出格式为 JSON：
 {
   "date": "${today}",
   "overall_summary": "一段总括性分析（100-150字）",
   "platforms": {
-    "fanqie": {
-      "headline": "一句话概括今日番茄特点",
+    "jjwxc": {
+      "headline": "一句话概括今日晋江特点",
       "analysis": "2-3段深度分析（200-300字），包含题材趋势、新上榜亮点、与平台用户画像的关联、潜在信号"
     },
-    "qidian": {
+    "changpei": {
       "headline": "...",
       "analysis": "..."
     },
-    "jjwxc": {
+    "fanqie": {
+      "headline": "...",
+      "analysis": "..."
+    },
+    "qimao": {
       "headline": "...",
       "analysis": "..."
     }
   },
-  "cross_platform_insights": "跨平台对比分析（150-200字），指出三站差异背后的市场逻辑",
+  "cross_platform_insights": "跨平台对比分析（150-200字），指出四站差异背后的市场逻辑",
   "notable_signals": ["信号1", "信号2", "信号3"]
 }
 
@@ -199,9 +219,10 @@ async function main() {
 1. 分析要有信息增量，不要泛泛而谈，要结合具体数据（题材占比、新上榜作品名等）
 2. 尝试解读数据背后的原因（为什么这个题材在这个平台火？用户需求是什么？）
 3. 如果某个题材或作品表现异常，给出可能的解释
-4. 输出必须是合法 JSON，不要包含 markdown 代码块标记`;
+4. 七猫榜单只有 20 本，样本小，分析时注意不要过度归纳
+5. 输出必须是合法 JSON，不要包含 markdown 代码块标记`;
 
-  const userPrompt = `以下是${today}三大小说平台的Top50榜单数据：\n\n${dataBlock}\n\n请进行深度分析并以JSON格式输出。`;
+  const userPrompt = `以下是${today}四个平台的Top榜单数据：\n\n${dataBlock}\n\n请进行深度分析并以JSON格式输出。`;
 
   console.log('\n🤖 正在调用 AI 分析...');
   
@@ -284,7 +305,7 @@ function generateFallbackAnalysis(allData, today) {
     fallback: true,
   };
 
-  const pNames = { fanqie: '番茄小说', qidian: '起点中文网', jjwxc: '晋江文学城' };
+  const pNames = { jjwxc: '晋江文学城', changpei: '长佩文学', fanqie: '番茄小说', qimao: '七猫小说' };
   
   for (const [pid, pname] of Object.entries(pNames)) {
     const data = allData[pid];
@@ -294,7 +315,13 @@ function generateFallbackAnalysis(allData, today) {
     }
     
     const tags = Object.entries(data.tag_stats || {}).sort((a, b) => b[1] - a[1]);
-    const genders = Object.entries(data.gender_stats || {}).sort((a, b) => b[1] - a[1]);
+    let genders = Object.entries(data.gender_stats || {}).sort((a, b) => b[1] - a[1]);
+    // 无 gender_stats 平台用 channel 兜底（长佩/七猫）
+    if (genders.length === 0) {
+      const cs = {};
+      for (const b of data.books) { const ch = (b.channel || '').trim(); if (ch) cs[ch] = (cs[ch] || 0) + 1; }
+      genders = Object.entries(cs).sort((a, b) => b[1] - a[1]);
+    }
     const newBooks = data.books.filter(b => b.rank_change === 'new');
     
     const topTag = tags[0]?.[0] || '未知';
@@ -302,7 +329,7 @@ function generateFallbackAnalysis(allData, today) {
     
     result.platforms[pid] = {
       headline: `${topTag}题材以${topPct}%领跑，${newBooks.length}部新作上榜`,
-      analysis: `${pname}今日Top50中，${genders.map(([g, c]) => `${g}${c}本`).join('、')}。题材方面，${tags.slice(0, 3).map(([t, c]) => `「${t}」${c}本`).join('、')}位列前三。${newBooks.length > 0 ? `新上榜${newBooks.length}部，包括${newBooks.slice(0, 3).map(b => `《${b.book_name}》(#${b.rank})`).join('、')}。` : '今日无新上榜变动。'}`,
+      analysis: `${pname}今日榜单中，${genders.length ? genders.map(([g, c]) => `${g}${c}本`).join('、') + '。' : ''}题材方面，${tags.slice(0, 3).map(([t, c]) => `「${t}」${c}本`).join('、')}位列前三。${newBooks.length > 0 ? `新上榜${newBooks.length}部，包括${newBooks.slice(0, 3).map(b => `《${b.book_name}》(#${b.rank})`).join('、')}。` : '今日无新上榜变动。'}`,
     };
   }
 
