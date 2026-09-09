@@ -1391,18 +1391,62 @@
       justify-content: flex-start;
       overflow: hidden;
     }
-    /* 卡内滚动区：超高时模块内滚动轴 */
+    /* 卡内滚动区：超高时模块内滚动轴；同层等高由 grid stretch 撑卡，
+       scroll 自身按内容自然高度(grow=0)，短内容全部展示在顶部、卡底留白 */
     #dashTopGrid .dash-card .dash-top-list,
     #tagDistribution .tag-dist-card .tag-dist-bars,
-    #newEntryGrid .new-entries-column .new-entries-scroll,
-    #summaryItems .summary-item .summary-scroll {
+    #newEntryGrid .new-entries-column .new-entries-scroll {
       overflow-y: auto;
       flex: 1 1 auto;
+      min-height: 0;
+    }
+    #summaryItems .summary-item .summary-scroll {
+      overflow-y: auto;
+      flex: 0 0 auto;  /* 按内容自然高度、不收缩；超长时 overflow-y auto 滚动 */
       min-height: 0;
     }
     /* 新上榜与题材分布的条目包裹层：让条目竖向排列 */
     #newEntryGrid .new-entries-column .new-entries-scroll { display: flex; flex-direction: column; }
     #tagDistribution .tag-dist-card .tag-dist-bars { display: flex; flex-direction: column; }
+
+    /* ============================================================
+       v4 各站内容特点 · AI 四维题材总结（2026-09-09 sherry 对齐）：
+       headline + 题材/情节冲突/人设/CP 四维小节 + 新上榜/快速上升高亮
+       ============================================================ */
+    #summaryItems .summary-item .sb-block { margin-top: 10px; }
+    #summaryItems .summary-item .sb-block:first-of-type { margin-top: 8px; }
+    #summaryItems .summary-item .sb-block-head {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 11.5px; font-weight: 700; color: var(--text);
+      margin-bottom: 3px; letter-spacing: .02em;
+    }
+    #summaryItems .summary-item .sb-block-head::before {
+      content: ''; width: 4px; height: 11px; border-radius: 2px;
+      background: var(--pc, #667eea); flex: none;
+    }
+    #summaryItems .summary-item .sb-block p {
+      font-size: 12.5px; line-height: 1.75; color: var(--text);
+      margin: 0; text-align: justify;
+    }
+    /* 新上榜 / 快速上升 高亮块 */
+    #summaryItems .summary-item .sb-hl {
+      margin-top: 10px; border: 1px solid rgba(230,162,60,.28);
+      background: linear-gradient(180deg, rgba(230,162,60,.08), rgba(230,162,60,.03));
+      border-radius: 8px; padding: 8px 10px;
+    }
+    #summaryItems .summary-item .sb-hl-head {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 11.5px; font-weight: 800; color: #a16207;
+      margin-bottom: 3px;
+    }
+    #summaryItems .summary-item .sb-hl-head::before {
+      content: ''; width: 4px; height: 11px; border-radius: 2px;
+      background: #e6a23c; flex: none;
+    }
+    #summaryItems .summary-item .sb-hl p {
+      font-size: 12.5px; line-height: 1.75; color: var(--text);
+      margin: 0; text-align: justify;
+    }
   </style>
 </head>
 <body data-page-node-id="T999yuh8XNEONm6SzSQFVX">
@@ -1922,12 +1966,51 @@ function renderPlatformSummary() {
     // 优先使用 AI 分析
     if (hasAI && ai.platforms[p.id]) {
       const pa = ai.platforms[p.id];
+      const color = p.color || '#667eea';
+
+      // 新版：四维题材总结（theme/conflict/characters/cp）
+      const is4D = pa && (pa.theme !== undefined || pa.conflict !== undefined);
+      if (is4D) {
+        const dims = [
+          ['题材', pa.theme], ['情节冲突', pa.conflict],
+          ['人设', pa.characters], ['CP 结构', pa.cp],
+        ];
+        const blocks = dims.filter(([, v]) => v && String(v).trim()).map(([t, v]) => `
+            <div class="sb-block" style="--pc:${color}">
+              <div class="sb-block-head">${t}</div>
+              <p>${cx(v)}</p>
+            </div>`).join('');
+
+        const hl = [
+          ['新上榜', pa.new_entrants], ['快速上升', pa.rising],
+        ].filter(([, v]) => v && String(v).trim()).map(([t, v]) => `
+            <div class="sb-hl">
+              <div class="sb-hl-head">${t}</div>
+              <p>${cx(v)}</p>
+            </div>`).join('');
+
+        const headlineHtml = pa.headline
+          ? `<p style="font-weight:600;font-size:13px;color:var(--text);line-height:1.7;">${cx(pa.headline)}</p>` : '';
+
+        return `
+          <div class="summary-item ${p.id}" style="--pc:${color}">
+            <h4>${p.icon} ${p.name}</h4>
+            <div class="summary-scroll">
+              ${headlineHtml}
+              ${blocks}
+              ${hl}
+            </div>
+          </div>
+        `;
+      }
+
+      // 旧版/降级：headline + analysis 文本
       return `
         <div class="summary-item ${p.id}">
           <h4>${p.icon} ${p.name}</h4>
           <div class="summary-scroll">
             <p style="font-weight:600;margin-bottom:6px;color:var(--text);font-size:13px;">${cx(pa.headline) || ''}</p>
-            <p>${cx(pa.analysis) || ''}</p>
+            ${pa.analysis ? `<p>${cx(pa.analysis)}</p>` : ''}
           </div>
         </div>
       `;
@@ -1949,6 +2032,18 @@ function renderPlatformSummary() {
     crossSection.style.display = 'block';
     document.getElementById('crossPlatformText').textContent = cx(ai.cross_platform_insights);
   }
+
+  // === 等高对齐：同层 4 张平台卡取最高作为 minHeight 同步所有兄弟 ===
+  equalizeRowHeights(container);
+}
+
+function equalizeRowHeights(container) {
+  // 同层网格（summary-items 4 卡 1 行）取最高卡设给所有兄弟
+  const items = container.querySelectorAll('.summary-item');
+  if (items.length < 2) return;
+  let maxH = 0;
+  items.forEach(it => { maxH = Math.max(maxH, it.offsetHeight); });
+  if (maxH > 0) items.forEach(it => { it.style.minHeight = maxH + 'px'; });
 }
 
 // ========== 智能分析引擎 ==========

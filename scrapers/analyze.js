@@ -2,11 +2,23 @@
  * 每日 AI 智能分析模块
  * 
  * 在四个爬虫跑完后执行，读取四站（晋江/长佩/番茄/七猫）最新数据，
- * 调用 LLM API 生成深度分析，保存为 analysis.json 供前端概览展示
- * （各站内容特点 = platforms.<id>.headline + analysis）
+ * 调用 LLM API 生成深度分析，保存为 analysis.json 供前端概览展示。
  * 
- * 2026-09-09: 平台清单 fanqie/qidian/jjwxc → jjwxc/changpei/fanqie/qimao
- * （对齐前端 4 tab；起点 qidian 已无前端展示/无爬虫，停止为其烧 token）
+ * 2026-09-09a: 平台清单 fanqie/qidian/jjwxc → jjwxc/changpei/fanqie/qimao
+ *   （对齐前端 4 tab；起点 qidian 已无前端展示/无爬虫，停止为其烧 token）
+ * 2026-09-09b: 输出从「headline+analysis 自由文本」改为「四维题材总结」：
+ *   - 素材注入：逐本注入 书名+频道+全部标签+简介截断（模型自统计共性，绕开 tag_stats 脏标签，
+ *     如番茄"未知54%"、长佩频道词都市/架空/综合占79% 等标签失真问题）
+ *   - 每平台一次 LLM 调用（避免 4 平台全量素材超上下文窗口），最后再 1 次跨平台总结
+ *   - platforms.<id> schema:
+ *       headline      一句话总结今日该平台题材主旋律（不加评价性判断）
+ *       theme         "总结：…" 题材/设定系共性
+ *       conflict      "总结：…" 情节冲突共性
+ *       characters    "总结：…" 人设共性
+ *       cp            "总结：…" CP 关系结构共性
+ *       new_entrants  "总结：…" 今日新上榜共性
+ *       rising        "总结：…" 快速上升共性
+ *   - 规则：只做基于全榜数据的客观归纳总结（总结：…），禁止写判断/预测/建议/引流话术
  */
 
 const https = require('https');
@@ -44,13 +56,26 @@ function readJSON(filePath) {
   return null;
 }
 
-// ========== 调用通义千问 API ==========
-function callLLM(messages) {
+function extractJSON(text) {
+  let cleaned = (text || '').trim();
+  if (cleaned.startsWith('```json')) cleaned = cleaned.slice(7);
+  if (cleaned.startsWith('```')) cleaned = cleaned.slice(3);
+  if (cleaned.endsWith('```')) cleaned = cleaned.slice(0, -3);
+  cleaned = cleaned.trim();
+  // 若模型前后夹了说明文字，截取首个 { 到最后一个 }
+  const s = cleaned.indexOf('{');
+  const e = cleaned.lastIndexOf('}');
+  if (s >= 0 && e > s) cleaned = cleaned.slice(s, e + 1);
+  return JSON.parse(cleaned);
+}
+
+// ========== 调用 LLM API ==========
+function callLLM(messages, maxTokens = 4000) {
   return new Promise((resolve, reject) => {
     const body = { model: LLM_MODEL, messages, temperature: 0.7 };
     // MiMo 兼容 OpenAI 新字段（含 reasoning tokens 预算，给足防正文被挤占）
     if (IS_MIMO) body.max_completion_tokens = 8192; // thinking 可能消耗数千 tokens，预算不足会 length 截断正文为空
-    else body.max_tokens = 2000;
+    else body.max_tokens = maxTokens;
     const payload = JSON.stringify(body);
 
     const url = new URL(LLM_API_URL);
@@ -64,7 +89,7 @@ function callLLM(messages) {
         'Authorization': `Bearer ${LLM_API_KEY}`,
         'Content-Length': Buffer.byteLength(payload),
       },
-      timeout: 60000,
+      timeout: 90000,
     };
 
     const req = https.request(options, (res) => {
@@ -93,60 +118,88 @@ function callLLM(messages) {
   });
 }
 
-// ========== 构建数据摘要（控制 token 量） ==========
-function buildDataSummary(platformName, data) {
-  if (!data?.books?.length) return `${platformName}: 暂无数据`;
-  
-  const books = data.books;
-  const tagStats = data.tag_stats || {};
-  const genderStats = data.gender_stats || {};
-  // 部分平台（长佩/七猫）无 gender_stats 顶层字段 → 用书的 channel（大类）字段兜底聚合
-  const chanStats = {};
-  for (const b of books) {
-    const ch = (b.channel || '').trim();
-    if (ch) chanStats[ch] = (chanStats[ch] || 0) + 1;
+// ========== 平台定义 ==========
+const PLATFORMS = [
+  { id: 'jjwxc',    name: '晋江文学城', file: 'latest.json' },
+  { id: 'changpei', name: '长佩文学',   file: 'latest.json' },
+  { id: 'fanqie',   name: '番茄小说',   file: 'latest.json' },
+  { id: 'qimao',    name: '七猫小说',   file: 'girl_hot.json' },
+];
+const PNAME = Object.fromEntries(PLATFORMS.map(p => [p.id, p.name]));
+
+// 各平台画像（供 system prompt 使用，帮助模型理解榜单口径与平台气质）
+const PLATFORM_PROFILE = {
+  jjwxc: '女性向原创文学社区，纯爱(BL)与言情为主力，IP 改编价值高，用户年轻女性为主。榜单为积分月榜 Top200，书带频道(channel)、性向(nature)、genre/era/theme 与自由标签(secondary_tags/all_tags)。',
+  changpei: '耽美/纯爱向原创站，榜单为畅销榜 Top100。频道词粗放（都市/架空/综合/青春/宫廷…），真正内容差异在 all_tags 人设/情感母题标签（破镜重圆、金丝雀、ABO、年下、强制爱…）与简介设定。',
+  fanqie: '字节旗下免费阅读平台，女频最热榜 Top160。primary_tag 常混入自由标签或为"未知"，题材须读简介(abstract)与 all_tags 判断，勿依赖主分类统计。',
+  qimao: '免费阅读平台，女频大热榜仅 Top20，样本小。书带官方两级：channel 大类（现代言情/古代言情/幻想言情）+ tags 细分（总裁豪门/宫闱宅斗/年代重生…）。',
+};
+
+// 四维框架说明（system prompt 公共段）
+const DIMENSION_GUIDE = `请基于「全部上榜书目」统计共性，按四个维度输出总结（每个维度以"总结："开头，先给共性结论与命中书目数/占比，可举 1 个代表性作品名佐证，但结论必须来自全榜统计而非个别书）：
+- 题材：频道/大类分布 + 有存在感的设定系（如 ABO、娱乐圈、武侠、玄幻等）；若某平台大类本身无区分度，请点明并把重心放到简介里识别出的设定系。
+- 情节冲突：故事核心冲突类型归纳——区分"关系内部冲突"（破镜重圆/追妻火葬场/暗恋/强制爱/误会分手…）与"外部事件冲突"（权谋夺权/升级打怪/悬疑破案/系统任务…），统计各自占比。
+- 人设：全榜高频人设标签/身份/性格组合归纳（如金丝雀×大佬、毒舌×炸毛、疯批×温柔、少爷×乡下人…），指出常见的人物配置模式。
+- CP：情感关系结构统计（强强/年上/年下/养成/竹马/破镜重圆/先婚后爱/直掰弯…），以及 HE/Be 倾向、攻受互动模式。
+
+硬性要求：
+1. 只写客观归纳总结，用"总结：…"句式；禁止写判断、预测、建议、引流话术（不要出现"说明平台XX""值得关注""或将持续""建议"等）。
+2. 数字必须来自输入的书目清单（自己逐本数），禁止编造。
+3. 个别书名只作共性佐证出现一次，禁止写成单书点评或书单。
+4. headline：用一句话客观总结今日该平台题材主旋律（同样不加评价性判断）。
+5. 全部字段为中文，字段值为纯文本字符串（可含标点）。`;
+
+// ========== 构建逐本素材（书名+频道+标签+简介截断） ==========
+function buildBooksBlock(data, maxIntro = 140) {
+  if (!data?.books?.length) return '（无数据）';
+  const lines = [];
+  for (const b of data.books) {
+    const name = b.book_name || '佚名';
+    const cat = b.channel || b.primary_tag || b.category || '';
+    let intro = String(b.abstract || '').replace(/\s+/g, ' ').trim();
+    if (intro.length > maxIntro) intro = intro.slice(0, maxIntro) + '…';
+    const tags = [
+      ...(b.all_tags || []), ...(b.secondary_tags || []), ...(b.tags || []),
+      ...(b.gender ? [b.gender] : []),
+    ].filter((t, i, a) => t && a.indexOf(t) === i).slice(0, 12).join('、');
+    const chg = b.rank_change === 'new' ? '[新上榜]'
+      : (typeof b.rank_change === 'number' && b.rank_change > 0 ? `[↑${b.rank_change}]`
+      : (typeof b.rank_change === 'number' && b.rank_change < 0 ? `[↓${Math.abs(b.rank_change)}]` : ''));
+    lines.push(`#${b.rank}《${name}》${cat ? `(${cat})` : ''}${chg} 标签:${tags || '-'} 简介:${intro}`);
   }
-  
-  const sortedTags = Object.entries(tagStats).sort((a, b) => b[1] - a[1]);
-  const sortedGenders = Object.entries(genderStats).sort((a, b) => b[1] - a[1]);
-  const sortedChans = Object.entries(chanStats).sort((a, b) => b[1] - a[1]);
-  const newBooks = books.filter(b => b.rank_change === 'new');
-  const risingBooks = books.filter(b => typeof b.rank_change === 'number' && b.rank_change > 3);
-  const fallingBooks = books.filter(b => typeof b.rank_change === 'number' && b.rank_change < -3);
-  
-  let summary = `【${platformName}】(来源: ${data.source})\n`;
-  summary += `总计: ${books.length}本\n`;
-  const genderLine = sortedGenders.length > 0
-    ? sortedGenders.map(([g, c]) => `${g}${c}本(${Math.round(c/books.length*100)}%)`).join('、')
-    : sortedChans.map(([g, c]) => `${g}${c}本(${Math.round(c/books.length*100)}%)`).join('、');
-  if (genderLine) summary += `频道/大类分布: ${genderLine}\n`;
-  summary += `题材分布(Top8): ${sortedTags.slice(0, 8).map(([t, c]) => `${t}${c}本`).join('、')}\n`;
-  
-  // Top5 书目
-  summary += `Top5: ${books.slice(0, 5).map(b => `《${b.book_name}》(${b.primary_tag || '未分类'}, ${b.author})`).join('、')}\n`;
-  
-  // 新上榜
-  if (newBooks.length > 0) {
-    summary += `新上榜(${newBooks.length}本): ${newBooks.slice(0, 8).map(b => `《${b.book_name}》#${b.rank}(${b.primary_tag || ''})`).join('、')}\n`;
-  } else {
-    summary += `新上榜: 无（或首次运行）\n`;
-  }
-  
-  // 涨跌幅
-  if (risingBooks.length > 0) {
-    summary += `涨幅较大: ${risingBooks.slice(0, 5).map(b => `《${b.book_name}》↑${b.rank_change}`).join('、')}\n`;
-  }
-  if (fallingBooks.length > 0) {
-    summary += `跌幅较大: ${fallingBooks.slice(0, 5).map(b => `《${b.book_name}》↓${Math.abs(b.rank_change)}`).join('、')}\n`;
-  }
-  
-  // 连载/完结分布
-  const statusCounts = {};
-  books.forEach(b => { statusCounts[b.status || '未知'] = (statusCounts[b.status || '未知'] || 0) + 1; });
-  summary += `状态: ${Object.entries(statusCounts).map(([s, c]) => `${s}${c}本`).join('、')}\n`;
-  
-  return summary;
+  return lines.join('\n');
 }
+
+// 平台级 system prompt
+function platformSystemPrompt(p) {
+  return `你是一位资深网络文学题材分析师。你正在分析${PNAME[p.id]}的今日榜单，需要基于榜单里「每一本书」的素材做四维题材共性总结。
+
+【平台背景】${PLATFORM_PROFILE[p.id]}
+
+【今日榜单口径】${p.id === 'qimao' ? '榜单仅 20 本，样本很小：题材(大类)维几乎只有现代/古代言情，请把判断重心放到情节冲突/人设/CP 三维，题材维注明大类分布即可，禁止对 20 本样本做过度归纳。' : '榜单为完整 Top 榜（每本都列出），请全部纳入统计。'}
+
+【输出要求】${DIMENSION_GUIDE}
+
+输出必须是合法 JSON（不要 markdown 代码块标记），结构如下：
+{
+  "headline": "一句话主旋律总结",
+  "theme": "总结：…",
+  "conflict": "总结：…",
+  "characters": "总结：…",
+  "cp": "总结：…",
+  "new_entrants": "总结：今日新上榜N本…（无新上榜请写'总结：今日无新上榜'）",
+  "rising": "总结：快速上升作品…（无则写'总结：今日无明显快速上升'）"
+}`;
+}
+
+// 跨平台总结 system prompt
+const CROSS_SYSTEM_PROMPT = `你是一位资深网络文学题材分析师。以下是今日四个平台（晋江文学城/长佩文学/番茄小说/七猫小说）各自的 AI 四维题材总结。请横向对比后输出 JSON：
+{
+  "overall_summary": "总结：四平台题材整体图景的总括（150字内，纯归纳）",
+  "cross_platform_insights": "总结：四平台在题材/冲突/人设/CP 维度的相同点与差异点（200字内，纯归纳，禁止判断与预测）",
+  "notable_signals": ["今日值得记录的题材现象1（客观描述）", "…", "…"]
+}
+硬性要求：全部为客观归纳总结，禁止"说明/值得关注/或将"等判断预测语；notable_signals 每条只描述现象本身。输出合法 JSON。`;
 
 // ========== 主函数 ==========
 async function main() {
@@ -160,180 +213,129 @@ async function main() {
     process.exit(1);
   }
 
-  // 读取四站数据（与前端概览 PLATFORMS 对齐）
-  const platforms = [
-    { id: 'jjwxc',   name: '晋江文学城', file: 'latest.json' },
-    { id: 'changpei', name: '长佩文学',   file: 'latest.json' },
-    { id: 'fanqie',  name: '番茄小说',   file: 'latest.json' },
-    { id: 'qimao',   name: '七猫小说',   file: 'girl_hot.json' },
-  ];
-
-  const allData = {};
-  const summaries = [];
-
-  for (const p of platforms) {
-    const data = readJSON(path.join(DATA_DIR, p.id, p.file));
-    allData[p.id] = data;
-    summaries.push(buildDataSummary(p.name, data));
-    console.log(`  ${p.name}: ${data?.books?.length || 0} 本`);
-  }
-
-  // 构建 Prompt
   const today = fmtDate(now);
-  const dataBlock = summaries.join('\n\n');
 
-  const systemPrompt = `你是一位资深的网络文学行业分析师，对中国网文市场有深入了解。你熟悉晋江文学城、长佩文学、番茄小说、七猫小说四大平台的定位和用户画像差异：
-
-- **晋江文学城**：女性向原创文学社区，以纯爱(BL)、言情为主力品类，IP改编价值极高，用户以年轻女性为主，社区氛围浓厚。榜单是积分月榜（Top200）。
-- **长佩文学**：偏耽美向原创文学网站，标签体系为 15 个频道词（都市/架空/综合/青春/宫廷…）+ 大量人设/情感母题标签（竹马竹马、甜宠、破镜重圆…），用户偏好情感浓度高、人设鲜明的作品。
-- **番茄小说**：字节跳动旗下免费阅读平台，用户以下沉市场为主，年龄层较广，男女均衡，偏好快节奏、易入坑的内容，广告变现模式。榜单为女频最热榜。
-- **七猫小说**：免费阅读平台，女频大热榜每本书带官方两级题材：大类 major（现代言情/古代言情/幻想言情）+ 细分 minor（总裁豪门/宫闱宅斗/年代重生…），用户偏好豪门、宫斗等强戏剧冲突题材。
-
-请基于以下今日数据进行专业分析，输出格式为 JSON：
-{
-  "date": "${today}",
-  "overall_summary": "一段总括性分析（100-150字）",
-  "platforms": {
-    "jjwxc": {
-      "headline": "一句话概括今日晋江特点",
-      "analysis": "2-3段深度分析（200-300字），包含题材趋势、新上榜亮点、与平台用户画像的关联、潜在信号"
-    },
-    "changpei": {
-      "headline": "...",
-      "analysis": "..."
-    },
-    "fanqie": {
-      "headline": "...",
-      "analysis": "..."
-    },
-    "qimao": {
-      "headline": "...",
-      "analysis": "..."
-    }
-  },
-  "cross_platform_insights": "跨平台对比分析（150-200字），指出四站差异背后的市场逻辑",
-  "notable_signals": ["信号1", "信号2", "信号3"]
-}
-
-注意：
-1. 分析要有信息增量，不要泛泛而谈，要结合具体数据（题材占比、新上榜作品名等）
-2. 尝试解读数据背后的原因（为什么这个题材在这个平台火？用户需求是什么？）
-3. 如果某个题材或作品表现异常，给出可能的解释
-4. 七猫榜单只有 20 本，样本小，分析时注意不要过度归纳
-5. 输出必须是合法 JSON，不要包含 markdown 代码块标记`;
-
-  const userPrompt = `以下是${today}四个平台的Top榜单数据：\n\n${dataBlock}\n\n请进行深度分析并以JSON格式输出。`;
-
-  console.log('\n🤖 正在调用 AI 分析...');
-  
-  try {
-    const response = await callLLM([
-      { role: 'system', content: systemPrompt },
-      { role: 'user', content: userPrompt },
-    ]);
-
-    console.log('  ✓ AI 分析完成');
-
-    // 尝试解析 JSON
-    let analysis;
-    try {
-      // 清理可能的 markdown 代码块标记
-      let cleaned = response.trim();
-      if (cleaned.startsWith('```json')) cleaned = cleaned.slice(7);
-      if (cleaned.startsWith('```')) cleaned = cleaned.slice(3);
-      if (cleaned.endsWith('```')) cleaned = cleaned.slice(0, -3);
-      cleaned = cleaned.trim();
-      
-      analysis = JSON.parse(cleaned);
-    } catch(e) {
-      console.log('  [WARN] JSON 解析失败，保存原始文本');
-      analysis = {
-        date: today,
-        overall_summary: response.slice(0, 500),
-        platforms: {},
-        cross_platform_insights: '',
-        notable_signals: [],
-        raw_response: response,
-        parse_error: true,
-      };
-    }
-
-    // 添加元信息
-    analysis.generated_at = fmtDateTime(now);
-    analysis.model = LLM_MODEL;
-
-    // 保存
-    const analysisPath = path.join(DATA_DIR, 'analysis.json');
-    fs.writeFileSync(analysisPath, JSON.stringify(analysis, null, 2), 'utf-8');
-
-    // 也保存历史
-    const histDir = path.join(DATA_DIR, 'analysis_history');
-    if (!fs.existsSync(histDir)) fs.mkdirSync(histDir, { recursive: true });
-    fs.writeFileSync(path.join(histDir, `${today}.json`), JSON.stringify(analysis, null, 2), 'utf-8');
-
-    console.log(`\n${'='.repeat(60)}`);
-    console.log('🎉 分析完成！');
-    console.log(`  文件: ${analysisPath}`);
-    if (analysis.overall_summary) {
-      console.log(`\n📋 总览: ${analysis.overall_summary}`);
-    }
-    if (analysis.notable_signals?.length > 0) {
-      console.log(`\n🔔 关键信号:`);
-      analysis.notable_signals.forEach((s, i) => console.log(`  ${i+1}. ${s}`));
-    }
-
-  } catch(e) {
-    console.error('❌ AI 分析失败:', e.message);
-    
-    // 失败时生成一个降级版本（使用预置模板）
-    console.log('  降级为预置模板分析...');
-    const fallback = generateFallbackAnalysis(allData, today);
-    const analysisPath = path.join(DATA_DIR, 'analysis.json');
-    fs.writeFileSync(analysisPath, JSON.stringify(fallback, null, 2), 'utf-8');
-    console.log('  ✓ 降级分析已保存');
+  // 读取四站数据
+  const allData = {};
+  for (const p of PLATFORMS) {
+    allData[p.id] = readJSON(path.join(DATA_DIR, p.id, p.file));
+    console.log(`  ${p.name}: ${allData[p.id]?.books?.length || 0} 本`);
   }
-}
 
-// ========== 降级分析（预置模板，AI失败时使用） ==========
-function generateFallbackAnalysis(allData, today) {
   const result = {
     date: today,
-    overall_summary: '今日数据已更新，AI 分析暂时不可用，以下为自动统计摘要。',
+    overall_summary: '',
     platforms: {},
     cross_platform_insights: '',
     notable_signals: [],
-    fallback: true,
   };
 
-  const pNames = { jjwxc: '晋江文学城', changpei: '长佩文学', fanqie: '番茄小说', qimao: '七猫小说' };
-  
-  for (const [pid, pname] of Object.entries(pNames)) {
-    const data = allData[pid];
+  // === 逐平台调用（每平台一次，素材=逐本全量） ===
+  for (const p of PLATFORMS) {
+    const data = allData[p.id];
     if (!data?.books?.length) {
-      result.platforms[pid] = { headline: '暂无数据', analysis: '未获取到数据。' };
+      console.log(`  ⚠️ ${p.name} 无数据，跳过`);
       continue;
     }
-    
-    const tags = Object.entries(data.tag_stats || {}).sort((a, b) => b[1] - a[1]);
-    let genders = Object.entries(data.gender_stats || {}).sort((a, b) => b[1] - a[1]);
-    // 无 gender_stats 平台用 channel 兜底（长佩/七猫）
-    if (genders.length === 0) {
-      const cs = {};
-      for (const b of data.books) { const ch = (b.channel || '').trim(); if (ch) cs[ch] = (cs[ch] || 0) + 1; }
-      genders = Object.entries(cs).sort((a, b) => b[1] - a[1]);
+    const booksBlock = buildBooksBlock(data);
+    const userPrompt = `以下是${PNAME[p.id]}今日榜单 ${data.books.length} 本书的完整素材（排名/频道/涨跌/标签/简介）：\n\n${booksBlock}\n\n请按四维框架逐本统计共性，输出 JSON。`;
+
+    console.log(`\n🤖 分析 ${PNAME[p.id]} (素材 ${Math.round(booksBlock.length/1000)}k chars)...`);
+    try {
+      const response = await callLLM([
+        { role: 'system', content: platformSystemPrompt(p) },
+        { role: 'user', content: userPrompt },
+      ], 4000);
+      let parsed;
+      try {
+        parsed = extractJSON(response);
+      } catch(e) {
+        // 兼容模型直接输出字段对象（未套 platforms）
+        parsed = { platforms: {} };
+      }
+      // 平台对象可能在 parsed.platforms[p.id]，也可能模型直接给了字段对象
+      const pf = (parsed.platforms && typeof parsed.platforms === 'object' && parsed.platforms[p.id] && typeof parsed.platforms[p.id] === 'object')
+        ? parsed.platforms[p.id] : parsed;
+      result.platforms[p.id] = {
+        headline: String(pf.headline || '').trim(),
+        theme: String(pf.theme || '').trim(),
+        conflict: String(pf.conflict || '').trim(),
+        characters: String(pf.characters || '').trim(),
+        cp: String(pf.cp || '').trim(),
+        new_entrants: String(pf.new_entrants || '').trim(),
+        rising: String(pf.rising || '').trim(),
+      };
+      console.log(`  ✓ ${p.name} 完成 (headline: ${result.platforms[p.id].headline.slice(0, 50)})`);
+    } catch(e) {
+      console.warn(`  [WARN] ${p.name} AI 分析失败: ${e.message}`);
+      result.platforms[p.id] = fallbackPlatform(p.id, data);
+      console.log(`  → ${p.name} 降级为规则模板`);
     }
-    const newBooks = data.books.filter(b => b.rank_change === 'new');
-    
-    const topTag = tags[0]?.[0] || '未知';
-    const topPct = tags[0] ? Math.round(tags[0][1] / data.books.length * 100) : 0;
-    
-    result.platforms[pid] = {
-      headline: `${topTag}题材以${topPct}%领跑，${newBooks.length}部新作上榜`,
-      analysis: `${pname}今日榜单中，${genders.length ? genders.map(([g, c]) => `${g}${c}本`).join('、') + '。' : ''}题材方面，${tags.slice(0, 3).map(([t, c]) => `「${t}」${c}本`).join('、')}位列前三。${newBooks.length > 0 ? `新上榜${newBooks.length}部，包括${newBooks.slice(0, 3).map(b => `《${b.book_name}》(#${b.rank})`).join('、')}。` : '今日无新上榜变动。'}`,
-    };
   }
 
-  return result;
+  // === 跨平台总结（一次调用，喂四平台浓缩文本） ===
+  const okIds = Object.keys(result.platforms);
+  const crossInput = okIds.map(id => {
+    const pf = result.platforms[id];
+    const parts = [pf.headline, pf.theme, pf.conflict, pf.characters, pf.cp]
+      .filter(s => s).join(' | ');
+    return `【${PNAME[id]}】${(parts || '（无 AI 内容）').slice(0, 650)}`;
+  }).join('\n\n');
+
+  if (okIds.length >= 2 && crossInput) {
+    console.log('\n🤖 生成跨平台总结...');
+    try {
+      const response = await callLLM([
+        { role: 'system', content: CROSS_SYSTEM_PROMPT },
+        { role: 'user', content: `以下是今日四平台各自的题材四维总结：\n\n${crossInput}\n\n请横向对比输出 JSON。` },
+      ], 2500);
+      const parsed = extractJSON(response);
+      result.overall_summary = String(parsed.overall_summary || '').trim();
+      result.cross_platform_insights = String(parsed.cross_platform_insights || '').trim();
+      result.notable_signals = Array.isArray(parsed.notable_signals)
+        ? parsed.notable_signals.map(s => String(s)).filter(Boolean).slice(0, 5) : [];
+      console.log('  ✓ 跨平台总结完成');
+    } catch(e) {
+      console.warn(`  [WARN] 跨平台总结失败: ${e.message}`);
+      result.overall_summary = okIds.map(id => `${PNAME[id]}：${String(result.platforms[id].headline || '').slice(0, 60)}`).join('；');
+      result.cross_platform_insights = '总结：跨平台 AI 总结暂不可用，以上为各平台 headline 摘要。';
+    }
+  }
+
+  // === 元信息与保存 ===
+  result.generated_at = fmtDateTime(now);
+  result.model = LLM_MODEL;
+
+  const analysisPath = path.join(DATA_DIR, 'analysis.json');
+  fs.writeFileSync(analysisPath, JSON.stringify(result, null, 2), 'utf-8');
+
+  const histDir = path.join(DATA_DIR, 'analysis_history');
+  if (!fs.existsSync(histDir)) fs.mkdirSync(histDir, { recursive: true });
+  fs.writeFileSync(path.join(histDir, `${today}.json`), JSON.stringify(result, null, 2), 'utf-8');
+
+  console.log(`\n${'='.repeat(60)}`);
+  console.log('🎉 分析完成！');
+  console.log(`  文件: ${analysisPath}`);
+  console.log(`  平台覆盖: ${okIds.length}/4`);
+  if (result.overall_summary) console.log(`\n📋 总览: ${result.overall_summary}`);
+  if (result.notable_signals?.length) {
+    console.log(`\n🔔 现象:`);
+    result.notable_signals.forEach((s, i) => console.log(`  ${i+1}. ${s}`));
+  }
+}
+
+// ========== 单平台降级模板（AI 失败时使用；保留 headline+analysis 旧结构由前端兼容渲染） ==========
+function fallbackPlatform(pid, data) {
+  const tags = Object.entries(data.tag_stats || {}).sort((a, b) => b[1] - a[1]);
+  const newBooks = data.books.filter(b => b.rank_change === 'new');
+  const rising = data.books.filter(b => typeof b.rank_change === 'number' && b.rank_change > 15)
+    .sort((a, b) => b.rank_change - a.rank_change).slice(0, 3);
+  const topTag = tags[0]?.[0] || '未分类';
+  const topPct = tags[0] ? Math.round(tags[0][1] / data.books.length * 100) : 0;
+  return {
+    headline: `总结：${topTag}标签出现 ${tags[0]?.[1] || 0} 本（${topPct}%）居首，今日新上榜 ${newBooks.length} 本`,
+    analysis: `${PNAME[pid]}今日榜单共 ${data.books.length} 本；标签方面，${tags.slice(0, 3).map(([t, c]) => `「${t}」${c}本`).join('、')}位列前三。${newBooks.length > 0 ? `新上榜${newBooks.length}部：${newBooks.slice(0, 5).map(b => `《${b.book_name}》`).join('、')}。` : '今日无新上榜变动。'}${rising.length ? `上升较快：${rising.map(b => `《${b.book_name}》↑${b.rank_change}`).join('、')}。` : ''}`,
+  };
 }
 
 main().catch(e => {
