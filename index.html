@@ -3583,14 +3583,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">耽美·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
 
-          <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块） -->
-          <div id="trio-cp-purelove" data-trio-host></div>
+          <!-- 三栏题材下钻（trio-embed 挂载点；题材分布 chips 已移除，下接搜索栏） -->
+          <div id="trio-cp-purelove" data-trio-host style="margin:0 0 20px;"></div>
 
-          <div class="tag-stats-bar">
-            ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-              <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
-            `).join('')}
-          </div>
           <div class="filter-bar">
             <input class="search-input" type="text" placeholder="搜索..." id="search-changpei_purelove_bestseller" oninput="filterBooks('changpei_purelove_bestseller')">
             <select class="filter-select" id="tag-changpei_purelove_bestseller" onchange="filterBooks('changpei_purelove_bestseller')">
@@ -3612,14 +3607,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">耽美·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
 
-          <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块） -->
-          <div id="trio-cp-new" data-trio-host></div>
+          <!-- 三栏题材下钻（trio-embed 挂载点；题材分布 chips 已移除，下接搜索栏） -->
+          <div id="trio-cp-new" data-trio-host style="margin:0 0 20px;"></div>
 
-          <div class="tag-stats-bar">
-            ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-              <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
-            `).join('')}
-          </div>
           <div class="filter-bar">
             <input class="search-input" type="text" placeholder="搜索..." id="search-changpei_purelove_new" oninput="filterBooks('changpei_purelove_new')">
             <select class="filter-select" id="tag-changpei_purelove_new" onchange="filterBooks('changpei_purelove_new')">
@@ -3641,14 +3631,9 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">耽美·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
 
-          <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块） -->
-          <div id="trio-cp-completed" data-trio-host></div>
+          <!-- 三栏题材下钻（trio-embed 挂载点；题材分布 chips 已移除，下接搜索栏） -->
+          <div id="trio-cp-completed" data-trio-host style="margin:0 0 20px;"></div>
 
-          <div class="tag-stats-bar">
-            ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
-              <span class="tag-stat-item"><span class="tag-name">${tag}</span><span class="tag-count">${count}</span></span>
-            `).join('')}
-          </div>
           <div class="filter-bar">
             <input class="search-input" type="text" placeholder="搜索..." id="search-changpei_purelove_completed" oninput="filterBooks('changpei_purelove_completed')">
             <select class="filter-select" id="tag-changpei_purelove_completed" onchange="filterBooks('changpei_purelove_completed')">
