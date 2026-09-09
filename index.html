@@ -1402,7 +1402,7 @@
     }
     #summaryItems .summary-item .summary-scroll {
       overflow-y: auto;
-      flex: 0 0 auto;  /* 按内容自然高度、不收缩；超长时 overflow-y auto 滚动 */
+      flex: 1 1 auto;  /* 可收缩：卡高被 equalizeOverviewCards 限幅后，超长内容在卡内滚动（v4.1，与其余楼层一致） */
       min-height: 0;
     }
     /* 新上榜与题材分布的条目包裹层：让条目竖向排列 */
@@ -1728,7 +1728,7 @@ function equalizeOverviewCards() {
   const LAYERS = [
     { id: 'dashTopGrid',      cardSel: '.dash-card',           cap: 480 },
     { id: 'tagDistribution',  cardSel: '.tag-dist-card',       cap: 520 },
-    { id: 'summaryItems',     cardSel: '.summary-item',        cap: 460 },
+    { id: 'summaryItems',     cardSel: '.summary-item',        cap: 400 },  // 各站内容特点：AI 四维总结信息量大，锁半屏内（卡 400 + 标题≈40 ≤ ~470 @1080p），超出卡内滚动
     { id: 'newEntryGrid',     cardSel: '.new-entries-column',  cap: 560 },
   ];
   LAYERS.forEach(L => {
@@ -2033,17 +2033,9 @@ function renderPlatformSummary() {
     document.getElementById('crossPlatformText').textContent = cx(ai.cross_platform_insights);
   }
 
-  // === 等高对齐：同层 4 张平台卡取最高作为 minHeight 同步所有兄弟 ===
-  equalizeRowHeights(container);
-}
-
-function equalizeRowHeights(container) {
-  // 同层网格（summary-items 4 卡 1 行）取最高卡设给所有兄弟
-  const items = container.querySelectorAll('.summary-item');
-  if (items.length < 2) return;
-  let maxH = 0;
-  items.forEach(it => { maxH = Math.max(maxH, it.offsetHeight); });
-  if (maxH > 0) items.forEach(it => { it.style.minHeight = maxH + 'px'; });
+  // 注：第3层卡等高 + 超高卡内滚动统一交由 equalizeOverviewCards（renderDashboard rAF 触发，
+  //     cap 见 LAYERS.summaryItems），不再在此单独同步（旧 equalizeRowHeights 无 cap 用 minHeight，
+  //     会把超长卡撑到自然高、覆盖 v3 限幅 → 番茄 800px+ 整层爆高，v4.1 修复移除）。
 }
 
 // ========== 智能分析引擎 ==========
