@@ -74,7 +74,9 @@ function callLLM(messages, maxTokens = 4000) {
   return new Promise((resolve, reject) => {
     const body = { model: LLM_MODEL, messages, temperature: 0.7 };
     // MiMo 兼容 OpenAI 新字段（含 reasoning tokens 预算，给足防正文被挤占）
-    if (IS_MIMO) body.max_completion_tokens = 8192; // thinking 可能消耗数千 tokens，预算不足会 length 截断正文为空
+    // 2026-09-09c: 8192 → 16000。晋江 36k 素材实测 reasoning 可吃掉上万 token，
+    //   8192 预算下 finish_reason=length 且 content=""（正文被推理挤空 → 走降级模板）
+    if (IS_MIMO) body.max_completion_tokens = 16000;
     else body.max_tokens = maxTokens;
     const payload = JSON.stringify(body);
 
@@ -184,6 +186,8 @@ function platformSystemPrompt(p) {
 
 【输出要求】${DIMENSION_GUIDE}
 
+【重要：直接给结果，不要输出推理过程】禁止输出任何思考过程、推理草稿、中间统计或解释说明文字（如"首先/步骤1/我统计了…"）——你的输出必须且只能是那一个合法 JSON 对象本身，正文直接在 content 中返回，不要在 reasoning 中反复枚举每本书。
+
 输出必须是合法 JSON（不要 markdown 代码块标记），结构如下：
 {
   "headline": "一句话主旋律总结",
@@ -241,39 +245,57 @@ async function main() {
       console.log(`  ⚠️ ${p.name} 无数据，跳过`);
       continue;
     }
-    const booksBlock = buildBooksBlock(data);
-    const userPrompt = `以下是${PNAME[p.id]}今日榜单 ${data.books.length} 本书的完整素材（排名/频道/涨跌/标签/简介）：\n\n${booksBlock}\n\n请按四维框架逐本统计共性，输出 JSON。`;
+    // 素材两级备选：全长（140字简介）→ 超长或失败时压缩（60字简介）
+    // 2026-09-09c: 晋江 200 本全量素材 36k chars，mimo-v2.5-pro 推理过重会 length 截断正文为空。
+    //   超过 25k 直接首轮就用压缩素材；全长失败时再自动降级压缩素材重试 1 次。
+    const fullBlock = buildBooksBlock(data);
+    const compactBlock = buildBooksBlock(data, 60);
+    let candidates = fullBlock.length > 25000
+      ? [{ label: `压缩素材(${Math.round(compactBlock.length/1000)}k)`, block: compactBlock }]
+      : [{ label: `全长素材(${Math.round(fullBlock.length/1000)}k)`, block: fullBlock },
+         { label: `压缩素材(${Math.round(compactBlock.length/1000)}k)`, block: compactBlock }];
 
-    console.log(`\n🤖 分析 ${PNAME[p.id]} (素材 ${Math.round(booksBlock.length/1000)}k chars)...`);
-    try {
-      const response = await callLLM([
-        { role: 'system', content: platformSystemPrompt(p) },
-        { role: 'user', content: userPrompt },
-      ], 4000);
-      let parsed;
+    console.log(`\n🤖 分析 ${PNAME[p.id]} (素材 ${Math.round(fullBlock.length/1000)}k chars)...`);
+    let attemptMsg = '';
+    for (let ai = 0; ai < candidates.length; ai++) {
+      const cand = candidates[ai];
+      if (candidates.length > 1) console.log(`   尝试 ${ai+1}/${candidates.length}: ${cand.label}`);
+      const userPrompt = `以下是${PNAME[p.id]}今日榜单 ${data.books.length} 本书的完整素材（排名/频道/涨跌/标签/简介）：\n\n${cand.block}\n\n请按四维框架逐本统计共性，输出 JSON。`;
       try {
-        parsed = extractJSON(response);
+        const response = await callLLM([
+          { role: 'system', content: platformSystemPrompt(p) },
+          { role: 'user', content: userPrompt },
+        ], 4000);
+        let parsed;
+        try {
+          parsed = extractJSON(response);
+        } catch(e) {
+          // 兼容模型直接输出字段对象（未套 platforms）
+          parsed = { platforms: {} };
+        }
+        // 平台对象可能在 parsed.platforms[p.id]，也可能模型直接给了字段对象
+        const pf = (parsed.platforms && typeof parsed.platforms === 'object' && parsed.platforms[p.id] && typeof parsed.platforms[p.id] === 'object')
+          ? parsed.platforms[p.id] : parsed;
+        result.platforms[p.id] = {
+          headline: String(pf.headline || '').trim(),
+          theme: String(pf.theme || '').trim(),
+          conflict: String(pf.conflict || '').trim(),
+          characters: String(pf.characters || '').trim(),
+          cp: String(pf.cp || '').trim(),
+          new_entrants: String(pf.new_entrants || '').trim(),
+          rising: String(pf.rising || '').trim(),
+        };
+        console.log(`  ✓ ${p.name} 完成 (headline: ${result.platforms[p.id].headline.slice(0, 50)})`);
+        attemptMsg = '';
+        break;
       } catch(e) {
-        // 兼容模型直接输出字段对象（未套 platforms）
-        parsed = { platforms: {} };
+        attemptMsg = e.message;
+        console.warn(`  [WARN] ${p.name} ${cand.label} 尝试失败: ${e.message.slice(0, 120)}`);
       }
-      // 平台对象可能在 parsed.platforms[p.id]，也可能模型直接给了字段对象
-      const pf = (parsed.platforms && typeof parsed.platforms === 'object' && parsed.platforms[p.id] && typeof parsed.platforms[p.id] === 'object')
-        ? parsed.platforms[p.id] : parsed;
-      result.platforms[p.id] = {
-        headline: String(pf.headline || '').trim(),
-        theme: String(pf.theme || '').trim(),
-        conflict: String(pf.conflict || '').trim(),
-        characters: String(pf.characters || '').trim(),
-        cp: String(pf.cp || '').trim(),
-        new_entrants: String(pf.new_entrants || '').trim(),
-        rising: String(pf.rising || '').trim(),
-      };
-      console.log(`  ✓ ${p.name} 完成 (headline: ${result.platforms[p.id].headline.slice(0, 50)})`);
-    } catch(e) {
-      console.warn(`  [WARN] ${p.name} AI 分析失败: ${e.message}`);
+    }
+    if (!result.platforms[p.id]) {
       result.platforms[p.id] = fallbackPlatform(p.id, data);
-      console.log(`  → ${p.name} 降级为规则模板`);
+      console.log(`  → ${p.name} 降级为规则模板（${String(attemptMsg).slice(0, 100)}）`);
     }
   }
 
