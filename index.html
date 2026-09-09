@@ -3544,8 +3544,8 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
           }
         </div>
 
-        <!-- 细分题材：一级大题材占比 + 二级细分（7天趋势/蓝海题材已按 sherry 要求移除） -->
-        ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分题材' })}
+        <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块；sherry 2026-09-09 锁定） -->
+        <div id="trio-cp-all" data-trio-host></div>
       </div>
 
       <div class="filter-bar">
@@ -3583,7 +3583,8 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveBseller.source_url}" target="_blank" style="color:${platform.color};">耽美·畅销榜</a> · 共 ${pureloveBseller.total_count} 本</div>
 
-          ${subCategoryHTML(pureloveBseller.books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分题材' })}
+          <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块） -->
+          <div id="trio-cp-purelove" data-trio-host></div>
 
           <div class="tag-stats-bar">
             ${Object.entries(pureloveBseller.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
@@ -3611,7 +3612,8 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveNew.source_url}" target="_blank" style="color:${platform.color};">耽美·新书榜</a> · 共 ${pureloveNew.total_count} 本</div>
 
-          ${subCategoryHTML(pureloveNew.books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分题材' })}
+          <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块） -->
+          <div id="trio-cp-new" data-trio-host></div>
 
           <div class="tag-stats-bar">
             ${Object.entries(pureloveNew.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
@@ -3639,7 +3641,8 @@ async function renderChangpeiWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${pureloveCompleted.source_url}" target="_blank" style="color:${platform.color};">耽美·完结榜</a> · 共 ${pureloveCompleted.total_count} 本</div>
 
-          ${subCategoryHTML(pureloveCompleted.books, platform.id, { color: platform.color, maxL1: 6, maxL2: 4, label: '细分题材' })}
+          <!-- 三栏题材下钻（trio-embed 挂载点，替换原细分题材两级模块） -->
+          <div id="trio-cp-completed" data-trio-host></div>
 
           <div class="tag-stats-bar">
             ${Object.entries(pureloveCompleted.tag_stats || {}).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
@@ -3707,6 +3710,41 @@ _bookListObserver.observe(document.body, { childList: true, subtree: true });
 // 首次数据加载完成兜底
 window.addEventListener('load', () => setTimeout(alignBookItems, 400));
 setTimeout(alignBookItems, 1200);
+</script>
+
+<!-- ===== 长佩三栏题材下钻接入（trio-embed）：替换长佩 4 子榜「细分题材」模块 ===== -->
+<script src="data/trio-embed.js"></script>
+<script>
+(function () {
+  // 长佩 4 子榜挂载点 → 各自书级数据（数据现算，无需后端）
+  var CP_HOSTS = [
+    { id: 'trio-cp-all',       url: 'data/changpei/latest.json' },
+    { id: 'trio-cp-purelove',  url: 'data/changpei/purelove_bestseller.json' },
+    { id: 'trio-cp-new',       url: 'data/changpei/purelove_new.json' },
+    { id: 'trio-cp-completed', url: 'data/changpei/purelove_completed.json' }
+  ];
+  var CP_COLOR = '#6c5ce7', CP_H = 380;
+  function startWatch() {
+    if (typeof window.mountTrio !== 'function') { setTimeout(startWatch, 200); return; } // 等 embed 脚本
+    var iv = setInterval(function () {
+      // 长佩 tab 为懒渲染：挂载点未出现时必须保持轮询，不能提前停
+      var allDone = true;
+      CP_HOSTS.forEach(function (h) {
+        var el = document.getElementById(h.id);
+        if (!el) { allDone = false; return; }  // 尚未渲染 → 保持轮询
+        if (el.getAttribute('data-mounted')) return; // 已挂
+        allDone = false;
+        el.setAttribute('data-mounted', '1');   // 先占位防重入（mountTrio 异步）
+        window.mountTrio(el, { color: CP_COLOR, height: CP_H, booksUrl: h.url })
+          .catch(function (e) { console.log('trio mount fail', h.id, e); el.removeAttribute('data-mounted'); });
+      });
+      if (allDone) clearInterval(iv);
+    }, 300);
+    setTimeout(function () { clearInterval(iv); }, 120000); // 保险：2min 后停止轮询
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startWatch);
+  else startWatch();
+})();
 </script>
 
 </body>
