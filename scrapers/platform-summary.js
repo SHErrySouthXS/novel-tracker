@@ -1,17 +1,20 @@
 /**
- * 平台总榜 · 今日流行总结生成器（AI 版 · 晋江 / 七猫 / 番茄女频）
+ * 平台总榜 · 今日流行总结生成器（AI 版 · 晋江 / 七猫 / 番茄女频 / 长佩）
  *
- * 用法: node scrapers/platform-summary.js <jjwxc|qimao|fanqie>
+ * 用法: node scrapers/platform-summary.js <jjwxc|qimao|fanqie|changpei>
  *
- * 背景：晋江「积分月榜 Top200」、七猫「女频大热榜 Top20」、番茄「女频最热榜 Top200」的
- * 标签体系与长佩不同
- * （晋江只有 频道+年代+内容类型 标签、七猫每本仅 1 个一级题材标签），
- * 无法用 changpei-summary.js 那套"人设×情感"规则词典产出同款内容。
- * 故本脚本调用 LLM（默认通义千问 qwen-plus；可经 env 切小米 MiMo 等 OpenAI 兼容服务，
- *   复用 analyze.js 统一 LLM 管道：LLM_API_KEY / LLM_BASE_URL / LLM_MODEL）：
- *   读书名 + 全部标签 + 简介，按与长佩 banner 一致的三个维度输出：
- *     🎭 情感主旋律 / 💑 热门 CP 人设 / 📊 题材与结构
- * 输出 data/<platform>/summary.json（blocks[]，前端直接复用 summary-banner 版式）。
+ * 背景：四平台的「今日流行总结」横幅统一由此脚本生成（AI 归纳，mimo-v2.5-pro）。
+ * 原 changpei-summary.js 为纯规则词典（标签词频拼接+逐书点评），2026-09-09d 起长佩也切到
+ * 本 AI 管线，与晋江/七猫/番茄同一套 prompt，输出风格统一为「榜单整体归纳」。
+ *
+ * 内容规范（2026-09-09d 对标 analyze.js 四维"总结："逻辑）：
+ *   每条必须是"整体共性结论 + 数字占比"的归纳句，禁止罗列——
+ *   ✗ 错误示范：《xx》#3 穿书上位 / #4《跟踪日记》攻痛受也会痛 / 甜宠 23% · 温馨 6%…
+ *   ✓ 正确示范：穿书/重生类设定占比突出（穿越19%·重生16%），上位爽感是核心情绪供给
+ *   全书单最多 1 处《书名》作共性佐证；禁止逐条挂书名、禁列书单、禁单书点评。
+ *
+ * 输出 data/<platform>/summary.json（blocks[] 三段：🎭情感主旋律/💑热门CP人设/📊题材与结构，
+ * 前端直接复用 summary-banner 版式，栏目结构与版式不变，仅 lines 文案为整体归纳）。
  *
  * 降级：无 key / 网络失败 / 解析失败 → 生成 3 区 fallback（题材结构为真实统计，
  * 情感/CP 两区给占位说明），保证前端每天都有数据不空白。
@@ -31,6 +34,13 @@ const IS_MIMO = /mimo/i.test(LLM_MODEL); // MiMo 用 max_completion_tokens；thi
 
 // ========== 平台配置 ==========
 const PLATFORM_CONF = {
+  changpei: {
+    dir: path.join(__dirname, '..', 'data', 'changpei'),
+    file: 'latest.json',
+    name: '长佩文学',
+    ranking: '畅销榜 Top100',
+    note: '长佩是耽美/纯爱向原创站，频道词粗放（都市/架空/综合占大头，区分度低），真正的信号在 all_tags 情感母题与人设标签（破镜重圆/追妻火葬场/金丝雀/竹马/ABO/年下/强制爱…）与简介设定；请以 all_tags 高频母题与简介观感为准归纳',
+  },
   jjwxc: {
     dir: path.join(__dirname, '..', 'data', 'jjwxc'),
     file: 'latest.json',
@@ -120,7 +130,7 @@ function buildContext(conf, data) {
 function callLLM(messages) {
   return new Promise((resolve, reject) => {
     const body = { model: LLM_MODEL, messages, temperature: 0.4 };
-    if (IS_MIMO) body.max_completion_tokens = 8192; // mimo-v2.5-pro thinking 可能消耗数千 tokens；预算不足会 finish_reason=length 且正文为空，故给足
+    if (IS_MIMO) body.max_completion_tokens = 16000; // 2026-09-09d: 8192→16000（防推理挤空正文，同 analyze.js 教训）
     else body.max_tokens = 1600;
     const payload = JSON.stringify(body);
     const url = new URL(LLM_API_URL);
@@ -213,16 +223,17 @@ async function main() {
 要求输出三段式总结（与长佩总榜看板同款结构），仅输出合法 JSON，不要 markdown 代码块：
 {
   "blocks": [
-    { "id": "emotion", "title": "🎭 情感主旋律", "lines": ["2-5条，概括情感基调/叙事节奏主流（甜/虐/拉扯/爽感…）"] },
-    { "id": "cp", "title": "💑 热门 CP 人设", "lines": ["2-5条，概括流行的人物关系/人设组合，可点名头部书作证据"] },
-    { "id": "structure", "title": "📊 题材与结构", "lines": ["2-3条，题材底盘+连载/完结结构信号"] }
+    { "id": "emotion", "title": "🎭 情感主旋律", "lines": ["2-4条整体归纳：今日榜单的情感基调/叙事节奏主流（甜/虐/拉扯/爽感…），先共性结论后占比"] },
+    { "id": "cp", "title": "💑 热门 CP 人设", "lines": ["2-4条整体归纳：流行的人物关系/人设组合模式，先共性结论后占比"] },
+    { "id": "structure", "title": "📊 题材与结构", "lines": ["2-3条整体归纳：题材底盘+连载/完结结构信号"] }
   ]
 }
-行格式硬性要求：
-1. 每条一句话，≤40字，可带《书名》#排名 佐证（如「总裁豪门 55%：《封总，太太想跟你离婚很久了》#1」）
-2. 数量与占比只能引用我提供的统计，禁止编造任何数字或未出现的书名
-3. 标签用词与我提供的统计一致（禁用「纯爱」，一律用「耽美」）
-4. 三个维度都要给；某维度信息确实薄弱时，基于简介观感给 1-2 条印象式结论`;
+行格式硬性要求（对标榜单整体总结，严禁罗列）：
+1. 每条是「整体共性结论 + 数字/占比佐证」的归纳句（如"穿书重生设定活跃：穿越19%·重生16%构成上位爽感主力"），必须基于我提供的统计口径说话，读起来像人写的总结而非标签清单。
+2. 全书单只允许出现 1 处《书名》作共性佐证（证明该共性的头部代表，格式《书名》#排名）；禁止每条都挂书名、禁止列 2 本以上书单、禁止写成单书点评（如"《xx》#3穿书上位"这类逐书陈列必须改写为整体结论）。
+3. 数量与占比只能引用我提供的统计，禁止编造任何数字或未出现的书名。
+4. 标签用词与我提供的统计一致（禁用「纯爱」，一律用「耽美」）。
+5. 三个维度都要给；每条 1-2 句、≤80 字；某维度信息薄弱时给 1-2 条基于简介观感的印象式整体结论，不要硬凑书名。`;
     const userPrompt = `【${conf.name} · ${conf.ranking} · ${today}】
 总本数: ${ctx.total}
 标签词频: ${ctx.topTags}
@@ -250,7 +261,7 @@ ${ctx.topBooks}
       const cleaned = blocks.map(b => ({
         id: String(b.id || '').trim(),
         title: cx(String(b.title || '').trim()),
-        lines: (Array.isArray(b.lines) ? b.lines : []).map(cx).map(s => String(s).trim()).filter(s => s && s.length > 1 && s.length <= 60).slice(0, 6),
+        lines: (Array.isArray(b.lines) ? b.lines : []).map(cx).map(s => String(s).trim()).filter(s => s && s.length > 1 && s.length <= 90).slice(0, 6),
       })).filter(b => b.title && b.lines.length);
       if (!cleaned.length) throw new Error('清洗后无有效 block');
 
