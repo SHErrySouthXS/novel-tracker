@@ -76,7 +76,14 @@ function fmtDateTime(d) {
   return `${fmtDate(d)} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}:${String(d.getSeconds()).padStart(2, '0')}`;
 }
 function pct(n, total) { return total > 0 ? Math.round(n / total * 100) : 0; }
+// 输入侧清洗：统一标签口径（晋江官方「纯爱」频道 → 站内通用「耽美」）。仅用于喂给模型的统计数据/标签。
 function cx(s) { return (s || '').replace(/纯爱/g, '耽美'); }
+// 输出侧清洗：模型生成的文案原样保留，禁止做任何词义替换。
+//   2026-09-10 教训：曾误用 cx() 处理模型输出，导致番茄女频榜「满足读者对纯爱期待」
+//   （女频语境＝纯粹专一的爱情）被机械改成「耽美」（男男向），语义彻底错乱。
+function sanitizeOut(s) { return String(s || '').replace(/[\u0000-\u001f\u007f]/g, ' ').trim(); }
+// 含耽美（BL）内容的平台——只有这两家才需要「纯爱→耽美」口径统一
+const BL_PLATFORMS = new Set(['jjwxc', 'changpei']);
 function readJSON(fp) {
   try { return fs.existsSync(fp) ? JSON.parse(fs.readFileSync(fp, 'utf-8')) : null; } catch { return null; }
 }
@@ -247,7 +254,9 @@ async function main() {
 1. 每条是「整体共性结论 + 数字/占比佐证」的归纳句（如"穿书重生设定活跃：穿越19%·重生16%构成上位爽感主力"），读起来像人写的总结而非标签清单。
 2. 全书单只允许出现 1 处《书名》作共性佐证（证明该共性的头部代表，格式《书名》#排名）；禁止每条都挂书名、禁止列 2 本以上书单、禁止写成单书点评（如"《xx》#3穿书上位"这类逐书陈列必须改写为整体结论）。
 3. 数字占比必须来自对【全榜书目逐本素材】的统计或我给出的标签统计——两处口径不一致时以逐本素材为准；禁止编造素材里不存在的数字/标签/书名。
-4. 标签用词与我提供的统计一致（禁用「纯爱」，一律用「耽美」）。
+4. ${BL_PLATFORMS.has(platformId)
+      ? '标签用词与我提供的统计一致（禁用「纯爱」，一律用「耽美」）。'
+      : '【重要】本榜为女频言情榜，全文禁止出现「耽美」「纯爱」字样——那是男男向（BL）分类，与本榜无关；描述专一甜宠请用「双洁/1v1/专一」等女频用词。'}
 5. 三个维度都要给；每条 1-2 句、≤80 字；某维度信息薄弱时给 1-2 条基于全榜简介观感的印象式整体结论，不要硬凑书名。`;
     const userPrompt = `【${conf.name} · ${conf.ranking} · ${today}】
 总本数: ${ctx.total}
@@ -277,8 +286,8 @@ ${ctx.dist}
       if (!Array.isArray(blocks) || !blocks.length) throw new Error('模型未返回 blocks');
       const cleaned = blocks.map(b => ({
         id: String(b.id || '').trim(),
-        title: cx(String(b.title || '').trim()),
-        lines: (Array.isArray(b.lines) ? b.lines : []).map(cx).map(s => String(s).trim()).filter(s => s && s.length > 1 && s.length <= 90).slice(0, 6),
+        title: sanitizeOut(String(b.title || '').trim()),
+        lines: (Array.isArray(b.lines) ? b.lines : []).map(sanitizeOut).filter(s => s && s.length > 1 && s.length <= 90).slice(0, 6),
       })).filter(b => b.title && b.lines.length);
       if (!cleaned.length) throw new Error('清洗后无有效 block');
 
