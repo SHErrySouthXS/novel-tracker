@@ -6,3 +6,6 @@ data/*/debug_*.html
 
 # local research scratch (tag-study)
 tag-study/
+
+# local render scratch
+.cache/
