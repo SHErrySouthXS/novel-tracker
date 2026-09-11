@@ -2932,6 +2932,16 @@ async function loadHistoryData(platformId, date) {
 async function loadMonthlyHistory(dataKey, value, opts) {
   const listEl = document.getElementById(`bookList-${opts.targetId}`);
   if (!listEl) return;
+  // 可选：某些月度存档标签不全（如番茄巅峰榜历史月只落主分类）→ 三栏题材洞察仅对最新月份有效，
+  // 切到历史月份时整块隐藏，避免显示错月数据。
+  if (opts.insightId) {
+    const sec = document.getElementById(opts.insightId);
+    if (sec) {
+      const idx = (state.history && state.history[dataKey] && state.history[dataKey].index) || [];
+      // 下拉无空值档：选中月份 === 最新月份时显示，其余（历史月）隐藏
+      sec.style.display = (!value || value === idx[0]) ? '' : 'none';
+    }
+  }
   const render = (books) => opts.renderFn === 'peak'
     ? renderPeakBookList(books)
     : opts.renderFn === 'score'
@@ -3172,7 +3182,12 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
         : `
           <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${peakData.source_url}" target="_blank" style="color:${platform.color};">${peakData.source}</a> · 根据作品好评、人气、互动等综合得分排行 · 每月更新 · 共 ${peakBooks.length} 本</div>
 
-          ${subCategoryHTML(peakBooks, platform.id, { color: platform.color, maxL1: 6, maxL2: 3, label: '细分题材' })}
+          <!-- 题材洞察（三栏下钻：频道 tab + 主分类列表 + S/P 母题；替换原细分题材两级模块） -->
+          <!-- 仅对「最新月份」有效：历史存档标签不全（当初只落主分类），切历史月份时隐藏 -->
+          <div class="insight-section" id="peak-insight" style="margin-bottom:20px;">
+            <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
+            <div id="trio-fq-peak" data-trio-host></div>
+          </div>
 
           <div class="tag-stats-bar">
             ${Object.entries(peakTagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
@@ -3199,7 +3214,7 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
               <option value="完结">完结</option>
             </select>
             ${peakMonthIndex.length >= 1 ? `
-              <select class="filter-select" id="month-fanqie_peak" onchange="loadMonthlyHistory('fanqie_peak', this.value, {pathPrefix:'data/fanqie/peak_history', targetId:'fanqie_peak', renderFn:'peak'})">
+              <select class="filter-select" id="month-fanqie_peak" onchange="loadMonthlyHistory('fanqie_peak', this.value, {pathPrefix:'data/fanqie/peak_history', targetId:'fanqie_peak', renderFn:'peak', insightId:'peak-insight'})">
                 ${peakMonthIndex.map((m, i) => `<option value="${m}"${i === 0 ? ' selected' : ''}>${fmtMonthLabel(m)}</option>`).join('')}
               </select>
             ` : ''}
@@ -3708,7 +3723,9 @@ setTimeout(alignBookItems, 1200);
     { id: 'trio-jj-score',     url: 'data/jjwxc/score1000.json',              color: JJ, dict: 'data/jjwxc_motifs_v1.json' },
     { id: 'trio-jj-month',     url: 'data/jjwxc/latest.json',                 color: JJ, dict: 'data/jjwxc_motifs_v1.json' },
     // 番茄：taghit 模式（情感向 tab + 一级词 first-hit 列表），词典 24 L1 + 191 L2
-    { id: 'trio-fq-hot',       url: 'data/fanqie/latest.json',                color: FQ, dict: 'data/fanqie_motifs.json', nmWidth: 58, l1Label: '一级 · 题材' }
+    { id: 'trio-fq-hot',       url: 'data/fanqie/latest.json',                color: FQ, dict: 'data/fanqie_motifs.json', nmWidth: 58, l1Label: '一级 · 题材' },
+    // 番茄巅峰榜：男女频混合榜 → 频道 tab（gender 字段）+ 主分类列表（primary_tag 字段），词表同上
+    { id: 'trio-fq-peak',      url: 'data/fanqie/peak.json',                  color: FQ, dict: 'data/fanqie_peak_motifs.json', nmWidth: 58, l1Label: '频道 · 主分类' }
   ];
   // 幂等重扫：只挂还没挂过的挂载点。平台页/子榜都是懒渲染，任何时刻 DOM 里都可能出现新的挂载点。
   function scan() {

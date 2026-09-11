@@ -162,9 +162,11 @@
           l1Tabs: l1TabsCfg,
           l2Bars: d.l2Bars && d.l2Bars.field ? { field: d.l2Bars.field, mode: d.l2Bars.mode || "field" } : null,
           baseline: d.baseline || "global",
-          tabUnit: d.tabUnit || "频道",
+          // 空字符串是合法值（如巅峰榜「男频 20 本」不加后缀），不能用 || 兜底
+          tabUnit: d.tabUnit != null ? String(d.tabUnit) : "频道",
           barsNote: d.barsNote || "",
           defaultTab: d.defaultTab || null,
+          headLabel: d.headLabel || null,
           l1Bars: new Set(listL1),
           l1OrderAll: listL1
         };
@@ -306,7 +308,12 @@
       }
       themesByTab[t] = arr.sort((a, b) => b[1] - a[1]);
     }
-    return { mode: "tab", N: included, tabOrder, themesByTab, ctxN, ctxM, dict, tf, bf };
+    return {
+      mode: "tab", N: included, tabOrder, themesByTab, ctxN, ctxM, dict, tf, bf,
+      // 偏差基准：字段类词典（频道/主题）默认「频道内基线」；词典声明 baseline="global" 时对齐全站。
+      // 缺失时 paneNote/baseRowMap 会退化成「当前 tab 全部档」，故必须显式返回。
+      baseIsAll: dict.baseline === "global"
+    };
   }
 
   /* ---------- 聚合 C：标签命中 tab + 一级词 first-hit 列表（番茄） ----------
@@ -594,8 +601,9 @@
       const rows = A.themesByTab[tab] || [];
       // 赛道内无题材细分时列表只剩「其他」（等价于赛道全部），不再重复列一行
       const noSplit = A.exclusive && (rows.length === 0 || (rows.length === 1 && rows[0][0] === OTHER));
-      // 首行 = 「该赛道全部」档：互斥模式下直接显示赛道名（对齐 tab），不再叫「全部」
-      const headLabel = A.exclusive ? tab : TAB_ALL;
+      // 首行 = 「该 tab 全部」档：互斥赛道模式、或词典声明 headLabel="tab"（如巅峰榜频道轴）
+      // 时直接显示 tab 名（对齐上方按钮），不再叫「全部」——避免与「全部」tab 语义打架
+      const headLabel = (A.exclusive || A.dict.headLabel === "tab") ? tab : TAB_ALL;
       const listItems = [[TAB_ALL, denOf(K(tab, TAB_ALL)), headLabel]]
         .concat(noSplit ? [] : rows.map(([th, n]) => [th, n, th]));
       const maxC = Math.max.apply(null, listItems.map(x => x[1]).concat([1]));

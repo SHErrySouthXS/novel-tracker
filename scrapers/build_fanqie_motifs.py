@@ -136,6 +136,39 @@ dict_obj = {
 
 json.dump(dict_obj, open(OUT, "w"), ensure_ascii=False, indent=2)
 
+# --- 5. 巅峰榜变体词典：同一份词表，换轴 ---
+# 巅峰榜是全站「男女频混合」榜（2026-09 实测：男频 20 / 女频 10），书上的标签以男频分类
+# （都市高武 / 传统玄幻 / 玄幻脑洞 / 悬疑灵异 / 历史古代）为主，这些不在 08 女频分类池里。
+# 若沿用热榜的情感向赛道轴，28/30 本会塌进 BG 兜底、16 本列表落「其他」→ 轴失效。
+# 故一级轴改「频道」（书上的 gender 字段，榜单接口判定），列表行 = 平台主分类
+# （primary_tag 字段，平台唯一值 → 单值归位，零「其他」）。词表/维度与热榜逐字一致。
+PEAK_OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "fanqie_peak_motifs.json")
+peak_obj = {
+    "platform": "fanqie",
+    "version": "v2",
+    "variant": "peak",
+    "meta": {
+        "source": "词表同 fanqie_motifs.json（飞书 08_番茄分类池 tab，sheet bxYkwm）",
+        "generated_by": "scrapers/build_fanqie_motifs.py",
+        "L1_note": "频道轴：男频 / 女频（书上的 gender 字段，非标签命中）",
+        "note": "巅峰榜为男女频混合榜 → 一级轴 = 频道(gender)，列表 = 主分类(primary_tag，平台单值)；"
+                "母题词表与热榜完全一致。",
+    },
+    "l1Field": "tags0",
+    "l1Tabs": {"field": "gender", "label": "频道"},
+    "l2Bars": {"field": "primary_tag", "label": "主分类"},
+    "baseline": "global",
+    "tabUnit": "",
+    "headLabel": "tab",
+    "defaultDim": "题材背景",
+    "L1": [{"name": "男频"}, {"name": "女频"}],
+    "dims": dims,
+    "motifs": motifs,
+    "ignore": [],
+}
+json.dump(peak_obj, open(PEAK_OUT, "w"), ensure_ascii=False, indent=2)
+print(f"✅ {os.path.normpath(PEAK_OUT)}（巅峰榜变体：频道 → 主分类，词表 {len(motifs)} 词复用）")
+
 print(f"✅ {os.path.normpath(OUT)}")
 print(f"   L1 {len(L1_FINAL)} 词: {' '.join(L1_FINAL)}")
 print(f"   L2 {len(motifs)} 词 / {len(dims)} 维")

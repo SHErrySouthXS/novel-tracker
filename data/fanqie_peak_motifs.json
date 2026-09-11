@@ -1,0 +1,1038 @@
+{
+  "platform": "fanqie",
+  "version": "v2",
+  "variant": "peak",
+  "meta": {
+    "source": "词表同 fanqie_motifs.json（飞书 08_番茄分类池 tab，sheet bxYkwm）",
+    "generated_by": "scrapers/build_fanqie_motifs.py",
+    "L1_note": "频道轴：男频 / 女频（书上的 gender 字段，非标签命中）",
+    "note": "巅峰榜为男女频混合榜 → 一级轴 = 频道(gender)，列表 = 主分类(primary_tag，平台单值)；母题词表与热榜完全一致。"
+  },
+  "l1Field": "tags0",
+  "l1Tabs": {
+    "field": "gender",
+    "label": "频道"
+  },
+  "l2Bars": {
+    "field": "primary_tag",
+    "label": "主分类"
+  },
+  "baseline": "global",
+  "tabUnit": "",
+  "headLabel": "tab",
+  "defaultDim": "题材背景",
+  "L1": [
+    {
+      "name": "男频"
+    },
+    {
+      "name": "女频"
+    }
+  ],
+  "dims": [
+    {
+      "name": "题材背景",
+      "group": "S",
+      "subs": [
+        "现言",
+        "古代",
+        "民国",
+        "幻想",
+        "悬疑"
+      ]
+    },
+    {
+      "name": "情节走向",
+      "group": "S",
+      "subs": null
+    },
+    {
+      "name": "衍生创作",
+      "group": "S",
+      "subs": null
+    },
+    {
+      "name": "基调风格",
+      "group": "S",
+      "subs": null
+    },
+    {
+      "name": "结局标签",
+      "group": "S",
+      "subs": null
+    },
+    {
+      "name": "叙事结构",
+      "group": "S",
+      "subs": null
+    },
+    {
+      "name": "CP设定",
+      "group": "P",
+      "subs": null
+    },
+    {
+      "name": "人物设定",
+      "group": "P",
+      "subs": null
+    }
+  ],
+  "motifs": [
+    {
+      "name": "HE",
+      "dim": "结局标签",
+      "sub": null
+    },
+    {
+      "name": "虐文",
+      "dim": "结局标签",
+      "sub": null
+    },
+    {
+      "name": "甜宠",
+      "dim": "基调风格",
+      "sub": null
+    },
+    {
+      "name": "搞笑轻松",
+      "dim": "基调风格",
+      "sub": null
+    },
+    {
+      "name": "无脑爽",
+      "dim": "基调风格",
+      "sub": null
+    },
+    {
+      "name": "虐恋情深",
+      "dim": "基调风格",
+      "sub": null
+    },
+    {
+      "name": "现代言情",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "现代",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "都市",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "都市日常",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "都市生活",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "都市脑洞",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "都市高武",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "都市异能",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "总裁",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "豪门世家",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "大小姐",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "贵族",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "娱乐圈",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "明星",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "职场",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "职场商战",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "婚恋",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "家庭",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "电竞",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "游戏主播",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "医生",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "医术",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "毒医",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "律师",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "直播",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "钓鱼",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "发家致富",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "基建",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "厨娘",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "美食",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "乡村",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "家长里短",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "四合院",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "校园",
+      "dim": "题材背景",
+      "sub": "现言"
+    },
+    {
+      "name": "古代言情",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "古色古香",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "古代",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "历史",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "嫡女",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "古言权谋",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "仕途",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "科举",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "位尊权重",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "武侠",
+      "dim": "题材背景",
+      "sub": "古代"
+    },
+    {
+      "name": "民国",
+      "dim": "题材背景",
+      "sub": "民国"
+    },
+    {
+      "name": "谍战",
+      "dim": "题材背景",
+      "sub": "民国"
+    },
+    {
+      "name": "抗战谍战",
+      "dim": "题材背景",
+      "sub": "民国"
+    },
+    {
+      "name": "幻想言情",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "剑修",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "仙侠",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "东方仙侠",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "奇幻仙侠",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "玄幻",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "末世",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "天灾",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "囤物资",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "星际",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "赛博朋克",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "异世穿越",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "异世大陆",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "诸天万界",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "兽世",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "精灵",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "架空",
+      "dim": "题材背景",
+      "sub": "幻想"
+    },
+    {
+      "name": "悬疑",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "悬疑恋爱",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "悬疑灵异",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "悬疑推理",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "破案",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "推理",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "神探",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "盗墓",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "风水秘术",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "灵异",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "捉鬼",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "规则怪谈",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "无限流",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "惊悚游戏",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "副本",
+      "dim": "题材背景",
+      "sub": "悬疑"
+    },
+    {
+      "name": "穿越",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "魂穿",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "胎穿",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "群穿",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "古穿今",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "今穿古",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "清穿",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "重生",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "双重生",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "穿书",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "系统",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "空间",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "先婚后爱",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "契约婚姻",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "闪婚",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "隐婚",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "带球跑",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "破镜重圆",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "久别重逢",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "追妻火葬场",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "追妻",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "追夫",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "替身",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "代嫁代娶",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "男二上位",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "前世今生",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "相爱相杀",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "暗恋",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "一见钟情",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "日久生情",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "青梅竹马",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "双向奔赴",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "相互救赎",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "双向救赎",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "虐渣",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "打脸",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "扮猪吃虎",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "无敌",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "马甲",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "女扮男装",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "灵魂互换",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "养成",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "逃婚",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "逃荒",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "攻略反派",
+      "dim": "情节走向",
+      "sub": null
+    },
+    {
+      "name": "双洁",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "1v1",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "情有独钟",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "天作之合",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "年下",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "年龄差",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "强强",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "宠妻",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "宠夫",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "互宠",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "护短",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "团宠",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "独宠",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "忠犬",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "单女主",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "无女主",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "多女主",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "无后宫",
+      "dim": "CP设定",
+      "sub": null
+    },
+    {
+      "name": "女强",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "大佬",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "学霸",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "天才",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "全能",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "反派",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "黑化",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "病娇",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "腹黑",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "白切黑",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "双面",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "作精",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "戏精",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "可盐可甜",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "古灵精怪",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "冰山",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "萌宝",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "养崽",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "真假千金",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "王妃",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "皇后",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "公主",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "皇叔",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "将军",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "双学霸",
+      "dim": "人物设定",
+      "sub": null
+    },
+    {
+      "name": "第一人称",
+      "dim": "叙事结构",
+      "sub": null
+    },
+    {
+      "name": "群像",
+      "dim": "叙事结构",
+      "sub": null
+    },
+    {
+      "name": "同人",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "综漫",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "二次元",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "综影视",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "公版衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "红楼衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "西游衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "山海经",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "封神",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "甄嬛衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "如懿衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "十日衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "斩神衍生",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "影视小说",
+      "dim": "衍生创作",
+      "sub": null
+    },
+    {
+      "name": "国内影视",
+      "dim": "衍生创作",
+      "sub": null
+    }
+  ],
+  "ignore": []
+}

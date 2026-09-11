@@ -7,6 +7,10 @@
  *
  * 每本自带：book_id / book_name / author / category(单一主分类) / creation_status / thumb_url
  * 简介 + 多标签需逐本抓详情页补齐（30 本，秒级）。
+ * 标签口径：详情页 JSON-LD 的 genre 只吐一个主分类 → 完整标签走浏览器渲染取 DOM
+ *   （playwright-core + 本机 Chrome，不可用时静默降级，不影响月度任务）。
+ * 注意：巅峰榜是全站「男女频混合」榜（2026-09 为男频 20 / 女频 10），
+ *   与女频口径的 08 分类池不同源，前端三栏按「频道 → 主分类」呈现。
  *
  * 巅峰榜每月 1 号更新一次，本爬虫每月 2 号跑（保险起见）。
  *
@@ -138,6 +142,108 @@ function parseDetailPage(html) {
   return info;
 }
 
+// ========== 详情页完整标签（浏览器渲染） ==========
+// 番茄详情页 JSON-LD 的 genre 现在只吐一个主分类，抓不到完整标签；需渲染后从 DOM 取
+// （与 tag-study 语料同一口径）。依赖本机 Chrome；不可用时静默降级，不阻塞月度任务。
+function loadChromium() {
+  const cands = [
+    process.env.PW_MODULE,
+    'playwright',
+    'playwright-core',
+    path.join(process.env.HOME || '', '.workbuddy/binaries/node/workspace/node_modules/playwright-core'),
+  ].filter(Boolean);
+  for (const c of cands) { try { return require(c).chromium; } catch (e) {} }
+  return null;
+}
+function findChromeExe() {
+  const cands = [
+    process.env.CHROME_PATH,
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Chromium.app/Contents/MacOS/Chromium',
+    '/usr/bin/google-chrome',
+  ].filter(Boolean);
+  for (const c of cands) { try { if (fs.existsSync(c)) return c; } catch (e) {} }
+  return null;
+}
+const TAG_DENY = ['连载中', '已完结', '完结', '连载', '开始阅读', '下载', '免费', '最近更新'];
+
+async function fetchTagsViaBrowser(books) {
+  const chromium = loadChromium();
+  if (!chromium) { console.log('  ⚠️ playwright 不可用 → 跳过（保留 HTTP 路径标签）'); return; }
+  const exe = findChromeExe();
+  let browser;
+  try {
+    const opts = { headless: true, args: ['--disable-blink-features=AutomationControlled'] };
+    if (exe) opts.executablePath = exe;
+    browser = await chromium.launch(opts);
+  } catch (e) {
+    console.log(`  ⚠️ 浏览器启动失败（${String(e.message).slice(0, 50)}）→ 跳过`);
+    return;
+  }
+  let ok = 0;
+  try {
+    const ctx = await browser.newContext({
+      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+      locale: 'zh-CN',
+      viewport: { width: 1600, height: 900 },
+    });
+    await ctx.addInitScript(() => { Object.defineProperty(navigator, 'webdriver', { get: () => false }); });
+    const page = await ctx.newPage();
+    // 先过首页建会话（绕过 WAF）
+    await page.goto('https://fanqienovel.com/', { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
+    await sleep(1200);
+
+    for (let i = 0; i < books.length; i++) {
+      const b = books[i];
+      process.stdout.write(`  [${i + 1}/${books.length}] ${b.book_name} `);
+      let tags = [];
+      try {
+        await page.goto(`https://fanqienovel.com/page/${b.book_id}`, { waitUntil: 'domcontentloaded', timeout: 20000 });
+        await sleep(1000);
+        tags = await page.evaluate((deny) => {
+          const res = [];
+          const title = document.title.replace(/(完整版|全文|_番茄.*|_.*)/, '').trim();
+          const bad = t => !t || t.length > 8 || deny.indexOf(t) >= 0 || t.indexOf('万字') >= 0 || t.indexOf('番茄') >= 0;
+          const sels = ['.info-label .label-tag', '.book-info .tag', '.page-header-info .tag', '[class*="tag"]', '[class*="label"]'];
+          for (const sel of sels) {
+            document.querySelectorAll(sel).forEach(el => { const t = el.textContent.trim(); if (!bad(t)) res.push(t); });
+            if (res.length) break;
+          }
+          if (!res.length) {
+            const h1 = document.querySelector('h1');
+            if (h1) {
+              const tr = h1.getBoundingClientRect();
+              document.querySelectorAll('span,a').forEach(el => {
+                const rc = el.getBoundingClientRect();
+                if (rc.top > tr.bottom && rc.top < tr.bottom + 110 && rc.height < 40 && rc.width < 150 && rc.width > 20) {
+                  const t = el.textContent.trim();
+                  if (!bad(t)) res.push(t);
+                }
+              });
+            }
+          }
+          return [...new Set(res)].filter(t => t !== title);
+        }, TAG_DENY);
+      } catch (e) { /* 保留原标签 */ }
+
+      if (tags.length) {
+        const merged = [];
+        for (const t of [b.primary_tag, ...tags]) { if (t && merged.indexOf(t) < 0) merged.push(t); }
+        b.all_tags = merged;
+        b.secondary_tags = merged.filter(t => t !== b.primary_tag);
+        ok++;
+        console.log(`✓ ${merged.length} 个 [${merged.join(', ')}]`);
+      } else {
+        console.log('✗ (未取到 → 保留原标签)');
+      }
+      await sleep(700);
+    }
+  } finally {
+    await browser.close().catch(() => {});
+  }
+  console.log(`  → 补标签成功 ${ok}/${books.length} 本`);
+}
+
 // ========== 主函数 ==========
 async function main() {
   const now = getNowBJT();
@@ -227,6 +333,10 @@ async function main() {
 
     if (i < rawList.length - 1) await sleep(REQUEST_DELAY);
   }
+
+  // 2b) 浏览器渲染补完整标签（HTTP 只能拿到 JSON-LD 的单一 genre）
+  console.log('\n🌐 浏览器渲染补完整标签...');
+  await fetchTagsViaBrowser(books);
 
   // 3) 计算月度排名变化（与最近一个已存月份比对）
   console.log('\n📈 计算月度排名变化...');
