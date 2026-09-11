@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-09-12 05:26:25",
+  "update_time": "2026-09-12 07:25:11",
   "update_date": "2026-09-12",
   "total_count": 20,
   "source": "七猫小说·女生完结月榜",
@@ -16,15 +16,16 @@
     "年代重生": 1
   },
   "status_stats": {
-    "已完结": 20
+    "已完结": 19,
+    "连载中": 1
   },
   "keywords": [
     {
-      "word": "总裁",
-      "count": 9
+      "word": "重生",
+      "count": 11
     },
     {
-      "word": "重生",
+      "word": "总裁",
       "count": 9
     },
     {
@@ -72,6 +73,10 @@
       "count": 2
     },
     {
+      "word": "追妻",
+      "count": 2
+    },
+    {
       "word": "双强",
       "count": 1
     },
@@ -104,10 +109,6 @@
       "count": 1
     },
     {
-      "word": "追妻",
-      "count": 1
-    },
-    {
       "word": "追妻火葬场",
       "count": 1
     }
@@ -124,9 +125,25 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [],
+        "top_fallers": [
+          {
+            "title": "婚后上瘾",
+            "book_id": 1994117,
+            "rank_change": -1
+          },
+          {
+            "title": "大佬归来，假千金她不装了",
+            "book_id": 1699328,
+            "rank_change": -1
+          },
+          {
+            "title": "六年后，我携四个幼崽炸翻前夫家",
+            "book_id": 1658048,
+            "rank_change": -1
+          }
+        ],
         "heat_leaders": [],
-        "summary": "**题材趋势**：破镜重圆、先婚后爱与萌宝回归仍是核心驱动力，融合玄学、大女主打脸等元素成为提升竞争力的标配。\n**读者偏好**：读者倾向于“强强联合”与“身份反转”的爽点，尤其钟情于禁欲系大佬与清醒女主的情感博弈。\n**变动解读**：本期榜单稳定性极高，头部作品热度壁垒稳固，缺乏新晋黑马冲击，市场进入存量精细化竞争阶段。\n**值得关注**：兼具短剧化改编属性与强情绪冲突的现实向言情，依然是流量转化的关键锚点。",
+        "summary": "**题材趋势**：榜单结构高度固化，以“破镜重圆”、“带球跑”及“先婚后爱”为核心驱动力，短剧改编作品在维持长尾热度上表现优异。\n**读者偏好**：读者倾向于高张力的情感冲突，如“失控”、“蓄谋已久”等带有强情绪价值的设定，以及具备“打脸”、“逆袭”元素的爽文架构。\n**变动解读**：本期榜单缺乏新鲜血液注入，头部书籍热度溢出效应明显，中后部书籍因缺乏新增长点，呈现整体性的排名顺延下滑。\n**值得关注**：高热度书籍多带有“短剧原著”标签，说明IP联动对提升完结月榜的留存热度具有显著加持作用。",
         "ai_source": "ai"
       },
       "books": [
@@ -160,7 +177,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 5,
+          "rank": 6,
           "title": "婚后上瘾",
           "book_id": 1994117,
           "url": "https://www.qimao.com/shuku/1994117/",
@@ -181,7 +198,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/772/2315755_360x480.jpg?time=1768286147",
           "latest_chapter": " 第633章  全剧终✿ヽ(°▽°)ノ✿",
           "updated_at": "2026-03-05 07:01:09",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
@@ -189,7 +206,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 6,
+          "rank": 7,
           "title": "大佬归来，假千金她不装了",
           "book_id": 1699328,
           "url": "https://www.qimao.com/shuku/1699328/",
@@ -210,7 +227,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/410/1229482_360x480.jpg?time=1683772413",
           "latest_chapter": " 第1284章  番外：大婚（完）",
           "updated_at": "2025-02-07 02:05:33",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
@@ -218,7 +235,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 8,
+          "rank": 9,
           "title": "六年后，我携四个幼崽炸翻前夫家",
           "book_id": 1658048,
           "url": "https://www.qimao.com/shuku/1658048/",
@@ -239,7 +256,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/92/275615_1659923211_360x480.jpg",
           "latest_chapter": " 第3020章  我都能给你",
           "updated_at": "2026-02-13 22:05:28",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -247,7 +264,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 13,
+          "rank": 14,
           "title": "皑如山上雪",
           "book_id": 2053898,
           "url": "https://www.qimao.com/shuku/2053898/",
@@ -268,7 +285,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/861/2580857_360x480.jpg?time=1779267111",
           "latest_chapter": " 第398章  ——津晚大结局（下）",
           "updated_at": "2026-04-22 18:18:05",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -276,7 +293,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 15,
+          "rank": 16,
           "title": "惯坏她",
           "book_id": 10034568,
           "url": "https://www.qimao.com/shuku/10034568/",
@@ -297,7 +314,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3345/10034568_360x480.jpg?time=1776046465",
           "latest_chapter": " 第290章  冰山会为你哗然（完）",
           "updated_at": "2026-07-01 08:01:07",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -305,7 +322,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 16,
+          "rank": 17,
           "title": "逃婚三年，江少的花心人设崩了",
           "book_id": 1839513,
           "url": "https://www.qimao.com/shuku/1839513/",
@@ -326,7 +343,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/550/1649331_360x480.jpg?time=1717642444",
           "latest_chapter": " 第267章  全文终",
           "updated_at": "2024-09-30 15:24:03",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
@@ -334,7 +351,7 @@
           "category": "总裁豪门"
         },
         {
-          "rank": 19,
+          "rank": 20,
           "title": "玄学小祖宗：叼奶瓶算命全家宠",
           "book_id": 1764909,
           "url": "https://www.qimao.com/shuku/1764909/",
@@ -355,7 +372,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/475/1424722_360x480.jpg?time=1700531982",
           "latest_chapter": " 第509章  番外——道侣大典（完）",
           "updated_at": "2024-09-02 22:01:10",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -368,16 +385,43 @@
       "name": "宫闱宅斗",
       "major": "古代言情",
       "count": 6,
-      "total_heat": 45002000,
+      "total_heat": 52574000,
       "trend": {
-        "new_count": 0,
-        "dropped_count": 0,
-        "new_books": [],
-        "dropped_books": [],
+        "new_count": 1,
+        "dropped_count": 1,
+        "new_books": [
+          {
+            "title": "被逼自刎，嫡女重生撕婚书覆皇朝",
+            "book_id": 2074363
+          }
+        ],
+        "dropped_books": [
+          {
+            "title": "一枕春深",
+            "book_id": 11512461,
+            "intro": "沈姝为了活命去做了留种娘子，给一位病重的神秘贵人留下血脉。数年后，她带着软萌萌的小女儿重返京城，入了凛王府做奶娘。只是这凛王看她的眼神越来越不对劲，吻她的腰，进她的房，最后还逼她承认宝儿是他的女儿……"
+          }
+        ],
         "top_risers": [],
-        "top_fallers": [],
+        "top_fallers": [
+          {
+            "title": "随母改嫁旺新家，重生嫡女嘎嘎乱杀",
+            "book_id": 2019227,
+            "rank_change": -1
+          },
+          {
+            "title": "解春衫",
+            "book_id": 2065888,
+            "rank_change": -1
+          },
+          {
+            "title": "第一凤女",
+            "book_id": 1803136,
+            "rank_change": -1
+          }
+        ],
         "heat_leaders": [],
-        "summary": "**题材趋势**：重生复仇与“对照组”爽文模式占据主流，结合权谋斗争的大女主叙事是当前市场的核心卖点。\n**读者偏好**：读者偏好“杀伐果断”的成长型女主，对幼崽萌宠助攻、逆袭翻盘的剧情有极高粘性。\n**变动解读**：榜单格局趋于固化，头部作品凭借影视化联动及高辨识度的剧情钩子，实现了热度长期留存。\n**值得关注**：具备强网剧改编潜力、叙事节奏轻快且带有反套路元素的宅斗作品，更能获得市场青睐。",
+        "summary": "**题材趋势**：重生复仇与大女主权谋是绝对主导，强调从卑微弃子到翻盘掌权的爽感逻辑，且融合了“玄学”、“养崽”等轻快元素。\n**读者偏好**：读者对“全家火葬场”、“虐渣追妻”等强情绪反转有极高偏好，偏爱节奏明快、爽感密集的复仇爽文。\n**变动解读**：《被逼自刎，嫡女重生撕婚书覆皇朝》强势入榜并占据高位，证明了“双重生+追妻火葬场”题材仍具备极强的市场吸睛能力。\n**值得关注**：榜单末位流动性较强，题材需在传统宅斗基础上叠加差异化设定（如捡破烂的团宠崽）才能保持竞争力。",
         "ai_source": "ai"
       },
       "books": [
@@ -412,6 +456,35 @@
         },
         {
           "rank": 3,
+          "title": "被逼自刎，嫡女重生撕婚书覆皇朝",
+          "book_id": 2074363,
+          "url": "https://www.qimao.com/shuku/2074363/",
+          "author": "柠檬小丸子",
+          "author_url": "https://www.qimao.com/zuozhe/%E6%9F%A0%E6%AA%AC%E5%B0%8F%E4%B8%B8%E5%AD%90_14/",
+          "major": "古代言情",
+          "minor": "宫闱宅斗",
+          "major_id": 2,
+          "minor_id": 209,
+          "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "175.38万字",
+          "word_count": 1753800,
+          "heat": 10667000,
+          "platform_trend": "drop",
+          "badge": "最新上榜",
+          "intro": "【虐渣+追妻+1VS1双洁+女主男配双重生+全家火葬场】\n   帝病危，宫中无皇子。\n   她虞知宁嫁靖王世子裴衡三年，琴瑟和鸣，是太后秘密养在在外的女儿。\n   太后心疼女儿，扶裴衡上位。\n   册封前，虞知宁被靖王府以祈福之名诓骗去寺里上香，半路被掳，鞭挞三日，受尽屈辱后，被劫匪扔在城门口，闹得满城皆知。\n   为保颜面，裴衡不查真相，反逼她自刎，连同腹中孩儿一尸两命。\n \n    断气前堂妹巧笑嫣然的告诉她劫匪不是劫匪，而是家族为堂妹上位找人假扮，夺她性命，踩着她尸骨，让堂妹占有了原本属于她的全部。\n    而这一切，还有裴衡的纵容！\n    \n    虞知宁含恨而死，携怨重生回及笄前一天\n    她抛绣球改嫁纨绔璟王世子裴玄。\n    全京城都在等着看笑话\n    可后来裴玄做了太子，她做了太子妃\n    \n    数日后裴衡造反失败，靖王府全族被抄，囚车路过她身边时，裴衡赤红眼跪在她脚下求原谅：“阿宁，你该嫁我的！”",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/896/2686789_360x480.jpg?time=1761327901",
+          "latest_chapter": " 第770章  挨罚",
+          "updated_at": "2026-09-11 22:41:06",
+          "rank_change": 0,
+          "heat_change": 0,
+          "is_new": true,
+          "boards_count": 5,
+          "stale_update": false,
+          "category": "宫闱宅斗"
+        },
+        {
+          "rank": 4,
           "title": "随母改嫁旺新家，重生嫡女嘎嘎乱杀",
           "book_id": 2019227,
           "url": "https://www.qimao.com/shuku/2019227/",
@@ -432,7 +505,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/801/2400937_360x480.jpg?time=1753811344",
           "latest_chapter": " 第493章  番外：是一见倾心，也是非你不可的坚定",
           "updated_at": "2026-02-08 23:58:06",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
@@ -440,7 +513,7 @@
           "category": "宫闱宅斗"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "title": "解春衫",
           "book_id": 2065888,
           "url": "https://www.qimao.com/shuku/2065888/",
@@ -461,7 +534,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/888/2661154_360x480.jpg?time=1761644493",
           "latest_chapter": " 第762章  夫因妻显",
           "updated_at": "2026-08-19 08:02:20",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
@@ -469,7 +542,7 @@
           "category": "宫闱宅斗"
         },
         {
-          "rank": 9,
+          "rank": 10,
           "title": "第一凤女",
           "book_id": 1803136,
           "url": "https://www.qimao.com/shuku/1803136/",
@@ -490,7 +563,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/504/1510567_360x480.jpg?time=1728714692",
           "latest_chapter": " 第1130章  番外：如果有来生（全书完）",
           "updated_at": "2025-08-31 14:41:10",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -498,7 +571,7 @@
           "category": "宫闱宅斗"
         },
         {
-          "rank": 14,
+          "rank": 15,
           "title": "王府里来了个捡破烂的崽崽",
           "book_id": 2061856,
           "url": "https://www.qimao.com/shuku/2061856/",
@@ -519,40 +592,11 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/874/2619633_360x480.jpg?time=1763973880",
           "latest_chapter": " 第946章  回家喽",
           "updated_at": "2026-07-16 23:27:07",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
           "stale_update": true,
-          "category": "宫闱宅斗"
-        },
-        {
-          "rank": 20,
-          "title": "一枕春深",
-          "book_id": 11512461,
-          "url": "https://www.qimao.com/shuku/11512461/",
-          "author": "晨露嫣然",
-          "author_url": "https://www.qimao.com/zuozhe/%E6%99%A8%E9%9C%B2%E5%AB%A3%E7%84%B6_14/",
-          "major": "古代言情",
-          "minor": "宫闱宅斗",
-          "major_id": 2,
-          "minor_id": 209,
-          "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
-          "status": "已完结",
-          "word_count_text": "72.17万字",
-          "word_count": 721700,
-          "heat": 3095000,
-          "platform_trend": "rise",
-          "badge": "飙升10名",
-          "intro": "沈姝为了活命去做了留种娘子，给一位病重的神秘贵人留下血脉。数年后，她带着软萌萌的小女儿重返京城，入了凛王府做奶娘。只是这凛王看她的眼神越来越不对劲，吻她的腰，进她的房，最后还逼她承认宝儿是他的女儿……她曾发誓此生再不为奴，于是让她骑于肩头，做他的主人。从此后她在上，他在下。她要吻，他便温柔送上。",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3838/11512461_360x480.jpg?time=1776072488",
-          "latest_chapter": " 第339章  尾声:那年春",
-          "updated_at": "2026-09-10 09:02:09",
-          "rank_change": 0,
-          "heat_change": 0,
-          "is_new": false,
-          "boards_count": 1,
-          "stale_update": false,
           "category": "宫闱宅斗"
         }
       ]
@@ -568,14 +612,30 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [],
+        "top_fallers": [
+          {
+            "title": "第一瞳术师",
+            "book_id": 215243,
+            "rank_change": -1
+          },
+          {
+            "title": "柔弱医修今天也在背地里暴打魔尊",
+            "book_id": 1981956,
+            "rank_change": -1
+          },
+          {
+            "title": "我团宠小师妹，嚣张点怎么了",
+            "book_id": 1764505,
+            "rank_change": -1
+          }
+        ],
         "heat_leaders": [],
-        "summary": "**题材趋势**：大女主修仙与群像文成为趋势，重生、废材流搭配“团宠”设定，构成了女性向玄幻的核心框架。\n**读者偏好**：读者热衷于反叛传统师徒关系及虐渣打脸的爽感，对“扮猪吃虎”与气运掠夺类设定表现出浓厚兴趣。\n**变动解读**：榜单呈现高度稳定的头部效应，缺乏新鲜题材注入，市场对成熟的爽文逻辑依赖度较高。\n**值得关注**：能够利用明星效应或跨平台口碑传播的群像文，在粉丝经济驱动下展现出显著的转化价值。",
+        "summary": "**题材趋势**：仙侠频道呈现明显的“群像化”与“反套路”趋势，强调师徒关系重构及废材流逆袭，注重爽感与情感羁绊的平衡。\n**读者偏好**：读者热衷于“打脸”与“团宠”设定，尤其是带有“卷王”与“咸鱼”反差对照组的作品，在互动中更容易引发共鸣。\n**变动解读**：榜单处于平稳调整期，缺乏新进作品冲击，现有头部作品热度相对集中，后续作品因缺乏强力话题支撑，整体排名被动微调。\n**值得关注**：出版联动与头部综艺背书（如《奔跑吧》等同款推荐）对提升仙侠类书籍的破圈传播力具有明显拉动作用。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 7,
+          "rank": 8,
           "title": "第一瞳术师",
           "book_id": 215243,
           "url": "https://www.qimao.com/shuku/215243/",
@@ -596,7 +656,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/73/216077_360x480.jpg?time=1638352861",
           "latest_chapter": " 第1903章  婚后番外（下）",
           "updated_at": "2025-11-11 17:12:29",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
@@ -604,7 +664,7 @@
           "category": "玄幻仙侠"
         },
         {
-          "rank": 10,
+          "rank": 11,
           "title": "柔弱医修今天也在背地里暴打魔尊",
           "book_id": 1981956,
           "url": "https://www.qimao.com/shuku/1981956/",
@@ -625,7 +685,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/754/2260672_360x480.jpg?time=1745544770",
           "latest_chapter": " 第767章  番外",
           "updated_at": "2026-08-05 22:21:07",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -633,7 +693,7 @@
           "category": "玄幻仙侠"
         },
         {
-          "rank": 12,
+          "rank": 13,
           "title": "我团宠小师妹，嚣张点怎么了",
           "book_id": 1764505,
           "url": "https://www.qimao.com/shuku/1764505/",
@@ -654,7 +714,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/478/1432610_360x480.jpg?time=1704683308",
           "latest_chapter": " 第1329章  番外九：魔与龙（完）全文完",
           "updated_at": "2025-09-01 23:57:12",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
@@ -662,7 +722,7 @@
           "category": "玄幻仙侠"
         },
         {
-          "rank": 17,
+          "rank": 18,
           "title": "重回拜师日，偏心师尊靠边站",
           "book_id": 1943722,
           "url": "https://www.qimao.com/shuku/1943722/",
@@ -683,7 +743,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/675/2022677_360x480.jpg?time=1744704209",
           "latest_chapter": " 第924章  幸得友人，幸得彼此（全文完）",
           "updated_at": "2026-07-06 00:01:08",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
@@ -703,14 +763,20 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [],
+        "top_fallers": [
+          {
+            "title": "阴当",
+            "book_id": 1979356,
+            "rank_change": -1
+          }
+        ],
         "heat_leaders": [],
-        "summary": "**题材趋势**：民俗悬疑与宿命感叙事在女性向市场表现稳健，带有“特殊命格”与“祭祀献祭”元素的奇幻故事具备较强的长尾效应。\n**读者偏好**：读者倾向于带有宿命论色彩、沉浸感强的诡秘叙事，主角在压抑环境下的成长与掌权过程是核心爽点。\n**变动解读**：本期榜单结构高度稳固，该题材目前处于存量深耕阶段，缺乏强力新作冲击，头部作品依靠高粘性读者维持热度。\n**值得关注**：需密切关注此类作品如何平衡“恐怖氛围”与“女性情感需求”，在保持民俗诡异感的同时，增强故事的情绪张力。",
+        "summary": "**题材趋势**：民俗悬疑与奇异命格元素依然是都市奇幻类别的核心驱动力，具有较强的长尾效应。\n**读者偏好**：读者倾向于带有宿命感、古老职业背景及强冲突开局的叙事风格，对“当铺”、“祭品”等中式民俗符号有较高粘性。\n**变动解读**：本期该细分赛道整体平稳，仅有一本头部作品在榜，排名微降显示其处于生命周期的末端流量平稳期。\n**值得关注**：在缺乏新作冲击的情况下，建议关注此类题材如何通过续作或题材融合实现热度回升。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 11,
+          "rank": 12,
           "title": "阴当",
           "book_id": 1979356,
           "url": "https://www.qimao.com/shuku/1979356/",
@@ -731,7 +797,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/748/2242515_360x480.jpg?time=1778636494",
           "latest_chapter": " 第1010章  阿熏，嫁给我",
           "updated_at": "2026-07-19 00:07:14",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -751,14 +817,20 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [],
+        "top_fallers": [
+          {
+            "title": "七零，易孕娇妻被绝嗣京少宠哭了",
+            "book_id": 1866390,
+            "rank_change": -1
+          }
+        ],
         "heat_leaders": [],
-        "summary": "**题材趋势**：年代文已演变为“强人设+强冲突”的组合，通过“重生+换嫁”等极致反差开局，迅速建立读者的阅读期待。\n**读者偏好**：读者热衷于“绝嗣军官”与“好孕娇妻”这种反差鲜明的CP设定，通过先婚后爱的甜宠互动满足情感消费需求。\n**变动解读**：榜单保持静默状态，反映出该赛道已进入成熟期，题材红利主要由头部精品把控，市场准入门槛随之提高。\n**值得关注**：建议关注如何通过极致的身份反差（如残疾/绝嗣vs权势）来拉动故事的戏剧冲突，同时保持年代背景下的甜宠叙事节奏。",
+        "summary": "**题材趋势**：年代文赛道高度聚焦于“重生+换嫁+极品宠溺”的强情绪爽点逻辑，是目前女性向市场的成熟品类。\n**读者偏好**：读者热衷于“绝嗣硬汉”与“好孕娇妻”的极致人设反差，以及通过重生弥补前世遗憾的复仇/逆袭爽感。\n**变动解读**：该作品作为唯一上榜书籍，排名微调属于完结后的自然流量回落，体现了该类题材稳健的市场底盘。\n**值得关注**：此类题材已进入存量竞争阶段，后续创作需在人设冲突与爽点铺设上寻求差异化更新。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 18,
+          "rank": 19,
           "title": "七零，易孕娇妻被绝嗣京少宠哭了",
           "book_id": 1866390,
           "url": "https://www.qimao.com/shuku/1866390/",
@@ -779,7 +851,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/595/1784376_360x480.jpg?time=1726332415",
           "latest_chapter": " 第707章  大结局（完）",
           "updated_at": "2026-04-03 14:06:07",
-          "rank_change": 0,
+          "rank_change": -1,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -878,6 +950,49 @@
     },
     {
       "rank": 3,
+      "book_name": "被逼自刎，嫡女重生撕婚书覆皇朝",
+      "book_url": "https://www.qimao.com/shuku/2074363/",
+      "author": "柠檬小丸子",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%9F%A0%E6%AA%AC%E5%B0%8F%E4%B8%B8%E5%AD%90_14/",
+      "channel": "古代言情",
+      "major": "古代言情",
+      "major_id": 2,
+      "category": "宫闱宅斗",
+      "minor": "宫闱宅斗",
+      "minor_id": 209,
+      "primary_tag": "古代言情",
+      "tags": [
+        "古代言情",
+        "宫闱宅斗"
+      ],
+      "all_tags": [
+        "古代言情",
+        "宫闱宅斗"
+      ],
+      "abstract": "【虐渣+追妻+1VS1双洁+女主男配双重生+全家火葬场】\n   帝病危，宫中无皇子。\n   她虞知宁嫁靖王世子裴衡三年，琴瑟和鸣，是太后秘密养在在外的女儿。\n   太后心疼女儿，扶裴衡上位。\n   册封前，虞知宁被靖王府以祈福之名诓骗去寺里上香，半路被掳，鞭挞三日，受尽屈辱后，被劫匪扔在城门口，闹得满城皆知。\n   为保颜面，裴衡不查真相，反逼她自刎，连同腹中孩儿一尸两命。\n \n    断气前堂妹巧笑嫣然的告诉她劫匪不是劫匪，而是家族为堂妹上位找人假扮，夺她性命，踩着她尸骨，让堂妹占有了原本属于她的全部。\n    而这一切，还有裴衡的纵容！\n    \n    虞知宁含恨而死，携怨重生回及笄前一天\n    她抛绣球改嫁纨绔璟王世子裴玄。\n    全京城都在等着看笑话\n    可后来裴玄做了太子，她做了太子妃\n    \n    数日后裴衡造反失败，靖王府全族被抄，囚车路过她身边时，裴衡赤红眼跪在她脚下求原谅：“阿宁，你该嫁我的！”",
+      "word_count": "175.38万字",
+      "word_count_num": 1753800,
+      "popularity": "",
+      "popularity_num": 0,
+      "heat_rank": null,
+      "heat_src": "",
+      "status": "连载中",
+      "update_time": "2026-09-11 22:41:06",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/896/2686789_360x480.jpg?time=1761327901",
+      "badge": "最新上榜",
+      "latest_chapter": " 第770章  挨罚",
+      "platform_trend": "drop",
+      "is_new": true,
+      "heat_change": 0,
+      "boards": [
+        "完结月榜"
+      ],
+      "boards_count": 5,
+      "rank_change": null,
+      "history_days": 1
+    },
+    {
+      "rank": 4,
       "book_name": "随母改嫁旺新家，重生嫡女嘎嘎乱杀",
       "book_url": "https://www.qimao.com/shuku/2019227/",
       "author": "三十嘉",
@@ -920,7 +1035,7 @@
       "history_days": 1
     },
     {
-      "rank": 4,
+      "rank": 5,
       "book_name": "解春衫",
       "book_url": "https://www.qimao.com/shuku/2065888/",
       "author": "随山月",
@@ -963,7 +1078,7 @@
       "history_days": 1
     },
     {
-      "rank": 5,
+      "rank": 6,
       "book_name": "婚后上瘾",
       "book_url": "https://www.qimao.com/shuku/1994117/",
       "author": "苏不迟",
@@ -1006,7 +1121,7 @@
       "history_days": 1
     },
     {
-      "rank": 6,
+      "rank": 7,
       "book_name": "大佬归来，假千金她不装了",
       "book_url": "https://www.qimao.com/shuku/1699328/",
       "author": "骑着猫的小鱼干",
@@ -1049,7 +1164,7 @@
       "history_days": 1
     },
     {
-      "rank": 7,
+      "rank": 8,
       "book_name": "第一瞳术师",
       "book_url": "https://www.qimao.com/shuku/215243/",
       "author": "喵喵大人",
@@ -1092,7 +1207,7 @@
       "history_days": 1
     },
     {
-      "rank": 8,
+      "rank": 9,
       "book_name": "六年后，我携四个幼崽炸翻前夫家",
       "book_url": "https://www.qimao.com/shuku/1658048/",
       "author": "相思一顾",
@@ -1135,7 +1250,7 @@
       "history_days": 1
     },
     {
-      "rank": 9,
+      "rank": 10,
       "book_name": "第一凤女",
       "book_url": "https://www.qimao.com/shuku/1803136/",
       "author": "十二妖",
@@ -1178,7 +1293,7 @@
       "history_days": 1
     },
     {
-      "rank": 10,
+      "rank": 11,
       "book_name": "柔弱医修今天也在背地里暴打魔尊",
       "book_url": "https://www.qimao.com/shuku/1981956/",
       "author": "白木木",
@@ -1221,7 +1336,7 @@
       "history_days": 1
     },
     {
-      "rank": 11,
+      "rank": 12,
       "book_name": "阴当",
       "book_url": "https://www.qimao.com/shuku/1979356/",
       "author": "北派无尽夏",
@@ -1264,7 +1379,7 @@
       "history_days": 1
     },
     {
-      "rank": 12,
+      "rank": 13,
       "book_name": "我团宠小师妹，嚣张点怎么了",
       "book_url": "https://www.qimao.com/shuku/1764505/",
       "author": "瑰夏",
@@ -1307,7 +1422,7 @@
       "history_days": 1
     },
     {
-      "rank": 13,
+      "rank": 14,
       "book_name": "皑如山上雪",
       "book_url": "https://www.qimao.com/shuku/2053898/",
       "author": "街灯读我",
@@ -1350,7 +1465,7 @@
       "history_days": 1
     },
     {
-      "rank": 14,
+      "rank": 15,
       "book_name": "王府里来了个捡破烂的崽崽",
       "book_url": "https://www.qimao.com/shuku/2061856/",
       "author": "三颗小石头",
@@ -1393,7 +1508,7 @@
       "history_days": 1
     },
     {
-      "rank": 15,
+      "rank": 16,
       "book_name": "惯坏她",
       "book_url": "https://www.qimao.com/shuku/10034568/",
       "author": "再寻再寻",
@@ -1436,7 +1551,7 @@
       "history_days": 1
     },
     {
-      "rank": 16,
+      "rank": 17,
       "book_name": "逃婚三年，江少的花心人设崩了",
       "book_url": "https://www.qimao.com/shuku/1839513/",
       "author": "绘绘",
@@ -1479,7 +1594,7 @@
       "history_days": 1
     },
     {
-      "rank": 17,
+      "rank": 18,
       "book_name": "重回拜师日，偏心师尊靠边站",
       "book_url": "https://www.qimao.com/shuku/1943722/",
       "author": "观云涧",
@@ -1522,7 +1637,7 @@
       "history_days": 1
     },
     {
-      "rank": 18,
+      "rank": 19,
       "book_name": "七零，易孕娇妻被绝嗣京少宠哭了",
       "book_url": "https://www.qimao.com/shuku/1866390/",
       "author": "福宝贝",
@@ -1565,7 +1680,7 @@
       "history_days": 1
     },
     {
-      "rank": 19,
+      "rank": 20,
       "book_name": "玄学小祖宗：叼奶瓶算命全家宠",
       "book_url": "https://www.qimao.com/shuku/1764909/",
       "author": "毛团儿",
@@ -1604,49 +1719,6 @@
         "完结月榜"
       ],
       "boards_count": 2,
-      "rank_change": null,
-      "history_days": 1
-    },
-    {
-      "rank": 20,
-      "book_name": "一枕春深",
-      "book_url": "https://www.qimao.com/shuku/11512461/",
-      "author": "晨露嫣然",
-      "author_url": "https://www.qimao.com/zuozhe/%E6%99%A8%E9%9C%B2%E5%AB%A3%E7%84%B6_14/",
-      "channel": "古代言情",
-      "major": "古代言情",
-      "major_id": 2,
-      "category": "宫闱宅斗",
-      "minor": "宫闱宅斗",
-      "minor_id": 209,
-      "primary_tag": "古代言情",
-      "tags": [
-        "古代言情",
-        "宫闱宅斗"
-      ],
-      "all_tags": [
-        "古代言情",
-        "宫闱宅斗"
-      ],
-      "abstract": "沈姝为了活命去做了留种娘子，给一位病重的神秘贵人留下血脉。数年后，她带着软萌萌的小女儿重返京城，入了凛王府做奶娘。只是这凛王看她的眼神越来越不对劲，吻她的腰，进她的房，最后还逼她承认宝儿是他的女儿……她曾发誓此生再不为奴，于是让她骑于肩头，做他的主人。从此后她在上，他在下。她要吻，他便温柔送上。",
-      "word_count": "72.17万字",
-      "word_count_num": 721700,
-      "popularity": "",
-      "popularity_num": 0,
-      "heat_rank": null,
-      "heat_src": "",
-      "status": "已完结",
-      "update_time": "2026-09-10 09:02:09",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3838/11512461_360x480.jpg?time=1776072488",
-      "badge": "飙升10名",
-      "latest_chapter": " 第339章  尾声:那年春",
-      "platform_trend": "rise",
-      "is_new": false,
-      "heat_change": 0,
-      "boards": [
-        "完结月榜"
-      ],
-      "boards_count": 1,
       "rank_change": null,
       "history_days": 1
     }
