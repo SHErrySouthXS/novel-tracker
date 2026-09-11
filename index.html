@@ -3324,14 +3324,14 @@ async function renderJjwxcWithSubTabs(platform, data, contentEl) {
     <div class="sub-tab-content active" id="jjwxc-sub-monthrank">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
-      <!-- 题材洞察 = 流行总结横幅 + 细分题材两级模块（晋江月榜无 insights 故不展示 7天/蓝海卡） -->
+      <!-- 题材洞察 = 流行总结横幅 + 三栏题材下钻（trio-embed v3；词典 data/jjwxc_motifs_v1.json） -->
       <div class="insight-section" style="margin-bottom:20px;">
         <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
         ${summaryBannerHTML(summaryData)}
-        ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 3, maxL2: 3, label: '细分题材' })}
+        <div id="trio-jj-month" data-trio-host></div>
       </div>
 
-      <div class="filter-bar">
+      <div class="filter-bar" style="margin-top:20px;">
         <input class="search-input" type="text" placeholder="搜索书名或作者..." id="search-jjwxc" oninput="filterBooks('jjwxc')">
         <button class="filter-btn" id="newonly-jjwxc" onclick="toggleNewOnly('jjwxc')">🆕 新上榜</button>
         <button class="filter-btn" id="sortdays-jjwxc" onclick="toggleSort('jjwxc','days')" title="按累计上榜天数排序">📅 上榜天数</button>
@@ -3705,7 +3705,8 @@ setTimeout(alignBookItems, 1200);
     { id: 'trio-cp-purelove',  url: 'data/changpei/purelove_bestseller.json', color: CP },
     { id: 'trio-cp-new',       url: 'data/changpei/purelove_new.json',        color: CP },
     { id: 'trio-cp-completed', url: 'data/changpei/purelove_completed.json',  color: CP },
-    { id: 'trio-jj-score',     url: 'data/jjwxc/score1000.json',              color: JJ, dict: 'data/jjwxc_motifs_v1.json' }
+    { id: 'trio-jj-score',     url: 'data/jjwxc/score1000.json',              color: JJ, dict: 'data/jjwxc_motifs_v1.json' },
+    { id: 'trio-jj-month',     url: 'data/jjwxc/latest.json',                 color: JJ, dict: 'data/jjwxc_motifs_v1.json' }
   ];
   function startWatch() {
     if (typeof window.mountTrio !== 'function') { setTimeout(startWatch, 200); return; } // 等 embed 脚本

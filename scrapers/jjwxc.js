@@ -12,6 +12,7 @@ const https = require('https');
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
 const { computeRankChange } = require('./rank-change');
 const { withRetry } = require('./retry');
 
@@ -57,7 +58,19 @@ function httpGet(url, encoding = 'gbk') {
       const chunks = [];
       res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
-        const buffer = Buffer.concat(chunks);
+        let buffer = Buffer.concat(chunks);
+        // 服务端可能返回压缩内容（实测详情页等大页面会被 gzip；不解压再按 GBK 解码会得到乱码，
+        // 导致简介/字数/封面/内容标签全部报废）
+        const enc = String(res.headers['content-encoding'] || '').toLowerCase();
+        if (enc) {
+          try {
+            if (enc === 'gzip') buffer = zlib.gunzipSync(buffer);
+            else if (enc === 'deflate') buffer = zlib.inflateSync(buffer);
+            else if (enc === 'br') buffer = zlib.brotliDecompressSync(buffer);
+          } catch (e) {
+            console.log(`    [WARN] ${enc} 解压失败，按原样解码: ${e.message}`);
+          }
+        }
         // 晋江使用 GBK 编码
         if (encoding === 'gbk') {
           try {
@@ -276,12 +289,18 @@ async function fetchBookDetail(bookUrl, bookId) {
       info.status = '连载中';
     }
     
-    // 额外标签（详情页可能有更多标签）
-    const tagMatches = html.matchAll(/<a[^>]*class="[^"]*bluetip[^"]*"[^>]*>([^<]+)<\/a>/gi);
+    // 内容标签（L3 自由标签）—— 详情页「内容标签：」块内指向 bookbase.php?bq=NN 的链接
+    // 注：2026-09 晋江改版后原 class="bluetip" 选择器已失效（实测 0 命中），必须用 bq 链接识别。
+    //     实测该来源与积分榜列表页 tooltip 的「标签：」同源（同一套官方标签）。
+    const tagBlock = html.match(/内容标签[：:]([\s\S]{0,3000}?)<\/div>/);
     const extraTags = [];
-    for (const m of tagMatches) {
-      const t = m[1].trim();
-      if (t && t.length < 10) extraTags.push(t);
+    if (tagBlock) {
+      const re = /bookbase\.php\?bq=\d+['"][^>]*>([^<]+)<\/a>/gi;
+      let m;
+      while ((m = re.exec(tagBlock[1])) !== null) {
+        const t = m[1].replace(/<[^>]*>/g, '').replace(/&nbsp;/g, '').trim();
+        if (t && t.length < 12 && !extraTags.includes(t)) extraTags.push(t);
+      }
     }
     if (extraTags.length > 0) info.extraTags = extraTags;
     
@@ -344,12 +363,11 @@ async function main() {
         if (detail.thumbUrl) book.thumb_url = detail.thumbUrl;
         if (detail.status && book.status === '未知') book.status = detail.status;
         if (detail.extraTags?.length > 0) {
-          for (const t of detail.extraTags) {
-            if (!book.all_tags.includes(t)) {
-              book.all_tags.push(t);
-              book.secondary_tags.push(t);
-            }
-          }
+          // 与 jjwxc-score.js 同一构造公式，保证月榜/积分榜字段口径逐字一致
+          const contentTags = [book.genre, book.era, book.theme].filter(Boolean);
+          const fine = detail.extraTags.filter(t => !contentTags.includes(t) && t !== book.nature);
+          book.secondary_tags = [...contentTags.filter(t => t !== book.primary_tag), ...fine];
+          book.all_tags = [book.nature, ...contentTags, ...fine].filter(Boolean);
         }
         process.stdout.write('✓');
       } else {

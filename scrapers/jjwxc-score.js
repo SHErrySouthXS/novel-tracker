@@ -21,6 +21,7 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
 const { withRetry } = require('./retry');
 
 // ========== 配置 ==========
@@ -67,7 +68,18 @@ function httpGet(url, encoding = 'gbk') {
       const chunks = [];
       res.on('data', c => chunks.push(c));
       res.on('end', () => {
-        const buffer = Buffer.concat(chunks);
+        let buffer = Buffer.concat(chunks);
+        // 服务端可能返回压缩内容，先解压再解码，否则 GBK 解码得到乱码
+        const enc = String(res.headers['content-encoding'] || '').toLowerCase();
+        if (enc) {
+          try {
+            if (enc === 'gzip') buffer = zlib.gunzipSync(buffer);
+            else if (enc === 'deflate') buffer = zlib.inflateSync(buffer);
+            else if (enc === 'br') buffer = zlib.brotliDecompressSync(buffer);
+          } catch (e) {
+            console.log(`  [WARN] ${enc} 解压失败，按原样解码: ${e.message}`);
+          }
+        }
         let data;
         try { data = new (require('util').TextDecoder)(encoding).decode(buffer); }
         catch(e) { data = buffer.toString('utf-8'); }
