@@ -11,6 +11,7 @@ on:
       - 'assets/**'
       - '*.css'
       - '*.js'
+      - '.github/workflows/deploy.yml'   # 修哨兵本身时也要重跑一次验证
       - '!scrapers/**'
   workflow_dispatch:
 
@@ -62,7 +63,12 @@ jobs:
           SIG_OK=true
           grep -q 'bg-diffused-wide' index.html || SIG_OK=false
           grep -q 'alignBookItems'  index.html || SIG_OK=false
-          MSG="${{ github.event.head_commit.message }}"
+          # 从 git 读 message，不要用 Actions 的 head_commit.message 表达式插值：
+          # 表达式替换发生在 shell 解析之前（注释里写表达式同样会被替换），
+          # commit message 是含换行/引号的自由文本，一旦含双引号就会提前闭合字符串、
+          # 把后文当命令执行（2026-09-12 曾因此部署失败：message 里的空 tabUnit 写法
+          # 触发 line 38: 20: command not found）。改用 git 读取即安全。
+          MSG=$(git log -1 --pretty=%B)
           if [ "$SIG_OK" = "true" ]; then
             echo "OK: 设计签名在位（bg-diffused-wide + alignBookItems），放行部署"
           elif echo "$MSG" | grep -q '\[fe:authorized\]'; then
