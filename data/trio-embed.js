@@ -594,7 +594,10 @@
       const rows = A.themesByTab[tab] || [];
       // 赛道内无题材细分时列表只剩「其他」（等价于赛道全部），不再重复列一行
       const noSplit = A.exclusive && (rows.length === 0 || (rows.length === 1 && rows[0][0] === OTHER));
-      const listItems = [[TAB_ALL, denOf(K(tab, TAB_ALL))]].concat(noSplit ? [] : rows);
+      // 首行 = 「该赛道全部」档：互斥模式下直接显示赛道名（对齐 tab），不再叫「全部」
+      const headLabel = A.exclusive ? tab : TAB_ALL;
+      const listItems = [[TAB_ALL, denOf(K(tab, TAB_ALL)), headLabel]]
+        .concat(noSplit ? [] : rows.map(([th, n]) => [th, n, th]));
       const maxC = Math.max.apply(null, listItems.map(x => x[1]).concat([1]));
       const tabDen = denOf(K(tab, TAB_ALL)) || 1;
       const tabsShown = A.exclusive ? A.tabOrder : [TAB_ALL].concat(A.tabOrder);
@@ -602,10 +605,10 @@
         <div class="trio-col">
           <div class="trio-tabs">${tabsShown.map(t =>
             `<button class="trio-tabbtn${t === tab ? " on" : ""}" data-tab="${esc(t)}">${esc(t)}</button>`).join("")}</div>
-          <div class="trio-list">${listItems.map(([th, n]) => {
+          <div class="trio-list">${listItems.map(([th, n, label]) => {
             const on = theme === th;
             return `<div class="trio-l1${on ? " on" : ""}" data-theme="${esc(th)}">
-              <div class="nm">${esc(th)}</div>
+              <div class="nm">${esc(label)}</div>
               <div class="tr"><div class="fl" style="width:${Math.round(100 * n / maxC)}%"></div></div>
               <div class="ct">${n}本 · ${(Math.round(1000 * n / tabDen) / 10)}%</div></div>`;
           }).join("")}</div>
