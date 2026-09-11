@@ -1586,7 +1586,7 @@ const PLATFORMS = [
   { id: 'jjwxc', name: '晋江文学城', icon: '🌸', color: '#e6488a', source: '月榜 Top200' },
   { id: 'changpei', name: '长佩文学', icon: '💜', color: '#6c5ce7', source: '畅销榜 Top200' },
   { id: 'fanqie', name: '番茄小说', icon: '🍅', color: '#ff6b35', source: '女频最热榜 Top200' },
-  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '女频大热榜 Top20' },
+  { id: 'qimao', name: '七猫小说', icon: '🐱', color: '#ff9500', source: '女频 8 榜 · 去重池' },
 ];
 
 const CHART_COLORS = [
@@ -1637,25 +1637,28 @@ async function loadJSON(path) {
   } catch { return null; }
 }
 
-// ===== 七猫数据适配：爬虫只产女生日榜 girl_hot.json（Top20，--girl），
-// 无 latest.json。此处直接使用女频榜单数据（rank 保持 1-20，gender 统一补标"女频"），
-// 使下游渲染（概览卡/题材分布/新上榜/平台页列表与筛选）全部通用生效。=====
+// ===== 七猫数据适配：爬虫产出 data/qimao/pool.json（女频 8 榜去重池），无 latest.json。
+// 池内每本带官方 major/minor 两级分类 + 上榜数，rank 为池内序号（上榜数 → 热度 排序）。
+// gender 统一补标"女频"，使下游渲染（概览卡/题材分布/新上榜/平台页列表与筛选）全部通用生效。=====
 async function loadQimaoData() {
-  const girl = await loadJSON('data/qimao/girl_hot.json');
-  if (!girl?.books) return null;
+  const pool = await loadJSON('data/qimao/pool.json');
+  if (!pool?.books) return null;
 
-  const tag = (b) => ({ ...b, gender: '女频', channel: b.channel || b.primary_tag || '' });
-  const all = girl.books.map((b, i) => tag({ ...b, rank: i + 1 }));
+  const tag = (b) => ({ ...b, gender: '女频', channel: b.channel || b.major || b.primary_tag || '' });
+  const all = pool.books.map(tag);
 
   return {
     books: all,
     total_count: all.length,
-    tag_stats: girl.tag_stats || {},
-    status_stats: girl.status_stats || {},
+    tag_stats: pool.tag_stats || {},
+    major_stats: pool.major_stats || {},
+    status_stats: pool.status_stats || {},
     gender_stats: { 女频: all.length },
-    platform: girl.platform, platform_name: girl.platform_name,
-    source: girl.source, source_url: girl.source_url,
-    update_date: girl.update_date, update_time: girl.update_time,
+    boards: pool.boards || [],
+    heat_cover: pool.heat_cover || 0,
+    platform: pool.platform, platform_name: pool.platform_name,
+    source: pool.source, source_url: pool.source_url,
+    update_date: pool.update_date, update_time: pool.update_time,
   };
 }
 
@@ -2335,148 +2338,6 @@ function topInsightHTML(summaryData, tagStats, platform, distLabel) {
     </div>`;
 }
 
-// ========== 细分题材 — 4 平台统一两级模块 ==========
-// 一级：大题材/频道（晋江 channel / 长佩 tags[0] / 番茄 primary_tag / 七猫 channel）
-// 二级：该一级下细分 tag（取自 books.tags / all_tags，按平台规则剥离一级本身与通用项）
-// 同义 tag 通过 SUBTAG_NORMALIZE 词典归一（长佩 CP/人设型归并为主；其他平台原样保留）
-const SUBTAG_NORMALIZE = {
-  // 长佩 — CP / 人设
-  '年上养成': '年上', '其他年上': '年上', '年上': '年上',
-  '年下攻': '年下', '年下': '年下',
-  '双强': '强强', '强强联手': '强强',
-  '1v1': 'HE', '1V1': 'HE', 'Happy Ending': 'HE', 'happy ending': 'HE', 'HE': 'HE',
-  'BE': 'BE', '悲剧': 'BE', '虐文': 'BE',
-  '甜文': '甜宠', '小甜文': '甜宠', '甜': '甜宠',
-  '狗血': '狗血', '虐恋': '狗血', '虐恋情深': '狗血',
-  '暗恋': '暗恋', '单箭头': '暗恋',
-  '现代': '都市', '近代现代': '都市',
-  '古风': '架空', '古代': '架空',
-  // 长佩 — 标签统一（与 cx() 等价）
-  '纯爱': '耽美'
-};
-
-function normalizeChip(chip, platformId) {
-  if (!chip) return '';
-  const t = String(chip).trim();
-  // 长佩应用归一化词典 + 全平台「纯爱」→「耽美」
-  if (platformId === 'changpei' && SUBTAG_NORMALIZE[t]) return SUBTAG_NORMALIZE[t];
-  if (t === '纯爱') return '耽美';
-  return t;
-}
-
-function getPrimaryTag(book, platformId) {
-  if (platformId === 'jjwxc') return book.channel || '';
-  if (platformId === 'changpei') return (book.tags && book.tags[0]) || '';
-  if (platformId === 'fanqie') return book.primary_tag || '';
-  if (platformId === 'qimao') return book.channel || '';
-  return '';
-}
-
-function getSubTags(book, platformId) {
-  const all = book.all_tags || book.tags || [];
-  if (!Array.isArray(all)) return [];
-  let tags = all.slice();
-  if (platformId === 'jjwxc') {
-    // 晋江 chips：[原创, 频道, 细分1, 细分2, ...] — 跳过前 2 项
-    tags = tags.slice(2);
-  } else if (platformId === 'changpei') {
-    // 长佩：[大题材, CP/风格, 设定, ...] — 跳过 tags[0]
-    tags = tags.slice(1);
-  } else if (platformId === 'fanqie') {
-    // 番茄：去掉与 primary_tag 重叠项 + 通用占位（女频/原创）
-    const primary = book.primary_tag || '';
-    tags = tags.filter(x => x && x !== primary && x !== '女频' && x !== '原创' && x !== '现代言情');
-  } else if (platformId === 'qimao') {
-    const ch = book.channel || '';
-    tags = tags.filter(x => x && x !== ch);
-  }
-  return tags.filter(Boolean);
-}
-
-// 细分品类模块（两级：横向一级 chip + 每 chip 内嵌二级细分条形图）
-function subCategoryHTML(books, platformId, opts = {}) {
-  const {
-    color = '#888',
-    maxL1 = 8,
-    maxL2 = 4,
-    label = '细分题材',
-    showHeader = true
-  } = opts;
-  if (!Array.isArray(books) || !books.length) return '';
-
-  // 1) 聚合 一级 → 二级
-  const l1Map = {};   // { l1: { total, l2Map } }
-  const l1Order = [];
-  for (const b of books) {
-    const l1Raw = getPrimaryTag(b, platformId);
-    if (!l1Raw) continue;
-    const l1 = platformId === 'changpei' ? cx(l1Raw) : cx(l1Raw);
-    if (!l1Map[l1]) { l1Map[l1] = { total: 0, l2Map: {} }; l1Order.push(l1); }
-    l1Map[l1].total += 1;
-    const l2List = getSubTags(b, platformId);
-    for (const raw of l2List) {
-      const t = normalizeChip(raw, platformId);
-      if (!t) continue;
-      l1Map[l1].l2Map[t] = (l1Map[l1].l2Map[t] || 0) + 1;
-    }
-  }
-
-  if (!l1Order.length) return '';
-
-  // 2) 一级按 total 降序，取 Top N；占比分母 = 全榜（所有带一级题材的书），非仅 TopN
-  l1Order.sort((a, b) => l1Map[b].total - l1Map[a].total);
-  const topL1 = l1Order.slice(0, maxL1);
-  const fullTotal = l1Order.reduce((s, k) => s + l1Map[k].total, 0);
-
-  // 3) 渲染卡片网格
-  const cards = topL1.map(l1 => {
-    const { total, l2Map } = l1Map[l1];
-    const l2Entries = Object.entries(l2Map)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, maxL2);
-    const l2HTML = l2Entries.length
-      ? l2Entries.map(([tag, count]) => {
-          const pct = total > 0 ? Math.round(count / total * 100) : 0;
-          return `<div class="subtag-row">
-            <div class="subtag-label">
-              <span>${cx(tag)}</span>
-              <span class="subtag-count">${count} · ${pct}%</span>
-            </div>
-            <div class="subtag-bar"><div class="subtag-bar-fill" style="width:${pct}%;background:${color};"></div></div>
-          </div>`;
-        }).join('')
-      : '<div style="font-size:10px;color:var(--text-dim);padding:4px 0;">暂无细分 tag</div>';
-    const overallPct = fullTotal > 0 ? Math.round(total / fullTotal * 100) : 0;
-    return `<div class="subcat-card">
-        <div class="subcat-head">
-          <span class="subcat-title" style="color:${color};">${cx(l1)}</span>
-          <span class="subcat-total">${total} 本 · ${overallPct}%</span>
-        </div>
-        ${l2HTML}
-      </div>`;
-  }).join('');
-
-  // 3.5) 一级题材占比总览（细分类上方）— 例：都市 52% · 架空 20% · 综合 16%
-  const l1DistHTML = showHeader && topL1.length > 0
-    ? `<div class="l1-dist">
-        <span class="l1-dist-title">一级题材占比</span>
-        ${topL1.map(l1 => {
-          const pct = fullTotal > 0 ? Math.round(l1Map[l1].total / fullTotal * 100) : 0;
-          return `<span class="l1-dist-item" style="color:${color};"><b>${cx(l1)}</b><span class="l1-dist-pct">${pct}%</span><span class="l1-bar"><span class="l1-bar-fill" style="width:${pct}%;background:${color};"></span></span></span>`;
-        }).join('<span class="l1-dist-sep">·</span>')}
-      </div>`
-    : '';
-
-  const headerHTML = showHeader
-    ? `<div class="subcat-head-row">
-        <h3 class="subcat-module-title">📊 ${label}</h3>
-        <span class="subcat-module-meta">Top ${topL1.length} 题材 · 每级 ${maxL2} 细分</span>
-      </div>`
-    : '';
-
-  return `<div class="subcat-module">${headerHTML}${l1DistHTML}<div class="subcat-grid">${cards}</div></div>`;
-}
-
 async function renderPlatformTab(platformId) {
   const platform = PLATFORMS.find(p => p.id === platformId);
   const data = state.data[platformId];
@@ -2526,12 +2387,13 @@ async function renderPlatformTab(platformId) {
 
   // 七猫单榜页：加载今日流行总结（data/qimao/summary.json 由 platform-summary.js 每日 AI 生成；无则横幅占位）
   const summaryData = platformId === 'qimao' ? await loadJSON('data/qimao/summary.json') : null;
-  // 顶部模块：七猫 → 细分题材两级模块（其他平台非 qimao 走默认 tag-stats-bar）
+  // 顶部模块：七猫 → 三栏题材下钻（trio 树形布局：官方大类 tab + 细分列表 + 书籍明细 + 结构画像）
+  // 其余平台非 qimao 走默认 tag-stats-bar
   const topBlockHTML = platformId === 'qimao'
     ? `<div class="insight-section" style="margin-bottom:20px;">
          <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
          ${summaryBannerHTML(summaryData)}
-         ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 2, maxL2: 4, label: '细分题材' })}
+         <div id="trio-qm" data-trio-host></div>
        </div>`
     : `<div class="tag-stats-bar">
         ${Object.entries(tagStats).sort((a,b) => b[1] - a[1]).map(([tag, count]) => `
@@ -3714,7 +3576,7 @@ setTimeout(alignBookItems, 1200);
 <script>
 (function () {
   // 挂载点 → 各自书级数据（数据现算，无需后端）
-  var CP = '#6c5ce7', JJ = '#e6488a', FQ = '#ff6b35', TRIO_H = 380;
+  var CP = '#6c5ce7', JJ = '#e6488a', FQ = '#ff6b35', QM = '#ff9500', TRIO_H = 380;
   var HOSTS = [
     { id: 'trio-cp-all',       url: 'data/changpei/latest.json',              color: CP },
     { id: 'trio-cp-purelove',  url: 'data/changpei/purelove_bestseller.json', color: CP },
@@ -3725,7 +3587,9 @@ setTimeout(alignBookItems, 1200);
     // 番茄：taghit 模式（情感向 tab + 一级词 first-hit 列表），词典 24 L1 + 191 L2
     { id: 'trio-fq-hot',       url: 'data/fanqie/latest.json',                color: FQ, dict: 'data/fanqie_motifs.json', nmWidth: 58, l1Label: '一级 · 题材' },
     // 番茄巅峰榜：男女频混合榜 → 频道 tab（gender 字段）+ 主分类列表（primary_tag 字段），词表同上
-    { id: 'trio-fq-peak',      url: 'data/fanqie/peak.json',                  color: FQ, dict: 'data/fanqie_peak_motifs.json', nmWidth: 58, l1Label: '频道 · 主分类' }
+    { id: 'trio-fq-peak',      url: 'data/fanqie/peak.json',                  color: FQ, dict: 'data/fanqie_peak_motifs.json', nmWidth: 58, l1Label: '频道 · 主分类' },
+    // 七猫：树形布局（官方大类 tab + 官方细分列表 + 书籍明细 + 结构画像），词典=官方树 3 大类 / 11 细分
+    { id: 'trio-qm',           url: 'data/qimao/pool.json',                   color: QM, dict: 'data/qimao_tree.json', nmWidth: 56, l1Label: '语境 · 官方大类' }
   ];
   // 幂等重扫：只挂还没挂过的挂载点。平台页/子榜都是懒渲染，任何时刻 DOM 里都可能出现新的挂载点。
   function scan() {

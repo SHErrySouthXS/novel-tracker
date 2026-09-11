@@ -125,7 +125,7 @@ const PLATFORMS = [
   { id: 'jjwxc',    name: '晋江文学城', file: 'latest.json' },
   { id: 'changpei', name: '长佩文学',   file: 'latest.json' },
   { id: 'fanqie',   name: '番茄小说',   file: 'latest.json' },
-  { id: 'qimao',    name: '七猫小说',   file: 'girl_hot.json' },
+  { id: 'qimao',    name: '七猫小说',   file: 'pool.json' },
 ];
 const PNAME = Object.fromEntries(PLATFORMS.map(p => [p.id, p.name]));
 
@@ -134,7 +134,7 @@ const PLATFORM_PROFILE = {
   jjwxc: '女性向原创文学社区，纯爱(BL)与言情为主力，IP 改编价值高，用户年轻女性为主。榜单为积分月榜 Top200，书带频道(channel)、性向(nature)、genre/era/theme 与自由标签(secondary_tags/all_tags)。',
   changpei: '耽美/纯爱向原创站，榜单为畅销榜 Top100。频道词粗放（都市/架空/综合/青春/宫廷…），真正内容差异在 all_tags 人设/情感母题标签（破镜重圆、金丝雀、ABO、年下、强制爱…）与简介设定。',
   fanqie: '字节旗下免费阅读平台，女频最热榜 Top160。primary_tag 常混入自由标签或为"未知"，题材须读简介(abstract)与 all_tags 判断，勿依赖主分类统计。',
-  qimao: '免费阅读平台，女频大热榜仅 Top20，样本小。书带官方两级：channel 大类（现代言情/古代言情/幻想言情）+ tags 细分（总裁豪门/宫闱宅斗/年代重生…）。',
+  qimao: '免费阅读平台，榜单为女频 8 榜（大热/新书/完结/收藏/更新 × 日/月）去重池约 100 本。书带官方两级：channel 大类（现代言情/古代言情/幻想言情）+ category 细分（总裁豪门/宫闱宅斗/年代重生…），每书各单值；无自由标签字段，人设/情感信息主要在简介里。',
 };
 
 // 四维框架说明（system prompt 公共段）
@@ -184,7 +184,7 @@ function platformSystemPrompt(p) {
 
 【平台背景】${PLATFORM_PROFILE[p.id]}
 
-【今日榜单口径】${p.id === 'qimao' ? '榜单仅 20 本，样本很小：题材(大类)维几乎只有现代/古代言情，请把判断重心放到情节冲突/人设/CP 三维，题材维注明大类分布即可，禁止对 20 本样本做过度归纳。' : '榜单为完整 Top 榜（每本都列出），请全部纳入统计。'}
+【今日榜单口径】${p.id === 'qimao' ? '榜单为女频 8 榜去重池（约 100 本），题材(大类)维只有现代/古代/幻想言情三档、区分度低，请把判断重心放到情节冲突/人设/CP 三维，题材维注明大类与官方细分（总裁豪门/宫闱宅斗…）分布即可。' : '榜单为完整 Top 榜（每本都列出），请全部纳入统计。'}
 
 【输出要求】${DIMENSION_GUIDE}
 

@@ -1,0 +1,53 @@
+{
+  "platform": "qimao",
+  "version": "v1",
+  "layout": "tree",
+  "l1Field": "tree",
+  "l1Tabs": {
+    "field": "channel"
+  },
+  "l2Bars": {
+    "field": "category"
+  },
+  "tabUnit": "大类",
+  "defaultTab": "现代言情",
+  "L1": [
+    {
+      "name": "现代言情"
+    },
+    {
+      "name": "古代言情"
+    },
+    {
+      "name": "幻想言情"
+    }
+  ],
+  "tree": {
+    "现代言情": [
+      "总裁豪门",
+      "年代重生",
+      "都市奇幻",
+      "青春校园",
+      "现代悬疑"
+    ],
+    "古代言情": [
+      "宫闱宅斗",
+      "古代情缘",
+      "权谋天下",
+      "种田经商"
+    ],
+    "幻想言情": [
+      "玄幻仙侠",
+      "末世求生"
+    ]
+  },
+  "meta": {
+    "source": "飞书《novel-tracker 分类池》09_七猫分类池（v1，官方树直建）",
+    "source_url": "https://my.feishu.cn/sheets/Jus1sNfDihnlaettxjrcqhyDnWf?sheet=xiRvLn",
+    "note": "七猫无自由标签字段、详情页无标签区，唯一题材维度 = 官方 major→minor 两级树（major 每书单值、minor 物理归属 major，1:1 父子非交叉）→ major 即天然互斥赛道轴。口径经 sherry 2026-09-08 拍板，2026-09-12 落地为站点题材模块。",
+    "counts": {
+      "majors": 3,
+      "minors": 11
+    }
+  }
+}

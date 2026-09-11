@@ -50,10 +50,10 @@ const PLATFORM_CONF = {
   },
   qimao: {
     dir: path.join(__dirname, '..', 'data', 'qimao'),
-    file: 'girl_hot.json',
+    file: 'pool.json',
     name: '七猫小说·女频',
-    ranking: '女频大热榜 Top20',
-    note: '七猫女频大热榜每本只有一个一级题材标签（总裁豪门/宫闱宅斗等），人设/情感信息主要藏在简介里，请从简介提炼 CP 与节奏',
+    ranking: '女频 8 榜去重池',
+    note: '七猫每本只有官方两级分类（大类 现代言情/古代言情/幻想言情 + 细分 总裁豪门/宫闱宅斗/年代重生…），无自由标签字段，人设/情感信息主要藏在简介里，请从简介提炼 CP 与节奏',
   },
   fanqie: {
     dir: path.join(__dirname, '..', 'data', 'fanqie'),

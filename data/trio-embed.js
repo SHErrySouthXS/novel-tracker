@@ -109,6 +109,19 @@
   .trio-empty{flex:1;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:#4d5464;padding:14px 0;}
   .trio-note{flex:none;margin-top:8px;padding:7px 9px;border-radius:8px;background:rgba(255,255,255,.42);
     border:1px solid rgba(255,255,255,.6);font-size:10.5px;line-height:1.5;color:#4d5464;}
+  /* ===== 树形布局（七猫）：中栏书籍明细 + 右栏结构画像 ===== */
+  .trio-brow{flex:none;display:flex;gap:9px;align-items:baseline;padding:7px 2px;border-bottom:1px dashed var(--tline);}
+  .trio-brow:last-child{border-bottom:none;}
+  .trio-brow .rk{width:20px;flex:none;font-size:11.5px;font-weight:600;color:var(--plat-deep,#6c5ce7);text-align:right;}
+  .trio-brow .bd{flex:1;min-width:0;}
+  .trio-brow .bt{font-size:12.5px;line-height:1.45;color:#232946;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .trio-brow .bm{font-size:10.5px;line-height:1.5;color:#4d5464;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .trio-brow .br{flex:none;font-size:10.5px;color:#4d5464;text-align:right;white-space:nowrap;}
+  .trio-srow{flex:none;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 2px;border-bottom:1px dashed var(--tline);}
+  .trio-srow:last-child{border-bottom:none;}
+  .trio-srow .sk{font-size:11.5px;color:#4d5464;flex:none;}
+  .trio-srow .sv{font-size:13px;font-weight:600;color:#232946;white-space:nowrap;}
+  .trio-srow .sv small{font-size:10.5px;font-weight:400;color:#4d5464;margin-left:3px;}
   @media(max-width:1180px){.trio-root{grid-template-columns:1fr 1fr;}.trio-root .trio-col:nth-child(3){grid-column:1/-1;}}
   @media(max-width:820px){.trio-root{grid-template-columns:1fr;}.trio-root .trio-col:nth-child(3){grid-column:auto;}}`;
 
@@ -148,6 +161,8 @@
         const l1Enabled = new Set((d.L1 || []).filter(x => x.status !== "排除").map(x => x.name));
         // 列表池：再扣掉 status 标「tab」的词（已升为赛道 tab，不应在列表里重复出现）
         const listL1 = (d.L1 || []).filter(x => x.status !== "排除" && x.status !== "tab").map(x => x.name);
+        // 词典原始 L1 声明（树形布局按声明顺序排 tab，缺了会退化成数据插入序）
+        const l1Declared = (d.L1 || []).map(x => ({ name: x.name, status: x.status || null }));
         // tab 配置：tags（旧：平铺标签）或 groups（新：互斥分组，顺序即优先级，match 为空=兜底组）
         const l1TabsCfg = (d.l1Tabs && d.l1Tabs.field) ? {
           field: d.l1Tabs.field,
@@ -161,6 +176,10 @@
           l1Field: d.l1Field || "tags0",
           l1Tabs: l1TabsCfg,
           l2Bars: d.l2Bars && d.l2Bars.field ? { field: d.l2Bars.field, mode: d.l2Bars.mode || "field" } : null,
+          // 树形布局（七猫）：官方两级树直接当 tab/列表，中右栏换成书籍明细 + 结构画像
+          layout: d.layout || null,
+          tree: d.tree || null,
+          L1: l1Declared,
           baseline: d.baseline || "global",
           // 空字符串是合法值（如巅峰榜「男频 20 本」不加后缀），不能用 || 兜底
           tabUnit: d.tabUnit != null ? String(d.tabUnit) : "频道",
@@ -386,12 +405,70 @@
   }
 
   function aggregate(books, dict) {
+    // 树形布局（七猫）：官方两级树直接当语境/列表，不走母题命中
+    if (dict.layout === "tree") return aggregateTree(books, dict);
     if (!(dict.l1Tabs && dict.l2Bars)) return aggregateLegacy(books, dict);
     // taghit：tab 与列表行都是「标签命中」语义（番茄：情感向 tab + 一级词列表）
     if (dict.l1Tabs.field === "taghit" || (dict.l2Bars && dict.l2Bars.mode === "firsthit")) {
       return aggregateTaghit(books, dict);
     }
     return aggregateTab(books, dict);
+  }
+
+  /* ---------- 树形布局聚合（七猫）----------
+   * 词典声明 layout:"tree" + l1Tabs.field（官方大类）+ l2Bars.field（官方细分）+ tree（官方树）。
+   * 与母题形态的区别：列表行与书籍是「官方分类字段」的枚举，不做任何词表命中。
+   * ctx 键：K(大类, 细分)；K(大类, 全部) = 该大类全部书目。
+   */
+  function aggregateTree(books, dict) {
+    const majField = (dict.l1Tabs && dict.l1Tabs.field) || "channel";
+    const minField = (dict.l2Bars && dict.l2Bars.field) || "category";
+    const K = (a, b) => a + SEP + b;
+    const majN = Object.create(null);
+    const ctxN = Object.create(null);
+    const booksByCtx = Object.create(null);
+    let N = 0;
+    for (const b of books) {
+      const maj = String(b[majField] == null ? "" : b[majField]).trim();
+      const min = String(b[minField] == null ? "" : b[minField]).trim();
+      if (!maj || !min) continue;
+      N++;
+      majN[maj] = (majN[maj] || 0) + 1;
+      const k = K(maj, min);
+      (booksByCtx[k] || (booksByCtx[k] = [])).push(b);
+      ctxN[k] = (ctxN[k] || 0) + 1;
+    }
+    // 「该大类全部」档
+    for (const maj in majN) {
+      const all = [];
+      for (const k in booksByCtx) {
+        const i = k.indexOf(SEP);
+        if (k.slice(0, i) === maj && k.slice(i + 1) !== TAB_ALL) all.push.apply(all, booksByCtx[k]);
+      }
+      booksByCtx[K(maj, TAB_ALL)] = all;
+      ctxN[K(maj, TAB_ALL)] = majN[maj];
+    }
+    // tab 顺序 = 词典声明顺序（官方树顺序），只留有数据的
+    const tree = dict.tree || {};
+    const declared = (dict.L1 || []).map(x => x.name);
+    const extraMaj = Object.keys(majN).filter(m => declared.indexOf(m) < 0);
+    const tabOrder = declared.concat(extraMaj).filter(m => majN[m] > 0);
+    const themesByTab = {};
+    for (const m of tabOrder) {
+      const kids = (tree[m] || []).slice();
+      const seen = new Set(kids);
+      // 数据里有、但官方树没声明的细分 → 兜底列出，避免静默丢数
+      for (const k in ctxN) {
+        const i = k.indexOf(SEP);
+        if (k.slice(0, i) !== m) continue;
+        const th = k.slice(i + 1);
+        if (th === TAB_ALL || seen.has(th)) continue;
+        seen.add(th); kids.push(th);
+      }
+      themesByTab[m] = kids.map(k => [k, ctxN[K(m, k)] || 0]).filter(x => x[1] > 0)
+        .sort((a, b) => b[1] - a[1]);
+    }
+    return { mode: "tree", dict, N, K, majN, ctxN, booksByCtx, tabOrder, themesByTab };
   }
 
   /* ---------- 渲染 ---------- */
@@ -420,6 +497,7 @@
           host.innerHTML = '<div class="trio-empty" style="height:' + height + 'px;display:flex;align-items:center;justify-content:center;color:#4d5464;font-size:12px;">暂无书级数据，无法聚合题材分布</div>';
           return;
         }
+        if (A.mode === "tree") return renderTreeMode(host, A, { height, l1Label, color });
         return A.mode === "tab" ? renderTabMode(host, A, { height, l1Label, color }) : renderListMode(host, A, { height, l1Label });
       });
     });
@@ -700,6 +778,110 @@
           <div class="mbar"><div class="mfl" style="width:${Math.round(100 * p / mx)}%"></div></div>
           <span class="mv">${Math.round(p)}% ${mark}</span></div>`;
       }).join("");
+    }
+    render();
+  }
+
+  /* ===== 树形布局：左栏官方两级树 / 中栏书籍明细 / 右栏结构画像（七猫） =====
+   * 与母题三栏（S/P 偏差）的区别：这里没有词表命中，二级就是官方细分本身，
+   * 中右栏改为「书证明细 + 结构画像」，把官方两级树信息用尽。
+   */
+  function renderTreeMode(host, A, opt) {
+    const dict = A.dict;
+    const K = A.K;
+    const SORTS = [["heat", "热度"], ["word", "字数"], ["boards", "上榜"]];
+    let tab = (dict.defaultTab && A.tabOrder.indexOf(dict.defaultTab) >= 0)
+      ? dict.defaultTab : (A.tabOrder[0] || TAB_ALL);
+    let theme = TAB_ALL;
+    let sortKey = "heat";
+
+    const rowsOf = t => A.themesByTab[t] || [];
+    const cnt = (t, th) => A.ctxN[K(t, th)] || 0;
+    const curBooks = () => A.booksByCtx[K(tab, theme)] || [];
+
+    function numOf(b, k) {
+      if (k === "word") return b.word_count_num || 0;
+      if (k === "boards") return b.boards_count || 0;
+      return b.popularity_num || 0;
+    }
+    function fmtWan(v) {
+      if (!v) return "\u2014";
+      if (v >= 1e8) return (v / 1e8).toFixed(2) + " \u4ebf";
+      if (v >= 1e4) return (v / 1e4).toFixed(1) + " \u4e07";
+      return String(Math.round(v));
+    }
+    const shortTab = t => String(t).replace(/\u8a00\u60c5$/, "");   // 现代言情 → 现代
+
+    function render() {
+      if (A.tabOrder.indexOf(tab) < 0) tab = A.tabOrder[0] || TAB_ALL;
+      const tabDen = cnt(tab, TAB_ALL) || 1;
+      const items = [[TAB_ALL, cnt(tab, TAB_ALL), TAB_ALL]]
+        .concat(rowsOf(tab).map(([th, n]) => [th, n, th]));
+      const maxC = Math.max.apply(null, items.map(x => x[1]).concat([1]));
+
+      const bs = curBooks();
+      const bsSorted = bs.slice().sort((a, b) =>
+        (numOf(b, sortKey) - numOf(a, sortKey)) || ((a.rank || 0) - (b.rank || 0)));
+      const heatN = bs.filter(b => (b.popularity_num || 0) > 0).length;
+      const sumHeat = bs.reduce((s, b) => s + (b.popularity_num || 0), 0);
+      const sumWord = bs.reduce((s, b) => s + (b.word_count_num || 0), 0);
+      const fin = bs.filter(b => b.status === "\u5df2\u5b8c\u7ed3").length;
+      const ctxLabel = theme === TAB_ALL ? tab : theme;
+
+      host.innerHTML = `<div class="trio-root">
+        <div class="trio-col">
+          <div class="trio-hd">\u8bed\u5883 \u00b7 \u5b98\u65b9\u5927\u7c7b</div>
+          <div class="trio-tabs">${A.tabOrder.map(t =>
+            `<button class="trio-tabbtn${t === tab ? " on" : ""}" data-tab="${esc(t)}" title="${esc(t)}">${esc(shortTab(t))}</button>`).join("")}</div>
+          <div class="trio-list">${items.map(([th, n, label]) => {
+            const on = theme === th;
+            return `<div class="trio-l1${on ? " on" : ""}" data-theme="${esc(th)}">
+              <div class="nm">${esc(label)}</div>
+              <div class="tr"><div class="fl" style="width:${Math.round(100 * n / maxC)}%"></div></div>
+              <div class="ct">${n}\u672c \u00b7 ${(Math.round(1000 * n / tabDen) / 10)}%</div></div>`;
+          }).join("")}</div>
+        </div>
+
+        <div class="trio-col">
+          <div class="trio-panehd"><span class="trio-pill">${esc(ctxLabel)}</span>
+            <span class="trio-dot"></span><span class="trio-dimname">\u5728\u699c\u4e66\u7c4d</span>
+            <span class="trio-panenote">${bs.length} \u672c</span></div>
+          <div class="trio-cta">${SORTS.map(([k, l]) =>
+            `<button class="trio-ctabtn${k === sortKey ? " on" : ""}" data-sort="${k}">${l}</button>`).join("")}</div>
+          <div class="trio-list">${bsSorted.length ? bsSorted.map((b, i) =>
+            `<div class="trio-brow">
+              <div class="rk">${i + 1}</div>
+              <div class="bd"><div class="bt" title="${esc(b.book_name)}">${esc(b.book_name)}</div>
+                <div class="bm">${esc(b.author || "")} \u00b7 ${esc(b.category || "")} \u00b7 ${esc(b.word_count || "")}</div></div>
+              <div class="br">${b.popularity ? fmtWan(b.popularity_num) : "\u2014"}<br>${b.boards_count || 1} \u699c</div>
+            </div>`).join("") : '<div class="trio-empty">\u8be5\u7ec6\u5206\u6682\u65e0\u5728\u699c\u4e66\u7c4d</div>'}</div>
+        </div>
+
+        <div class="trio-col">
+          <div class="trio-panehd"><span class="trio-pill">${esc(ctxLabel)}</span>
+            <span class="trio-dot"></span><span class="trio-dimname">\u7ed3\u6784\u753b\u50cf</span>
+            <span class="trio-panenote">${theme === TAB_ALL ? "" : esc(tab) + " \u5171 " + cnt(tab, TAB_ALL) + " \u672c"}</span></div>
+          <div class="trio-list">
+            <div class="trio-srow"><span class="sk">\u4e66\u6570</span><span class="sv">${bs.length} \u672c</span></div>
+            <div class="trio-srow"><span class="sk">\u5360\u672c\u5927\u7c7b</span><span class="sv">${Math.round(1000 * bs.length / tabDen) / 10}%</span></div>
+            <div class="trio-srow"><span class="sk">\u5360\u5168\u7ad9</span><span class="sv">${A.N ? Math.round(1000 * bs.length / A.N) / 10 : 0}%</span></div>
+            <div class="trio-srow"><span class="sk">\u603b\u70ed\u5ea6</span><span class="sv">${fmtWan(sumHeat)}</span></div>
+            <div class="trio-srow"><span class="sk">\u5747\u70ed\u5ea6</span><span class="sv">${heatN ? fmtWan(sumHeat / heatN) : "\u2014"}<small>\u65e5\u699c ${heatN}/${bs.length} \u672c</small></span></div>
+            <div class="trio-srow"><span class="sk">\u5e73\u5747\u5b57\u6570</span><span class="sv">${bs.length ? fmtWan(sumWord / bs.length) + " \u5b57" : "\u2014"}</span></div>
+            <div class="trio-srow"><span class="sk">\u8fde\u8f7d \u00b7 \u5b8c\u7ed3</span><span class="sv">${bs.length - fin} \u00b7 ${fin}</span></div>
+          </div>
+        </div>
+      </div>`;
+
+      host.querySelectorAll(".trio-tabbtn").forEach(el => {
+        el.onclick = () => { tab = el.dataset.tab; theme = TAB_ALL; render(); };
+      });
+      host.querySelectorAll(".trio-l1").forEach(el => {
+        el.onclick = () => { theme = el.dataset.theme; render(); };
+      });
+      host.querySelectorAll(".trio-ctabtn").forEach(el => {
+        el.onclick = () => { sortKey = el.dataset.sort; render(); };
+      });
     }
     render();
   }
