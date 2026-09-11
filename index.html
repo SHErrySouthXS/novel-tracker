@@ -3127,11 +3127,11 @@ async function renderFanqieWithSubTabs(platform, data, contentEl) {
     <div class="sub-tab-content active" id="fanqie-sub-hot">
       <div class="platform-meta" style="margin-bottom:12px;">来源: <a href="${data.source_url}" target="_blank" style="color:${platform.color};">${data.source}</a>${coverageDays > 0 ? ` · <span style="color:#ffa94d;">📅 已统计 ${coverageDays} 天数据</span>` : ''}</div>
 
-      <!-- 题材洞察（细分题材两级模块：一级=大题材分类，二级=该题材下细分 tag） -->
+      <!-- 题材洞察（三栏题材下钻 trio-embed：情感向 tab + 一级词列表 + S/P 母题；替换原细分题材两级模块） -->
       <div class="insight-section" style="margin-bottom:20px;">
         <h3 style="font-size:15px;font-weight:600;margin-bottom:12px;">📈 题材洞察</h3>
         ${summaryBannerHTML(summaryData)}
-        ${subCategoryHTML(books, platform.id, { color: platform.color, maxL1: 8, maxL2: 3, label: '细分题材' })}
+        <div id="trio-fq-hot" data-trio-host></div>
       </div>
 
       <div class="filter-bar">
@@ -3694,40 +3694,51 @@ window.addEventListener('load', () => setTimeout(alignBookItems, 400));
 setTimeout(alignBookItems, 1200);
 </script>
 
-<!-- ===== 长佩三栏题材下钻接入（trio-embed）：替换长佩 4 子榜「细分题材」模块 ===== -->
+<!-- ===== 三栏题材下钻接入（trio-embed）：替换长佩 4 子榜 / 晋江 2 榜 / 番茄热榜的「细分题材」模块 ===== -->
 <script src="data/trio-embed.js"></script>
 <script>
 (function () {
-  // 长佩 4 子榜挂载点 → 各自书级数据（数据现算，无需后端）
-  var CP = '#6c5ce7', JJ = '#e6488a', TRIO_H = 380;
+  // 挂载点 → 各自书级数据（数据现算，无需后端）
+  var CP = '#6c5ce7', JJ = '#e6488a', FQ = '#ff6b35', TRIO_H = 380;
   var HOSTS = [
     { id: 'trio-cp-all',       url: 'data/changpei/latest.json',              color: CP },
     { id: 'trio-cp-purelove',  url: 'data/changpei/purelove_bestseller.json', color: CP },
     { id: 'trio-cp-new',       url: 'data/changpei/purelove_new.json',        color: CP },
     { id: 'trio-cp-completed', url: 'data/changpei/purelove_completed.json',  color: CP },
     { id: 'trio-jj-score',     url: 'data/jjwxc/score1000.json',              color: JJ, dict: 'data/jjwxc_motifs_v1.json' },
-    { id: 'trio-jj-month',     url: 'data/jjwxc/latest.json',                 color: JJ, dict: 'data/jjwxc_motifs_v1.json' }
+    { id: 'trio-jj-month',     url: 'data/jjwxc/latest.json',                 color: JJ, dict: 'data/jjwxc_motifs_v1.json' },
+    // 番茄：taghit 模式（情感向 tab + 一级词 first-hit 列表），词典 24 L1 + 191 L2
+    { id: 'trio-fq-hot',       url: 'data/fanqie/latest.json',                color: FQ, dict: 'data/fanqie_motifs.json', nmWidth: 58, l1Label: '一级 · 题材' }
   ];
-  function startWatch() {
-    if (typeof window.mountTrio !== 'function') { setTimeout(startWatch, 200); return; } // 等 embed 脚本
-    var iv = setInterval(function () {
-      // 长佩 tab 为懒渲染：挂载点未出现时必须保持轮询，不能提前停
-      var allDone = true;
-      HOSTS.forEach(function (h) {
-        var el = document.getElementById(h.id);
-        if (!el) { allDone = false; return; }  // 尚未渲染 → 保持轮询
-        if (el.getAttribute('data-mounted')) return; // 已挂
-        allDone = false;
-        el.setAttribute('data-mounted', '1');   // 先占位防重入（mountTrio 异步）
-        window.mountTrio(el, { color: h.color, height: TRIO_H, booksUrl: h.url, dictUrl: h.dict })
-          .catch(function (e) { console.log('trio mount fail', h.id, e); el.removeAttribute('data-mounted'); });
-      });
-      if (allDone) clearInterval(iv);
-    }, 300);
-    setTimeout(function () { clearInterval(iv); }, 120000); // 保险：2min 后停止轮询
+  // 幂等重扫：只挂还没挂过的挂载点。平台页/子榜都是懒渲染，任何时刻 DOM 里都可能出现新的挂载点。
+  function scan() {
+    if (typeof window.mountTrio !== 'function') return;
+    HOSTS.forEach(function (h) {
+      var el = document.getElementById(h.id);
+      if (!el || el.getAttribute('data-mounted')) return; // 未出现 / 已挂 → 跳过
+      el.setAttribute('data-mounted', '1');               // 先占位防重入（mountTrio 异步）
+      window.mountTrio(el, { color: h.color, height: TRIO_H, booksUrl: h.url, dictUrl: h.dict,
+                             nmWidth: h.nmWidth, l1Label: h.l1Label })
+        .catch(function (e) { console.log('trio mount fail', h.id, e); el.removeAttribute('data-mounted'); });
+    });
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startWatch);
-  else startWatch();
+  var tries = 0;
+  (function boot() {
+    if (typeof window.mountTrio !== 'function') { if (++tries < 100) setTimeout(boot, 120); return; }
+    scan();
+    // 懒渲染兜底一：DOM 变化（切平台 tab / 换子榜 / 回看历史数据）后重扫，自动补齐新挂载点。
+    // 不再用「轮询到 allDone 就停」——切 tab 可能发生在很久之后，那样会永远挂不上。
+    var tmr = null;
+    new MutationObserver(function () { clearTimeout(tmr); tmr = setTimeout(scan, 200); })
+      .observe(document.body, { childList: true, subtree: true });
+    // 懒渲染兜底二：switchTab 里 renderPlatformTab 同步写入 DOM，同一事件内先扫一遍（不等 observer）
+    var orig = window.switchTab;
+    if (typeof orig === 'function' && !orig.__trioWrapped) {
+      var wrapped = function () { var r = orig.apply(this, arguments); scan(); return r; };
+      wrapped.__trioWrapped = true;
+      window.switchTab = wrapped;
+    }
+  })();
 })();
 </script>
 

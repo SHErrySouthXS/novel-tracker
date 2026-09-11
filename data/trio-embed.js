@@ -59,7 +59,7 @@
   .trio-l1:hover{background:rgba(255,255,255,.45);backdrop-filter:blur(8px);}
   .trio-l1.on{background:rgba(255,255,255,.62);backdrop-filter:blur(14px) saturate(1.5);
     border-color:rgba(255,255,255,.95);box-shadow:0 2px 14px rgba(60,72,120,.12);}
-  .trio-l1 .nm{width:44px;font-size:12.5px;font-weight:500;flex:none;text-align:right;color:#232946;}
+  .trio-l1 .nm{width:var(--trio-nmw,44px);font-size:12.5px;font-weight:500;flex:none;text-align:right;color:#232946;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .trio-l1.on .nm{font-weight:600;}
   .trio-l1 .tr{flex:1;height:11px;background:var(--tbar);border-radius:6px;overflow:hidden;}
   .trio-l1 .fl{height:100%;border-radius:6px;background:var(--plat,#6c5ce7);opacity:.50;transition:width .2s,opacity .15s;}
@@ -107,6 +107,8 @@
   .trio-mv-dn{color:var(--red);font-size:11px;font-weight:600;margin-left:4px;}
   .trio-mv-eq{color:#4d5464;font-size:10.5px;margin-left:4px;}
   .trio-empty{flex:1;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:#4d5464;padding:14px 0;}
+  .trio-note{flex:none;margin-top:8px;padding:7px 9px;border-radius:8px;background:rgba(255,255,255,.42);
+    border:1px solid rgba(255,255,255,.6);font-size:10.5px;line-height:1.5;color:#4d5464;}
   @media(max-width:1180px){.trio-root{grid-template-columns:1fr 1fr;}.trio-root .trio-col:nth-child(3){grid-column:1/-1;}}
   @media(max-width:820px){.trio-root{grid-template-columns:1fr;}.trio-root .trio-col:nth-child(3){grid-column:auto;}}`;
 
@@ -147,9 +149,12 @@
         return {
           S, P, subsOf, defaultDim, dimOf, subOf, alias2motif, l1Set, l1Enabled,
           l1Field: d.l1Field || "tags0",
-          l1Tabs: d.l1Tabs && d.l1Tabs.field ? d.l1Tabs : null,
-          l2Bars: d.l2Bars && d.l2Bars.field ? d.l2Bars : null,
-          baseline: d.baseline || "global"
+          l1Tabs: d.l1Tabs && d.l1Tabs.field ? { field: d.l1Tabs.field, tags: d.l1Tabs.tags || null } : null,
+          l2Bars: d.l2Bars && d.l2Bars.field ? { field: d.l2Bars.field, mode: d.l2Bars.mode || "field" } : null,
+          baseline: d.baseline || "global",
+          tabUnit: d.tabUnit || "频道",
+          barsNote: d.barsNote || "",
+          l1OrderAll: (d.L1 || []).filter(x => x.status !== "排除").map(x => x.name)
         };
       }).catch(e => { delete _dictCache[_dkey]; throw e; });
     }
@@ -292,8 +297,59 @@
     return { mode: "tab", N: included, tabOrder, themesByTab, ctxN, ctxM, dict, tf, bf };
   }
 
+  /* ---------- 聚合 C：标签命中 tab + 一级词 first-hit 列表（番茄） ----------
+   * tab   = 书含 dict.l1Tabs.tags 任一标签即入该赛道（可重叠，live 实测 160 本 → 180 语境）
+   * 列表行 = 一级池 24 词的 first-hit 归位（按书标签顺序取首个命中），单值 → 合计 = 赛道书数
+   * 池外书归「其他」行。偏差基准固定 = 全站（L1 是横切口径，拿赛道自身当基线会洗掉横切词）
+   */
+  function aggregateTaghit(books, dict) {
+    const tabTags = (dict.l1Tabs && dict.l1Tabs.tags) || [];
+    const K = (a, b) => a + SEP + b;
+    const OTHER = "其他";
+    const ctxN = {}, ctxM = {};
+    const tabN = {}, barN = {};
+    let included = 0;
+    for (const b of books) {
+      const ts = b.tags || b.all_tags || [];
+      if (!ts.length) continue;
+      included++;
+      // 一级词 first-hit：按书本标签顺序取首个命中一级池的词
+      let row = null;
+      for (const t of ts) { if (dict.l1Set.has(t)) { row = t; break; } }
+      const rk = row || OTHER;
+      barN[rk] = (barN[rk] || 0) + 1;
+      const ms = collectMotifs(b, dict, true);
+      const tabs = [TAB_ALL];
+      for (const t of tabTags) if (ts.indexOf(t) >= 0) tabs.push(t);
+      for (const tb of tabs) {
+        tabN[tb] = (tabN[tb] || 0) + 1;
+        const keys = [K(tb, TAB_ALL), K(tb, rk)];
+        for (const kk of keys) {
+          if (!ctxN[kk]) { ctxN[kk] = 0; ctxM[kk] = {}; }
+          ctxN[kk]++;
+          for (const m of ms) ctxM[kk][m] = (ctxM[kk][m] || 0) + 1;
+        }
+      }
+    }
+    const allRows = (dict.l1OrderAll || []).concat([OTHER]);
+    const rowsIn = tk => allRows.filter(r => ctxN[K(tk, r)])
+      .map(r => [r, ctxN[K(tk, r)]]).sort((a, b) => b[1] - a[1]);
+    const themesByTab = {};
+    themesByTab[TAB_ALL] = rowsIn(TAB_ALL);
+    // tab 顺序按词典声明（不随数据量漂移），无数据的赛道不显示
+    const tabOrder = tabTags.filter(t => tabN[t] > 0);
+    for (const t of tabOrder) themesByTab[t] = rowsIn(t);
+    return { mode: "tab", baseIsAll: true, N: included, tabOrder, themesByTab, ctxN, ctxM, dict,
+             tf: (dict.l1Tabs && dict.l1Tabs.field) || "taghit", bf: "firsthit" };
+  }
+
   function aggregate(books, dict) {
-    return (dict.l1Tabs && dict.l2Bars) ? aggregateTab(books, dict) : aggregateLegacy(books, dict);
+    if (!(dict.l1Tabs && dict.l2Bars)) return aggregateLegacy(books, dict);
+    // taghit：tab 与列表行都是「标签命中」语义（番茄：情感向 tab + 一级词列表）
+    if (dict.l1Tabs.field === "taghit" || (dict.l2Bars && dict.l2Bars.mode === "firsthit")) {
+      return aggregateTaghit(books, dict);
+    }
+    return aggregateTab(books, dict);
   }
 
   /* ---------- 渲染 ---------- */
@@ -307,6 +363,7 @@
     const l1Label = opts.l1Label || "一级 · 频道";
     host.style.setProperty("--trio-h", height + "px");
     host.style.setProperty("--plat", color);
+    if (opts.nmWidth) host.style.setProperty("--trio-nmw", opts.nmWidth + "px");
     const hex = color.replace("#", "");
     const r = parseInt(hex.slice(0, 2), 16), g = parseInt(hex.slice(2, 4), 16), bl = parseInt(hex.slice(4, 6), 16);
     if (!isNaN(r)) { host.style.setProperty("--plat-soft", `rgba(${r},${g},${bl},.50)`); host.style.setProperty("--plat-deep", color); }
@@ -453,7 +510,9 @@
     let sSub = "all", pSub = "all";
 
     const curKey = () => K(tab, theme);
-    const baseKey = () => K(tab, TAB_ALL);
+    // 形态 B（字段 tab）：基线 = 当前 tab 的「全部 theme」档（频道内基线）
+    // 形态 C（taghit）：基线固定 = 全站（横切口径，赛道自身当基线会把横切词洗掉）
+    const baseKey = () => (A.baseIsAll ? K(TAB_ALL, TAB_ALL) : K(tab, TAB_ALL));
     const denOf = k => A.ctxN[k] || 0;
 
     function ctxRows(key, dimName) {
@@ -483,13 +542,14 @@
     function paneLabel() {
       const den = denOf(curKey());
       if (tab === TAB_ALL && theme === TAB_ALL) return `全站基线 ${A.N} 本`;
-      if (theme === TAB_ALL) return `${tab}频道 ${den} 本`;
+      if (theme === TAB_ALL) return `${tab}${A.dict.tabUnit} ${den} 本`;
       if (tab === TAB_ALL) return `${theme} · 全站 ${den} 本`;
       return `${tab} × ${theme} ${den} 本`;
     }
     function paneNote() {
       if (curKey() === baseKey()) return "今日覆盖率排行（基线 · 无偏差）";
-      return `覆盖率排行 · 相对${tab === TAB_ALL ? "全站" : tab + "频道"}基线 \u25b2\u25bc`;
+      const bl = A.baseIsAll ? "全站" : (tab === TAB_ALL ? "全站" : tab + A.dict.tabUnit);
+      return `覆盖率排行 · 相对${bl}基线 \u25b2\u25bc`;
     }
 
     function render() {
@@ -508,6 +568,7 @@
               <div class="tr"><div class="fl" style="width:${Math.round(100 * n / maxC)}%"></div></div>
               <div class="ct">${n}本 · ${(Math.round(1000 * n / tabDen) / 10)}%</div></div>`;
           }).join("")}</div>
+          ${noteHTML(rows)}
         </div>
         <div class="trio-col">
           ${pillRowHTML("S", curKey())}
@@ -556,6 +617,12 @@
       return `<div class="trio-panehd"><span class="trio-pill">${esc(paneLabel())}</span>
         <span class="trio-dot"></span><span class="trio-dimname">${esc(name)}</span>
         <span class="trio-panenote">${paneNote()}</span></div>`;
+    }
+    // 赛道内无题材细分（列表只剩「全部」+ 赛道自身一行）时补一句说明，避免看着像坏了
+    function noteHTML(rows) {
+      if (!A.dict.barsNote || tab === TAB_ALL) return "";
+      if (rows.length !== 1 || rows[0][0] !== tab) return "";
+      return `<div class="trio-note">${esc(A.dict.barsNote)}</div>`;
     }
     function subRowHTML(grp) {
       const arr = grp === "S" ? STORY : PERSON;
