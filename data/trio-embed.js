@@ -146,15 +146,27 @@
         const l1Set = new Set((d.L1 || []).map(x => x.name));
         // 启用池：词典里 status 标「排除」的一级词（如晋江的「未知」）不参与聚合
         const l1Enabled = new Set((d.L1 || []).filter(x => x.status !== "排除").map(x => x.name));
+        // 列表池：再扣掉 status 标「tab」的词（已升为赛道 tab，不应在列表里重复出现）
+        const listL1 = (d.L1 || []).filter(x => x.status !== "排除" && x.status !== "tab").map(x => x.name);
+        // tab 配置：tags（旧：平铺标签）或 groups（新：互斥分组，顺序即优先级，match 为空=兜底组）
+        const l1TabsCfg = (d.l1Tabs && d.l1Tabs.field) ? {
+          field: d.l1Tabs.field,
+          tags: d.l1Tabs.tags || null,
+          groups: Array.isArray(d.l1Tabs.groups) && d.l1Tabs.groups.length
+            ? d.l1Tabs.groups.map(g => ({ name: g.name, match: Array.isArray(g.match) ? g.match : [] }))
+            : null
+        } : null;
         return {
           S, P, subsOf, defaultDim, dimOf, subOf, alias2motif, l1Set, l1Enabled,
           l1Field: d.l1Field || "tags0",
-          l1Tabs: d.l1Tabs && d.l1Tabs.field ? { field: d.l1Tabs.field, tags: d.l1Tabs.tags || null } : null,
+          l1Tabs: l1TabsCfg,
           l2Bars: d.l2Bars && d.l2Bars.field ? { field: d.l2Bars.field, mode: d.l2Bars.mode || "field" } : null,
           baseline: d.baseline || "global",
           tabUnit: d.tabUnit || "频道",
           barsNote: d.barsNote || "",
-          l1OrderAll: (d.L1 || []).filter(x => x.status !== "排除").map(x => x.name)
+          defaultTab: d.defaultTab || null,
+          l1Bars: new Set(listL1),
+          l1OrderAll: listL1
         };
       }).catch(e => { delete _dictCache[_dkey]; throw e; });
     }
@@ -303,24 +315,45 @@
    * 池外书归「其他」行。偏差基准固定 = 全站（L1 是横切口径，拿赛道自身当基线会洗掉横切词）
    */
   function aggregateTaghit(books, dict) {
-    const tabTags = (dict.l1Tabs && dict.l1Tabs.tags) || [];
+    const T = dict.l1Tabs || {};
+    // 新词典：groups = 互斥分组（顺序即判定优先级，match 为空 = 兜底组，书归且仅归一组）
+    // 旧词典：tags = 平铺标签（可重叠），保留兼容
+    const flat = !T.groups;
+    const groups = flat ? (T.tags || []).map(t => ({ name: t, match: [t] })) : T.groups;
+    const fallback = (groups.filter(g => !g.match.length)[0] || {}).name || null;
     const K = (a, b) => a + SEP + b;
     const OTHER = "其他";
     const ctxN = {}, ctxM = {};
-    const tabN = {}, barN = {};
+    const tabN = {};
     let included = 0;
+    const bars = dict.l1Bars || dict.l1Set;   // 列表池：一级池扣除赛道词
     for (const b of books) {
       const ts = b.tags || b.all_tags || [];
       if (!ts.length) continue;
       included++;
-      // 一级词 first-hit：按书本标签顺序取首个命中一级池的词
+      // 一级词 first-hit：按书本标签顺序取首个命中列表池的词
       let row = null;
-      for (const t of ts) { if (dict.l1Set.has(t)) { row = t; break; } }
+      for (const t of ts) { if (bars.has(t)) { row = t; break; } }
       const rk = row || OTHER;
-      barN[rk] = (barN[rk] || 0) + 1;
       const ms = collectMotifs(b, dict, true);
-      const tabs = [TAB_ALL];
-      for (const t of tabTags) if (ts.indexOf(t) >= 0) tabs.push(t);
+      // 全站档：只作偏差基准，不再显示为 tab（互斥划分下「全站」= 各组之和）
+      const kAll = K(TAB_ALL, TAB_ALL);
+      if (ctxN[kAll] === undefined) { ctxN[kAll] = 0; ctxM[kAll] = {}; }
+      ctxN[kAll]++;
+      for (const m of ms) ctxM[kAll][m] = (ctxM[kAll][m] || 0) + 1;
+      // 赛道归属
+      let tabs;
+      if (flat) {
+        tabs = [TAB_ALL];
+        for (const t of (T.tags || [])) if (ts.indexOf(t) >= 0) tabs.push(t);
+      } else {
+        let owner = fallback;
+        for (const g of groups) {
+          if (!g.match.length) continue;                    // 兜底组由 fallback 承接
+          if (g.match.some(w => ts.indexOf(w) >= 0)) { owner = g.name; break; }
+        }
+        tabs = owner ? [owner] : [TAB_ALL];
+      }
       for (const tb of tabs) {
         tabN[tb] = (tabN[tb] || 0) + 1;
         const keys = [K(tb, TAB_ALL), K(tb, rk)];
@@ -337,10 +370,12 @@
     const themesByTab = {};
     themesByTab[TAB_ALL] = rowsIn(TAB_ALL);
     // tab 顺序按词典声明（不随数据量漂移），无数据的赛道不显示
-    const tabOrder = tabTags.filter(t => tabN[t] > 0);
+    const tabOrder = groups.map(g => g.name).filter(t => tabN[t] > 0);
     for (const t of tabOrder) themesByTab[t] = rowsIn(t);
-    return { mode: "tab", baseIsAll: true, N: included, tabOrder, themesByTab, ctxN, ctxM, dict,
-             tf: (dict.l1Tabs && dict.l1Tabs.field) || "taghit", bf: "firsthit" };
+    return { mode: "tab", baseIsAll: true, exclusive: !flat, N: included,
+             tabOrder, themesByTab, ctxN, ctxM, dict,
+             defaultTab: flat ? TAB_ALL : (dict.defaultTab || (groups[0] || {}).name || TAB_ALL),
+             tf: T.field || "taghit", bf: "firsthit" };
   }
 
   function aggregate(books, dict) {
@@ -504,7 +539,8 @@
     const STORY = dict.S, PERSON = dict.P;
     const subsOf = dict.subsOf;
     const K = (a, b) => a + SEP + b;
-    let tab = TAB_ALL, theme = TAB_ALL;
+    const OTHER = "其他";
+    let tab = A.defaultTab || TAB_ALL, theme = TAB_ALL;
     let sIdx = Math.max(0, STORY.indexOf(dict.defaultDim));
     let pIdx = 0;
     let sSub = "all", pSub = "all";
@@ -553,13 +589,18 @@
     }
 
     function render() {
+      // 赛道互斥模式下不显示「全部」档（全站 = 各赛道之和，无独立视角）；默认赛道当日无数据时兜底到首个有数据的
+      if (A.exclusive && A.tabOrder.indexOf(tab) < 0) tab = A.tabOrder[0] || TAB_ALL;
       const rows = A.themesByTab[tab] || [];
-      const listItems = [[TAB_ALL, denOf(K(tab, TAB_ALL))]].concat(rows);
+      // 赛道内无题材细分时列表只剩「其他」（等价于赛道全部），不再重复列一行
+      const noSplit = A.exclusive && (rows.length === 0 || (rows.length === 1 && rows[0][0] === OTHER));
+      const listItems = [[TAB_ALL, denOf(K(tab, TAB_ALL))]].concat(noSplit ? [] : rows);
       const maxC = Math.max.apply(null, listItems.map(x => x[1]).concat([1]));
       const tabDen = denOf(K(tab, TAB_ALL)) || 1;
+      const tabsShown = A.exclusive ? A.tabOrder : [TAB_ALL].concat(A.tabOrder);
       host.innerHTML = `<div class="trio-root">
         <div class="trio-col">
-          <div class="trio-tabs">${[TAB_ALL].concat(A.tabOrder).map(t =>
+          <div class="trio-tabs">${tabsShown.map(t =>
             `<button class="trio-tabbtn${t === tab ? " on" : ""}" data-tab="${esc(t)}">${esc(t)}</button>`).join("")}</div>
           <div class="trio-list">${listItems.map(([th, n]) => {
             const on = theme === th;
@@ -618,10 +659,11 @@
         <span class="trio-dot"></span><span class="trio-dimname">${esc(name)}</span>
         <span class="trio-panenote">${paneNote()}</span></div>`;
     }
-    // 赛道内无题材细分（列表只剩「全部」+ 赛道自身一行）时补一句说明，避免看着像坏了
+    // 赛道内无题材细分（列表只剩「其他」/赛道自身，等价于赛道全部）时补一句说明，避免看着像坏了
     function noteHTML(rows) {
       if (!A.dict.barsNote || tab === TAB_ALL) return "";
-      if (rows.length !== 1 || rows[0][0] !== tab) return "";
+      const only = rows.length === 1 ? rows[0][0] : null;
+      if (rows.length !== 0 && only !== OTHER && only !== tab) return "";
       return `<div class="trio-note">${esc(A.dict.barsNote)}</div>`;
     }
     function subRowHTML(grp) {

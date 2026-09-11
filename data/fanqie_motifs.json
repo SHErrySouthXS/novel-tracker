@@ -1,20 +1,39 @@
 {
   "platform": "fanqie",
-  "version": "v1",
+  "version": "v2",
   "meta": {
     "source": "飞书《novel-tracker 分类池》08_番茄分类池 tab（sheet bxYkwm）",
     "generated_by": "scrapers/build_fanqie_motifs.py",
     "L1_note": "24 词 = 08 tab 一级池 23 + 动漫衍生（官方主分类，升入 L1）",
-    "note": "二级池 192 词 - 动漫衍生 = 191；合计词表 215"
+    "note": "二级池 192 词 - 动漫衍生 = 191；合计词表 215。赛道词（双男主/纯爱/双女主/无CP）标 status=tab，退出列表池。"
   },
   "l1Field": "tagmatch",
   "l1Tabs": {
     "field": "taghit",
-    "tags": [
-      "双男主",
-      "双女主",
-      "无CP",
-      "纯爱"
+    "groups": [
+      {
+        "name": "BG",
+        "match": []
+      },
+      {
+        "name": "双男主",
+        "match": [
+          "双男主",
+          "纯爱"
+        ]
+      },
+      {
+        "name": "双女主",
+        "match": [
+          "双女主"
+        ]
+      },
+      {
+        "name": "无CP",
+        "match": [
+          "无CP"
+        ]
+      }
     ]
   },
   "l2Bars": {
@@ -22,6 +41,7 @@
     "mode": "firsthit"
   },
   "baseline": "global",
+  "defaultTab": "BG",
   "tabUnit": "赛道",
   "barsNote": "该赛道在番茄即为一级题材本身，赛道内无题材细分；细分见右侧母题",
   "defaultDim": "题材背景",
@@ -81,16 +101,20 @@
       "name": "民国言情"
     },
     {
-      "name": "双男主"
+      "name": "双男主",
+      "status": "tab"
     },
     {
-      "name": "无CP"
+      "name": "无CP",
+      "status": "tab"
     },
     {
-      "name": "双女主"
+      "name": "双女主",
+      "status": "tab"
     },
     {
-      "name": "纯爱"
+      "name": "纯爱",
+      "status": "tab"
     },
     {
       "name": "男频衍生"
