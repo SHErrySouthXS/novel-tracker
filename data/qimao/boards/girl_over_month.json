@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-09-13 05:03:07",
+  "update_time": "2026-09-13 07:14:41",
   "update_date": "2026-09-13",
   "total_count": 20,
   "source": "七猫小说·女生完结月榜",
@@ -125,25 +125,9 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [
-          {
-            "title": "婚后上瘾",
-            "book_id": 1994117,
-            "rank_change": -1
-          },
-          {
-            "title": "大佬归来，假千金她不装了",
-            "book_id": 1699328,
-            "rank_change": -1
-          },
-          {
-            "title": "六年后，我携四个幼崽炸翻前夫家",
-            "book_id": 1658048,
-            "rank_change": -1
-          }
-        ],
+        "top_fallers": [],
         "heat_leaders": [],
-        "summary": "**题材趋势**：榜单结构高度固化，以“破镜重圆”、“带球跑”及“先婚后爱”为核心驱动力，短剧改编作品在维持长尾热度上表现优异。\n**读者偏好**：读者倾向于高张力的情感冲突，如“失控”、“蓄谋已久”等带有强情绪价值的设定，以及具备“打脸”、“逆袭”元素的爽文架构。\n**变动解读**：本期榜单缺乏新鲜血液注入，头部书籍热度溢出效应明显，中后部书籍因缺乏新增长点，呈现整体性的排名顺延下滑。\n**值得关注**：高热度书籍多带有“短剧原著”标签，说明IP联动对提升完结月榜的留存热度具有显著加持作用。",
+        "summary": "**题材趋势**：霸总题材呈现高度同质化与强戏剧冲突特征，带球跑、重逢破镜与先婚后爱仍是核心叙事引擎，短剧联动效应明显。\n**读者偏好**：读者热衷于“强强对抗”与“身份反差”设定，尤其青睐女主从卑微受虐到强势回归的爽文路径，以及带有玄学或幼崽辅助的复合型爽点。\n**变动解读**：本期榜单稳定性极高，头部作品热度壁垒坚固，缺乏新进力量挑战现有格局。\n**值得关注**：依托短剧原著改编及综艺流量背书的书籍表现稳健，显示出跨媒介联动对存量市场的强导流作用。",
         "ai_source": "ai"
       },
       "books": [
@@ -198,7 +182,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/772/2315755_360x480.jpg?time=1768286147",
           "latest_chapter": " 第633章  全剧终✿ヽ(°▽°)ノ✿",
           "updated_at": "2026-03-05 07:01:09",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
@@ -227,7 +211,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/410/1229482_360x480.jpg?time=1683772413",
           "latest_chapter": " 第1284章  番外：大婚（完）",
           "updated_at": "2025-02-07 02:05:33",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
@@ -256,7 +240,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/92/275615_1659923211_360x480.jpg",
           "latest_chapter": " 第3020章  我都能给你",
           "updated_at": "2026-02-13 22:05:28",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -285,7 +269,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/861/2580857_360x480.jpg?time=1779267111",
           "latest_chapter": " 第398章  ——津晚大结局（下）",
           "updated_at": "2026-04-22 18:18:05",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -314,7 +298,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3345/10034568_360x480.jpg?time=1776046465",
           "latest_chapter": " 第290章  冰山会为你哗然（完）",
           "updated_at": "2026-07-01 08:01:07",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -343,7 +327,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/550/1649331_360x480.jpg?time=1717642444",
           "latest_chapter": " 第267章  全文终",
           "updated_at": "2024-09-30 15:24:03",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
@@ -372,7 +356,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/475/1424722_360x480.jpg?time=1700531982",
           "latest_chapter": " 第509章  番外——道侣大典（完）",
           "updated_at": "2024-09-02 22:01:10",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -387,41 +371,14 @@
       "count": 6,
       "total_heat": 52574000,
       "trend": {
-        "new_count": 1,
-        "dropped_count": 1,
-        "new_books": [
-          {
-            "title": "被逼自刎，嫡女重生撕婚书覆皇朝",
-            "book_id": 2074363
-          }
-        ],
-        "dropped_books": [
-          {
-            "title": "一枕春深",
-            "book_id": 11512461,
-            "intro": "沈姝为了活命去做了留种娘子，给一位病重的神秘贵人留下血脉。数年后，她带着软萌萌的小女儿重返京城，入了凛王府做奶娘。只是这凛王看她的眼神越来越不对劲，吻她的腰，进她的房，最后还逼她承认宝儿是他的女儿……"
-          }
-        ],
+        "new_count": 0,
+        "dropped_count": 0,
+        "new_books": [],
+        "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [
-          {
-            "title": "随母改嫁旺新家，重生嫡女嘎嘎乱杀",
-            "book_id": 2019227,
-            "rank_change": -1
-          },
-          {
-            "title": "解春衫",
-            "book_id": 2065888,
-            "rank_change": -1
-          },
-          {
-            "title": "第一凤女",
-            "book_id": 1803136,
-            "rank_change": -1
-          }
-        ],
+        "top_fallers": [],
         "heat_leaders": [],
-        "summary": "**题材趋势**：重生复仇与大女主权谋是绝对主导，强调从卑微弃子到翻盘掌权的爽感逻辑，且融合了“玄学”、“养崽”等轻快元素。\n**读者偏好**：读者对“全家火葬场”、“虐渣追妻”等强情绪反转有极高偏好，偏爱节奏明快、爽感密集的复仇爽文。\n**变动解读**：《被逼自刎，嫡女重生撕婚书覆皇朝》强势入榜并占据高位，证明了“双重生+追妻火葬场”题材仍具备极强的市场吸睛能力。\n**值得关注**：榜单末位流动性较强，题材需在传统宅斗基础上叠加差异化设定（如捡破烂的团宠崽）才能保持竞争力。",
+        "summary": "**题材趋势**：重生复仇与大女主权谋是绝对主流，叙事逻辑高度聚焦于“打脸虐渣”与“身份逆袭”，且伴随明显的对照组爽点设计。\n**读者偏好**：读者倾向于情感线与事业线并重的爽文，对“重生回改嫁节点”或“幼崽助力家族兴旺”等带有轻快节奏的宅斗题材接受度极高。\n**变动解读**：榜单呈现高度固化，现有作品在垂直细分领域的统治力稳固，未见新的市场突围者。\n**值得关注**：高热度作品普遍具备影视化基因，原著IP与短剧联动的转化效果显著，是当前提升热度的核心抓手。",
         "ai_source": "ai"
       },
       "books": [
@@ -467,18 +424,18 @@
           "minor_id": 209,
           "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "175.38万字",
-          "word_count": 1753800,
+          "word_count_text": "175.98万字",
+          "word_count": 1759800,
           "heat": 10667000,
           "platform_trend": "drop",
           "badge": "最新上榜",
           "intro": "【虐渣+追妻+1VS1双洁+女主男配双重生+全家火葬场】\n   帝病危，宫中无皇子。\n   她虞知宁嫁靖王世子裴衡三年，琴瑟和鸣，是太后秘密养在在外的女儿。\n   太后心疼女儿，扶裴衡上位。\n   册封前，虞知宁被靖王府以祈福之名诓骗去寺里上香，半路被掳，鞭挞三日，受尽屈辱后，被劫匪扔在城门口，闹得满城皆知。\n   为保颜面，裴衡不查真相，反逼她自刎，连同腹中孩儿一尸两命。\n \n    断气前堂妹巧笑嫣然的告诉她劫匪不是劫匪，而是家族为堂妹上位找人假扮，夺她性命，踩着她尸骨，让堂妹占有了原本属于她的全部。\n    而这一切，还有裴衡的纵容！\n    \n    虞知宁含恨而死，携怨重生回及笄前一天\n    她抛绣球改嫁纨绔璟王世子裴玄。\n    全京城都在等着看笑话\n    可后来裴玄做了太子，她做了太子妃\n    \n    数日后裴衡造反失败，靖王府全族被抄，囚车路过她身边时，裴衡赤红眼跪在她脚下求原谅：“阿宁，你该嫁我的！”",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/896/2686789_360x480.jpg?time=1761327901",
-          "latest_chapter": " 第770章  挨罚",
-          "updated_at": "2026-09-11 22:41:06",
+          "latest_chapter": " 第773章  离间瓦解",
+          "updated_at": "2026-09-12 23:47:07",
           "rank_change": 0,
           "heat_change": 0,
-          "is_new": true,
+          "is_new": false,
           "boards_count": 5,
           "stale_update": false,
           "category": "宫闱宅斗"
@@ -505,7 +462,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/801/2400937_360x480.jpg?time=1753811344",
           "latest_chapter": " 第493章  番外：是一见倾心，也是非你不可的坚定",
           "updated_at": "2026-02-08 23:58:06",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
@@ -534,7 +491,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/888/2661154_360x480.jpg?time=1761644493",
           "latest_chapter": " 第762章  夫因妻显",
           "updated_at": "2026-08-19 08:02:20",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
@@ -563,7 +520,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/504/1510567_360x480.jpg?time=1728714692",
           "latest_chapter": " 第1130章  番外：如果有来生（全书完）",
           "updated_at": "2025-08-31 14:41:10",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -592,10 +549,10 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/874/2619633_360x480.jpg?time=1763973880",
           "latest_chapter": " 第946章  回家喽",
           "updated_at": "2026-07-16 23:27:07",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
-          "boards_count": 1,
+          "boards_count": 2,
           "stale_update": true,
           "category": "宫闱宅斗"
         }
@@ -612,25 +569,9 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [
-          {
-            "title": "第一瞳术师",
-            "book_id": 215243,
-            "rank_change": -1
-          },
-          {
-            "title": "柔弱医修今天也在背地里暴打魔尊",
-            "book_id": 1981956,
-            "rank_change": -1
-          },
-          {
-            "title": "我团宠小师妹，嚣张点怎么了",
-            "book_id": 1764505,
-            "rank_change": -1
-          }
-        ],
+        "top_fallers": [],
         "heat_leaders": [],
-        "summary": "**题材趋势**：仙侠频道呈现明显的“群像化”与“反套路”趋势，强调师徒关系重构及废材流逆袭，注重爽感与情感羁绊的平衡。\n**读者偏好**：读者热衷于“打脸”与“团宠”设定，尤其是带有“卷王”与“咸鱼”反差对照组的作品，在互动中更容易引发共鸣。\n**变动解读**：榜单处于平稳调整期，缺乏新进作品冲击，现有头部作品热度相对集中，后续作品因缺乏强力话题支撑，整体排名被动微调。\n**值得关注**：出版联动与头部综艺背书（如《奔跑吧》等同款推荐）对提升仙侠类书籍的破圈传播力具有明显拉动作用。",
+        "summary": "**题材趋势**：大女主群像文与反套路修仙占据主流，强调废材逆袭、师徒羁绊及打破传统修仙秩序的爽感，题材边界正向“轻玄幻”延展。\n**读者偏好**：读者偏爱节奏紧凑、带有强烈个人英雄主义色彩的成长故事，且对“师徒关系反转”及“暴打反派”等情绪化爽点极为买单。\n**变动解读**：榜单结构稳定，头部四本作品热度分布均衡，暂无新书冲击排名。\n**值得关注**：出版实体书联动与综艺话题植入有效提升了书籍的曝光度与话题性，是该类目下维持长尾热度的重要手段。",
         "ai_source": "ai"
       },
       "books": [
@@ -656,7 +597,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/73/216077_360x480.jpg?time=1638352861",
           "latest_chapter": " 第1903章  婚后番外（下）",
           "updated_at": "2025-11-11 17:12:29",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
@@ -685,7 +626,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/754/2260672_360x480.jpg?time=1745544770",
           "latest_chapter": " 第767章  番外",
           "updated_at": "2026-08-05 22:21:07",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -714,7 +655,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/478/1432610_360x480.jpg?time=1704683308",
           "latest_chapter": " 第1329章  番外九：魔与龙（完）全文完",
           "updated_at": "2025-09-01 23:57:12",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
@@ -743,7 +684,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/675/2022677_360x480.jpg?time=1744704209",
           "latest_chapter": " 第924章  幸得友人，幸得彼此（全文完）",
           "updated_at": "2026-07-06 00:01:08",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
@@ -763,15 +704,9 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [
-          {
-            "title": "阴当",
-            "book_id": 1979356,
-            "rank_change": -1
-          }
-        ],
+        "top_fallers": [],
         "heat_leaders": [],
-        "summary": "**题材趋势**：民俗悬疑与奇异命格元素依然是都市奇幻类别的核心驱动力，具有较强的长尾效应。\n**读者偏好**：读者倾向于带有宿命感、古老职业背景及强冲突开局的叙事风格，对“当铺”、“祭品”等中式民俗符号有较高粘性。\n**变动解读**：本期该细分赛道整体平稳，仅有一本头部作品在榜，排名微降显示其处于生命周期的末端流量平稳期。\n**值得关注**：在缺乏新作冲击的情况下，建议关注此类题材如何通过续作或题材融合实现热度回升。",
+        "summary": "**题材趋势**：民俗悬疑与职业化叙事结合，依托带有宿命感的“当铺”设定，构建出具有强代入感的怪谈世界。\n**读者偏好**：读者倾向于带有民俗色彩、身世坎坷及“天选之子”类成长型主角的奇幻故事，对宿命论叙事有较高粘性。\n**变动解读**：本期榜单稳定性极高，头部作品热度稳固，显示出该细分领域在完结阶段具备长尾效应，市场竞争格局趋于定型。\n**值得关注**：需观察此类题材在“职业+民俗”框架下，如何进一步挖掘新颖的设定差异化，以打破单一爆款的统治地位。",
         "ai_source": "ai"
       },
       "books": [
@@ -797,7 +732,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/748/2242515_360x480.jpg?time=1778636494",
           "latest_chapter": " 第1010章  阿熏，嫁给我",
           "updated_at": "2026-07-19 00:07:14",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -817,15 +752,9 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [
-          {
-            "title": "七零，易孕娇妻被绝嗣京少宠哭了",
-            "book_id": 1866390,
-            "rank_change": -1
-          }
-        ],
+        "top_fallers": [],
         "heat_leaders": [],
-        "summary": "**题材趋势**：年代文赛道高度聚焦于“重生+换嫁+极品宠溺”的强情绪爽点逻辑，是目前女性向市场的成熟品类。\n**读者偏好**：读者热衷于“绝嗣硬汉”与“好孕娇妻”的极致人设反差，以及通过重生弥补前世遗憾的复仇/逆袭爽感。\n**变动解读**：该作品作为唯一上榜书籍，排名微调属于完结后的自然流量回落，体现了该类题材稳健的市场底盘。\n**值得关注**：此类题材已进入存量竞争阶段，后续创作需在人设冲突与爽点铺设上寻求差异化更新。",
+        "summary": "**题材趋势**：融合“七零年代”、“双重生”与“先婚后爱”等高爽点元素，通过强人设反差（绝嗣京少vs好孕美人）精准切入女性向市场。\n**读者偏好**：读者对快节奏的反击剧情及强情感张力的互动模式需求强烈，偏好将“家庭伦理”与“甜蜜宠文”进行有机结合的叙事。\n**变动解读**：榜单表现平稳，说明该书通过精准的标签组合成功锁定受众，在完结期依然保持着稳定的流量转化。\n**值得关注**：建议关注此类“年代+宠文”模式在后续创作中，如何通过更多元的时代冲突点来维持读者的长期阅读热情。",
         "ai_source": "ai"
       },
       "books": [
@@ -851,7 +780,7 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/595/1784376_360x480.jpg?time=1726332415",
           "latest_chapter": " 第707章  大结局（完）",
           "updated_at": "2026-04-03 14:06:07",
-          "rank_change": -1,
+          "rank_change": 0,
           "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
@@ -970,19 +899,19 @@
         "宫闱宅斗"
       ],
       "abstract": "【虐渣+追妻+1VS1双洁+女主男配双重生+全家火葬场】\n   帝病危，宫中无皇子。\n   她虞知宁嫁靖王世子裴衡三年，琴瑟和鸣，是太后秘密养在在外的女儿。\n   太后心疼女儿，扶裴衡上位。\n   册封前，虞知宁被靖王府以祈福之名诓骗去寺里上香，半路被掳，鞭挞三日，受尽屈辱后，被劫匪扔在城门口，闹得满城皆知。\n   为保颜面，裴衡不查真相，反逼她自刎，连同腹中孩儿一尸两命。\n \n    断气前堂妹巧笑嫣然的告诉她劫匪不是劫匪，而是家族为堂妹上位找人假扮，夺她性命，踩着她尸骨，让堂妹占有了原本属于她的全部。\n    而这一切，还有裴衡的纵容！\n    \n    虞知宁含恨而死，携怨重生回及笄前一天\n    她抛绣球改嫁纨绔璟王世子裴玄。\n    全京城都在等着看笑话\n    可后来裴玄做了太子，她做了太子妃\n    \n    数日后裴衡造反失败，靖王府全族被抄，囚车路过她身边时，裴衡赤红眼跪在她脚下求原谅：“阿宁，你该嫁我的！”",
-      "word_count": "175.38万字",
-      "word_count_num": 1753800,
+      "word_count": "175.98万字",
+      "word_count_num": 1759800,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-09-11 22:41:06",
+      "update_time": "2026-09-12 23:47:07",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/896/2686789_360x480.jpg?time=1761327901",
       "badge": "最新上榜",
-      "latest_chapter": " 第770章  挨罚",
+      "latest_chapter": " 第773章  离间瓦解",
       "platform_trend": "drop",
-      "is_new": true,
+      "is_new": false,
       "heat_change": 0,
       "boards": [
         "完结月榜"
@@ -1503,7 +1432,7 @@
       "boards": [
         "完结月榜"
       ],
-      "boards_count": 1,
+      "boards_count": 2,
       "rank_change": null,
       "history_days": 2
     },
