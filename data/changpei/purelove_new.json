@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-09-14 04:03:52",
+  "update_time": "2026-09-14 05:09:47",
   "update_date": "2026-09-14",
   "total_count": 54,
   "source": "长佩文学·纯爱·新书榜",
@@ -10,11 +10,11 @@
   "ranking_name": "纯爱·新书榜",
   "tag_stats": {
     "都市": 16,
-    "小说": 1,
+    "小说": 2,
     "架空": 8,
     "青春": 4,
     "宫廷": 1,
-    "综合": 15,
+    "综合": 14,
     "武侠": 1,
     "奇幻": 3,
     "玄幻": 1,
@@ -24,7 +24,8 @@
     "民国": 1
   },
   "status_stats": {
-    "连载中": 54
+    "连载中": 53,
+    "完结": 1
   },
   "books": [
     {
@@ -48,7 +49,7 @@
       "primary_tag": "都市",
       "abstract": "短剧演员闻屿参加了一个叫演技为王的综艺节目，赵衡川是他的导师。录制过程中，他发现了赵衡川一些不可告人的小秘密，他想赵衡川可以潜规则别人，是不是也可以潜规则自己……",
       "word_count": "6",
-      "popularity": "170.04万",
+      "popularity": "170.21万",
       "status": "连载中",
       "update_time": "昨天 12:00",
       "channel": "",
@@ -106,7 +107,7 @@
       "primary_tag": "架空",
       "abstract": "林苔：宅男，楚男，重男，怨男，社交障碍，敏感易碎，嘴强王者。 极度记仇。全世界最吃压力之人，正数第一心眼小之人，最被害妄想之人。 这样的林苔有一个一生之敌。 一个他恨之入骨，恨不得千刀万剐的人。 就是——那年当着他的面断崖式拒绝了林苔的告白的邻居哥哥。 林苔发誓要报仇雪恨。 为出这一口恶气，他寒窗苦读如愿考上了尹星野的大学。 他一笔一画地记着死亡笔记。 第一页第一个名字，齐齐整整写着的就是尹星野三",
       "word_count": "2.21万",
-      "popularity": "7.09万",
+      "popularity": "7.10万",
       "status": "连载中",
       "update_time": "昨天 22:19",
       "channel": "",
@@ -244,7 +245,7 @@
       "primary_tag": "都市",
       "abstract": "爹系霸总攻*温柔人妻受 许家破产那晚，债主把八岁的许赋按在牌桌上抵债。 陈璋明跟着父亲巡场，在一群看热闹的人身后，看见了角落里任人宰割的许赋。 陈璋明说，“爸，我要他。” “一个废物，你要来干什么？” 陈璋明笑了，带着不属于孩子的恶劣，“没人要的废物，才好养熟。” 从此，许赋成了他的仆人，事无巨细地照料他的饮食起居。 成人礼那夜，陈璋明把许赋骗上床，彻底成为他一个人的玩物。 可陈璋明还觉得不够，哄",
       "word_count": "3.10万",
-      "popularity": "12.83万",
+      "popularity": "12.86万",
       "status": "连载中",
       "update_time": "昨天 22:49",
       "channel": "",
@@ -454,7 +455,7 @@
       "primary_tag": "综合",
       "abstract": "正直骁勇特工攻X美强惨实验体受 文案1： 楚延这一生有过很多个代号。 二十七号，E-01，Ember。 在外界看来，他是危险又寡言的孤儿，是珍贵而神秘的实验体，是锋利又致命的武器，更是操纵人心的、令人闻风丧胆的怪物。 但只有在谢明城这里，他是楚延。 文案2: 谢明城这一生做过无数次选择。 但一旦那选项中包含了楚延，那他的选择就只有一个。 在无止境的逃亡中，谢明城将他心尖上的珍宝搂在怀里，对天发誓：",
       "word_count": "2.31万",
-      "popularity": "4.50万",
+      "popularity": "4.52万",
       "status": "连载中",
       "update_time": "昨天 12:00",
       "channel": "",
@@ -797,7 +798,7 @@
       "word_count": "3.41万",
       "popularity": "1.53万",
       "status": "连载中",
-      "update_time": "4 小时前",
+      "update_time": "5 小时前",
       "channel": "",
       "gender": "",
       "rank_change": -15,
@@ -939,7 +940,7 @@
       "word_count": "1.32万",
       "popularity": "9,449",
       "status": "连载中",
-      "update_time": "4 小时前",
+      "update_time": "5 小时前",
       "channel": "",
       "gender": "",
       "rank_change": 5,
@@ -1122,7 +1123,7 @@
       "word_count": "5.56万",
       "popularity": "9.94万",
       "status": "连载中",
-      "update_time": "3 小时前",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
       "rank_change": null,
@@ -1341,7 +1342,7 @@
       "author": "归来山",
       "author_url": "https://www.gongzicp.com/zone/author-661806.html",
       "tags": [
-        "综合",
+        "小说",
         "公路文",
         "酸甜",
         "番外HE",
@@ -1352,7 +1353,7 @@
         "不甜我打你们"
       ],
       "all_tags": [
-        "综合",
+        "小说",
         "公路文",
         "酸甜",
         "番外HE",
@@ -1362,12 +1363,12 @@
         "我保证正文是甜的",
         "不甜我打你们"
       ],
-      "primary_tag": "综合",
+      "primary_tag": "小说",
       "abstract": "深冬的时候，李从念在川西的冰塔林里捡回一只“孤魂野鬼”。 —— 岳轨生活失意出来寻死，被一个小哑巴救了。 李从念总觉得有情能使饮水饱，拖着岳轨多活了一年。 —— 到了第二年凛冬，这只孤魂野鬼，决定要为哑巴殉情。 野鬼×哑巴 岳轨×李从念 小灰字非原创，原创是胡睿《两忘书》",
-      "word_count": "2.29万",
-      "popularity": "4.09万",
-      "status": "连载中",
-      "update_time": "4 小时前",
+      "word_count": "2.84万",
+      "popularity": "4.30万",
+      "status": "完结",
+      "update_time": "49 分钟前",
       "channel": "",
       "gender": "",
       "rank_change": -9,
@@ -1431,7 +1432,7 @@
       "word_count": "9.04万",
       "popularity": "2.68万",
       "status": "连载中",
-      "update_time": "3 小时前",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
       "rank_change": -3,
@@ -1559,7 +1560,7 @@
       "word_count": "4.77万",
       "popularity": "1.63万",
       "status": "连载中",
-      "update_time": "3 小时前",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
       "rank_change": 2,
@@ -1843,7 +1844,7 @@
       "word_count": "3.16万",
       "popularity": "1.15万",
       "status": "连载中",
-      "update_time": "3 小时前",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
       "rank_change": -11,
@@ -1989,9 +1990,9 @@
         "change": -2
       },
       "小说": {
-        "current": 1,
+        "current": 2,
         "previous": 0,
-        "change": 1
+        "change": 2
       },
       "架空": {
         "current": 8,
@@ -2009,9 +2010,9 @@
         "change": 1
       },
       "综合": {
-        "current": 15,
+        "current": 14,
         "previous": 13,
-        "change": 2
+        "change": 1
       },
       "武侠": {
         "current": 1,
