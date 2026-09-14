@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-09-14 07:17:33",
-  "update_date": "2026-09-14",
+  "update_time": "2026-09-15 04:08:01",
+  "update_date": "2026-09-15",
   "total_count": 20,
   "source": "七猫小说·女生新书日榜",
   "source_url": "https://www.qimao.com/paihang",
@@ -997,7 +997,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 2,
@@ -1040,7 +1040,7 @@
       ],
       "boards_count": 3,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 3,
@@ -1083,7 +1083,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 4,
@@ -1126,7 +1126,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 5,
@@ -1169,7 +1169,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 6,
@@ -1212,7 +1212,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 7,
@@ -1255,7 +1255,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 8,
@@ -1298,7 +1298,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 9,
@@ -1341,7 +1341,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 10,
@@ -1384,7 +1384,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 11,
@@ -1427,7 +1427,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 12,
@@ -1470,7 +1470,7 @@
       ],
       "boards_count": 2,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 13,
@@ -1513,7 +1513,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 14,
@@ -1556,7 +1556,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 15,
@@ -1599,7 +1599,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 16,
@@ -1642,7 +1642,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 2
+      "history_days": 3
     },
     {
       "rank": 17,
@@ -1685,7 +1685,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 4
     },
     {
       "rank": 18,
@@ -1727,8 +1727,8 @@
         "新书日榜"
       ],
       "boards_count": 1,
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": null,
+      "history_days": 2
     },
     {
       "rank": 19,
@@ -1771,7 +1771,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 2
+      "history_days": 3
     },
     {
       "rank": 20,
@@ -1813,8 +1813,8 @@
         "新书日榜"
       ],
       "boards_count": 1,
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": null,
+      "history_days": 2
     }
   ]
 }
