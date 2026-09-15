@@ -258,42 +258,60 @@ async function main() {
          { label: `压缩素材(${Math.round(compactBlock.length/1000)}k)`, block: compactBlock }];
 
     console.log(`\n🤖 分析 ${PNAME[p.id]} (素材 ${Math.round(fullBlock.length/1000)}k chars)...`);
+    // 2026-09-15: 同候选最大尝试次数。MiMo 会偶发"秒回"无效响应（1-2s 返回非预期内容，
+    //   正常推理需 60-140s），退避后立即重试一次大概率成功；两次都坏才降级到压缩素材。
+    const MAX_TRY = 2;
     let attemptMsg = '';
     for (let ai = 0; ai < candidates.length; ai++) {
       const cand = candidates[ai];
       if (candidates.length > 1) console.log(`   尝试 ${ai+1}/${candidates.length}: ${cand.label}`);
       const userPrompt = `以下是${PNAME[p.id]}今日榜单 ${data.books.length} 本书的完整素材（排名/频道/涨跌/标签/简介）：\n\n${cand.block}\n\n请按四维框架逐本统计共性，输出 JSON。`;
-      try {
-        const response = await callLLM([
-          { role: 'system', content: platformSystemPrompt(p) },
-          { role: 'user', content: userPrompt },
-        ], 4000);
-        let parsed;
+      let ok = false;
+      for (let t = 1; t <= MAX_TRY; t++) {
         try {
-          parsed = extractJSON(response);
+          const t0 = Date.now();
+          const response = await callLLM([
+            { role: 'system', content: platformSystemPrompt(p) },
+            { role: 'user', content: userPrompt },
+          ], 4000);
+          const secs = ((Date.now() - t0) / 1000).toFixed(1);
+          let parsed;
+          try {
+            parsed = extractJSON(response);
+          } catch(e) {
+            // 2026-09-15: 不再静默兜底成空对象。解析失败必须抛出让上层重试/降级，
+            //   否则全空字段会被当成"分析完成"写进 analysis.json（概览页卡片空白）。
+            throw new Error(`JSON 解析失败: ${e.message} | 原文前120字: ${(response || '').slice(0, 120)}`);
+          }
+          // 平台对象可能在 parsed.platforms[p.id]，也可能模型直接给了字段对象
+          const pf = (parsed.platforms && typeof parsed.platforms === 'object' && parsed.platforms[p.id] && typeof parsed.platforms[p.id] === 'object')
+            ? parsed.platforms[p.id] : parsed;
+          const filled = {
+            headline: String(pf.headline || '').trim(),
+            theme: String(pf.theme || '').trim(),
+            conflict: String(pf.conflict || '').trim(),
+            characters: String(pf.characters || '').trim(),
+            cp: String(pf.cp || '').trim(),
+            new_entrants: String(pf.new_entrants || '').trim(),
+            rising: String(pf.rising || '').trim(),
+          };
+          // 有效性校验：headline 与 theme 同时为空 = 模型没给出可用内容（API 瞬态故障的典型表现），
+          //   必须视为失败去重试/降级，绝不能当成功写入空串。
+          if (!filled.headline && !filled.theme) {
+            throw new Error(`模型返回空内容（${secs}s，疑似 API 瞬态故障）| 原文前120字: ${(response || '').slice(0, 120)}`);
+          }
+          result.platforms[p.id] = filled;
+          console.log(`  ✓ ${p.name} 完成 (${secs}s, headline: ${filled.headline.slice(0, 50)})`);
+          attemptMsg = '';
+          ok = true;
+          break;
         } catch(e) {
-          // 兼容模型直接输出字段对象（未套 platforms）
-          parsed = { platforms: {} };
+          attemptMsg = e.message;
+          console.warn(`  [WARN] ${p.name} ${cand.label} 第${t}/${MAX_TRY}次失败: ${e.message.slice(0, 160)}`);
+          if (t < MAX_TRY) await new Promise(r => setTimeout(r, 3000));
         }
-        // 平台对象可能在 parsed.platforms[p.id]，也可能模型直接给了字段对象
-        const pf = (parsed.platforms && typeof parsed.platforms === 'object' && parsed.platforms[p.id] && typeof parsed.platforms[p.id] === 'object')
-          ? parsed.platforms[p.id] : parsed;
-        result.platforms[p.id] = {
-          headline: String(pf.headline || '').trim(),
-          theme: String(pf.theme || '').trim(),
-          conflict: String(pf.conflict || '').trim(),
-          characters: String(pf.characters || '').trim(),
-          cp: String(pf.cp || '').trim(),
-          new_entrants: String(pf.new_entrants || '').trim(),
-          rising: String(pf.rising || '').trim(),
-        };
-        console.log(`  ✓ ${p.name} 完成 (headline: ${result.platforms[p.id].headline.slice(0, 50)})`);
-        attemptMsg = '';
-        break;
-      } catch(e) {
-        attemptMsg = e.message;
-        console.warn(`  [WARN] ${p.name} ${cand.label} 尝试失败: ${e.message.slice(0, 120)}`);
       }
+      if (ok) break;   // 该候选已成功，不再尝试下一候选
     }
     if (!result.platforms[p.id]) {
       result.platforms[p.id] = fallbackPlatform(p.id, data);

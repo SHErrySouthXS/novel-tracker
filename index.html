@@ -1982,6 +1982,21 @@ function renderPlatformSummary() {
       const pa = ai.platforms[p.id];
       const color = p.color || '#667eea';
 
+      // 2026-09-15: 上游 AI 分析为空时（接口瞬态故障曾写入全空字段），旧逻辑
+      //   `pa.theme !== undefined` 会把空串判成 4D，四条维度全被 filter 掉 → 卡片只剩标题一片空白。
+      //   这里先判定"是否真有内容"，无内容时给明确提示而不是空白。
+      const hasContent = ['headline', 'theme', 'conflict', 'characters', 'cp', 'new_entrants', 'rising']
+        .some(k => String(pa?.[k] || '').trim());
+      if (!hasContent) {
+        return `
+          <div class="summary-item ${p.id}" style="--pc:${color}">
+            <h4>${p.icon} ${p.name}</h4>
+            <div class="summary-scroll">
+              <p style="font-size:12.5px;line-height:1.7;color:var(--text-dim,#8a8f9c);">今日 AI 分析未生成（上游接口瞬时故障），下次抓取会自动补全。</p>
+            </div>
+          </div>`;
+      }
+
       // 新版：四维题材总结（theme/conflict/characters/cp）
       const is4D = pa && (pa.theme !== undefined || pa.conflict !== undefined);
       if (is4D) {

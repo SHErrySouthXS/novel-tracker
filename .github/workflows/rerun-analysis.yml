@@ -1,0 +1,76 @@
+name: Rerun AI Analysis
+
+# 只重跑 AI 分析层（analyze.js 概览四维分析 + platform-summary.js 各平台今日流行总结），
+# 不跑爬虫，约 5-10 分钟。用于上游 LLM 接口瞬态故障导致某平台分析为空时快速补数，
+# 无需等主流程（daily-scrape.yml）的 45 分钟全量抓取。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: novel-analysis
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: AI Analysis (概览深度分析)
+        run: node scrapers/analyze.js
+        env:
+          LLM_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          LLM_BASE_URL: https://token-plan-cn.xiaomimimo.com/v1
+          LLM_MODEL: mimo-v2.5-pro
+
+      - name: Platform Trend Summaries
+        run: |
+          for p in fanqie jjwxc changpei qimao; do
+            echo "=== $p ==="
+            node scrapers/platform-summary.js "$p" || true
+          done
+        env:
+          LLM_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          LLM_BASE_URL: https://token-plan-cn.xiaomimimo.com/v1
+          LLM_MODEL: mimo-v2.5-pro
+
+      - name: Commit & Push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "AI analysis rerun: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            git push && break
+            echo "Push failed, attempt $i. Pulling and retrying..."
+            git pull --rebase origin main --strategy-option=theirs || true
+            sleep 2
+          done
+
+  deploy:
+    needs: analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pull latest data
+        run: git pull origin main
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - uses: actions/deploy-pages@v4

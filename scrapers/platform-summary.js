@@ -273,10 +273,23 @@ ${ctx.dist}
 
     try {
       console.log(`🤖 正在调用 LLM(${LLM_MODEL}) 生成...`);
-      const text = await callLLM([
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt },
-      ]);
+      // 2026-09-15: API 偶发"秒回"无效响应（1-2s 返回空内容，正常推理需数十秒），
+      //   退避 3 秒重试一次；两次都坏才走下方 fallback。
+      let text;
+      for (let t = 1; ; t++) {
+        try {
+          text = await callLLM([
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt },
+          ]);
+          if (!String(text || '').trim()) throw new Error('模型返回空文本（疑似 API 瞬态故障）');
+          break;
+        } catch (e) {
+          if (t >= 2) throw e;
+          console.warn(`  [WARN] LLM 调用失败(第${t}次): ${String(e.message).slice(0, 120)}，3 秒后重试`);
+          await new Promise(r => setTimeout(r, 3000));
+        }
+      }
       let blocks;
       try {
         blocks = extractJSON(text).blocks;
