@@ -154,7 +154,7 @@ function callLLM(messages) {
     const payload = JSON.stringify(body);
     const url = new URL(LLM_API_URL);
     const req = https.request({
-      hostname: url.hostname, port: 443, path: url.pathname, method: 'POST',
+      hostname: url.hostname, port: url.port || 443, path: url.pathname, method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${LLM_API_KEY}`,

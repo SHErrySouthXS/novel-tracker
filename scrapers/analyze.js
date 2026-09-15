@@ -83,7 +83,7 @@ function callLLM(messages, maxTokens = 4000) {
     const url = new URL(LLM_API_URL);
     const options = {
       hostname: url.hostname,
-      port: 443,
+      port: url.port || 443,
       path: url.pathname,
       method: 'POST',
       headers: {
