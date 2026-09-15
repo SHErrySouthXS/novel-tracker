@@ -2204,13 +2204,19 @@ const TREND_TAG_SOURCE = {
   changpei: { from: 'rankings', board: 'purelove_bestseller', alt: 'bestseller' },
   qimao:    { from: 'merge' },
 };
-// 每平台一套同色系深浅（深→浅 = 排名 1→5，深浅本身即第二视觉线索，不只靠色相区分）
-// 注意最浅一档也要保持中调，否则在毛玻璃白底上会看不见
+// 每平台 5 色 = 自该平台品牌色相出发、绕色环均分（间隔 72°）的一套「莫兰迪」色。
+// 关键 1：同图内靠**色相**区分，不靠明度深浅——莫兰迪本身明度都在中调，若 5 条线共用色相
+//   只差明度，在细线上必然糊成一片（2026-09-15 修订原因）。
+// 关键 2：色值区间 S≈30-45% / L≈54-62%，是「加灰的中饱和」；比教科书式莫兰迪（S<25%）更跳，
+//   否则叠在粉橙渐变毛玻璃底上会整体被吃掉、看着发灰。不要再往低调。
+// 关键 3：色相必须**均分**（组内相邻差 72° 上下），这是组内区分度的上限；
+//   而四组的起点相位刻意错开（约 347° / 271° / 11° / 46°）并各带浓淡基调
+//   （晋江柔中调 / 长佩淡雅 / 番茄浓郁 / 七猫明亮），否则四张面板会长得一模一样。
 const TREND_PALETTE = {
-  jjwxc:    ['#6d0b3f', '#9c1050', '#c2185b', '#dc3970', '#e8698f'],
-  changpei: ['#241070', '#3a1d92', '#4e2cb5', '#6c5ce7', '#8f7ae0'],
-  fanqie:   ['#7d1c02', '#a52714', '#cc3a12', '#e8562a', '#ff7a4d'],
-  qimao:    ['#7a2400', '#a03400', '#c74a00', '#e06400', '#f5860f'],
+  jjwxc:    ['#c56d80', '#c2b15c', '#6fb07c', '#6ba3c4', '#9c7cc6'],
+  changpei: ['#a583c4', '#c77e8a', '#a5b96e', '#79b491', '#82a1c4'],
+  fanqie:   ['#c46a55', '#93a85b', '#5dae95', '#6e7fc0', '#bc6fa8'],
+  qimao:    ['#c4ac60', '#7ebe92', '#6bb3c0', '#9982c6', '#c97e9c'],
 };
 
 function trendEsc(s) {
@@ -2372,9 +2378,9 @@ function trendFacetHTML(p, days) {
   tags.forEach((t, i) => {
     const color = pal[i % pal.length];
     const pts = days.map((d, j) => `${(pad.l + j * xStep).toFixed(1)},${yOf(d.pct[t] || 0).toFixed(1)}`).join(' ');
-    svg += `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>`;
+    svg += `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>`;
     days.forEach((d, j) => {
-      svg += `<circle cx="${(pad.l + j * xStep).toFixed(1)}" cy="${yOf(d.pct[t] || 0).toFixed(1)}" r="2.4" fill="${color}"/>`;
+      svg += `<circle cx="${(pad.l + j * xStep).toFixed(1)}" cy="${yOf(d.pct[t] || 0).toFixed(1)}" r="2.6" fill="${color}" stroke="#ffffff" stroke-width="0.7"/>`;
     });
   });
   svg += '</svg>';
