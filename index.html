@@ -997,34 +997,46 @@
       font-size: 13px;
     }
 
-    /* Simple SVG chart styles */
-    .chart-svg {
-      width: 100%;
-      height: 280px;
+    /* ===== 题材趋势 · 分面小图（2026-09-15）=====
+       四平台词表不同轴，合并到一张图不可比 → 一平台一张小图 */
+    .facet-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
     }
-    .chart-svg text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    .facet-card {
+      background: rgba(255,255,255,.55);
+      border: 1px solid rgba(255,255,255,.6);
+      border-radius: 10px;
+      padding: 12px 14px 10px;
     }
-    .chart-legend {
+    .facet-head {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 12px;
-      justify-content: center;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
     }
-    .chart-legend-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 12px;
-      color: var(--text-dim);
-      cursor: default;
+    .facet-name { font-size: 13px; font-weight: 600; color: var(--text); }
+    .facet-meta { font-size: 11px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+    .facet-svg { width: 100%; height: auto; display: block; }
+    .facet-svg text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .facet-legend { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-top: 8px; }
+    .facet-legend-item {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 11px; color: var(--text-dim);
     }
-    .chart-legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
+    .facet-legend-dot { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+    .facet-legend-val { color: var(--text); font-variant-numeric: tabular-nums; }
+    .facet-legend-delta { font-variant-numeric: tabular-nums; }
+    .facet-legend-delta.up { color: var(--green); }
+    .facet-legend-delta.down { color: var(--red); }
+    .facet-note {
+      margin-top: 12px; padding-top: 10px;
+      border-top: 1px solid var(--border);
+      font-size: 11px; line-height: 1.7; color: var(--text-dim);
     }
+    @media (max-width: 860px) { .facet-grid { grid-template-columns: 1fr; } }
 
     /* ==========================================================
        GLASS THEME — 毛玻璃清新版（主题覆盖层 · 样张 2026-09-06）
@@ -1516,7 +1528,7 @@
 
       <!-- ⑤ 题材趋势折线图 -->
       <div class="trend-section" data-page-node-id="wQxtDTNC5EL6TviFcZAyDn">
-        <h3 data-page-node-id="jA2Jy0DpUAF5MnECydcwAl">📉 题材趋势变化（近7日）</h3>
+        <h3 data-page-node-id="jA2Jy0DpUAF5MnECydcwAl">📉 题材趋势变化</h3>
         <div class="trend-chart-container" id="trendChart" data-page-node-id="fMf6ecQdGwyZyzUFMeJUOq">
           <div class="trend-chart-placeholder" data-page-node-id="tobsW7BHk9ienytFOMAgf4">需要至少2天历史数据才能展示趋势</div>
         </div>
@@ -2177,17 +2189,97 @@ function generatePlatformInsight(platformId, data) {
   return insights.join('');
 }
 
+// ========== 题材趋势 · 分面小图（2026-09-15 改版） ==========
+// 为什么分面：四平台历史 tag_stats 词表不同轴（晋江=频道 / 长佩=场景 / 番茄=题材 / 七猫=官方细分），
+//   合并到一张图再取交集既不可比、又会互相挤掉 → 改为「一平台一张小图，各画自己 top5」。
+// 为什么用占比：各平台每日样本量不同（长佩 100 / 七猫 160 / 晋江 200 / 番茄 160），
+//   绝对本数会把样本量波动误读成题材热度变化。
+// 数据位置（关键，勿回退）：晋江 / 番茄在历史文件顶层 tag_stats；
+//   长佩在 rankings.purelove_bestseller（与站内主榜一致）；七猫需合并 rankings 下 8 个子榜。
+const TREND_DAYS = 7;
+const TREND_TOP_N = 5;
+const TREND_TAG_SOURCE = {
+  jjwxc:    { from: 'top' },
+  fanqie:   { from: 'top' },
+  changpei: { from: 'rankings', board: 'purelove_bestseller', alt: 'bestseller' },
+  qimao:    { from: 'merge' },
+};
+// 每平台一套同色系深浅（深→浅 = 排名 1→5，深浅本身即第二视觉线索，不只靠色相区分）
+// 注意最浅一档也要保持中调，否则在毛玻璃白底上会看不见
+const TREND_PALETTE = {
+  jjwxc:    ['#6d0b3f', '#9c1050', '#c2185b', '#dc3970', '#e8698f'],
+  changpei: ['#241070', '#3a1d92', '#4e2cb5', '#6c5ce7', '#8f7ae0'],
+  fanqie:   ['#7d1c02', '#a52714', '#cc3a12', '#e8562a', '#ff7a4d'],
+  qimao:    ['#7a2400', '#a03400', '#c74a00', '#e06400', '#f5860f'],
+};
+
+function trendEsc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+// 从某平台某天的历史文件里取出 tag_stats，抹平各平台字段位置差异
+function trendTagStats(pid, raw) {
+  if (!raw) return null;
+  const cfg = TREND_TAG_SOURCE[pid] || { from: 'top' };
+  if (cfg.from === 'top') {
+    const ts = raw.tag_stats;
+    return (ts && Object.keys(ts).length) ? ts : null;
+  }
+  const rk = raw.rankings;
+  if (!rk || typeof rk !== 'object') return null;
+  if (cfg.from === 'rankings') {
+    const board = rk[cfg.board] || (cfg.alt ? rk[cfg.alt] : null);
+    const ts = board && board.tag_stats;
+    return (ts && Object.keys(ts).length) ? ts : null;
+  }
+  // merge：合并该平台 rankings 下全部子榜（七猫 8 榜）
+  const out = {};
+  for (const v of Object.values(rk)) {
+    const ts = v && v.tag_stats;
+    if (ts) for (const [t, c] of Object.entries(ts)) out[t] = (out[t] || 0) + c;
+  }
+  return Object.keys(out).length ? out : null;
+}
+
+// 该平台某天实际参与聚合的来源签名（顶层 / 单个子榜 / 合并了哪几个子榜）
+// 用途：来源中途变化会让占比出现假拐点（七猫 2026-09-12 起由 1 榜扩到 8 榜），
+//       必须按签名裁窗口，否则会把「口径变了」读成「题材涨跌」。
+function trendSourceSig(pid, raw) {
+  if (!raw) return null;
+  const cfg = TREND_TAG_SOURCE[pid] || { from: 'top' };
+  if (cfg.from === 'top') {
+    return (raw.tag_stats && Object.keys(raw.tag_stats).length) ? 'top' : null;
+  }
+  const rk = raw.rankings;
+  if (!rk || typeof rk !== 'object') return null;
+  if (cfg.from === 'rankings') {
+    const board = rk[cfg.board] || (cfg.alt ? rk[cfg.alt] : null);
+    const ok = board && board.tag_stats && Object.keys(board.tag_stats).length;
+    return ok ? (cfg.board + '|' + (rk[cfg.board] ? cfg.board : cfg.alt)) : null;
+  }
+  const keys = Object.keys(rk)
+    .filter(k => rk[k] && rk[k].tag_stats && Object.keys(rk[k].tag_stats).length)
+    .sort();
+  return keys.length ? keys.join('+') : null;
+}
+
+// 刻度间隔取整到 1 / 2 / 5 × 10^n，避免出现 3.7% 这种刻度
+function trendNiceStep(x) {
+  if (!(x > 0)) return 1;
+  const p = Math.pow(10, Math.floor(Math.log10(x)));
+  const n = x / p;
+  return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10) * p;
+}
+
 function renderTrendChart() {
   const container = document.getElementById('trendChart');
-  // 趋势图需要多天历史数据 — 收集各平台历史索引看看有没有
-  const allHaveHistory = PLATFORMS.some(p => state.history[p.id]?.index?.length >= 2);
-  
-  if (!allHaveHistory) {
-    container.innerHTML = '<div class="trend-chart-placeholder">📊 需要至少2天历史数据才能展示趋势图<br><br>每日运行爬虫后，这里会自动显示各题材在三站的热度变化折线图</div>';
+  const someHaveHistory = PLATFORMS.some(p => (state.history[p.id]?.index || []).length >= 2);
+
+  if (!someHaveHistory) {
+    container.innerHTML = '<div class="trend-chart-placeholder">需要至少 2 天历史数据才能展示趋势<br><br>每日运行爬虫后，这里会按平台分面显示各题材的占比变化</div>';
     return;
   }
 
-  // 收集近7天数据
   loadTrendData().then(trendData => {
     if (!trendData || Object.keys(trendData).length === 0) {
       container.innerHTML = '<div class="trend-chart-placeholder">暂无足够的趋势数据</div>';
@@ -2197,107 +2289,121 @@ function renderTrendChart() {
   });
 }
 
+// → { pid: [{ date, pct: {题材: 百分比}, total: 当日样本量 }] }
 async function loadTrendData() {
-  const trendData = {}; // { date: { platform: { tag: count } } }
-  
+  const out = {};
+
   for (const p of PLATFORMS) {
     const idx = state.history[p.id]?.index || [];
-    const recent = idx.slice(0, 7); // 最近7天
-    
+    const recent = idx.slice(0, TREND_DAYS).slice().sort(); // 近 7 天，索引为倒序故转正序
+    const days = [];
+
     for (const date of recent) {
-      const data = await loadJSON(`data/${p.id}/history/${date}.json`);
-      if (data?.tag_stats) {
-        if (!trendData[date]) trendData[date] = {};
-        trendData[date][p.id] = data.tag_stats;
-      }
+      const raw = await loadJSON(`data/${p.id}/history/${date}.json`);
+      const ts = trendTagStats(p.id, raw);
+      if (!ts) continue;
+      const merged = mergeStats(ts); // 统一「纯爱 → 耽美」，与站内其它模块口径一致
+      const total = Object.values(merged).reduce((a, b) => a + b, 0);
+      if (!total) continue;
+      const pct = {};
+      for (const [t, c] of Object.entries(merged)) pct[t] = (c / total) * 100;
+      days.push({ date, pct, total, sig: trendSourceSig(p.id, raw) });
     }
+
+    // 只保留「与最新一天同口径」的连续后缀 — 采样口径中途变化会产生假拐点
+    const lastSig = days.length ? days[days.length - 1].sig : null;
+    let start = days.length - 1;
+    while (start > 0 && days[start - 1].sig === lastSig) start--;
+
+    if (start <= days.length - 2) out[p.id] = days.slice(start); // 至少 2 天才画得出趋势
   }
-  
-  return trendData;
+
+  return out;
 }
 
 function drawTrendChart(container, trendData) {
-  const dates = Object.keys(trendData).sort();
-  if (dates.length < 2) {
-    container.innerHTML = '<div class="trend-chart-placeholder">需要更多历史数据</div>';
+  const panels = PLATFORMS.filter(p => trendData[p.id]?.length >= 2);
+  if (!panels.length) {
+    container.innerHTML = '<div class="trend-chart-placeholder">暂无可比的历史数据</div>';
     return;
   }
-  
-  // 找出所有平台中出现最多的题材 top5
-  const tagTotals = {};
-  for (const date of dates) {
-    for (const pid of Object.keys(trendData[date] || {})) {
-      for (const [tag, count] of Object.entries(trendData[date][pid])) {
-        tagTotals[tag] = (tagTotals[tag] || 0) + count;
-      }
-    }
-  }
-  const topTags = Object.entries(tagTotals).sort((a, b) => b[1] - a[1]).slice(0, 8).map(e => e[0]);
-  
-  // 构建各平台各题材的时间序列
-  const series = [];
-  let colorIdx = 0;
-  for (const p of PLATFORMS) {
-    for (const tag of topTags.slice(0, 3)) { // 每平台取top3题材
-      const values = dates.map(d => trendData[d]?.[p.id]?.[tag] || 0);
-      if (values.some(v => v > 0)) {
-        series.push({ label: `${p.name}-${tag}`, values, color: CHART_COLORS[colorIdx % CHART_COLORS.length] });
-        colorIdx++;
-      }
-    }
-  }
 
-  // SVG 绘制
-  const W = 900, H = 260, pad = { t: 20, r: 20, b: 40, l: 45 };
-  const chartW = W - pad.l - pad.r;
-  const chartH = H - pad.t - pad.b;
-  
-  const maxVal = Math.max(...series.flatMap(s => s.values), 1);
-  const xStep = dates.length > 1 ? chartW / (dates.length - 1) : chartW;
+  const html = panels.map(p => trendFacetHTML(p, trendData[p.id])).join('');
+  container.innerHTML = `<div class="facet-grid">${html}</div>
+    <div class="facet-note">纵轴 = 该题材当日出现次数 ÷ 当日样本量，用占比消除各平台样本量差异；每平台各取窗口内占比最高的 ${TREND_TOP_N} 个题材。四个平台的题材词表口径相互独立（晋江为频道、长佩为场景、番茄为题材、七猫为官方细分），故不做跨平台合并。若某平台的采样口径在近 ${TREND_DAYS} 日内发生过变化，仅保留同口径的最近若干天，避免把口径变化读成题材涨跌。</div>`;
+}
 
-  let svgContent = `<svg class="chart-svg" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
-  
-  // 网格线
-  for (let i = 0; i <= 4; i++) {
-    const y = pad.t + (chartH / 4) * i;
-    const val = Math.round(maxVal * (1 - i / 4));
-    svgContent += `<line x1="${pad.l}" y1="${y}" x2="${W-pad.r}" y2="${y}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>`;
-    svgContent += `<text x="${pad.l-8}" y="${y+4}" text-anchor="end" fill="#8b8fa3" font-size="10">${val}</text>`;
+// 单个平台的分面：小折线（占比）+ 图例（末值 · 窗口 Δ 百分点）
+function trendFacetHTML(p, days) {
+  const dates = days.map(d => d.date);
+  const first = days[0], last = days[days.length - 1];
+
+  // 窗口内累计占比排序 → 该平台自己的 topN
+  const agg = {};
+  for (const d of days) for (const [t, v] of Object.entries(d.pct)) agg[t] = (agg[t] || 0) + v;
+  const tags = Object.entries(agg).sort((a, b) => b[1] - a[1]).slice(0, TREND_TOP_N).map(e => e[0]);
+  if (!tags.length) return '';
+
+  const pal = TREND_PALETTE[p.id] || CHART_COLORS;
+  // pad.r 留足 26px：最后一个日期标签是 text-anchor=middle，右内边距太小会被面板边缘裁掉
+  const W = 460, H = 190, pad = { t: 10, r: 26, b: 24, l: 34 };
+  const cw = W - pad.l - pad.r, ch = H - pad.t - pad.b;
+  const xStep = dates.length > 1 ? cw / (dates.length - 1) : cw;
+
+  const maxPct = Math.max(...tags.flatMap(t => days.map(d => d.pct[t] || 0)), 1);
+  const step = trendNiceStep(maxPct / 3.2);
+  const axisMax = Math.max(step, Math.ceil(maxPct / step) * step);
+  const yOf = v => pad.t + ch - (v / axisMax) * ch;
+
+  let svg = `<svg class="facet-svg" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${trendEsc(p.name)}近 ${dates.length} 日题材占比趋势">`;
+  svg += `<title>${trendEsc(p.name)}题材占比趋势</title>`;
+
+  // 横向网格 + Y 轴百分比刻度
+  for (let v = 0; v <= axisMax + 1e-9; v += step) {
+    const y = yOf(v);
+    svg += `<line x1="${pad.l}" y1="${y.toFixed(1)}" x2="${W - pad.r}" y2="${y.toFixed(1)}" stroke="rgba(35,41,70,0.10)" stroke-width="1"/>`;
+    svg += `<text x="${pad.l - 6}" y="${(y + 3.5).toFixed(1)}" text-anchor="end" font-size="10" fill="#5c6372">${Math.round(v)}%</text>`;
   }
-  
-  // X 轴日期标签
+  // X 轴日期
   dates.forEach((d, i) => {
-    const x = pad.l + i * xStep;
-    svgContent += `<text x="${x}" y="${H-10}" text-anchor="middle" fill="#8b8fa3" font-size="10">${d.slice(5)}</text>`;
+    svg += `<text x="${(pad.l + i * xStep).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="10" fill="#5c6372">${d.slice(5)}</text>`;
   });
-
-  // 折线
-  for (const s of series) {
-    const points = s.values.map((v, i) => {
-      const x = pad.l + i * xStep;
-      const y = pad.t + chartH - (v / maxVal) * chartH;
-      return `${x},${y}`;
-    }).join(' ');
-    svgContent += `<polyline points="${points}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round"/>`;
-    // 数据点
-    s.values.forEach((v, i) => {
-      const x = pad.l + i * xStep;
-      const y = pad.t + chartH - (v / maxVal) * chartH;
-      svgContent += `<circle cx="${x}" cy="${y}" r="3" fill="${s.color}"/>`;
+  // 折线 + 数据点
+  tags.forEach((t, i) => {
+    const color = pal[i % pal.length];
+    const pts = days.map((d, j) => `${(pad.l + j * xStep).toFixed(1)},${yOf(d.pct[t] || 0).toFixed(1)}`).join(' ');
+    svg += `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>`;
+    days.forEach((d, j) => {
+      svg += `<circle cx="${(pad.l + j * xStep).toFixed(1)}" cy="${yOf(d.pct[t] || 0).toFixed(1)}" r="2.4" fill="${color}"/>`;
     });
-  }
+  });
+  svg += '</svg>';
 
-  svgContent += '</svg>';
+  // 图例：末值 + 窗口 Δ（首日 → 末日，百分点）
+  const legend = tags.map((t, i) => {
+    const color = pal[i % pal.length];
+    const lastV = last.pct[t] || 0;
+    const delta = lastV - (first.pct[t] || 0);
+    const changed = Math.abs(delta) >= 0.05;
+    const cls = delta > 0 ? 'up' : 'down';
+    const glyph = delta > 0 ? '\u2191' : '\u2193';
+    return `<span class="facet-legend-item">
+        <span class="facet-legend-dot" style="background:${color}"></span>
+        <span>${trendEsc(t)}</span>
+        <span class="facet-legend-val">${lastV.toFixed(1)}%</span>
+        ${changed ? `<span class="facet-legend-delta ${cls}">${glyph}${Math.abs(delta).toFixed(1)}</span>` : ''}
+      </span>`;
+  }).join('');
 
-  // 图例
-  const legendHtml = series.map(s => `
-    <span class="chart-legend-item">
-      <span class="chart-legend-dot" style="background:${s.color}"></span>
-      ${s.label}
-    </span>
-  `).join('');
-
-  container.innerHTML = svgContent + `<div class="chart-legend">${legendHtml}</div>`;
+  const avgN = Math.round(days.reduce((a, d) => a + d.total, 0) / days.length);
+  return `<div class="facet-card">
+      <div class="facet-head">
+        <span class="facet-name">${trendEsc(p.name)}</span>
+        <span class="facet-meta">近 ${dates.length} 日 · 日均 ${avgN} 本</span>
+      </div>
+      ${svg}
+      <div class="facet-legend">${legend}</div>
+    </div>`;
 }
 
 // ========== 平台独立 Tab 渲染 ==========
