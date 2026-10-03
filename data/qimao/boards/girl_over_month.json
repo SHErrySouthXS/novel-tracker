@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-10-03 06:36:21",
+  "update_time": "2026-10-03 08:36:50",
   "update_date": "2026-10-03",
   "total_count": 20,
   "source": "七猫小说·女生完结月榜",
@@ -124,72 +124,14 @@
       "count": 9,
       "total_heat": 50620000,
       "trend": {
-        "new_count": 2,
-        "dropped_count": 1,
-        "new_books": [
-          {
-            "title": "玄学小祖宗：叼奶瓶算命全家宠",
-            "book_id": 1764909
-          },
-          {
-            "title": "不务正夜",
-            "book_id": 1996931
-          }
-        ],
-        "dropped_books": [
-          {
-            "title": "逃婚三年，江少的花心人设崩了",
-            "book_id": 1839513,
-            "intro": "【破镜重圆 相爱相杀】\n伪花心风流少爷VS美艳清冷女总裁\n林向晚逃婚后回国，遇到左拥右抱的江时璟，十分嗤之以鼻。\n江时璟和她说话。\n林向晚：没憋好屁。\n江时璟朝她笑。\n林向晚：他准备算计我。\n江时璟把"
-          }
-        ],
-        "top_risers": [
-          {
-            "title": "六年后，我携四个幼崽炸翻前夫家",
-            "book_id": 1658048,
-            "rank_change": 3
-          },
-          {
-            "title": "惯坏她",
-            "book_id": 10034568,
-            "rank_change": 3
-          }
-        ],
-        "top_fallers": [
-          {
-            "title": "婚后上瘾",
-            "book_id": 1994117,
-            "rank_change": -3
-          },
-          {
-            "title": "大佬归来，假千金她不装了",
-            "book_id": 1699328,
-            "rank_change": -3
-          },
-          {
-            "title": "皑如山上雪",
-            "book_id": 2053898,
-            "rank_change": -2
-          }
-        ],
-        "heat_leaders": [
-          {
-            "title": "第五年重逢，驰先生再度失控",
-            "book_id": 2072940,
-            "heat_change": -7611000
-          },
-          {
-            "title": "大佬归来，假千金她不装了",
-            "book_id": 1699328,
-            "heat_change": -3555000
-          },
-          {
-            "title": "婚后上瘾",
-            "book_id": 1994117,
-            "heat_change": -2733000
-          }
-        ],
-        "summary": "**题材趋势**：传统霸总叙事与“玄学+萌宝”元素的深度融合成为新增长点，高频出现的破镜重圆与先婚后爱仍是稳固的基本盘。\n**读者偏好**：读者更倾向于具有强冲突、快节奏反转的设定，尤其青睐“身份落差”和“虐渣打脸”的爽点反馈。\n**变动解读**：新上榜作品通过叠加“玄学小祖宗”与“混球贵公子”等强人设，有效激活了榜单活力，弥补了部分头部作品因完结周期带来的热度下滑。\n**值得关注**：《玄学小祖宗：叼奶瓶算命全家宠》作为新锐，展现了极强的引流潜力，建议关注此类“萌娃+玄学”跨界题材的持续表现。",
+        "new_count": 0,
+        "dropped_count": 0,
+        "new_books": [],
+        "dropped_books": [],
+        "top_risers": [],
+        "top_fallers": [],
+        "heat_leaders": [],
+        "summary": "**题材趋势**：聚焦“破镜重圆”与“先婚后爱”两大核心卖点，融合玄学、萌宝等强冲突元素提升爽感。\n**读者偏好**：偏好具有极致反差感的人设，如“禁欲大佬”与“人间尤物”的组合，以及从被背叛到强势逆袭的复仇爽文。\n**变动解读**：本期榜单稳定性极高，前九名热度排名完全持平，反映出头部作品已建立深厚的用户护城河，长尾效应显著。\n**值得关注**：多本作品已成功联动热门综艺或影视短剧，IP跨界联动成为提升书籍曝光量与用户粘性的关键手段。",
         "ai_source": "ai"
       },
       "books": [
@@ -216,7 +158,7 @@
           "latest_chapter": " 第418章  大结局",
           "updated_at": "2026-06-12 06:02:04",
           "rank_change": 0,
-          "heat_change": -7611000,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
           "stale_update": true,
@@ -244,8 +186,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/888/2661763_360x480.jpg?time=1767668788",
           "latest_chapter": " 第657章  人间幸福，不过如此",
           "updated_at": "2026-09-28 19:41:06",
-          "rank_change": -1,
-          "heat_change": -2234000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
           "stale_update": true,
@@ -273,8 +215,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/92/275615_1659923211_360x480.jpg",
           "latest_chapter": " 第3020章  我都能给你",
           "updated_at": "2026-02-13 22:05:28",
-          "rank_change": 3,
-          "heat_change": -668000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -304,7 +246,7 @@
           "updated_at": "2024-09-02 22:01:10",
           "rank_change": 0,
           "heat_change": 0,
-          "is_new": true,
+          "is_new": false,
           "boards_count": 1,
           "stale_update": true,
           "category": "总裁豪门"
@@ -331,8 +273,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/772/2315755_360x480.jpg?time=1768286147",
           "latest_chapter": " 第633章  全剧终✿ヽ(°▽°)ノ✿",
           "updated_at": "2026-03-05 07:01:09",
-          "rank_change": -3,
-          "heat_change": -2733000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -360,8 +302,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/410/1229482_360x480.jpg?time=1683772413",
           "latest_chapter": " 第1284章  番外：大婚（完）",
           "updated_at": "2025-02-07 02:05:33",
-          "rank_change": -3,
-          "heat_change": -3555000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
           "stale_update": true,
@@ -391,7 +333,7 @@
           "updated_at": "2026-08-25 17:14:05",
           "rank_change": 0,
           "heat_change": 0,
-          "is_new": true,
+          "is_new": false,
           "boards_count": 1,
           "stale_update": true,
           "category": "总裁豪门"
@@ -418,8 +360,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3345/10034568_360x480.jpg?time=1776046465",
           "latest_chapter": " 第290章  冰山会为你哗然（完）",
           "updated_at": "2026-07-01 08:01:07",
-          "rank_change": 3,
-          "heat_change": -1237000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -447,8 +389,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/861/2580857_360x480.jpg?time=1779267111",
           "latest_chapter": " 第398章  ——津晚大结局（下）",
           "updated_at": "2026-04-22 18:18:05",
-          "rank_change": -2,
-          "heat_change": -1745000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -466,53 +408,10 @@
         "dropped_count": 0,
         "new_books": [],
         "dropped_books": [],
-        "top_risers": [
-          {
-            "title": "被逼自刎，嫡女重生撕婚书覆皇朝",
-            "book_id": 2074363,
-            "rank_change": 2
-          },
-          {
-            "title": "解春衫",
-            "book_id": 2065888,
-            "rank_change": 1
-          }
-        ],
-        "top_fallers": [
-          {
-            "title": "王府里来了个捡破烂的崽崽",
-            "book_id": 2061856,
-            "rank_change": -4
-          },
-          {
-            "title": "凤池生春",
-            "book_id": 1830569,
-            "rank_change": -1
-          },
-          {
-            "title": "随母改嫁旺新家，重生嫡女嘎嘎乱杀",
-            "book_id": 2019227,
-            "rank_change": -1
-          }
-        ],
-        "heat_leaders": [
-          {
-            "title": "随母改嫁旺新家，重生嫡女嘎嘎乱杀",
-            "book_id": 2019227,
-            "heat_change": -3136000
-          },
-          {
-            "title": "王府里来了个捡破烂的崽崽",
-            "book_id": 2061856,
-            "heat_change": -2259000
-          },
-          {
-            "title": "第一凤女",
-            "book_id": 1803136,
-            "heat_change": -2022000
-          }
-        ],
-        "summary": "**题材趋势**：重生复仇与“全家火葬场”模式依然是核心驱动力，权谋大女主与带有“养崽/萌宠”治愈元素的轻快题材并存。\n**变动解读**：榜单结构趋于固化，头部作品地位稳固，但整体热度呈现季节性回落，中腰部作品排名波动频繁，显示出读者对长篇连载内容的高粘性需求。\n**值得关注**：《被逼自刎，嫡女重生撕婚书覆皇朝》热度领跑且排名上升，其“双重生+全家火葬场”的强情绪设定是目前该品类最有效的流量密码。",
+        "top_risers": [],
+        "top_fallers": [],
+        "heat_leaders": [],
+        "summary": "**题材趋势**：重生复仇与权谋争霸占据绝对主流，强调女主从“弃子”到“掌权者”的身份转换与事业线成长。\n**读者偏好**：读者热衷于“虐渣”、“火葬场”及“双强双洁”的剧情配置，追求高智商博弈与快节奏的爽文体验。\n**变动解读**：榜单结构高度固化，未出现新书冲击，显示出该题材读者对头部精品内容的极高忠诚度。\n**值得关注**：包含“幼崽”元素的宅斗文表现不俗，通过萌宠/幼崽带来的“气运光环”为沉重的宫廷斗争增加了轻快趣味。",
         "ai_source": "ai"
       },
       "books": [
@@ -538,8 +437,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/896/2686789_360x480.jpg?time=1761327901",
           "latest_chapter": " 第822章  终章",
           "updated_at": "2026-09-22 18:39:45",
-          "rank_change": 2,
-          "heat_change": 1926000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
           "stale_update": true,
@@ -567,8 +466,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/542/1624570_360x480.jpg?time=1717343578",
           "latest_chapter": " 第1152章  ·终章",
           "updated_at": "2025-11-07 14:23:17",
-          "rank_change": -1,
-          "heat_change": 82000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
           "stale_update": true,
@@ -596,8 +495,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/888/2661154_360x480.jpg?time=1761644493",
           "latest_chapter": " 第762章  夫因妻显",
           "updated_at": "2026-08-19 08:02:20",
-          "rank_change": 1,
-          "heat_change": -961000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
           "stale_update": true,
@@ -625,8 +524,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/801/2400937_360x480.jpg?time=1753811344",
           "latest_chapter": " 第493章  番外：是一见倾心，也是非你不可的坚定",
           "updated_at": "2026-02-08 23:58:06",
-          "rank_change": -1,
-          "heat_change": -3136000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 4,
           "stale_update": true,
@@ -654,8 +553,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/504/1510567_360x480.jpg?time=1728714692",
           "latest_chapter": " 第1130章  番外：如果有来生（全书完）",
           "updated_at": "2025-08-31 14:41:10",
-          "rank_change": -1,
-          "heat_change": -2022000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -683,8 +582,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/874/2619633_360x480.jpg?time=1763973880",
           "latest_chapter": " 第946章  回家喽",
           "updated_at": "2026-07-16 23:27:07",
-          "rank_change": -4,
-          "heat_change": -2259000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
           "stale_update": true,
@@ -699,47 +598,13 @@
       "total_heat": 8217000,
       "trend": {
         "new_count": 0,
-        "dropped_count": 2,
+        "dropped_count": 0,
         "new_books": [],
-        "dropped_books": [
-          {
-            "title": "我团宠小师妹，嚣张点怎么了",
-            "book_id": 1764505,
-            "intro": "姬无双乃神魔俱畏的不灭剑尊，却被至亲背叛，尸骨无存。\n一朝重生，她竟成了被挖走灵骨、无法修炼的小废物？\n废物又如何？\n她依旧是师父们的掌心宝！\n但一回头才发现，自家师父们和同门们，竟然都是气运之子的“"
-          },
-          {
-            "title": "重回拜师日，偏心师尊靠边站",
-            "book_id": 1943722,
-            "intro": "【卷王徒弟x咸鱼师尊，师徒对照组，HE】\n修为突破后，郁岚清兴高采烈的去找师尊报喜。\n却看到师尊正在陪小师妹练习御剑。\n得知郁岚清突破后，师尊第一反应是转头安慰小师妹。\n“你别管她，她不如你。”\n宗门"
-          }
-        ],
-        "top_risers": [
-          {
-            "title": "第一瞳术师",
-            "book_id": 215243,
-            "rank_change": 1
-          }
-        ],
-        "top_fallers": [
-          {
-            "title": "柔弱医修今天也在背地里暴打魔尊",
-            "book_id": 1981956,
-            "rank_change": -3
-          }
-        ],
-        "heat_leaders": [
-          {
-            "title": "柔弱医修今天也在背地里暴打魔尊",
-            "book_id": 1981956,
-            "heat_change": -2216000
-          },
-          {
-            "title": "第一瞳术师",
-            "book_id": 215243,
-            "heat_change": -2108000
-          }
-        ],
-        "summary": "**题材趋势**：精品化趋势明显，榜单收缩至头部效应极强的群像文与大女主爽文，读者对于长篇仙侠的追更意愿受完结节点影响较大。\n**读者偏好**：更偏向“强人设+跨界融合”的爽文，如瞳术、医修等专业化标签，能够显著提升读者的留存率与点击率。\n**变动解读**：上榜作品数量锐减，头部洗牌加剧，作品热度普遍出现下滑，说明该品类在完结月面临较大的用户流失压力。\n**值得关注**：《第一瞳术师》凭借群像文优势成功登顶，该书融合了多元热门标签，是当前市场环境下该题材最稳健的存量标杆。",
+        "dropped_books": [],
+        "top_risers": [],
+        "top_fallers": [],
+        "heat_leaders": [],
+        "summary": "**题材趋势**：大女主群像与“扮猪吃虎”式爽文为主流，强调废材逆袭与极致战力的成长路径。\n**读者偏好**：受众倾向于拥有特殊技能（如瞳术、医修）的强大女主，偏好爽点密集、节奏明快的修仙升级流。\n**变动解读**：当前榜单处于缩量竞争阶段，仅两部作品在榜且排名静止，反映出该品类在七猫平台目前处于头部垄断状态。\n**值得关注**：出版实体书与综艺联动背书对于玄幻题材的破圈至关重要，是维持作品热度与公信力的重要方式。",
         "ai_source": "ai"
       },
       "books": [
@@ -765,8 +630,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/73/216077_360x480.jpg?time=1638352861",
           "latest_chapter": " 第1903章  婚后番外（下）",
           "updated_at": "2025-11-11 17:12:29",
-          "rank_change": 1,
-          "heat_change": -2108000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
           "stale_update": true,
@@ -794,8 +659,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/754/2260672_360x480.jpg?time=1745544770",
           "latest_chapter": " 第767章  番外",
           "updated_at": "2026-08-05 22:21:07",
-          "rank_change": -3,
-          "heat_change": -2216000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -814,21 +679,9 @@
         "new_books": [],
         "dropped_books": [],
         "top_risers": [],
-        "top_fallers": [
-          {
-            "title": "阴当",
-            "book_id": 1979356,
-            "rank_change": -3
-          }
-        ],
-        "heat_leaders": [
-          {
-            "title": "阴当",
-            "book_id": 1979356,
-            "heat_change": -2055000
-          }
-        ],
-        "summary": "**题材趋势**：民俗灵异与悬疑当铺类题材仍是该细分赛道的基石，强调宿命感与奇诡氛围的构建。\n**读者偏好**：读者倾向于带有强烈“天煞孤星”宿命设定及“职业传承”元素的成长型叙事。\n**变动解读**：头部作品热度出现显著回落，显示该赛道在完结期后流量自然衰减，缺乏新晋作品补位。\n**值得关注**：需警惕垂直赛道因缺乏新鲜血液注入而陷入存量博弈，建议挖掘更具差异化的民俗怪谈题材。",
+        "top_fallers": [],
+        "heat_leaders": [],
+        "summary": "**题材趋势**：民俗灵异与宿命论题材在女性市场依然具备长尾效应，强调主角身世的特殊性与职业神秘感。\n**读者偏好**：读者倾向于阅读带有“传统民俗”、“命理玄学”及“受气包逆袭”元素的都市奇幻作品。\n**变动解读**：榜单呈现高度稳定性，头部作品《阴当》凭借扎实的民俗铺陈稳居榜位，未见新竞品冲击。\n**值得关注**：此类题材需通过强烈的宿命冲突开篇，后续剧情中“掌事”身份的经营与民俗秘闻的探索是留存读者的关键。",
         "ai_source": "ai"
       },
       "books": [
@@ -854,8 +707,8 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/748/2242515_360x480.jpg?time=1778636494",
           "latest_chapter": " 第1010章  阿熏，嫁给我",
           "updated_at": "2026-07-19 00:07:14",
-          "rank_change": -3,
-          "heat_change": -2055000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 2,
           "stale_update": true,
@@ -873,23 +726,11 @@
         "dropped_count": 0,
         "new_books": [],
         "dropped_books": [],
-        "top_risers": [
-          {
-            "title": "七零，易孕娇妻被绝嗣京少宠哭了",
-            "book_id": 1866390,
-            "rank_change": 2
-          }
-        ],
+        "top_risers": [],
         "top_fallers": [],
-        "heat_leaders": [
-          {
-            "title": "七零，易孕娇妻被绝嗣京少宠哭了",
-            "book_id": 1866390,
-            "heat_change": -987000
-          }
-        ],
-        "summary": "「年代重生」《七零，易孕娇妻被绝嗣京少宠哭了》上升2位领涨；《七零，易孕娇妻被绝嗣京少宠哭了》热度-987000。",
-        "ai_source": "rule"
+        "heat_leaders": [],
+        "summary": "**题材趋势**：年代文赛道高度聚焦于“强人设对比”与“极致宠溺”，通过重生与换嫁制造强烈的戏剧冲突。\n**读者偏好**：读者热衷于“绝嗣军官vs好孕美人”这种反差感极强、带有爽文逻辑的先婚后爱设定。\n**变动解读**：榜单处于存量博弈状态，现有作品凭借符合下沉市场审美的“宠文”叙事逻辑，维持了稳定的热度表现。\n**值得关注**：爽感来源在于“重生后的选择”与“先婚后爱的甜蜜日常”，作者应持续强化男主的深情属性与女主的特殊魅力。",
+        "ai_source": "ai"
       },
       "books": [
         {
@@ -914,10 +755,10 @@
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/595/1784376_360x480.jpg?time=1726332415",
           "latest_chapter": " 第707章  大结局（完）",
           "updated_at": "2026-04-03 14:06:07",
-          "rank_change": 2,
-          "heat_change": -987000,
+          "rank_change": 0,
+          "heat_change": 0,
           "is_new": false,
-          "boards_count": 2,
+          "boards_count": 1,
           "stale_update": true,
           "category": "年代重生"
         }
@@ -929,19 +770,14 @@
       "count": 1,
       "total_heat": 2330000,
       "trend": {
-        "new_count": 1,
+        "new_count": 0,
         "dropped_count": 0,
-        "new_books": [
-          {
-            "title": "为奴三年后，整个侯府跪求我原谅",
-            "book_id": 1872563
-          }
-        ],
+        "new_books": [],
         "dropped_books": [],
         "top_risers": [],
         "top_fallers": [],
         "heat_leaders": [],
-        "summary": "**题材趋势**：真假千金、火葬场文学依然是古代情缘赛道的流量引擎，强调女主被抛弃后的反转报复。\n**读者偏好**：读者对虐心开局与后续“跪求原谅”的爽感反馈极高，青睐典型的“打脸逆袭”逻辑。\n**变动解读**：作为新上榜作品，该书凭借成熟的矛盾冲突模型直接入局，显示了该题材在市场中的强劲号召力。\n**值得关注**：该类题材同质化较高，能否通过细腻的情感铺陈与更具新意的“火葬场”细节来拉开差距是关键。",
+        "summary": "**题材趋势**：真假千金题材在古言领域持续火热，核心卖点已从单纯的“宅斗”转向“全员火葬场”式的情感反转。\n**读者偏好**：读者青睐于“断崖式断亲”带来的爽感，核心诉求是女主在遭受欺凌后的强势觉醒与反杀。\n**变动解读**：榜单表现平稳，作品《为奴三年后，整个侯府跪求我原谅》精准切中读者对于“追妻火葬场”的心理期待。\n**值得关注**：此类作品后续的爽感应集中在“配角悔恨”与“女主独美/另觅良缘”的拉扯中，避免剧情陷入过度苦情的窠臼。",
         "ai_source": "ai"
       },
       "books": [
@@ -969,7 +805,7 @@
           "updated_at": "2025-11-21 21:47:11",
           "rank_change": 0,
           "heat_change": 0,
-          "is_new": true,
+          "is_new": false,
           "boards_count": 2,
           "stale_update": true,
           "category": "古代情缘"
@@ -1356,7 +1192,7 @@
       "badge": "飙升12名",
       "latest_chapter": " 第509章  番外——道侣大典（完）",
       "platform_trend": "rise",
-      "is_new": true,
+      "is_new": false,
       "heat_change": 0,
       "boards": [
         "完结月榜"
@@ -1528,7 +1364,7 @@
       "badge": "飙升51名",
       "latest_chapter": " 第500章  人间风月，万般美好（全书完）",
       "platform_trend": "rise",
-      "is_new": true,
+      "is_new": false,
       "heat_change": 0,
       "boards": [
         "完结月榜"
@@ -1748,7 +1584,7 @@
       "boards": [
         "完结月榜"
       ],
-      "boards_count": 2,
+      "boards_count": 1,
       "rank_change": null,
       "history_days": 22
     },
@@ -1786,7 +1622,7 @@
       "badge": "",
       "latest_chapter": " 第950章  平安幸福就好",
       "platform_trend": "drop",
-      "is_new": true,
+      "is_new": false,
       "heat_change": 0,
       "boards": [
         "完结月榜"
