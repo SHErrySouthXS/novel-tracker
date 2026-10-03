@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "update_time": "2026-10-04 04:06:43",
+  "update_time": "2026-10-04 05:24:22",
   "rankings": {
     "bestseller": {
       "count": 99,
@@ -19,8 +19,8 @@
         "古代": 1
       },
       "status_stats": {
-        "完结": 39,
-        "连载中": 60
+        "完结": 40,
+        "连载中": 59
       },
       "books": [
         {
@@ -38,7 +38,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "12,767.33万",
+          "popularity": "12,770.41万",
           "word_count": "32.26万",
           "status": "完结",
           "rank_change": 0,
@@ -63,7 +63,7 @@
             "强强"
           ],
           "primary_tag": "综合",
-          "popularity": "1,110.32万",
+          "popularity": "1,111.48万",
           "word_count": "35.14万",
           "status": "完结",
           "rank_change": 2,
@@ -96,7 +96,7 @@
             "狗血"
           ],
           "primary_tag": "综合",
-          "popularity": "1,486.09万",
+          "popularity": "1,486.63万",
           "word_count": "28.19万",
           "status": "完结",
           "rank_change": 0,
@@ -121,7 +121,7 @@
             "其实有点破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "1,487.84万",
+          "popularity": "1,489.27万",
           "word_count": "22.78万",
           "status": "完结",
           "rank_change": -2,
@@ -150,7 +150,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "755.19万",
+          "popularity": "757.39万",
           "word_count": "36.59万",
           "status": "完结",
           "rank_change": 0,
@@ -171,7 +171,7 @@
             "包养出真爱"
           ],
           "primary_tag": "都市",
-          "popularity": "3,822.99万",
+          "popularity": "3,823.75万",
           "word_count": "23.29万",
           "status": "完结",
           "rank_change": 3,
@@ -204,7 +204,7 @@
             "欢喜冤家"
           ],
           "primary_tag": "都市",
-          "popularity": "2,342.93万",
+          "popularity": "2,343.62万",
           "word_count": "35.05万",
           "status": "完结",
           "rank_change": -1,
@@ -231,7 +231,7 @@
             "HE"
           ],
           "primary_tag": "综合",
-          "popularity": "631.31万",
+          "popularity": "632.26万",
           "word_count": "22.27万",
           "status": "连载中",
           "rank_change": 0,
@@ -260,7 +260,7 @@
             "恋爱脑但跑路"
           ],
           "primary_tag": "架空",
-          "popularity": "634.40万",
+          "popularity": "636.00万",
           "word_count": "20.35万",
           "status": "完结",
           "rank_change": 14,
@@ -295,7 +295,7 @@
             "真香定律"
           ],
           "primary_tag": "架空",
-          "popularity": "684.31万",
+          "popularity": "684.91万",
           "word_count": "18.46万",
           "status": "完结",
           "rank_change": -3,
@@ -332,7 +332,7 @@
             "扮猪吃虎"
           ],
           "primary_tag": "都市",
-          "popularity": "862.03万",
+          "popularity": "862.61万",
           "word_count": "19.39万",
           "status": "连载中",
           "rank_change": 5,
@@ -351,7 +351,7 @@
             "那啥转正"
           ],
           "primary_tag": "都市",
-          "popularity": "361.86万",
+          "popularity": "362.32万",
           "word_count": "27.44万",
           "status": "完结",
           "rank_change": 32,
@@ -386,7 +386,7 @@
             "治愈"
           ],
           "primary_tag": "综合",
-          "popularity": "744.97万",
+          "popularity": "745.92万",
           "word_count": "16.73万",
           "status": "连载中",
           "rank_change": 0,
@@ -421,7 +421,7 @@
             "初男开窍从入门到精通"
           ],
           "primary_tag": "都市",
-          "popularity": "1,060.77万",
+          "popularity": "1,061.09万",
           "word_count": "16.83万",
           "status": "完结",
           "rank_change": -3,
@@ -450,7 +450,7 @@
             "暗恋"
           ],
           "primary_tag": "都市",
-          "popularity": "413.84万",
+          "popularity": "414.51万",
           "word_count": "28.25万",
           "status": "连载中",
           "rank_change": 0,
@@ -473,7 +473,7 @@
             "青梅"
           ],
           "primary_tag": "现代",
-          "popularity": "2,298.38万",
+          "popularity": "2,298.55万",
           "word_count": "37.06万",
           "status": "完结",
           "rank_change": -2,
@@ -506,7 +506,7 @@
             "其实是爱情喜剧"
           ],
           "primary_tag": "架空",
-          "popularity": "496.64万",
+          "popularity": "497.20万",
           "word_count": "15.14万",
           "status": "连载中",
           "rank_change": 0,
@@ -543,7 +543,7 @@
             "破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "809.23万",
+          "popularity": "809.36万",
           "word_count": "21.31万",
           "status": "连载中",
           "rank_change": 1,
@@ -562,7 +562,7 @@
             "恨海情天"
           ],
           "primary_tag": "综合",
-          "popularity": "316.69万",
+          "popularity": "317.51万",
           "word_count": "18.91万",
           "status": "连载中",
           "rank_change": 13,
@@ -597,7 +597,7 @@
             "阴暗渣受"
           ],
           "primary_tag": "都市",
-          "popularity": "293.44万",
+          "popularity": "293.65万",
           "word_count": "23.29万",
           "status": "连载中",
           "rank_change": 7,
@@ -632,7 +632,7 @@
             "悬疑"
           ],
           "primary_tag": "推理",
-          "popularity": "1,105.45万",
+          "popularity": "1,105.90万",
           "word_count": "41.42万",
           "status": "完结",
           "rank_change": 7,
@@ -653,7 +653,7 @@
             "甜宠"
           ],
           "primary_tag": "都市",
-          "popularity": "976.73万",
+          "popularity": "976.94万",
           "word_count": "16.56万",
           "status": "连载中",
           "rank_change": -4,
@@ -686,7 +686,7 @@
             "黑切白"
           ],
           "primary_tag": "都市",
-          "popularity": "1,721.02万",
+          "popularity": "1,721.26万",
           "word_count": "26.79万",
           "status": "完结",
           "rank_change": 3,
@@ -719,7 +719,7 @@
             "无回忆章节"
           ],
           "primary_tag": "都市",
-          "popularity": "800.83万",
+          "popularity": "800.96万",
           "word_count": "25.28万",
           "status": "完结",
           "rank_change": -4,
@@ -754,7 +754,7 @@
             "恨海情天"
           ],
           "primary_tag": "宫廷",
-          "popularity": "547.58万",
+          "popularity": "548.03万",
           "word_count": "41.06万",
           "status": "完结",
           "rank_change": 31,
@@ -781,7 +781,7 @@
             "慢热"
           ],
           "primary_tag": "都市",
-          "popularity": "488.59万",
+          "popularity": "488.77万",
           "word_count": "21.49万",
           "status": "连载中",
           "rank_change": 32,
@@ -814,7 +814,7 @@
             "酸甜"
           ],
           "primary_tag": "架空",
-          "popularity": "406.05万",
+          "popularity": "406.14万",
           "word_count": "14.67万",
           "status": "连载中",
           "rank_change": null,
@@ -843,7 +843,7 @@
             "剧情"
           ],
           "primary_tag": "综合",
-          "popularity": "6,011.99万",
+          "popularity": "6,012.18万",
           "word_count": "74.46万",
           "status": "连载中",
           "rank_change": 6,
@@ -872,7 +872,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "515.82万",
+          "popularity": "516.01万",
           "word_count": "31.68万",
           "status": "完结",
           "rank_change": -8,
@@ -899,7 +899,7 @@
             "鸡同鸭讲"
           ],
           "primary_tag": "综合",
-          "popularity": "378.74万",
+          "popularity": "379.20万",
           "word_count": "26.18万",
           "status": "完结",
           "rank_change": 11,
@@ -926,7 +926,7 @@
             "HE"
           ],
           "primary_tag": "宫廷",
-          "popularity": "536.03万",
+          "popularity": "536.14万",
           "word_count": "24.37万",
           "status": "完结",
           "rank_change": -19,
@@ -957,7 +957,7 @@
             "年上"
           ],
           "primary_tag": "现代",
-          "popularity": "386.58万",
+          "popularity": "386.96万",
           "word_count": "47.34万",
           "status": "连载中",
           "rank_change": -1,
@@ -1013,7 +1013,7 @@
             "狗血"
           ],
           "primary_tag": "架空",
-          "popularity": "976.61万",
+          "popularity": "976.89万",
           "word_count": "33.28万",
           "status": "完结",
           "rank_change": -10,
@@ -1044,7 +1044,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "1,449.47万",
+          "popularity": "1,449.77万",
           "word_count": "28.59万",
           "status": "完结",
           "rank_change": -2,
@@ -1067,7 +1067,7 @@
             "年上"
           ],
           "primary_tag": "综合",
-          "popularity": "1,476.81万",
+          "popularity": "1,477.59万",
           "word_count": "19.81万",
           "status": "连载中",
           "rank_change": -14,
@@ -1096,7 +1096,7 @@
             "破镜重圆"
           ],
           "primary_tag": "综合",
-          "popularity": "533.13万",
+          "popularity": "533.23万",
           "word_count": "21.61万",
           "status": "连载中",
           "rank_change": 2,
@@ -1121,7 +1121,7 @@
             "年上"
           ],
           "primary_tag": "武侠",
-          "popularity": "524.75万",
+          "popularity": "524.85万",
           "word_count": "32.97万",
           "status": "连载中",
           "rank_change": 0,
@@ -1158,7 +1158,7 @@
             "职业"
           ],
           "primary_tag": "青春",
-          "popularity": "231.58万",
+          "popularity": "231.60万",
           "word_count": "30.78万",
           "status": "连载中",
           "rank_change": -9,
@@ -1193,7 +1193,7 @@
             "搞笑"
           ],
           "primary_tag": "青春",
-          "popularity": "188.86万",
+          "popularity": "189.06万",
           "word_count": "23.57万",
           "status": "连载中",
           "rank_change": -5,
@@ -1228,7 +1228,7 @@
             "高强度虐恋"
           ],
           "primary_tag": "综合",
-          "popularity": "475.66万",
+          "popularity": "475.74万",
           "word_count": "48.96万",
           "status": "连载中",
           "rank_change": 9,
@@ -1259,7 +1259,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "1,025.13万",
+          "popularity": "1,025.20万",
           "word_count": "34.23万",
           "status": "连载中",
           "rank_change": 23,
@@ -1290,7 +1290,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "76.52万",
+          "popularity": "76.60万",
           "word_count": "19.95万",
           "status": "连载中",
           "rank_change": 46,
@@ -1309,9 +1309,9 @@
             "HE"
           ],
           "primary_tag": "青春",
-          "popularity": "145.60万",
-          "word_count": "23.74万",
-          "status": "连载中",
+          "popularity": "146.20万",
+          "word_count": "23.96万",
+          "status": "完结",
           "rank_change": 5,
           "history_days": 17
         },
@@ -1336,7 +1336,7 @@
             "市井生活"
           ],
           "primary_tag": "都市",
-          "popularity": "1,263.20万",
+          "popularity": "1,263.56万",
           "word_count": "24.78万",
           "status": "完结",
           "rank_change": -2,
@@ -1361,7 +1361,7 @@
             "娱乐圈"
           ],
           "primary_tag": "架空",
-          "popularity": "811.77万",
+          "popularity": "811.85万",
           "word_count": "25.54万",
           "status": "完结",
           "rank_change": 18,
@@ -1386,7 +1386,7 @@
             "久别重逢"
           ],
           "primary_tag": "综合",
-          "popularity": "541.48万",
+          "popularity": "541.77万",
           "word_count": "20.39万",
           "status": "连载中",
           "rank_change": -7,
@@ -1423,7 +1423,7 @@
             "钓系"
           ],
           "primary_tag": "都市",
-          "popularity": "208.17万",
+          "popularity": "208.18万",
           "word_count": "26.50万",
           "status": "连载中",
           "rank_change": -1,
@@ -1458,7 +1458,7 @@
             "直男的主动最为致命"
           ],
           "primary_tag": "综合",
-          "popularity": "219.27万",
+          "popularity": "219.32万",
           "word_count": "26.17万",
           "status": "连载中",
           "rank_change": 8,
@@ -1489,7 +1489,7 @@
             "虐恋"
           ],
           "primary_tag": "都市",
-          "popularity": "284.97万",
+          "popularity": "285.11万",
           "word_count": "33.50万",
           "status": "连载中",
           "rank_change": 1,
@@ -1549,7 +1549,7 @@
             "美强惨"
           ],
           "primary_tag": "综合",
-          "popularity": "720.78万",
+          "popularity": "721.02万",
           "word_count": "22.21万",
           "status": "完结",
           "rank_change": -23,
@@ -1584,7 +1584,7 @@
             "质子受"
           ],
           "primary_tag": "综合",
-          "popularity": "410.53万",
+          "popularity": "410.74万",
           "word_count": "32.70万",
           "status": "连载中",
           "rank_change": -11,
@@ -1619,7 +1619,7 @@
             "甜宠"
           ],
           "primary_tag": "综合",
-          "popularity": "719.05万",
+          "popularity": "719.19万",
           "word_count": "28.13万",
           "status": "连载中",
           "rank_change": -44,
@@ -1654,7 +1654,7 @@
             "酸甜"
           ],
           "primary_tag": "都市",
-          "popularity": "694.91万",
+          "popularity": "694.93万",
           "word_count": "23.72万",
           "status": "连载中",
           "rank_change": -3,
@@ -1679,7 +1679,7 @@
             "小白权谋"
           ],
           "primary_tag": "宫廷",
-          "popularity": "641.26万",
+          "popularity": "641.33万",
           "word_count": "34.75万",
           "status": "完结",
           "rank_change": 3,
@@ -1716,7 +1716,7 @@
             "白切黑"
           ],
           "primary_tag": "都市",
-          "popularity": "581.35万",
+          "popularity": "581.34万",
           "word_count": "26.50万",
           "status": "连载中",
           "rank_change": 12,
@@ -1743,7 +1743,7 @@
             "开篇失忆"
           ],
           "primary_tag": "都市",
-          "popularity": "693.88万",
+          "popularity": "693.90万",
           "word_count": "22.46万",
           "status": "完结",
           "rank_change": -10,
@@ -1830,7 +1830,7 @@
             "HE"
           ],
           "primary_tag": "玄幻",
-          "popularity": "239.29万",
+          "popularity": "239.47万",
           "word_count": "20.17万",
           "status": "连载中",
           "rank_change": 30,
@@ -1855,7 +1855,7 @@
             "破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "232.21万",
+          "popularity": "232.25万",
           "word_count": "20.05万",
           "status": "连载中",
           "rank_change": null,
@@ -1882,7 +1882,7 @@
             "重力喜剧"
           ],
           "primary_tag": "都市",
-          "popularity": "178.56万",
+          "popularity": "178.58万",
           "word_count": "22.00万",
           "status": "连载中",
           "rank_change": 34,
@@ -1909,7 +1909,7 @@
             "破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "181.76万",
+          "popularity": "182.01万",
           "word_count": "30.42万",
           "status": "完结",
           "rank_change": 7,
@@ -1932,7 +1932,7 @@
             "市井"
           ],
           "primary_tag": "架空",
-          "popularity": "429.75万",
+          "popularity": "429.87万",
           "word_count": "71.02万",
           "status": "完结",
           "rank_change": -4,
@@ -1961,7 +1961,7 @@
             "搞笑"
           ],
           "primary_tag": "都市",
-          "popularity": "1,157.47万",
+          "popularity": "1,157.49万",
           "word_count": "26.33万",
           "status": "完结",
           "rank_change": 16,
@@ -1988,7 +1988,7 @@
             "HE"
           ],
           "primary_tag": "架空",
-          "popularity": "769.54万",
+          "popularity": "769.55万",
           "word_count": "22.93万",
           "status": "连载中",
           "rank_change": 13,
@@ -2019,7 +2019,7 @@
             "美人攻"
           ],
           "primary_tag": "科幻",
-          "popularity": "501.61万",
+          "popularity": "501.60万",
           "word_count": "77.41万",
           "status": "连载中",
           "rank_change": 8,
@@ -2091,7 +2091,7 @@
             "体型差"
           ],
           "primary_tag": "都市",
-          "popularity": "226.29万",
+          "popularity": "226.37万",
           "word_count": "11.66万",
           "status": "完结",
           "rank_change": "new",
@@ -2118,7 +2118,7 @@
             "命定之番"
           ],
           "primary_tag": "架空",
-          "popularity": "724.35万",
+          "popularity": "724.41万",
           "word_count": "29.23万",
           "status": "连载中",
           "rank_change": -11,
@@ -2155,7 +2155,7 @@
             "仙侠"
           ],
           "primary_tag": "玄幻",
-          "popularity": "502.63万",
+          "popularity": "502.70万",
           "word_count": "22.71万",
           "status": "连载中",
           "rank_change": 1,
@@ -2180,7 +2180,7 @@
             "年下"
           ],
           "primary_tag": "奇幻",
-          "popularity": "7,031.73万",
+          "popularity": "7,031.75万",
           "word_count": "120.02万",
           "status": "连载中",
           "rank_change": -48,
@@ -2199,7 +2199,7 @@
             "竞技"
           ],
           "primary_tag": "都市",
-          "popularity": "136.29万",
+          "popularity": "136.47万",
           "word_count": "35.92万",
           "status": "完结",
           "rank_change": -7,
@@ -2261,7 +2261,7 @@
             "狗血"
           ],
           "primary_tag": "架空",
-          "popularity": "248.84万",
+          "popularity": "248.87万",
           "word_count": "16.08万",
           "status": "连载中",
           "rank_change": -31,
@@ -2360,7 +2360,7 @@
             "高需求恋爱"
           ],
           "primary_tag": "都市",
-          "popularity": "475.98万",
+          "popularity": "476.07万",
           "word_count": "26.37万",
           "status": "连载中",
           "rank_change": -26,
@@ -2385,7 +2385,7 @@
             "暗恋"
           ],
           "primary_tag": "综合",
-          "popularity": "101.70万",
+          "popularity": "102.00万",
           "word_count": "14.52万",
           "status": "连载中",
           "rank_change": -30,
@@ -2416,7 +2416,7 @@
             "治愈"
           ],
           "primary_tag": "都市",
-          "popularity": "228.76万",
+          "popularity": "228.88万",
           "word_count": "18.01万",
           "status": "连载中",
           "rank_change": 17,
@@ -2447,7 +2447,7 @@
             "相爱相杀"
           ],
           "primary_tag": "都市",
-          "popularity": "156.99万",
+          "popularity": "157.01万",
           "word_count": "45.46万",
           "status": "连载中",
           "rank_change": null,
@@ -2507,7 +2507,7 @@
             "年上"
           ],
           "primary_tag": "架空",
-          "popularity": "341.11万",
+          "popularity": "341.14万",
           "word_count": "21.55万",
           "status": "连载中",
           "rank_change": -16,
@@ -2592,7 +2592,7 @@
             "天作之合"
           ],
           "primary_tag": "都市",
-          "popularity": "186.05万",
+          "popularity": "186.11万",
           "word_count": "14.96万",
           "status": "连载中",
           "rank_change": 5,
@@ -2695,7 +2695,7 @@
             "小狗小血年下主攻文"
           ],
           "primary_tag": "都市",
-          "popularity": "290.69万",
+          "popularity": "291.14万",
           "word_count": "26.62万",
           "status": "连载中",
           "rank_change": -9,
@@ -2726,7 +2726,7 @@
             "慢节奏"
           ],
           "primary_tag": "青春",
-          "popularity": "105.60万",
+          "popularity": "105.62万",
           "word_count": "23.11万",
           "status": "连载中",
           "rank_change": null,
@@ -2763,7 +2763,7 @@
             "狗血"
           ],
           "primary_tag": "综合",
-          "popularity": "596.24万",
+          "popularity": "596.22万",
           "word_count": "24.65万",
           "status": "完结",
           "rank_change": -14,
@@ -2819,7 +2819,7 @@
             "受追攻"
           ],
           "primary_tag": "都市",
-          "popularity": "329.61万",
+          "popularity": "329.64万",
           "word_count": "23.06万",
           "status": "连载中",
           "rank_change": null,
@@ -2842,7 +2842,7 @@
             "正剧"
           ],
           "primary_tag": "宫廷",
-          "popularity": "745.28万",
+          "popularity": "745.31万",
           "word_count": "62.49万",
           "status": "连载中",
           "rank_change": null,
@@ -2935,7 +2935,7 @@
             "强强"
           ],
           "primary_tag": "架空",
-          "popularity": "191.27万",
+          "popularity": "191.31万",
           "word_count": "45.74万",
           "status": "完结",
           "rank_change": null,
@@ -2991,8 +2991,8 @@
         "奇幻": 2
       },
       "status_stats": {
-        "完结": 39,
-        "连载中": 60
+        "完结": 40,
+        "连载中": 59
       },
       "books": [
         {
@@ -3010,7 +3010,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "12,767.33万",
+          "popularity": "12,770.41万",
           "word_count": "32.26万",
           "status": "完结",
           "rank_change": 0,
@@ -3035,7 +3035,7 @@
             "强强"
           ],
           "primary_tag": "综合",
-          "popularity": "1,110.32万",
+          "popularity": "1,111.48万",
           "word_count": "35.14万",
           "status": "完结",
           "rank_change": 2,
@@ -3068,7 +3068,7 @@
             "狗血"
           ],
           "primary_tag": "综合",
-          "popularity": "1,486.09万",
+          "popularity": "1,486.63万",
           "word_count": "28.19万",
           "status": "完结",
           "rank_change": 0,
@@ -3093,7 +3093,7 @@
             "其实有点破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "1,487.84万",
+          "popularity": "1,489.27万",
           "word_count": "22.78万",
           "status": "完结",
           "rank_change": -2,
@@ -3122,7 +3122,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "755.19万",
+          "popularity": "757.39万",
           "word_count": "36.59万",
           "status": "完结",
           "rank_change": 0,
@@ -3143,7 +3143,7 @@
             "包养出真爱"
           ],
           "primary_tag": "都市",
-          "popularity": "3,822.99万",
+          "popularity": "3,823.75万",
           "word_count": "23.29万",
           "status": "完结",
           "rank_change": 3,
@@ -3176,7 +3176,7 @@
             "欢喜冤家"
           ],
           "primary_tag": "都市",
-          "popularity": "2,342.93万",
+          "popularity": "2,343.62万",
           "word_count": "35.05万",
           "status": "完结",
           "rank_change": -1,
@@ -3203,7 +3203,7 @@
             "HE"
           ],
           "primary_tag": "综合",
-          "popularity": "631.32万",
+          "popularity": "632.26万",
           "word_count": "22.27万",
           "status": "连载中",
           "rank_change": 0,
@@ -3232,7 +3232,7 @@
             "恋爱脑但跑路"
           ],
           "primary_tag": "架空",
-          "popularity": "634.40万",
+          "popularity": "636.00万",
           "word_count": "20.35万",
           "status": "完结",
           "rank_change": 13,
@@ -3267,7 +3267,7 @@
             "真香定律"
           ],
           "primary_tag": "架空",
-          "popularity": "684.31万",
+          "popularity": "684.91万",
           "word_count": "18.46万",
           "status": "完结",
           "rank_change": -3,
@@ -3304,7 +3304,7 @@
             "扮猪吃虎"
           ],
           "primary_tag": "都市",
-          "popularity": "862.03万",
+          "popularity": "862.61万",
           "word_count": "19.39万",
           "status": "连载中",
           "rank_change": 4,
@@ -3323,7 +3323,7 @@
             "那啥转正"
           ],
           "primary_tag": "都市",
-          "popularity": "361.86万",
+          "popularity": "362.32万",
           "word_count": "27.44万",
           "status": "完结",
           "rank_change": 30,
@@ -3358,7 +3358,7 @@
             "治愈"
           ],
           "primary_tag": "综合",
-          "popularity": "744.97万",
+          "popularity": "745.92万",
           "word_count": "16.73万",
           "status": "连载中",
           "rank_change": 0,
@@ -3393,7 +3393,7 @@
             "初男开窍从入门到精通"
           ],
           "primary_tag": "都市",
-          "popularity": "1,060.77万",
+          "popularity": "1,061.09万",
           "word_count": "16.83万",
           "status": "完结",
           "rank_change": -3,
@@ -3422,7 +3422,7 @@
             "暗恋"
           ],
           "primary_tag": "都市",
-          "popularity": "413.84万",
+          "popularity": "414.51万",
           "word_count": "28.25万",
           "status": "连载中",
           "rank_change": -1,
@@ -3455,7 +3455,7 @@
             "其实是爱情喜剧"
           ],
           "primary_tag": "架空",
-          "popularity": "496.64万",
+          "popularity": "497.20万",
           "word_count": "15.14万",
           "status": "连载中",
           "rank_change": 0,
@@ -3492,7 +3492,7 @@
             "破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "809.23万",
+          "popularity": "809.36万",
           "word_count": "21.31万",
           "status": "连载中",
           "rank_change": 1,
@@ -3511,7 +3511,7 @@
             "恨海情天"
           ],
           "primary_tag": "综合",
-          "popularity": "316.69万",
+          "popularity": "317.51万",
           "word_count": "18.91万",
           "status": "连载中",
           "rank_change": 12,
@@ -3546,7 +3546,7 @@
             "阴暗渣受"
           ],
           "primary_tag": "都市",
-          "popularity": "293.44万",
+          "popularity": "293.65万",
           "word_count": "23.29万",
           "status": "连载中",
           "rank_change": 7,
@@ -3581,7 +3581,7 @@
             "悬疑"
           ],
           "primary_tag": "推理",
-          "popularity": "1,105.45万",
+          "popularity": "1,105.90万",
           "word_count": "41.42万",
           "status": "完结",
           "rank_change": 7,
@@ -3602,7 +3602,7 @@
             "甜宠"
           ],
           "primary_tag": "都市",
-          "popularity": "976.73万",
+          "popularity": "976.94万",
           "word_count": "16.56万",
           "status": "连载中",
           "rank_change": -4,
@@ -3635,7 +3635,7 @@
             "黑切白"
           ],
           "primary_tag": "都市",
-          "popularity": "1,721.02万",
+          "popularity": "1,721.26万",
           "word_count": "26.79万",
           "status": "完结",
           "rank_change": 3,
@@ -3668,7 +3668,7 @@
             "无回忆章节"
           ],
           "primary_tag": "都市",
-          "popularity": "800.83万",
+          "popularity": "800.96万",
           "word_count": "25.28万",
           "status": "完结",
           "rank_change": -4,
@@ -3703,7 +3703,7 @@
             "恨海情天"
           ],
           "primary_tag": "宫廷",
-          "popularity": "547.58万",
+          "popularity": "548.03万",
           "word_count": "41.06万",
           "status": "完结",
           "rank_change": 30,
@@ -3730,7 +3730,7 @@
             "慢热"
           ],
           "primary_tag": "都市",
-          "popularity": "488.59万",
+          "popularity": "488.77万",
           "word_count": "21.49万",
           "status": "连载中",
           "rank_change": 31,
@@ -3763,7 +3763,7 @@
             "酸甜"
           ],
           "primary_tag": "架空",
-          "popularity": "406.05万",
+          "popularity": "406.14万",
           "word_count": "14.67万",
           "status": "连载中",
           "rank_change": null,
@@ -3792,7 +3792,7 @@
             "剧情"
           ],
           "primary_tag": "综合",
-          "popularity": "6,011.99万",
+          "popularity": "6,012.18万",
           "word_count": "74.46万",
           "status": "连载中",
           "rank_change": 5,
@@ -3821,7 +3821,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "515.82万",
+          "popularity": "516.01万",
           "word_count": "31.68万",
           "status": "完结",
           "rank_change": -8,
@@ -3848,7 +3848,7 @@
             "鸡同鸭讲"
           ],
           "primary_tag": "综合",
-          "popularity": "378.74万",
+          "popularity": "379.20万",
           "word_count": "26.18万",
           "status": "完结",
           "rank_change": 10,
@@ -3875,7 +3875,7 @@
             "HE"
           ],
           "primary_tag": "宫廷",
-          "popularity": "536.03万",
+          "popularity": "536.14万",
           "word_count": "24.37万",
           "status": "完结",
           "rank_change": -18,
@@ -3931,7 +3931,7 @@
             "狗血"
           ],
           "primary_tag": "架空",
-          "popularity": "976.61万",
+          "popularity": "976.89万",
           "word_count": "33.28万",
           "status": "完结",
           "rank_change": -9,
@@ -3962,7 +3962,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "1,449.47万",
+          "popularity": "1,449.77万",
           "word_count": "28.59万",
           "status": "完结",
           "rank_change": -2,
@@ -3985,7 +3985,7 @@
             "年上"
           ],
           "primary_tag": "综合",
-          "popularity": "1,476.81万",
+          "popularity": "1,477.59万",
           "word_count": "19.81万",
           "status": "连载中",
           "rank_change": -13,
@@ -4014,7 +4014,7 @@
             "破镜重圆"
           ],
           "primary_tag": "综合",
-          "popularity": "533.13万",
+          "popularity": "533.23万",
           "word_count": "21.61万",
           "status": "连载中",
           "rank_change": 2,
@@ -4039,7 +4039,7 @@
             "年上"
           ],
           "primary_tag": "武侠",
-          "popularity": "524.75万",
+          "popularity": "524.85万",
           "word_count": "32.97万",
           "status": "连载中",
           "rank_change": 0,
@@ -4076,7 +4076,7 @@
             "职业"
           ],
           "primary_tag": "青春",
-          "popularity": "231.58万",
+          "popularity": "231.60万",
           "word_count": "30.78万",
           "status": "连载中",
           "rank_change": -8,
@@ -4111,7 +4111,7 @@
             "搞笑"
           ],
           "primary_tag": "青春",
-          "popularity": "188.86万",
+          "popularity": "189.06万",
           "word_count": "23.57万",
           "status": "连载中",
           "rank_change": -5,
@@ -4146,7 +4146,7 @@
             "高强度虐恋"
           ],
           "primary_tag": "综合",
-          "popularity": "475.66万",
+          "popularity": "475.74万",
           "word_count": "48.96万",
           "status": "连载中",
           "rank_change": 9,
@@ -4177,7 +4177,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "1,025.13万",
+          "popularity": "1,025.20万",
           "word_count": "34.23万",
           "status": "连载中",
           "rank_change": 22,
@@ -4208,7 +4208,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "76.52万",
+          "popularity": "76.60万",
           "word_count": "19.95万",
           "status": "连载中",
           "rank_change": 44,
@@ -4227,9 +4227,9 @@
             "HE"
           ],
           "primary_tag": "青春",
-          "popularity": "145.60万",
-          "word_count": "23.74万",
-          "status": "连载中",
+          "popularity": "146.20万",
+          "word_count": "23.96万",
+          "status": "完结",
           "rank_change": 5,
           "history_days": 18
         },
@@ -4254,7 +4254,7 @@
             "市井生活"
           ],
           "primary_tag": "都市",
-          "popularity": "1,263.20万",
+          "popularity": "1,263.56万",
           "word_count": "24.78万",
           "status": "完结",
           "rank_change": -2,
@@ -4279,7 +4279,7 @@
             "娱乐圈"
           ],
           "primary_tag": "架空",
-          "popularity": "811.77万",
+          "popularity": "811.85万",
           "word_count": "25.54万",
           "status": "完结",
           "rank_change": 17,
@@ -4304,7 +4304,7 @@
             "久别重逢"
           ],
           "primary_tag": "综合",
-          "popularity": "541.48万",
+          "popularity": "541.77万",
           "word_count": "20.39万",
           "status": "连载中",
           "rank_change": -7,
@@ -4341,7 +4341,7 @@
             "钓系"
           ],
           "primary_tag": "都市",
-          "popularity": "208.17万",
+          "popularity": "208.18万",
           "word_count": "26.50万",
           "status": "连载中",
           "rank_change": -1,
@@ -4376,7 +4376,7 @@
             "直男的主动最为致命"
           ],
           "primary_tag": "综合",
-          "popularity": "219.27万",
+          "popularity": "219.32万",
           "word_count": "26.17万",
           "status": "连载中",
           "rank_change": 8,
@@ -4407,7 +4407,7 @@
             "虐恋"
           ],
           "primary_tag": "都市",
-          "popularity": "284.97万",
+          "popularity": "285.11万",
           "word_count": "33.50万",
           "status": "连载中",
           "rank_change": 1,
@@ -4467,7 +4467,7 @@
             "美强惨"
           ],
           "primary_tag": "综合",
-          "popularity": "720.78万",
+          "popularity": "721.02万",
           "word_count": "22.21万",
           "status": "完结",
           "rank_change": -22,
@@ -4502,7 +4502,7 @@
             "质子受"
           ],
           "primary_tag": "综合",
-          "popularity": "410.53万",
+          "popularity": "410.74万",
           "word_count": "32.70万",
           "status": "连载中",
           "rank_change": -11,
@@ -4537,7 +4537,7 @@
             "甜宠"
           ],
           "primary_tag": "综合",
-          "popularity": "719.05万",
+          "popularity": "719.19万",
           "word_count": "28.13万",
           "status": "连载中",
           "rank_change": -42,
@@ -4572,7 +4572,7 @@
             "酸甜"
           ],
           "primary_tag": "都市",
-          "popularity": "694.91万",
+          "popularity": "694.93万",
           "word_count": "23.72万",
           "status": "连载中",
           "rank_change": -3,
@@ -4597,7 +4597,7 @@
             "小白权谋"
           ],
           "primary_tag": "宫廷",
-          "popularity": "641.26万",
+          "popularity": "641.33万",
           "word_count": "34.75万",
           "status": "完结",
           "rank_change": 3,
@@ -4634,7 +4634,7 @@
             "白切黑"
           ],
           "primary_tag": "都市",
-          "popularity": "581.35万",
+          "popularity": "581.34万",
           "word_count": "26.50万",
           "status": "连载中",
           "rank_change": 11,
@@ -4661,7 +4661,7 @@
             "开篇失忆"
           ],
           "primary_tag": "都市",
-          "popularity": "693.88万",
+          "popularity": "693.90万",
           "word_count": "22.46万",
           "status": "完结",
           "rank_change": -10,
@@ -4748,7 +4748,7 @@
             "HE"
           ],
           "primary_tag": "玄幻",
-          "popularity": "239.29万",
+          "popularity": "239.47万",
           "word_count": "20.17万",
           "status": "连载中",
           "rank_change": 28,
@@ -4773,7 +4773,7 @@
             "破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "232.21万",
+          "popularity": "232.25万",
           "word_count": "20.05万",
           "status": "连载中",
           "rank_change": null,
@@ -4800,7 +4800,7 @@
             "重力喜剧"
           ],
           "primary_tag": "都市",
-          "popularity": "178.56万",
+          "popularity": "178.58万",
           "word_count": "22.00万",
           "status": "连载中",
           "rank_change": 31,
@@ -4827,7 +4827,7 @@
             "破镜重圆"
           ],
           "primary_tag": "都市",
-          "popularity": "181.76万",
+          "popularity": "182.01万",
           "word_count": "30.42万",
           "status": "完结",
           "rank_change": 6,
@@ -4856,7 +4856,7 @@
             "搞笑"
           ],
           "primary_tag": "都市",
-          "popularity": "1,157.47万",
+          "popularity": "1,157.49万",
           "word_count": "26.33万",
           "status": "完结",
           "rank_change": 15,
@@ -4883,7 +4883,7 @@
             "HE"
           ],
           "primary_tag": "架空",
-          "popularity": "769.54万",
+          "popularity": "769.55万",
           "word_count": "22.93万",
           "status": "连载中",
           "rank_change": 12,
@@ -4914,7 +4914,7 @@
             "美人攻"
           ],
           "primary_tag": "科幻",
-          "popularity": "501.61万",
+          "popularity": "501.60万",
           "word_count": "77.41万",
           "status": "连载中",
           "rank_change": 7,
@@ -4986,7 +4986,7 @@
             "体型差"
           ],
           "primary_tag": "都市",
-          "popularity": "226.29万",
+          "popularity": "226.37万",
           "word_count": "11.66万",
           "status": "完结",
           "rank_change": "new",
@@ -5013,7 +5013,7 @@
             "命定之番"
           ],
           "primary_tag": "架空",
-          "popularity": "724.35万",
+          "popularity": "724.41万",
           "word_count": "29.23万",
           "status": "连载中",
           "rank_change": -10,
@@ -5050,7 +5050,7 @@
             "仙侠"
           ],
           "primary_tag": "玄幻",
-          "popularity": "502.63万",
+          "popularity": "502.70万",
           "word_count": "22.71万",
           "status": "连载中",
           "rank_change": 1,
@@ -5075,7 +5075,7 @@
             "年下"
           ],
           "primary_tag": "奇幻",
-          "popularity": "7,031.73万",
+          "popularity": "7,031.75万",
           "word_count": "120.02万",
           "status": "连载中",
           "rank_change": -46,
@@ -5094,7 +5094,7 @@
             "竞技"
           ],
           "primary_tag": "都市",
-          "popularity": "136.29万",
+          "popularity": "136.47万",
           "word_count": "35.92万",
           "status": "完结",
           "rank_change": -7,
@@ -5125,7 +5125,7 @@
             "狗血"
           ],
           "primary_tag": "架空",
-          "popularity": "248.84万",
+          "popularity": "248.87万",
           "word_count": "16.08万",
           "status": "连载中",
           "rank_change": -29,
@@ -5224,7 +5224,7 @@
             "高需求恋爱"
           ],
           "primary_tag": "都市",
-          "popularity": "475.98万",
+          "popularity": "476.07万",
           "word_count": "26.37万",
           "status": "连载中",
           "rank_change": -24,
@@ -5249,7 +5249,7 @@
             "暗恋"
           ],
           "primary_tag": "综合",
-          "popularity": "101.70万",
+          "popularity": "102.00万",
           "word_count": "14.52万",
           "status": "连载中",
           "rank_change": -28,
@@ -5280,7 +5280,7 @@
             "治愈"
           ],
           "primary_tag": "都市",
-          "popularity": "228.76万",
+          "popularity": "228.88万",
           "word_count": "18.01万",
           "status": "连载中",
           "rank_change": 16,
@@ -5311,7 +5311,7 @@
             "相爱相杀"
           ],
           "primary_tag": "都市",
-          "popularity": "156.99万",
+          "popularity": "157.01万",
           "word_count": "45.46万",
           "status": "连载中",
           "rank_change": null,
@@ -5371,7 +5371,7 @@
             "年上"
           ],
           "primary_tag": "架空",
-          "popularity": "341.11万",
+          "popularity": "341.14万",
           "word_count": "21.55万",
           "status": "连载中",
           "rank_change": -15,
@@ -5456,7 +5456,7 @@
             "天作之合"
           ],
           "primary_tag": "都市",
-          "popularity": "186.05万",
+          "popularity": "186.11万",
           "word_count": "14.96万",
           "status": "连载中",
           "rank_change": 5,
@@ -5559,7 +5559,7 @@
             "小狗小血年下主攻文"
           ],
           "primary_tag": "都市",
-          "popularity": "290.69万",
+          "popularity": "291.14万",
           "word_count": "26.62万",
           "status": "连载中",
           "rank_change": -9,
@@ -5590,7 +5590,7 @@
             "慢节奏"
           ],
           "primary_tag": "青春",
-          "popularity": "105.60万",
+          "popularity": "105.62万",
           "word_count": "23.11万",
           "status": "连载中",
           "rank_change": null,
@@ -5627,7 +5627,7 @@
             "狗血"
           ],
           "primary_tag": "综合",
-          "popularity": "596.24万",
+          "popularity": "596.22万",
           "word_count": "24.65万",
           "status": "完结",
           "rank_change": -14,
@@ -5683,7 +5683,7 @@
             "受追攻"
           ],
           "primary_tag": "都市",
-          "popularity": "329.61万",
+          "popularity": "329.64万",
           "word_count": "23.06万",
           "status": "连载中",
           "rank_change": null,
@@ -5706,7 +5706,7 @@
             "正剧"
           ],
           "primary_tag": "宫廷",
-          "popularity": "745.28万",
+          "popularity": "745.31万",
           "word_count": "62.49万",
           "status": "连载中",
           "rank_change": null,
@@ -5799,7 +5799,7 @@
             "强强"
           ],
           "primary_tag": "架空",
-          "popularity": "191.27万",
+          "popularity": "191.31万",
           "word_count": "45.74万",
           "status": "完结",
           "rank_change": null,
@@ -5896,7 +5896,7 @@
             "病弱"
           ],
           "primary_tag": "综合",
-          "popularity": "244.57万",
+          "popularity": "244.79万",
           "word_count": "27.61万",
           "status": "完结",
           "rank_change": null,
@@ -6015,7 +6015,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "113.35万",
+          "popularity": "113.40万",
           "word_count": "1.11万",
           "status": "连载中",
           "rank_change": 0,
@@ -6038,7 +6038,7 @@
             "玄幻"
           ],
           "primary_tag": "灵异",
-          "popularity": "21.07万",
+          "popularity": "21.12万",
           "word_count": "4.22万",
           "status": "连载中",
           "rank_change": 1,
@@ -6069,7 +6069,7 @@
             "怀孕带球跑"
           ],
           "primary_tag": "综合",
-          "popularity": "14.84万",
+          "popularity": "14.85万",
           "word_count": "2.25万",
           "status": "连载中",
           "rank_change": 1,
@@ -6096,7 +6096,7 @@
             "沙雕"
           ],
           "primary_tag": "武侠",
-          "popularity": "10.14万",
+          "popularity": "10.17万",
           "word_count": "23.14万",
           "status": "连载中",
           "rank_change": 2,
@@ -6220,7 +6220,7 @@
             "浪漫主义"
           ],
           "primary_tag": "综合",
-          "popularity": "8.21万",
+          "popularity": "8.24万",
           "word_count": "4.03万",
           "status": "连载中",
           "rank_change": 0,
@@ -6458,7 +6458,7 @@
             "喜剧"
           ],
           "primary_tag": "都市",
-          "popularity": "3.94万",
+          "popularity": "3.96万",
           "word_count": "3.64万",
           "status": "连载中",
           "rank_change": -3,
@@ -6516,7 +6516,7 @@
             "重生救赎小甜文"
           ],
           "primary_tag": "架空",
-          "popularity": "1.77万",
+          "popularity": "1.79万",
           "word_count": "3.96万",
           "status": "连载中",
           "rank_change": 11,
@@ -7893,7 +7893,7 @@
             "轻松"
           ],
           "primary_tag": "综合",
-          "popularity": "5,012.24万",
+          "popularity": "5,013.69万",
           "word_count": "17.03万",
           "status": "完结",
           "rank_change": 0,
@@ -7918,7 +7918,7 @@
             "成长"
           ],
           "primary_tag": "青春",
-          "popularity": "7,087.82万",
+          "popularity": "7,088.47万",
           "word_count": "18.19万",
           "status": "完结",
           "rank_change": 0,
@@ -7953,7 +7953,7 @@
             "狗血"
           ],
           "primary_tag": "都市",
-          "popularity": "6,681.03万",
+          "popularity": "6,681.36万",
           "word_count": "39.94万",
           "status": "完结",
           "rank_change": 0,
@@ -7980,7 +7980,7 @@
             "爽文"
           ],
           "primary_tag": "综合",
-          "popularity": "3,901.00万",
+          "popularity": "3,901.24万",
           "word_count": "35.89万",
           "status": "完结",
           "rank_change": 0,
@@ -8009,7 +8009,7 @@
             "HE"
           ],
           "primary_tag": "综合",
-          "popularity": "10,041.76万",
+          "popularity": "10,042.72万",
           "word_count": "23.73万",
           "status": "完结",
           "rank_change": 0,
@@ -8046,7 +8046,7 @@
             "替身"
           ],
           "primary_tag": "都市",
-          "popularity": "3,742.47万",
+          "popularity": "3,742.70万",
           "word_count": "36.02万",
           "status": "完结",
           "rank_change": 0,
@@ -8073,7 +8073,7 @@
             "HE"
           ],
           "primary_tag": "综合",
-          "popularity": "5,285.02万",
+          "popularity": "5,285.28万",
           "word_count": "20.40万",
           "status": "完结",
           "rank_change": 10,
@@ -8096,7 +8096,7 @@
             "酸涩"
           ],
           "primary_tag": "都市",
-          "popularity": "2,135.13万",
+          "popularity": "2,135.16万",
           "word_count": "27.76万",
           "status": "完结",
           "rank_change": 1,
@@ -8129,7 +8129,7 @@
             "青梅竹马"
           ],
           "primary_tag": "青春",
-          "popularity": "3,129.40万",
+          "popularity": "3,129.44万",
           "word_count": "23.56万",
           "status": "完结",
           "rank_change": 4,
@@ -8160,7 +8160,7 @@
             "HE"
           ],
           "primary_tag": "架空",
-          "popularity": "1,440.12万",
+          "popularity": "1,440.16万",
           "word_count": "25.91万",
           "status": "完结",
           "rank_change": -2,
@@ -8185,7 +8185,7 @@
             "市井生活"
           ],
           "primary_tag": "综合",
-          "popularity": "2,804.30万",
+          "popularity": "2,804.33万",
           "word_count": "15.89万",
           "status": "完结",
           "rank_change": -1,
@@ -8214,7 +8214,7 @@
             "甜宠"
           ],
           "primary_tag": "都市",
-          "popularity": "4,399.83万",
+          "popularity": "4,399.87万",
           "word_count": "24.85万",
           "status": "完结",
           "rank_change": 2,
@@ -8245,7 +8245,7 @@
             "职业"
           ],
           "primary_tag": "都市",
-          "popularity": "1,955.10万",
+          "popularity": "1,955.21万",
           "word_count": "30.50万",
           "status": "完结",
           "rank_change": -6,
@@ -8270,7 +8270,7 @@
             "HE"
           ],
           "primary_tag": "架空",
-          "popularity": "5,365.64万",
+          "popularity": "5,365.84万",
           "word_count": "17.02万",
           "status": "完结",
           "rank_change": 2,
@@ -8365,7 +8365,7 @@
             "受追攻"
           ],
           "primary_tag": "都市",
-          "popularity": "2,217.41万",
+          "popularity": "2,217.40万",
           "word_count": "28.11万",
           "status": "完结",
           "rank_change": -2,
@@ -8394,7 +8394,7 @@
             "HE"
           ],
           "primary_tag": "青春",
-          "popularity": "1,354.42万",
+          "popularity": "1,354.53万",
           "word_count": "24.62万",
           "status": "完结",
           "rank_change": 4,
@@ -8427,7 +8427,7 @@
             "剧情"
           ],
           "primary_tag": "推理",
-          "popularity": "669.20万",
+          "popularity": "669.23万",
           "word_count": "43.31万",
           "status": "完结",
           "rank_change": "new",
@@ -8458,7 +8458,7 @@
             "HE"
           ],
           "primary_tag": "架空",
-          "popularity": "4,463.37万",
+          "popularity": "4,463.59万",
           "word_count": "25.78万",
           "status": "完结",
           "rank_change": 9,
@@ -8479,7 +8479,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "1,615.42万",
+          "popularity": "1,615.43万",
           "word_count": "12.83万",
           "status": "完结",
           "rank_change": -2,
@@ -8506,7 +8506,7 @@
             "虐恋"
           ],
           "primary_tag": "都市",
-          "popularity": "904.70万",
+          "popularity": "904.91万",
           "word_count": "29.41万",
           "status": "完结",
           "rank_change": "new",
@@ -8568,7 +8568,7 @@
             "轻松"
           ],
           "primary_tag": "都市",
-          "popularity": "969.14万",
+          "popularity": "969.15万",
           "word_count": "33.45万",
           "status": "完结",
           "rank_change": 16,
@@ -8601,7 +8601,7 @@
             "漂亮万人迷受"
           ],
           "primary_tag": "都市",
-          "popularity": "3,493.74万",
+          "popularity": "3,493.89万",
           "word_count": "24.40万",
           "status": "完结",
           "rank_change": 18,
@@ -8638,7 +8638,7 @@
             "狗血"
           ],
           "primary_tag": "架空",
-          "popularity": "1,538.63万",
+          "popularity": "1,538.64万",
           "word_count": "40.16万",
           "status": "完结",
           "rank_change": 7,
@@ -8669,7 +8669,7 @@
             "美强惨"
           ],
           "primary_tag": "都市",
-          "popularity": "1,017.60万",
+          "popularity": "1,017.70万",
           "word_count": "31.05万",
           "status": "完结",
           "rank_change": -9,
@@ -8727,7 +8727,7 @@
             "纯情受"
           ],
           "primary_tag": "玄幻",
-          "popularity": "1,037.11万",
+          "popularity": "1,037.09万",
           "word_count": "24.28万",
           "status": "完结",
           "rank_change": 10,
@@ -8748,7 +8748,7 @@
             "死性不改"
           ],
           "primary_tag": "都市",
-          "popularity": "658.64万",
+          "popularity": "658.70万",
           "word_count": "19.74万",
           "status": "完结",
           "rank_change": -2,
@@ -8841,7 +8841,7 @@
             "竹马竹马"
           ],
           "primary_tag": "架空",
-          "popularity": "872.70万",
+          "popularity": "872.71万",
           "word_count": "22.20万",
           "status": "完结",
           "rank_change": -13,
@@ -8866,7 +8866,7 @@
             "强制"
           ],
           "primary_tag": "架空",
-          "popularity": "609.11万",
+          "popularity": "609.12万",
           "word_count": "27.34万",
           "status": "完结",
           "rank_change": 12,
@@ -8939,7 +8939,7 @@
             "离婚"
           ],
           "primary_tag": "都市",
-          "popularity": "1,940.69万",
+          "popularity": "1,940.81万",
           "word_count": "25.32万",
           "status": "完结",
           "rank_change": -13,
@@ -8976,7 +8976,7 @@
             "失忆"
           ],
           "primary_tag": "都市",
-          "popularity": "397.35万",
+          "popularity": "397.36万",
           "word_count": "20.58万",
           "status": "完结",
           "rank_change": -4,
@@ -9005,7 +9005,7 @@
             "强取豪夺"
           ],
           "primary_tag": "都市",
-          "popularity": "358.56万",
+          "popularity": "358.58万",
           "word_count": "29.35万",
           "status": "完结",
           "rank_change": 9,
@@ -9059,7 +9059,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "1,671.79万",
+          "popularity": "1,671.84万",
           "word_count": "22.77万",
           "status": "完结",
           "rank_change": -18,
@@ -9082,7 +9082,7 @@
             "HE"
           ],
           "primary_tag": "都市",
-          "popularity": "157.39万",
+          "popularity": "157.41万",
           "word_count": "12.44万",
           "status": "完结",
           "rank_change": 24,
@@ -9107,7 +9107,7 @@
             "追妻"
           ],
           "primary_tag": "综合",
-          "popularity": "906.07万",
+          "popularity": "906.09万",
           "word_count": "21.70万",
           "status": "完结",
           "rank_change": 1,
@@ -9198,7 +9198,7 @@
             "HE"
           ],
           "primary_tag": "奇幻",
-          "popularity": "496.35万",
+          "popularity": "496.33万",
           "word_count": "28.07万",
           "status": "完结",
           "rank_change": 10,
@@ -9289,7 +9289,7 @@
             "攻受身心皆只有彼此"
           ],
           "primary_tag": "都市",
-          "popularity": "725.12万",
+          "popularity": "725.33万",
           "word_count": "34.08万",
           "status": "完结",
           "rank_change": 13,
@@ -9386,7 +9386,7 @@
             "身心只属彼此"
           ],
           "primary_tag": "都市",
-          "popularity": "1,473.25万",
+          "popularity": "1,473.30万",
           "word_count": "25.62万",
           "status": "完结",
           "rank_change": 13,
@@ -9524,7 +9524,7 @@
             "自我攻略"
           ],
           "primary_tag": "都市",
-          "popularity": "955.30万",
+          "popularity": "955.36万",
           "word_count": "25.43万",
           "status": "完结",
           "rank_change": -26,
@@ -9559,7 +9559,7 @@
             "阴差阳错"
           ],
           "primary_tag": "都市",
-          "popularity": "2,792.55万",
+          "popularity": "2,792.54万",
           "word_count": "22.74万",
           "status": "完结",
           "rank_change": -25,
@@ -9716,7 +9716,7 @@
             "攻受都没死"
           ],
           "primary_tag": "架空",
-          "popularity": "749.50万",
+          "popularity": "749.51万",
           "word_count": "49.63万",
           "status": "完结",
           "rank_change": 6,
@@ -9962,7 +9962,7 @@
             "年上"
           ],
           "primary_tag": "架空",
-          "popularity": "1,749.69万",
+          "popularity": "1,749.67万",
           "word_count": "82.22万",
           "status": "完结",
           "rank_change": -16,
@@ -10103,7 +10103,7 @@
             "互相救赎"
           ],
           "primary_tag": "都市",
-          "popularity": "153.24万",
+          "popularity": "153.26万",
           "word_count": "23.79万",
           "status": "完结",
           "rank_change": null,
@@ -10501,7 +10501,7 @@
             "救赎"
           ],
           "primary_tag": "综合",
-          "popularity": "65.83万",
+          "popularity": "65.84万",
           "word_count": "25.18万",
           "status": "完结",
           "rank_change": 2,
