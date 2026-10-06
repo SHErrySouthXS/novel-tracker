@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-10-06 08:23:35",
+  "update_time": "2026-10-06 10:01:36",
   "update_date": "2026-10-06",
   "total_count": 200,
   "source": "晋江文学城·积分月榜",
@@ -8,15 +8,15 @@
   "platform_name": "晋江文学城",
   "tag_stats": {
     "言情": 88,
-    "纯爱": 85,
-    "百合": 20,
+    "纯爱": 84,
+    "百合": 21,
     "无CP": 6,
     "多元": 1
   },
   "gender_stats": {
     "言情": 88,
-    "纯爱": 85,
-    "百合": 20,
+    "纯爱": 84,
+    "百合": 21,
     "无CP": 6,
     "多元": 1
   },
@@ -171,8 +171,8 @@
         "正剧",
         "日久生情"
       ],
-      "score": 958094592,
-      "score_display": "958.1M",
+      "score": 977452864,
+      "score_display": "977.5M",
       "abstract": "她的名字叫蓝今，可不知什么时候起，这两个字悄然在主子口中发生了变化。 她听见他唤她“蓝卿”，她以为自己听错了。 直到有一天，她把北镇抚司的秘奏送到御前，他的视线落在末尾那枚印章上，头都没抬一下—— “你还在等朕为你们主婚？别等了，君王也有戏言。让你们如了愿，那朕该怎么办？！” *传统古言，有尊卑，无人人平等。",
       "status": "连载中",
       "word_count": "3707",
@@ -307,7 +307,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/authorimagespace.php?path=MTkyMTk5MQ==&imageName=20260501203757.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5592527",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1921991",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -352,7 +352,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/23/22520/2251977/20260909034510_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8054233",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2251977",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 21
     },
     {
@@ -397,7 +397,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/4/3478/347777/20260923060110_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6367804",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=347777",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 18
     },
     {
@@ -655,7 +655,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/18/17085/1708454/20260924114615_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5874118",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1708454",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 19
     },
     {
@@ -698,7 +698,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/21/20010/2000993/20260622222120_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10789423",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2000993",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 24
     },
     {
@@ -1249,7 +1249,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/22/21402/2140165/20260731091349_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8680390",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2140165",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 11
     },
     {
@@ -1292,7 +1292,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MjEyMDgzOA==&imageName=20260226235305.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8493807",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2120838",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 15
     },
     {
@@ -1466,7 +1466,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTk3MTg4NA==&imageName=20260914232139.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9710858",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1971884",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 16
     },
     {
@@ -1511,7 +1511,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/17/16182/1618131/20260829092707_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10851247",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1618131",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -1556,7 +1556,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/authorimagespace.php?path=MjI2NzA1Mg==&imageName=20260925235517.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9829389",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2267052",
-      "rank_change": 7,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -1687,7 +1687,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/authorimagespace.php?path=MTI5NzE0MQ==&imageName=20260918210016.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6972025",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1297141",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 22
     },
     {
@@ -1720,7 +1720,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=MjIzMDczOA==&imageName=20260826213126.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9263209",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2230738",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 25
     },
     {
@@ -1763,7 +1763,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/21/20223/2022205/20260919122448_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10131148",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2022205",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -1808,7 +1808,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=NjA4NTA2OQ==&imageName=20260511020112.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10357585",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6085069",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 24
     },
     {
@@ -1849,7 +1849,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/34/33865/3386499/20260923203239_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11033547",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3386499",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 15
     },
     {
@@ -2015,7 +2015,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/authorimagespace.php?path=MTc3MjU0MQ==&imageName=20260926235446.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6524816",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1772541",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 16
     },
     {
@@ -2056,7 +2056,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/18/17217/1721611/20260903211143_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3157187",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1721611",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 17
     },
     {
@@ -2101,7 +2101,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/57/56986/5698592/20260824204520_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10991561",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5698592",
-      "rank_change": 4,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -2146,7 +2146,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/19/18321/1832051/20260415140352_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10496964",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1832051",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 20
     },
     {
@@ -2281,7 +2281,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTk3MjY5Ng==&imageName=20260902060258.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6857852",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1972696",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 28
     },
     {
@@ -2412,7 +2412,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/68/67573/6757233/20260711211202_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9720452",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6757233",
-      "rank_change": 10,
+      "rank_change": 0,
       "history_days": 18
     },
     {
@@ -2535,7 +2535,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/40/39321/3932034/20260926205103_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8325732",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3932034",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 10
     },
     {
@@ -2580,7 +2580,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/64/63214/6321307/20250910115744_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10039830",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6321307",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -2625,7 +2625,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/authorimagespace.php?path=MTY0NDI5Nw==&imageName=20251218185525.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8678127",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1644297",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -2664,7 +2664,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/authorimagespace.php?path=MzI5ODc3MQ==&imageName=20260924181527.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10597223",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3298771",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 27
     },
     {
@@ -2709,7 +2709,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/24/23198/2319738/20251202185415_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8720471",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2319738",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 17
     },
     {
@@ -2752,7 +2752,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/authorimagespace.php?path=MjAwNzYyMQ==&imageName=20260910154213.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8554102",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2007621",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -2797,7 +2797,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=MTIxOTI2OQ==&imageName=20260902235333.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10763238",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1219269",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 19
     },
     {
@@ -2922,7 +2922,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/24/23741/2374028/20260109124440_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10445989",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2374028",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 17
     },
     {
@@ -2965,7 +2965,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=MjY5Mzk3NA==&imageName=20260801154346.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4476907",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2693974",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 15
     },
     {
@@ -3006,7 +3006,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/45/44282/4428163/20240917171417_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8524195",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4428163",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -3094,7 +3094,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/46/45599/4559804/20260815143414_300_420.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8716102",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4559804",
-      "rank_change": 10,
+      "rank_change": 0,
       "history_days": 18
     },
     {
@@ -3262,7 +3262,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/68/67488/6748786/20260714205505_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9649893",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6748786",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 29
     },
     {
@@ -3305,7 +3305,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/10/9678/967701/20260910152642_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10780858",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=967701",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 21
     },
     {
@@ -3350,7 +3350,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/21/20231/2023022/20260827235737_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8648417",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2023022",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -3472,16 +3472,16 @@
         "狗血",
         "HE"
       ],
-      "score": 88728464,
-      "score_display": "88.7M",
+      "score": 90262896,
+      "score_display": "90.3M",
       "abstract": "不要对政敌的养子见色起意，不要玩弄抛弃欺骗狗狗，不要交付真心，但季怀真做了个遍。 不要指望骗子改邪归正，不要把杀父仇人当亡妻，不要对死人念念不忘，但拓跋燕迟做了个遍。 燕迟（攻）x季怀真（受）←阉宦，鸡和蛋都没有 架空，背景有参考，已全文存稿，每天早上8点更新，日更到完结。 封绘：长阳 封设：酸橙汁",
       "status": "连载中",
-      "word_count": "10.3万",
+      "word_count": "10.7万",
       "update_time": "2026-09-12 08:00:00",
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/68/67779/6777858/20260910213629_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11026040",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6777858",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -3569,7 +3569,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/authorimagespace.php?path=MzYzMjcxNg==&imageName=20250715130847.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9048053",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3632716",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 29
     },
     {
@@ -3614,7 +3614,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=8483346&coverid=204&ver=e39069b86a1134d15062b25b8df71247",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8483346",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=967614",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 26
     },
     {
@@ -3655,7 +3655,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/36/35957/3595604/20260613154200_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10816065",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3595604",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 25
     },
     {
@@ -3698,7 +3698,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9463889&coverid=202&ver=2e171b270268cf21094c862212b7bb5c",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9463889",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=445897",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 19
     },
     {
@@ -3743,7 +3743,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/16/15373/1537201/20250711212204_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8965736",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1537201",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -3786,7 +3786,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/52/51676/5167538/20260430112409_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9115561",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5167538",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 17
     },
     {
@@ -3874,7 +3874,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/18/17105/1710458/20250315180657_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9399675",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1710458",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 12
     },
     {
@@ -3962,7 +3962,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/65/64794/6479360/20260906114457_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9689217",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6479360",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 12
     },
     {
@@ -4007,7 +4007,7 @@
       "thumb_url": "https://img13.360buyimg.com/ddimg/jfs/t1/519568/1/11119/164790/6aacabd7Fc9e39156/0015303438f7d0ed.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8545890",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2705751",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 16
     },
     {
@@ -4052,7 +4052,7 @@
       "thumb_url": "https://img10.360buyimg.com/ddimg/jfs/t1/523056/14/14691/13276/6ab39543F36b435db/001521f235666f64.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9460954",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6453222",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 13
     },
     {
@@ -4095,7 +4095,7 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/320439/13/13113/142536/6868ec75F196486b2/be0c089a963aef02.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9809428",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6280472",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 24
     },
     {
@@ -4131,8 +4131,8 @@
         "钓系",
         "救赎"
       ],
-      "score": 72602256,
-      "score_display": "72.6M",
+      "score": 73789216,
+      "score_display": "73.8M",
       "abstract": "秦夔穿越回20年前，对楚颂百般宠爱，自认为刷够了死小孩的好感度，终于鼓起勇气，告诉他一个惊世骇俗的真相：“其实，我是你未来的伴侣……你现在可能还不明白伴侣是什么……” 他不用解释下去了，因为他已经被当成人贩子送进了派出所。 楚颂下课的时候来看他。 秦夔哭笑不得地看着不速之客。 楚颂从书包里拿出一个面包，面无表情地问他：“吃吗？” 他一副家属来看望犯人的样子。 楚颂在很小的时候，就遇到秦夔了。 他总是突然出现，突然消失，二十年来容颜不变，好似永生者。 “我让你少看点奇奇怪怪的书，我就在你的面前，直接听我解释。”秦夔的人生难得有如此抓狂的时刻。 他说楚颂奇奇怪怪，楚颂才觉得他莫名其妙。 “哎呀，看",
       "status": "连载中",
       "word_count": "0",
@@ -4140,7 +4140,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/11/10593/1059279/20261001162230_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10600163",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1059279",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -4183,7 +4183,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/14/13256/1325589/20260904194503_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5749330",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1325589",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 21
     },
     {
@@ -4222,7 +4222,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/45/44162/4416166/20260509041513_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9129383",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4416166",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 16
     },
     {
@@ -4265,11 +4265,56 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/54/53811/5381033/20260116011400_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9957167",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5381033",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 15
     },
     {
       "rank": 100,
+      "book_id": "10937633",
+      "book_name": "团宠幼崽突然安静",
+      "author": "陈眆之",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "剧情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "剧情",
+        "重生",
+        "成长",
+        "治愈",
+        "团宠",
+        "美强惨",
+        "万人迷"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "剧情",
+        "重生",
+        "成长",
+        "治愈",
+        "团宠",
+        "美强惨",
+        "万人迷"
+      ],
+      "score": 67089532,
+      "score_display": "67.1M",
+      "abstract": "1.【什么叫我重生成幼崽，成了全星际的白月光�0�1�0�1�0�1】 名高望重的格林家族，联盟最忠信的拥护者，不过提起这个微妙的家族，更为大众唏嘘的，是他们由来已久的兄弟阋墙。 这一代杀孽最凶的卡利安·格林，手刃亲友都曾逾百数，属实孤家寡人，无人敢犯。 对此江厌厌很有话说，他来到这个陌生超前的联盟星际时代，被迫扮演操蛋的病娇反派，拼命死遁后才完成任务。 系统话锋一转：宿主精神阈值过低，无法传送。 江厌厌一听都要疯了。 2. 系统为表歉意，在星际时代为江厌厌捏了一个新身体，只要宿主在新身体里将精神状态调养至正常区间，便可继续传送。 江厌厌只能捏着鼻子认下来。 玻璃尽碎的实验室内，他一睁开眼，视",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-09-03 18:00:00",
+      "thumb_url": "https://img14.360buyimg.com/ddimg/jfs/t1/515522/16/13668/99331/6aa5f7a4F393c4fc7/0015280378e84a4f.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10937633",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7516391",
+      "rank_change": 2,
+      "history_days": 3
+    },
+    {
+      "rank": 101,
       "book_id": "8389109",
       "book_name": "香江第一天师[八零]",
       "author": "沐沐猫",
@@ -4304,11 +4349,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=8389109&coverid=46&ver=467a8969096c6fe54dedeee3f901b7eb",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8389109",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1072495",
-      "rank_change": 2,
+      "rank_change": -1,
       "history_days": 10
     },
     {
-      "rank": 101,
+      "rank": 102,
       "book_id": "9291772",
       "book_name": "收废品时捡到漂亮婆娘，养之",
       "author": "无敌香菜大王",
@@ -4347,53 +4392,8 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/66/65396/6539600/20260827003254_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9291772",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6539600",
-      "rank_change": 4,
+      "rank_change": -1,
       "history_days": 21
-    },
-    {
-      "rank": 102,
-      "book_id": "10937633",
-      "book_name": "团宠幼崽突然安静",
-      "author": "陈眆之",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "幻想未来",
-      "theme": "剧情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "幻想未来",
-        "剧情",
-        "重生",
-        "成长",
-        "治愈",
-        "团宠",
-        "美强惨",
-        "万人迷"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "幻想未来",
-        "剧情",
-        "重生",
-        "成长",
-        "治愈",
-        "团宠",
-        "美强惨",
-        "万人迷"
-      ],
-      "score": 61575320,
-      "score_display": "61.6M",
-      "abstract": "1.【什么叫我重生成幼崽，成了全星际的白月光�0�1�0�1�0�1】 名高望重的格林家族，联盟最忠信的拥护者，不过提起这个微妙的家族，更为大众唏嘘的，是他们由来已久的兄弟阋墙。 这一代杀孽最凶的卡利安·格林，手刃亲友都曾逾百数，属实孤家寡人，无人敢犯。 对此江厌厌很有话说，他来到这个陌生超前的联盟星际时代，被迫扮演操蛋的病娇反派，拼命死遁后才完成任务。 系统话锋一转：宿主精神阈值过低，无法传送。 江厌厌一听都要疯了。 2. 系统为表歉意，在星际时代为江厌厌捏了一个新身体，只要宿主在新身体里将精神状态调养至正常区间，便可继续传送。 江厌厌只能捏着鼻子认下来。 玻璃尽碎的实验室内，他一睁开眼，视",
-      "status": "连载中",
-      "word_count": "0",
-      "update_time": "2026-09-03 18:00:00",
-      "thumb_url": "https://img14.360buyimg.com/ddimg/jfs/t1/515522/16/13668/99331/6aa5f7a4F393c4fc7/0015280378e84a4f.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10937633",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7516391",
-      "rank_change": 1,
-      "history_days": 3
     },
     {
       "rank": 103,
@@ -4437,7 +4437,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/19/18541/1854004/20260828022323_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10489455",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1854004",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 29
     },
     {
@@ -4482,7 +4482,7 @@
       "thumb_url": "https://i.imgs.ovh/2026/09/24/c500bba36aa33723cab02aeef3d0b888.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7384556",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=932040",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 17
     },
     {
@@ -4525,7 +4525,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/authorimagespace.php?path=MjUzNTE4OA==&imageName=20260825120015.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8031295",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2535188",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -4570,7 +4570,7 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/523653/18/22/113608/6a9c217eFe7e6e303/00153034383af3b7.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9058577",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5065661",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 20
     },
     {
@@ -4615,7 +4615,7 @@
       "thumb_url": "https://img14.360buyimg.com/ddimg/jfs/t1/409475/17/9149/163457/69c747e0F17e537cc/00153034386b0fd3.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7339144",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2198240",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 20
     },
     {
@@ -4658,7 +4658,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTk3MTQ2NA==&imageName=20260913160129.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9679514",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1971464",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 18
     },
     {
@@ -4703,11 +4703,56 @@
       "thumb_url": "https://i7-static.jjwxc.net/authorimagespace.php?path=MzU5MzE5NA==&imageName=20260825224605.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8997020",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3593194",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 22
     },
     {
       "rank": 110,
+      "book_id": "9813916",
+      "book_name": "小明珠",
+      "author": "蔻尔",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "架空历史",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "架空历史",
+        "爱情",
+        "宫廷侯爵",
+        "情有独钟",
+        "天作之合",
+        "甜文",
+        "轻松",
+        "先婚后爱"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "架空历史",
+        "爱情",
+        "宫廷侯爵",
+        "情有独钟",
+        "天作之合",
+        "甜文",
+        "轻松",
+        "先婚后爱"
+      ],
+      "score": 57921464,
+      "score_display": "57.9M",
+      "abstract": "大缙朝丰神俊朗的太子殿下及冠了，举京遴选太子妃，底下的人殷切地搜罗来京中未婚女子画像呈给他。 太子刻薄又挑剔，眼光奇高，很多都不满意—— 唇角有颗痣，不喜。 身板太清瘦，不喜。 眼神太温柔，不喜。 …… 直到看到一名少女的画像，粗制滥造的脸颊轮廓，墨笔画错了糊成一团的五官，洇染难辨的身材体型，风格清奇不说，还特意加粗写了个“笨”和“甚笨”，简直被批评得一无是处。 在一众精致美观的画像里，属她突出得一骑绝尘。 太子没见过这般人，惊的喝水咳了好几下，激起一身反骨，大手一挥指了少女，道： “就她吧，娶来放在东宫里坐镇辟邪，甚好。” - 江稚玉是家里不受宠的女儿，人也笨，从小就挨欺负。但生得好看，好不",
+      "status": "连载中",
+      "word_count": "3862",
+      "update_time": "2026-08-29 18:00:00",
+      "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/53/52161/5216078/20250609002135_300_420.jpeg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9813916",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5216078",
+      "rank_change": 4,
+      "history_days": 19
+    },
+    {
+      "rank": 111,
       "book_id": "9729670",
       "book_name": "被觊觎的炮灰美人[快穿]",
       "author": "亘星",
@@ -4748,11 +4793,11 @@
       "thumb_url": "https://img11.360buyimg.com/ddimg/jfs/t1/327118/10/20875/59273/68c91695Ffb88c044/9aa84800c7b7c6bb.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9729670",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3325581",
-      "rank_change": 4,
+      "rank_change": -1,
       "history_days": 14
     },
     {
-      "rank": 111,
+      "rank": 112,
       "book_id": "4593195",
       "book_name": "一剑捅穿道侣后他变天道了",
       "author": "龙九九",
@@ -4793,11 +4838,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/27/26993/2699203/20260926193722_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4593195",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2699203",
-      "rank_change": 0,
+      "rank_change": -1,
       "history_days": 18
     },
     {
-      "rank": 112,
+      "rank": 113,
       "book_id": "10532210",
       "book_name": "徐娘子在皇家佛寺摆摊的日常",
       "author": "言徵",
@@ -4829,8 +4874,8 @@
         "正剧",
         "日常"
       ],
-      "score": 56239956,
-      "score_display": "56.2M",
+      "score": 56827152,
+      "score_display": "56.8M",
       "abstract": "徐樱穿越了，穿成了永宁侯府的庶出三娘子。 还没来得及享受一天躺平的日子，就被告知原身是个假千金，真千金已经进府了。 府里老夫人发了话，送去佛寺待两年，等到了年纪回来婚配嫁人。 徐樱：？？ * 徐樱以为的佛寺——远在京郊，处于高山，爬上去就累得掉半条命。 待两年不限于劈柴挑水诵经祈福，明面送走实则等死。 实际的皇家佛寺——地处城南闹市，是本朝香火最旺盛的皇家寺院，寺里香客如云僧人众多，逢初一、八、十五还有集市。 徐樱：一八十五摆摊卖香客，其余日子卖僧人！ 小剧场： 数日后，一玉面公子找来，立于徐樱的糕点摊前，徐樱并不认识，道了句，“客官，买点心得排队。” 赵元综低声道：“离了家，兄长都不认了？”",
       "status": "连载中",
       "word_count": "3598",
@@ -4838,11 +4883,11 @@
       "thumb_url": "https://files.seeusercontent.com/2026/09/11/7esV/4e556b7.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10532210",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2508280",
-      "rank_change": 1,
+      "rank_change": -1,
       "history_days": 29
     },
     {
-      "rank": 113,
+      "rank": 114,
       "book_id": "9321535",
       "book_name": "天敌抓住了她的鱼尾巴",
       "author": "孤荷",
@@ -4883,53 +4928,8 @@
       "thumb_url": "https://img10.360buyimg.com/imgzone/jfs/t1/258735/6/9337/122917/677cf65bF1d4ea0e1/48086050a1dab3e1.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9321535",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2841791",
-      "rank_change": 4,
+      "rank_change": -1,
       "history_days": 23
-    },
-    {
-      "rank": 114,
-      "book_id": "9813916",
-      "book_name": "小明珠",
-      "author": "蔻尔",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "架空历史",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "架空历史",
-        "爱情",
-        "宫廷侯爵",
-        "情有独钟",
-        "天作之合",
-        "甜文",
-        "轻松",
-        "先婚后爱"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "架空历史",
-        "爱情",
-        "宫廷侯爵",
-        "情有独钟",
-        "天作之合",
-        "甜文",
-        "轻松",
-        "先婚后爱"
-      ],
-      "score": 55903056,
-      "score_display": "55.9M",
-      "abstract": "大缙朝丰神俊朗的太子殿下及冠了，举京遴选太子妃，底下的人殷切地搜罗来京中未婚女子画像呈给他。 太子刻薄又挑剔，眼光奇高，很多都不满意—— 唇角有颗痣，不喜。 身板太清瘦，不喜。 眼神太温柔，不喜。 …… 直到看到一名少女的画像，粗制滥造的脸颊轮廓，墨笔画错了糊成一团的五官，洇染难辨的身材体型，风格清奇不说，还特意加粗写了个“笨”和“甚笨”，简直被批评得一无是处。 在一众精致美观的画像里，属她突出得一骑绝尘。 太子没见过这般人，惊的喝水咳了好几下，激起一身反骨，大手一挥指了少女，道： “就她吧，娶来放在东宫里坐镇辟邪，甚好。” - 江稚玉是家里不受宠的女儿，人也笨，从小就挨欺负。但生得好看，好不",
-      "status": "连载中",
-      "word_count": "3862",
-      "update_time": "2026-08-29 18:00:00",
-      "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/53/52161/5216078/20250609002135_300_420.jpeg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9813916",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5216078",
-      "rank_change": 1,
-      "history_days": 19
     },
     {
       "rank": 115,
@@ -4971,7 +4971,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/52/51560/5155990/20260710230750_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9943719",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5155990",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 10
     },
     {
@@ -5016,7 +5016,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9639755&coverid=212&ver=32b3ee908c068629d15e3a10600411c2",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9639755",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3539374",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 6
     },
     {
@@ -5059,7 +5059,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/19/18514/1851337/20260722210111_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5791687",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1851337",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 18
     },
     {
@@ -5104,7 +5104,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/57/56414/5641317/20260831121853_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8141974",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5641317",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 21
     },
     {
@@ -5145,7 +5145,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/31/30682/3068124/20260909123418_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10708931",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3068124",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 18
     },
     {
@@ -5186,7 +5186,7 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/27/26369/2636874/20260925134658_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6265515",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2636874",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -5227,7 +5227,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=MjE3MDU1MQ==&imageName=20260917115719.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5175245",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2170551",
-      "rank_change": 4,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -5272,7 +5272,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/44/43893/4389213/20260830181108_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9475777",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4389213",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -5356,7 +5356,7 @@
       "thumb_url": "https://pic1.imgdb.cn/i/0344Bvvr7OvPeqjd22juom.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8733657",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3710575",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 27
     },
     {
@@ -5392,14 +5392,14 @@
       ],
       "score": 50709976,
       "score_display": "50.7M",
-      "abstract": "帅攻美萌受体型差；攻永远比受更爱一点，受永远珍惜攻的真心并回应；双恋爱脑锁死； 我见犹怜聋哑病美人受X很会照顾宝宝的前男友忠犬攻 温斯语的画作在拍卖行屡创新高，当他所有个展取消，并疑似隐退封笔后，无不遗憾。 温斯语的主治医生也是，遗憾地表示对于他的脑部肿瘤无能无力。 但给了他一张名片，说这是他最后的机会——唯一能切除「不可能切除肿瘤」的医生：贺知意 - 今夜暴雪，航班停飞。 机场大厅，贺知意挂断助理电话，转头见到不远处的温斯语正被一个男人搭讪，他蹙起眉，走过去搂住温斯语，对方识趣离开。 温斯语耳朵上的助听器有些松了，贺知意弯腰，抬手替他戴好。 直到对上温斯语怔愣的目光，贺知意才意识到，这是他们",
+      "abstract": "帅攻美萌受体型差；攻永远比受更爱一点，受永远珍惜攻的真心并回应；双恋爱脑锁死； 我见犹怜聋哑绝症病美人受X很会照顾宝宝的前男友忠犬攻 温斯语的画作在拍卖行屡创新高，当他所有个展取消，并疑似隐退封笔后，无不遗憾。 温斯语的主治医生也是，遗憾地表示对于他的脑部肿瘤无能无力。 但给了他一张名片，说这是他最后的机会——唯一能切除「不可能切除肿瘤」的医生：贺知意 - 今夜暴雪，航班停飞。 机场大厅，贺知意挂断助理电话，转头见到不远处的温斯语正被一个男人搭讪，他蹙起眉，走过去搂住温斯语，对方识趣离开。 温斯语耳朵上的助听器有些松了，贺知意弯腰，抬手替他戴好。 直到对上温斯语怔愣的目光，贺知意才意识到，这是",
       "status": "连载中",
       "word_count": "4106",
       "update_time": "2026-09-15 00:05:00",
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/60/59884/5988326/20260528215424_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10310633",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5988326",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -5444,7 +5444,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/9/8837/883623/20260915211343_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6703072",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=883623",
-      "rank_change": 6,
+      "rank_change": 0,
       "history_days": 22
     },
     {
@@ -5483,7 +5483,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/9/8533/853252/20260903140237_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11009831",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=853252",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 15
     },
     {
@@ -5526,7 +5526,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/authorimagespace.php?path=MzU0MjkyMw==&imageName=20260922183844.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9884163",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3542923",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 27
     },
     {
@@ -5571,7 +5571,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=NDY1ODI4&imageName=20260922222642.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5859543",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=465828",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -5614,7 +5614,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/30/29931/2993051/20260925004749_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8495482",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2993051",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -5657,7 +5657,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/50/49194/4919311/20260726225705_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10399201",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4919311",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -5700,7 +5700,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/41/40629/4062821/20260912023223_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8582215",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4062821",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -5745,7 +5745,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/56/55938/5593703/20260805225226_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9275429",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5593703",
-      "rank_change": 8,
+      "rank_change": 0,
       "history_days": 6
     },
     {
@@ -5831,7 +5831,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=NDIxNTcyOQ==&imageName=20260907154104.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6222212",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4215729",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -5874,7 +5874,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/47/46494/4649354/20260902203140_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9143533",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4649354",
-      "rank_change": 11,
+      "rank_change": 0,
       "history_days": 12
     },
     {
@@ -5919,7 +5919,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/29/28480/2847996/20260908140721_300_420.JPG",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9815410",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2847996",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 7
     },
     {
@@ -5964,7 +5964,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/19/18503/1850207/20260719185243_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10875246",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1850207",
-      "rank_change": -2,
+      "rank_change": 0,
       "history_days": 23
     },
     {
@@ -6007,7 +6007,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/66/65422/6542187/20260523205250_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10597032",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6542187",
-      "rank_change": -2,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -6048,7 +6048,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/25/24656/2465550/20231017193133_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8435388",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2465550",
-      "rank_change": 4,
+      "rank_change": 0,
       "history_days": 7
     },
     {
@@ -6089,7 +6089,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=OTI2ODU1&imageName=20261001184451.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9815138",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=926855",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 23
     },
     {
@@ -6134,7 +6134,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/28/27018/2701708/20260922022511_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10410710",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2701708",
-      "rank_change": -2,
+      "rank_change": 0,
       "history_days": 14
     },
     {
@@ -6179,7 +6179,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/55/54764/5476317/20260228220516_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10569158",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5476317",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -6222,7 +6222,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/59/58402/5840159/20260220232155_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10406077",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5840159",
-      "rank_change": -1,
+      "rank_change": 0,
       "history_days": 19
     },
     {
@@ -6310,7 +6310,7 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/40/39566/3956567/20250619165704_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9314579",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3956567",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 11
     },
     {
@@ -6351,7 +6351,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/authorimagespace.php?path=NzUzNDgzMg==&imageName=20260314182753.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10616508",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7534832",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 10
     },
     {
@@ -6396,7 +6396,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/40/39851/3985004/20260725155938_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5871345",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3985004",
-      "rank_change": 6,
+      "rank_change": 0,
       "history_days": 7
     },
     {
@@ -6441,7 +6441,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/36/35460/3545917/20260917150848_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7523841",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3545917",
-      "rank_change": 6,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -6666,7 +6666,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/27/26458/2645771/20230706072002_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8599663",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2645771",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 16
     },
     {
@@ -6711,7 +6711,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/47/46555/4655457/20260609173115_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7272090",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4655457",
-      "rank_change": 6,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -6752,7 +6752,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11036474&coverid=216&ver=bc09dff63b504b18c85d943444363e86",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11036474",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=819114",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 12
     },
     {
@@ -6797,7 +6797,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/authorimagespace.php?path=MTc2MTcxOA==&imageName=20260820220021.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9624250",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1761718",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -6834,7 +6834,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/67/66111/6611096/20260908190913_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11029509",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6611096",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 5
     },
     {
@@ -6879,7 +6879,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9577388&coverid=212&ver=5f03caa4e123951f7a563f73f1e014cf",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9577388",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2503092",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 10
     },
     {
@@ -6967,7 +6967,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9647312&coverid=99&ver=5db3cb0d85650e159ad6e0fe2067a40b",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9647312",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3128042",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 15
     },
     {
@@ -7012,7 +7012,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/38/37458/3745766/20260701185922_300_420.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8074041",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3745766",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -7096,7 +7096,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/60/59833/5983290/20251008170652_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10236955",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5983290",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 13
     },
     {
@@ -7141,7 +7141,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10662142&coverid=220&ver=913469008a7c58fbc904e18ece71a0f3",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10662142",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6398346",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -7186,7 +7186,7 @@
       "thumb_url": "https://img10.360buyimg.com/ddimg/jfs/t1/504840/7/4895/69059/6a832a0bF9f029681/0015280380cb2600.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10635116",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6348587",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 6
     },
     {
@@ -7231,7 +7231,7 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/258238/37/21249/77991/67b5a769F43a2dee9/f5f98b8f9d0a1b17.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9485401",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6484099",
-      "rank_change": 9,
+      "rank_change": 0,
       "history_days": 6
     },
     {
@@ -7276,7 +7276,7 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/23/22882/2288126/20241017113650_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8022549",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2288126",
-      "rank_change": 7,
+      "rank_change": 0,
       "history_days": 9
     },
     {
@@ -7573,7 +7573,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/20/19758/1975776/20260919190111_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7334267",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1975776",
-      "rank_change": 10,
+      "rank_change": 0,
       "history_days": 2
     },
     {
@@ -7614,7 +7614,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/43/42249/4224835/20260507230034_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10594379",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4224835",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -7659,7 +7659,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTE2MzUxNA==&imageName=20260920152902.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7955300",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1163514",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 6
     },
     {
@@ -7704,7 +7704,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/authorimagespace.php?path=MjI3ODI4&imageName=20251222165701.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=2931190",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=227828",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 24
     },
     {
@@ -7794,7 +7794,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10489421&coverid=219&ver=ddfff9a96140d442f47bdb3d028887fe",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10489421",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7041678",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 5
     },
     {
@@ -7837,7 +7837,7 @@
       "thumb_url": "https://img14.360buyimg.com/ddimg/jfs/t1/422939/3/19360/11081/69f6b9acFd9abaebe/0015280380cef16a.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10483370",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6485560",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -7882,7 +7882,7 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/511857/9/7065/57462/6a985f72F491136d9/00152ec438541340.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10015248",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5103999",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -7925,7 +7925,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/44/43522/4352169/20260912155044_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8873416",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4352169",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 5
     },
     {
@@ -7970,7 +7970,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=NDQxMzQ5&imageName=20260529122419.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10761928",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=441349",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -8013,7 +8013,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/25/24005/2400453/20260714160809_300_420.JPG",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6898456",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2400453",
-      "rank_change": 4,
+      "rank_change": 0,
       "history_days": 23
     },
     {
@@ -8056,7 +8056,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11025726&coverid=217&ver=d9183d37663e9b581f38d1ebd54d01ff",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11025726",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1803081",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 21
     },
     {
@@ -8099,7 +8099,7 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/500253/15/2679/60509/6a76b668Fd06d7b8f/00153034381ceedb.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10938759",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6080177",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -8144,7 +8144,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/17/16135/1613439/20260926162553_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7522282",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1613439",
-      "rank_change": 4,
+      "rank_change": 0,
       "history_days": 5
     },
     {
@@ -8189,7 +8189,7 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/14/13645/1364438/20260707121849_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10726541",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1364438",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 8
     },
     {
@@ -8234,7 +8234,7 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MjQ3NzY0NA==&imageName=20260929130705.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10713222",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2477644",
-      "rank_change": 3,
+      "rank_change": 0,
       "history_days": 4
     },
     {
@@ -8279,7 +8279,7 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/46/45617/4561611/20261001180917_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6665462",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4561611",
-      "rank_change": 8,
+      "rank_change": 0,
       "history_days": 2
     },
     {
@@ -8316,7 +8316,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/29/28551/2855001/20260822145751_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10745497",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2855001",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 2
     },
     {
@@ -8359,7 +8359,7 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/36/35937/3593648/20240509160439_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8377397",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3593648",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 7
     },
     {
@@ -8404,7 +8404,7 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/56/55867/5586678/20260614151148_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10788660",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5586678",
-      "rank_change": 2,
+      "rank_change": 0,
       "history_days": 3
     },
     {
@@ -8449,7 +8449,7 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/22/21498/2149722/20260527111309_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7613501",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2149722",
-      "rank_change": 5,
+      "rank_change": 0,
       "history_days": 2
     },
     {
@@ -8494,7 +8494,7 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/63/62564/6256312/20260821223316_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9929691",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6256312",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 2
     },
     {
@@ -8539,7 +8539,7 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/434976/18/11488/92215/6a09d20cF53dd3da7/0015303438fa83a0.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10759494",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2006080",
-      "rank_change": 1,
+      "rank_change": 0,
       "history_days": 2
     },
     {
@@ -8589,6 +8589,51 @@
     },
     {
       "rank": 199,
+      "book_id": "10390036",
+      "book_name": "变成幼崽后被宿敌喂养",
+      "author": "再睡拍死",
+      "channel": "百合",
+      "nature": "原创",
+      "genre": "百合",
+      "era": "幻想未来",
+      "theme": "爱情",
+      "primary_tag": "百合",
+      "secondary_tags": [
+        "幻想未来",
+        "爱情",
+        "年下",
+        "幻想空间",
+        "系统",
+        "甜文",
+        "脑洞",
+        "暗恋"
+      ],
+      "all_tags": [
+        "原创",
+        "百合",
+        "幻想未来",
+        "爱情",
+        "年下",
+        "幻想空间",
+        "系统",
+        "甜文",
+        "脑洞",
+        "暗恋"
+      ],
+      "score": 29385868,
+      "score_display": "29.4M",
+      "abstract": "边经年很讨厌迟窕，出于职业素养和迟窕一起执行任务的末尾，系统告诉她们，只有一个升S级的名额。 两个人极其谦让礼貌的分别打断了对方好几根肋骨，还没有分出胜负，系统忽然出故障爆炸，失去意识再次醒来，边经年发现自己变成了连话都说不清楚的小孩。 视线中，迟窕把S级名额收入囊中，然后转身笑眯眯走向她，“来，宝宝不哭，妈妈在。” —— 迟窕早就留意到边经年了。 苦恼于任务结束，小朋友都没有要接近自己的第二天，系统出了故障，把本来冷脸的人变成了一个不会说话的幼崽。 她压住唇瓣的惊喜和玩味，温柔关切的走上去把她抱起来，带回了家。 养着一只骄傲冷脸，又因为口欲期，认母期的激素影响而时刻依赖妈妈的小狗，是一件很有",
+      "status": "连载中",
+      "word_count": "2099",
+      "update_time": "2026-09-17 23:21:00",
+      "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/70/69851/6985079/20260618222020_300_420.png",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10390036",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6985079",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 200,
       "book_id": "9851417",
       "book_name": "纸片老婆竟是魔王BOSS",
       "author": "sheepsea",
@@ -8629,51 +8674,6 @@
       "thumb_url": "https://img10.360buyimg.com/ddimg/jfs/t1/528224/26/6452/180916/6ab0c6c0F6b226b4f/001530343837101f.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9851417",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6438090",
-      "rank_change": "new",
-      "history_days": 1
-    },
-    {
-      "rank": 200,
-      "book_id": "9322745",
-      "book_name": "错把豪门大佬当替身那一年",
-      "author": "香菜在在",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "强强",
-        "豪门世家",
-        "系统",
-        "甜文",
-        "狗血",
-        "钓系"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "近代现代",
-        "爱情",
-        "强强",
-        "豪门世家",
-        "系统",
-        "甜文",
-        "狗血",
-        "钓系"
-      ],
-      "score": 29016628,
-      "score_display": "29.0M",
-      "abstract": "你心有白月光。 但他用命救过你，把你当过命的兄弟。 求不得。 求不得。 渴求的欲望裹挟着你，你想触碰，又想缩回手。 于是你决定。 找一个替身。 —— 周准死鱼眼，指着自己所谓的“白月光”：“……不是，谁特么会暗恋他啊，他三岁吃屎我都见过，我能暗恋这玩意？” 假·白月光：“周准，你特么找死啊——” 系统后知后觉，满眼都是绝望：不是，剧本里明明不是这么写的啊？？ “……总而言之，言而总之，你会相中主角受当替身，攻略他，玩弄他，然后抛弃他，最后再被豪门大佬主角攻沉湖而死！白月光还会为了救你，被弄断了腿。” 白月光骤闻噩耗，一把鼻涕一把泪抱紧周准的大腿：爹，俺不想断腿啊！ “放心，只要做到抛弃主角受的",
-      "status": "连载中",
-      "word_count": "0",
-      "update_time": "2026-09-21 17:05:00",
-      "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/62/61761/6176082/20260114210724_300_420.jpeg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9322745",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6176082",
       "rank_change": "new",
       "history_days": 1
     }
