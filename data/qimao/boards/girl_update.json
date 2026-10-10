@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-10-10 07:05:15",
+  "update_time": "2026-10-10 08:56:50",
   "update_date": "2026-10-10",
   "total_count": 20,
   "source": "七猫小说·女生更新日榜",
@@ -9,14 +9,14 @@
   "ranking_id": "girl_update",
   "ranking_name": "女生更新日榜",
   "tag_stats": {
-    "总裁豪门": 5,
     "都市奇幻": 1,
     "宫闱宅斗": 7,
-    "年代重生": 1,
-    "古代情缘": 2,
+    "总裁豪门": 4,
+    "年代重生": 2,
+    "古代情缘": 3,
     "玄幻仙侠": 1,
-    "权谋天下": 1,
-    "异世幻想": 2
+    "种田经商": 1,
+    "权谋天下": 1
   },
   "status_stats": {
     "连载中": 19,
@@ -28,39 +28,35 @@
       "count": 8
     },
     {
-      "word": "总裁",
+      "word": "重生",
       "count": 8
     },
     {
-      "word": "系统",
-      "count": 6
+      "word": "总裁",
+      "count": 7
     },
     {
-      "word": "重生",
-      "count": 6
+      "word": "系统",
+      "count": 5
     },
     {
       "word": "总裁豪门",
-      "count": 5
-    },
-    {
-      "word": "豪门",
-      "count": 5
-    },
-    {
-      "word": "追妻",
-      "count": 5
+      "count": 4
     },
     {
       "word": "玄学",
       "count": 4
     },
     {
-      "word": "炮灰",
+      "word": "豪门",
+      "count": 4
+    },
+    {
+      "word": "年代",
       "count": 3
     },
     {
-      "word": "追妻火葬场",
+      "word": "追妻",
       "count": 3
     },
     {
@@ -68,7 +64,7 @@
       "count": 2
     },
     {
-      "word": "兽世",
+      "word": "双强",
       "count": 2
     },
     {
@@ -80,11 +76,7 @@
       "count": 2
     },
     {
-      "word": "大佬",
-      "count": 2
-    },
-    {
-      "word": "年代",
+      "word": "炮灰",
       "count": 2
     },
     {
@@ -92,7 +84,11 @@
       "count": 2
     },
     {
-      "word": "穿越",
+      "word": "萌宝",
+      "count": 2
+    },
+    {
+      "word": "追妻火葬场",
       "count": 2
     },
     {
@@ -100,11 +96,11 @@
       "count": 1
     },
     {
-      "word": "双强",
+      "word": "团宠",
       "count": 1
     },
     {
-      "word": "团宠",
+      "word": "复仇",
       "count": 1
     },
     {
@@ -117,14 +113,6 @@
     },
     {
       "word": "年代文",
-      "count": 1
-    },
-    {
-      "word": "幼崽",
-      "count": 1
-    },
-    {
-      "word": "星际",
       "count": 1
     },
     {
@@ -142,6 +130,18 @@
     {
       "word": "甜文",
       "count": 1
+    },
+    {
+      "word": "种田",
+      "count": 1
+    },
+    {
+      "word": "穿越",
+      "count": 1
+    },
+    {
+      "word": "经商",
+      "count": 1
     }
   ],
   "categories": [
@@ -149,70 +149,93 @@
       "name": "宫闱宅斗",
       "major": "古代言情",
       "count": 7,
-      "total_heat": 13,
+      "total_heat": 9,
       "trend": {
         "new_count": 0,
-        "dropped_count": 1,
+        "dropped_count": 0,
         "new_books": [],
-        "dropped_books": [
-          {
-            "title": "二嫁通房太撩人，清冷权臣揽腰宠",
-            "book_id": 12871662,
-            "intro": "［双洁＋HE+年龄差+追妻火葬场]\n身中寒毒重度洁癖疯批权臣vs好孕解药小通房\n从高岭寒山到舔狗追妻只差一个小通房\n安远侯嫡女姜灼一出生，就与英国公谢珩得圣上赐婚，却阴错阳差流落在外，嫁做他人妇！\n丈"
-          }
-        ],
+        "dropped_books": [],
         "top_risers": [
           {
-            "title": "侯爷绝嗣？好孕丫鬟又又又是喜脉",
-            "book_id": 12583887,
+            "title": "皇叔借点功德，王妃把符画猛了",
+            "book_id": 1803283,
             "rank_change": 3
           },
           {
             "title": "玉帐春",
             "book_id": 11663199,
-            "rank_change": 2
-          },
-          {
-            "title": "媚君侧",
-            "book_id": 11615952,
-            "rank_change": 2
+            "rank_change": 1
           }
         ],
         "top_fallers": [
           {
-            "title": "听女儿心声，侯夫人挺孕肚乱杀",
-            "book_id": 12800205,
-            "rank_change": -4
+            "title": "凰宫梦",
+            "book_id": 1836527,
+            "rank_change": -3
           },
           {
             "title": "错撩反派，被疯批摄政王强娶豪夺",
             "book_id": 12593919,
-            "rank_change": -2
+            "rank_change": -1
+          },
+          {
+            "title": "媚君侧",
+            "book_id": 11615952,
+            "rank_change": -1
           }
         ],
         "heat_leaders": [
           {
             "title": "听女儿心声，侯夫人挺孕肚乱杀",
             "book_id": 12800205,
-            "heat_change": 4
+            "heat_change": -4
           },
           {
-            "title": "错撩反派，被疯批摄政王强娶豪夺",
-            "book_id": 12593919,
-            "heat_change": 2
+            "title": "皇叔借点功德，王妃把符画猛了",
+            "book_id": 1803283,
+            "heat_change": 3
           },
           {
             "title": "侯爷绝嗣？好孕丫鬟又又又是喜脉",
             "book_id": 12583887,
-            "heat_change": 2
+            "heat_change": -3
           }
         ],
-        "summary": "**题材趋势**：核心卖点高度集中在“重生复仇”、“好孕/绝嗣”与“强娶豪夺”的强冲突设定，短剧化改编趋势明显。\n**读者偏好**：读者热衷于“恶毒女配/炮灰逆袭”及“带球跑/多子多福”元素，对带有爽文色彩的“乱杀”、“打脸”情节反馈极佳。\n**变动解读**：榜单流动性较强，排名上升书籍多含“好孕”、“侯爷”等高频热词，显示出用户对强情绪价值输出的偏好。\n**值得关注**：《听女儿心声，侯夫人挺孕肚乱杀》热度贡献突出，虽排名波动但吸睛能力强，说明“心声+宅斗”融合创新仍具爆发力。",
+        "summary": "**题材趋势**：短剧改编与强爽文元素占据主导，融合玄幻、重生、替嫁等高频爽点，节奏极快。\n**读者偏好**：偏向“强强联手”及“打脸反杀”类剧情，尤其是带有团宠、好孕、玄学等强冲突设定的作品更具粘性。\n**变动解读**：《皇叔借点功德》凭借短剧IP加持热度攀升，而《凰宫梦》等头部作品热度有所回落，榜单竞争激烈，存量竞争特征明显。\n**值得关注**：兼具短剧化叙事与强人设（如“好孕”、“符画”）的作品，在吸引泛娱乐用户方面具备显著优势。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 4,
+          "rank": 2,
+          "title": "皇叔借点功德，王妃把符画猛了",
+          "book_id": 1803283,
+          "url": "https://www.qimao.com/shuku/1803283/",
+          "author": "安卿心",
+          "author_url": "https://www.qimao.com/zuozhe/%E5%AE%89%E5%8D%BF%E5%BF%83_14/",
+          "major": "古代言情",
+          "minor": "宫闱宅斗",
+          "major_id": 2,
+          "minor_id": 209,
+          "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "546.35万字",
+          "word_count": 5463500,
+          "heat": 3,
+          "platform_trend": "rise",
+          "badge": "",
+          "intro": "《奔跑吧》同款！又名《吾妃有令》，短剧《吾妃有令》原著，已上线。\n【护妻狂魔+团宠+爽文】\n白莲花妹妹抢了她的婚约，还把她送给一个纨绔当玩物。\n她转身爬上了皇叔的马车，被他一身功德闪瞎了眼。\n他要死了，恰好她能治，两人一拍即合。赐婚圣旨一下，有了晋王当靠山，她立马展开了一串虐渣行为。\n渣爹：“我们家没钱！“\n她随手就把全家财产抄了，夺回亲娘嫁妆，让他们吃土去。\n渣妹：“二皇子喜欢的是我！”\n她翻出了继母的卖身契：“怎么办，你娘是我娘的奴婢哦，你是奴生女。”\n太上皇：“这个王妃你当不得，我儿子命格扛不住你！”\n晋王：“王妃哪里舍得克死本王。”",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/512/1534117_360x480.jpg?time=1778636506",
+          "latest_chapter": " 第2681章  烧了那旗",
+          "updated_at": "2026-10-09 23:52:22",
+          "rank_change": 3,
+          "heat_change": 3,
+          "is_new": false,
+          "boards_count": 4,
+          "stale_update": false,
+          "category": "宫闱宅斗"
+        },
+        {
+          "rank": 5,
           "title": "错撩反派，被疯批摄政王强娶豪夺",
           "book_id": 12593919,
           "url": "https://www.qimao.com/shuku/12593919/",
@@ -226,47 +249,18 @@
           "status": "已完结",
           "word_count_text": "57.73万字",
           "word_count": 577300,
-          "heat": 2,
+          "heat": 1,
           "platform_trend": "drop",
           "badge": "",
           "intro": "开局睡到全书第一狠人，是种什么体验？\n姜瑞宁掐指一算：要完！\n穿进甜文，狂喜不过三秒，惊恐发现睡错了原书里最大的阴湿疯批反派！自己还是恶毒女配！\n前脚刚从反派手里逃出生天，原主后脚递来三张不可能完成的任务卡。\n跟原女主抢偏心偏到嘎子窝的亲妈！\n跟原女主抢机缘！\n原主笑嘻嘻：三个月内一个任务都完不成，一起灰飞烟灭吧！\n姜瑞宁倒吸了口凉气：真的是，谢谢您勒！\n怎么抢？\n前有狼，后有虎，爹不在，娘不爱，男主八百个心眼子，女主光环亮到闪瞎眼，她手握一副烂牌，拿什么抢？\n为了苟命，她决定远离原书剧情，远离男女主和那位疯批煞神，好歹能享受奴仆成群、挥金如土的三个月富贵生活！\n然而她在前面跑，扭曲剧情在后面疯狂追。\n疯批煞神更是把她堵在床角，埋头在她脖颈间哭唧唧：“你说要爱我一辈子的！”\n姜瑞宁瑟瑟发抖，默默无言：哄你的假话，你也信呐！",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4198/12593919_360x480.jpg?time=1782926794",
           "latest_chapter": " 第264章  皇后！（完结）",
           "updated_at": "2026-09-30 00:12:13",
-          "rank_change": -2,
-          "heat_change": 2,
+          "rank_change": -1,
+          "heat_change": -1,
           "is_new": false,
           "boards_count": 1,
           "stale_update": true,
-          "category": "宫闱宅斗"
-        },
-        {
-          "rank": 5,
-          "title": "皇叔借点功德，王妃把符画猛了",
-          "book_id": 1803283,
-          "url": "https://www.qimao.com/shuku/1803283/",
-          "author": "安卿心",
-          "author_url": "https://www.qimao.com/zuozhe/%E5%AE%89%E5%8D%BF%E5%BF%83_14/",
-          "major": "古代言情",
-          "minor": "宫闱宅斗",
-          "major_id": 2,
-          "minor_id": 209,
-          "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
-          "status": "连载中",
-          "word_count_text": "545.74万字",
-          "word_count": 5457400,
-          "heat": 0,
-          "platform_trend": "",
-          "badge": "",
-          "intro": "《奔跑吧》同款！又名《吾妃有令》，短剧《吾妃有令》原著，已上线。\n【护妻狂魔+团宠+爽文】\n白莲花妹妹抢了她的婚约，还把她送给一个纨绔当玩物。\n她转身爬上了皇叔的马车，被他一身功德闪瞎了眼。\n他要死了，恰好她能治，两人一拍即合。赐婚圣旨一下，有了晋王当靠山，她立马展开了一串虐渣行为。\n渣爹：“我们家没钱！“\n她随手就把全家财产抄了，夺回亲娘嫁妆，让他们吃土去。\n渣妹：“二皇子喜欢的是我！”\n她翻出了继母的卖身契：“怎么办，你娘是我娘的奴婢哦，你是奴生女。”\n太上皇：“这个王妃你当不得，我儿子命格扛不住你！”\n晋王：“王妃哪里舍得克死本王。”",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/512/1534117_360x480.jpg?time=1778636506",
-          "latest_chapter": " 第2678章  可疑之人",
-          "updated_at": "2026-10-08 23:31:17",
-          "rank_change": 0,
-          "heat_change": -1,
-          "is_new": false,
-          "boards_count": 4,
-          "stale_update": false,
           "category": "宫闱宅斗"
         },
         {
@@ -282,17 +276,17 @@
           "minor_id": 209,
           "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "52.89万字",
-          "word_count": 528900,
-          "heat": 3,
-          "platform_trend": "rise",
+          "word_count_text": "53.49万字",
+          "word_count": 534900,
+          "heat": 0,
+          "platform_trend": "",
           "badge": "",
           "intro": "【娇媚心机小丫鬟+禁欲侯爷+甜宠+宅斗】\n前世，沈清禾被亲妹抢亲，只能给纨绔当通房，亲妹成了小侯爷的通房。\n　　可最终，小侯爷绝嗣，反而纨绔成了权倾朝野的首辅，亲妹嫉妒之下百般陷害，沈清禾郁郁而终。\n　　重来一次，亲妹选了纨绔，却不知沈清禾受了多少白眼，忍了多少冷淡才让纨绔一朝醒悟。\n　　沈清禾冷笑着看亲妹自作孽，转身去服侍了小侯爷。\n　　小侯爷向来不近女色，沈清禾刚靠近，他就立下规矩：不许擅自靠近，不许觊觎正室之位，不许对他生出非分之想。\n　　沈清禾欣然同意:只要生下子嗣，奴婢定不纠缠。\n她努力做好他白月光的替身，图钱图权就是不图他真心。\n　　后来，她刚生下全镇国侯府翘首以盼的子嗣，小侯爷的白月光找上门。\n　　沈清禾当机立断拿着身契和数不清的银票，远赴江南，终于开启她的逍遥日子，\n　　谁知，那名震天下的小侯爷，却罕见地失了眠。",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4195/12583887_360x480.jpg?time=1789293329",
-          "latest_chapter": " 第188章  侯爷昏迷不醒",
-          "updated_at": "2026-10-08 22:52:04",
-          "rank_change": 3,
-          "heat_change": 2,
+          "latest_chapter": " 第190章  妾身只想长伴侯爷左右",
+          "updated_at": "2026-10-09 23:02:03",
+          "rank_change": 0,
+          "heat_change": -3,
           "is_new": false,
           "boards_count": 2,
           "stale_update": false,
@@ -311,24 +305,24 @@
           "minor_id": 209,
           "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "52.2万字",
-          "word_count": 522000,
-          "heat": 4,
-          "platform_trend": "drop",
+          "word_count_text": "52.82万字",
+          "word_count": 528200,
+          "heat": 0,
+          "platform_trend": "",
           "badge": "",
           "intro": "前世被设计逼嫁入了安顺候府，季月如大半辈子都在替一双继子女擦屁股，给小姑子善后。\n       死后发现自己竟重回怀孕之时。\n      胎中五月便胎死腹中，死后的安安怨气丛生，以灵体跟在亲生母亲身边半生，每每看到母亲被欺更是气得要疯，在母亲死时以十世功德换来二人重生。\n       心声女儿来助力，季月如斗恶婆，惩小姑，养废一双继子女。\n       利用她的亲姐跟安顺侯更是没落得一个好下场。\n       母女二人一路上披荆斩棘，遇神杀神遇佛杀佛，自此走上人生巅峰。\n       顺王萧策一生偏执阴暗，可独独他的目光会被母女二人所吸引，一路上护着宠着，极尽偏爱。",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4267/12800205_360x480.jpg?time=1788544688",
-          "latest_chapter": " 第252章  不认",
-          "updated_at": "2026-10-09 08:12:08",
-          "rank_change": -4,
-          "heat_change": 4,
+          "latest_chapter": " 第255章  安安受伤",
+          "updated_at": "2026-10-10 08:21:04",
+          "rank_change": 0,
+          "heat_change": -4,
           "is_new": false,
           "boards_count": 2,
           "stale_update": false,
           "category": "宫闱宅斗"
         },
         {
-          "rank": 14,
+          "rank": 13,
           "title": "玉帐春",
           "book_id": 11663199,
           "url": "https://www.qimao.com/shuku/11663199/",
@@ -340,45 +334,16 @@
           "minor_id": 209,
           "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "74.31万字",
-          "word_count": 743100,
-          "heat": 2,
+          "word_count_text": "74.73万字",
+          "word_count": 747300,
+          "heat": 1,
           "platform_trend": "rise",
           "badge": "",
           "intro": "【娇软奶娘x冷情权臣】\n郑时芙入山采药时，捡到了失忆的周培方。\n成婚三年，郑时芙为他生女育儿、劳心劳力，甚至不惜掏空家底供他读书。\n终于，周培方高中状元，带她赴京入职。\n原以为苦尽甘来，不想丈夫却在京城攀上了郡主，还让她做妾。\n人人说她微如蝼蚁、命如草芥，能与郡主姐妹相称，便是最好的归宿。\n谁知郑时芙骨头硬，人也倔。\n她心冷离家，抱着孩子入了王府做奶娘。\n王府富丽堂皇，权势滔天。\n郑时芙安安分分、不惹是生非，只想喂饱小主子，攒够银子出府买房。\n谁知需要她伺候的……不是小主子。\n是王府的掌权人、是郡主年轻的养父。\n裴执玉在人前光风霁月、高不可攀。\n人后，却将时芙抵在桌前，指尖缓慢解开她襟前的细带：\n“你医好本王的疾，本王应该……何以为报？”\n—\n周培方以为郑时芙一介乡野村妇，在京城举目无亲、身无分文。\n与他和离后定是穷困潦倒、后悔难当。\n却不想他日与郡主成婚，他深拜高堂。\n王府主座上，裴执玉轻扣时芙的手，掀眸莞尔：\n“你是该唤她一句……母亲。”",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3888/11663199_360x480.jpg?time=1778126471",
-          "latest_chapter": " 第356章  滴血认亲",
-          "updated_at": "2026-10-08 22:28:04",
-          "rank_change": 2,
-          "heat_change": 0,
-          "is_new": false,
-          "boards_count": 3,
-          "stale_update": false,
-          "category": "宫闱宅斗"
-        },
-        {
-          "rank": 15,
-          "title": "凰宫梦",
-          "book_id": 1836527,
-          "url": "https://www.qimao.com/shuku/1836527/",
-          "author": "蓝九九",
-          "author_url": "https://www.qimao.com/zuozhe/%E8%93%9D%E4%B9%9D%E4%B9%9D_14/",
-          "major": "古代言情",
-          "minor": "宫闱宅斗",
-          "major_id": 2,
-          "minor_id": 209,
-          "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
-          "status": "连载中",
-          "word_count_text": "489.45万字",
-          "word_count": 4894500,
-          "heat": 0,
-          "platform_trend": "",
-          "badge": "",
-          "intro": "又名《令章皇后》《抢我姻缘？转身嫁暴君夺后位》短剧：《但为君故》《凰宫梦》横屏中剧：《嫁金枝》\n【双重生换亲+宫斗+非双洁+后期独宠+女主人间清醒】\n沈知念和嫡姐沈南乔一起重生了。\n前世，她被父亲嫁给穷苦门生；嫡姐选秀入宫，还未侍寝便被封为贵人。世人皆道嫡姐贵不可言，她们有云泥之别。\n谁知道后来，沈知念嫁的穷书生连中三元，封侯拜相，她成了本朝最年轻的一品诰命夫人。\n而嫡姐不得帝王喜爱，在深宫蹉跎半生，最后被陷害惨死。\n沈知念再次睁眼，发现自己竟重生回了定亲前。嫡姐抢着要嫁给穷书生，让她入宫选秀。\n她很高兴。\n因为书生虽有一些才华，却心比天高，家里更是有刻薄的婆母，难缠的小姑。前世之所以走出了一条青云路，全靠她呕心沥血为他打点、奔走。\n这辈子，嫡姐想要的风光，全都不会有。\n而帝王年轻俊美，后位空悬，入宫的女子皆有机会争上一争。\n沈知念自小便明白，男人靠不住，只求荣华富贵，不求一丝真情。\n一品诰命夫人，哪比得上母仪天下？这一世，这泼天的富贵，就让她来享吧！\n然而沈知念渐渐发现，后宫居然还有穿书女，和身负系统的攻略者。\n无所谓，都刀了！\n可是谁能告诉她，为什么帝王看她的眼神，越来越不对劲了？",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/545/1634043_360x480.jpg?time=1758178885",
-          "latest_chapter": " 第2440章  她真正想要的驸马人选（23万书币加更）",
-          "updated_at": "2026-10-09 08:17:16",
-          "rank_change": 0,
+          "latest_chapter": " 第358章  结果出了",
+          "updated_at": "2026-10-09 22:27:05",
+          "rank_change": 1,
           "heat_change": -1,
           "is_new": false,
           "boards_count": 3,
@@ -386,7 +351,7 @@
           "category": "宫闱宅斗"
         },
         {
-          "rank": 16,
+          "rank": 17,
           "title": "媚君侧",
           "book_id": 11615952,
           "url": "https://www.qimao.com/shuku/11615952/",
@@ -398,19 +363,48 @@
           "minor_id": 209,
           "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "106.22万字",
-          "word_count": 1062200,
-          "heat": 2,
-          "platform_trend": "rise",
+          "word_count_text": "107.2万字",
+          "word_count": 1072000,
+          "heat": 1,
+          "platform_trend": "drop",
           "badge": "",
           "intro": "【男二上位+人间清醒+追妻火葬场+叔嫂文学+男二绝嗣x女二好孕】\n\n　　燕筝和太子夫君少年情深，从没想过夫君会背弃她。\n\n　　她死了才知，只有好孕侧妃才能生下绝嗣夫君的孩子，说要与她一生一世一双人的夫君早就移情她人。\n\n　　他纵容侧妃要她性命，伙同侧妃灭她满门，而他们踩着她与全家的尸骨，登临帝后之位。\n\n　　她恨！她要他们去死！\n\n　　一朝重生，燕筝决定，狼心狗肺的男人，她不要了！\n\n　　但他们想要的帝后之位？他们的性命，她要定了！\n\n　　至于孩子……既然太子不能生，那她就换个人！",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3872/11615952_360x480.jpg?time=1783934412",
-          "latest_chapter": " 第326章  赵珵，绝不会活着回京",
-          "updated_at": "2026-10-09 00:31:05",
-          "rank_change": 2,
-          "heat_change": 1,
+          "latest_chapter": " 第328章  跟着野男人跑了？",
+          "updated_at": "2026-10-10 02:07:05",
+          "rank_change": -1,
+          "heat_change": -1,
           "is_new": false,
           "boards_count": 1,
+          "stale_update": false,
+          "category": "宫闱宅斗"
+        },
+        {
+          "rank": 18,
+          "title": "凰宫梦",
+          "book_id": 1836527,
+          "url": "https://www.qimao.com/shuku/1836527/",
+          "author": "蓝九九",
+          "author_url": "https://www.qimao.com/zuozhe/%E8%93%9D%E4%B9%9D%E4%B9%9D_14/",
+          "major": "古代言情",
+          "minor": "宫闱宅斗",
+          "major_id": 2,
+          "minor_id": 209,
+          "minor_url": "https://www.qimao.com/shuku/a-2-209-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "490.05万字",
+          "word_count": 4900500,
+          "heat": 3,
+          "platform_trend": "drop",
+          "badge": "",
+          "intro": "又名《令章皇后》《抢我姻缘？转身嫁暴君夺后位》短剧：《但为君故》《凰宫梦》横屏中剧：《嫁金枝》\n【双重生换亲+宫斗+非双洁+后期独宠+女主人间清醒】\n沈知念和嫡姐沈南乔一起重生了。\n前世，她被父亲嫁给穷苦门生；嫡姐选秀入宫，还未侍寝便被封为贵人。世人皆道嫡姐贵不可言，她们有云泥之别。\n谁知道后来，沈知念嫁的穷书生连中三元，封侯拜相，她成了本朝最年轻的一品诰命夫人。\n而嫡姐不得帝王喜爱，在深宫蹉跎半生，最后被陷害惨死。\n沈知念再次睁眼，发现自己竟重生回了定亲前。嫡姐抢着要嫁给穷书生，让她入宫选秀。\n她很高兴。\n因为书生虽有一些才华，却心比天高，家里更是有刻薄的婆母，难缠的小姑。前世之所以走出了一条青云路，全靠她呕心沥血为他打点、奔走。\n这辈子，嫡姐想要的风光，全都不会有。\n而帝王年轻俊美，后位空悬，入宫的女子皆有机会争上一争。\n沈知念自小便明白，男人靠不住，只求荣华富贵，不求一丝真情。\n一品诰命夫人，哪比得上母仪天下？这一世，这泼天的富贵，就让她来享吧！\n然而沈知念渐渐发现，后宫居然还有穿书女，和身负系统的攻略者。\n无所谓，都刀了！\n可是谁能告诉她，为什么帝王看她的眼神，越来越不对劲了？",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/545/1634043_360x480.jpg?time=1758178885",
+          "latest_chapter": " 第2443章  我们安东侯府不结了（384万打赏值加更）",
+          "updated_at": "2026-10-10 08:21:16",
+          "rank_change": -3,
+          "heat_change": 3,
+          "is_new": false,
+          "boards_count": 3,
           "stale_update": false,
           "category": "宫闱宅斗"
         }
@@ -419,44 +413,55 @@
     {
       "name": "总裁豪门",
       "major": "现代言情",
-      "count": 5,
-      "total_heat": 3,
+      "count": 4,
+      "total_heat": 4,
       "trend": {
-        "new_count": 1,
-        "dropped_count": 0,
-        "new_books": [
+        "new_count": 0,
+        "dropped_count": 1,
+        "new_books": [],
+        "dropped_books": [
           {
             "title": "疯犬玫瑰",
-            "book_id": 1939902
+            "book_id": 1939902,
+            "intro": "梵音落魄那日，去了个破落小镇\n她肤白貌美大长腿，十指不沾阳春水，很快成了这个地方的焦点\n所有男人都对她趋之若鹜，独独一人对她退避三舍\n梵音看那人一眼，随他去，懒得理\n后来，男人醉酒敲开她的房门，掐着她"
           }
         ],
-        "dropped_books": [],
-        "top_risers": [
+        "top_risers": [],
+        "top_fallers": [
           {
-            "title": "她玩火",
-            "book_id": 12264417,
-            "rank_change": 1
-          }
-        ],
-        "top_fallers": [],
-        "heat_leaders": [
-          {
-            "title": "她玩火",
-            "book_id": 12264417,
-            "heat_change": -3
+            "title": "离婚后她惊艳了世界",
+            "book_id": 222767,
+            "rank_change": -2
           },
           {
-            "title": "大佬十代单传，我为他一胎生四宝",
-            "book_id": 1726987,
-            "heat_change": -1
+            "title": "她玩火",
+            "book_id": 12264417,
+            "rank_change": -1
+          },
+          {
+            "title": "霍二爷，新婚请克制！",
+            "book_id": 10373634,
+            "rank_change": -1
           }
         ],
-        "summary": "**题材趋势**：题材趋向老牌经典与情感拉扯并存，“离婚后开挂”、“带球跑/萌宝追妻”依然是稳定流量的基本盘。\n**读者偏好**：读者更青睐带有强烈冲突感的人设，如“疯犬”、“舔狗追妻”等极端的性格反差与情感追逐。\n**变动解读**：榜单整体热度偏低且变动趋稳，新上榜的《疯犬玫瑰》注入新鲜血液，显示出市场对“强拉扯”类情感文的持续需求。\n**值得关注**：虽然传统霸总文占比高，但《疯犬玫瑰》等带有明显“强制爱”或“极致情感”标签的新作正在分流老书热度。",
+        "heat_leaders": [
+          {
+            "title": "离婚后她惊艳了世界",
+            "book_id": 222767,
+            "heat_change": 2
+          },
+          {
+            "title": "霍二爷，新婚请克制！",
+            "book_id": 10373634,
+            "heat_change": 1
+          }
+        ],
+        "summary": "**题材趋势**：经典“追妻火葬场”与“带球跑”叙事依然是核心，强调男女主身份反差与情感的极致拉扯。\n**读者偏好**：读者热衷于破镜重圆后的反转爽感，对“高冷霸总化身黏人精”这类情绪价值极高的互动模式买单。\n**变动解读**：本期整体热度下滑，头部作品如《离婚后她惊艳了世界》排名下移，显示出该题材在缺乏新颖变体的情况下，读者注意力有所分散。\n**值得关注**：如何在老套路中植入“职业技能”（如鉴宝、修宝）以提升女主独立人设，是维持热度的关键。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 1,
+          "rank": 3,
           "title": "离婚后她惊艳了世界",
           "book_id": 222767,
           "url": "https://www.qimao.com/shuku/222767/",
@@ -468,24 +473,24 @@
           "minor_id": 8,
           "minor_url": "https://www.qimao.com/shuku/a-1-8-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "936.86万字",
-          "word_count": 9368600,
-          "heat": 0,
-          "platform_trend": "",
-          "badge": "蝉联榜首",
+          "word_count_text": "937.49万字",
+          "word_count": 9374900,
+          "heat": 2,
+          "platform_trend": "drop",
+          "badge": "",
           "intro": "隐婚三年，他突然提出离婚，苏婳忍痛一笑，拿钱走人，从此踏上开挂之路，修宝，鉴宝，轻松玩转古玩界。\n离婚后的某霸总，看着电视里艳惊四座的前妻，悔不当初。\n他化身妻奴，满世界追着她跑，“老婆，心给你，命给你，回来吧！”\n苏婳红唇微启：“抱歉，忙得很，没空！”\n后来，她终于遇到年少时的救命恩人，大婚当日，噩耗传来。\n她抛下新郎，抱着前夫支离破碎的身体，痛不欲生。\n直到他手拿钻戒，单膝跪在她面前，“老婆，我们复婚吧！”",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/82/245473_1648091517_360x480.jpg",
-          "latest_chapter": " 第4064章  秦珩664(欲绝)",
-          "updated_at": "2026-10-08 09:11:27",
-          "rank_change": 0,
-          "heat_change": 0,
+          "latest_chapter": " 第4067章  秦珩667(秦霄)",
+          "updated_at": "2026-10-09 09:07:27",
+          "rank_change": -2,
+          "heat_change": 2,
           "is_new": false,
           "boards_count": 4,
           "stale_update": false,
           "category": "总裁豪门"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "title": "她玩火",
           "book_id": 12264417,
           "url": "https://www.qimao.com/shuku/12264417/",
@@ -497,17 +502,17 @@
           "minor_id": 8,
           "minor_url": "https://www.qimao.com/shuku/a-1-8-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "71.02万字",
-          "word_count": 710200,
+          "word_count_text": "71.63万字",
+          "word_count": 716300,
           "heat": 1,
-          "platform_trend": "rise",
+          "platform_trend": "drop",
           "badge": "",
           "intro": "「生理性喜欢+见色起意」\n所有人都知道，童喻是霍放的秘密情人，她在锁骨处纹了他的名字，很显眼。\n只有霍放知道，这个女人是在利用他。\n这天，童喻被人抵在休息室的门板上，对方掐着她的腰，欲行不轨。\n“你当真敢动我？”童喻看着眼前担大的男人。\n“为什么不敢？”\n“我是霍二少的女人，你不怕他弄死你？”\n男人笑了，“所以，我动我自己的女人，不行？”\n。\n开始，他说：“童喻，我们说好，只是玩玩，不走心的。你别爱上我。”\n后来，童喻身边有了亲密对象。\n他又说：“童喻，回来爱我，好不好？”\n。\n霍放原本只是想跟童喻玩一阵子。\n后来，他想和她玩一辈子。",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4089/12264417_360x480.jpg?time=1782701378",
-          "latest_chapter": " 第347章  帮我离婚",
-          "updated_at": "2026-10-08 08:01:09",
-          "rank_change": 1,
-          "heat_change": -3,
+          "latest_chapter": " 第350章  盯上童喻了",
+          "updated_at": "2026-10-09 08:01:10",
+          "rank_change": -1,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
           "stale_update": false,
@@ -526,24 +531,24 @@
           "minor_id": 8,
           "minor_url": "https://www.qimao.com/shuku/a-1-8-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "555.9万字",
-          "word_count": 5559000,
+          "word_count_text": "556.32万字",
+          "word_count": 5563200,
           "heat": 0,
           "platform_trend": "",
           "badge": "",
           "intro": "六年前，唐暖宁意外失身，薄宴沉说她不守妇道，一纸离婚协议书将她扫地出门，净身出户。\n六年后，她带着孩子归来，看到她身边缩小版的自己，某人才知道当年那个野男人就是他本尊。\n他追悔莫及，又惊又喜，从此高冷总裁化身黏人精，夜夜都想爬她的床。\n再后来，听说她要嫁人，他冲进酒店砸了婚礼现场，咬牙切齿，“你老公还没死呢！”\n众人目瞪口呆，“！！！！！！”\n大儿子无语摇头，“这个男人，我不想认识。”\n二儿子嫌弃捂眼睛，“丢死个人了，没眼看，根本没眼看。”\n三儿子一脸担忧，“完了，爹地今晚要挨打了。”\n四儿子蹙眉黑脸翻白眼，白眼翻到天上去了，无力吐槽。\n只有小女儿穿着公主裙跑过去，揪着薄宴沉的衣角，歪着小脑袋奶萌奶萌的说，\n“爹地，妈咪不可以当伴娘嘛？”\n薄宴沉：“……”\n喜提年度最佳大型社死现场！",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/440/1319050_360x480.jpg?time=1706144634",
-          "latest_chapter": " 第2297章  你手里有那么多钱？",
-          "updated_at": "2026-10-08 23:47:17",
+          "latest_chapter": " 第2299章  武德，有时也不必有！",
+          "updated_at": "2026-10-09 23:01:17",
           "rank_change": 0,
-          "heat_change": -1,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
           "stale_update": false,
           "category": "总裁豪门"
         },
         {
-          "rank": 13,
+          "rank": 14,
           "title": "霍二爷，新婚请克制！",
           "book_id": 10373634,
           "url": "https://www.qimao.com/shuku/10373634/",
@@ -555,156 +560,46 @@
           "minor_id": 8,
           "minor_url": "https://www.qimao.com/shuku/a-1-8-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "105.12万字",
-          "word_count": 1051200,
-          "heat": 0,
-          "platform_trend": "",
+          "word_count_text": "105.74万字",
+          "word_count": 1057400,
+          "heat": 1,
+          "platform_trend": "drop",
           "badge": "",
           "intro": "原书名《都说霍二爷不行？其实会哄不会停》\n恢复听力那天，阮念念得知自己被绿，甩了渣男贱女几巴掌后，转头就答应替逃婚的姐姐嫁给那位传闻中阴戾狠辣的霍二爷。\n人人都说，霍凛重病缠身、性情暴戾，嫁过去就是守活寡。\n可新婚夜，男人掐着她的细腰按在落地窗前，“听说你觉得我不行？”\n之后的三天阮念念颤着腿软成春水才知传言误人……\n后来的宴会上，渣男红着眼纠缠求复合。\n霍凛慢条斯理地将几片药片扔进嘴里，齿间碾磨得嘎巴作响，“阿耀，找把刀来，老子现在犯病了，杀人不犯法！”\n——众人皆惧他疯魔，唯她知晓这滔天戾气下，是只为她沸腾的灼热爱意。\n【狠戾偏执占有欲爆棚男主×外柔内刚反撩达人女主，双强互撩，顶级暧昧拉扯】",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3458/10373634_360x480.jpg?time=1778484086",
-          "latest_chapter": " 第433章  是傅连枝下的药！",
-          "updated_at": "2026-10-08 23:31:05",
-          "rank_change": 0,
-          "heat_change": 0,
+          "latest_chapter": " 第435章  双胞胎！",
+          "updated_at": "2026-10-09 23:31:07",
+          "rank_change": -1,
+          "heat_change": 1,
           "is_new": false,
           "boards_count": 3,
           "stale_update": false,
           "category": "总裁豪门"
-        },
-        {
-          "rank": 19,
-          "title": "疯犬玫瑰",
-          "book_id": 1939902,
-          "url": "https://www.qimao.com/shuku/1939902/",
-          "author": "二喜",
-          "author_url": "https://www.qimao.com/zuozhe/%E4%BA%8C%E5%96%9C_14/",
-          "major": "现代言情",
-          "minor": "总裁豪门",
-          "major_id": 1,
-          "minor_id": 8,
-          "minor_url": "https://www.qimao.com/shuku/a-1-8-a-a-a-a-click-1/",
-          "status": "连载中",
-          "word_count_text": "62.08万字",
-          "word_count": 620800,
-          "heat": 2,
-          "platform_trend": "rise",
-          "badge": "",
-          "intro": "梵音落魄那日，去了个破落小镇\n她肤白貌美大长腿，十指不沾阳春水，很快成了这个地方的焦点\n所有男人都对她趋之若鹜，独独一人对她退避三舍\n梵音看那人一眼，随他去，懒得理\n后来，男人醉酒敲开她的房门，掐着她细腰把她抵在墙壁上，态度强势，咬牙切齿又夹杂着痛苦说:梵音，梵音，都说你的名字是菩萨之音的意思，可你看看你，哪里有半点菩萨心肠，你分明是个毒妇……\n梵音：纪淮洲，那你呢？觊觎一个毒妇，你贱不贱……\n我们彼此取暖，彼此救赎，炙热又滚烫\n女主科研员＆男主护林员",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/636/1905281_360x480.jpg?time=1736792489",
-          "latest_chapter": " 第314章  遵从本心",
-          "updated_at": "2026-10-09 00:17:05",
-          "rank_change": 0,
-          "heat_change": 0,
-          "is_new": true,
-          "boards_count": 1,
-          "stale_update": false,
-          "category": "总裁豪门"
-        }
-      ]
-    },
-    {
-      "name": "异世幻想",
-      "major": "幻想言情",
-      "count": 2,
-      "total_heat": 13,
-      "trend": {
-        "new_count": 2,
-        "dropped_count": 0,
-        "new_books": [
-          {
-            "title": "兽世万人迷：大佬们为占她一胎抢疯了",
-            "book_id": 12828771
-          },
-          {
-            "title": "穿成星际恶毒公主，我截胡了未来大佬",
-            "book_id": 13303752
-          }
-        ],
-        "dropped_books": [],
-        "top_risers": [],
-        "top_fallers": [],
-        "heat_leaders": [],
-        "summary": "**题材趋势**：兽世与星际背景下的“万人迷”、“多雄竞”模式成为新晋热点，剧情驱动与爽感叠加特征明显。\n**读者偏好**：读者偏好“炮灰穿书”、“截胡大佬”及“生崽/后宫”等高浓度爽感元素，对强雄竞修罗场有极高容忍度与期待值。\n**变动解读**：由于两本新书直接占据榜单且贡献了极高热度，表明该题材在特定用户群中具备极强的吸睛与留存能力。\n**值得关注**：《兽世万人迷》以10点热度领跑，证明“兽世+追妻火葬场+生崽”的组合依然是异世幻想类目的流量收割机。",
-        "ai_source": "ai"
-      },
-      "books": [
-        {
-          "rank": 18,
-          "title": "兽世万人迷：大佬们为占她一胎抢疯了",
-          "book_id": 12828771,
-          "url": "https://www.qimao.com/shuku/12828771/",
-          "author": "心非木石岂无感",
-          "author_url": "https://www.qimao.com/zuozhe/%E5%BF%83%E9%9D%9E%E6%9C%A8%E7%9F%B3%E5%B2%82%E6%97%A0%E6%84%9F_14/",
-          "major": "幻想言情",
-          "minor": "异世幻想",
-          "major_id": 4,
-          "minor_id": 285,
-          "minor_url": "https://www.qimao.com/shuku/a-4-285-a-a-a-a-click-1/",
-          "status": "连载中",
-          "word_count_text": "36.96万字",
-          "word_count": 369600,
-          "heat": 10,
-          "platform_trend": "rise",
-          "badge": "",
-          "intro": "【追妻火葬场+开后宫+生崽+男主全洁+雄竞修罗场】\n大巴坠崖，农学博士尤念意外穿越兽世。\n刚睁眼，就被黑虎前夫扣下不忠污名，逐出部落！\n前夫扬言唯有她亲手杀掉幼崽才能苟活！\n可她尤念骨子里从无卑躬屈膝！\n没做过的事情，她绝对不认！\n尤念果断带崽出走，开垦土地、搭建城邦，绑定好孕系统一路猛收后宫。\n病娇白蛇兽夫:念念给我生一窝蛇崽！\n傲娇恋爱脑羽族兽夫:就算是为念念背井离乡，我也要和你在一起！\n高冷兽王狻猊：乖，奶能留给我喝吗？崽崽们不需要。\n温柔自卑的赤狐兽夫:我一定会好好伺候雌主，雌主喜欢我的尾巴吗？\n疯批极端占有欲的人鱼：念念，你为什么不能和我一直留在深海里呢？\n等冷脸前夫黑虎终于发现真相，后悔追妻。\n却发现尤念身边早站满了各路大佬。\n众兽夫:你也配上桌吃饭？",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4277/12828771_360x480.jpg?time=1786340535",
-          "latest_chapter": " 第137章  想和她一起离开",
-          "updated_at": "2026-10-08 09:02:06",
-          "rank_change": 0,
-          "heat_change": 0,
-          "is_new": true,
-          "boards_count": 2,
-          "stale_update": false,
-          "category": "异世幻想"
-        },
-        {
-          "rank": 20,
-          "title": "穿成星际恶毒公主，我截胡了未来大佬",
-          "book_id": 13303752,
-          "url": "https://www.qimao.com/shuku/13303752/",
-          "author": "九序",
-          "author_url": "https://www.qimao.com/zuozhe/%E4%B9%9D%E5%BA%8F_14/",
-          "major": "幻想言情",
-          "minor": "异世幻想",
-          "major_id": 4,
-          "minor_id": 285,
-          "minor_url": "https://www.qimao.com/shuku/a-4-285-a-a-a-a-click-1/",
-          "status": "连载中",
-          "word_count_text": "27.45万字",
-          "word_count": 274500,
-          "heat": 3,
-          "platform_trend": "rise",
-          "badge": "",
-          "intro": "姜明月穿成星际兽世里的炮灰公主，精神力低下、名声恶劣，最后还会惨死荒星。\n幸好，她提前两年知道了剧情。\n既然女主的男人不能抢，那她就专捡那些还没崛起的未来大佬！\n奴隶场黑狼、落魄药剂师、废星机械师……\n多年后，姜明月看着身后一个比一个恐怖的男人，陷入沉默。\n她只是想投资未来，怎么全都赖着不走了？",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4435/13303752_360x480.jpg?time=1787907294",
-          "latest_chapter": " 第86章  接风晚宴",
-          "updated_at": "2026-10-08 19:47:02",
-          "rank_change": 0,
-          "heat_change": 0,
-          "is_new": true,
-          "boards_count": 1,
-          "stale_update": false,
-          "category": "异世幻想"
         }
       ]
     },
     {
       "name": "古代情缘",
       "major": "古代言情",
-      "count": 2,
-      "total_heat": 1,
+      "count": 3,
+      "total_heat": 4,
       "trend": {
-        "new_count": 0,
-        "dropped_count": 1,
-        "new_books": [],
-        "dropped_books": [
+        "new_count": 1,
+        "dropped_count": 0,
+        "new_books": [
           {
             "title": "五岁小神女：我靠兽语救了废柴将军爹爹",
-            "book_id": 13288209,
-            "intro": "【五岁软萌宝×落难战神，父女向，养崽崽，复仇】\n谁能想到，西山破庙的小奶团子安安，竟能和鸟兽唠嗑！\n才五岁大，圆乎乎一小只，饥荒时喊着松鼠带路猎狍，救下全村饥民，被村民当成小神女。\n旁人只疼她软萌懂事"
+            "book_id": 13288209
           }
         ],
-        "top_risers": [],
+        "dropped_books": [],
+        "top_risers": [
+          {
+            "title": "王妃一身妖骨，京城百祟俯首",
+            "book_id": 12328977,
+            "rank_change": 1
+          }
+        ],
         "top_fallers": [
           {
             "title": "新婚夜流放，飒爽太子妃种出西北大仓！",
@@ -716,49 +611,15 @@
           {
             "title": "王妃一身妖骨，京城百祟俯首",
             "book_id": 12328977,
-            "heat_change": -4
-          },
-          {
-            "title": "新婚夜流放，飒爽太子妃种出西北大仓！",
-            "book_id": 13463133,
-            "heat_change": -1
+            "heat_change": 1
           }
         ],
-        "summary": "**题材趋势**：流放基建与玄幻女强类题材占据主流，强调逆袭与打脸爽感。\n**读者偏好**：读者更青睐带有“空间、种田、玄学”等元素，且女主身份反差感强的设定。\n**变动解读**：榜单整体热度低迷，头部效应减弱，原有的养崽萌宠题材掉出榜单，显示出读者对纯爽文、快节奏叙事的偏好。\n**值得关注**：需警惕榜单活跃度下滑风险，建议通过增加剧情冲突密度来留存用户。",
+        "summary": "**题材趋势**：从传统的言情转向“萌宝+基建+异能”的复合型赛道，强调女主或萌宝的特殊能力对剧情的推动。\n**读者偏好**：读者倾向于轻松治愈与爽文结合的设定，特别是父女向互动与兽语/神力等奇幻元素，极具吸睛潜力。\n**变动解读**：新上榜的《五岁小神女》表现强劲，直接占据榜单热度高位，显示出萌宝文在古代情缘类目中的强劲增长动力。\n**值得关注**：融合“种田/基建+特殊能力”的轻喜风作品正处于上升期，有望成为该小类新的增长点。",
         "ai_source": "ai"
       },
       "books": [
         {
           "rank": 9,
-          "title": "新婚夜流放，飒爽太子妃种出西北大仓！",
-          "book_id": 13463133,
-          "url": "https://www.qimao.com/shuku/13463133/",
-          "author": "萱宝儿",
-          "author_url": "https://www.qimao.com/zuozhe/%E8%90%B1%E5%AE%9D%E5%84%BF_14/",
-          "major": "古代言情",
-          "minor": "古代情缘",
-          "major_id": 2,
-          "minor_id": 216,
-          "minor_url": "https://www.qimao.com/shuku/a-2-216-a-a-a-a-click-1/",
-          "status": "连载中",
-          "word_count_text": "19.75万字",
-          "word_count": 197500,
-          "heat": 1,
-          "platform_trend": "drop",
-          "badge": "",
-          "intro": "【替嫁流放+打脸爽文+基建+双向救赎】\n沈婉宁拿着证据去公司的路上，被车撞飞了，一睁眼，成了书中的炮灰太子妃，刚醒来就发现自己竟然被渣爹和姨娘算计，替代残废太子，新婚夜还强了短命太子！\n沈婉宁气不过，直接将渣爹一家拉来作伴，流放路上，别人饿成皮包骨，她一路上吃香喝辣，还赚得盆满钵满！\n二皇子派人暗杀，不好意思！一枪一个解决，杀进京扫荡国库，连个裤叉子都没给皇帝老儿留下！\n皇帝老儿站在西北城墙下可怜兮兮！\n“儿媳妇，我错了，你就让我入城，收我为徒吧！”",
-          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4488/13463133_360x480.jpg?time=1789452098",
-          "latest_chapter": " 第95章  要葬身火海了",
-          "updated_at": "2026-10-08 08:32:04",
-          "rank_change": -1,
-          "heat_change": -1,
-          "is_new": false,
-          "boards_count": 1,
-          "stale_update": false,
-          "category": "古代情缘"
-        },
-        {
-          "rank": 10,
           "title": "王妃一身妖骨，京城百祟俯首",
           "book_id": 12328977,
           "url": "https://www.qimao.com/shuku/12328977/",
@@ -770,18 +631,76 @@
           "minor_id": 216,
           "minor_url": "https://www.qimao.com/shuku/a-2-216-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "53.27万字",
-          "word_count": 532700,
-          "heat": 0,
-          "platform_trend": "",
+          "word_count_text": "53.71万字",
+          "word_count": 537100,
+          "heat": 1,
+          "platform_trend": "rise",
           "badge": "",
           "intro": "沈家十年前送去关外老宅的大小姐沈宁回京后，被退婚了。\n于是传言四起。\n有人说沈宁离经叛道，不守闺训，生父不喜，继母厌弃，姊妹反目，落得退婚下场，都是她自找的。\n偏偏她又最好命。\n国公府护着，谢小公爷要与她作拜把兄弟，裴丞相要做她的蓝颜知己，连几位皇子都要寻由头想方设法见她一面。\n于是京城又传言，说她是红颜祸水，早晚遭天谴。\n天谴没等到。\n倒是等来了病秧子晋王元澈，抱着个奶娃娃，红着一双矜贵的凤眼，堵在沈宁的医馆门口讨说法。\n“说好的，我替你抓邪祟，给你晋王妃的身份横行京城，你替我治心疾，养我半生。可你却……”\n他站在门槛外，薄唇微抿，欲言又止。\n京城众妖啧啧咂嘴，直呼沈宁渣女。\n沈宁大为震撼：“不是，咱俩当初白纸黑字写得清清楚楚，八十万两买你王妃的位子，一手交钱一手交货，怎么还翻脸不认了？”\n京城众妖瞠目结舌，直呼元澈奸商。\n元澈垂眸看着怀里咿呀伸手要娘的奶团子，声音很轻，却一字一顿。\n“王妃的位子八十万，和离书，千金不卖。”\n沈宁愣住了。\n那一纸婚书上表天庭，下鸣地府，纵然是她这上古大妖怪也不能强行解除。\n她只是来京城吃自助餐的，可没想过要被人吃干抹净啊！\n怎么办？在线等，挺急的。",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4110/12328977_360x480.jpg?time=1782836388",
-          "latest_chapter": " 第238章  这样的瞎子天道，没了也罢",
-          "updated_at": "2026-10-08 09:45:04",
-          "rank_change": 0,
-          "heat_change": -4,
+          "latest_chapter": " 第240章  你看到了？",
+          "updated_at": "2026-10-09 08:37:04",
+          "rank_change": 1,
+          "heat_change": 1,
           "is_new": false,
+          "boards_count": 1,
+          "stale_update": false,
+          "category": "古代情缘"
+        },
+        {
+          "rank": 10,
+          "title": "新婚夜流放，飒爽太子妃种出西北大仓！",
+          "book_id": 13463133,
+          "url": "https://www.qimao.com/shuku/13463133/",
+          "author": "萱宝儿",
+          "author_url": "https://www.qimao.com/zuozhe/%E8%90%B1%E5%AE%9D%E5%84%BF_14/",
+          "major": "古代言情",
+          "minor": "古代情缘",
+          "major_id": 2,
+          "minor_id": 216,
+          "minor_url": "https://www.qimao.com/shuku/a-2-216-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "20.39万字",
+          "word_count": 203900,
+          "heat": 1,
+          "platform_trend": "drop",
+          "badge": "",
+          "intro": "【替嫁流放+打脸爽文+基建+双向救赎】\n沈婉宁拿着证据去公司的路上，被车撞飞了，一睁眼，成了书中的炮灰太子妃，刚醒来就发现自己竟然被渣爹和姨娘算计，替代残废太子，新婚夜还强了短命太子！\n沈婉宁气不过，直接将渣爹一家拉来作伴，流放路上，别人饿成皮包骨，她一路上吃香喝辣，还赚得盆满钵满！\n二皇子派人暗杀，不好意思！一枪一个解决，杀进京扫荡国库，连个裤叉子都没给皇帝老儿留下！\n皇帝老儿站在西北城墙下可怜兮兮！\n“儿媳妇，我错了，你就让我入城，收我为徒吧！”",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4488/13463133_360x480.jpg?time=1789452098",
+          "latest_chapter": " 第98章  自己做不掉的人，那就借刀",
+          "updated_at": "2026-10-09 08:32:03",
+          "rank_change": -1,
+          "heat_change": 0,
+          "is_new": false,
+          "boards_count": 1,
+          "stale_update": false,
+          "category": "古代情缘"
+        },
+        {
+          "rank": 19,
+          "title": "五岁小神女：我靠兽语救了废柴将军爹爹",
+          "book_id": 13288209,
+          "url": "https://www.qimao.com/shuku/13288209/",
+          "author": "晚晚新风",
+          "author_url": "https://www.qimao.com/zuozhe/%E6%99%9A%E6%99%9A%E6%96%B0%E9%A3%8E_14/",
+          "major": "古代言情",
+          "minor": "古代情缘",
+          "major_id": 2,
+          "minor_id": 216,
+          "minor_url": "https://www.qimao.com/shuku/a-2-216-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "29.11万字",
+          "word_count": 291100,
+          "heat": 2,
+          "platform_trend": "rise",
+          "badge": "",
+          "intro": "【五岁软萌宝×落难战神，父女向，养崽崽，复仇】\n谁能想到，西山破庙的小奶团子安安，竟能和鸟兽唠嗑！\n才五岁大，圆乎乎一小只，饥荒时喊着松鼠带路猎狍，救下全村饥民，被村民当成小神女。\n旁人只疼她软萌懂事，却不知她守着一个大秘密　——　身边沉默瘸腿的爹爹，是蒙冤逃亡的镇国大将军林啸。\n朝廷追兵、山中匪寇步步紧逼，安安半点不怕。\n她使唤飞鸟放哨、野兽警戒，一点点采药储粮，用自己独有的本事护着伤痕累累的爹爹。\n待到时机成熟，小神女牵着爹爹离开西山，奔赴京城，要把害人的奸相彻底扳倒！",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4430/13288209_360x480.jpg?time=1787819785",
+          "latest_chapter": " 第94章  檐下鼠影",
+          "updated_at": "2026-10-09 18:42:03",
+          "rank_change": 0,
+          "heat_change": 0,
+          "is_new": true,
           "boards_count": 1,
           "stale_update": false,
           "category": "古代情缘"
@@ -791,36 +710,29 @@
     {
       "name": "年代重生",
       "major": "现代言情",
-      "count": 1,
-      "total_heat": 2,
+      "count": 2,
+      "total_heat": 7,
       "trend": {
-        "new_count": 0,
-        "dropped_count": 1,
-        "new_books": [],
-        "dropped_books": [
+        "new_count": 1,
+        "dropped_count": 0,
+        "new_books": [
           {
-            "title": "挺孕肚被首长捧手心，家属院羡慕疯了",
-            "book_id": 13200543,
-            "intro": "前世，秦简嫁给陆擎深刚三个月，对方就打电话回家属院要离婚。\n秦母气急，带着秦简去部队大闹，得来的却是陆擎深主动申请驻守边疆，连她已经怀孕的消息都不听，常年不回家，冷淡了她三十年。\n直到她重病，临死前才"
+            "title": "军婚超甜！闪婚后成了首长的心尖宠",
+            "book_id": 12803265
           }
         ],
-        "top_risers": [
-          {
-            "title": "神医军嫂要离婚，冷面团长急红眼",
-            "book_id": 13164777,
-            "rank_change": 2
-          }
-        ],
+        "dropped_books": [],
+        "top_risers": [],
         "top_fallers": [],
         "heat_leaders": [
           {
             "title": "神医军嫂要离婚，冷面团长急红眼",
             "book_id": 13164777,
-            "heat_change": 2
+            "heat_change": -2
           }
         ],
-        "summary": "「年代重生」《挺孕肚被首长捧手心，家属院羡慕疯了》 掉出榜单；《神医军嫂要离婚，冷面团长急红眼》上升2位领涨；《神医军嫂要离婚，冷面团长急红眼》热度+2。",
-        "ai_source": "rule"
+        "summary": "**题材趋势**：军婚题材占据绝对统治地位，核心卖点集中在“先婚后爱”与“打脸逆袭”的强冲突剧情。\n**读者偏好**：读者热衷于带有强烈身份地位差的设定，尤其是“清醒事业型”女主与“冷面军官”的互动模式。\n**变动解读**：榜单呈现存量竞争态势，头部作品更替频繁，新上榜的《军婚超甜！》凭借直接的虐渣打脸节奏迅速抢占热度高地。\n**值得关注**：需警惕榜单整体热度下滑风险，内容创作应进一步强化剧情爽感，避免同质化严重的传统军婚套路。",
+        "ai_source": "ai"
       },
       "books": [
         {
@@ -836,18 +748,47 @@
           "minor_id": 278,
           "minor_url": "https://www.qimao.com/shuku/a-1-278-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "28.89万字",
-          "word_count": 288900,
-          "heat": 2,
-          "platform_trend": "rise",
+          "word_count_text": "29.32万字",
+          "word_count": 293200,
+          "heat": 0,
+          "platform_trend": "",
           "badge": "",
           "intro": "【清醒事业型神医军嫂许知意×冷面禁欲军官沈砚川】\n【军婚+先婚后爱＋追妻火葬场＋地位差＋萌宝+爽文】\n林清芩穿书了。\n穿成年代文里的炮灰军嫂，没过一天好日子就惨被军官丈夫离婚。\n睁眼时，她已经坐上了前往部队的火车。\n为了逃避原主的悲惨命运，她决定先提离婚！\n可等她千里迢迢赶到驻地，面对高热惊厥的孩子，医生的DNA先动了。\n根本顾不上冷漠寡言的丈夫，她立刻开始抢救。\n孩子成功救回来了。\n家属院炸了锅！\n救急症、治顽疾、针灸止血、抢救产妇……\n曾经人人嫌弃的娇气军嫂，一步步成了人人求着看病的林医生。\n她进卫生院、入县医院、赴省城进修，靠一身医术闯出属于自己的天地。\n曾经惜字如金的男人慌了。\n上班抢着送，下班一定接，她爱吃的东西全记住了。\n三个月期限一到，林清芩拿出离婚申请。\n贺承岭却将她堵在门口，向来冷静克制的男人第一次红了眼。\n“林清芩，求你别不要我。”",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4389/13164777_360x480.jpg?time=1787216441",
-          "latest_chapter": " 第113章  有没有想过去县医院待一阵？",
-          "updated_at": "2026-10-08 09:57:03",
-          "rank_change": 2,
-          "heat_change": 2,
+          "latest_chapter": " 第114章  他第一次舍得把人往外推",
+          "updated_at": "2026-10-09 11:08:03",
+          "rank_change": 0,
+          "heat_change": -2,
           "is_new": false,
+          "boards_count": 1,
+          "stale_update": false,
+          "category": "年代重生"
+        },
+        {
+          "rank": 20,
+          "title": "军婚超甜！闪婚后成了首长的心尖宠",
+          "book_id": 12803265,
+          "url": "https://www.qimao.com/shuku/12803265/",
+          "author": "灵岫",
+          "author_url": "https://www.qimao.com/zuozhe/%E7%81%B5%E5%B2%AB_14/",
+          "major": "现代言情",
+          "minor": "年代重生",
+          "major_id": 1,
+          "minor_id": 278,
+          "minor_url": "https://www.qimao.com/shuku/a-1-278-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "51.65万字",
+          "word_count": 516500,
+          "heat": 7,
+          "platform_trend": "rise",
+          "badge": "",
+          "intro": "【虐渣打脸+冷面军少+日久生情+双强+无金手指+无重生+逆袭】\n一朝寻夫，苏婉清发现自己被骗了五年。\n她擦干眼泪，一拳撂倒渣夫林默，敢算计她，那是要付出代价的。\n于是，苏婉清利用林默算计自己的把柄在军区活下来，\n阴差阳错，她住进了战功赫赫却冷厉可怖的团长商颂年的宿舍。\n原本只是一次偶然，却意外治好了这位极品军官严重的厌食症。\n从此以后，苏婉清成了商颂年的小厨娘……\n可日子一长，男人的眼神却越来越不对劲，吃醋、护短、甚至连她看别人一眼都要黑脸。\n直到有一天，平日里高高在上、令人闻风丧胆的商团长，把他的小厨娘抵在灶台边：“清清，我吃饱了，现在该喂你了……”",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4268/12803265_360x480.jpg?time=1790125642",
+          "latest_chapter": " 第212章  新手奶爸不会换尿布",
+          "updated_at": "2026-10-10 00:12:12",
+          "rank_change": 0,
+          "heat_change": 0,
+          "is_new": true,
           "boards_count": 1,
           "stale_update": false,
           "category": "年代重生"
@@ -858,7 +799,7 @@
       "name": "权谋天下",
       "major": "古代言情",
       "count": 1,
-      "total_heat": 2,
+      "total_heat": 1,
       "trend": {
         "new_count": 0,
         "dropped_count": 0,
@@ -868,7 +809,7 @@
           {
             "title": "恨卿迟",
             "book_id": 1949508,
-            "rank_change": 2
+            "rank_change": 1
           }
         ],
         "top_fallers": [],
@@ -876,15 +817,15 @@
           {
             "title": "恨卿迟",
             "book_id": 1949508,
-            "heat_change": -7
+            "heat_change": -1
           }
         ],
-        "summary": "**题材趋势**：权谋题材侧重于情感纠葛与阶级悬殊的拉扯，强调“高岭之花”与“心机女主”的博弈。\n**读者偏好**：读者偏好带有强戏剧冲突、男女主身份极度不对等的虐恋或强取豪夺风格。\n**变动解读**：《恨卿迟》排名大幅上升，说明在权谋框架下，极致的情感张力比纯粹的政治博弈更能牵动读者。\n**值得关注**：需关注该作品热度波动，分析其情感矛盾点是否能持续支撑长线留存。",
+        "summary": "**题材趋势**：题材处于市场冷淡期，入榜门槛极低，作品以高岭之花与权谋博弈的虐恋向叙事为主。\n**读者偏好**：偏好“攀高枝失败”转为“情感拉扯”的戏剧化冲突，读者对具有危险气息的男主设定有一定粘性。\n**变动解读**：由于榜单缺乏竞品支撑，头部作品排名波动主要源于流量的随机性，而非内容质量的显著提升。\n**值得关注**：该品类目前缺乏强劲的流量支撑，作者应着重提升权谋的智斗深度，以差异化内容破局。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 17,
+          "rank": 16,
           "title": "恨卿迟",
           "book_id": 1949508,
           "url": "https://www.qimao.com/shuku/1949508/",
@@ -898,15 +839,15 @@
           "status": "连载中",
           "word_count_text": "56.17万字",
           "word_count": 561700,
-          "heat": 2,
+          "heat": 1,
           "platform_trend": "rise",
           "badge": "",
           "intro": "雪存为了攀高枝，可谓用尽手段，下足血本，一心想将最出色的高岭之花折入囊中。\n最后，高枝没攀着，反惹了一身骚，一夜间，她沦为权贵圈笑柄。\n只因她无意得罪了姬湛。\n-\n姬湛，公主之子，尊贵无比，形貌冶艳，出了名的乖僻顽劣，亲王都要礼待他三分。\n长安美人无数，他偏看她一人不顺眼。\n得罪他第一年，雪存被他冷嘲热讽：“以你的资质，只配做一个玩物。”\n第二年，雪存被他捏着下巴：“你这个毒妇，走着瞧，我有一万个法子玩死你。”\n第三年……不好，怎么被他抓起来关小黑屋了！\n一夕遭逢巨变，雪存心如死灰，携弟离开长安，远走江州投奔舅舅。\n却不想她还能与姬湛重逢。\n新上任的江州司马姬湛，有从龙之功，本该跻身朝堂，万人之上，却被新帝贬来江州做官。\n接风宴上，他看了雪存何止一千次，她一次也没看他。\n旁人不禁好奇：“女郎与司马可是旧识？”\n她莞尔摇头：“不认识。”\n\"啪\"的一声，姬湛手中杯盏碎成齑粉。\n姬湛从前对她百般嫌弃，从没想过，会有伏低做小，双手为她奉上正妻之位求娶的一天。\n美人对正妻之位不屑一顾，反手就是一巴掌：“山高皇帝远，江州是我的地盘，我有一万个法子弄死你，滚。”",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/674/2021609_360x480.jpg?time=1790132941",
           "latest_chapter": " 第163章  崔秩，你我缘分已尽",
           "updated_at": "2026-10-08 19:42:03",
-          "rank_change": 2,
-          "heat_change": -7,
+          "rank_change": 1,
+          "heat_change": -1,
           "is_new": false,
           "boards_count": 1,
           "stale_update": false,
@@ -932,19 +873,13 @@
           }
         ],
         "top_fallers": [],
-        "heat_leaders": [
-          {
-            "title": "家有玄妻，百邪不侵！",
-            "book_id": 11820759,
-            "heat_change": 1
-          }
-        ],
-        "summary": "**题材趋势**：玄学元素与现代甜宠结合的“甜爽”模式依然是都市奇幻类别的核心驱动力。\n**读者偏好**：读者热衷于“玄学小祖宗”与“权势总裁”的强强碰撞，偏好带有宿命感与先婚后爱设定的爽文叙事。\n**变动解读**：本期该细分赛道处于低位存量期，唯一在榜书籍排名微升，显示出读者对成熟套路文仍保有一定粘性。\n**值得关注**：需监控此类“玄学+豪门”题材在低热度环境下的长尾效应，观察是否会出现新的差异化爆款打破平淡。",
+        "heat_leaders": [],
+        "summary": "**题材趋势**：玄学元素与都市豪门联姻是该品类的核心打法，融合“甜宠”与“打脸”的复合型爽文是市场主流。\n**读者偏好**：读者倾向于“玄学小天才”设定带来的爽感，核心爽点在于女主通过玄学能力折服权势男主并扭转自身命理。\n**变动解读**：榜单深度不足，仅靠单本作品支撑，排名上升主要得益于受众对“玄学+甜宠”经典套路的持续消费。\n**值得关注**：建议深挖玄学打脸的爽点设计，通过更具冲击力的奇幻场景提升作品留存率。",
         "ai_source": "ai"
       },
       "books": [
         {
-          "rank": 2,
+          "rank": 1,
           "title": "家有玄妻，百邪不侵！",
           "book_id": 11820759,
           "url": "https://www.qimao.com/shuku/11820759/",
@@ -956,17 +891,17 @@
           "minor_id": 279,
           "minor_url": "https://www.qimao.com/shuku/a-1-279-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "107.66万字",
-          "word_count": 1076600,
+          "word_count_text": "108.24万字",
+          "word_count": 1082400,
           "heat": 1,
           "platform_trend": "rise",
           "badge": "",
           "intro": "原书名：《神算甜妻：傅总独宠玄学小祖宗！》\n【玄学甜爽+先婚后爱+上位者低头+真香打脸】\n她是天机门百年一遇的玄学小天才，天生玄瞳能断阴阳，却命劫缠身，活不过二十岁。\n他是执掌千亿帝国、权倾皇城的傅家大总裁，家世顶流却六亲缘薄，从小和妈妈失散。\n为破死劫，她一脚油门，直接碰瓷撞上他的车：“傅三爷，联姻不？”\n为寻至亲、借她一身玄学本事，相识三天，他就带她去民政局，扯证闪婚！\n直到凌央央第N次救了他的命，傅宴宸坐在床边，耳朵烧得通红：“傅太太，我命硬。贴身镇煞，效果更好。”\n谁知凌央央拿出一纸离婚协议：“契约圆满，两不相欠！傅先生，你自由了。”\n傅宴宸彻底慌了！\n高冷总裁化身粘人忠犬，开启疯批追妻路！\n“央央，契约作废，婚不离。这辈子，我都是你的男人！”",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3941/11820759_360x480.jpg?time=1786607714",
-          "latest_chapter": " 第340章  当“美人”的代价，是很昂贵的",
-          "updated_at": "2026-10-08 14:06:05",
+          "latest_chapter": " 第342章  平日里洁身自好",
+          "updated_at": "2026-10-09 14:07:05",
           "rank_change": 1,
-          "heat_change": 1,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 3,
           "stale_update": false,
@@ -986,14 +921,8 @@
         "dropped_books": [],
         "top_risers": [],
         "top_fallers": [],
-        "heat_leaders": [
-          {
-            "title": "仙君今天也想杀我",
-            "book_id": 13281888,
-            "heat_change": -1
-          }
-        ],
-        "summary": "**题材趋势**：快穿任务流与传统修仙的跨界融合，依然是女性向仙侠文的重要切入点。\n**读者偏好**：读者倾向于“反差感”极强的CP互动，即没心没肺的女主与冷峻克制的男性角色之间的情感拉扯。\n**变动解读**：榜单呈现极度冷清状态，热度归零且排名停滞，说明该题材在当前榜单环境下的用户活跃度严重不足。\n**值得关注**：在市场热度遇冷时，创作者应侧重于人物情感张力的深度挖掘，以差异化的人设魅力重新吸引读者注意。",
+        "heat_leaders": [],
+        "summary": "**题材趋势** 仙侠言情赛道目前处于存量博弈阶段，市场热度表现平淡，缺乏新晋爆款带动活跃度。\n**读者偏好** 读者仍倾向于“任务型女主+禁欲系男主”的经典攻略套路，强调反差萌与情感张力。\n**变动解读** 榜单呈现极度固化状态，无新书入局或排位变动，显示该小类在当前更新周期内缺乏流量驱动。\n**值得关注** 现有在榜书籍处于热度冰点，需关注后续是否有破局作品打破题材的同质化瓶颈。",
         "ai_source": "ai"
       },
       "books": [
@@ -1010,21 +939,74 @@
           "minor_id": 21,
           "minor_url": "https://www.qimao.com/shuku/a-4-21-a-a-a-a-click-1/",
           "status": "连载中",
-          "word_count_text": "20.82万字",
-          "word_count": 208200,
+          "word_count_text": "21.26万字",
+          "word_count": 212600,
           "heat": 0,
           "platform_trend": "",
           "badge": "",
           "intro": "【没心没肺任务型女主 × 端方克制逐渐沦陷仙君】\n黎想穿越了。\n好消息，她绑定了系统，只要把攻略对象的好感度刷到七十，就能回家。\n坏消息，她穿成了一只妖。\n更坏的消息，攻略对象裴云逸，是个见妖拔剑、恨不得把“妖邪必诛”刻在脑门的修士。\n第一次见面，他一剑划破了她的脖子。\n黎想：“系统，咱不行换个人呢？”\n系统：“不行。”\n黎想：“那我任务完不成咋办？”\n系统温柔一笑：“狠狠电你哦。”\n为了活着回家，黎想只能兢兢业业跟在裴云逸身后刷好感。\n黎想本以为，这任务最大的困难，是如何让一个恨妖入骨的人不杀她。\n后来她才发现——\n裴云逸看她的眼神，好像越来越不对劲了。\n黎想：等等，我刷的是你的好感，你怎么先疯了？",
           "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4428/13281888_360x480.jpg?time=1788240267",
-          "latest_chapter": " 第98章  朋友，又是这个词",
-          "updated_at": "2026-10-08 11:12:03",
+          "latest_chapter": " 第100章  人很好，也未必会喜欢",
+          "updated_at": "2026-10-09 11:12:02",
           "rank_change": 0,
-          "heat_change": -1,
+          "heat_change": 0,
           "is_new": false,
           "boards_count": 1,
           "stale_update": false,
           "category": "玄幻仙侠"
+        }
+      ]
+    },
+    {
+      "name": "种田经商",
+      "major": "古代言情",
+      "count": 1,
+      "total_heat": 0,
+      "trend": {
+        "new_count": 1,
+        "dropped_count": 0,
+        "new_books": [
+          {
+            "title": "大雪封山闹饥荒，福宝开挂富全村",
+            "book_id": 13264440
+          }
+        ],
+        "dropped_books": [],
+        "top_risers": [],
+        "top_fallers": [],
+        "heat_leaders": [],
+        "summary": "**题材趋势** “基建+福宝”模式依旧是种田文的核心卖点，强调极端环境下的生存逆袭与群体治愈感。\n**读者偏好** 读者偏爱“空间/神力金手指+全村致富”的爽点组合，追求轻松治愈的家长里短叙事。\n**变动解读** 随着新书《大雪封山闹饥荒，福宝开挂富全村》入榜，体现了该品类在垂直细分市场的更新韧性。\n**值得关注** 关注此类“开挂种田”作品如何通过两界穿梭或特殊金手指，在后续章节中维持读者的长期留存。",
+        "ai_source": "ai"
+      },
+      "books": [
+        {
+          "rank": 15,
+          "title": "大雪封山闹饥荒，福宝开挂富全村",
+          "book_id": 13264440,
+          "url": "https://www.qimao.com/shuku/13264440/",
+          "author": "鲜奶啾啾",
+          "author_url": "https://www.qimao.com/zuozhe/%E9%B2%9C%E5%A5%B6%E5%95%BE%E5%95%BE_14/",
+          "major": "古代言情",
+          "minor": "种田经商",
+          "major_id": 2,
+          "minor_id": 16,
+          "minor_url": "https://www.qimao.com/shuku/a-2-16-a-a-a-a-click-1/",
+          "status": "连载中",
+          "word_count_text": "24.42万字",
+          "word_count": 244200,
+          "heat": 0,
+          "platform_trend": "",
+          "badge": "",
+          "intro": "【治愈温馨+家长里短+非情绪流+美食+全村逆袭+认亲】\n大雪封山，又遭山崩断路，清露村彻底断了与外界的联系。\n小糯糯在山神庙祈福，被山神爷爷赋予“神力”，她穿梭两界卖野菜买米肉，把早就空了粮仓的村子盘活了。\n糯糯脚踩小凳子，声音奶呼呼的：“咱们吃饱了有力气，不能坐以待毙！”\n“没糯糯大家都活不成，听糯糯的。”\n“糯糯就是咱们村的小福星，她说什么就是什么。大家伙儿支棱起来，咱们耕地修路！”\n后来最宠糯糯的村长家哥哥谢寻，被送到镇上读书了，多年后再见时，他成熟稳重，将她护在身后，有求必应，糯糯不知道，谢寻哥哥早就是她的毒唯了！",
+          "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4422/13264440_360x480.jpg?time=1790217894",
+          "latest_chapter": " 第53章  多多买肉做卤味！",
+          "updated_at": "2026-10-09 16:29:03",
+          "rank_change": 0,
+          "heat_change": 0,
+          "is_new": true,
+          "boards_count": 1,
+          "stale_update": false,
+          "category": "种田经商"
         }
       ]
     }
@@ -1032,49 +1014,6 @@
   "books": [
     {
       "rank": 1,
-      "book_name": "离婚后她惊艳了世界",
-      "book_url": "https://www.qimao.com/shuku/222767/",
-      "author": "明婳",
-      "author_url": "https://www.qimao.com/zuozhe/%E6%98%8E%E5%A9%B3_14/",
-      "channel": "现代言情",
-      "major": "现代言情",
-      "major_id": 1,
-      "category": "总裁豪门",
-      "minor": "总裁豪门",
-      "minor_id": 8,
-      "primary_tag": "现代言情",
-      "tags": [
-        "现代言情",
-        "总裁豪门"
-      ],
-      "all_tags": [
-        "现代言情",
-        "总裁豪门"
-      ],
-      "abstract": "隐婚三年，他突然提出离婚，苏婳忍痛一笑，拿钱走人，从此踏上开挂之路，修宝，鉴宝，轻松玩转古玩界。\n离婚后的某霸总，看着电视里艳惊四座的前妻，悔不当初。\n他化身妻奴，满世界追着她跑，“老婆，心给你，命给你，回来吧！”\n苏婳红唇微启：“抱歉，忙得很，没空！”\n后来，她终于遇到年少时的救命恩人，大婚当日，噩耗传来。\n她抛下新郎，抱着前夫支离破碎的身体，痛不欲生。\n直到他手拿钻戒，单膝跪在她面前，“老婆，我们复婚吧！”",
-      "word_count": "936.86万字",
-      "word_count_num": 9368600,
-      "popularity": "",
-      "popularity_num": 0,
-      "heat_rank": null,
-      "heat_src": "",
-      "status": "连载中",
-      "update_time": "2026-10-08 09:11:27",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/82/245473_1648091517_360x480.jpg",
-      "badge": "蝉联榜首",
-      "latest_chapter": " 第4064章  秦珩664(欲绝)",
-      "platform_trend": "",
-      "is_new": false,
-      "heat_change": 0,
-      "boards": [
-        "更新日榜"
-      ],
-      "boards_count": 4,
-      "rank_change": null,
-      "history_days": 29
-    },
-    {
-      "rank": 2,
       "book_name": "家有玄妻，百邪不侵！",
       "book_url": "https://www.qimao.com/shuku/11820759/",
       "author": "雪落听风",
@@ -1095,17 +1034,17 @@
         "都市奇幻"
       ],
       "abstract": "原书名：《神算甜妻：傅总独宠玄学小祖宗！》\n【玄学甜爽+先婚后爱+上位者低头+真香打脸】\n她是天机门百年一遇的玄学小天才，天生玄瞳能断阴阳，却命劫缠身，活不过二十岁。\n他是执掌千亿帝国、权倾皇城的傅家大总裁，家世顶流却六亲缘薄，从小和妈妈失散。\n为破死劫，她一脚油门，直接碰瓷撞上他的车：“傅三爷，联姻不？”\n为寻至亲、借她一身玄学本事，相识三天，他就带她去民政局，扯证闪婚！\n直到凌央央第N次救了他的命，傅宴宸坐在床边，耳朵烧得通红：“傅太太，我命硬。贴身镇煞，效果更好。”\n谁知凌央央拿出一纸离婚协议：“契约圆满，两不相欠！傅先生，你自由了。”\n傅宴宸彻底慌了！\n高冷总裁化身粘人忠犬，开启疯批追妻路！\n“央央，契约作废，婚不离。这辈子，我都是你的男人！”",
-      "word_count": "107.66万字",
-      "word_count_num": 1076600,
+      "word_count": "108.24万字",
+      "word_count_num": 1082400,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 14:06:05",
+      "update_time": "2026-10-09 14:07:05",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3941/11820759_360x480.jpg?time=1786607714",
       "badge": "",
-      "latest_chapter": " 第340章  当“美人”的代价，是很昂贵的",
+      "latest_chapter": " 第342章  平日里洁身自好",
       "platform_trend": "rise",
       "is_new": false,
       "heat_change": 0,
@@ -1117,7 +1056,93 @@
       "history_days": 29
     },
     {
+      "rank": 2,
+      "book_name": "皇叔借点功德，王妃把符画猛了",
+      "book_url": "https://www.qimao.com/shuku/1803283/",
+      "author": "安卿心",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%AE%89%E5%8D%BF%E5%BF%83_14/",
+      "channel": "古代言情",
+      "major": "古代言情",
+      "major_id": 2,
+      "category": "宫闱宅斗",
+      "minor": "宫闱宅斗",
+      "minor_id": 209,
+      "primary_tag": "古代言情",
+      "tags": [
+        "古代言情",
+        "宫闱宅斗"
+      ],
+      "all_tags": [
+        "古代言情",
+        "宫闱宅斗"
+      ],
+      "abstract": "《奔跑吧》同款！又名《吾妃有令》，短剧《吾妃有令》原著，已上线。\n【护妻狂魔+团宠+爽文】\n白莲花妹妹抢了她的婚约，还把她送给一个纨绔当玩物。\n她转身爬上了皇叔的马车，被他一身功德闪瞎了眼。\n他要死了，恰好她能治，两人一拍即合。赐婚圣旨一下，有了晋王当靠山，她立马展开了一串虐渣行为。\n渣爹：“我们家没钱！“\n她随手就把全家财产抄了，夺回亲娘嫁妆，让他们吃土去。\n渣妹：“二皇子喜欢的是我！”\n她翻出了继母的卖身契：“怎么办，你娘是我娘的奴婢哦，你是奴生女。”\n太上皇：“这个王妃你当不得，我儿子命格扛不住你！”\n晋王：“王妃哪里舍得克死本王。”",
+      "word_count": "546.35万字",
+      "word_count_num": 5463500,
+      "popularity": "",
+      "popularity_num": 0,
+      "heat_rank": null,
+      "heat_src": "",
+      "status": "连载中",
+      "update_time": "2026-10-09 23:52:22",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/512/1534117_360x480.jpg?time=1778636506",
+      "badge": "",
+      "latest_chapter": " 第2681章  烧了那旗",
+      "platform_trend": "rise",
+      "is_new": false,
+      "heat_change": 0,
+      "boards": [
+        "更新日榜"
+      ],
+      "boards_count": 4,
+      "rank_change": null,
+      "history_days": 29
+    },
+    {
       "rank": 3,
+      "book_name": "离婚后她惊艳了世界",
+      "book_url": "https://www.qimao.com/shuku/222767/",
+      "author": "明婳",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%98%8E%E5%A9%B3_14/",
+      "channel": "现代言情",
+      "major": "现代言情",
+      "major_id": 1,
+      "category": "总裁豪门",
+      "minor": "总裁豪门",
+      "minor_id": 8,
+      "primary_tag": "现代言情",
+      "tags": [
+        "现代言情",
+        "总裁豪门"
+      ],
+      "all_tags": [
+        "现代言情",
+        "总裁豪门"
+      ],
+      "abstract": "隐婚三年，他突然提出离婚，苏婳忍痛一笑，拿钱走人，从此踏上开挂之路，修宝，鉴宝，轻松玩转古玩界。\n离婚后的某霸总，看着电视里艳惊四座的前妻，悔不当初。\n他化身妻奴，满世界追着她跑，“老婆，心给你，命给你，回来吧！”\n苏婳红唇微启：“抱歉，忙得很，没空！”\n后来，她终于遇到年少时的救命恩人，大婚当日，噩耗传来。\n她抛下新郎，抱着前夫支离破碎的身体，痛不欲生。\n直到他手拿钻戒，单膝跪在她面前，“老婆，我们复婚吧！”",
+      "word_count": "937.49万字",
+      "word_count_num": 9374900,
+      "popularity": "",
+      "popularity_num": 0,
+      "heat_rank": null,
+      "heat_src": "",
+      "status": "连载中",
+      "update_time": "2026-10-09 09:07:27",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/82/245473_1648091517_360x480.jpg",
+      "badge": "",
+      "latest_chapter": " 第4067章  秦珩667(秦霄)",
+      "platform_trend": "drop",
+      "is_new": false,
+      "heat_change": 0,
+      "boards": [
+        "更新日榜"
+      ],
+      "boards_count": 4,
+      "rank_change": null,
+      "history_days": 29
+    },
+    {
+      "rank": 4,
       "book_name": "她玩火",
       "book_url": "https://www.qimao.com/shuku/12264417/",
       "author": "如鱼",
@@ -1138,18 +1163,18 @@
         "总裁豪门"
       ],
       "abstract": "「生理性喜欢+见色起意」\n所有人都知道，童喻是霍放的秘密情人，她在锁骨处纹了他的名字，很显眼。\n只有霍放知道，这个女人是在利用他。\n这天，童喻被人抵在休息室的门板上，对方掐着她的腰，欲行不轨。\n“你当真敢动我？”童喻看着眼前担大的男人。\n“为什么不敢？”\n“我是霍二少的女人，你不怕他弄死你？”\n男人笑了，“所以，我动我自己的女人，不行？”\n。\n开始，他说：“童喻，我们说好，只是玩玩，不走心的。你别爱上我。”\n后来，童喻身边有了亲密对象。\n他又说：“童喻，回来爱我，好不好？”\n。\n霍放原本只是想跟童喻玩一阵子。\n后来，他想和她玩一辈子。",
-      "word_count": "71.02万字",
-      "word_count_num": 710200,
+      "word_count": "71.63万字",
+      "word_count_num": 716300,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 08:01:09",
+      "update_time": "2026-10-09 08:01:10",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4089/12264417_360x480.jpg?time=1782701378",
       "badge": "",
-      "latest_chapter": " 第347章  帮我离婚",
-      "platform_trend": "rise",
+      "latest_chapter": " 第350章  盯上童喻了",
+      "platform_trend": "drop",
       "is_new": false,
       "heat_change": 0,
       "boards": [
@@ -1160,7 +1185,7 @@
       "history_days": 29
     },
     {
-      "rank": 4,
+      "rank": 5,
       "book_name": "错撩反派，被疯批摄政王强娶豪夺",
       "book_url": "https://www.qimao.com/shuku/12593919/",
       "author": "鸿雁在云",
@@ -1203,49 +1228,6 @@
       "history_days": 29
     },
     {
-      "rank": 5,
-      "book_name": "皇叔借点功德，王妃把符画猛了",
-      "book_url": "https://www.qimao.com/shuku/1803283/",
-      "author": "安卿心",
-      "author_url": "https://www.qimao.com/zuozhe/%E5%AE%89%E5%8D%BF%E5%BF%83_14/",
-      "channel": "古代言情",
-      "major": "古代言情",
-      "major_id": 2,
-      "category": "宫闱宅斗",
-      "minor": "宫闱宅斗",
-      "minor_id": 209,
-      "primary_tag": "古代言情",
-      "tags": [
-        "古代言情",
-        "宫闱宅斗"
-      ],
-      "all_tags": [
-        "古代言情",
-        "宫闱宅斗"
-      ],
-      "abstract": "《奔跑吧》同款！又名《吾妃有令》，短剧《吾妃有令》原著，已上线。\n【护妻狂魔+团宠+爽文】\n白莲花妹妹抢了她的婚约，还把她送给一个纨绔当玩物。\n她转身爬上了皇叔的马车，被他一身功德闪瞎了眼。\n他要死了，恰好她能治，两人一拍即合。赐婚圣旨一下，有了晋王当靠山，她立马展开了一串虐渣行为。\n渣爹：“我们家没钱！“\n她随手就把全家财产抄了，夺回亲娘嫁妆，让他们吃土去。\n渣妹：“二皇子喜欢的是我！”\n她翻出了继母的卖身契：“怎么办，你娘是我娘的奴婢哦，你是奴生女。”\n太上皇：“这个王妃你当不得，我儿子命格扛不住你！”\n晋王：“王妃哪里舍得克死本王。”",
-      "word_count": "545.74万字",
-      "word_count_num": 5457400,
-      "popularity": "",
-      "popularity_num": 0,
-      "heat_rank": null,
-      "heat_src": "",
-      "status": "连载中",
-      "update_time": "2026-10-08 23:31:17",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/512/1534117_360x480.jpg?time=1778636506",
-      "badge": "",
-      "latest_chapter": " 第2678章  可疑之人",
-      "platform_trend": "",
-      "is_new": false,
-      "heat_change": 0,
-      "boards": [
-        "更新日榜"
-      ],
-      "boards_count": 4,
-      "rank_change": null,
-      "history_days": 29
-    },
-    {
       "rank": 6,
       "book_name": "大佬十代单传，我为他一胎生四宝",
       "book_url": "https://www.qimao.com/shuku/1726987/",
@@ -1267,17 +1249,17 @@
         "总裁豪门"
       ],
       "abstract": "六年前，唐暖宁意外失身，薄宴沉说她不守妇道，一纸离婚协议书将她扫地出门，净身出户。\n六年后，她带着孩子归来，看到她身边缩小版的自己，某人才知道当年那个野男人就是他本尊。\n他追悔莫及，又惊又喜，从此高冷总裁化身黏人精，夜夜都想爬她的床。\n再后来，听说她要嫁人，他冲进酒店砸了婚礼现场，咬牙切齿，“你老公还没死呢！”\n众人目瞪口呆，“！！！！！！”\n大儿子无语摇头，“这个男人，我不想认识。”\n二儿子嫌弃捂眼睛，“丢死个人了，没眼看，根本没眼看。”\n三儿子一脸担忧，“完了，爹地今晚要挨打了。”\n四儿子蹙眉黑脸翻白眼，白眼翻到天上去了，无力吐槽。\n只有小女儿穿着公主裙跑过去，揪着薄宴沉的衣角，歪着小脑袋奶萌奶萌的说，\n“爹地，妈咪不可以当伴娘嘛？”\n薄宴沉：“……”\n喜提年度最佳大型社死现场！",
-      "word_count": "555.9万字",
-      "word_count_num": 5559000,
+      "word_count": "556.32万字",
+      "word_count_num": 5563200,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 23:47:17",
+      "update_time": "2026-10-09 23:01:17",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/440/1319050_360x480.jpg?time=1706144634",
       "badge": "",
-      "latest_chapter": " 第2297章  你手里有那么多钱？",
+      "latest_chapter": " 第2299章  武德，有时也不必有！",
       "platform_trend": "",
       "is_new": false,
       "heat_change": 0,
@@ -1310,18 +1292,18 @@
         "年代重生"
       ],
       "abstract": "【清醒事业型神医军嫂许知意×冷面禁欲军官沈砚川】\n【军婚+先婚后爱＋追妻火葬场＋地位差＋萌宝+爽文】\n林清芩穿书了。\n穿成年代文里的炮灰军嫂，没过一天好日子就惨被军官丈夫离婚。\n睁眼时，她已经坐上了前往部队的火车。\n为了逃避原主的悲惨命运，她决定先提离婚！\n可等她千里迢迢赶到驻地，面对高热惊厥的孩子，医生的DNA先动了。\n根本顾不上冷漠寡言的丈夫，她立刻开始抢救。\n孩子成功救回来了。\n家属院炸了锅！\n救急症、治顽疾、针灸止血、抢救产妇……\n曾经人人嫌弃的娇气军嫂，一步步成了人人求着看病的林医生。\n她进卫生院、入县医院、赴省城进修，靠一身医术闯出属于自己的天地。\n曾经惜字如金的男人慌了。\n上班抢着送，下班一定接，她爱吃的东西全记住了。\n三个月期限一到，林清芩拿出离婚申请。\n贺承岭却将她堵在门口，向来冷静克制的男人第一次红了眼。\n“林清芩，求你别不要我。”",
-      "word_count": "28.89万字",
-      "word_count_num": 288900,
+      "word_count": "29.32万字",
+      "word_count_num": 293200,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 09:57:03",
+      "update_time": "2026-10-09 11:08:03",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4389/13164777_360x480.jpg?time=1787216441",
       "badge": "",
-      "latest_chapter": " 第113章  有没有想过去县医院待一阵？",
-      "platform_trend": "rise",
+      "latest_chapter": " 第114章  他第一次舍得把人往外推",
+      "platform_trend": "",
       "is_new": false,
       "heat_change": 0,
       "boards": [
@@ -1353,18 +1335,18 @@
         "宫闱宅斗"
       ],
       "abstract": "【娇媚心机小丫鬟+禁欲侯爷+甜宠+宅斗】\n前世，沈清禾被亲妹抢亲，只能给纨绔当通房，亲妹成了小侯爷的通房。\n　　可最终，小侯爷绝嗣，反而纨绔成了权倾朝野的首辅，亲妹嫉妒之下百般陷害，沈清禾郁郁而终。\n　　重来一次，亲妹选了纨绔，却不知沈清禾受了多少白眼，忍了多少冷淡才让纨绔一朝醒悟。\n　　沈清禾冷笑着看亲妹自作孽，转身去服侍了小侯爷。\n　　小侯爷向来不近女色，沈清禾刚靠近，他就立下规矩：不许擅自靠近，不许觊觎正室之位，不许对他生出非分之想。\n　　沈清禾欣然同意:只要生下子嗣，奴婢定不纠缠。\n她努力做好他白月光的替身，图钱图权就是不图他真心。\n　　后来，她刚生下全镇国侯府翘首以盼的子嗣，小侯爷的白月光找上门。\n　　沈清禾当机立断拿着身契和数不清的银票，远赴江南，终于开启她的逍遥日子，\n　　谁知，那名震天下的小侯爷，却罕见地失了眠。",
-      "word_count": "52.89万字",
-      "word_count_num": 528900,
+      "word_count": "53.49万字",
+      "word_count_num": 534900,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 22:52:04",
+      "update_time": "2026-10-09 23:02:03",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4195/12583887_360x480.jpg?time=1789293329",
       "badge": "",
-      "latest_chapter": " 第188章  侯爷昏迷不醒",
-      "platform_trend": "rise",
+      "latest_chapter": " 第190章  妾身只想长伴侯爷左右",
+      "platform_trend": "",
       "is_new": false,
       "heat_change": 0,
       "boards": [
@@ -1376,49 +1358,6 @@
     },
     {
       "rank": 9,
-      "book_name": "新婚夜流放，飒爽太子妃种出西北大仓！",
-      "book_url": "https://www.qimao.com/shuku/13463133/",
-      "author": "萱宝儿",
-      "author_url": "https://www.qimao.com/zuozhe/%E8%90%B1%E5%AE%9D%E5%84%BF_14/",
-      "channel": "古代言情",
-      "major": "古代言情",
-      "major_id": 2,
-      "category": "古代情缘",
-      "minor": "古代情缘",
-      "minor_id": 216,
-      "primary_tag": "古代言情",
-      "tags": [
-        "古代言情",
-        "古代情缘"
-      ],
-      "all_tags": [
-        "古代言情",
-        "古代情缘"
-      ],
-      "abstract": "【替嫁流放+打脸爽文+基建+双向救赎】\n沈婉宁拿着证据去公司的路上，被车撞飞了，一睁眼，成了书中的炮灰太子妃，刚醒来就发现自己竟然被渣爹和姨娘算计，替代残废太子，新婚夜还强了短命太子！\n沈婉宁气不过，直接将渣爹一家拉来作伴，流放路上，别人饿成皮包骨，她一路上吃香喝辣，还赚得盆满钵满！\n二皇子派人暗杀，不好意思！一枪一个解决，杀进京扫荡国库，连个裤叉子都没给皇帝老儿留下！\n皇帝老儿站在西北城墙下可怜兮兮！\n“儿媳妇，我错了，你就让我入城，收我为徒吧！”",
-      "word_count": "19.75万字",
-      "word_count_num": 197500,
-      "popularity": "",
-      "popularity_num": 0,
-      "heat_rank": null,
-      "heat_src": "",
-      "status": "连载中",
-      "update_time": "2026-10-08 08:32:04",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4488/13463133_360x480.jpg?time=1789452098",
-      "badge": "",
-      "latest_chapter": " 第95章  要葬身火海了",
-      "platform_trend": "drop",
-      "is_new": false,
-      "heat_change": 0,
-      "boards": [
-        "更新日榜"
-      ],
-      "boards_count": 1,
-      "rank_change": null,
-      "history_days": 6
-    },
-    {
-      "rank": 10,
       "book_name": "王妃一身妖骨，京城百祟俯首",
       "book_url": "https://www.qimao.com/shuku/12328977/",
       "author": "少尹",
@@ -1439,18 +1378,18 @@
         "古代情缘"
       ],
       "abstract": "沈家十年前送去关外老宅的大小姐沈宁回京后，被退婚了。\n于是传言四起。\n有人说沈宁离经叛道，不守闺训，生父不喜，继母厌弃，姊妹反目，落得退婚下场，都是她自找的。\n偏偏她又最好命。\n国公府护着，谢小公爷要与她作拜把兄弟，裴丞相要做她的蓝颜知己，连几位皇子都要寻由头想方设法见她一面。\n于是京城又传言，说她是红颜祸水，早晚遭天谴。\n天谴没等到。\n倒是等来了病秧子晋王元澈，抱着个奶娃娃，红着一双矜贵的凤眼，堵在沈宁的医馆门口讨说法。\n“说好的，我替你抓邪祟，给你晋王妃的身份横行京城，你替我治心疾，养我半生。可你却……”\n他站在门槛外，薄唇微抿，欲言又止。\n京城众妖啧啧咂嘴，直呼沈宁渣女。\n沈宁大为震撼：“不是，咱俩当初白纸黑字写得清清楚楚，八十万两买你王妃的位子，一手交钱一手交货，怎么还翻脸不认了？”\n京城众妖瞠目结舌，直呼元澈奸商。\n元澈垂眸看着怀里咿呀伸手要娘的奶团子，声音很轻，却一字一顿。\n“王妃的位子八十万，和离书，千金不卖。”\n沈宁愣住了。\n那一纸婚书上表天庭，下鸣地府，纵然是她这上古大妖怪也不能强行解除。\n她只是来京城吃自助餐的，可没想过要被人吃干抹净啊！\n怎么办？在线等，挺急的。",
-      "word_count": "53.27万字",
-      "word_count_num": 532700,
+      "word_count": "53.71万字",
+      "word_count_num": 537100,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 09:45:04",
+      "update_time": "2026-10-09 08:37:04",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4110/12328977_360x480.jpg?time=1782836388",
       "badge": "",
-      "latest_chapter": " 第238章  这样的瞎子天道，没了也罢",
-      "platform_trend": "",
+      "latest_chapter": " 第240章  你看到了？",
+      "platform_trend": "rise",
       "is_new": false,
       "heat_change": 0,
       "boards": [
@@ -1459,6 +1398,49 @@
       "boards_count": 1,
       "rank_change": null,
       "history_days": 29
+    },
+    {
+      "rank": 10,
+      "book_name": "新婚夜流放，飒爽太子妃种出西北大仓！",
+      "book_url": "https://www.qimao.com/shuku/13463133/",
+      "author": "萱宝儿",
+      "author_url": "https://www.qimao.com/zuozhe/%E8%90%B1%E5%AE%9D%E5%84%BF_14/",
+      "channel": "古代言情",
+      "major": "古代言情",
+      "major_id": 2,
+      "category": "古代情缘",
+      "minor": "古代情缘",
+      "minor_id": 216,
+      "primary_tag": "古代言情",
+      "tags": [
+        "古代言情",
+        "古代情缘"
+      ],
+      "all_tags": [
+        "古代言情",
+        "古代情缘"
+      ],
+      "abstract": "【替嫁流放+打脸爽文+基建+双向救赎】\n沈婉宁拿着证据去公司的路上，被车撞飞了，一睁眼，成了书中的炮灰太子妃，刚醒来就发现自己竟然被渣爹和姨娘算计，替代残废太子，新婚夜还强了短命太子！\n沈婉宁气不过，直接将渣爹一家拉来作伴，流放路上，别人饿成皮包骨，她一路上吃香喝辣，还赚得盆满钵满！\n二皇子派人暗杀，不好意思！一枪一个解决，杀进京扫荡国库，连个裤叉子都没给皇帝老儿留下！\n皇帝老儿站在西北城墙下可怜兮兮！\n“儿媳妇，我错了，你就让我入城，收我为徒吧！”",
+      "word_count": "20.39万字",
+      "word_count_num": 203900,
+      "popularity": "",
+      "popularity_num": 0,
+      "heat_rank": null,
+      "heat_src": "",
+      "status": "连载中",
+      "update_time": "2026-10-09 08:32:03",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4488/13463133_360x480.jpg?time=1789452098",
+      "badge": "",
+      "latest_chapter": " 第98章  自己做不掉的人，那就借刀",
+      "platform_trend": "drop",
+      "is_new": false,
+      "heat_change": 0,
+      "boards": [
+        "更新日榜"
+      ],
+      "boards_count": 1,
+      "rank_change": null,
+      "history_days": 6
     },
     {
       "rank": 11,
@@ -1482,18 +1464,18 @@
         "宫闱宅斗"
       ],
       "abstract": "前世被设计逼嫁入了安顺候府，季月如大半辈子都在替一双继子女擦屁股，给小姑子善后。\n       死后发现自己竟重回怀孕之时。\n      胎中五月便胎死腹中，死后的安安怨气丛生，以灵体跟在亲生母亲身边半生，每每看到母亲被欺更是气得要疯，在母亲死时以十世功德换来二人重生。\n       心声女儿来助力，季月如斗恶婆，惩小姑，养废一双继子女。\n       利用她的亲姐跟安顺侯更是没落得一个好下场。\n       母女二人一路上披荆斩棘，遇神杀神遇佛杀佛，自此走上人生巅峰。\n       顺王萧策一生偏执阴暗，可独独他的目光会被母女二人所吸引，一路上护着宠着，极尽偏爱。",
-      "word_count": "52.2万字",
-      "word_count_num": 522000,
+      "word_count": "52.82万字",
+      "word_count_num": 528200,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-09 08:12:08",
+      "update_time": "2026-10-10 08:21:04",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4267/12800205_360x480.jpg?time=1788544688",
       "badge": "",
-      "latest_chapter": " 第252章  不认",
-      "platform_trend": "drop",
+      "latest_chapter": " 第255章  安安受伤",
+      "platform_trend": "",
       "is_new": false,
       "heat_change": 0,
       "boards": [
@@ -1525,17 +1507,17 @@
         "玄幻仙侠"
       ],
       "abstract": "【没心没肺任务型女主 × 端方克制逐渐沦陷仙君】\n黎想穿越了。\n好消息，她绑定了系统，只要把攻略对象的好感度刷到七十，就能回家。\n坏消息，她穿成了一只妖。\n更坏的消息，攻略对象裴云逸，是个见妖拔剑、恨不得把“妖邪必诛”刻在脑门的修士。\n第一次见面，他一剑划破了她的脖子。\n黎想：“系统，咱不行换个人呢？”\n系统：“不行。”\n黎想：“那我任务完不成咋办？”\n系统温柔一笑：“狠狠电你哦。”\n为了活着回家，黎想只能兢兢业业跟在裴云逸身后刷好感。\n黎想本以为，这任务最大的困难，是如何让一个恨妖入骨的人不杀她。\n后来她才发现——\n裴云逸看她的眼神，好像越来越不对劲了。\n黎想：等等，我刷的是你的好感，你怎么先疯了？",
-      "word_count": "20.82万字",
-      "word_count_num": 208200,
+      "word_count": "21.26万字",
+      "word_count_num": 212600,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 11:12:03",
+      "update_time": "2026-10-09 11:12:02",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4428/13281888_360x480.jpg?time=1788240267",
       "badge": "",
-      "latest_chapter": " 第98章  朋友，又是这个词",
+      "latest_chapter": " 第100章  人很好，也未必会喜欢",
       "platform_trend": "",
       "is_new": false,
       "heat_change": 0,
@@ -1548,49 +1530,6 @@
     },
     {
       "rank": 13,
-      "book_name": "霍二爷，新婚请克制！",
-      "book_url": "https://www.qimao.com/shuku/10373634/",
-      "author": "墨墨卿卿",
-      "author_url": "https://www.qimao.com/zuozhe/%E5%A2%A8%E5%A2%A8%E5%8D%BF%E5%8D%BF_14/",
-      "channel": "现代言情",
-      "major": "现代言情",
-      "major_id": 1,
-      "category": "总裁豪门",
-      "minor": "总裁豪门",
-      "minor_id": 8,
-      "primary_tag": "现代言情",
-      "tags": [
-        "现代言情",
-        "总裁豪门"
-      ],
-      "all_tags": [
-        "现代言情",
-        "总裁豪门"
-      ],
-      "abstract": "原书名《都说霍二爷不行？其实会哄不会停》\n恢复听力那天，阮念念得知自己被绿，甩了渣男贱女几巴掌后，转头就答应替逃婚的姐姐嫁给那位传闻中阴戾狠辣的霍二爷。\n人人都说，霍凛重病缠身、性情暴戾，嫁过去就是守活寡。\n可新婚夜，男人掐着她的细腰按在落地窗前，“听说你觉得我不行？”\n之后的三天阮念念颤着腿软成春水才知传言误人……\n后来的宴会上，渣男红着眼纠缠求复合。\n霍凛慢条斯理地将几片药片扔进嘴里，齿间碾磨得嘎巴作响，“阿耀，找把刀来，老子现在犯病了，杀人不犯法！”\n——众人皆惧他疯魔，唯她知晓这滔天戾气下，是只为她沸腾的灼热爱意。\n【狠戾偏执占有欲爆棚男主×外柔内刚反撩达人女主，双强互撩，顶级暧昧拉扯】",
-      "word_count": "105.12万字",
-      "word_count_num": 1051200,
-      "popularity": "",
-      "popularity_num": 0,
-      "heat_rank": null,
-      "heat_src": "",
-      "status": "连载中",
-      "update_time": "2026-10-08 23:31:05",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3458/10373634_360x480.jpg?time=1778484086",
-      "badge": "",
-      "latest_chapter": " 第433章  是傅连枝下的药！",
-      "platform_trend": "",
-      "is_new": false,
-      "heat_change": 0,
-      "boards": [
-        "更新日榜"
-      ],
-      "boards_count": 3,
-      "rank_change": null,
-      "history_days": 29
-    },
-    {
-      "rank": 14,
       "book_name": "玉帐春",
       "book_url": "https://www.qimao.com/shuku/11663199/",
       "author": "秋仪",
@@ -1611,18 +1550,61 @@
         "宫闱宅斗"
       ],
       "abstract": "【娇软奶娘x冷情权臣】\n郑时芙入山采药时，捡到了失忆的周培方。\n成婚三年，郑时芙为他生女育儿、劳心劳力，甚至不惜掏空家底供他读书。\n终于，周培方高中状元，带她赴京入职。\n原以为苦尽甘来，不想丈夫却在京城攀上了郡主，还让她做妾。\n人人说她微如蝼蚁、命如草芥，能与郡主姐妹相称，便是最好的归宿。\n谁知郑时芙骨头硬，人也倔。\n她心冷离家，抱着孩子入了王府做奶娘。\n王府富丽堂皇，权势滔天。\n郑时芙安安分分、不惹是生非，只想喂饱小主子，攒够银子出府买房。\n谁知需要她伺候的……不是小主子。\n是王府的掌权人、是郡主年轻的养父。\n裴执玉在人前光风霁月、高不可攀。\n人后，却将时芙抵在桌前，指尖缓慢解开她襟前的细带：\n“你医好本王的疾，本王应该……何以为报？”\n—\n周培方以为郑时芙一介乡野村妇，在京城举目无亲、身无分文。\n与他和离后定是穷困潦倒、后悔难当。\n却不想他日与郡主成婚，他深拜高堂。\n王府主座上，裴执玉轻扣时芙的手，掀眸莞尔：\n“你是该唤她一句……母亲。”",
-      "word_count": "74.31万字",
-      "word_count_num": 743100,
+      "word_count": "74.73万字",
+      "word_count_num": 747300,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 22:28:04",
+      "update_time": "2026-10-09 22:27:05",
       "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3888/11663199_360x480.jpg?time=1778126471",
       "badge": "",
-      "latest_chapter": " 第356章  滴血认亲",
+      "latest_chapter": " 第358章  结果出了",
       "platform_trend": "rise",
+      "is_new": false,
+      "heat_change": 0,
+      "boards": [
+        "更新日榜"
+      ],
+      "boards_count": 3,
+      "rank_change": null,
+      "history_days": 29
+    },
+    {
+      "rank": 14,
+      "book_name": "霍二爷，新婚请克制！",
+      "book_url": "https://www.qimao.com/shuku/10373634/",
+      "author": "墨墨卿卿",
+      "author_url": "https://www.qimao.com/zuozhe/%E5%A2%A8%E5%A2%A8%E5%8D%BF%E5%8D%BF_14/",
+      "channel": "现代言情",
+      "major": "现代言情",
+      "major_id": 1,
+      "category": "总裁豪门",
+      "minor": "总裁豪门",
+      "minor_id": 8,
+      "primary_tag": "现代言情",
+      "tags": [
+        "现代言情",
+        "总裁豪门"
+      ],
+      "all_tags": [
+        "现代言情",
+        "总裁豪门"
+      ],
+      "abstract": "原书名《都说霍二爷不行？其实会哄不会停》\n恢复听力那天，阮念念得知自己被绿，甩了渣男贱女几巴掌后，转头就答应替逃婚的姐姐嫁给那位传闻中阴戾狠辣的霍二爷。\n人人都说，霍凛重病缠身、性情暴戾，嫁过去就是守活寡。\n可新婚夜，男人掐着她的细腰按在落地窗前，“听说你觉得我不行？”\n之后的三天阮念念颤着腿软成春水才知传言误人……\n后来的宴会上，渣男红着眼纠缠求复合。\n霍凛慢条斯理地将几片药片扔进嘴里，齿间碾磨得嘎巴作响，“阿耀，找把刀来，老子现在犯病了，杀人不犯法！”\n——众人皆惧他疯魔，唯她知晓这滔天戾气下，是只为她沸腾的灼热爱意。\n【狠戾偏执占有欲爆棚男主×外柔内刚反撩达人女主，双强互撩，顶级暧昧拉扯】",
+      "word_count": "105.74万字",
+      "word_count_num": 1057400,
+      "popularity": "",
+      "popularity_num": 0,
+      "heat_rank": null,
+      "heat_src": "",
+      "status": "连载中",
+      "update_time": "2026-10-09 23:31:07",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3458/10373634_360x480.jpg?time=1778484086",
+      "badge": "",
+      "latest_chapter": " 第435章  双胞胎！",
+      "platform_trend": "drop",
       "is_new": false,
       "heat_change": 0,
       "boards": [
@@ -1634,92 +1616,49 @@
     },
     {
       "rank": 15,
-      "book_name": "凰宫梦",
-      "book_url": "https://www.qimao.com/shuku/1836527/",
-      "author": "蓝九九",
-      "author_url": "https://www.qimao.com/zuozhe/%E8%93%9D%E4%B9%9D%E4%B9%9D_14/",
+      "book_name": "大雪封山闹饥荒，福宝开挂富全村",
+      "book_url": "https://www.qimao.com/shuku/13264440/",
+      "author": "鲜奶啾啾",
+      "author_url": "https://www.qimao.com/zuozhe/%E9%B2%9C%E5%A5%B6%E5%95%BE%E5%95%BE_14/",
       "channel": "古代言情",
       "major": "古代言情",
       "major_id": 2,
-      "category": "宫闱宅斗",
-      "minor": "宫闱宅斗",
-      "minor_id": 209,
+      "category": "种田经商",
+      "minor": "种田经商",
+      "minor_id": 16,
       "primary_tag": "古代言情",
       "tags": [
         "古代言情",
-        "宫闱宅斗"
+        "种田经商"
       ],
       "all_tags": [
         "古代言情",
-        "宫闱宅斗"
+        "种田经商"
       ],
-      "abstract": "又名《令章皇后》《抢我姻缘？转身嫁暴君夺后位》短剧：《但为君故》《凰宫梦》横屏中剧：《嫁金枝》\n【双重生换亲+宫斗+非双洁+后期独宠+女主人间清醒】\n沈知念和嫡姐沈南乔一起重生了。\n前世，她被父亲嫁给穷苦门生；嫡姐选秀入宫，还未侍寝便被封为贵人。世人皆道嫡姐贵不可言，她们有云泥之别。\n谁知道后来，沈知念嫁的穷书生连中三元，封侯拜相，她成了本朝最年轻的一品诰命夫人。\n而嫡姐不得帝王喜爱，在深宫蹉跎半生，最后被陷害惨死。\n沈知念再次睁眼，发现自己竟重生回了定亲前。嫡姐抢着要嫁给穷书生，让她入宫选秀。\n她很高兴。\n因为书生虽有一些才华，却心比天高，家里更是有刻薄的婆母，难缠的小姑。前世之所以走出了一条青云路，全靠她呕心沥血为他打点、奔走。\n这辈子，嫡姐想要的风光，全都不会有。\n而帝王年轻俊美，后位空悬，入宫的女子皆有机会争上一争。\n沈知念自小便明白，男人靠不住，只求荣华富贵，不求一丝真情。\n一品诰命夫人，哪比得上母仪天下？这一世，这泼天的富贵，就让她来享吧！\n然而沈知念渐渐发现，后宫居然还有穿书女，和身负系统的攻略者。\n无所谓，都刀了！\n可是谁能告诉她，为什么帝王看她的眼神，越来越不对劲了？",
-      "word_count": "489.45万字",
-      "word_count_num": 4894500,
+      "abstract": "【治愈温馨+家长里短+非情绪流+美食+全村逆袭+认亲】\n大雪封山，又遭山崩断路，清露村彻底断了与外界的联系。\n小糯糯在山神庙祈福，被山神爷爷赋予“神力”，她穿梭两界卖野菜买米肉，把早就空了粮仓的村子盘活了。\n糯糯脚踩小凳子，声音奶呼呼的：“咱们吃饱了有力气，不能坐以待毙！”\n“没糯糯大家都活不成，听糯糯的。”\n“糯糯就是咱们村的小福星，她说什么就是什么。大家伙儿支棱起来，咱们耕地修路！”\n后来最宠糯糯的村长家哥哥谢寻，被送到镇上读书了，多年后再见时，他成熟稳重，将她护在身后，有求必应，糯糯不知道，谢寻哥哥早就是她的毒唯了！",
+      "word_count": "24.42万字",
+      "word_count_num": 244200,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-09 08:17:16",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/545/1634043_360x480.jpg?time=1758178885",
+      "update_time": "2026-10-09 16:29:03",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4422/13264440_360x480.jpg?time=1790217894",
       "badge": "",
-      "latest_chapter": " 第2440章  她真正想要的驸马人选（23万书币加更）",
+      "latest_chapter": " 第53章  多多买肉做卤味！",
       "platform_trend": "",
-      "is_new": false,
-      "heat_change": 0,
-      "boards": [
-        "更新日榜"
-      ],
-      "boards_count": 3,
-      "rank_change": null,
-      "history_days": 29
-    },
-    {
-      "rank": 16,
-      "book_name": "媚君侧",
-      "book_url": "https://www.qimao.com/shuku/11615952/",
-      "author": "昔也",
-      "author_url": "https://www.qimao.com/zuozhe/%E6%98%94%E4%B9%9F_14/",
-      "channel": "古代言情",
-      "major": "古代言情",
-      "major_id": 2,
-      "category": "宫闱宅斗",
-      "minor": "宫闱宅斗",
-      "minor_id": 209,
-      "primary_tag": "古代言情",
-      "tags": [
-        "古代言情",
-        "宫闱宅斗"
-      ],
-      "all_tags": [
-        "古代言情",
-        "宫闱宅斗"
-      ],
-      "abstract": "【男二上位+人间清醒+追妻火葬场+叔嫂文学+男二绝嗣x女二好孕】\n\n　　燕筝和太子夫君少年情深，从没想过夫君会背弃她。\n\n　　她死了才知，只有好孕侧妃才能生下绝嗣夫君的孩子，说要与她一生一世一双人的夫君早就移情她人。\n\n　　他纵容侧妃要她性命，伙同侧妃灭她满门，而他们踩着她与全家的尸骨，登临帝后之位。\n\n　　她恨！她要他们去死！\n\n　　一朝重生，燕筝决定，狼心狗肺的男人，她不要了！\n\n　　但他们想要的帝后之位？他们的性命，她要定了！\n\n　　至于孩子……既然太子不能生，那她就换个人！",
-      "word_count": "106.22万字",
-      "word_count_num": 1062200,
-      "popularity": "",
-      "popularity_num": 0,
-      "heat_rank": null,
-      "heat_src": "",
-      "status": "连载中",
-      "update_time": "2026-10-09 00:31:05",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3872/11615952_360x480.jpg?time=1783934412",
-      "badge": "",
-      "latest_chapter": " 第326章  赵珵，绝不会活着回京",
-      "platform_trend": "rise",
-      "is_new": false,
+      "is_new": true,
       "heat_change": 0,
       "boards": [
         "更新日榜"
       ],
       "boards_count": 1,
-      "rank_change": null,
-      "history_days": 13
+      "rank_change": "new",
+      "history_days": 1
     },
     {
-      "rank": 17,
+      "rank": 16,
       "book_name": "恨卿迟",
       "book_url": "https://www.qimao.com/shuku/1949508/",
       "author": "知煜",
@@ -1762,81 +1701,124 @@
       "history_days": 3
     },
     {
-      "rank": 18,
-      "book_name": "兽世万人迷：大佬们为占她一胎抢疯了",
-      "book_url": "https://www.qimao.com/shuku/12828771/",
-      "author": "心非木石岂无感",
-      "author_url": "https://www.qimao.com/zuozhe/%E5%BF%83%E9%9D%9E%E6%9C%A8%E7%9F%B3%E5%B2%82%E6%97%A0%E6%84%9F_14/",
-      "channel": "幻想言情",
-      "major": "幻想言情",
-      "major_id": 4,
-      "category": "异世幻想",
-      "minor": "异世幻想",
-      "minor_id": 285,
-      "primary_tag": "幻想言情",
+      "rank": 17,
+      "book_name": "媚君侧",
+      "book_url": "https://www.qimao.com/shuku/11615952/",
+      "author": "昔也",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%98%94%E4%B9%9F_14/",
+      "channel": "古代言情",
+      "major": "古代言情",
+      "major_id": 2,
+      "category": "宫闱宅斗",
+      "minor": "宫闱宅斗",
+      "minor_id": 209,
+      "primary_tag": "古代言情",
       "tags": [
-        "幻想言情",
-        "异世幻想"
+        "古代言情",
+        "宫闱宅斗"
       ],
       "all_tags": [
-        "幻想言情",
-        "异世幻想"
+        "古代言情",
+        "宫闱宅斗"
       ],
-      "abstract": "【追妻火葬场+开后宫+生崽+男主全洁+雄竞修罗场】\n大巴坠崖，农学博士尤念意外穿越兽世。\n刚睁眼，就被黑虎前夫扣下不忠污名，逐出部落！\n前夫扬言唯有她亲手杀掉幼崽才能苟活！\n可她尤念骨子里从无卑躬屈膝！\n没做过的事情，她绝对不认！\n尤念果断带崽出走，开垦土地、搭建城邦，绑定好孕系统一路猛收后宫。\n病娇白蛇兽夫:念念给我生一窝蛇崽！\n傲娇恋爱脑羽族兽夫:就算是为念念背井离乡，我也要和你在一起！\n高冷兽王狻猊：乖，奶能留给我喝吗？崽崽们不需要。\n温柔自卑的赤狐兽夫:我一定会好好伺候雌主，雌主喜欢我的尾巴吗？\n疯批极端占有欲的人鱼：念念，你为什么不能和我一直留在深海里呢？\n等冷脸前夫黑虎终于发现真相，后悔追妻。\n却发现尤念身边早站满了各路大佬。\n众兽夫:你也配上桌吃饭？",
-      "word_count": "36.96万字",
-      "word_count_num": 369600,
+      "abstract": "【男二上位+人间清醒+追妻火葬场+叔嫂文学+男二绝嗣x女二好孕】\n\n　　燕筝和太子夫君少年情深，从没想过夫君会背弃她。\n\n　　她死了才知，只有好孕侧妃才能生下绝嗣夫君的孩子，说要与她一生一世一双人的夫君早就移情她人。\n\n　　他纵容侧妃要她性命，伙同侧妃灭她满门，而他们踩着她与全家的尸骨，登临帝后之位。\n\n　　她恨！她要他们去死！\n\n　　一朝重生，燕筝决定，狼心狗肺的男人，她不要了！\n\n　　但他们想要的帝后之位？他们的性命，她要定了！\n\n　　至于孩子……既然太子不能生，那她就换个人！",
+      "word_count": "107.2万字",
+      "word_count_num": 1072000,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 09:02:06",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4277/12828771_360x480.jpg?time=1786340535",
+      "update_time": "2026-10-10 02:07:05",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/3872/11615952_360x480.jpg?time=1783934412",
       "badge": "",
-      "latest_chapter": " 第137章  想和她一起离开",
-      "platform_trend": "rise",
-      "is_new": true,
+      "latest_chapter": " 第328章  跟着野男人跑了？",
+      "platform_trend": "drop",
+      "is_new": false,
       "heat_change": 0,
       "boards": [
         "更新日榜"
       ],
-      "boards_count": 2,
+      "boards_count": 1,
       "rank_change": null,
-      "history_days": 3
+      "history_days": 13
+    },
+    {
+      "rank": 18,
+      "book_name": "凰宫梦",
+      "book_url": "https://www.qimao.com/shuku/1836527/",
+      "author": "蓝九九",
+      "author_url": "https://www.qimao.com/zuozhe/%E8%93%9D%E4%B9%9D%E4%B9%9D_14/",
+      "channel": "古代言情",
+      "major": "古代言情",
+      "major_id": 2,
+      "category": "宫闱宅斗",
+      "minor": "宫闱宅斗",
+      "minor_id": 209,
+      "primary_tag": "古代言情",
+      "tags": [
+        "古代言情",
+        "宫闱宅斗"
+      ],
+      "all_tags": [
+        "古代言情",
+        "宫闱宅斗"
+      ],
+      "abstract": "又名《令章皇后》《抢我姻缘？转身嫁暴君夺后位》短剧：《但为君故》《凰宫梦》横屏中剧：《嫁金枝》\n【双重生换亲+宫斗+非双洁+后期独宠+女主人间清醒】\n沈知念和嫡姐沈南乔一起重生了。\n前世，她被父亲嫁给穷苦门生；嫡姐选秀入宫，还未侍寝便被封为贵人。世人皆道嫡姐贵不可言，她们有云泥之别。\n谁知道后来，沈知念嫁的穷书生连中三元，封侯拜相，她成了本朝最年轻的一品诰命夫人。\n而嫡姐不得帝王喜爱，在深宫蹉跎半生，最后被陷害惨死。\n沈知念再次睁眼，发现自己竟重生回了定亲前。嫡姐抢着要嫁给穷书生，让她入宫选秀。\n她很高兴。\n因为书生虽有一些才华，却心比天高，家里更是有刻薄的婆母，难缠的小姑。前世之所以走出了一条青云路，全靠她呕心沥血为他打点、奔走。\n这辈子，嫡姐想要的风光，全都不会有。\n而帝王年轻俊美，后位空悬，入宫的女子皆有机会争上一争。\n沈知念自小便明白，男人靠不住，只求荣华富贵，不求一丝真情。\n一品诰命夫人，哪比得上母仪天下？这一世，这泼天的富贵，就让她来享吧！\n然而沈知念渐渐发现，后宫居然还有穿书女，和身负系统的攻略者。\n无所谓，都刀了！\n可是谁能告诉她，为什么帝王看她的眼神，越来越不对劲了？",
+      "word_count": "490.05万字",
+      "word_count_num": 4900500,
+      "popularity": "",
+      "popularity_num": 0,
+      "heat_rank": null,
+      "heat_src": "",
+      "status": "连载中",
+      "update_time": "2026-10-10 08:21:16",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/545/1634043_360x480.jpg?time=1758178885",
+      "badge": "",
+      "latest_chapter": " 第2443章  我们安东侯府不结了（384万打赏值加更）",
+      "platform_trend": "drop",
+      "is_new": false,
+      "heat_change": 0,
+      "boards": [
+        "更新日榜"
+      ],
+      "boards_count": 3,
+      "rank_change": null,
+      "history_days": 29
     },
     {
       "rank": 19,
-      "book_name": "疯犬玫瑰",
-      "book_url": "https://www.qimao.com/shuku/1939902/",
-      "author": "二喜",
-      "author_url": "https://www.qimao.com/zuozhe/%E4%BA%8C%E5%96%9C_14/",
-      "channel": "现代言情",
-      "major": "现代言情",
-      "major_id": 1,
-      "category": "总裁豪门",
-      "minor": "总裁豪门",
-      "minor_id": 8,
-      "primary_tag": "现代言情",
+      "book_name": "五岁小神女：我靠兽语救了废柴将军爹爹",
+      "book_url": "https://www.qimao.com/shuku/13288209/",
+      "author": "晚晚新风",
+      "author_url": "https://www.qimao.com/zuozhe/%E6%99%9A%E6%99%9A%E6%96%B0%E9%A3%8E_14/",
+      "channel": "古代言情",
+      "major": "古代言情",
+      "major_id": 2,
+      "category": "古代情缘",
+      "minor": "古代情缘",
+      "minor_id": 216,
+      "primary_tag": "古代言情",
       "tags": [
-        "现代言情",
-        "总裁豪门"
+        "古代言情",
+        "古代情缘"
       ],
       "all_tags": [
-        "现代言情",
-        "总裁豪门"
+        "古代言情",
+        "古代情缘"
       ],
-      "abstract": "梵音落魄那日，去了个破落小镇\n她肤白貌美大长腿，十指不沾阳春水，很快成了这个地方的焦点\n所有男人都对她趋之若鹜，独独一人对她退避三舍\n梵音看那人一眼，随他去，懒得理\n后来，男人醉酒敲开她的房门，掐着她细腰把她抵在墙壁上，态度强势，咬牙切齿又夹杂着痛苦说:梵音，梵音，都说你的名字是菩萨之音的意思，可你看看你，哪里有半点菩萨心肠，你分明是个毒妇……\n梵音：纪淮洲，那你呢？觊觎一个毒妇，你贱不贱……\n我们彼此取暖，彼此救赎，炙热又滚烫\n女主科研员＆男主护林员",
-      "word_count": "62.08万字",
-      "word_count_num": 620800,
+      "abstract": "【五岁软萌宝×落难战神，父女向，养崽崽，复仇】\n谁能想到，西山破庙的小奶团子安安，竟能和鸟兽唠嗑！\n才五岁大，圆乎乎一小只，饥荒时喊着松鼠带路猎狍，救下全村饥民，被村民当成小神女。\n旁人只疼她软萌懂事，却不知她守着一个大秘密　——　身边沉默瘸腿的爹爹，是蒙冤逃亡的镇国大将军林啸。\n朝廷追兵、山中匪寇步步紧逼，安安半点不怕。\n她使唤飞鸟放哨、野兽警戒，一点点采药储粮，用自己独有的本事护着伤痕累累的爹爹。\n待到时机成熟，小神女牵着爹爹离开西山，奔赴京城，要把害人的奸相彻底扳倒！",
+      "word_count": "29.11万字",
+      "word_count_num": 291100,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-09 00:17:05",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/636/1905281_360x480.jpg?time=1736792489",
+      "update_time": "2026-10-09 18:42:03",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4430/13288209_360x480.jpg?time=1787819785",
       "badge": "",
-      "latest_chapter": " 第314章  遵从本心",
+      "latest_chapter": " 第94章  檐下鼠影",
       "platform_trend": "rise",
       "is_new": true,
       "heat_change": 0,
@@ -1845,41 +1827,41 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 2
+      "history_days": 9
     },
     {
       "rank": 20,
-      "book_name": "穿成星际恶毒公主，我截胡了未来大佬",
-      "book_url": "https://www.qimao.com/shuku/13303752/",
-      "author": "九序",
-      "author_url": "https://www.qimao.com/zuozhe/%E4%B9%9D%E5%BA%8F_14/",
-      "channel": "幻想言情",
-      "major": "幻想言情",
-      "major_id": 4,
-      "category": "异世幻想",
-      "minor": "异世幻想",
-      "minor_id": 285,
-      "primary_tag": "幻想言情",
+      "book_name": "军婚超甜！闪婚后成了首长的心尖宠",
+      "book_url": "https://www.qimao.com/shuku/12803265/",
+      "author": "灵岫",
+      "author_url": "https://www.qimao.com/zuozhe/%E7%81%B5%E5%B2%AB_14/",
+      "channel": "现代言情",
+      "major": "现代言情",
+      "major_id": 1,
+      "category": "年代重生",
+      "minor": "年代重生",
+      "minor_id": 278,
+      "primary_tag": "现代言情",
       "tags": [
-        "幻想言情",
-        "异世幻想"
+        "现代言情",
+        "年代重生"
       ],
       "all_tags": [
-        "幻想言情",
-        "异世幻想"
+        "现代言情",
+        "年代重生"
       ],
-      "abstract": "姜明月穿成星际兽世里的炮灰公主，精神力低下、名声恶劣，最后还会惨死荒星。\n幸好，她提前两年知道了剧情。\n既然女主的男人不能抢，那她就专捡那些还没崛起的未来大佬！\n奴隶场黑狼、落魄药剂师、废星机械师……\n多年后，姜明月看着身后一个比一个恐怖的男人，陷入沉默。\n她只是想投资未来，怎么全都赖着不走了？",
-      "word_count": "27.45万字",
-      "word_count_num": 274500,
+      "abstract": "【虐渣打脸+冷面军少+日久生情+双强+无金手指+无重生+逆袭】\n一朝寻夫，苏婉清发现自己被骗了五年。\n她擦干眼泪，一拳撂倒渣夫林默，敢算计她，那是要付出代价的。\n于是，苏婉清利用林默算计自己的把柄在军区活下来，\n阴差阳错，她住进了战功赫赫却冷厉可怖的团长商颂年的宿舍。\n原本只是一次偶然，却意外治好了这位极品军官严重的厌食症。\n从此以后，苏婉清成了商颂年的小厨娘……\n可日子一长，男人的眼神却越来越不对劲，吃醋、护短、甚至连她看别人一眼都要黑脸。\n直到有一天，平日里高高在上、令人闻风丧胆的商团长，把他的小厨娘抵在灶台边：“清清，我吃饱了，现在该喂你了……”",
+      "word_count": "51.65万字",
+      "word_count_num": 516500,
       "popularity": "",
       "popularity_num": 0,
       "heat_rank": null,
       "heat_src": "",
       "status": "连载中",
-      "update_time": "2026-10-08 19:47:02",
-      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4435/13303752_360x480.jpg?time=1787907294",
+      "update_time": "2026-10-10 00:12:12",
+      "cover": "https://cdn.qimao.com/bookimg/zww/upload/readerCover/4268/12803265_360x480.jpg?time=1790125642",
       "badge": "",
-      "latest_chapter": " 第86章  接风晚宴",
+      "latest_chapter": " 第212章  新手奶爸不会换尿布",
       "platform_trend": "rise",
       "is_new": true,
       "heat_change": 0,
@@ -1888,7 +1870,7 @@
       ],
       "boards_count": 1,
       "rank_change": null,
-      "history_days": 2
+      "history_days": 11
     }
   ]
 }
