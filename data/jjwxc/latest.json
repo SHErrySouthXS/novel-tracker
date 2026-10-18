@@ -1,21 +1,21 @@
 {
-  "update_time": "2026-10-18 07:13:05",
-  "update_date": "2026-10-18",
+  "update_time": "2026-10-19 03:56:45",
+  "update_date": "2026-10-19",
   "total_count": 200,
   "source": "晋江文学城·积分月榜",
   "source_url": "https://www.jjwxc.net/topten.php?orderstr=5&t=2",
   "platform": "jjwxc",
   "platform_name": "晋江文学城",
   "tag_stats": {
-    "纯爱": 99,
-    "言情": 73,
+    "纯爱": 100,
+    "言情": 72,
     "百合": 20,
     "无CP": 7,
     "多元": 1
   },
   "gender_stats": {
-    "纯爱": 99,
-    "言情": 73,
+    "纯爱": 100,
+    "言情": 72,
     "百合": 20,
     "无CP": 7,
     "多元": 1
@@ -60,7 +60,7 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10360306",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=468503",
       "rank_change": 0,
-      "history_days": 4
+      "history_days": 5
     },
     {
       "rank": 2,
@@ -99,7 +99,7 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10282307",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1024681",
       "rank_change": 0,
-      "history_days": 21
+      "history_days": 22
     },
     {
       "rank": 3,
@@ -144,51 +144,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10975818",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=727929",
       "rank_change": 0,
-      "history_days": 7
+      "history_days": 8
     },
     {
       "rank": 4,
-      "book_id": "10892570",
-      "book_name": "今晚还听么",
-      "author": "七宝酥",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "情有独钟",
-        "因缘邂逅",
-        "游戏网游",
-        "甜文"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "近代现代",
-        "爱情",
-        "情有独钟",
-        "因缘邂逅",
-        "游戏网游",
-        "甜文"
-      ],
-      "score": 1277574912,
-      "score_display": "1.3G",
-      "abstract": "【正文完结/番外结束后倒V】 暑假第十一天，麦荻感冒在家，无聊误入一个游戏直播间，惊为天音。 主播只出声不露脸，主页作品为零，简介只有四个字：随便播播。 麦荻心想，反正只是听听他声音。 结果第二天又去。 第三天还去。 不知不觉，主播也从一开始念她全名—— “麦门在逃鸡块？” 变成： “又是你，鸡块。” “困了不能挂着？” “你只是喜欢我声音？” 麦荻觉得事情有点不对劲。 后来她有事回老家，两天没去直播间。 不爱营业的主播第一次主动找她： 「今晚还听么？」 「头疼。不听不播了。」 - 无聊+无聊＝有很多话可以聊； 晚期声控×佛系主播/女大男大/网恋甜饼 ＊有一定游戏内容，不影响恋爱线食用。",
-      "status": "连载中",
-      "word_count": "2333",
-      "update_time": "2026-09-08 14:50:00",
-      "thumb_url": "https://pic1.imgdb.cn/i/033v5D7ctr5WUbByVFzzmZ.png",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10892570",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=488795",
-      "rank_change": 0,
-      "history_days": 30
-    },
-    {
-      "rank": 5,
       "book_id": "10723613",
       "book_name": "缠珑",
       "author": "尤四姐",
@@ -223,11 +182,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=OTM0NDUz&imageName=20260611163845.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10723613",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=934453",
-      "rank_change": 0,
-      "history_days": 22
+      "rank_change": 1,
+      "history_days": 23
     },
     {
-      "rank": 6,
+      "rank": 5,
       "book_id": "4029204",
       "book_name": "督公万万岁",
       "author": "碉堡堡",
@@ -266,11 +225,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/23/22046/2204532/20230830234629_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4029204",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2204532",
-      "rank_change": 0,
-      "history_days": 3
+      "rank_change": 1,
+      "history_days": 4
     },
     {
-      "rank": 7,
+      "rank": 6,
       "book_id": "10955504",
       "book_name": "头号玩家：天赋是氪金页游",
       "author": "青浼",
@@ -307,11 +266,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/4/3485/348401/20260930212948_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10955504",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=348401",
-      "rank_change": 0,
-      "history_days": 22
+      "rank_change": 1,
+      "history_days": 23
     },
     {
-      "rank": 8,
+      "rank": 7,
       "book_id": "10413265",
       "book_name": "上错弟弟导师的迈巴赫",
       "author": "萝卜花兔子",
@@ -352,11 +311,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/34/33141/3314069/20260712223439_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10413265",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3314069",
-      "rank_change": 0,
-      "history_days": 27
+      "rank_change": 1,
+      "history_days": 28
     },
     {
-      "rank": 9,
+      "rank": 8,
       "book_id": "3962116",
       "book_name": "系统你搞错性别了",
       "author": "缘何故",
@@ -395,11 +354,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/8/7911/791025/20261013150321_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3962116",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=791025",
-      "rank_change": 0,
-      "history_days": 7
+      "rank_change": 1,
+      "history_days": 8
     },
     {
-      "rank": 10,
+      "rank": 9,
       "book_id": "5779883",
       "book_name": "琵琶行",
       "author": "丹青手",
@@ -435,10 +394,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5779883",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2049050",
       "rank_change": 1,
-      "history_days": 8
+      "history_days": 9
     },
     {
-      "rank": 11,
+      "rank": 10,
       "book_id": "9218223",
       "book_name": "溺青",
       "author": "时星草",
@@ -477,11 +436,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/20/19859/1985828/20260901221024_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9218223",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1985828",
-      "rank_change": -1,
-      "history_days": 14
+      "rank_change": 1,
+      "history_days": 15
     },
     {
-      "rank": 12,
+      "rank": 11,
       "book_id": "5592527",
       "book_name": "孤也要和亲吗？",
       "author": "绣生",
@@ -520,56 +479,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/authorimagespace.php?path=MTkyMTk5MQ==&imageName=20260501203757.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5592527",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1921991",
-      "rank_change": 0,
-      "history_days": 20
+      "rank_change": 1,
+      "history_days": 21
     },
     {
-      "rank": 13,
-      "book_id": "6367804",
-      "book_name": "末世农庄",
-      "author": "春溪笛晓",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "幻想未来",
-      "theme": "剧情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "幻想未来",
-        "剧情",
-        "种田文",
-        "末世",
-        "系统",
-        "爽文",
-        "成长",
-        "求生"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "幻想未来",
-        "剧情",
-        "种田文",
-        "末世",
-        "系统",
-        "爽文",
-        "成长",
-        "求生"
-      ],
-      "score": 623649024,
-      "score_display": "623.6M",
-      "abstract": "随身带着游戏系统穿越到末世，凌小路决定在自己的偏远农庄里躺平。 每天两眼一睁，就是打开自己心爱的合成台。 叮！消耗三颗发芽的土豆，合成一颗巨型土豆，是否确定要做成薯条？ 做做做！ 叮！消耗十本成功学著作和十本成功人士自传，合成一篇升级打脸爽文，是否现在阅读？ 读读读！ 叮！消耗三百部烂片，合成一部经典好片，是否现在观看？ 看看看！ 叮！合成核动力发电机需要消耗十台废弃发电机，检测到农庄内没有所需物品，请尽快集齐…… 凌小路：？？？ 出现了，最讨人厌的卡关环节。 呵，区区十台废弃发电机，我多收几茬土豆就能让人送货上门！ #等等，我的农庄周围怎么多了座城！# #不对，他们怎么都叫我城主？#",
-      "status": "连载中",
-      "word_count": "0",
-      "update_time": "2026-09-08 23:50:50",
-      "thumb_url": "https://i5-static.jjwxc.net/authorimagespace.php?path=MzQ3Nzc3&imageName=20260923060036.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=6367804",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=347777",
-      "rank_change": 0,
-      "history_days": 30
-    },
-    {
-      "rank": 14,
+      "rank": 12,
       "book_id": "10383781",
       "book_name": "蓄意",
       "author": "清汤涮香菜",
@@ -608,11 +522,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MTY5MTE5Mw==&imageName=20260511143833.PNG",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10383781",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1691193",
-      "rank_change": 0,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 15,
+      "rank": 13,
       "book_id": "10948763",
       "book_name": "拒绝神明恩赐后",
       "author": "莲鹤夫人",
@@ -651,11 +565,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/22/21625/2162416/20260818125339_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10948763",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2162416",
-      "rank_change": 0,
-      "history_days": 8
+      "rank_change": 2,
+      "history_days": 9
     },
     {
-      "rank": 16,
+      "rank": 14,
       "book_id": "9158026",
       "book_name": "我与宿敌称兄道弟",
       "author": "西瓜炒肉",
@@ -687,18 +601,18 @@
       ],
       "score": 502192000,
       "score_display": "502.2M",
-      "abstract": "洛拂言命悬一线之际，同因果之器合作，助天道维持世界剧情发展，换取续命重生之机。 他接到的最后一个使命，是让他扮演坑害主角的反派，被正派认识打败后惨死收场。 他正愁任务艰难，因果之器和他说：“你那个水火不容的宿敌，仙风道骨的正道大师兄贺归云，他也是天道安排的人，你可以和他合作。” 对手居然成了帮手。 “没认错？” “没认错。” “你确定？” “我确定！” 洛拂言信了。 他刻意为之，将主角推入有机缘的陷阱后，看着落单的贺归云，用力一拍对方肩膀：“走！陪我去准备好的出口接他，可别真让他出事了。” “你故意的？” “不然呢？” 帮手神色一言难尽。 他为反派剧情谋划，拿不定主意，写了封信给他的前宿敌现队",
+      "abstract": "洛拂言命悬一线之际，同因果之器合作，助天道维持世界剧情发展，换取续命重生之机。 他接到的最后一个使命，是让他扮演坑害主角的反派，被正派人士打败后惨死收场。 他正愁任务艰难，因果之器和他说：“你那个水火不容的宿敌，仙风道骨的正道大师兄贺归云，他也是天道安排的人，你可以和他合作。” “你确定？” “我确定！” 洛拂言信了。 有神器，有预言，还有帮手！ 扮演反派，易如反掌。 他刻意为之，将主角推入有机缘的陷阱后，看着落单的贺归云，用力一拍对方肩膀：“走！陪我去准备好的出口接他，可别真让他出事了。” “你故意的？” “不然呢？” 帮手神色一言难尽。 他为反派剧情谋划，拿不定主意，写了封信给他的前宿敌现",
       "status": "连载中",
       "word_count": "2283",
       "update_time": "2026-09-16 16:16:16",
-      "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/23/22748/2274728/20260904053613_300_420.jpeg",
+      "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/23/22748/2274728/20261018193900_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9158026",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2274728",
-      "rank_change": 0,
-      "history_days": 22
+      "rank_change": 2,
+      "history_days": 23
     },
     {
-      "rank": 17,
+      "rank": 15,
       "book_id": "10433393",
       "book_name": "三少的冲喜小妻子长大了",
       "author": "杳杳一言",
@@ -739,11 +653,56 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/44/43579/4357846/20260921160307_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10433393",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4357846",
-      "rank_change": 0,
-      "history_days": 18
+      "rank_change": 2,
+      "history_days": 19
     },
     {
-      "rank": 18,
+      "rank": 16,
+      "book_id": "11066290",
+      "book_name": "做总裁的女人",
+      "author": "浮白曲",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "都市",
+        "豪门世家",
+        "天作之合",
+        "天之骄子",
+        "爽文",
+        "总裁"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "近代现代",
+        "爱情",
+        "都市",
+        "豪门世家",
+        "天作之合",
+        "天之骄子",
+        "爽文",
+        "总裁"
+      ],
+      "score": 417619872,
+      "score_display": "417.6M",
+      "abstract": "姜霁是北城数一数二的风流人物，家财万贯，冠盖京华，无数少男的梦中情人。 纵使性子多情又薄情，也多的是人趋之若鹜，愿成为她一段风月的过客。 姜霁最近去南城考察项目，被合作方送了张剧院演出票，是全国巡演的古典舞剧《碎瓷》，主演A卡是国内大名鼎鼎的舞蹈家沈月岑。 行云流水的身姿，水袖抛开，露出清冷精致般般入画的眉眼，当真是惊鸿一面。 姜霁一时兴起，身价无数时间就是金钱的大总裁，硬是跟着跑了全国十几座城市的巡演，终于拿下这朵高岭之花。 只是得到后很快就乏味。她从来是声色犬马的浪子，转头就物色了新人。 她向来是不吃回头草的。可当那素来清冷自持的青年，跪在她膝前仰头，可怜地将脸颊贴在她的掌心，透着一点卑微",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 15:00:00",
+      "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11066290&coverid=115&ver=9d0a841f1d8f57c18287a59e058e593e",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=11066290",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2505651",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 17,
       "book_id": "10974498",
       "book_name": "老公还是小的好",
       "author": "夭甜怡",
@@ -783,10 +742,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10974498",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6453524",
       "rank_change": 1,
-      "history_days": 27
+      "history_days": 28
     },
     {
-      "rank": 19,
+      "rank": 18,
       "book_id": "8479598",
       "book_name": "全球求生：百倍爆率但非酋",
       "author": "打僵尸",
@@ -821,11 +780,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/7/6861/686098/20261013221434_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8479598",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=686098",
-      "rank_change": -1,
-      "history_days": 6
+      "rank_change": 1,
+      "history_days": 7
     },
     {
-      "rank": 20,
+      "rank": 19,
       "book_id": "11000796",
       "book_name": "退婚",
       "author": "希昀",
@@ -864,11 +823,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/22/21719/2171848/20260907063302_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11000796",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2171848",
-      "rank_change": 0,
-      "history_days": 26
+      "rank_change": 1,
+      "history_days": 27
     },
     {
-      "rank": 21,
+      "rank": 20,
       "book_id": "10982409",
       "book_name": "绅士的秘密",
       "author": "脂肪颗粒",
@@ -907,11 +866,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10982409&coverid=217&ver=76ff26795994ed3f9f5655bb73c96757",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10982409",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=353865",
-      "rank_change": 0,
-      "history_days": 15
+      "rank_change": 1,
+      "history_days": 16
     },
     {
-      "rank": 22,
+      "rank": 21,
       "book_id": "8253708",
       "book_name": "莫霍面",
       "author": "九阶幻方",
@@ -952,11 +911,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/authorimagespace.php?path=MjMwNTc1Ng==&imageName=20260811124602.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8253708",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2305756",
-      "rank_change": 0,
-      "history_days": 22
+      "rank_change": 1,
+      "history_days": 23
     },
     {
-      "rank": 23,
+      "rank": 22,
       "book_id": "8680390",
       "book_name": "ABO文里的F",
       "author": "不间不界",
@@ -994,10 +953,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8680390",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2140165",
       "rank_change": 1,
-      "history_days": 23
+      "history_days": 24
     },
     {
-      "rank": 24,
+      "rank": 23,
       "book_id": "8659954",
       "book_name": "从诈骗满朝文武开始经营书院",
       "author": "大白牙牙牙",
@@ -1029,8 +988,8 @@
         "成长",
         "沙雕"
       ],
-      "score": 291336064,
-      "score_display": "291.3M",
+      "score": 292623456,
+      "score_display": "292.6M",
       "abstract": "被国子监开除了怎么办？ 姜辞：为了上学，只好诈骗满朝文武，自己建一所更牛的书院！ 【白鹿书院，当世第一书院，也是千古第一书院】 【被誉为象牙塔的真正起源】 【它是文人的理想国、精神乡，是王朝历史上最浓墨重彩的一笔】 【一句话总结：未入白鹿书院门，读书万卷枉费神！】 针对以上毫无底线地招生吹嘘。 国子监祭酒不屑一顾：假的！什么野鸡学校，别来碰瓷国子监！ 国子监监生嗤之以鼻：只有进入国子监才能平步青云。 直到： SSR内阁首辅加入白鹿书院 SSR户部尚书加入白鹿书院 SSR睿亲王加入白鹿书院 …… SSR国子监祭酒带着念书的小儿子跳槽到白鹿书院 国子监监生：？？？ * 永熙二十一年的春闱，被誉为千",
       "status": "连载中",
       "word_count": "0",
@@ -1038,11 +997,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/authorimagespace.php?path=MjA3ODY4Mg==&imageName=20261001131731.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8659954",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2078682",
-      "rank_change": -1,
-      "history_days": 7
+      "rank_change": 1,
+      "history_days": 8
     },
     {
-      "rank": 25,
+      "rank": 24,
       "book_id": "5943748",
       "book_name": "病树枝头",
       "author": "吞鱼",
@@ -1079,11 +1038,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/20/19399/1939857/20261002184942_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5943748",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1939857",
-      "rank_change": 0,
-      "history_days": 16
+      "rank_change": 1,
+      "history_days": 17
     },
     {
-      "rank": 26,
+      "rank": 25,
       "book_id": "10395903",
       "book_name": "弟弟为何这样？",
       "author": "田园泡",
@@ -1122,11 +1081,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10395903&coverid=185&ver=8a579024150c19ca8bf259ea8922b516",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10395903",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1643745",
-      "rank_change": 0,
-      "history_days": 10
+      "rank_change": 1,
+      "history_days": 11
     },
     {
-      "rank": 27,
+      "rank": 26,
       "book_id": "11017274",
       "book_name": "商户嫡女",
       "author": "春未绿",
@@ -1165,11 +1124,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/10/9734/973343/20260920182954_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11017274",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=973343",
-      "rank_change": 0,
-      "history_days": 25
+      "rank_change": 1,
+      "history_days": 26
     },
     {
-      "rank": 28,
+      "rank": 27,
       "book_id": "9829389",
       "book_name": "第一次当猎豹",
       "author": "九流书生",
@@ -1210,11 +1169,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/authorimagespace.php?path=MjI2NzA1Mg==&imageName=20260925235517.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9829389",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2267052",
-      "rank_change": 0,
-      "history_days": 21
+      "rank_change": 1,
+      "history_days": 22
     },
     {
-      "rank": 29,
+      "rank": 28,
       "book_id": "9710858",
       "book_name": "拆迁后，全家上了杀猪盘名单",
       "author": "胖哈",
@@ -1251,8 +1210,49 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTk3MTg4NA==&imageName=20260914232139.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9710858",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1971884",
-      "rank_change": 0,
-      "history_days": 28
+      "rank_change": 1,
+      "history_days": 29
+    },
+    {
+      "rank": 29,
+      "book_id": "11100674",
+      "book_name": "一瓢水",
+      "author": "明月珰",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "都市",
+        "情有独钟",
+        "天之骄子",
+        "狗血"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "近代现代",
+        "爱情",
+        "都市",
+        "情有独钟",
+        "天之骄子",
+        "狗血"
+      ],
+      "score": 208352160,
+      "score_display": "208.4M",
+      "abstract": "饿了想吃饭。 渴了想喝水。 只得一瓢水，哪解众生渴。 更新速度：看男主名。本来想让他姓年的，奈何就喜欢周。 今天之前我不知道自己要写这个文，更这个文。 今后之后，我不知道还写不写，更不更。 但我知道，不放出来，永远都不会有水儿了。",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 12:26:19",
+      "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11100674&coverid=102&ver=e9af8f40cec8dc72f898345710d35fae",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=11100674",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=186461",
+      "rank_change": "new",
+      "history_days": 1
     },
     {
       "rank": 30,
@@ -1293,7 +1293,7 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10697273",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2079164",
       "rank_change": 0,
-      "history_days": 7
+      "history_days": 8
     },
     {
       "rank": 31,
@@ -1334,7 +1334,7 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10352497",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3075871",
       "rank_change": 0,
-      "history_days": 21
+      "history_days": 22
     },
     {
       "rank": 32,
@@ -1378,8 +1378,8 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/64/63214/6321307/20250910115744_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10039830",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6321307",
-      "rank_change": 2,
-      "history_days": 16
+      "rank_change": 0,
+      "history_days": 17
     },
     {
       "rank": 33,
@@ -1416,13 +1416,13 @@
       "score_display": "194.6M",
       "abstract": "■睡前轻松读的小甜饼 | 女追男 | 生活流轻喜剧 ■冷酷保守纯情男×面怂心黄小戏精 搬家碰上经期堪称火上浇油，超市外送偏偏还送错了地。 等黄谷月终于找到外送员拍照留存的这户601时，照片里门口的外卖袋子不见踪影。 送你门口你就要啊？！ 她噌地来了火，冲上去使劲拍门，脑内演练一系列争论和维权说辞。 屋内开着电视分明有人，就在黄谷月打算一拳锤烂这个智能门铃时，门突然被拉开—— 她气愤抬头，一张帅过头的脸撞进眼帘。 2- 项恒不知道附近哪家超市的外送服务这么差劲，隔壁楼601的外送隔三差五就误送到他这儿。 好在那户601的姑娘事少脸皮薄，每次只是红着脸把东西取走。 项恒倒不觉得怎么麻烦。 3- 后",
       "status": "连载中",
-      "word_count": "1.4万",
+      "word_count": "2.1万",
       "update_time": "2026-09-11 18:00:00",
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MjEyMDgzOA==&imageName=20260226235305.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8493807",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2120838",
-      "rank_change": -1,
-      "history_days": 27
+      "rank_change": 0,
+      "history_days": 28
     },
     {
       "rank": 34,
@@ -1462,56 +1462,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/34/33865/3386499/20260923203239_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11033547",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3386499",
-      "rank_change": -1,
-      "history_days": 27
+      "rank_change": 0,
+      "history_days": 28
     },
     {
       "rank": 35,
-      "book_id": "8683404",
-      "book_name": "炮灰脑回路清奇[快穿]",
-      "author": "兰桂",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "穿越时空",
-        "系统",
-        "快穿",
-        "穿书",
-        "爽文",
-        "轻松"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "近代现代",
-        "爱情",
-        "穿越时空",
-        "系统",
-        "快穿",
-        "穿书",
-        "爽文",
-        "轻松"
-      ],
-      "score": 190944240,
-      "score_display": "190.9M",
-      "abstract": "每本小说都有不起眼的炮灰，或推动剧情、或做个踏脚石，没人在意她们的下场。 姜瑶绑定炮灰逆袭系统，穿成各式悲惨炮灰，系统满心期待她按套路打脸虐渣、逆袭翻身，准备了各种争斗道具，谁知姜瑶脑回路清奇到离谱…… 【世界一：七零年代女主对照组】 堂姐重生搞事业、嫁团长，风生水起。 系统催姜瑶考名校、做大生意。 姜瑶摆手：鸡自己多累？不如鸡爹妈，当个无忧无虑的富二代不香吗？ 【世界二：碍眼的原配嫡妻】 多年恩爱抵不过年轻貌美，夫君变心，贤良淑德竟成了古板无趣。 系统提议她虐小妾、勾皇帝。 姜瑶无语：何必这么费劲？弄死渣男，整个家不都是我的了？ 【世界三：恋综最讨嫌嘉宾】 【世界四：娱乐圈十八线全网黑】 【",
-      "status": "连载中",
-      "word_count": "3669",
-      "update_time": "2026-09-08 22:11:00",
-      "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MTExNTA1Mg==&imageName=20250420232117.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8683404",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1115052",
-      "rank_change": 0,
-      "history_days": 30
-    },
-    {
-      "rank": 36,
       "book_id": "8475656",
       "book_name": "无限流大魔王回来后",
       "author": "Chelal",
@@ -1552,56 +1507,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/55/54610/5460988/20241115214532_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8475656",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5460988",
-      "rank_change": 0,
-      "history_days": 21
-    },
-    {
-      "rank": 37,
-      "book_id": "9720452",
-      "book_name": "豪门大小姐网恋翻车后",
-      "author": "空青宿雪",
-      "channel": "百合",
-      "nature": "原创",
-      "genre": "百合",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "百合",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "豪门世家",
-        "甜文",
-        "成长",
-        "校园",
-        "御姐"
-      ],
-      "all_tags": [
-        "原创",
-        "百合",
-        "近代现代",
-        "爱情",
-        "都市",
-        "豪门世家",
-        "甜文",
-        "成长",
-        "校园",
-        "御姐"
-      ],
-      "score": 185536800,
-      "score_display": "185.5M",
-      "abstract": "完结文《双向驯养》超好看，下一本开《和病娇美人教授先婚后爱》，文案在最后 明琮在网上认识了个御姐，御姐腰细腿长，样貌昳丽，你来我往之下她飞快坠入爱河。 她没谈过恋爱，纯情得要命。 谈恋爱的第一天，御姐叫她宝宝。 明琮脸红，给御姐转了5200，义正词严叫她别叫得那么轻浮。 谈恋爱满一周，御姐穿着猫耳女仆装给她发对镜自拍。 明琮看着图片险些流鼻血，给御姐转了13140，让她多穿点注意保暖。 谈恋爱满一个月，御姐给她打电话哭着说自己奶奶病重，向她借了20万。 明琮心疼得立马转账，还备注了个自愿赠予，体恤网恋对象照顾奶奶没时间，她几天没给对方发消息。 半个月后再次发消息却喜提红色感叹号的明琮：？ 得知",
-      "status": "连载中",
-      "word_count": "2347",
-      "update_time": "2026-09-08 15:52:15",
-      "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/68/67573/6757233/20260711211202_300_420.jpeg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9720452",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6757233",
       "rank_change": 1,
-      "history_days": 30
+      "history_days": 22
     },
     {
-      "rank": 38,
+      "rank": 36,
       "book_id": "10851247",
       "book_name": "末世求生：捡垃圾的小蘑菇",
       "author": "长生千叶",
@@ -1642,11 +1552,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/17/16182/1618131/20260829092707_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10851247",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1618131",
-      "rank_change": -1,
-      "history_days": 16
+      "rank_change": 2,
+      "history_days": 17
     },
     {
-      "rank": 39,
+      "rank": 37,
       "book_id": "8648417",
       "book_name": "替身选择白月光",
       "author": "张无声",
@@ -1687,11 +1597,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/21/20231/2023022/20261012005934_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8648417",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2023022",
-      "rank_change": 0,
-      "history_days": 15
+      "rank_change": 2,
+      "history_days": 16
     },
     {
-      "rank": 40,
+      "rank": 38,
       "book_id": "10498294",
       "book_name": "穿成女A绑定黑心系统",
       "author": "鹿野青灼",
@@ -1733,10 +1643,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10498294",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1919347",
       "rank_change": 2,
-      "history_days": 28
+      "history_days": 29
     },
     {
-      "rank": 41,
+      "rank": 39,
       "book_id": "9450816",
       "book_name": "雾里京夜[先婚后爱]",
       "author": "姜揽月",
@@ -1774,10 +1684,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9450816",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3874169",
       "rank_change": 2,
-      "history_days": 13
+      "history_days": 14
     },
     {
-      "rank": 42,
+      "rank": 40,
       "book_id": "10131148",
       "book_name": "死对头是我榜一daddy",
       "author": "三无是萌点",
@@ -1816,11 +1726,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/21/20223/2022205/20260919122448_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10131148",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2022205",
-      "rank_change": -2,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 43,
+      "rank": 41,
       "book_id": "10991561",
       "book_name": "女装嫁给直男龙傲天后",
       "author": "春日棠",
@@ -1861,11 +1771,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/57/56986/5698592/20260824204520_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10991561",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5698592",
-      "rank_change": -2,
-      "history_days": 20
+      "rank_change": 2,
+      "history_days": 21
     },
     {
-      "rank": 44,
+      "rank": 42,
       "book_id": "10598685",
       "book_name": "吾儿想要，吾儿得到！",
       "author": "风入松鼠",
@@ -1904,11 +1814,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/authorimagespace.php?path=MzQzMzI3OQ==&imageName=20260809035038.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10598685",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3433279",
-      "rank_change": 1,
-      "history_days": 13
+      "rank_change": 2,
+      "history_days": 14
     },
     {
-      "rank": 45,
+      "rank": 43,
       "book_id": "8507015",
       "book_name": "恶魔与金丝雀",
       "author": "凤久安",
@@ -1949,11 +1859,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=ODI0MjE1&imageName=20260821175518.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8507015",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=824215",
-      "rank_change": -1,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 46,
+      "rank": 44,
       "book_id": "10803694",
       "book_name": "我的夫郎不可能是残暴佞臣",
       "author": "长生千叶",
@@ -1992,11 +1902,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/17/16182/1618131/20260924122525_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10803694",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1618131",
-      "rank_change": 0,
-      "history_days": 8
+      "rank_change": 2,
+      "history_days": 9
     },
     {
-      "rank": 47,
+      "rank": 45,
       "book_id": "8659961",
       "book_name": "客官请喝汤 [无限]",
       "author": "木尺素",
@@ -2037,11 +1947,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MTk0MzQxNA==&imageName=20260606171848.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8659961",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1943414",
-      "rank_change": 0,
-      "history_days": 13
+      "rank_change": 2,
+      "history_days": 14
     },
     {
-      "rank": 48,
+      "rank": 46,
       "book_id": "10648029",
       "book_name": "这个小镇祂活着",
       "author": "被拖鞋过肩摔",
@@ -2082,11 +1992,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/32/31475/3147414/20260906203624_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10648029",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3147414",
-      "rank_change": 0,
-      "history_days": 29
+      "rank_change": 2,
+      "history_days": 30
     },
     {
-      "rank": 49,
+      "rank": 47,
       "book_id": "3157187",
       "book_name": "在古炼气世界当农场主",
       "author": "岐山娘",
@@ -2123,11 +2033,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/18/17217/1721611/20260903211143_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3157187",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1721611",
-      "rank_change": 0,
-      "history_days": 29
+      "rank_change": 2,
+      "history_days": 30
     },
     {
-      "rank": 50,
+      "rank": 48,
       "book_id": "6524816",
       "book_name": "反派说我们才是天生一对",
       "author": "旧梦如霜",
@@ -2168,11 +2078,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/authorimagespace.php?path=MTc3MjU0MQ==&imageName=20260926235446.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6524816",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1772541",
-      "rank_change": 0,
-      "history_days": 28
+      "rank_change": 2,
+      "history_days": 29
     },
     {
-      "rank": 51,
+      "rank": 49,
       "book_id": "10795018",
       "book_name": "被偏执上位者觊觎的白月光",
       "author": "狩心x",
@@ -2213,11 +2123,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/19/18511/1851069/20260927123347_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10795018",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1851069",
-      "rank_change": 0,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 52,
+      "rank": 50,
       "book_id": "8678127",
       "book_name": "外挂是人生模拟器",
       "author": "黎明尽头",
@@ -2258,11 +2168,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/authorimagespace.php?path=MTY0NDI5Nw==&imageName=20251218185525.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8678127",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1644297",
-      "rank_change": 0,
-      "history_days": 21
+      "rank_change": 2,
+      "history_days": 22
     },
     {
-      "rank": 53,
+      "rank": 51,
       "book_id": "10700232",
       "book_name": "女穿男：闺蜜一起穿，敬业卖腐",
       "author": "颓废大带鱼",
@@ -2303,11 +2213,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/authorimagespace.php?path=NDgyNTM1OA==&imageName=20260515185610.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10700232",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4825358",
-      "rank_change": 4,
-      "history_days": 12
+      "rank_change": 2,
+      "history_days": 13
     },
     {
-      "rank": 54,
+      "rank": 52,
       "book_id": "9475777",
       "book_name": "娶了集团太子爷当老婆",
       "author": "一五五一",
@@ -2348,11 +2258,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/44/43893/4389213/20260830181108_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9475777",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4389213",
-      "rank_change": 0,
-      "history_days": 20
+      "rank_change": 2,
+      "history_days": 21
     },
     {
-      "rank": 55,
+      "rank": 53,
       "book_id": "8524195",
       "book_name": "错邀高中同学一起吃瓜后",
       "author": "岁岁无恙",
@@ -2389,11 +2299,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/45/44282/4428163/20240917171417_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8524195",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4428163",
-      "rank_change": -2,
-      "history_days": 16
+      "rank_change": 2,
+      "history_days": 17
     },
     {
-      "rank": 56,
+      "rank": 54,
       "book_id": "9888371",
       "book_name": "她不惯被爱",
       "author": "初厘",
@@ -2434,11 +2344,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/36/35957/3595663/20260223000703_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9888371",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3595663",
-      "rank_change": -1,
-      "history_days": 10
+      "rank_change": 2,
+      "history_days": 11
     },
     {
-      "rank": 57,
+      "rank": 55,
       "book_id": "10680339",
       "book_name": "我直播卖墓地后爆红了",
       "author": "嬴辞",
@@ -2479,11 +2389,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/55/54539/5453824/20260918203428_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10680339",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5453824",
-      "rank_change": -1,
-      "history_days": 21
+      "rank_change": 2,
+      "history_days": 22
     },
     {
-      "rank": 58,
+      "rank": 56,
       "book_id": "10721960",
       "book_name": "在续作里被美颜十倍后成了最强",
       "author": "不知飞羽",
@@ -2525,10 +2435,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10721960",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3281647",
       "rank_change": 2,
-      "history_days": 5
+      "history_days": 6
     },
     {
-      "rank": 59,
+      "rank": 57,
       "book_id": "8554102",
       "book_name": "山魑",
       "author": "一天八杯水",
@@ -2567,11 +2477,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/authorimagespace.php?path=MjAwNzYyMQ==&imageName=20260910154213.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8554102",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2007621",
-      "rank_change": -1,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 60,
+      "rank": 58,
       "book_id": "9815410",
       "book_name": "我真没被自己强取豪夺［快穿］",
       "author": "风休子",
@@ -2612,54 +2522,56 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/29/28480/2847996/20261008205025_300_420.JPG",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9815410",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2847996",
-      "rank_change": -1,
-      "history_days": 19
+      "rank_change": 2,
+      "history_days": 20
     },
     {
-      "rank": 61,
-      "book_id": "8716102",
-      "book_name": "宿敌竟是我妻子！",
-      "author": "月斜星移",
+      "rank": 59,
+      "book_id": "10632825",
+      "book_name": "冲喜",
+      "author": "江一水",
       "channel": "百合",
       "nature": "原创",
       "genre": "百合",
-      "era": "近代现代",
+      "era": "架空历史",
       "theme": "爱情",
       "primary_tag": "百合",
       "secondary_tags": [
-        "近代现代",
+        "架空历史",
         "爱情",
-        "强强",
         "年下",
+        "灵异神怪",
+        "前世今生",
         "甜文",
-        "都市异闻",
-        "轻松"
+        "古代幻想",
+        "钓系"
       ],
       "all_tags": [
         "原创",
         "百合",
-        "近代现代",
+        "架空历史",
         "爱情",
-        "强强",
         "年下",
+        "灵异神怪",
+        "前世今生",
         "甜文",
-        "都市异闻",
-        "轻松"
+        "古代幻想",
+        "钓系"
       ],
-      "score": 127693872,
-      "score_display": "127.7M",
-      "abstract": "方识意身为业绩最出众的天师，栽在她手上的妖怪不计其数。 她有一个温柔、美丽、善解人意的妻子，京汐。 京汐会为她下厨，虽然只会做生鱼片。 经常给她带礼物，虽然只有珍珠。 主动策划露营和旅游，虽然活动地点大部分时候都选在海边。 两人情到浓时，妻子面颊薄粉，附在耳边的嘤嘤软语婉转动听，犹如传说中惑人心魄的海妖。 方识意对现在的生活很满意。 唯一苦恼的，就是不知道该如何向妻子坦白自己的真实身份。 然而最近由妖怪引起的异常事件激增。 她忙于工作，偶尔还会带伤回家，惹得京汐很是不快。 已经一个月没和她贴贴了。QAQ * 好消息是，方识意寻到了一丝线索。 事件的幕后黑手阴险、狡诈、性格恶劣，总能猜到方识意的",
+      "score": 123223640,
+      "score_display": "123.2M",
+      "abstract": "每天中午十二点更新。 嬴无咎是帝母最小的孩子，上有四个姐姐、两个哥哥。论资排辈，帝位怎么都轮不到她。 直到她奉旨出宫，探望那个死而复生的司徒清。 料峭春寒，梨花如雪。 司徒清一袭黑衣坐在高枝上，乌发铺陈如缎，扭头望来。一张面庞清瘦如艳鬼，凤眼细长，妖气森森。 嬴无咎心跳如擂，又惊又喜：她绝不是人。 她的机会来了。 —————— 自那以后，她夜夜深陷同一个梦。 梦里青铜神树燃着幽幽青焰，她躺在冰冷的石台上，被那女人扣住手腕，抵死交缠。 每次结束时，对方都会伏在她心口，冰凉指尖缓缓划过：“我知道你要什么，可我不想帮你。” 嬴无咎问：“那你要怎样，才肯成全我的愿望？” 我的身体？我的灵魂？ 除了这天",
       "status": "连载中",
-      "word_count": "2668",
-      "update_time": "2026-09-08 21:00:00",
-      "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/46/45599/4559804/20260815143414_300_420.png",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8716102",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4559804",
-      "rank_change": 0,
-      "history_days": 30
+      "word_count": "0",
+      "update_time": "2026-10-08 12:00:00",
+      "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/22/21798/2179768/20260609215000_300_420.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10632825",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2179768",
+      "rank_change": "new",
+      "history_days": 1
     },
     {
-      "rank": 62,
+      "rank": 60,
       "book_id": "8890138",
       "book_name": "石榴裙",
       "author": "盛晚风",
@@ -2688,11 +2600,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/24/23758/2375754/20240616163530_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8890138",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2375754",
-      "rank_change": 0,
-      "history_days": 24
+      "rank_change": 2,
+      "history_days": 25
     },
     {
-      "rank": 63,
+      "rank": 61,
       "book_id": "8325732",
       "book_name": "残疾大佬的直球老婆跑路了",
       "author": "昭昭仙踪",
@@ -2733,11 +2645,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/40/39321/3932034/20260926205103_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8325732",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3932034",
-      "rank_change": 0,
-      "history_days": 22
+      "rank_change": 2,
+      "history_days": 23
     },
     {
-      "rank": 64,
+      "rank": 62,
       "book_id": "10445989",
       "book_name": "回到老公少年时",
       "author": "不吃姜的胖子",
@@ -2774,11 +2686,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/24/23741/2374028/20260109124440_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10445989",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2374028",
-      "rank_change": 0,
-      "history_days": 29
+      "rank_change": 2,
+      "history_days": 30
     },
     {
-      "rank": 65,
+      "rank": 63,
       "book_id": "10528534",
       "book_name": "君侯万安",
       "author": "香草芋圆",
@@ -2815,11 +2727,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=MjY3MzgyNg==&imageName=20260906080705.JPG",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10528534",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2673826",
-      "rank_change": 0,
-      "history_days": 23
+      "rank_change": 2,
+      "history_days": 24
     },
     {
-      "rank": 66,
+      "rank": 64,
       "book_id": "8965736",
       "book_name": "全球荒年，我有无限领地",
       "author": "痴嗔本真",
@@ -2861,10 +2773,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8965736",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1537201",
       "rank_change": 2,
-      "history_days": 16
+      "history_days": 17
     },
     {
-      "rank": 67,
+      "rank": 65,
       "book_id": "8720471",
       "book_name": "漂亮‘凡人’",
       "author": "夕月半",
@@ -2905,11 +2817,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/24/23198/2319738/20251202185415_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8720471",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2319738",
-      "rank_change": -1,
-      "history_days": 29
+      "rank_change": 2,
+      "history_days": 30
     },
     {
-      "rank": 68,
+      "rank": 66,
       "book_id": "9689217",
       "book_name": "跨界导演：大哥你太会拍了",
       "author": "寻光小筑",
@@ -2948,11 +2860,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/65/64794/6479360/20260906114457_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9689217",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6479360",
-      "rank_change": 1,
-      "history_days": 24
+      "rank_change": 2,
+      "history_days": 25
     },
     {
-      "rank": 69,
+      "rank": 67,
       "book_id": "4476907",
       "book_name": "第二篇水仙文",
       "author": "天灵根",
@@ -2991,11 +2903,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=MjY5Mzk3NA==&imageName=20260801154346.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4476907",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2693974",
-      "rank_change": -2,
-      "history_days": 27
+      "rank_change": 2,
+      "history_days": 28
     },
     {
-      "rank": 70,
+      "rank": 68,
       "book_id": "9115561",
       "book_name": "我娘是权贵们的白月光",
       "author": "未眠灯",
@@ -3034,11 +2946,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/52/51676/5167538/20260430112409_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9115561",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5167538",
-      "rank_change": 0,
-      "history_days": 29
+      "rank_change": 2,
+      "history_days": 30
     },
     {
-      "rank": 71,
+      "rank": 69,
       "book_id": "9729670",
       "book_name": "被觊觎的炮灰美人[快穿]",
       "author": "亘星",
@@ -3079,11 +2991,11 @@
       "thumb_url": "https://img11.360buyimg.com/ddimg/jfs/t1/327118/10/20875/59273/68c91695Ffb88c044/9aa84800c7b7c6bb.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9729670",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3325581",
-      "rank_change": 1,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 72,
+      "rank": 70,
       "book_id": "11026040",
       "book_name": "都督他人人喊打",
       "author": "孟还",
@@ -3119,16 +3031,16 @@
       "score_display": "109.0M",
       "abstract": "不要对政敌的养子见色起意，不要玩弄抛弃欺骗狗狗，不要交付真心，但季怀真做了个遍。 不要指望骗子改邪归正，不要把杀父仇人当亡妻，不要对死人念念不忘，但拓跋燕迟做了个遍。 燕迟（攻）x季怀真（受）←阉宦，鸡和蛋都没有 架空，背景有参考，已全文存稿，每天早上8点更新，日更到完结。 封绘：长阳 封设：酸橙汁",
       "status": "连载中",
-      "word_count": "16.4万",
+      "word_count": "16.9万",
       "update_time": "2026-09-12 08:00:00",
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/68/67779/6777858/20260910213629_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11026040",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6777858",
-      "rank_change": -1,
-      "history_days": 26
+      "rank_change": 2,
+      "history_days": 27
     },
     {
-      "rank": 73,
+      "rank": 71,
       "book_id": "10399201",
       "book_name": "华夏造物师，从黄泉机甲开始",
       "author": "微生日荧",
@@ -3167,11 +3079,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/50/49194/4919311/20260726225705_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10399201",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4919311",
-      "rank_change": 0,
-      "history_days": 15
+      "rank_change": 2,
+      "history_days": 16
     },
     {
-      "rank": 74,
+      "rank": 72,
       "book_id": "6665462",
       "book_name": "偿还",
       "author": "菜紫",
@@ -3212,11 +3124,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/46/45617/4561611/20261001180917_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6665462",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4561611",
-      "rank_change": 3,
-      "history_days": 14
+      "rank_change": 2,
+      "history_days": 15
     },
     {
-      "rank": 75,
+      "rank": 73,
       "book_id": "10016151",
       "book_name": "绝色千金在美校[古穿今]",
       "author": "悠悠仙",
@@ -3257,11 +3169,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=NDI2MjY2&imageName=20261001193416.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10016151",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=426266",
-      "rank_change": -1,
-      "history_days": 7
+      "rank_change": 2,
+      "history_days": 8
     },
     {
-      "rank": 76,
+      "rank": 74,
       "book_id": "6978450",
       "book_name": "她和一只诡异",
       "author": "藏珠",
@@ -3295,18 +3207,18 @@
       ],
       "score": 101912680,
       "score_display": "101.9M",
-      "abstract": "【隔壁《在远古和大虎一起长大》刚完结，喜欢不要错过呀~】 本文周五入v，当天万字更新~ ——以下本文本案—— 朝露有个男朋友，男朋友占有欲很强，每天都要查岗、跟踪监视她，还操控诡异伤了她，让她出不了门只能蜗居在家里，美名其曰养她。 . 朝露没觉得这是爱，只感觉窒息，所以知道他死在外面时，长长松了一口气。 . 后来她身后跟了一只诡异，那只诡异身上有男友的某些习惯。 . ——男主视角—— . 恐怖降临的第三阶段，所有鬼怪准备迎接他们的王的时候，他们的王就因为吞了个执念太深的新诡，被困在女主身边了。 . 出师未捷身先死。_(:з」∠)_ . 大概是一个只懂得吃和进化的男主克制不住体内新诡的欲.望，跟",
+      "abstract": "【隔壁《在远古和大虎一起长大》刚完结，喜欢不要错过呀~】 ——以下本文本案—— 朝露有个男朋友，男朋友占有欲很强，每天都要查岗、跟踪监视她，还操控诡异伤了她，让她出不了门只能蜗居在家里，美名其曰养她。 . 朝露没觉得这是爱，只感觉窒息，所以知道他死在外面时，长长松了一口气。 . 后来她身后跟了一只诡异，那只诡异身上有男友的某些习惯。 . ——男主视角—— . 恐怖降临的第三阶段，所有鬼怪准备迎接他们的王的时候，他们的王就因为吞了个执念太深的新诡，被困在女主身边了。 . 出师未捷身先死。_(:з」∠)_ . 大概是一个只懂得吃和进化的男主克制不住体内新诡的欲.望，跟着搞爱，结果发现屁股疼的是自己",
       "status": "连载中",
       "word_count": "0",
       "update_time": "2026-10-01 00:00:00",
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/11/10649/1064845/20260313001729_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6978450",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1064845",
-      "rank_change": -1,
-      "history_days": 7
+      "rank_change": 2,
+      "history_days": 8
     },
     {
-      "rank": 77,
+      "rank": 75,
       "book_id": "10691729",
       "book_name": "病情吻合",
       "author": "二月竹",
@@ -3343,11 +3255,54 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/31/30596/3059568/20260507205411_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10691729",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3059568",
-      "rank_change": -1,
-      "history_days": 18
+      "rank_change": 2,
+      "history_days": 19
     },
     {
-      "rank": 78,
+      "rank": 76,
+      "book_id": "11030674",
+      "book_name": "失忆的万人嫌被反派骗成妻子了",
+      "author": "岁暮风雪",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "架空历史",
+      "theme": "仙侠",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "架空历史",
+        "仙侠",
+        "强强",
+        "仙侠修真",
+        "甜文",
+        "美强惨",
+        "先婚后爱"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "架空历史",
+        "仙侠",
+        "强强",
+        "仙侠修真",
+        "甜文",
+        "美强惨",
+        "先婚后爱"
+      ],
+      "score": 98781864,
+      "score_display": "98.8M",
+      "abstract": "应雪行本该死在那个雨夜。 他曾经也是众星捧月的天之骄子，家族用无数金宝珠玉养出来的矜贵少君。一朝家族覆灭，跌进泥泞，成了仙盟人人厌弃的万人嫌。 师父满眼失望；同门朋友嘲讽孤立； 世人骂他处处与天命之子作对，活该众叛亲离。 无论他如何努力，都无人信他，更无人爱他。 看来世人骂对了，如今他果真落得个叛出师门、群仙围剿的下场。 面对群情激奋的仙盟众人，应雪行已经厌烦透顶，一句话也懒得多说。 他冷冷一笑，宁死也不肯被活捉回去受万人唾骂。 于是他向后倒去，坠入万丈深渊。 - 再度醒来，他什么也不记得了。 重伤难愈，记忆全无，神魂虚弱，一个陌生男人半搂着他，正亲自给他喂药。 他浑然不知道这男人是自己曾经的",
+      "status": "连载中",
+      "word_count": "9901",
+      "update_time": "2026-09-22 20:03:33",
+      "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/59/58536/5853524/20260922191543_300_420.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=11030674",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6003124",
+      "rank_change": 4,
+      "history_days": 9
+    },
+    {
+      "rank": 77,
       "book_id": "10578253",
       "book_name": "从前，从前遥远",
       "author": "帘十里",
@@ -3382,11 +3337,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/16/15368/1536702/20260919181908_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10578253",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1536702",
-      "rank_change": 0,
-      "history_days": 21
+      "rank_change": 1,
+      "history_days": 22
     },
     {
-      "rank": 79,
+      "rank": 78,
       "book_id": "10912738",
       "book_name": "我在末世囤了一座山",
       "author": "祎庭沫瞳",
@@ -3427,54 +3382,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/3/2988/298773/20260918010803_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10912738",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=298773",
-      "rank_change": 0,
-      "history_days": 2
-    },
-    {
-      "rank": 80,
-      "book_id": "11030674",
-      "book_name": "失忆的万人嫌被反派骗成妻子了",
-      "author": "岁暮风雪",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "架空历史",
-      "theme": "仙侠",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "架空历史",
-        "仙侠",
-        "强强",
-        "仙侠修真",
-        "甜文",
-        "美强惨",
-        "先婚后爱"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "架空历史",
-        "仙侠",
-        "强强",
-        "仙侠修真",
-        "甜文",
-        "美强惨",
-        "先婚后爱"
-      ],
-      "score": 96751592,
-      "score_display": "96.8M",
-      "abstract": "应雪行本该死在那个雨夜。 他曾经也是众星捧月的天之骄子，家族用无数金宝珠玉养出来的矜贵少君。一朝家族覆灭，跌进泥泞，成了仙盟人人厌弃的万人嫌。 师父满眼失望；同门朋友嘲讽孤立； 世人骂他处处与天命之子作对，活该众叛亲离。 无论他如何努力，都无人信他，更无人爱他。 看来世人骂对了，如今他果真落得个叛出师门、群仙围剿的下场。 面对群情激奋的仙盟众人，应雪行已经厌烦透顶，一句话也懒得多说。 他冷冷一笑，宁死也不肯被活捉回去受万人唾骂。 于是他向后倒去，坠入万丈深渊。 - 再度醒来，他什么也不记得了。 重伤难愈，记忆全无，神魂虚弱，一个陌生男人半搂着他，正亲自给他喂药。 他浑然不知道这男人是自己曾经的",
-      "status": "连载中",
-      "word_count": "9901",
-      "update_time": "2026-09-22 20:03:33",
-      "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/59/58536/5853524/20260922191543_300_420.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=11030674",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6003124",
       "rank_change": 1,
-      "history_days": 8
+      "history_days": 3
     },
     {
-      "rank": 81,
+      "rank": 79,
       "book_id": "5857260",
       "book_name": "住在顶A别墅里的书呆子",
       "author": "喻狸",
@@ -3515,11 +3427,11 @@
       "thumb_url": "https://s1.locimg.com/2026/09/23/f785a2c5f65d2.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5857260",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3127985",
-      "rank_change": -1,
-      "history_days": 11
+      "rank_change": 2,
+      "history_days": 12
     },
     {
-      "rank": 82,
+      "rank": 80,
       "book_id": "10600163",
       "book_name": "自称我未来老公的可疑人士，现在蹲在派出所门口",
       "author": "古墨墨",
@@ -3560,11 +3472,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/11/10593/1059279/20261001162230_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10600163",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1059279",
-      "rank_change": 5,
-      "history_days": 15
+      "rank_change": 2,
+      "history_days": 16
     },
     {
-      "rank": 83,
+      "rank": 81,
       "book_id": "9750544",
       "book_name": "心机攻又在使坏",
       "author": "八十六笔",
@@ -3605,11 +3517,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/40/39499/3949868/20261004152802_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9750544",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3949868",
-      "rank_change": -1,
-      "history_days": 21
+      "rank_change": 2,
+      "history_days": 22
     },
     {
-      "rank": 84,
+      "rank": 82,
       "book_id": "11070911",
       "book_name": "所有人都认为我野心勃勃",
       "author": "飞奔的橘子",
@@ -3650,11 +3562,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11070911&coverid=31&ver=d16ad6932365bb47638d327d73a2ea5b",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11070911",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2316620",
-      "rank_change": 1,
-      "history_days": 10
+      "rank_change": 2,
+      "history_days": 11
     },
     {
-      "rank": 85,
+      "rank": 83,
       "book_id": "11009831",
       "book_name": "被外星饲主饲养了",
       "author": "东吴一点红",
@@ -3689,11 +3601,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/9/8533/853252/20260903140237_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11009831",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=853252",
-      "rank_change": -2,
-      "history_days": 27
+      "rank_change": 2,
+      "history_days": 28
     },
     {
-      "rank": 86,
+      "rank": 84,
       "book_id": "9399675",
       "book_name": "人！来看小狗！人！来看小狗！人！来看小狗！",
       "author": "桃子灯",
@@ -3732,11 +3644,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/18/17105/1710458/20250315180657_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9399675",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1710458",
-      "rank_change": -2,
-      "history_days": 24
+      "rank_change": 2,
+      "history_days": 25
     },
     {
-      "rank": 87,
+      "rank": 85,
       "book_id": "8389109",
       "book_name": "香江第一天师[八零]",
       "author": "沐沐猫",
@@ -3771,11 +3683,56 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=8389109&coverid=46&ver=467a8969096c6fe54dedeee3f901b7eb",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8389109",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1072495",
-      "rank_change": -1,
-      "history_days": 22
+      "rank_change": 2,
+      "history_days": 23
     },
     {
-      "rank": 88,
+      "rank": 86,
+      "book_id": "10637890",
+      "book_name": "锦堂藏春",
+      "author": "柠檬九",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "架空历史",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "架空历史",
+        "爱情",
+        "宫廷侯爵",
+        "天作之合",
+        "甜文",
+        "悬疑推理",
+        "女扮男装",
+        "爽文"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "架空历史",
+        "爱情",
+        "宫廷侯爵",
+        "天作之合",
+        "甜文",
+        "悬疑推理",
+        "女扮男装",
+        "爽文"
+      ],
+      "score": 87912784,
+      "score_display": "87.9M",
+      "abstract": "三月春暖，开封府来了个叫木锦堂的小文吏。 人生得白净秀美，说话也好听，一举成了附近大娘最喜欢的小郎君。 没人知道他弯弯的笑眼下，隐藏着三个秘密： 第一， 他是托关系进来的，没通过考试； 第二， 他这身份是假的，他其实是京畿一个小户人家的女儿，叫木锦棠； 第三， 她兄长失踪了，她想查兄长失踪前最后接触的饷银失窃案。 为此她一直小心隐藏，尤其是在同住一屋的同僚赵云齐面前。 却不知道为人冷面毒舌，还貌似看她不顺眼的赵云齐，也有三个秘密： 第一， 他是托关系进来的，没通过考试； 第二， 他这身份是假的，他其实是当今圣上外甥，长公主之子，小侯爷齐云昭。 第三， 他奉了当今密令，暗查年前已经盖棺定论的饷银",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 18:08:08",
+      "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/24/23531/2353022/20261011213941_300_420.jpeg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10637890",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2353022",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 87,
       "book_id": "10963912",
       "book_name": "由通房到贵妃娘娘的日常",
       "author": "南方早茶",
@@ -3814,11 +3771,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10963912&coverid=222&ver=bc7b8e6cdaaca3b90fb9263576ca199f",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10963912",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4568174",
-      "rank_change": 10,
-      "history_days": 6
+      "rank_change": 1,
+      "history_days": 7
     },
     {
-      "rank": 89,
+      "rank": 88,
       "book_id": "9544253",
       "book_name": "在商检局当临时工的日子[八零]",
       "author": "大江流",
@@ -3856,10 +3813,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9544253",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1012686",
       "rank_change": 1,
-      "history_days": 8
+      "history_days": 9
     },
     {
-      "rank": 90,
+      "rank": 89,
       "book_id": "10998176",
       "book_name": "不再认反派为哥哥后",
       "author": "一束狸",
@@ -3900,11 +3857,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/76/75688/7568709/20260925134012_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10998176",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7568709",
-      "rank_change": 2,
-      "history_days": 6
+      "rank_change": 1,
+      "history_days": 7
     },
     {
-      "rank": 91,
+      "rank": 90,
       "book_id": "4519254",
       "book_name": "暗恋",
       "author": "尼古拉斯糖葫芦",
@@ -3943,11 +3900,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=4519254&coverid=150&ver=2295e601254107477b207cacdd014c39",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4519254",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2476088",
-      "rank_change": -3,
-      "history_days": 2
+      "rank_change": 1,
+      "history_days": 3
     },
     {
-      "rank": 92,
+      "rank": 91,
       "book_id": "8195575",
       "book_name": "超限机今夜登录",
       "author": "林风早",
@@ -3986,11 +3943,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/43/42987/4298625/20261004204549_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8195575",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4298625",
-      "rank_change": -1,
-      "history_days": 5
+      "rank_change": 1,
+      "history_days": 6
     },
     {
-      "rank": 93,
+      "rank": 92,
       "book_id": "9943719",
       "book_name": "发现对象是人外的那一天",
       "author": "渡青",
@@ -4029,11 +3986,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/52/51560/5155990/20260710230750_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9943719",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5155990",
-      "rank_change": -4,
-      "history_days": 22
+      "rank_change": 1,
+      "history_days": 23
     },
     {
-      "rank": 94,
+      "rank": 93,
       "book_id": "10310633",
       "book_name": "死前挂了前男友的号",
       "author": "脉脉春风",
@@ -4072,11 +4029,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/60/59884/5988326/20260528215424_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10310633",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5988326",
-      "rank_change": 2,
-      "history_days": 21
+      "rank_change": 1,
+      "history_days": 22
     },
     {
-      "rank": 95,
+      "rank": 94,
       "book_id": "7523841",
       "book_name": "娇气包今天也想离婚[古穿今]",
       "author": "枕岸",
@@ -4117,11 +4074,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/36/35460/3545917/20260917150848_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7523841",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3545917",
-      "rank_change": -2,
-      "history_days": 21
+      "rank_change": 1,
+      "history_days": 22
     },
     {
-      "rank": 96,
+      "rank": 95,
       "book_id": "6773276",
       "book_name": "山神的农家乐",
       "author": "兔耳齐",
@@ -4158,11 +4115,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=6773276&coverid=216&ver=b9c327db484b4505c179c7fed948f970",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6773276",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2222521",
-      "rank_change": -1,
-      "history_days": 12
+      "rank_change": 1,
+      "history_days": 13
     },
     {
-      "rank": 97,
+      "rank": 96,
       "book_id": "8545890",
       "book_name": "分手后清冷美人他想开了",
       "author": "折吱",
@@ -4203,11 +4160,11 @@
       "thumb_url": "https://img13.360buyimg.com/ddimg/jfs/t1/519568/1/11119/164790/6aacabd7Fc9e39156/0015303438f7d0ed.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8545890",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2705751",
-      "rank_change": -3,
-      "history_days": 28
+      "rank_change": 1,
+      "history_days": 29
     },
     {
-      "rank": 98,
+      "rank": 97,
       "book_id": "6336094",
       "book_name": "重生后火葬场了",
       "author": "婻书",
@@ -4246,11 +4203,11 @@
       "thumb_url": "https://i1-static.jjwxc.net/tmp/backend/authorspace/s1/14/13395/1339494/20260824175734_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6336094",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1339494",
-      "rank_change": -1,
-      "history_days": 8
+      "rank_change": 1,
+      "history_days": 9
     },
     {
-      "rank": 99,
+      "rank": 98,
       "book_id": "9314579",
       "book_name": "春水细腰",
       "author": "旅者的斗篷",
@@ -4289,56 +4246,54 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/40/39566/3956567/20250619165704_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9314579",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3956567",
-      "rank_change": 0,
-      "history_days": 23
+      "rank_change": 1,
+      "history_days": 24
     },
     {
-      "rank": 100,
-      "book_id": "10131257",
-      "book_name": "从菜市场开始",
-      "author": "麦田雪人",
+      "rank": 99,
+      "book_id": "10691489",
+      "book_name": "反派少奶奶[香江]",
+      "author": "四单铺",
       "channel": "言情",
       "nature": "原创",
       "genre": "言情",
       "era": "近代现代",
-      "theme": "剧情",
+      "theme": "爱情",
       "primary_tag": "言情",
       "secondary_tags": [
         "近代现代",
-        "剧情",
-        "幻想空间",
-        "励志",
-        "成长",
-        "治愈",
-        "救赎",
-        "群像"
+        "爱情",
+        "情有独钟",
+        "重生",
+        "爽文",
+        "年代文",
+        "港风"
       ],
       "all_tags": [
         "原创",
         "言情",
         "近代现代",
-        "剧情",
-        "幻想空间",
-        "励志",
-        "成长",
-        "治愈",
-        "救赎",
-        "群像"
+        "爱情",
+        "情有独钟",
+        "重生",
+        "爽文",
+        "年代文",
+        "港风"
       ],
-      "score": 77575304,
-      "score_display": "77.6M",
-      "abstract": "杜朗是个四岁的小朋友，和妈妈住在菜市场附近。 白天，妈妈去卖猪肉，杜朗跟着房东奶奶玩。 她被妈妈养得很壮，很快活……只是有点穷。 有一天，杜朗钻进了衣柜里。 衣柜深处竟然有条深深的通道。 她爬啊爬啊，爬到了一个大大的漂亮花园里。 一个穿着小西装的男孩子被吓了一跳。 他们对视了…… 在那一天，杜朗吃到了渴望的冰淇淋。 而小男孩楚慕头一次看到总是欺负自己的堂弟被打得嗷嗷哭。 他们约定了对此保密。 但小孩子是很难保守秘密的。 在一个雨夜里，终日忧伤的贵妇人跟着楚慕，钻进了花园里的那个小小通道。 然后，她便从自己那个冷漠、浮夸的资本世界，走到了喧嚣吵闹的菜市场中…… 两个小朋友、两个妈妈和一个老太太的",
+      "score": 77696912,
+      "score_display": "77.7M",
+      "abstract": "出生于港府落魄豪门的迟爱茗，为家族嫁给祁家二房病痨三少爷。 待怀孕后，再正式领证结婚。 可惜她过门才半年，三少爷就病死了。 迟爱茗被污蔑成扫把星，受尽苛责欺辱。 她偶然发现二少奶奶借种生子的秘密，才转身，就被想要保住唯一男孙的公婆及二少爷夫妇联手谋害。 再睁眼，迟爱茗发现自己重生了。 此时距离三少爷去世还有两个月。 看着祁家一个个虚伪丑陋的嘴脸， 这一世，她要换种活法。 换成反派的活法。 借种生子谁不会？ 找谁借？当然是二房既怕又恨的大房大少爷。 三少爷离世当天，迟爱茗宣布怀孕。 年底，她诞下龙凤胎，成为祁家大功臣。 * 祁令显是祁家长孙，他亲情淡漠，手腕铁血。 受父母婚姻不幸影响，是个坚定的",
       "status": "连载中",
-      "word_count": "3241",
-      "update_time": "2026-09-08 10:08:00",
-      "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=NDA5MTk4NQ==&imageName=20260903161234.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10131257",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4091985",
-      "rank_change": 3,
-      "history_days": 21
+      "word_count": "0",
+      "update_time": "2026-10-08 12:00:00",
+      "thumb_url": "https://i0-static.jjwxc.net/authorimagespace.php?path=MjA1Mjg4Ng==&imageName=20260927202012.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10691489",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2052886",
+      "rank_change": "new",
+      "history_days": 1
     },
     {
-      "rank": 101,
+      "rank": 100,
       "book_id": "9284171",
       "book_name": "在无限怪物医院当护士",
       "author": "紫矜",
@@ -4378,10 +4333,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9284171",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=263981",
       "rank_change": 1,
-      "history_days": 12
+      "history_days": 13
     },
     {
-      "rank": 102,
+      "rank": 101,
       "book_id": "9275429",
       "book_name": "假千金认错妈咪后",
       "author": "执晚星",
@@ -4422,11 +4377,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/56/55938/5593703/20261013043707_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9275429",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5593703",
-      "rank_change": 2,
-      "history_days": 18
+      "rank_change": 1,
+      "history_days": 19
     },
     {
-      "rank": 103,
+      "rank": 102,
       "book_id": "9129383",
       "book_name": "他又被主角攻受盯上了[快穿]",
       "author": "封不浪",
@@ -4461,11 +4416,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/45/44162/4416166/20260509041513_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9129383",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4416166",
-      "rank_change": -3,
-      "history_days": 28
+      "rank_change": 1,
+      "history_days": 29
     },
     {
-      "rank": 104,
+      "rank": 103,
       "book_id": "10854994",
       "book_name": "虫族之平民攻上位指南",
       "author": "茶茶鹿鹿",
@@ -4498,11 +4453,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/71/70547/7054621/20260624205043_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10854994",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7054621",
-      "rank_change": -3,
-      "history_days": 11
+      "rank_change": 1,
+      "history_days": 12
     },
     {
-      "rank": 105,
+      "rank": 104,
       "book_id": "10725260",
       "book_name": "我家幼崽不可能是凶兽！",
       "author": "春江阔",
@@ -4543,11 +4498,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/27/26169/2616832/20260925234135_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10725260",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2616832",
-      "rank_change": 0,
-      "history_days": 11
+      "rank_change": 1,
+      "history_days": 12
     },
     {
-      "rank": 106,
+      "rank": 105,
       "book_id": "5175245",
       "book_name": "如何使用病态丈夫指南",
       "author": "缠枝葡萄",
@@ -4584,11 +4539,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=MjE3MDU1MQ==&imageName=20260917115719.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5175245",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2170551",
-      "rank_change": 0,
-      "history_days": 21
+      "rank_change": 1,
+      "history_days": 22
     },
     {
-      "rank": 107,
+      "rank": 106,
       "book_id": "9513352",
       "book_name": "恐同直男沦为顶级炉鼎",
       "author": "凌波玉",
@@ -4626,10 +4581,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9513352",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2480718",
       "rank_change": 1,
-      "history_days": 12
+      "history_days": 13
     },
     {
-      "rank": 108,
+      "rank": 107,
       "book_id": "10483370",
       "book_name": "喘息沦陷",
       "author": "梨知雪",
@@ -4666,11 +4621,11 @@
       "thumb_url": "https://img13.360buyimg.com/ddimg/jfs/t1/541537/21/2521/74027/6ac50a0fF84ceddeb/00153034380d0dc9.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10483370",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6485560",
-      "rank_change": -1,
-      "history_days": 16
+      "rank_change": 1,
+      "history_days": 17
     },
     {
-      "rank": 109,
+      "rank": 108,
       "book_id": "8495482",
       "book_name": "叛逆失控",
       "author": "南胡唐",
@@ -4709,11 +4664,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/30/29931/2993051/20260925004749_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8495482",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2993051",
-      "rank_change": 6,
-      "history_days": 15
+      "rank_change": 1,
+      "history_days": 16
     },
     {
-      "rank": 110,
+      "rank": 109,
       "book_id": "10896647",
       "book_name": "宝宝猜猜哪个是我呀？",
       "author": "明月当知",
@@ -4752,11 +4707,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/63/62658/6265747/20260727174310_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10896647",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6265747",
-      "rank_change": 0,
-      "history_days": 7
+      "rank_change": 1,
+      "history_days": 8
     },
     {
-      "rank": 111,
+      "rank": 110,
       "book_id": "9627195",
       "book_name": "直男剑修会爱老婆吗？",
       "author": "端瑜",
@@ -4795,11 +4750,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/39/38784/3878315/20251013211736_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9627195",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3878315",
-      "rank_change": -2,
-      "history_days": 5
+      "rank_change": 1,
+      "history_days": 6
     },
     {
-      "rank": 112,
+      "rank": 111,
       "book_id": "10098776",
       "book_name": "穿厂妹后连夜提桶跑路",
       "author": "雪耶",
@@ -4841,10 +4796,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10098776",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=713416",
       "rank_change": 1,
-      "history_days": 15
+      "history_days": 16
     },
     {
-      "rank": 113,
+      "rank": 112,
       "book_id": "7384556",
       "book_name": "我夫君竟是反派魔神",
       "author": "紫青悠",
@@ -4885,54 +4840,11 @@
       "thumb_url": "https://i.imgs.ovh/2026/09/24/c500bba36aa33723cab02aeef3d0b888.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7384556",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=932040",
-      "rank_change": -2,
-      "history_days": 29
-    },
-    {
-      "rank": 114,
-      "book_id": "9679514",
-      "book_name": "老实人娶到疯美妻子后",
-      "author": "摇叁",
-      "channel": "百合",
-      "nature": "原创",
-      "genre": "百合",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "百合",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "天作之合",
-        "甜文",
-        "轻松",
-        "高岭之花",
-        "先婚后爱"
-      ],
-      "all_tags": [
-        "原创",
-        "百合",
-        "近代现代",
-        "爱情",
-        "天作之合",
-        "甜文",
-        "轻松",
-        "高岭之花",
-        "先婚后爱"
-      ],
-      "score": 66008556,
-      "score_display": "66.0M",
-      "abstract": "预收：《被渴肤症清冷O上瘾后》专栏可见，文案请下拉~ 迟钝老实天然呆vs占有欲超强阴湿疯批美人 江潺从小老实本分。 如今她有一份清闲体面的工作，有自己的房子，等着与未婚妻办完喜宴，过上安稳生活，小时候伴随的倒霉体质似乎已经消失。 然而，她被绿了。 未婚妻与小三郊外出游时太兴奋而遭遇车祸，撞了一辆百万级豪车。 人还失忆了，死活不承认认识她。 已经将请柬发出去的江潺天塌了。 但她是老实人，认为一切还可以挽回。 赶到医院时，才得知被撞的苦主身份尊贵异常，是洛氏集团那位传闻中脾气躁郁、手段狠戾，绝对不能招惹的掌权人。 赔偿款只怕是天价。 她先掩面哭倒病床前，声音闷得又细又软，渴望唤醒未婚妻的一点良知。",
-      "status": "连载中",
-      "word_count": "3326",
-      "update_time": "2026-09-08 15:30:00",
-      "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTk3MTQ2NA==&imageName=20260913160129.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9679514",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1971464",
-      "rank_change": 0,
+      "rank_change": 1,
       "history_days": 30
     },
     {
-      "rank": 115,
+      "rank": 113,
       "book_id": "5859543",
       "book_name": "玩家把NPC好感刷爆很合理吧",
       "author": "王辰予弈",
@@ -4973,11 +4885,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=NDY1ODI4&imageName=20260922222642.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5859543",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=465828",
-      "rank_change": -3,
-      "history_days": 16
+      "rank_change": 2,
+      "history_days": 17
     },
     {
-      "rank": 116,
+      "rank": 114,
       "book_id": "6539633",
       "book_name": "恶毒宝宝，在线鸡爹[快穿]",
       "author": "日落黄ovo",
@@ -5010,11 +4922,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MzM3MDExMw==&imageName=20260905114718.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6539633",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3370113",
-      "rank_change": 0,
-      "history_days": 7
+      "rank_change": 2,
+      "history_days": 8
     },
     {
-      "rank": 117,
+      "rank": 115,
       "book_id": "10569158",
       "book_name": "修车攻",
       "author": "和月折梨",
@@ -5055,11 +4967,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/55/54764/5476317/20260228220516_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10569158",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5476317",
-      "rank_change": 0,
-      "history_days": 16
+      "rank_change": 2,
+      "history_days": 17
     },
     {
-      "rank": 118,
+      "rank": 116,
       "book_id": "9577388",
       "book_name": "替哥哥娶了清冷嫂嫂",
       "author": "第五湛",
@@ -5100,11 +5012,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9577388&coverid=212&ver=5f03caa4e123951f7a563f73f1e014cf",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9577388",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2503092",
-      "rank_change": 1,
-      "history_days": 22
+      "rank_change": 2,
+      "history_days": 23
     },
     {
-      "rank": 119,
+      "rank": 117,
       "book_id": "9639755",
       "book_name": "七零之杀手与王爷",
       "author": "松鼠醉鱼",
@@ -5145,11 +5057,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9639755&coverid=212&ver=32b3ee908c068629d15e3a10600411c2",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9639755",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3539374",
-      "rank_change": -1,
-      "history_days": 18
+      "rank_change": 2,
+      "history_days": 19
     },
     {
-      "rank": 120,
+      "rank": 118,
       "book_id": "10749101",
       "book_name": "禁止觊觎圣父白月光［快穿］",
       "author": "吃一口大橙子",
@@ -5190,11 +5102,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/75/74866/7486532/20261015202428_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10749101",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7486532",
-      "rank_change": 0,
-      "history_days": 11
+      "rank_change": 2,
+      "history_days": 12
     },
     {
-      "rank": 121,
+      "rank": 119,
       "book_id": "8426234",
       "book_name": "画里春宵共君梦",
       "author": "夕阶酒",
@@ -5231,11 +5143,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/34/33590/3358977/20261011154110_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8426234",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3358977",
-      "rank_change": 4,
-      "history_days": 10
+      "rank_change": 2,
+      "history_days": 11
     },
     {
-      "rank": 122,
+      "rank": 120,
       "book_id": "7050231",
       "book_name": "勇者被魔王催眠后",
       "author": "落瀑",
@@ -5274,11 +5186,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/25/24922/2492114/20260730113546_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7050231",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2492114",
-      "rank_change": -1,
-      "history_days": 4
+      "rank_change": 2,
+      "history_days": 5
     },
     {
-      "rank": 123,
+      "rank": 121,
       "book_id": "6265515",
       "book_name": "被退婚后给病弱王爷冲喜",
       "author": "脆桃卡里",
@@ -5315,11 +5227,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/27/26369/2636874/20260925134658_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6265515",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2636874",
-      "rank_change": 0,
-      "history_days": 16
+      "rank_change": 2,
+      "history_days": 17
     },
     {
-      "rank": 124,
+      "rank": 122,
       "book_id": "10342166",
       "book_name": "龙傲天为我杀道证妻",
       "author": "月山错",
@@ -5360,11 +5272,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/63/62941/6294061/20261008132923_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10342166",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6294061",
-      "rank_change": 0,
-      "history_days": 6
+      "rank_change": 2,
+      "history_days": 7
     },
     {
-      "rank": 125,
+      "rank": 123,
       "book_id": "4362733",
       "book_name": "你是我的不治之症",
       "author": "明月霜灯",
@@ -5403,54 +5315,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/19/18713/1871253/20260901082546_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4362733",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1871253",
-      "rank_change": -3,
-      "history_days": 10
+      "rank_change": 2,
+      "history_days": 11
     },
     {
-      "rank": 126,
-      "book_id": "5791687",
-      "book_name": "一件小事",
-      "author": "禾映阶",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "情有独钟",
-        "业界精英",
-        "甜文",
-        "轻松"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "近代现代",
-        "爱情",
-        "都市",
-        "情有独钟",
-        "业界精英",
-        "甜文",
-        "轻松"
-      ],
-      "score": 55814056,
-      "score_display": "55.8M",
-      "abstract": "☆文案：文知和是闺蜜文嫣的亲哥，为表尊重，陈以杉也跟着喊他一声哥。 她南下读研，借住在文知和家，他受文嫣所托照顾自己。 两人处在同一屋檐下当了三年兄妹，兄友妹恭，相安无事。 直到某天晚上，陈以杉和这位哥哥躺在了同一张床上。 - *呆萌妹VS腹黑哥 *无血缘关系 *文案截图于2026.7.22",
-      "status": "连载中",
-      "word_count": "3187",
-      "update_time": "2026-09-08 20:00:00",
-      "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/19/18514/1851337/20260722210111_300_420.jpeg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=5791687",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1851337",
-      "rank_change": 0,
-      "history_days": 30
-    },
-    {
-      "rank": 127,
+      "rank": 124,
       "book_id": "7894394",
       "book_name": "科研守则第一条",
       "author": "舒月清",
@@ -5487,11 +5356,11 @@
       "thumb_url": "https://img13.360buyimg.com/ddimg/jfs/t1/354553/19/6870/36510/690b7072F568cbb11/f8ab645e2482422e.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7894394",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4340030",
-      "rank_change": 0,
-      "history_days": 13
+      "rank_change": 3,
+      "history_days": 14
     },
     {
-      "rank": 128,
+      "rank": 125,
       "book_id": "8435388",
       "book_name": "夏日热风",
       "author": "若诗安轩",
@@ -5528,11 +5397,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/25/24656/2465550/20231017193133_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8435388",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2465550",
-      "rank_change": 0,
-      "history_days": 19
+      "rank_change": 3,
+      "history_days": 20
     },
     {
-      "rank": 129,
+      "rank": 126,
       "book_id": "9997339",
       "book_name": "南城夜色撩人",
       "author": "墨尘清言",
@@ -5566,18 +5435,18 @@
       ],
       "score": 55016868,
       "score_display": "55.0M",
-      "abstract": "1、想要在孟莱邦的南城做翡翠生意，有三样东西绝对不能碰：宜晚岁的货，宜晚岁的枪，宜晚岁的女人。 女人只有一个，叫曲江池。 曲江池是宜晚岁养在眼皮底下三年的翡翠鉴定师，所有人都知道两人的关系远不止上下级，却不知道，外人眼中矜贵清冷的宜会长，私底下对肌肤接触焦渴乃至成瘾 雾露河的流向永不为人改道，但宜家宅邸曾无数次将两个女人的缠绵揉进黑夜，暧昧氤氲，旖旎绽放。 夜晚，曲江池指尖夹着宜晚岁的烟，躺在宜晚岁的床上，曲起长腿，足尖挑起宜晚岁的下巴，柔媚入骨，眼角含情。 宜晚岁伸手握住她的脚踝，拇指压在她踝骨那颗痣上，慢慢摩挲了一下，眸光黑压压地盯着她：“没大没小。” 曲江池轻笑，眉眼间风情多姿：“你教的",
+      "abstract": "绿茶年下狐狸精0.7X腹黑年上美女蛇0.3 1、想要在孟莱邦的南城做翡翠生意，有三样东西绝对不能碰：宜晚岁的货，宜晚岁的枪，宜晚岁的女人。 女人只有一个，叫曲江池。 曲江池是宜晚岁养在眼皮底下三年的翡翠鉴定师，所有人都知道两人的关系远不止上下级，却不知道，外人眼中矜贵清冷的宜会长，私底下对肌肤接触焦渴乃至成瘾 雾露河的流向永不为人改道，但宜家宅邸曾无数次将两个女人的缠绵揉进黑夜，暧昧氤氲，旖旎绽放。 夜晚，曲江池指尖夹着宜晚岁的烟，躺在宜晚岁的床上，曲起长腿，足尖挑起宜晚岁的下巴，柔媚入骨，眼角含情。 宜晚岁伸手握住她的脚踝，拇指压在她踝骨那颗痣上，慢慢摩挲了一下，眸光黑压压地盯着她：“没大没",
       "status": "连载中",
       "word_count": "2682",
       "update_time": "2026-09-10 21:00:00",
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/30/29485/2948424/20261014220555_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9997339",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2948424",
-      "rank_change": 1,
-      "history_days": 7
+      "rank_change": 3,
+      "history_days": 8
     },
     {
-      "rank": 130,
+      "rank": 127,
       "book_id": "10492043",
       "book_name": "向导为什么有毒啊！",
       "author": "风枫织",
@@ -5618,11 +5487,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/66/65648/6564714/20260708160059_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10492043",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6564714",
-      "rank_change": 1,
-      "history_days": 5
+      "rank_change": 3,
+      "history_days": 6
     },
     {
-      "rank": 131,
+      "rank": 128,
       "book_id": "3920472",
       "book_name": "床笫宿敌",
       "author": "绾酒",
@@ -5663,11 +5532,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/22/21039/2103882/20260924002718_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3920472",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2103882",
-      "rank_change": -2,
-      "history_days": 5
+      "rank_change": 3,
+      "history_days": 6
     },
     {
-      "rank": 132,
+      "rank": 129,
       "book_id": "10597032",
       "book_name": "一个孩子四个爹",
       "author": "三风吟",
@@ -5706,11 +5575,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/66/65422/6542187/20260523205250_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10597032",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6542187",
-      "rank_change": 1,
-      "history_days": 20
+      "rank_change": 3,
+      "history_days": 21
     },
     {
-      "rank": 133,
+      "rank": 130,
       "book_id": "9624250",
       "book_name": "糙汉直男被隔壁黑魔法少年告白了",
       "author": "上苍",
@@ -5751,11 +5620,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/authorimagespace.php?path=MTc2MTcxOA==&imageName=20260820220021.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9624250",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1761718",
-      "rank_change": 2,
-      "history_days": 21
+      "rank_change": 3,
+      "history_days": 22
     },
     {
-      "rank": 134,
+      "rank": 131,
       "book_id": "8331182",
       "book_name": "五个男主争着要和我结婚",
       "author": "光炚炚",
@@ -5796,11 +5665,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/25/24653/2465272/20260703115808_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8331182",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2465272",
-      "rank_change": -2,
-      "history_days": 11
+      "rank_change": 3,
+      "history_days": 12
     },
     {
-      "rank": 135,
+      "rank": 132,
       "book_id": "4532218",
       "book_name": "重生在驸马篡位前",
       "author": "南方赤火",
@@ -5841,11 +5710,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/authorimagespace.php?path=MTYzMzY5NQ==&imageName=20260429104325.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4532218",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1633695",
-      "rank_change": -1,
-      "history_days": 12
+      "rank_change": 3,
+      "history_days": 13
     },
     {
-      "rank": 136,
+      "rank": 133,
       "book_id": "10390036",
       "book_name": "变成幼崽后被宿敌喂养",
       "author": "再睡拍死",
@@ -5886,11 +5755,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/70/69851/6985079/20260618222020_300_420.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10390036",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6985079",
-      "rank_change": 1,
-      "history_days": 13
+      "rank_change": 3,
+      "history_days": 14
     },
     {
-      "rank": 137,
+      "rank": 134,
       "book_id": "10350855",
       "book_name": "弄臣",
       "author": "羞花掠影",
@@ -5931,11 +5800,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/55/54603/5460266/20251130154245_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10350855",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5460266",
-      "rank_change": -1,
-      "history_days": 10
+      "rank_change": 3,
+      "history_days": 11
     },
     {
-      "rank": 138,
+      "rank": 135,
       "book_id": "10410710",
       "book_name": "反派扮演中【直播】",
       "author": "昼眠梦君",
@@ -5976,11 +5845,11 @@
       "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/28/27018/2701708/20260922022511_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10410710",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2701708",
-      "rank_change": 0,
-      "history_days": 26
+      "rank_change": 3,
+      "history_days": 27
     },
     {
-      "rank": 139,
+      "rank": 136,
       "book_id": "10497187",
       "book_name": "离岛高烧",
       "author": "齐娜eris",
@@ -6017,11 +5886,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/27/26507/2650645/20260917180702_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10497187",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2650645",
-      "rank_change": 10,
-      "history_days": 12
+      "rank_change": 3,
+      "history_days": 13
     },
     {
-      "rank": 140,
+      "rank": 137,
       "book_id": "5406831",
       "book_name": "如果不是因为那阵风",
       "author": "胡柚",
@@ -6058,11 +5927,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=5406831&coverid=217&ver=3934eadec658e60c60b3006b3b0e8092",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5406831",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2005213",
-      "rank_change": -1,
-      "history_days": 10
+      "rank_change": 3,
+      "history_days": 11
     },
     {
-      "rank": 141,
+      "rank": 138,
       "book_id": "10357946",
       "book_name": "穿书成了男妈妈",
       "author": "梨枝绵",
@@ -6103,11 +5972,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/68/67895/6789412/20261012163950_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10357946",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6789412",
-      "rank_change": 1,
-      "history_days": 11
+      "rank_change": 3,
+      "history_days": 12
     },
     {
-      "rank": 142,
+      "rank": 139,
       "book_id": "11076566",
       "book_name": "失格偶像的恋爱图鉴",
       "author": "黑夜长明",
@@ -6148,11 +6017,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11076566&coverid=116&ver=8d6353c04bdd93566125bb5d950a0109",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11076566",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2294643",
-      "rank_change": -2,
-      "history_days": 3
+      "rank_change": 3,
+      "history_days": 4
     },
     {
-      "rank": 143,
+      "rank": 140,
       "book_id": "7955300",
       "book_name": "今夜别走",
       "author": "怀昭",
@@ -6193,11 +6062,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MTE2MzUxNA==&imageName=20260920152902.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7955300",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1163514",
-      "rank_change": 7,
-      "history_days": 18
+      "rank_change": 3,
+      "history_days": 19
     },
     {
-      "rank": 144,
+      "rank": 141,
       "book_id": "8095950",
       "book_name": "咪会回档，人还不会后空翻吗",
       "author": "夕朝南歌",
@@ -6234,11 +6103,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=Mjk5MzAwMQ==&imageName=20260929011106.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8095950",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2993001",
-      "rank_change": -3,
-      "history_days": 2
+      "rank_change": 3,
+      "history_days": 3
     },
     {
-      "rank": 145,
+      "rank": 142,
       "book_id": "7272090",
       "book_name": "娇妻受的老公失忆后",
       "author": "谈浔",
@@ -6279,11 +6148,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/47/46555/4655457/20260609173115_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7272090",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4655457",
-      "rank_change": -2,
-      "history_days": 16
+      "rank_change": 3,
+      "history_days": 17
     },
     {
-      "rank": 146,
+      "rank": 143,
       "book_id": "10030561",
       "book_name": "火葬场女主又在撩我",
       "author": "谢寻欢",
@@ -6320,11 +6189,52 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/52/51606/5160575/20251014225028_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10030561",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5160575",
-      "rank_change": 2,
-      "history_days": 8
+      "rank_change": 3,
+      "history_days": 9
     },
     {
-      "rank": 147,
+      "rank": 144,
+      "book_id": "8482084",
+      "book_name": "给四个女主当对照组[七零]",
+      "author": "笔名叫这个",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "种田文",
+        "女配",
+        "穿书",
+        "年代文"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "近代现代",
+        "爱情",
+        "种田文",
+        "女配",
+        "穿书",
+        "年代文"
+      ],
+      "score": 47088932,
+      "score_display": "47.1M",
+      "abstract": "考公刚上岸的曲南风穿越到了缺衣少食的七十年代 原身刚考上工作，工作就被未来嫂子伙同亲妈抢走了，本人要么相亲结婚，要么下乡当知青 曲南风选择了后者，不过在下乡之前，她要抢她工作的那些人付出代价 成功大闹了一场，曲南风带着家里补偿的两百块钱踏上了下乡的火车，后知后觉地发现自己是一本年代文中的对照组女配 女配跟男主一起下乡，仗着青梅的身份缠着男主，破坏男主和女主的感情，最后身败名裂，正式退场 并不想当照顾男主的保姆青梅，曲南风恨不能离男主八丈远，安心过好自己下乡后的小日子 然后她发现自己不但是天降文中死缠烂打的青梅 还是青梅竹马文中试图插足男女主感情的天降 后妈文中嫌贫爱富的亲妈 破镜重圆文中虐待孩",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-05 00:00:00",
+      "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MTAxMTU5OA==&imageName=20260924012432.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8482084",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1011598",
+      "rank_change": 5,
+      "history_days": 4
+    },
+    {
+      "rank": 145,
       "book_id": "9322745",
       "book_name": "错把豪门大佬当替身那一年",
       "author": "香菜在在",
@@ -6365,11 +6275,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/62/61761/6176082/20260114210724_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9322745",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6176082",
-      "rank_change": -3,
-      "history_days": 10
+      "rank_change": 2,
+      "history_days": 11
     },
     {
-      "rank": 148,
+      "rank": 146,
       "book_id": "8002593",
       "book_name": "残疾的丈夫",
       "author": "十万橙",
@@ -6400,52 +6310,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/46/45462/4546188/20260925210324_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8002593",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4546188",
-      "rank_change": -3,
-      "history_days": 12
+      "rank_change": 2,
+      "history_days": 13
     },
     {
-      "rank": 149,
-      "book_id": "8482084",
-      "book_name": "给四个女主当对照组[七零]",
-      "author": "笔名叫这个",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "种田文",
-        "女配",
-        "穿书",
-        "年代文"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "近代现代",
-        "爱情",
-        "种田文",
-        "女配",
-        "穿书",
-        "年代文"
-      ],
-      "score": 46648000,
-      "score_display": "46.6M",
-      "abstract": "考公刚上岸的曲南风穿越到了缺衣少食的七十年代 原身刚考上工作，工作就被未来嫂子伙同亲妈抢走了，本人要么相亲结婚，要么下乡当知青 曲南风选择了后者，不过在下乡之前，她要抢她工作的那些人付出代价 成功大闹了一场，曲南风带着家里补偿的两百块钱踏上了下乡的火车，后知后觉地发现自己是一本年代文中的对照组女配 女配跟男主一起下乡，仗着青梅的身份缠着男主，破坏男主和女主的感情，最后身败名裂，正式退场 并不想当照顾男主的保姆青梅，曲南风恨不能离男主八丈远，安心过好自己下乡后的小日子 然后她发现自己不但是天降文中死缠烂打的青梅 还是青梅竹马文中试图插足男女主感情的天降 后妈文中嫌贫爱富的亲妈 破镜重圆文中虐待孩",
-      "status": "连载中",
-      "word_count": "0",
-      "update_time": "2026-10-05 00:00:00",
-      "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MTAxMTU5OA==&imageName=20260924012432.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8482084",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1011598",
-      "rank_change": -3,
-      "history_days": 3
-    },
-    {
-      "rank": 150,
+      "rank": 147,
       "book_id": "10691578",
       "book_name": "我？攻略病娇反派？",
       "author": "涂图画画",
@@ -6486,11 +6355,54 @@
       "thumb_url": "https://i2-static.jjwxc.net/authorimagespace.php?path=MjAwNzYyNA==&imageName=20260708181253.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10691578",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2007624",
-      "rank_change": -3,
-      "history_days": 22
+      "rank_change": 3,
+      "history_days": 23
     },
     {
-      "rank": 151,
+      "rank": 148,
+      "book_id": "10568981",
+      "book_name": "反派死亡倒计时[快穿]",
+      "author": "云山有意",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "爱情",
+        "情有独钟",
+        "虐文",
+        "穿越时空",
+        "快穿",
+        "未来架空"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "爱情",
+        "情有独钟",
+        "虐文",
+        "穿越时空",
+        "快穿",
+        "未来架空"
+      ],
+      "score": 45533272,
+      "score_display": "45.5M",
+      "abstract": "莫名其妙被抓去当了好多年实验体的【奇迹】001挨了不知多少针刀麻药，好不容易求死成功，一睁眼，发现自己穿成了蹦跶作死以折磨别人为乐的反派，又活了。 【奇迹】001：…… 好在他穿来的时机很妙，剧情进展到了后期，黑化主角受差不多报复完了。 那不就代表着他甚至不用走剧情，就能直接去死了？ 【豪门】：禁欲掌权人私底下却“不可人道老变态”攻和他一手栽培起来的黑化扭曲疯子受。 明家掌权人明拾，为人清正，斯文禁欲。只有受才知道，这人清正禁欲的皮囊之下，是怎样一副喜欢折磨弱小的老畜生模样。 前半辈子，他在明拾手下活得像条狗。 直到他羽翼丰满，将那个老变态折磨到求死不能，犹觉不够，最后慢条斯理地将穿肠烂肚的毒",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 15:20:00",
+      "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/497298/33/13972/85219/6a870ab1Fd718e457/0015280380de99d9.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10568981",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4536274",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 149,
       "book_id": "10573254",
       "book_name": "监所人机恋倒计时",
       "author": "礼物袜子",
@@ -6531,11 +6443,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/54/53376/5337568/20260224231726_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10573254",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5337568",
-      "rank_change": 0,
-      "history_days": 9
+      "rank_change": 2,
+      "history_days": 10
     },
     {
-      "rank": 152,
+      "rank": 150,
       "book_id": "7334267",
       "book_name": "反派饲养丧尸指南",
       "author": "雨观春",
@@ -6569,18 +6481,61 @@
       ],
       "score": 44127336,
       "score_display": "44.1M",
-      "abstract": "【咸鱼丧尸X愉悦犯反派，晚十一点更】 姜慕余做了个梦。 梦到她是一本书里的炮灰丧尸，主要作用是咬伤女主，引出女主特殊体质的剧情，再被主角团乱枪打死。 死后尸体还要被拖去做切片研究。 梦醒之后，姜慕余连滚带爬打包行李准备跑路。 结果一朝不慎，被路过的反派大boss当场逮捕。 祝白殷，本书终极反派，向来不顾他人死活，做事全凭自己喜好。 大结局时甚至丧心病狂地研究出能够同时杀死人类和丧尸的空气病毒，最后大笑着带领全世界同归于尽。 是个典型的愉悦犯反派。 某次外出，祝白殷意外发现一只保留人类意识的特殊丧尸，顺手把她抓回实验室圈养了起来，准备观察结束后就着手进行解剖实验。 数月后。 姜慕余看了看将她紧紧",
+      "abstract": "【咸鱼丧尸X愉悦犯反派】 姜慕余做了个梦。 梦到她是一本书里的炮灰丧尸，主要作用是咬伤女主，引出女主特殊体质的剧情，再被主角团乱枪打死。 死后尸体还要被拖去做切片研究。 梦醒之后，姜慕余连滚带爬打包行李准备跑路。 结果一朝不慎，被路过的反派大boss当场逮捕。 祝白殷，本书终极反派，向来不顾他人死活，做事全凭自己喜好。 大结局时甚至丧心病狂地研究出能够同时杀死人类和丧尸的空气病毒，最后大笑着带领全世界同归于尽。 是个典型的愉悦犯反派。 某次外出，他意外发现一只保留人类意识的特殊丧尸，顺手把她抓回实验室圈养了起来，准备观察结束就着手进行解剖实验。 数月后。 姜慕余看了看将她紧紧箍在怀中的阴郁大反",
       "status": "连载中",
       "word_count": "4099",
       "update_time": "2026-09-16 00:00:00",
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/20/19758/1975776/20260919190111_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7334267",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1975776",
-      "rank_change": 0,
-      "history_days": 14
+      "rank_change": 2,
+      "history_days": 15
     },
     {
-      "rank": 153,
+      "rank": 151,
+      "book_id": "5649564",
+      "book_name": "初恋返场计划［快穿］",
+      "author": "杏仁蛋挞",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "情有独钟",
+        "甜文",
+        "快穿",
+        "轻松",
+        "治愈"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "近代现代",
+        "爱情",
+        "情有独钟",
+        "甜文",
+        "快穿",
+        "轻松",
+        "治愈"
+      ],
+      "score": 43469336,
+      "score_display": "43.5M",
+      "abstract": "有些人高高在上，唯有初恋，是不可忘怀。 闻之：正是在下。 闻之在结算任务时被告知还有一段情没有彻底了结，于是回炉返场。 【列车游戏】 徐朝景是死亡小镇里最帅，实力最强，人气最高，也最难攻略的一个角色。 他不接受礼物，也不喜欢陪伴，独来独往，冷漠孤僻，驾驶着死亡列车，游走死生之间，有玩家将寒冬冰花放在他的办公室外，只能得到好感-500提示。 这个人管理着死亡列车，对玩家死亡熟视无睹，无数人想讨好他，他看也不看。 有人观看管理者档案后说，想要拿下徐朝景，你必须在他十七岁那年，众叛亲离的雨夜里，把他从大雾弥漫的列车轨道上捡回来。 这是不可能做到的任务，然而有一天，小镇上出现一个陌生玩家，这人自茫茫雪",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 20:00:00",
+      "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/24/23019/2301823/20250609234049_300_420.jpeg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=5649564",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2301823",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 152,
       "book_id": "8022549",
       "book_name": "她给男主写的BE剧本",
       "author": "秦灵书",
@@ -6621,11 +6576,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/23/22882/2288126/20241017113650_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8022549",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2288126",
-      "rank_change": 0,
-      "history_days": 21
+      "rank_change": 1,
+      "history_days": 22
     },
     {
-      "rank": 154,
+      "rank": 153,
       "book_id": "9647312",
       "book_name": "残疾假少爷的沙雕日常",
       "author": "麦成浪",
@@ -6664,11 +6619,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=9647312&coverid=99&ver=5db3cb0d85650e159ad6e0fe2067a40b",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9647312",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3128042",
-      "rank_change": 0,
-      "history_days": 27
+      "rank_change": 1,
+      "history_days": 28
     },
     {
-      "rank": 155,
+      "rank": 154,
       "book_id": "11036474",
       "book_name": "绝色女天师，但抓鬼无敌！",
       "author": "梦廊雨",
@@ -6705,11 +6660,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11036474&coverid=216&ver=bc09dff63b504b18c85d943444363e86",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11036474",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=819114",
-      "rank_change": 0,
-      "history_days": 24
+      "rank_change": 1,
+      "history_days": 25
     },
     {
-      "rank": 156,
+      "rank": 155,
       "book_id": "6709216",
       "book_name": "你老婆不要你喽(单元)",
       "author": "雨落轻尘",
@@ -6750,11 +6705,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/11/10675/1067472/20261014170027_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6709216",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1067472",
-      "rank_change": 0,
-      "history_days": 8
+      "rank_change": 1,
+      "history_days": 9
     },
     {
-      "rank": 157,
+      "rank": 156,
       "book_id": "8599663",
       "book_name": "请你做个人吧",
       "author": "姜沉漾",
@@ -6795,11 +6750,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/27/26458/2645771/20230706072002_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8599663",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2645771",
-      "rank_change": 0,
-      "history_days": 28
+      "rank_change": 1,
+      "history_days": 29
     },
     {
-      "rank": 158,
+      "rank": 157,
       "book_id": "8987767",
       "book_name": "见信非我",
       "author": "十三涧",
@@ -6838,11 +6793,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/59/58138/5813720/20240704150527_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8987767",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5813720",
-      "rank_change": 0,
-      "history_days": 7
+      "rank_change": 1,
+      "history_days": 8
     },
     {
-      "rank": 159,
+      "rank": 158,
       "book_id": "10440510",
       "book_name": "弹幕劝我别太爱画皮鬼兄长了",
       "author": "郝想吃糖",
@@ -6883,11 +6838,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/23/22226/2222574/20260102202718_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10440510",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2222574",
-      "rank_change": 0,
-      "history_days": 10
+      "rank_change": 1,
+      "history_days": 11
     },
     {
-      "rank": 160,
+      "rank": 159,
       "book_id": "11037549",
       "book_name": "大杂院漂亮作精吃瓜日常",
       "author": "桃花引",
@@ -6928,11 +6883,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11037549&coverid=44&ver=1b8f753634bb81bea08546c67ed7864a",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11037549",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1124503",
-      "rank_change": 0,
-      "history_days": 15
+      "rank_change": 1,
+      "history_days": 16
     },
     {
-      "rank": 161,
+      "rank": 160,
       "book_id": "7559999",
       "book_name": "绿茶小美人招惹偏执Daddy后",
       "author": "未未不知眠",
@@ -6967,11 +6922,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/18/17201/1720011/20260928125800_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7559999",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1720011",
-      "rank_change": 0,
-      "history_days": 5
+      "rank_change": 1,
+      "history_days": 6
     },
     {
-      "rank": 162,
+      "rank": 161,
       "book_id": "8074041",
       "book_name": "过家家",
       "author": "獠牙竹子",
@@ -7012,11 +6967,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/38/37458/3745766/20260701185922_300_420.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8074041",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3745766",
-      "rank_change": 0,
-      "history_days": 20
+      "rank_change": 1,
+      "history_days": 21
     },
     {
-      "rank": 163,
+      "rank": 162,
       "book_id": "9851417",
       "book_name": "纸片老婆竟是魔王BOSS",
       "author": "sheepsea",
@@ -7058,10 +7013,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9851417",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6438090",
       "rank_change": 1,
-      "history_days": 7
+      "history_days": 8
     },
     {
-      "rank": 164,
+      "rank": 163,
       "book_id": "11038186",
       "book_name": "我和死对头假戏真做了",
       "author": "若诗安轩",
@@ -7098,11 +7053,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=11038186&coverid=187&ver=81c0749ca1e8d187b9cbadc1c5a487bc",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=11038186",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2465550",
-      "rank_change": -1,
-      "history_days": 27
+      "rank_change": 1,
+      "history_days": 28
     },
     {
-      "rank": 165,
+      "rank": 164,
       "book_id": "10795555",
       "book_name": "捡到美人后被始乱终弃了",
       "author": "鸭警长",
@@ -7141,11 +7096,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/67/66017/6601633/20260817164237_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10795555",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6601633",
-      "rank_change": 20,
-      "history_days": 2
+      "rank_change": 1,
+      "history_days": 3
     },
     {
-      "rank": 166,
+      "rank": 165,
       "book_id": "10745497",
       "book_name": "邻居死后又回来了",
       "author": "风听澜",
@@ -7178,11 +7133,11 @@
       "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/29/28551/2855001/20260822145751_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10745497",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2855001",
-      "rank_change": -1,
-      "history_days": 14
+      "rank_change": 1,
+      "history_days": 15
     },
     {
-      "rank": 167,
+      "rank": 166,
       "book_id": "8930300",
       "book_name": "窃姝",
       "author": "水初影",
@@ -7223,11 +7178,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/21/20234/2023377/20240802184337_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8930300",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2023377",
-      "rank_change": 5,
-      "history_days": 4
+      "rank_change": 1,
+      "history_days": 5
     },
     {
-      "rank": 168,
+      "rank": 167,
       "book_id": "7613501",
       "book_name": "招惹阴郁小狼狗之后",
       "author": "鱼依猫",
@@ -7268,54 +7223,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/22/21498/2149722/20261016213722_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7613501",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2149722",
-      "rank_change": -1,
-      "history_days": 13
+      "rank_change": 1,
+      "history_days": 14
     },
     {
-      "rank": 169,
-      "book_id": "10938759",
-      "book_name": "老公他容貌焦虑",
-      "author": "临春野",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "天作之合",
-        "甜文",
-        "治愈",
-        "日常"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "近代现代",
-        "爱情",
-        "都市",
-        "天作之合",
-        "甜文",
-        "治愈",
-        "日常"
-      ],
-      "score": 36704756,
-      "score_display": "36.7M",
-      "abstract": "容貌焦虑攻×无敌美貌受 蔺疏珩很爱林清浅，但因为林清浅太美，每天疑神疑鬼担心林清浅有一天会厌烦他和他分手。 明明自己也很帅，剑眉星目，丰神俊朗。 但他一点也没意识到。 于是，为了自己的爱情能长久，蔺疏珩每天服美役，长痘了自卑，水肿了难受，腹肌消了疯狂加练。 林清浅约他出门，蔺疏珩提前一晚保养敷面膜，出门前还冰脸消肿。 林清浅带他见家长，蔺疏珩看着因为焦虑闷出的痘痘，更加焦虑，最后两天没睡着。 两人结婚前夕，蔺疏珩总觉得自己不配，深夜，在林清浅睡着后蹲在床边默默看着他掉眼泪。 林清浅迷迷糊糊间醒来，看见蔺疏珩泪流满面，一下子吓清醒了。 他连忙坐起身来，问蔺疏珩怎么了。 蔺疏珩抱着林清浅的腰，眼泪",
-      "status": "连载中",
-      "word_count": "0",
-      "update_time": "2026-09-08 00:00:00",
-      "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/500253/15/2679/60509/6a76b668Fd06d7b8f/00153034381ceedb.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10938759",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6080177",
-      "rank_change": -3,
-      "history_days": 15
-    },
-    {
-      "rank": 170,
+      "rank": 168,
       "book_id": "8928121",
       "book_name": "我在星际养龙种田",
       "author": "饮鹿",
@@ -7350,11 +7262,11 @@
       "thumb_url": "https://pic.rmb.bdstatic.com/bjh/240606/20edd6f309cefa36f82a26ad893d68037234.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8928121",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3357357",
-      "rank_change": -1,
-      "history_days": 5
+      "rank_change": 2,
+      "history_days": 6
     },
     {
-      "rank": 171,
+      "rank": 169,
       "book_id": "9620721",
       "book_name": "丈夫是野兽",
       "author": "Aash",
@@ -7391,11 +7303,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/67/66924/6692360/20260813182304_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9620721",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6692360",
-      "rank_change": 9,
-      "history_days": 2
+      "rank_change": 2,
+      "history_days": 3
     },
     {
-      "rank": 172,
+      "rank": 170,
       "book_id": "10761928",
       "book_name": "灰雾区良心黑导航为您服务",
       "author": "弈落千山",
@@ -7436,54 +7348,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/authorimagespace.php?path=NDQxMzQ5&imageName=20260529122419.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10761928",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=441349",
-      "rank_change": -4,
-      "history_days": 16
+      "rank_change": 2,
+      "history_days": 17
     },
     {
-      "rank": 173,
-      "book_id": "8035336",
-      "book_name": "你完全没离婚的想法是吗？",
-      "author": "观三月",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "青梅竹马",
-        "娱乐圈",
-        "甜文",
-        "穿书",
-        "爆笑"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "近代现代",
-        "爱情",
-        "青梅竹马",
-        "娱乐圈",
-        "甜文",
-        "穿书",
-        "爆笑"
-      ],
-      "score": 35890196,
-      "score_display": "35.9M",
-      "abstract": "林珩穿进了狗血霸总耽美文，一睁眼，霸总身体正压下来。 等等，这人怎么长得跟他多年没见的竹马一模一样？ 千钧一发之际，楚羿惊险刹住车，没酿成大错。 看着身下的人，他懵了：“……我这是在干吗？！” 林珩踹了他一脚：“你先穿上裤子。” 面对大红喜字，林珩毫无表情：“我笔直。” 楚羿挑眉：“我更直。” 林珩：“明天就去离婚。” 楚羿：“谁不离谁是小狗。” 消息传出。 林珩的经纪人跪下了：“祖宗你可不能离呀！你好不容易才摆脱了私生活混乱的黑历史！” 楚羿公司的大股东们跪下了：“总裁你可不能离呀！离了公司股价要暴跌！” 原书里的反派也开始作妖。 两人权衡利弊，决定先结着，一年后再离。 所以当采访镜头怼过来",
-      "status": "连载中",
-      "word_count": "3213",
-      "update_time": "2026-09-08 18:00:01",
-      "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/27/26885/2688415/20260917211808_300_420.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8035336",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2688415",
-      "rank_change": -3,
-      "history_days": 9
-    },
-    {
-      "rank": 174,
+      "rank": 171,
       "book_id": "10541841",
       "book_name": "娘娘她恃宠而骄",
       "author": "悠悠点点",
@@ -7519,10 +7388,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10541841",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6682729",
       "rank_change": 3,
-      "history_days": 4
+      "history_days": 5
     },
     {
-      "rank": 175,
+      "rank": 172,
       "book_id": "10983926",
       "book_name": "非限定关系",
       "author": "清悦天蓝",
@@ -7559,11 +7428,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10983926&coverid=185&ver=189f238b2636fd3c0127f8ba759078f0",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10983926",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3009609",
-      "rank_change": -2,
-      "history_days": 5
+      "rank_change": 3,
+      "history_days": 6
     },
     {
-      "rank": 176,
+      "rank": 173,
       "book_id": "10726541",
       "book_name": "退休后成了病娇反派[快穿]",
       "author": "糖弦",
@@ -7604,11 +7473,11 @@
       "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/14/13645/1364438/20260707121849_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10726541",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1364438",
-      "rank_change": -5,
-      "history_days": 18
+      "rank_change": 3,
+      "history_days": 19
     },
     {
-      "rank": 177,
+      "rank": 174,
       "book_id": "10713222",
       "book_name": "新寡被接入王府后",
       "author": "金阿淼",
@@ -7649,11 +7518,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/authorimagespace.php?path=MjQ3NzY0NA==&imageName=20260929130705.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10713222",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2477644",
-      "rank_change": -3,
-      "history_days": 14
+      "rank_change": 3,
+      "history_days": 15
     },
     {
-      "rank": 178,
+      "rank": 175,
       "book_id": "8532143",
       "book_name": "绑定黑莲花剑灵后[穿书]",
       "author": "几时风雨",
@@ -7689,10 +7558,10 @@
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8532143",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5560777",
       "rank_change": 3,
-      "history_days": 3
+      "history_days": 4
     },
     {
-      "rank": 179,
+      "rank": 176,
       "book_id": "10995790",
       "book_name": "星际我契约了所有神明",
       "author": "江湖太妖生",
@@ -7733,11 +7602,11 @@
       "thumb_url": "https://i9-static.jjwxc.net/novelimage.php?novelid=10995790&coverid=204&ver=b5803b442eeefd60bdaf82bd07890e7c",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10995790",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=285486",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 3,
+      "history_days": 2
     },
     {
-      "rank": 180,
+      "rank": 177,
       "book_id": "9671826",
       "book_name": "穿越星际后驯养了兽族顶级杀神",
       "author": "银烛鸢尾",
@@ -7774,56 +7643,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/25/24014/2401396/20261005154236_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9671826",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2401396",
-      "rank_change": -4,
-      "history_days": 3
+      "rank_change": 3,
+      "history_days": 4
     },
     {
-      "rank": 181,
-      "book_id": "10390235",
-      "book_name": "他怎么可能是绿茶捞子？",
-      "author": "甜糖阿二",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "情有独钟",
-        "天之骄子",
-        "甜文",
-        "钓系",
-        "HE"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "近代现代",
-        "爱情",
-        "都市",
-        "情有独钟",
-        "天之骄子",
-        "甜文",
-        "钓系",
-        "HE"
-      ],
-      "score": 34789008,
-      "score_display": "34.8M",
-      "abstract": "费斯年在朋友生日宴上认识了位颇有心机的男人。那人想攀附的手段太过拙劣，但胜在实在漂亮。 费斯年与他周旋了一段时间，原本热情似火，围着他跑的小绿茶突然对他冷淡下来，在一场聚会上和别人谈笑风生。费斯年气笑了，拆穿他的真面目，小绿茶眼泪滚滚，说真心全部错付。 费斯年被他眼泪砸得手足无措，开始反思自己，越反思越觉得小绿茶不是想捞自己，对自己可能是真爱！ 两人在一起后，小绿茶在家更是三句话离不开老公，在床上叫得比猫还好听，费斯年对这段恋情很满意。 小绿茶没什么不良嗜好，只喜欢买买买。 费斯年觉得这不是缺点，人有点爱好很正常，况且小绿茶也经常送手工礼物给他。 朋友劝他多长个心眼，别被个捞男拿捏了。 费斯年",
-      "status": "连载中",
-      "word_count": "2421",
-      "update_time": "2026-09-08 21:00:01",
-      "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/36/35947/3594605/20260909180659_300_420.jpeg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10390235",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3594605",
-      "rank_change": -2,
-      "history_days": 5
-    },
-    {
-      "rank": 182,
+      "rank": 178,
       "book_id": "10692058",
       "book_name": "轻语",
       "author": "兔七林",
@@ -7860,11 +7684,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/48/47535/4753491/20260709172439_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10692058",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4753491",
-      "rank_change": -4,
-      "history_days": 8
+      "rank_change": 4,
+      "history_days": 9
     },
     {
-      "rank": 183,
+      "rank": 179,
       "book_id": "8512528",
       "book_name": "被深爱的主角受遭到抹杀后",
       "author": "莫寻秋野",
@@ -7905,11 +7729,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/authorimagespace.php?path=MjQ4Mzk3OA==&imageName=20260911142422.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8512528",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2483978",
-      "rank_change": -1,
-      "history_days": 5
+      "rank_change": 4,
+      "history_days": 6
     },
     {
-      "rank": 184,
+      "rank": 180,
       "book_id": "10451933",
       "book_name": "特警队纪事[刑侦]",
       "author": "过期的蜜桃罐头",
@@ -7950,11 +7774,11 @@
       "thumb_url": "https://i4-static.jjwxc.net/tmp/backend/authorspace/s1/17/16536/1653503/20260908120651_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10451933",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1653503",
-      "rank_change": -1,
-      "history_days": 4
+      "rank_change": 4,
+      "history_days": 5
     },
     {
-      "rank": 185,
+      "rank": 181,
       "book_id": "10626181",
       "book_name": "首富老婆诱我钓她",
       "author": "木木很多树",
@@ -7991,11 +7815,54 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/59/58687/5868624/20260317184333_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10626181",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5868624",
-      "rank_change": 2,
-      "history_days": 2
+      "rank_change": 4,
+      "history_days": 3
     },
     {
-      "rank": 186,
+      "rank": 182,
+      "book_id": "9741792",
+      "book_name": "直男室友开荤后疯狂真香了",
+      "author": "欲买桂花酒",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "豪门世家",
+        "天之骄子",
+        "甜文",
+        "校园",
+        "高岭之花"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "近代现代",
+        "爱情",
+        "豪门世家",
+        "天之骄子",
+        "甜文",
+        "校园",
+        "高岭之花"
+      ],
+      "score": 32596144,
+      "score_display": "32.6M",
+      "abstract": "姜诺长相清纯精致，性格也软，入学没多久就收到好几个女生的爱慕示好，可惜他是个gay，只能委婉拒绝。 自从认清自己的性向后，他就一直小心隐藏着，希望能遇到自己命中注定的那个人，顺利的话，还可以体验下bl小说里那种据说会让人*仙*死的某项双人运动。 是的，姜诺纯，但是骨子里有点天然色。 跟他同宿舍的司承是计算机系的高冷男神，容貌俊美，一米九的高大身材，宽肩窄腰，压迫力和荷尔蒙都是顶级的。 在姜诺看来这位就是gay圈天菜，绝世猛一，性张力拉满，可惜是个直到不能更直的高岭之花。 鉴于这两人不论外貌气质和相性都极度匹配，校园论坛有喜欢看热闹的人拉他俩cp。 司承听好友说起这事，漫不经心的端起吧台上的酒杯",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 15:00:02",
+      "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/21/20235/2023478/20261008130455_300_420.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9741792",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2023478",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 183,
       "book_id": "10612368",
       "book_name": "炮灰背刺龙傲天后被缠上了",
       "author": "砚羲",
@@ -8036,54 +7903,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/75/74682/7468147/20261002134311_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10612368",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7468147",
-      "rank_change": -2,
-      "history_days": 2
+      "rank_change": 3,
+      "history_days": 3
     },
     {
-      "rank": 187,
-      "book_id": "7588896",
-      "book_name": "魔教教主嫁我为夫",
-      "author": "酉一",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "架空历史",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "架空历史",
-        "爱情",
-        "强强",
-        "情有独钟",
-        "种田文",
-        "甜文",
-        "轻松"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "架空历史",
-        "爱情",
-        "强强",
-        "情有独钟",
-        "种田文",
-        "甜文",
-        "轻松"
-      ],
-      "score": 31798604,
-      "score_display": "31.8M",
-      "abstract": "第23章开始入V 江湖第一杀手简寻退休后，寻了山清水秀的地方养老，意外捡到一个男人。 都说路边的男人不能捡，可他长得帅啊。 后来这男人成了他媳妇儿，建屋盖房，打猎种地，洗衣做饭样样都很拿手，最重要的是晚上那活儿，简直是他眼中最完美的男人。 直到有天，家里闯进来一堆不速之客，指着他媳妇儿说他是祸害江湖的大魔头，魔教教主宫泊禹，人人得而诛之。 简寻看着被踩坏的菜地，被拔掉的鲜花，被推到的篱笆，顿时红了眼眶。 宫泊禹手足无措，还来不及解释，便眼睁睁地看着自己平日里犁都扛不动的小夫郎一巴掌一个人，眨眼便将小院给清理干净了，随后转身眼巴巴地看着他，抽着鼻子问道：“我的菜，还救得活吗？” 宫泊禹：“活，肯",
-      "status": "连载中",
-      "word_count": "2058",
-      "update_time": "2026-09-08 21:00:00",
-      "thumb_url": "https://i7-static.jjwxc.net/authorimagespace.php?path=MjE5MDAzMw==&imageName=20260912185410.jpg",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=7588896",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2190033",
-      "rank_change": -1,
-      "history_days": 5
-    },
-    {
-      "rank": 188,
+      "rank": 184,
       "book_id": "5146101",
       "book_name": "婚夜欲坠",
       "author": "予淮",
@@ -8115,20 +7939,20 @@
         "甜文",
         "先婚后爱"
       ],
-      "score": 31360070,
-      "score_display": "31.4M",
-      "abstract": "先婚后爱｜生理性喜欢｜年龄差5 白切黄乖乖女漫画家X冷拽高需求掌权人 1、被骗去相亲后，夏知柠对只见过三次的男人求了婚。 霓虹灯下，男人眉眼冷峻，浑身散发着野性的危险。 男人沉默，她以为被拒绝狼狈起身。 却被男人按回，桎梏在肌肉紧实的大腿中间，漫不经心的开口。 “跑什么。” “明天早上八点半，领证。” 领完证夏知柠才知道，他竟是爸爸的顶头上司。 京圈顶级权贵，传闻中冷血寡情的江氏集团现任掌权人，江言朔。 而她只是刚毕业一年的小漫画家。 他们有着天壤之别。 婚后她恪守合约，安分守己。 不出现不同框，绝不越界一步。 2、夏知柠作为当红漫画家出席活动，却因早上江言朔太过缠人，慌乱中戴错了戒指。 活动",
+      "score": 31518304,
+      "score_display": "31.5M",
+      "abstract": "先婚后爱｜生理性喜欢｜年龄差5 白切黄乖乖女漫画家X冷拽高需求掌权人 1、夏知柠从小到大乖巧听话，却在被家人骗去相亲后，跟只见过三次的男人闪婚。 拿到结婚证当天，她才知道男人竟是她爸爸的顶头上司。 京圈顶级权贵江氏集团现任掌权人，江言朔。 江言朔紧紧攥住她想要退缩的手，将顶级珍贵的风铃花蓝钻钻戒强势地推入指根。 “现在想后悔已经晚了…” “老婆。” 夏知柠自知他们有着天壤之别。 他是身份显赫的天之骄子，而她只是刚毕业一年的小漫画家。 婚后她恪守合约，安分守己。 不出现不同框，绝不越界一步。 2、江家掌权人江言朔在京市是出了名的冷血寡情，不会为任何人折腰动情。 但某次夏知柠作为当红漫画家出席活动",
       "status": "连载中",
       "word_count": "3775",
       "update_time": "2026-09-12 20:00:00",
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/25/24639/2463818/20261016100505_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5146101",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2463818",
-      "rank_change": 2,
-      "history_days": 3
+      "rank_change": 4,
+      "history_days": 4
     },
     {
-      "rank": 189,
+      "rank": 185,
       "book_id": "8417754",
       "book_name": "贵族学院上位指南",
       "author": "四火夕山",
@@ -8169,11 +7993,11 @@
       "thumb_url": "https://pic1.imgdb.cn/i/033xvdhvgRfRTEQLq29prA.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8417754",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5581011",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 4,
+      "history_days": 2
     },
     {
-      "rank": 190,
+      "rank": 186,
       "book_id": "9960639",
       "book_name": "我哥是第一个怪谈",
       "author": "嗯呢嗯呢",
@@ -8210,11 +8034,11 @@
       "thumb_url": "https://i8-static.jjwxc.net/tmp/backend/authorspace/s1/67/66075/6607490/20260917235743_300_420.png",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9960639",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6607490",
-      "rank_change": -1,
-      "history_days": 3
+      "rank_change": 4,
+      "history_days": 4
     },
     {
-      "rank": 191,
+      "rank": 187,
       "book_id": "9131958",
       "book_name": "闪婚是沦陷的开端[先孕后爱]",
       "author": "荔知夏",
@@ -8255,11 +8079,11 @@
       "thumb_url": "https://i5-static.jjwxc.net/tmp/backend/authorspace/s1/57/56005/5600442/20260119163817_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9131958",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5600442",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 4,
+      "history_days": 2
     },
     {
-      "rank": 192,
+      "rank": 188,
       "book_id": "10694926",
       "book_name": "星际唯一团宠人鱼净化世界",
       "author": "殷云染",
@@ -8300,11 +8124,11 @@
       "thumb_url": "https://img12.360buyimg.com/ddimg/jfs/t1/537742/27/5865/57600/6ac11537F4d1d28c0/0015303438fd79b2.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10694926",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1682553",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 4,
+      "history_days": 2
     },
     {
-      "rank": 193,
+      "rank": 189,
       "book_id": "10657729",
       "book_name": "阿兄，阿兄",
       "author": "咪兔糖",
@@ -8345,11 +8169,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/44/43039/4303845/20260730160253_300_420.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10657729",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4303845",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 4,
+      "history_days": 2
     },
     {
-      "rank": 194,
+      "rank": 190,
       "book_id": "6223228",
       "book_name": "天道今天上岸了吗？",
       "author": "洛云九",
@@ -8390,11 +8214,56 @@
       "thumb_url": "https://i9-static.jjwxc.net/tmp/backend/authorspace/s1/31/30983/3098297/20220905220236_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6223228",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3098297",
+      "rank_change": 4,
+      "history_days": 2
+    },
+    {
+      "rank": 191,
+      "book_id": "11078773",
+      "book_name": "我直播卖丧葬品在阴间爆红了",
+      "author": "唧唧喵",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "近代现代",
+      "theme": "剧情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "近代现代",
+        "剧情",
+        "幻想空间",
+        "灵异神怪",
+        "爽文",
+        "升级流",
+        "直播",
+        "玄学"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "近代现代",
+        "剧情",
+        "幻想空间",
+        "灵异神怪",
+        "爽文",
+        "升级流",
+        "直播",
+        "玄学"
+      ],
+      "score": 30538414,
+      "score_display": "30.5M",
+      "abstract": "好消息，齐霖毕业直接继承家业。 坏消息，家业是一家丧葬用品店。 更坏的消息，齐霖爸妈首付了一套房一辆车，受现在面临房贷加车贷，一个月八千！ 毕业于一所二流大学，刚得到一封月薪3000的offer的齐霖：“……” 毁灭吧！ 店里积压了一批丧葬用品，只要都卖出去，就能入账一万。 压力在前，齐霖疯魔了，接受了室友开玩笑的建议，在中元节前，开直播，卖丧葬用品！ 刚开始，闲来无聊的网友们，无意中刷到直播间，差点被那些诡异的纸扎品吓尿了。 “我去，刚想说主播好帅，卖啥我都下单支持，结果……” “哈哈哈，主播也是个人才，不过这玩意儿谁会买啊！” “主播干脆转行吧，干擦边男模更赚钱。” 后来： “卧槽，我就是",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 09:00:01",
+      "thumb_url": "https://i2-static.jjwxc.net/tmp/backend/authorspace/s1/31/30751/3075061/20261008095913_300_420.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=11078773",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3075061",
       "rank_change": "new",
       "history_days": 1
     },
     {
-      "rank": 195,
+      "rank": 192,
       "book_id": "3198083",
       "book_name": "随妈改嫁后的大院日常［九零］",
       "author": "木梓潼",
@@ -8435,11 +8304,11 @@
       "thumb_url": "https://i0-static.jjwxc.net/tmp/backend/authorspace/s1/20/19127/1912615/20261009153928_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3198083",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1912615",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 3,
+      "history_days": 2
     },
     {
-      "rank": 196,
+      "rank": 193,
       "book_id": "9446748",
       "book_name": "高嫁",
       "author": "乔燕",
@@ -8480,11 +8349,56 @@
       "thumb_url": "https://pic.rmb.bdstatic.com/bjh/portrait/bd290a90d503bdcf638066d48290e87f3831.jpeg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9446748",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3361208",
+      "rank_change": 3,
+      "history_days": 2
+    },
+    {
+      "rank": 194,
+      "book_id": "5496751",
+      "book_name": "被狼人觊觎的漂亮研究员",
+      "author": "意绵绵",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "爱情",
+        "情有独钟",
+        "穿越时空",
+        "系统",
+        "甜文",
+        "未来架空",
+        "ABO"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "爱情",
+        "情有独钟",
+        "穿越时空",
+        "系统",
+        "甜文",
+        "未来架空",
+        "ABO"
+      ],
+      "score": 30162642,
+      "score_display": "30.2M",
+      "abstract": "沈郁池穿进了一部短剧，还成了研究所的黑心研究员。 研究所里的试验品会被改造成人形兵器，失去自我。 唯独祁放出了意外。 祁放获得狼的力量，进化出堪比怪物的体能和强度，还保留了自己的意识。 他摧毁了实验室，杀光了所有人。 第一个被他拿来试狼爪锋利程度的，就是祁放的专属研究员。 现在这个专属研究员是沈郁池。 看着面前高大的男人，宽肩厚臂，肌肉线条仿佛山川沟壑，胸肌比他头还大，单手都能把他拎起来。 沈郁池两腿直抖。 研究谁？他，他吗？ TAT他还能回家吗？ 为了回家，沈郁池只能满足祁放的要求，安抚他的情绪，完成任务，得到系统满意值。 时间一久，沈郁池发现祁放不像短剧介绍的那么吓人。 他怕黑，祁放就抱着",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-10-08 20:00:00",
+      "thumb_url": "https://i3-static.jjwxc.net/tmp/backend/authorspace/s1/27/26718/2671710/20260921195846_300_420.jpeg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=5496751",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2671710",
       "rank_change": "new",
       "history_days": 1
     },
     {
-      "rank": 197,
+      "rank": 195,
       "book_id": "10652661",
       "book_name": "靠抽卡伪装大佬的那些年",
       "author": "一颗空心竹",
@@ -8525,11 +8439,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/62/61183/6118225/20260928200745_300_420.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10652661",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6118225",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 2,
+      "history_days": 2
     },
     {
-      "rank": 198,
+      "rank": 196,
       "book_id": "6667347",
       "book_name": "当大佬被套上病弱BUFF［快穿］",
       "author": "浅洛洳雪",
@@ -8570,11 +8484,11 @@
       "thumb_url": "https://i7-static.jjwxc.net/tmp/backend/authorspace/s1/10/9002/900197/20260812055824_300_420.JPG",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6667347",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=900197",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 2,
+      "history_days": 2
     },
     {
-      "rank": 199,
+      "rank": 197,
       "book_id": "10015531",
       "book_name": "人，咪很担心你",
       "author": "炭烤芋圆",
@@ -8615,11 +8529,11 @@
       "thumb_url": "https://i.gti.asia/202511/202511241941559.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10015531",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=4025034",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": 2,
+      "history_days": 2
     },
     {
-      "rank": 200,
+      "rank": 198,
       "book_id": "6449172",
       "book_name": "穿越蛮荒当纸片人",
       "author": "慕容离白",
@@ -8660,6 +8574,96 @@
       "thumb_url": "https://i0-static.jjwxc.net/authorimagespace.php?path=MjIyNzU2Nw==&imageName=20260928040226.jpg",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6449172",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2227567",
+      "rank_change": 2,
+      "history_days": 2
+    },
+    {
+      "rank": 199,
+      "book_id": "10597973",
+      "book_name": "和钓系坏女人破镜重圆后",
+      "author": "亦聆溪",
+      "channel": "百合",
+      "nature": "原创",
+      "genre": "百合",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "百合",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "年下",
+        "都市",
+        "花季雨季",
+        "情有独钟",
+        "破镜重圆",
+        "治愈"
+      ],
+      "all_tags": [
+        "原创",
+        "百合",
+        "近代现代",
+        "爱情",
+        "年下",
+        "都市",
+        "花季雨季",
+        "情有独钟",
+        "破镜重圆",
+        "治愈"
+      ],
+      "score": 28959376,
+      "score_display": "29.0M",
+      "abstract": "清冷温柔优等生年下�0�6x钓系坏女人妩媚姐姐�0�6 周相念第一次遇到姜青瓷，是在她痛苦而压抑的十八岁。 那天雪夜，她饥肠辘辘，酸涩而狼狈，而她是县城歌舞厅里最艳的那朵玫瑰，明艳而妩媚。 姜青瓷穿着墨绿色的旗袍，在昏暗的灯光下摇曳生姿，她总是笑着，眉眼弯弯，温柔多情地周旋在酒桌之间，她像蔷薇，像玫瑰，像一朵海棠。 姜青瓷看着她，挑起她的下巴，语气暧昧：“县一中的好学生呀。” “歌舞厅可不是小乖来的地方。” --- 几个月后，周相念被寄宿家庭拒绝收养。在这座灰扑扑的重工业县城里，她走投无路，最终被姜青瓷捡回了出租屋。 两人开始了贫穷又甜腻的同居。在外人眼里，姜青瓷是看矜贵、似十指不沾阳春水的娇",
+      "status": "连载中",
+      "word_count": "0",
+      "update_time": "2026-09-23 20:17:42",
+      "thumb_url": "https://i6-static.jjwxc.net/tmp/backend/authorspace/s1/70/69894/6989347/20261009125259_300_420.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10597973",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=6989347",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 200,
+      "book_id": "9082376",
+      "book_name": "穿为病娇女主O的赘A渣妻",
+      "author": "玉屑金泥",
+      "channel": "百合",
+      "nature": "原创",
+      "genre": "百合",
+      "era": "架空历史",
+      "theme": "爱情",
+      "primary_tag": "百合",
+      "secondary_tags": [
+        "架空历史",
+        "爱情",
+        "强强",
+        "情有独钟",
+        "天之骄子",
+        "甜文",
+        "穿书",
+        "爽文"
+      ],
+      "all_tags": [
+        "原创",
+        "百合",
+        "架空历史",
+        "爱情",
+        "强强",
+        "情有独钟",
+        "天之骄子",
+        "甜文",
+        "穿书",
+        "爽文"
+      ],
+      "score": 28579094,
+      "score_display": "28.6M",
+      "abstract": "[下本开《残疾阴鸷上司O的渣A黑月光》求预收~《女驸马误标记了病娇太后》《和教授姐姐闪婚后》都可以收哦~] 沈灯昼本是现代陶瓷与武术等众多非遗的传承人，却于一晚加班猝死，穿到一本古代狗血ABO文里，还被一纸婚书绑定，非要和文里柔弱多病的女主O陆雪霁成婚，还是入赘？！ 而原主则是一个纨绔A，不学无术、花天酒地，红颜知己一大把，想娶的自然不是女主O。 只是她暗地里还有一个身份，当朝皇太女最利的一把刀，什么脏活累活都让她干，妥妥地一人分饰两角。 沈灯昼为了活下去只能接受双重身份，且完成这次任务之后就能和女主O和离，各自天高海阔，剧情也能重回正轨。 于是她白天就在府里捏陶土制陶瓷，与女主O相敬如宾，晚",
+      "status": "连载中",
+      "word_count": "3092",
+      "update_time": "2026-09-14 18:00:00",
+      "thumb_url": "https://i6-static.jjwxc.net/authorimagespace.php?path=MjQ5MjUxMw==&imageName=20260901020026.jpg",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9082376",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2492513",
       "rank_change": "new",
       "history_days": 1
     }
