@@ -1,0 +1,570 @@
+{
+  "update_time": "2026-11-01 04:08:26",
+  "update_date": "2026-11-01",
+  "update_month": "2026-11",
+  "total_count": 30,
+  "source": "番茄小说·巅峰榜",
+  "source_url": "https://fanqienovel.com/?enter_from=menu",
+  "platform": "fanqie",
+  "platform_name": "番茄小说",
+  "rank_type": "peak",
+  "tag_stats": {
+    "都市高武": 8,
+    "悬疑脑洞": 5,
+    "传统玄幻": 3,
+    "游戏体育": 2,
+    "玄幻脑洞": 3,
+    "悬疑灵异": 2,
+    "历史古代": 2,
+    "都市脑洞": 1,
+    "西方奇幻": 1,
+    "青春甜宠": 1,
+    "东方仙侠": 2
+  },
+  "gender_stats": {
+    "男频": 27,
+    "女频": 3
+  },
+  "books": [
+    {
+      "rank": 1,
+      "book_id": "7276384138653862966",
+      "book_name": "我不是戏神",
+      "author": "三九音域",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o99ffbfd13492eb9953715959db26ed9b~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=LQBMSR4JF0jgUNjGQKhXuVfiRBs%3D",
+      "book_url": "https://fanqienovel.com/page/7276384138653862966",
+      "rank_change": 0
+    },
+    {
+      "rank": 2,
+      "book_id": "7143038691944959011",
+      "book_name": "十日终焉",
+      "author": "杀虫队队员",
+      "gender": "男频",
+      "primary_tag": "悬疑脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/4900f950c7af7f82fdc14cf528e0e288~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=3BmYtCGReLCtb5RpvFdfZ%2FioKis%3D",
+      "book_url": "https://fanqienovel.com/page/7143038691944959011",
+      "rank_change": 0
+    },
+    {
+      "rank": 3,
+      "book_id": "7665193065501445145",
+      "book_name": "神通者",
+      "author": "天蚕土豆",
+      "gender": "男频",
+      "primary_tag": "传统玄幻",
+      "secondary_tags": [],
+      "all_tags": [
+        "传统玄幻"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6f70f2cb2f4ff3adff8ccc52e8a38d46~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=JaPqHgGYV0kbuaSreEjuUsVmvEE%3D",
+      "book_url": "https://fanqienovel.com/page/7665193065501445145",
+      "rank_change": 1
+    },
+    {
+      "rank": 4,
+      "book_id": "7361653460183288894",
+      "book_name": "游戏入侵：抢男女主机缘会上瘾诶",
+      "author": "猫不秃",
+      "gender": "女频",
+      "primary_tag": "游戏体育",
+      "secondary_tags": [],
+      "all_tags": [
+        "游戏体育"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7508a4ba13021b13b06776b2c864ec06~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=dP%2FMyGrpLkEqhDdJtTPsfCh9FjU%3D",
+      "book_url": "https://fanqienovel.com/page/7361653460183288894",
+      "rank_change": -1
+    },
+    {
+      "rank": 5,
+      "book_id": "7617740782291651646",
+      "book_name": "骇夜：我在恐怖游戏里暴富",
+      "author": "阿一不是阿二",
+      "gender": "男频",
+      "primary_tag": "悬疑脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o135c18d299e3ccd6a99b2d0ab54f036c~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=1gg0XEnxP7ZxUUeXhfEwrIbyQ%2BY%3D",
+      "book_url": "https://fanqienovel.com/page/7617740782291651646",
+      "rank_change": "new"
+    },
+    {
+      "rank": 6,
+      "book_id": "7590221243043826712",
+      "book_name": "这个游戏不对劲，我挖矿成神！",
+      "author": "道不易",
+      "gender": "男频",
+      "primary_tag": "玄幻脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "玄幻脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe517b47077b6004f7a08345823dac7ed~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=3z24DKcArS12j6q7SIk1k%2FPYipU%3D",
+      "book_url": "https://fanqienovel.com/page/7590221243043826712",
+      "rank_change": 7
+    },
+    {
+      "rank": 7,
+      "book_id": "6982529841564224526",
+      "book_name": "我在精神病院学斩神",
+      "author": "三九音域",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/c5397e4a514736bb1c6754663dbee3db~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=99qKW10GfzVHnT%2B%2F64ksso8f5iU%3D",
+      "book_url": "https://fanqienovel.com/page/6982529841564224526",
+      "rank_change": -2
+    },
+    {
+      "rank": 8,
+      "book_id": "6883748331202284558",
+      "book_name": "惊鸿",
+      "author": "一夕烟雨",
+      "gender": "男频",
+      "primary_tag": "传统玄幻",
+      "secondary_tags": [],
+      "all_tags": [
+        "传统玄幻"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe5408c5e3eb3887717a54f09e24ad33f~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=pBRCtAe1FpH48WecUnOTWOc0YtA%3D",
+      "book_url": "https://fanqienovel.com/page/6883748331202284558",
+      "rank_change": 0
+    },
+    {
+      "rank": 9,
+      "book_id": "7552067105378536473",
+      "book_name": "规则怪谈：无所谓，系统会出手",
+      "author": "巡山主神",
+      "gender": "男频",
+      "primary_tag": "悬疑脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oa1f371e1c298df2bfd6303b02eb719f4~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=ncWIzJeBlkL14sTuGl8rI5CSfoI%3D",
+      "book_url": "https://fanqienovel.com/page/7552067105378536473",
+      "rank_change": 19
+    },
+    {
+      "rank": 10,
+      "book_id": "7636702239288986649",
+      "book_name": "文字武侠：开局破庙夜会帮主夫人",
+      "author": "我想下海",
+      "gender": "男频",
+      "primary_tag": "玄幻脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "玄幻脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o48044b67580cce64e26df7c28cad7234~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=i5lzgIbm0%2BaNwIfYtslPtISbjzc%3D",
+      "book_url": "https://fanqienovel.com/page/7636702239288986649",
+      "rank_change": "new"
+    },
+    {
+      "rank": 11,
+      "book_id": "7592279900040465433",
+      "book_name": "我操作的少女正在成为旧日之主",
+      "author": "陷阵营营长",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o46c2283e139d920988ff6fc3a1db1e26~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=5oR0b2aIvk5CTIYrhEqiVAcGQr0%3D",
+      "book_url": "https://fanqienovel.com/page/7592279900040465433",
+      "rank_change": -1
+    },
+    {
+      "rank": 12,
+      "book_id": "7504849932138859545",
+      "book_name": "时停起手，邪神也得给我跪下！",
+      "author": "六个葫芦",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oadaa82ad57ef8091a7a5bd32af452d4a~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=p2F5zFfcrNU%2BoMnjlGUxtKRfka8%3D",
+      "book_url": "https://fanqienovel.com/page/7504849932138859545",
+      "rank_change": -5
+    },
+    {
+      "rank": 13,
+      "book_id": "6985246250434038815",
+      "book_name": "北派盗墓笔记",
+      "author": "云峰",
+      "gender": "男频",
+      "primary_tag": "悬疑灵异",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑灵异"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/c947e7567fa8646dace2755ec6f436b1~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=tSgUyWf4LLg%2BSe2PlRMCJk7Zshc%3D",
+      "book_url": "https://fanqienovel.com/page/6985246250434038815",
+      "rank_change": "new"
+    },
+    {
+      "rank": 14,
+      "book_id": "7414011485757639704",
+      "book_name": "冒姓琅琊",
+      "author": "东周公子南",
+      "gender": "男频",
+      "primary_tag": "历史古代",
+      "secondary_tags": [],
+      "all_tags": [
+        "历史古代"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/ai/p2o40b8a1c9ad4c18298349ef8fe897eaa6~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=yurGXD93Lvv%2FYXel0I0pxbQ5oqg%3D",
+      "book_url": "https://fanqienovel.com/page/7414011485757639704",
+      "rank_change": -5
+    },
+    {
+      "rank": 15,
+      "book_id": "7421167583522458648",
+      "book_name": "大一实习，你跑去749收容怪物",
+      "author": "我爱罗的沙",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o368422f6d81aefa1e4c42491681bf9d1~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=oIovT6I%2F4YfwjoAbQG8rq0a9fls%3D",
+      "book_url": "https://fanqienovel.com/page/7421167583522458648",
+      "rank_change": -4
+    },
+    {
+      "rank": 16,
+      "book_id": "7138249318909086727",
+      "book_name": "天渊",
+      "author": "沐潇三生",
+      "gender": "男频",
+      "primary_tag": "传统玄幻",
+      "secondary_tags": [],
+      "all_tags": [
+        "传统玄幻"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/3dbc7be59148237e1cea0ff8afa65cc0~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=MWCDv8WBnPCE58dHCGajcN4BHDI%3D",
+      "book_url": "https://fanqienovel.com/page/7138249318909086727",
+      "rank_change": -4
+    },
+    {
+      "rank": 17,
+      "book_id": "7346057588347259929",
+      "book_name": "序列：吃神者",
+      "author": "不要大脑要小脑",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o43da4425bd3b338cef72fa545aaff9c1~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=ZEIXmD%2BmvRlDv8w2fDZSE5nzt9k%3D",
+      "book_url": "https://fanqienovel.com/page/7346057588347259929",
+      "rank_change": "new"
+    },
+    {
+      "rank": 18,
+      "book_id": "7650499837250522137",
+      "book_name": "系统想害我，我选择上交国家",
+      "author": "超级吹宝泡泡糖",
+      "gender": "男频",
+      "primary_tag": "都市脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4d282abdaf4117792b83f7f4c851c914~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=cfKLAtgy53kS1By17IiAhmDMQwg%3D",
+      "book_url": "https://fanqienovel.com/page/7650499837250522137",
+      "rank_change": "new"
+    },
+    {
+      "rank": 19,
+      "book_id": "7477576232578599998",
+      "book_name": "哈哈哈，大明",
+      "author": "微微的薇",
+      "gender": "男频",
+      "primary_tag": "历史古代",
+      "secondary_tags": [],
+      "all_tags": [
+        "历史古代"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/e7c3b94a0b4c31ed65bd3d1b3a9cc850~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=tABxsPSCtQUA%2FopEJkSV%2BUxxT%2BM%3D",
+      "book_url": "https://fanqienovel.com/page/7477576232578599998",
+      "rank_change": "new"
+    },
+    {
+      "rank": 20,
+      "book_id": "7087872099557051400",
+      "book_name": "我以狐仙镇百鬼",
+      "author": "紫梦游龙",
+      "gender": "男频",
+      "primary_tag": "悬疑灵异",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑灵异"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/05cb5f60d9bea6c19a94f9a27a763ce7~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=2JFZVWeHzBm%2FfEmNCY0Q%2BQoGtB0%3D",
+      "book_url": "https://fanqienovel.com/page/7087872099557051400",
+      "rank_change": -6
+    },
+    {
+      "rank": 21,
+      "book_id": "7081535608648109069",
+      "book_name": "异兽迷城",
+      "author": "彭湃",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/d7c74d87f21430683063fc0f4307120b~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=aRA2Hu%2BWhqZbkkGxrN5aG8JdAo8%3D",
+      "book_url": "https://fanqienovel.com/page/7081535608648109069",
+      "rank_change": "new"
+    },
+    {
+      "rank": 22,
+      "book_id": "7256784068786785336",
+      "book_name": "诡舍",
+      "author": "夜来风雨声丶",
+      "gender": "男频",
+      "primary_tag": "悬疑脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob67b9e86ddf3a2d6293a37e7895331a6~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=jkkPxZN94IPMR%2FU9K5smU0UnOR8%3D",
+      "book_url": "https://fanqienovel.com/page/7256784068786785336",
+      "rank_change": -7
+    },
+    {
+      "rank": 23,
+      "book_id": "7448581895861849112",
+      "book_name": "公路求生榜一说她要走到公路尽头",
+      "author": "张泡泡",
+      "gender": "女频",
+      "primary_tag": "游戏体育",
+      "secondary_tags": [],
+      "all_tags": [
+        "游戏体育"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o769adcf361267bcb98e3e275a30e3f96~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=TxPR2ROEdmD0iWbmUJV32EYk%2Fks%3D",
+      "book_url": "https://fanqienovel.com/page/7448581895861849112",
+      "rank_change": 0
+    },
+    {
+      "rank": 24,
+      "book_id": "7228940788351110182",
+      "book_name": "系统赋我长生，我熬死了所有人",
+      "author": "一只榴莲3号",
+      "gender": "男频",
+      "primary_tag": "玄幻脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "玄幻脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o129beb2268aa16669806533810deddfb~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=J97o6uFx0cjeB9%2B2QX%2B9g03ubh8%3D",
+      "book_url": "https://fanqienovel.com/page/7228940788351110182",
+      "rank_change": -6
+    },
+    {
+      "rank": 25,
+      "book_id": "7320218217488600126",
+      "book_name": "领主：我在苦痛世界，养成少女",
+      "author": "嘎嘎乱写",
+      "gender": "男频",
+      "primary_tag": "西方奇幻",
+      "secondary_tags": [],
+      "all_tags": [
+        "西方奇幻"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/999c8a1d05578d7aec77def618f7f4e6~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=SbpSqTgKTLt937Dq2hlaLKfJ%2BHw%3D",
+      "book_url": "https://fanqienovel.com/page/7320218217488600126",
+      "rank_change": 1
+    },
+    {
+      "rank": 26,
+      "book_id": "7338034838672247833",
+      "book_name": "诸神愚戏",
+      "author": "一月九十秋",
+      "gender": "男频",
+      "primary_tag": "都市高武",
+      "secondary_tags": [],
+      "all_tags": [
+        "都市高武"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o456671fab473706eac056e1ae403e5c3~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=vRz7ZL%2F3u0IHkSsAq1muj3wBw%2Fc%3D",
+      "book_url": "https://fanqienovel.com/page/7338034838672247833",
+      "rank_change": -9
+    },
+    {
+      "rank": 27,
+      "book_id": "7574398565431135256",
+      "book_name": "认路人甲当爹后我喜提反派全家桶",
+      "author": "明月望",
+      "gender": "女频",
+      "primary_tag": "青春甜宠",
+      "secondary_tags": [],
+      "all_tags": [
+        "青春甜宠"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/2cf40b679b00c75688b83612509caea7~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=kDo9bmKX3iUmWeMWMkKcG6K1Ah0%3D",
+      "book_url": "https://fanqienovel.com/page/7574398565431135256",
+      "rank_change": -11
+    },
+    {
+      "rank": 28,
+      "book_id": "7569244441353931800",
+      "book_name": "穿越庶长兄：嫡弟竟是仙帝转世！",
+      "author": "今晚晒月亮",
+      "gender": "男频",
+      "primary_tag": "东方仙侠",
+      "secondary_tags": [],
+      "all_tags": [
+        "东方仙侠"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/c8db88661b6ac6e267018dacb12a2a4c~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=fnnqGFnG1XvMcwbjLtv%2FOSZ5aOU%3D",
+      "book_url": "https://fanqienovel.com/page/7569244441353931800",
+      "rank_change": -1
+    },
+    {
+      "rank": 29,
+      "book_id": "7623686597409508376",
+      "book_name": "全球死考：刚下刑场你让我去考试",
+      "author": "我爱吃猫片哇",
+      "gender": "男频",
+      "primary_tag": "悬疑脑洞",
+      "secondary_tags": [],
+      "all_tags": [
+        "悬疑脑洞"
+      ],
+      "abstract": "暂无简介",
+      "status": "连载中",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc1cad58a1611faa3ce1bff953296036f~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=e1GwChfHrk%2BslXsP8rUOq9tHEZA%3D",
+      "book_url": "https://fanqienovel.com/page/7623686597409508376",
+      "rank_change": "new"
+    },
+    {
+      "rank": 30,
+      "book_id": "7077516958534470656",
+      "book_name": "凡骨",
+      "author": "壹更大师",
+      "gender": "男频",
+      "primary_tag": "东方仙侠",
+      "secondary_tags": [],
+      "all_tags": [
+        "东方仙侠"
+      ],
+      "abstract": "暂无简介",
+      "status": "完结",
+      "rank_score": "",
+      "thumb_url": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oab63dc9453b797dc4e499ad254f803fc~tplv-snk2bdmkp8-superreso-double-rz:1200:0.image?lk3s=ae45642e&x-expires=1798661307&x-signature=VH4vPhAap0S1h43rNAL36sbeX6g%3D",
+      "book_url": "https://fanqienovel.com/page/7077516958534470656",
+      "rank_change": -9
+    }
+  ]
+}
