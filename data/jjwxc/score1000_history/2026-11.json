@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-11-19 04:12:09",
-  "update_date": "2026-11-19",
+  "update_time": "2026-11-20 04:10:41",
+  "update_date": "2026-11-20",
   "update_month": "2026-11",
   "total_count": 1000,
   "source": "晋江文学城·积分榜Top1000",
@@ -220,11 +220,11 @@
         "全息",
         "HE"
       ],
-      "score": 45958205440,
-      "score_display": "46.0G",
+      "score": 46065283072,
+      "score_display": "46.1G",
       "abstract": "他身体里有另一个人",
       "status": "连载中",
-      "word_count": "56.2万",
+      "word_count": "56.5万",
       "publish_time": "2026-04-19 10:51:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6771725",
@@ -1958,11 +1958,11 @@
         "直播",
         "HE"
       ],
-      "score": 17582010368,
+      "score": 17581684736,
       "score_display": "17.6G",
       "abstract": "我在无限旅游团当导游！",
       "status": "连载中",
-      "word_count": "827.6万",
+      "word_count": "828.0万",
       "publish_time": "2021-02-14 12:00:02",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3396832",
@@ -3654,11 +3654,11 @@
         "轻松",
         "龙傲天"
       ],
-      "score": 12612078592,
+      "score": 12615863296,
       "score_display": "12.6G",
       "abstract": "土狗流修仙",
       "status": "完结",
-      "word_count": "480.9万",
+      "word_count": "481.1万",
       "publish_time": "2022-01-11 00:31:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5873803",
@@ -4826,11 +4826,11 @@
         "成长",
         "正剧"
       ],
-      "score": 10522809344,
+      "score": 10523850752,
       "score_display": "10.5G",
       "abstract": "【登仙】副本已完结",
       "status": "连载中",
-      "word_count": "319.2万",
+      "word_count": "319.8万",
       "publish_time": "2024-07-31 21:00:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8217200",
@@ -5101,7 +5101,7 @@
         "轻松",
         "规则怪谈"
       ],
-      "score": 10281753600,
+      "score": 10281316352,
       "score_display": "10.3G",
       "abstract": "只要作不死，就往死里作",
       "status": "完结",
@@ -6371,7 +6371,7 @@
         "快穿",
         "正剧"
       ],
-      "score": 9087490048,
+      "score": 9087923200,
       "score_display": "9.1G",
       "abstract": "执笔者亲身走入他们的长夜",
       "status": "完结",
@@ -8785,6 +8785,49 @@
     },
     {
       "rank": 221,
+      "book_id": "9027064",
+      "book_name": "我有一座安全城",
+      "author": "糖中猫",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "幻想未来",
+      "theme": "剧情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "幻想未来",
+        "剧情",
+        "幻想空间",
+        "末世",
+        "爽文",
+        "经营",
+        "基建",
+        "位面"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "幻想未来",
+        "剧情",
+        "幻想空间",
+        "末世",
+        "爽文",
+        "经营",
+        "基建",
+        "位面"
+      ],
+      "score": 7825553408,
+      "score_display": "7.8G",
+      "abstract": "在末日，成为星球之主",
+      "status": "连载中",
+      "word_count": "157.7万",
+      "publish_time": "2026-02-27 00:00:01",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9027064",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2257287"
+    },
+    {
+      "rank": 222,
       "book_id": "2961737",
       "book_name": "折腰",
       "author": "蓬莱客",
@@ -8821,7 +8864,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1742981"
     },
     {
-      "rank": 222,
+      "rank": 223,
       "book_id": "3145450",
       "book_name": "天宝伏妖录",
       "author": "非天夜翔",
@@ -8854,7 +8897,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=293673"
     },
     {
-      "rank": 223,
+      "rank": 224,
       "book_id": "3597941",
       "book_name": "他最野了",
       "author": "曲小蛐",
@@ -8893,7 +8936,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1024681"
     },
     {
-      "rank": 224,
+      "rank": 225,
       "book_id": "3485350",
       "book_name": "古董下山",
       "author": "缘何故",
@@ -8934,7 +8977,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=791025"
     },
     {
-      "rank": 225,
+      "rank": 226,
       "book_id": "3472606",
       "book_name": "夺梦",
       "author": "非天夜翔",
@@ -8973,49 +9016,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3472606",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=293673"
-    },
-    {
-      "rank": 226,
-      "book_id": "9027064",
-      "book_name": "我有一座安全城",
-      "author": "糖中猫",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "幻想未来",
-      "theme": "剧情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "幻想未来",
-        "剧情",
-        "幻想空间",
-        "末世",
-        "爽文",
-        "经营",
-        "基建",
-        "位面"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "幻想未来",
-        "剧情",
-        "幻想空间",
-        "末世",
-        "爽文",
-        "经营",
-        "基建",
-        "位面"
-      ],
-      "score": 7770361856,
-      "score_display": "7.8G",
-      "abstract": "在末日，成为星球之主",
-      "status": "连载中",
-      "word_count": "157.4万",
-      "publish_time": "2026-02-27 00:00:01",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9027064",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2257287"
     },
     {
       "rank": 227,
@@ -9583,6 +9583,49 @@
     },
     {
       "rank": 241,
+      "book_id": "10035712",
+      "book_name": "海岛求生：生活玩家种田囤货",
+      "author": "绯夷",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "剧情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "剧情",
+        "种田文",
+        "美食",
+        "经营",
+        "萌宠",
+        "基建",
+        "囤货"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "剧情",
+        "种田文",
+        "美食",
+        "经营",
+        "萌宠",
+        "基建",
+        "囤货"
+      ],
+      "score": 7563374592,
+      "score_display": "7.6G",
+      "abstract": "种田囤货养动物，劳动致富",
+      "status": "连载中",
+      "word_count": "289.8万",
+      "publish_time": "2025-09-08 12:17:31",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10035712",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7039167"
+    },
+    {
+      "rank": 242,
       "book_id": "2584222",
       "book_name": "帝王攻略",
       "author": "语笑阑珊",
@@ -9619,49 +9662,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=2584222",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=421282"
-    },
-    {
-      "rank": 242,
-      "book_id": "10035712",
-      "book_name": "海岛求生：生活玩家种田囤货",
-      "author": "绯夷",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "幻想未来",
-      "theme": "剧情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "幻想未来",
-        "剧情",
-        "种田文",
-        "美食",
-        "经营",
-        "萌宠",
-        "基建",
-        "囤货"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "幻想未来",
-        "剧情",
-        "种田文",
-        "美食",
-        "经营",
-        "萌宠",
-        "基建",
-        "囤货"
-      ],
-      "score": 7533768192,
-      "score_display": "7.5G",
-      "abstract": "种田囤货养动物，劳动致富",
-      "status": "连载中",
-      "word_count": "289.1万",
-      "publish_time": "2025-09-08 12:17:31",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10035712",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=7039167"
     },
     {
       "rank": 243,
@@ -11058,11 +11058,11 @@
         "天之骄子",
         "穿越时空"
       ],
-      "score": 7115308032,
+      "score": 7116536832,
       "score_display": "7.1G",
       "abstract": "诸子百家，成神之道",
       "status": "连载中",
-      "word_count": "146.2万",
+      "word_count": "146.5万",
       "publish_time": "2024-05-19 08:00:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6099400",
@@ -13848,6 +13848,49 @@
     },
     {
       "rank": 346,
+      "book_id": "10007851",
+      "book_name": "高调装神，猥琐发育",
+      "author": "马户子君",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "奇幻",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "奇幻",
+        "强强",
+        "异能",
+        "爽文",
+        "升级流",
+        "校园",
+        "沙雕"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "奇幻",
+        "强强",
+        "异能",
+        "爽文",
+        "升级流",
+        "校园",
+        "沙雕"
+      ],
+      "score": 6361889280,
+      "score_display": "6.4G",
+      "abstract": "新手的我莅临满级村。",
+      "status": "连载中",
+      "word_count": "39.0万",
+      "publish_time": "2026-07-27 09:00:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10007851",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2697436"
+    },
+    {
+      "rank": 347,
       "book_id": "3279919",
       "book_name": "不要物种歧视",
       "author": "月下蝶影",
@@ -13888,7 +13931,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=321503"
     },
     {
-      "rank": 347,
+      "rank": 348,
       "book_id": "5604117",
       "book_name": "同时给四位大佬当备胎后[穿书]",
       "author": "提灯怼月",
@@ -13929,7 +13972,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3713917"
     },
     {
-      "rank": 348,
+      "rank": 349,
       "book_id": "3931500",
       "book_name": "宫廷生存纪事",
       "author": "妾在山阳",
@@ -13968,7 +14011,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1667686"
     },
     {
-      "rank": 349,
+      "rank": 350,
       "book_id": "4491758",
       "book_name": "深渊巨龙苏醒以后",
       "author": "桑沃",
@@ -14009,7 +14052,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1610599"
     },
     {
-      "rank": 350,
+      "rank": 351,
       "book_id": "3890257",
       "book_name": "大雾",
       "author": "颜凉雨",
@@ -14050,7 +14093,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=48075"
     },
     {
-      "rank": 351,
+      "rank": 352,
       "book_id": "3200939",
       "book_name": "猫抓板先生",
       "author": "木苏里",
@@ -14091,7 +14134,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=966799"
     },
     {
-      "rank": 352,
+      "rank": 353,
       "book_id": "3028693",
       "book_name": "重生之豁然",
       "author": "缘何故",
@@ -14132,7 +14175,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=791025"
     },
     {
-      "rank": 353,
+      "rank": 354,
       "book_id": "4457909",
       "book_name": "满天星",
       "author": "睡芒",
@@ -14173,7 +14216,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1761357"
     },
     {
-      "rank": 354,
+      "rank": 355,
       "book_id": "4888629",
       "book_name": "星星轻颤时",
       "author": "唧唧的猫",
@@ -14208,7 +14251,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1936895"
     },
     {
-      "rank": 355,
+      "rank": 356,
       "book_id": "3688574",
       "book_name": "咬上你指尖",
       "author": "苏景闲",
@@ -14249,7 +14292,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1055448"
     },
     {
-      "rank": 356,
+      "rank": 357,
       "book_id": "5187394",
       "book_name": "别想掰弯我",
       "author": "林七年",
@@ -14288,7 +14331,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3241352"
     },
     {
-      "rank": 357,
+      "rank": 358,
       "book_id": "7875487",
       "book_name": "替身受觉醒了",
       "author": "二月竹",
@@ -14331,7 +14374,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3059568"
     },
     {
-      "rank": 358,
+      "rank": 359,
       "book_id": "4136658",
       "book_name": "百年绅士1890",
       "author": "木苏里",
@@ -14368,49 +14411,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4136658",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=966799"
-    },
-    {
-      "rank": 359,
-      "book_id": "10007851",
-      "book_name": "高调装神，猥琐发育",
-      "author": "马户子君",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "幻想未来",
-      "theme": "奇幻",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "幻想未来",
-        "奇幻",
-        "强强",
-        "异能",
-        "爽文",
-        "升级流",
-        "校园",
-        "沙雕"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "幻想未来",
-        "奇幻",
-        "强强",
-        "异能",
-        "爽文",
-        "升级流",
-        "校园",
-        "沙雕"
-      ],
-      "score": 6267737088,
-      "score_display": "6.3G",
-      "abstract": "新手的我莅临满级村。",
-      "status": "连载中",
-      "word_count": "38.3万",
-      "publish_time": "2026-07-27 09:00:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10007851",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2697436"
     },
     {
       "rank": 360,
@@ -15835,6 +15835,49 @@
     },
     {
       "rank": 395,
+      "book_id": "9035161",
+      "book_name": "修真界第一营销咖",
+      "author": "云霄桂月",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "架空历史",
+      "theme": "仙侠",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "架空历史",
+        "仙侠",
+        "仙侠修真",
+        "励志",
+        "爆笑",
+        "沙雕",
+        "脑洞",
+        "师徒"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "架空历史",
+        "仙侠",
+        "仙侠修真",
+        "励志",
+        "爆笑",
+        "沙雕",
+        "脑洞",
+        "师徒"
+      ],
+      "score": 5933046784,
+      "score_display": "5.9G",
+      "abstract": "我不当Bking不如去嘎",
+      "status": "连载中",
+      "word_count": "83.8万",
+      "publish_time": "2026-02-05 00:01:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9035161",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2561240"
+    },
+    {
+      "rank": 396,
       "book_id": "4374375",
       "book_name": "七天七夜",
       "author": "春风遥",
@@ -15871,49 +15914,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=4374375",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=976658"
-    },
-    {
-      "rank": 396,
-      "book_id": "9035161",
-      "book_name": "修真界第一营销咖",
-      "author": "云霄桂月",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "架空历史",
-      "theme": "仙侠",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "架空历史",
-        "仙侠",
-        "仙侠修真",
-        "励志",
-        "爆笑",
-        "沙雕",
-        "脑洞",
-        "师徒"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "架空历史",
-        "仙侠",
-        "仙侠修真",
-        "励志",
-        "爆笑",
-        "沙雕",
-        "脑洞",
-        "师徒"
-      ],
-      "score": 5925830144,
-      "score_display": "5.9G",
-      "abstract": "我不当Bking不如去嘎",
-      "status": "连载中",
-      "word_count": "83.5万",
-      "publish_time": "2026-02-05 00:01:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9035161",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2561240"
     },
     {
       "rank": 397,
@@ -17462,8 +17462,8 @@
     {
       "rank": 435,
       "book_id": "9537177",
-      "book_name": "绿*******后",
-      "author": "宿*******川",
+      "book_name": "绿茶被狠辣富哥看穿后",
+      "author": "宿星川",
       "channel": "纯爱",
       "nature": "原创",
       "genre": "纯爱",
@@ -19217,11 +19217,11 @@
         "文野",
         "咒回"
       ],
-      "score": 5446616064,
-      "score_display": "5.4G",
+      "score": 5452215296,
+      "score_display": "5.5G",
       "abstract": "我是揍敌客家的宝宝哒！",
       "status": "连载中",
-      "word_count": "651.8万",
+      "word_count": "652.5万",
       "publish_time": "2024-05-13 17:00:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8608728",
@@ -20074,6 +20074,47 @@
     },
     {
       "rank": 500,
+      "book_id": "10626543",
+      "book_name": "全民求生:从小木屋到魔法农场",
+      "author": "时如意",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "剧情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "剧情",
+        "强强",
+        "幻想空间",
+        "种田文",
+        "异能",
+        "爽文"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "剧情",
+        "强强",
+        "幻想空间",
+        "种田文",
+        "异能",
+        "爽文"
+      ],
+      "score": 5355611136,
+      "score_display": "5.4G",
+      "abstract": "末世玩家在求生游戏过神仙日子啦",
+      "status": "连载中",
+      "word_count": "104.8万",
+      "publish_time": "2026-03-25 00:42:23",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10626543",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5668961"
+    },
+    {
+      "rank": 501,
       "book_id": "4977319",
       "book_name": "千屿",
       "author": "白羽摘雕弓",
@@ -20110,7 +20151,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2240332"
     },
     {
-      "rank": 501,
+      "rank": 502,
       "book_id": "2444752",
       "book_name": "角色扮演",
       "author": "颓",
@@ -20153,7 +20194,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=363175"
     },
     {
-      "rank": 502,
+      "rank": 503,
       "book_id": "3205938",
       "book_name": "曾是年少时",
       "author": "青浼",
@@ -20188,47 +20229,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=3205938",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=348401"
-    },
-    {
-      "rank": 503,
-      "book_id": "10626543",
-      "book_name": "全民求生:从小木屋到魔法农场",
-      "author": "时如意",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "幻想未来",
-      "theme": "剧情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "幻想未来",
-        "剧情",
-        "强强",
-        "幻想空间",
-        "种田文",
-        "异能",
-        "爽文"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "幻想未来",
-        "剧情",
-        "强强",
-        "幻想空间",
-        "种田文",
-        "异能",
-        "爽文"
-      ],
-      "score": 5332331520,
-      "score_display": "5.3G",
-      "abstract": "末世玩家在求生游戏过神仙日子啦",
-      "status": "连载中",
-      "word_count": "104.4万",
-      "publish_time": "2026-03-25 00:42:23",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=10626543",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5668961"
     },
     {
       "rank": 504,
@@ -20583,11 +20583,11 @@
         "升级流",
         "神豪流"
       ],
-      "score": 5280083456,
+      "score": 5287752192,
       "score_display": "5.3G",
       "abstract": "我，世界第一网球之王，打钱。",
       "status": "连载中",
-      "word_count": "551.9万",
+      "word_count": "552.4万",
       "publish_time": "2024-11-11 23:52:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8417317",
@@ -28411,6 +28411,49 @@
     },
     {
       "rank": 707,
+      "book_id": "9836082",
+      "book_name": "没你就不行之重启",
+      "author": "林木儿",
+      "channel": "言情",
+      "nature": "衍生",
+      "genre": "言情",
+      "era": "架空历史",
+      "theme": "其他衍生",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "架空历史",
+        "其他衍生",
+        "强强",
+        "田园",
+        "历史衍生",
+        "现代架空",
+        "年代文",
+        "朝堂"
+      ],
+      "all_tags": [
+        "衍生",
+        "言情",
+        "架空历史",
+        "其他衍生",
+        "强强",
+        "田园",
+        "历史衍生",
+        "现代架空",
+        "年代文",
+        "朝堂"
+      ],
+      "score": 4413129728,
+      "score_display": "4.4G",
+      "abstract": "你在身边，在你身边。",
+      "status": "连载中",
+      "word_count": "522.5万",
+      "publish_time": "2025-06-30 13:21:19",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9836082",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1262587"
+    },
+    {
+      "rank": 708,
       "book_id": "8356068",
       "book_name": "没你就不行之新征途",
       "author": "林木儿",
@@ -28453,7 +28496,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1262587"
     },
     {
-      "rank": 708,
+      "rank": 709,
       "book_id": "5839156",
       "book_name": "全服首杀",
       "author": "年终",
@@ -28490,49 +28533,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5839156",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2229832"
-    },
-    {
-      "rank": 709,
-      "book_id": "9836082",
-      "book_name": "没你就不行之重启",
-      "author": "林木儿",
-      "channel": "言情",
-      "nature": "衍生",
-      "genre": "言情",
-      "era": "架空历史",
-      "theme": "其他衍生",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "架空历史",
-        "其他衍生",
-        "强强",
-        "田园",
-        "历史衍生",
-        "现代架空",
-        "年代文",
-        "朝堂"
-      ],
-      "all_tags": [
-        "衍生",
-        "言情",
-        "架空历史",
-        "其他衍生",
-        "强强",
-        "田园",
-        "历史衍生",
-        "现代架空",
-        "年代文",
-        "朝堂"
-      ],
-      "score": 4403324928,
-      "score_display": "4.4G",
-      "abstract": "你在身边，在你身边。",
-      "status": "连载中",
-      "word_count": "521.5万",
-      "publish_time": "2025-06-30 13:21:19",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=9836082",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1262587"
     },
     {
       "rank": 710,
@@ -32599,6 +32599,49 @@
     },
     {
       "rank": 811,
+      "book_id": "8672407",
+      "book_name": "只好斗到底了",
+      "author": "菌行",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "幻想未来",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "幻想未来",
+        "爱情",
+        "强强",
+        "科幻",
+        "体育竞技",
+        "相爱相杀",
+        "星际",
+        "赛博朋克"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "幻想未来",
+        "爱情",
+        "强强",
+        "科幻",
+        "体育竞技",
+        "相爱相杀",
+        "星际",
+        "赛博朋克"
+      ],
+      "score": 4066033408,
+      "score_display": "4.1G",
+      "abstract": "宿敌就是宿敌啊！",
+      "status": "连载中",
+      "word_count": "230.8万",
+      "publish_time": "2025-06-16 00:05:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8672407",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1904733"
+    },
+    {
+      "rank": 812,
       "book_id": "6282744",
       "book_name": "银河坠落",
       "author": "曲小蛐",
@@ -32637,7 +32680,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1024681"
     },
     {
-      "rank": 812,
+      "rank": 813,
       "book_id": "3361962",
       "book_name": "黄金台",
       "author": "苍梧宾白",
@@ -32676,7 +32719,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1777133"
     },
     {
-      "rank": 813,
+      "rank": 814,
       "book_id": "4465155",
       "book_name": "晚来天欲雪",
       "author": "妄鸦",
@@ -32719,7 +32762,7 @@
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2187033"
     },
     {
-      "rank": 814,
+      "rank": 815,
       "book_id": "9265282",
       "book_name": "驯服劣犬的男人",
       "author": "青浼",
@@ -32754,49 +32797,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=9265282",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=348401"
-    },
-    {
-      "rank": 815,
-      "book_id": "8672407",
-      "book_name": "只好斗到底了",
-      "author": "菌行",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "幻想未来",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "幻想未来",
-        "爱情",
-        "强强",
-        "科幻",
-        "体育竞技",
-        "相爱相杀",
-        "星际",
-        "赛博朋克"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "幻想未来",
-        "爱情",
-        "强强",
-        "科幻",
-        "体育竞技",
-        "相爱相杀",
-        "星际",
-        "赛博朋克"
-      ],
-      "score": 4050007552,
-      "score_display": "4.1G",
-      "abstract": "宿敌就是宿敌啊！",
-      "status": "连载中",
-      "word_count": "230.5万",
-      "publish_time": "2025-06-16 00:05:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8672407",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1904733"
     },
     {
       "rank": 816,
