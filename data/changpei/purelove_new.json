@@ -1,7 +1,7 @@
 {
-  "update_time": "2026-11-20 10:32:33",
-  "update_date": "2026-11-20",
-  "total_count": 40,
+  "update_time": "2026-11-21 04:09:11",
+  "update_date": "2026-11-21",
+  "total_count": 37,
   "source": "长佩文学·纯爱·新书榜",
   "source_url": "https://www.gongzicp.com/home/indexRanking?tid=75&rid=7",
   "platform": "changpei",
@@ -9,22 +9,58 @@
   "ranking_id": "purelove_new",
   "ranking_name": "纯爱·新书榜",
   "tag_stats": {
-    "都市": 22,
-    "青春": 5,
-    "架空": 2,
-    "综合": 5,
-    "灵异": 1,
-    "宫廷": 2,
+    "都市": 21,
+    "架空": 3,
+    "青春": 3,
+    "综合": 6,
     "现代": 1,
-    "推理": 1,
-    "武侠": 1
+    "宫廷": 1,
+    "武侠": 1,
+    "民国": 1
   },
   "status_stats": {
-    "连载中": 40
+    "连载中": 37
   },
   "books": [
     {
       "rank": 1,
+      "book_name": "劣秋恶果",
+      "book_url": "https://www.gongzicp.com/novel-2352498.html",
+      "author": "江口渡",
+      "author_url": "https://www.gongzicp.com/zone/author-1184991.html",
+      "tags": [
+        "都市",
+        "HE",
+        "欢喜冤家",
+        "掉马但是攻掉马",
+        "甜宠",
+        "还好老婆智商低",
+        "破镜重圆",
+        "这镜子就没破"
+      ],
+      "all_tags": [
+        "都市",
+        "HE",
+        "欢喜冤家",
+        "掉马但是攻掉马",
+        "甜宠",
+        "还好老婆智商低",
+        "破镜重圆",
+        "这镜子就没破"
+      ],
+      "primary_tag": "都市",
+      "abstract": "*攻受无血缘 腹黑娇惯爹系攻×笨蛋美人犟种受 所有人都以为，纪家少爷纪霄容不下那个拖油瓶。 丹秋生傻气、倔强、不认栽，动不动就与纪霄拌嘴，好没眼力见，唯一看得过去的就是那张小脸：长得娇艳漂亮，一看就是伺候人的好材料。 丹秋生的继父一死，冷眼旁观的看客都知道纪霄要干什么——把小麻烦关起来，性子磨软调养好，送去给大佬们做情人。 人人都这么传，丹秋生也信了，吓得连夜收拾包裹跑路，宁死也不肯落入继兄的手掌",
+      "word_count": "5.68万",
+      "popularity": "11.43万",
+      "status": "连载中",
+      "update_time": "昨天 22:38",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 17
+    },
+    {
+      "rank": 2,
       "book_name": "值得爱",
       "book_url": "https://www.gongzicp.com/novel-2352020.html",
       "author": "宋芥",
@@ -57,86 +93,43 @@
       ],
       "primary_tag": "都市",
       "abstract": "和席淮臣结婚的这些年，温聆听过很多嘲讽声，无不在说席淮臣根本不爱他，只是爱他这张脸而已 温聆听着只觉得好笑，喜欢他的脸不就是喜欢他吗？有什么区别？ 后来他才知道，是有区别的 席淮臣确实不爱他，只爱他这张脸 因为这张脸像极了他的白月光 - 真相揭晓的那天，温聆终于知道，这三年，他所以为的相爱，不过是一场交易 他稀里糊涂做了三年替身，而席淮臣给出的评价是:不合格 温聆不是一个合格的替身，除了这张脸以外",
-      "word_count": "6.48万",
-      "popularity": "52.83万",
+      "word_count": "6.93万",
+      "popularity": "55.75万",
       "status": "连载中",
-      "update_time": "昨天 12:00",
+      "update_time": "昨天 22:00",
       "channel": "",
       "gender": "",
-      "rank_change": null,
-      "history_days": 14
-    },
-    {
-      "rank": 2,
-      "book_name": "及时雨停",
-      "book_url": "https://www.gongzicp.com/novel-2351041.html",
-      "author": "亭灯眠",
-      "author_url": "https://www.gongzicp.com/zone/author-1247543.html",
-      "tags": [
-        "青春",
-        "HE",
-        "救赎",
-        "互宠",
-        "校园",
-        "小狗年下",
-        "只对受萌感十足攻",
-        "除攻外冷酷无情受"
-      ],
-      "all_tags": [
-        "青春",
-        "HE",
-        "救赎",
-        "互宠",
-        "校园",
-        "小狗年下",
-        "只对受萌感十足攻",
-        "除攻外冷酷无情受"
-      ],
-      "primary_tag": "青春",
-      "abstract": "“当及时雨停后，万籁俱静时，残存心里的是荒芜空虚更多呢，还是欣喜庆幸更多呢？” 直球的冷脸萌受×敏感的热脸萌攻 祁青黎×陈澍恒 有少爷命没少爷病最后甩了少爷身份的祁青黎把自己打包回乡，把自己打包进新的生活里，最后把自己打包到陈澍恒的心头上。 嗯......挺好。 遇到理想型毫不犹豫地一见钟情，但自己似乎没开窍怎么办？那身兼数职的陈澍恒就帮他，帮他，还是帮他，随叫随到、随时待命，最后帮他帮到搭上自己",
-      "word_count": "3.88万",
-      "popularity": "3.52万",
-      "status": "连载中",
-      "update_time": "昨天 19:53",
-      "channel": "",
-      "gender": "",
-      "rank_change": "new",
-      "history_days": 1
+      "rank_change": -1,
+      "history_days": 15
     },
     {
       "rank": 3,
-      "book_name": "永不止息",
-      "book_url": "https://www.gongzicp.com/novel-2357932.html",
-      "author": "鸥贝贝",
-      "author_url": "https://www.gongzicp.com/zone/author-1250566.html",
+      "book_name": "爱神爱神请回头",
+      "book_url": "https://www.gongzicp.com/novel-2366575.html",
+      "author": "味心理论",
+      "author_url": "https://www.gongzicp.com/zone/author-973893.html",
       "tags": [
         "架空",
-        "强强",
-        "相爱相杀",
-        "HE",
-        "剧情",
-        "向哨",
-        "废土",
-        "双向救赎",
-        "年上"
+        "先做后爱",
+        "年上",
+        "ABO",
+        "娱乐圈",
+        "论坛体"
       ],
       "all_tags": [
         "架空",
-        "强强",
-        "相爱相杀",
-        "HE",
-        "剧情",
-        "向哨",
-        "废土",
-        "双向救赎",
-        "年上"
+        "先做后爱",
+        "年上",
+        "ABO",
+        "娱乐圈",
+        "论坛体"
       ],
       "primary_tag": "架空",
-      "abstract": "顾濯x凌域 「白切黑斯文败类向导攻x高武力嘴硬心软哨兵受」 「白马x黑狼」 凌域作为白塔第一混子哨兵，顶着S+的等级，有班不上，有活不干，有钱不赚 空闲时间全去练他的格斗技巧 某天，他被高层强行塞给全塔唯一S级向导顾濯，并强制绑定了深度链接 凌域以为这只是一场各取所需的的搭档协议 谁知道顾濯这位表面高岭之花的斯文败类，不仅图他的武力值，还图他这个人 最要命的是—— 因为一场互殴，全世界都以为他是上",
-      "word_count": "3.96万",
-      "popularity": "2.61万",
+      "abstract": "分区：佩佩小组·娱乐八卦·匿名灌水 【李涛】有人扒一下左培禹和向海川吗？这俩绝对有故事！ 【主楼】 已知这俩从小就是邻居，两个人还都是Alpha，那肯定不对付吧，怎么隔壁楼爆出他俩接吻照！ 1L：好像他们本来要出演同一部电视剧，后来粉丝闹事给停了？ 2L：我朋友是那个剧组的，听说他们俩在酒店里还发生关系了呢，当时他们住的那一条走廊真是，味大无需多言（睡醒删，非人脉姐） 3L：我是他们高中同学！我作",
+      "word_count": "1.27万",
+      "popularity": "3.70万",
       "status": "连载中",
-      "update_time": "昨天 14:17",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
       "rank_change": "new",
@@ -144,49 +137,72 @@
     },
     {
       "rank": 4,
-      "book_name": "昼伏夜出",
-      "book_url": "https://www.gongzicp.com/novel-2352554.html",
-      "author": "青水幸",
-      "author_url": "https://www.gongzicp.com/zone/author-1046881.html",
+      "book_name": "道贤呀",
+      "book_url": "https://www.gongzicp.com/novel-2357479.html",
+      "author": "金迈奇",
+      "author_url": "https://www.gongzicp.com/zone/author-1045074.html",
       "tags": [
-        "综合",
-        "掉马",
-        "职业",
-        "强强",
-        "轻松",
-        "异能",
-        "剧情",
-        "年上",
-        "相爱相杀",
-        "先婚后爱",
-        "爽文"
+        "都市",
+        "韩风文",
+        "狗血",
+        "年下",
+        "救赎"
       ],
       "all_tags": [
-        "综合",
-        "掉马",
-        "职业",
-        "强强",
-        "轻松",
-        "异能",
-        "剧情",
-        "年上",
-        "相爱相杀",
-        "先婚后爱",
-        "爽文"
+        "都市",
+        "韩风文",
+        "狗血",
+        "年下",
+        "救赎"
       ],
-      "primary_tag": "综合",
-      "abstract": "许遇×肖愿 口嫌体正直闷骚攻×清冷薄情人妻受 白天，他是为我洗手作羹汤的贤惠伴侣。 夜晚，他是我业绩榜上最狠的对手Hope。 而我直到离婚那天才知道—— 我老婆和我死对头，是同一个人。 肖愿提出离婚时，许遇是懵的。 他以为肖愿出轨，调查却发现： 他的妻子无亲无友，背景干净得像一张白纸。 直到一只小猫妖递来一张照片—— hope执刀的背影，像极了他家里那位贤惠爱人。 证据确凿，许遇半夜尾随把人堵在墙",
-      "word_count": "6.41万",
-      "popularity": "31.28万",
+      "primary_tag": "都市",
+      "abstract": "辱追财阀攻X清冷钓系受 —— 财阀小少爷郑书赫，十九岁就遇到人生最大滑铁卢——崔道贤。 在酒吧各色人等脱颖而出的崔先生深得少爷欢心。成熟矜贵，分寸感绝佳，年上男的魅力一览无遗。 郑书赫当即私定终身，就他了！ 两人火速合拍，顺势奔赴“爱巢”，仅仅一夜，少爷便轰轰烈烈坠入爱河。 谁知还未等到天亮，小三、小四、小五、小十六全部找上门来。 最可怕的是……怎么就他一个男的！？ 受尽委屈的郑书赫彻底气炸，扭头",
+      "word_count": "8",
+      "popularity": "43.84万",
       "status": "连载中",
-      "update_time": "昨天 20:12",
+      "update_time": "昨天 00:05",
       "channel": "",
       "gender": "",
       "rank_change": null,
-      "history_days": 15
+      "history_days": 2
     },
     {
       "rank": 5,
+      "book_name": "溺水琥珀",
+      "book_url": "https://www.gongzicp.com/novel-2360306.html",
+      "author": "山虎桃枝",
+      "author_url": "https://www.gongzicp.com/zone/author-1192185.html",
+      "tags": [
+        "都市",
+        "甜宠",
+        "HE",
+        "娱乐圈",
+        "追妻火葬场",
+        "先甜后虐",
+        "掉马文学"
+      ],
+      "all_tags": [
+        "都市",
+        "甜宠",
+        "HE",
+        "娱乐圈",
+        "追妻火葬场",
+        "先甜后虐",
+        "掉马文学"
+      ],
+      "primary_tag": "都市",
+      "abstract": "井沅，十八线小演员，以为勤勤恳恳拍戏总有出人头地的一天，却不想一朝被狗仔拍到黑料，面临全网雪藏的危险。 事情并非毫无转机，对方要求他去勾引娱乐圈太子爷宋长非，只要拍到他的私密照，黑料一笔勾销。 为了自己的前途，井沅心一横，不就是勾引男人吗！他虽然不会，但可以学啊！ 于是井沅丢掉脸面、丢掉尊严，只为了让宋长非多看自己一眼。 他研究对方的喜好，刻意制造偶遇，使出浑身解数，终于勾搭上了太子爷。 原本以为",
+      "word_count": "3.54万",
+      "popularity": "6.07万",
+      "status": "连载中",
+      "update_time": "昨天 20:08",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 10
+    },
+    {
+      "rank": 6,
       "book_name": "kiss baby",
       "book_url": "https://www.gongzicp.com/novel-2348699.html",
       "author": "轻谬",
@@ -217,159 +233,17 @@
       ],
       "primary_tag": "架空",
       "abstract": "嘴炮达人性格恶劣攻（A）&心直口快病弱炸毛受（A） 宋亦衡和白星原从小斗到大，都分化成Alpha之后更是一发不可收拾，比身高比成绩比谁能在自家公司赚到更多钱。 外人都习以为常地认为他们水火不容，是那种死后在地底下也会不相往来的人。 可外人不知道这场矛盾的起源是，白星原从小有皮肤饥渴症，但他又容易对其他人的信息素过敏，就算是beta来了也没用，家里人遍寻名医多年也找不到根治的办法。 直到他父母发现朋",
-      "word_count": "6.95万",
-      "popularity": "12.42万",
+      "word_count": "7.27万",
+      "popularity": "13.07万",
       "status": "连载中",
-      "update_time": "10 小时前",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
-      "rank_change": -3,
-      "history_days": 19
-    },
-    {
-      "rank": 6,
-      "book_name": "阴囍",
-      "book_url": "https://www.gongzicp.com/novel-2355887.html",
-      "author": "满心如愿",
-      "author_url": "https://www.gongzicp.com/zone/author-70844.html",
-      "tags": [
-        "灵异",
-        "先婚后爱",
-        "阴婚也是婚",
-        "悬疑",
-        "恐怖",
-        "惊悚",
-        "剧情",
-        "民俗志怪",
-        "中式怪谈",
-        "HE"
-      ],
-      "all_tags": [
-        "灵异",
-        "先婚后爱",
-        "阴婚也是婚",
-        "悬疑",
-        "恐怖",
-        "惊悚",
-        "剧情",
-        "民俗志怪",
-        "中式怪谈",
-        "HE"
-      ],
-      "primary_tag": "灵异",
-      "abstract": "李含真回到久违的老家参加葬礼，不料小山村里怪事频发，铜铃叫魂、五鬼接亲，纸灰烧就一对白双喜，他被骗去结阴婚，刻碑人一锤錾下，就此成了未亡人。 抱牌位、跨火盆，红盖头一掀，对面竟是小时候邻居家的哥哥。 “真真，你终于肯回来见我了？你知不知道这些年……我有多恨你？” 天降竹马变亡夫，李含真只想跑路。 “你放过我行不行，我给你上香给你磕头了……” “这些我都不要。”覃响幽幽道。“我只要你。” 他当警察是",
-      "word_count": "4.36万",
-      "popularity": "8.52万",
-      "status": "连载中",
-      "update_time": "昨天 16:30",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 13
+      "rank_change": -1,
+      "history_days": 20
     },
     {
       "rank": 7,
-      "book_name": "波罗蜜多",
-      "book_url": "https://www.gongzicp.com/novel-2360328.html",
-      "author": "陀飞轮",
-      "author_url": "https://www.gongzicp.com/zone/author-997736.html",
-      "tags": [
-        "都市",
-        "双向救赎",
-        "微酸涩",
-        "冷硬机器x柔软花苞",
-        "大鸡毛1小野猫0",
-        "破镜重圆"
-      ],
-      "all_tags": [
-        "都市",
-        "双向救赎",
-        "微酸涩",
-        "冷硬机器x柔软花苞",
-        "大鸡毛1小野猫0",
-        "破镜重圆"
-      ],
-      "primary_tag": "都市",
-      "abstract": "理性克制nerd X 漂亮乡土宝 聿怀明 × 许未｜破镜重圆 相处三年后， 农村待业青年许未被那个雨夜捡回来的男人领回了首都。 许未腿有旧伤，说话带口音，家里人上不得台面。 “许未，你需要有一些边界感。\" \"许未，我晚上改不了行程，我还有会要开。\" \"许未，我从来都不会错。\" 许未和所有人一样，以为这就是男人的全部。于是，他订了最早一班机票，拉黑他，回了村里……… 【文名含义】：波罗蜜多，梵语意为",
-      "word_count": "5.10万",
-      "popularity": "39.09万",
-      "status": "连载中",
-      "update_time": "昨天 09:20",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 9
-    },
-    {
-      "rank": 8,
-      "book_name": "救命！前老板成了合租对象",
-      "book_url": "https://www.gongzicp.com/novel-2364981.html",
-      "author": "云和漾",
-      "author_url": "https://www.gongzicp.com/zone/author-1250480.html",
-      "tags": [
-        "都市",
-        "原耽",
-        "甜宠",
-        "HE"
-      ],
-      "all_tags": [
-        "都市",
-        "原耽",
-        "甜宠",
-        "HE"
-      ],
-      "primary_tag": "都市",
-      "abstract": "嘴硬霸总×嘴毒秘书 贺明远，前霸总，公司破产欠债二百三十七万，唯一剩下的资产是三套定制西装和一张嘴。陈嘉树，前秘书，被拖欠八个月工资，跑路当天在电梯里跟前老板一起被催债的堵了个正着。 为还债，两人被迫合租城中村，开起“代吵架”网店。贺总负责端着架子输出气势，小陈负责讲逻辑算成本。第一单被菜市场大妈拿芹菜抽了三下，第二单被小学生班主任请家长。眼看要凉，贺总直播拆最后一块劳力士，小陈嘴瓢喊了句“家人们",
-      "word_count": "1.66万",
-      "popularity": "6,505",
-      "status": "连载中",
-      "update_time": "昨天 19:17",
-      "channel": "",
-      "gender": "",
-      "rank_change": "new",
-      "history_days": 1
-    },
-    {
-      "rank": 9,
-      "book_name": "于是小鸟讨厌暗恋",
-      "book_url": "https://www.gongzicp.com/novel-2356422.html",
-      "author": "花未洛",
-      "author_url": "https://www.gongzicp.com/zone/author-935720.html",
-      "tags": [
-        "都市",
-        "年下",
-        "HE",
-        "酸涩",
-        "虐恋",
-        "暗恋",
-        "一见钟情",
-        "情投意合",
-        "双向奔赴"
-      ],
-      "all_tags": [
-        "都市",
-        "年下",
-        "HE",
-        "酸涩",
-        "虐恋",
-        "暗恋",
-        "一见钟情",
-        "情投意合",
-        "双向奔赴"
-      ],
-      "primary_tag": "都市",
-      "abstract": "自卑美攻X恶毒诱受 柏（bai）隼X尹天北 尹天北讨厌那个住在他家里的混血。 混血叫柏隼，是他名义上的小舅舅，漂亮又胆小，嘴巴很笨，说话一个字两个字的往外蹦。 尹天北呵斥小舅舅不许哭，教他打架，教他反抗，见色起意勾引他越界。 事后告诉柏隼：“逢场作戏，不用往心里去。” 后来，尹天北把自己关在房间里，谁也不见，浑浑噩噩想去死。 一声巨响轰然劈开了大门。 尘埃飞扬，满地碎屑，柏隼提着斧头逆着光，手机里",
-      "word_count": "4.37万",
-      "popularity": "7.53万",
-      "status": "连载中",
-      "update_time": "昨天 20:00",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 14
-    },
-    {
-      "rank": 10,
       "book_name": "我才不要和你谈恋爱",
       "book_url": "https://www.gongzicp.com/novel-2356211.html",
       "author": "青水幸",
@@ -397,80 +271,105 @@
       "primary_tag": "青春",
       "abstract": "陆昇x齐双 腹黑心机攻x傲娇炸毛受 齐双不小心和死对头陆昇一起穿越进异世界，还被迫绑定了一个【90天不恋爱就会死】的系统。 系统警告：不和指定对象谈恋爱，直接原地死亡。 好巧不巧，他们的强制恋爱对象就是向来水火不容的对方。 异世界复刻现实，熟人亲友全都在场，却被系统套上诡异的debuff，所有人都跟npc一样无时无刻不在积极撮合他俩在一起。 周末强制约会，每日亲密任务，想躲都无处可逃。 齐双：我死",
       "word_count": "4.61万",
-      "popularity": "10.59万",
+      "popularity": "11.02万",
       "status": "连载中",
-      "update_time": "6 小时前",
+      "update_time": "昨天 03:33",
+      "channel": "",
+      "gender": "",
+      "rank_change": 3,
+      "history_days": 15
+    },
+    {
+      "rank": 8,
+      "book_name": "下一站，小窗",
+      "book_url": "https://www.gongzicp.com/novel-2358088.html",
+      "author": "百丈枝",
+      "author_url": "https://www.gongzicp.com/zone/author-104773.html",
+      "tags": [
+        "都市",
+        "年下",
+        "HE",
+        "竹马"
+      ],
+      "all_tags": [
+        "都市",
+        "年下",
+        "HE",
+        "竹马"
+      ],
+      "primary_tag": "都市",
+      "abstract": "沈任游 ×覃休 不勇敢又不是不爱。 *年下 *大概率十万字左右的小短篇 *小情侣迎来磨合期",
+      "word_count": "4.53万",
+      "popularity": "10.55万",
+      "status": "连载中",
+      "update_time": "昨天 05:39",
       "channel": "",
       "gender": "",
       "rank_change": null,
-      "history_days": 14
+      "history_days": 11
+    },
+    {
+      "rank": 9,
+      "book_name": "他和别人不一样",
+      "book_url": "https://www.gongzicp.com/novel-2352761.html",
+      "author": "小斤小斤鱼",
+      "author_url": "https://www.gongzicp.com/zone/author-794470.html",
+      "tags": [
+        "架空",
+        "小甜饼",
+        "治愈",
+        "小狗攻",
+        "爱人也爱狗"
+      ],
+      "all_tags": [
+        "架空",
+        "小甜饼",
+        "治愈",
+        "小狗攻",
+        "爱人也爱狗"
+      ],
+      "primary_tag": "架空",
+      "abstract": "边加恩 x 文清佑 黏人真狗 x 粗线条 因为一场“养狗”风波，一向体贴的男友性情大变，察觉到这些变化的文清佑决定分手，却不小心看到了男友头上冒出来的两只小狗耳朵。",
+      "word_count": "3.57万",
+      "popularity": "4.61万",
+      "status": "连载中",
+      "update_time": "昨天 23:40",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 10
+    },
+    {
+      "rank": 10,
+      "book_name": "救命！前老板成了合租对象",
+      "book_url": "https://www.gongzicp.com/novel-2364981.html",
+      "author": "云和漾",
+      "author_url": "https://www.gongzicp.com/zone/author-1250480.html",
+      "tags": [
+        "都市",
+        "原耽",
+        "甜宠",
+        "HE"
+      ],
+      "all_tags": [
+        "都市",
+        "原耽",
+        "甜宠",
+        "HE"
+      ],
+      "primary_tag": "都市",
+      "abstract": "嘴硬霸总×嘴毒秘书 贺明远，前霸总，公司破产欠债二百三十七万，唯一剩下的资产是三套定制西装和一张嘴。陈嘉树，前秘书，被拖欠八个月工资，跑路当天在电梯里跟前老板一起被催债的堵了个正着。 为还债，两人被迫合租城中村，开起“代吵架”网店。贺总负责端着架子输出气势，小陈负责讲逻辑算成本。第一单被菜市场大妈拿芹菜抽了三下，第二单被小学生班主任请家长。眼看要凉，贺总直播拆最后一块劳力士，小陈嘴瓢喊了句“家人们",
+      "word_count": "2.09万",
+      "popularity": "1.06万",
+      "status": "连载中",
+      "update_time": "昨天 18:01",
+      "channel": "",
+      "gender": "",
+      "rank_change": -2,
+      "history_days": 2
     },
     {
       "rank": 11,
-      "book_name": "需求不明确",
-      "book_url": "https://www.gongzicp.com/novel-2358296.html",
-      "author": "喵在",
-      "author_url": "https://www.gongzicp.com/zone/author-1243635.html",
-      "tags": [
-        "都市",
-        "双向暗恋",
-        "年上",
-        "牛马",
-        "社畜",
-        "HE",
-        "打工人"
-      ],
-      "all_tags": [
-        "都市",
-        "双向暗恋",
-        "年上",
-        "牛马",
-        "社畜",
-        "HE",
-        "打工人"
-      ],
-      "primary_tag": "都市",
-      "abstract": "唐聿×沈漾 游戏制作人×游戏市场 这两个职业真的有谈恋爱的风险吗，老大？！ *暂无存稿，随时改稿，写到哪算哪的小甜饼",
-      "word_count": "1.36万",
-      "popularity": "5,752",
-      "status": "连载中",
-      "update_time": "昨天 14:01",
-      "channel": "",
-      "gender": "",
-      "rank_change": "new",
-      "history_days": 1
-    },
-    {
-      "rank": 12,
-      "book_name": "臣在装乖啊",
-      "book_url": "https://www.gongzicp.com/novel-2357478.html",
-      "author": "卷卷薯条大王",
-      "author_url": "https://www.gongzicp.com/zone/author-721932.html",
-      "tags": [
-        "宫廷",
-        "轻松搞笑",
-        "甜宠",
-        "系统"
-      ],
-      "all_tags": [
-        "宫廷",
-        "轻松搞笑",
-        "甜宠",
-        "系统"
-      ],
-      "primary_tag": "宫廷",
-      "abstract": "苏惟穿成了不攻略皇帝就会被剧情抹杀的炮灰，以男子之身入宫侍奉皇帝。 白日上朝，夜晚奉羹，还陪聊风花雪月、诗词歌赋。 只可惜这好感度越刷越低，还被摄政王指着鼻子骂他是祸国妖妃。 - 垂死的先帝曾握着萧照珩的手托孤，“玉玺和大乾朕就交给爱卿了，如若六皇子不成器......” 如今，他成了一人之下万人之上的摄政王，叛党打着“清君侧”的名义控诉他把持朝纲、意图谋反。 那无知的小皇帝替他辩解，“摄政王从未有",
-      "word_count": "6.18万",
-      "popularity": "12.15万",
-      "status": "连载中",
-      "update_time": "昨天 02:32",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 9
-    },
-    {
-      "rank": 13,
       "book_name": "食色可餐",
       "book_url": "https://www.gongzicp.com/novel-2355889.html",
       "author": "火烧袅",
@@ -501,176 +400,17 @@
       ],
       "primary_tag": "都市",
       "abstract": "刘立凡的梦想就系食遍天下美食，可惜佢一毕业就俾佢老豆丢咗入自己嘅公司里面，话系锻炼佢以后要继承自己屋企家业。 翻工咪算数咯，本来凡仔系太子爷嚟嘅，无奈啊遇到个串到死嘅上司。 上司陈明演冷面毒舌，太子爷真系遇到治他的人了。 呢个咁嘅陈明演显直头就系当佢茄哩啡咁使啦，让刘立凡冲咖啡印文件买饭盒，就是不教真正要学的正经事。 刘立凡真系忍无可忍：“喂喂喂！你到底教不教我做正经嘢的？” 陈明演：“教，点解不",
-      "word_count": "5.93万",
-      "popularity": "6.07万",
+      "word_count": "6.25万",
+      "popularity": "6.46万",
       "status": "连载中",
       "update_time": "昨天 12:00",
       "channel": "",
       "gender": "",
-      "rank_change": -5,
-      "history_days": 18
-    },
-    {
-      "rank": 14,
-      "book_name": "十年",
-      "book_url": "https://www.gongzicp.com/novel-2361268.html",
-      "author": "PsychoNana",
-      "author_url": "https://www.gongzicp.com/zone/author-942358.html",
-      "tags": [
-        "都市",
-        "青梅竹马从小带大",
-        "破镜重圆又叫失而复得",
-        "幼驯染",
-        "爱人之前已经是家人",
-        "相差五岁",
-        "哥宠弟萌",
-        "帅攻美受"
-      ],
-      "all_tags": [
-        "都市",
-        "青梅竹马从小带大",
-        "破镜重圆又叫失而复得",
-        "幼驯染",
-        "爱人之前已经是家人",
-        "相差五岁",
-        "哥宠弟萌",
-        "帅攻美受"
-      ],
-      "primary_tag": "都市",
-      "abstract": "顾霆x祁凛 年上哥攻x年下萌受 从五岁那年开始，顾霆就把祁凛当成自己的所有物。 他的人生里，很多关系他无法做主，可在祁凛面前不一样，五岁的年龄差像一道天然的台阶，他站在上面，永远占据主导的位置。 顾霆不爱说话，带出来的祁凛是个小喇叭。 顾霆不爱撒娇，带出来的祁凛是个娇气包。 祁凛不开心，顾霆全责。 他需要祁凛在他面前表现出强烈的依赖来满足自己想要的安全感。 祁凛完全是他按自己的喜好养出来的。 原本",
-      "word_count": "2.88万",
-      "popularity": "4.62万",
-      "status": "连载中",
-      "update_time": "10 小时前",
-      "channel": "",
-      "gender": "",
-      "rank_change": 0,
-      "history_days": 8
-    },
-    {
-      "rank": 15,
-      "book_name": "追光四年他却以为我们只是好兄弟",
-      "book_url": "https://www.gongzicp.com/novel-2365429.html",
-      "author": "卢池的池",
-      "author_url": "https://www.gongzicp.com/zone/author-160320.html",
-      "tags": [
-        "现代",
-        "HE",
-        "甜宠"
-      ],
-      "all_tags": [
-        "现代",
-        "HE",
-        "甜宠"
-      ],
-      "primary_tag": "现代",
-      "abstract": "“你有没有喜欢过谁？” 灯影昏暗，宋沐辰随口一问，眼神坦荡又清澈。 关程垂下眼帘，把藏了四年的秘密死死压在心底：“有，以后告诉你。” 他不敢说，那个十四岁在网吧随手帮过他的少年，成了他从泥泞爬向巅峰的唯一执念。 他更不敢说，天价空降YLY，不是为了名利，只是想站在离宋沐辰最近的地方。 三年蛰伏，一朝并肩，宋沐辰终于重拾S8冠军的锋芒，在赛场上大杀四方。 全联盟都在欢呼神级下路诞生，只有关程在无数个",
-      "word_count": "5.12万",
-      "popularity": "1.41万",
-      "status": "连载中",
-      "update_time": "昨天 22:00",
-      "channel": "",
-      "gender": "",
-      "rank_change": -11,
-      "history_days": 3
-    },
-    {
-      "rank": 16,
-      "book_name": "晴时雨",
-      "book_url": "https://www.gongzicp.com/novel-2364869.html",
-      "author": "三文字",
-      "author_url": "https://www.gongzicp.com/zone/author-1157141.html",
-      "tags": [
-        "都市",
-        "甜宠",
-        "网游",
-        "年下",
-        "破镜重圆"
-      ],
-      "all_tags": [
-        "都市",
-        "甜宠",
-        "网游",
-        "年下",
-        "破镜重圆"
-      ],
-      "primary_tag": "都市",
-      "abstract": "万恶卖萌攻×嘴硬暴躁受 黎霄晴×季雨时 季雨时是个伪装成现充的大龄二次元。 面对老妈一再催婚，他选择闷头打游戏——谈恋爱哪有打游戏快乐？ 更何况他本来就取向为男。 和前任黎霄晴分手之后，季雨时发誓不再碰网恋，伤神伤心伤肺伤肝，有时间不如带着兄弟们跟敌对战斗爽。 他们公会什么都好，就是缺奶，连30级的小奶妈都只能硬着头皮上战场。 小奶妈什么都好，就是喜欢QAQ，卖起萌来简直让人害怕，偏偏还要说喜欢他",
-      "word_count": "1.28万",
-      "popularity": "9,732",
-      "status": "连载中",
-      "update_time": "昨天 19:00",
-      "channel": "",
-      "gender": "",
-      "rank_change": -3,
-      "history_days": 4
-    },
-    {
-      "rank": 17,
-      "book_name": "骗子五诫",
-      "book_url": "https://www.gongzicp.com/novel-2365504.html",
-      "author": "晤爻",
-      "author_url": "https://www.gongzicp.com/zone/author-1171768.html",
-      "tags": [
-        "都市",
-        "HE",
-        "强强",
-        "剧情",
-        "正剧"
-      ],
-      "all_tags": [
-        "都市",
-        "HE",
-        "强强",
-        "剧情",
-        "正剧"
-      ],
-      "primary_tag": "都市",
-      "abstract": "优雅疯批顶级骗子 X 冷峻腹黑资本大佬 柯让 X 谭理玉 柯让有一百种方式让你相信他的谎言。 他可以是奥地利伯爵的私生子，可以是上流社会的精英，也可以是任何你需要他成为的人。 毕竟最好的骗局是让对方以为自己占了便宜。所以他永远慢半拍开口，永远让对方觉得自己是聪明人。 直到他遇见谭理玉。 他哄他两千万，他追了他三个月。 他哄他五千万，他陪他演了半年戏。 他哄他两个亿，他却朝他越走越近。 后来他才知道",
-      "word_count": "8",
-      "popularity": "2,618",
-      "status": "连载中",
-      "update_time": "昨天 14:36",
-      "channel": "",
-      "gender": "",
-      "rank_change": "new",
-      "history_days": 1
-    },
-    {
-      "rank": 18,
-      "book_name": "史官今天拒不和离",
-      "book_url": "https://www.gongzicp.com/novel-2365387.html",
-      "author": "听雨吞酒",
-      "author_url": "https://www.gongzicp.com/zone/author-1127727.html",
-      "tags": [
-        "综合",
-        "强强",
-        "情投意合",
-        "轻喜剧",
-        "掉马",
-        "欢喜冤家"
-      ],
-      "all_tags": [
-        "综合",
-        "强强",
-        "情投意合",
-        "轻喜剧",
-        "掉马",
-        "欢喜冤家"
-      ],
-      "primary_tag": "综合",
-      "abstract": "大邺朝最荒唐的一桩赐婚，莫过于太后把全京城嘴最毒的史官，塞给了最惹不起的异姓王。 满朝文武都在等谢怀砚被镇北王扫地出门。毕竟一个是落笔如刀的冷面文臣，一个是杀伐果断的草莽武将，任谁看都是相看两厌的死局。 洞房花烛夜，谢怀砚铺纸研墨，白纸黑字写下五个字：三年后和离。 萧彻不仅没掀桌，反而笑吟吟地按了手印，妥善地收进匣中。 后来，朝堂上的日子比话本子还离奇。 御史台声泪俱下弹劾王爷拥兵自重。史官在侧，",
-      "word_count": "1.75万",
-      "popularity": "6,716",
-      "status": "连载中",
-      "update_time": "昨天 20:00",
-      "channel": "",
-      "gender": "",
       "rank_change": 2,
-      "history_days": 3
+      "history_days": 19
     },
     {
-      "rank": 19,
+      "rank": 12,
       "book_name": "回禄之轮",
       "book_url": "https://www.gongzicp.com/novel-2355152.html",
       "author": "石榴煮酒",
@@ -697,161 +437,85 @@
       ],
       "primary_tag": "都市",
       "abstract": "！！！本文纯属虚构！！！ 虽然是大学同学，但白翯与梁鸿的关系并不好。 白翯不拘小节，梁鸿认死理。两人为了一个方案吵得天翻地覆，也是公司人尽皆知的事情。 哪想一场突如其来的大火，却中断了一切。 危急时刻，梁鸿却冲了出来，替白翯挡住了倒塌下来的危险品。 白翯：你有病吧，你不想活了？ 梁鸿：可是我喜欢你 白翯：我看你是真的疯了…… 白翯可不觉得这是什么惊天动地的告白。 火场倾塌，众人殒命。可等白翯再一睁",
-      "word_count": "6.46万",
-      "popularity": "3.09万",
+      "word_count": "6.78万",
+      "popularity": "3.37万",
       "status": "连载中",
-      "update_time": "昨天 20:13",
+      "update_time": "昨天 20:12",
       "channel": "",
       "gender": "",
-      "rank_change": 0,
-      "history_days": 19
+      "rank_change": 7,
+      "history_days": 20
     },
     {
-      "rank": 20,
-      "book_name": "许君白首",
-      "book_url": "https://www.gongzicp.com/novel-2356964.html",
-      "author": "晓棠",
-      "author_url": "https://www.gongzicp.com/zone/author-90813.html",
-      "tags": [
-        "宫廷",
-        "狗血",
-        "虐恋",
-        "强强",
-        "正剧",
-        "剧情",
-        "oe"
-      ],
-      "all_tags": [
-        "宫廷",
-        "狗血",
-        "虐恋",
-        "强强",
-        "正剧",
-        "剧情",
-        "oe"
-      ],
-      "primary_tag": "宫廷",
-      "abstract": "大珩新皇登基 天下乱局方兴未艾 南诏小国倒戈未成 厚颜无耻遣太子前来请罪 朝堂上一时唇枪舌剑 “宵小之辈不可姑息，杀鸡儆猴。” “战事初歇，休养生息之际，不宜树敌。” 两派针锋，互不相让。 僵局之下，手握重兵从边疆千里飞驰而来的王爷语出惊人：“臣求取南诏太子段时芩。” 众人：“……” “……” “……” “王爷，辱敌之举，不必搭上自己吧。就算这南诏太子沉鱼落雁，天人之姿，聪敏慧黠，人见人爱，……可",
-      "word_count": "5.66万",
-      "popularity": "2.54万",
-      "status": "连载中",
-      "update_time": "昨天 15:18",
-      "channel": "",
-      "gender": "",
-      "rank_change": -15,
-      "history_days": 14
-    },
-    {
-      "rank": 21,
-      "book_name": "零点以后请交班",
-      "book_url": "https://www.gongzicp.com/novel-2357476.html",
-      "author": "穗沉",
-      "author_url": "https://www.gongzicp.com/zone/author-1200476.html",
-      "tags": [
-        "推理",
-        "都市悬疑",
-        "异常日常",
-        "便利店",
-        "夜班",
-        "双男主",
-        "同事变恋人",
-        "慢热",
-        "联手解谜",
-        "剧情向",
-        "HE"
-      ],
-      "all_tags": [
-        "推理",
-        "都市悬疑",
-        "异常日常",
-        "便利店",
-        "夜班",
-        "双男主",
-        "同事变恋人",
-        "慢热",
-        "联手解谜",
-        "剧情向",
-        "HE"
-      ],
-      "primary_tag": "推理",
-      "abstract": "方启来便利店替一晚夜班，刚进门就跟任桥吵了一架。到了零点，收银机打出一张小票，上面印着任桥的名字，给他多排了两个钟头的班。 任桥刚想问这班是谁排的，两只脚已经跟着刚结完账的顾客往外走。方启追到门口没拽住他，回头看见小票还在手里，想起店里有一条核对订单的规矩。 人叫回来了，这笔单却只留到下一个零点。两人去翻旧账，发现三十多天前，也有一个夜班店员办过暂退。 任桥认得那个名字。他来这家店，顶的就是那人的",
-      "word_count": "5.87万",
-      "popularity": "1.85万",
-      "status": "连载中",
-      "update_time": "昨天 18:45",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 4
-    },
-    {
-      "rank": 22,
-      "book_name": "谈钱说爱",
-      "book_url": "https://www.gongzicp.com/novel-2353429.html",
-      "author": "山容",
-      "author_url": "https://www.gongzicp.com/zone/author-107486.html",
+      "rank": 13,
+      "book_name": "十年",
+      "book_url": "https://www.gongzicp.com/novel-2361268.html",
+      "author": "PsychoNana",
+      "author_url": "https://www.gongzicp.com/zone/author-942358.html",
       "tags": [
         "都市",
-        "破镜重圆",
-        "职业",
-        "HE",
-        "有点点酸"
+        "青梅竹马从小带大",
+        "破镜重圆又叫失而复得",
+        "幼驯染",
+        "爱人之前已经是家人",
+        "相差五岁",
+        "哥宠弟萌",
+        "帅攻美受"
       ],
       "all_tags": [
         "都市",
-        "破镜重圆",
-        "职业",
-        "HE",
-        "有点点酸"
+        "青梅竹马从小带大",
+        "破镜重圆又叫失而复得",
+        "幼驯染",
+        "爱人之前已经是家人",
+        "相差五岁",
+        "哥宠弟萌",
+        "帅攻美受"
       ],
       "primary_tag": "都市",
-      "abstract": "科技公司CFO×银行副行长 花蝴蝶高傲不会说话×阳光善良开朗小狗 孟江清×秦景旸 秦景旸，盛华银行高新区支行的副行长，头上顶着两个亿的科技贷款指标缺口在全行进行反思发言。 大领导一皱眉，他立刻夸下海口：要把区内的高新科技企业星环科技一举拿下！弥补两个亿的指标缺口。 据说星环科技的CFO新官上任，他和领导趁热打铁去拍马屁。没想到一推门，对面的人竟然是前男友。 孟江清没想到会这么快遇到秦景旸，在老朋友",
-      "word_count": "4.45万",
-      "popularity": "6.91万",
+      "abstract": "顾霆x祁凛 年上哥攻x年下萌受 从五岁那年开始，顾霆就把祁凛当成自己的所有物。 他的人生里，很多关系他无法做主，可在祁凛面前不一样，五岁的年龄差像一道天然的台阶，他站在上面，永远占据主导的位置。 顾霆不爱说话，带出来的祁凛是个小喇叭。 顾霆不爱撒娇，带出来的祁凛是个娇气包。 祁凛不开心，顾霆全责。 他需要祁凛在他面前表现出强烈的依赖来满足自己想要的安全感。 祁凛完全是他按自己的喜好养出来的。 原本",
+      "word_count": "3.18万",
+      "popularity": "4.82万",
       "status": "连载中",
-      "update_time": "昨天 08:00",
+      "update_time": "4 小时前",
       "channel": "",
       "gender": "",
-      "rank_change": null,
-      "history_days": 13
+      "rank_change": 1,
+      "history_days": 9
     },
     {
-      "rank": 23,
-      "book_name": "雷雨",
-      "book_url": "https://www.gongzicp.com/novel-2353378.html",
-      "author": "木春水鱼",
-      "author_url": "https://www.gongzicp.com/zone/author-1227359.html",
+      "rank": 14,
+      "book_name": "晴时雨",
+      "book_url": "https://www.gongzicp.com/novel-2364869.html",
+      "author": "三文字",
+      "author_url": "https://www.gongzicp.com/zone/author-1157141.html",
       "tags": [
-        "青春",
-        "救赎",
-        "校园",
-        "有点狗血",
-        "创伤",
-        "破镜重圆",
-        "枯木逢春"
+        "都市",
+        "甜宠",
+        "网游",
+        "年下",
+        "破镜重圆"
       ],
       "all_tags": [
-        "青春",
-        "救赎",
-        "校园",
-        "有点狗血",
-        "创伤",
-        "破镜重圆",
-        "枯木逢春"
+        "都市",
+        "甜宠",
+        "网游",
+        "年下",
+        "破镜重圆"
       ],
-      "primary_tag": "青春",
-      "abstract": "温柔淡人受遇上粘人假太阳攻。 攻：周怀谨 受：江怀绪 江怀绪自认为生活的平仄起伏都在前十七年过完了，直到高二那年，有个很没有道理的人闯入他的人生…… 是的，字面意思的“很没有道理”。 * “你好，我叫周怀谨。”他笑道，“不是‘怀瑾握瑜’的‘怀瑾’。” 他拦着江怀绪，“我们做个朋友吧？” * 笑起来没有道理、靠近时没有道理、莫名其妙生气很没有道理……就连初吻给得也没有道理。 本以为纯粹的相爱会走得更",
-      "word_count": "4.61万",
-      "popularity": "2.00万",
+      "primary_tag": "都市",
+      "abstract": "万恶卖萌攻×嘴硬暴躁受 黎霄晴×季雨时 季雨时是个伪装成现充的大龄二次元。 面对老妈一再催婚，他选择闷头打游戏——谈恋爱哪有打游戏快乐？ 更何况他本来就取向为男。 和前任黎霄晴分手之后，季雨时发誓不再碰网恋，伤神伤心伤肺伤肝，有时间不如带着兄弟们跟敌对战斗爽。 他们公会什么都好，就是缺奶，连30级的小奶妈都只能硬着头皮上战场。 小奶妈什么都好，就是喜欢QAQ，卖起萌来简直让人害怕，偏偏还要说喜欢他",
+      "word_count": "1.59万",
+      "popularity": "1.19万",
       "status": "连载中",
-      "update_time": "昨天 12:00",
+      "update_time": "昨天 19:00",
       "channel": "",
       "gender": "",
-      "rank_change": null,
-      "history_days": 8
+      "rank_change": 2,
+      "history_days": 5
     },
     {
-      "rank": 24,
+      "rank": 15,
       "book_name": "失恋疗愈笔记",
       "book_url": "https://www.gongzicp.com/novel-2362209.html",
       "author": "京华小倦客",
@@ -882,17 +546,17 @@
       ],
       "primary_tag": "都市",
       "abstract": "热烈直球小狼狗攻 X 傲娇清冷高岭之花受 被年下前男友骗财骗心后，沈鸣玉痛定思痛，立誓绝不再和年轻帅哥纠缠不清。 深夜买醉，萍水相逢，事后清晨，沈鸣玉强忍头痛：“谢谢你，钱给你，你可以走了。” 刚做好爱心早餐的小狼狗难以置信：“你把我当什么了？” 年轻人的追求炽烈如火，沈鸣玉企图忽略，对方却如风暴席卷而来，打破了他所有的原则。 沈鸣玉：“你是我教练，我不和有雇佣关系的人恋爱。” 闻铮：“明白，那就",
-      "word_count": "1.50万",
-      "popularity": "7,951",
+      "word_count": "1.91万",
+      "popularity": "9,910",
       "status": "连载中",
       "update_time": "昨天 20:00",
       "channel": "",
       "gender": "",
-      "rank_change": -7,
-      "history_days": 4
+      "rank_change": 9,
+      "history_days": 5
     },
     {
-      "rank": 25,
+      "rank": 16,
       "book_name": "捡来的哑巴是杀神",
       "book_url": "https://www.gongzicp.com/novel-2356272.html",
       "author": "灵七Seven",
@@ -915,54 +579,374 @@
       ],
       "primary_tag": "都市",
       "abstract": "偏执暴力只认一人杀神攻X随遇而安一言不合就报警白月光受 陆望野被困牢笼二十年，习惯了药剂、抽血、血腥角斗场的人生。 他认得很多字，却听不懂周遭的语言。 他以为自己终将腐烂在这片黑暗里。 出逃那日，却嗅到一缕熟悉的气息...... 出国洽谈合作的林星安，被一道黑影冲撞。 车祸后，好心将人送医，诡异的是，这个满身戾气的男人苏醒后，只允许他靠近...... 深渊里的杀神，就此接住了属于他的星光。 避雷：",
-      "word_count": "5.67万",
-      "popularity": "1.75万",
+      "word_count": "6.33万",
+      "popularity": "1.96万",
       "status": "连载中",
-      "update_time": "昨天 23:54",
+      "update_time": "昨天 22:18",
       "channel": "",
       "gender": "",
-      "rank_change": 1,
-      "history_days": 4
+      "rank_change": 9,
+      "history_days": 5
     },
     {
-      "rank": 26,
-      "book_name": "青年拓土寻芳",
-      "book_url": "https://www.gongzicp.com/novel-2357943.html",
-      "author": "荒野爆爆熊",
-      "author_url": "https://www.gongzicp.com/zone/author-920537.html",
+      "rank": 17,
+      "book_name": "过故人庄",
+      "book_url": "https://www.gongzicp.com/novel-2362207.html",
+      "author": "八风来才",
+      "author_url": "https://www.gongzicp.com/zone/author-981803.html",
       "tags": [
-        "都市",
-        "公路",
-        "甜宠",
-        "魔幻现实",
-        "爽文",
-        "年上",
-        "电波系",
-        "4399小游戏推理"
+        "综合",
+        "竹马竹马",
+        "市井",
+        "年代文",
+        "日久生情",
+        "久别重逢",
+        "互宠",
+        "酸甜",
+        "治愈",
+        "乡村爱情",
+        "HE"
       ],
       "all_tags": [
-        "都市",
-        "公路",
-        "甜宠",
-        "魔幻现实",
-        "爽文",
-        "年上",
-        "电波系",
-        "4399小游戏推理"
+        "综合",
+        "竹马竹马",
+        "市井",
+        "年代文",
+        "日久生情",
+        "久别重逢",
+        "互宠",
+        "酸甜",
+        "治愈",
+        "乡村爱情",
+        "HE"
       ],
-      "primary_tag": "都市",
-      "abstract": "高冷高智酷哥x浮力系心机小狐狸 美留艺术史博士研究生x欧留建筑系硕士准毕业生 祁锐x程叙安 祁锐在巴黎吃早午餐，遭遇神秘美青年。 美青年程叙安用七国语言打招呼，撒娇卖萌： “帅哥，我肚子也好饿。” 祁锐信手一刷，不过多支付一份简餐，不料多一个人上路纠缠。 程叙安：祁锐，收留我吧，我无家可归。 祁锐：如果你不介意和我同住一间酒店套房。 程叙安：祁锐，我对你一见钟情、海枯石烂。 祁锐：我是你说这句话的",
-      "word_count": "3.48万",
-      "popularity": "5.04万",
+      "primary_tag": "综合",
+      "abstract": "会疼人的硬汉忠犬×有个性的明媚美人 杨树×柏青山 1994年冬，一场百年不遇的山火后，杨树结识了柏家捡回来的小孩儿柏青山。小孩儿长头发，很漂亮，杨树拿他当姑娘，后来才知道，他和自己一样是个妈不要爸不疼的小子。 那年他们10岁，一院玩、一床睡，杨树替柏青山打架报仇，柏青山给他补课、让他当哥。两人笑过吵过，形影不离，直到高中毕业，杨树把柏青山送上了离家的列车。 从18岁起，柏青山外出求学，杨树守家还债",
+      "word_count": "3.43万",
+      "popularity": "2.32万",
       "status": "连载中",
-      "update_time": "昨天 06:00",
+      "update_time": "昨天 11:00",
       "channel": "",
       "gender": "",
       "rank_change": null,
-      "history_days": 11
+      "history_days": 7
+    },
+    {
+      "rank": 18,
+      "book_name": "社畜也会有春天",
+      "book_url": "https://www.gongzicp.com/novel-2362241.html",
+      "author": "风却月",
+      "author_url": "https://www.gongzicp.com/zone/author-1172058.html",
+      "tags": [
+        "都市",
+        "破镜重圆",
+        "强取豪夺",
+        "救赎",
+        "拉扯"
+      ],
+      "all_tags": [
+        "都市",
+        "破镜重圆",
+        "强取豪夺",
+        "救赎",
+        "拉扯"
+      ],
+      "primary_tag": "都市",
+      "abstract": "复合吧，我不知道你会暴富，他一直在等这句话等了足足五年。 于明怀最近有点发愁。 现在他搭手在露台上，垂眸看着下边的某个人，那是五年前抛弃他的前任。 为什么他还不找自己复合，明明我已经变得那么有钱了。当初给他买那么点廉价的小东西都稀罕得要命，眼睛亮的不行。 现在于明怀穿得一身金光璀璨，富贵逼人，为什么某人始终不用正眼看他。 好烦。 于是他决定按照学习资料里写的那样，对前任虐身虐心地狠狠报复他。 以至",
+      "word_count": "9",
+      "popularity": "7,099",
+      "status": "连载中",
+      "update_time": "昨天 23:01",
+      "channel": "",
+      "gender": "",
+      "rank_change": 19,
+      "history_days": 3
+    },
+    {
+      "rank": 19,
+      "book_name": "安生烟火",
+      "book_url": "https://www.gongzicp.com/novel-2366613.html",
+      "author": "灵境",
+      "author_url": "https://www.gongzicp.com/zone/author-113689.html",
+      "tags": [
+        "都市",
+        "甜宠",
+        "逆袭",
+        "爽文",
+        "市井烟火"
+      ],
+      "all_tags": [
+        "都市",
+        "甜宠",
+        "逆袭",
+        "爽文",
+        "市井烟火"
+      ],
+      "primary_tag": "都市",
+      "abstract": "糙汉猛男攻X甜软小可怜受 如果说给安锦的前半生贴几个标签，那大抵是“软”、“胆小”、“没主见”之类的，有钱人家的小少爷一朝破产沦落到靠开甜品店为生。 有个好心大哥经常扫空他的临期打折面包，一天安锦上门送面包，看见大哥只穿了条裤子，挂着围裙哐哐剁肉，那肌肉线条要多性感有多性感。 白峻：我都穿成这样色诱了！媳妇儿怎么还不上钩？求助，很急，在线等！",
+      "word_count": "7",
+      "popularity": "2,870",
+      "status": "连载中",
+      "update_time": "昨天 19:01",
+      "channel": "",
+      "gender": "",
+      "rank_change": 12,
+      "history_days": 2
+    },
+    {
+      "rank": 20,
+      "book_name": "追光四年他却以为我们只是好兄弟",
+      "book_url": "https://www.gongzicp.com/novel-2365429.html",
+      "author": "卢池的池",
+      "author_url": "https://www.gongzicp.com/zone/author-160320.html",
+      "tags": [
+        "现代",
+        "HE",
+        "甜宠"
+      ],
+      "all_tags": [
+        "现代",
+        "HE",
+        "甜宠"
+      ],
+      "primary_tag": "现代",
+      "abstract": "“你有没有喜欢过谁？” 灯影昏暗，宋沐辰随口一问，眼神坦荡又清澈。 关程垂下眼帘，把藏了四年的秘密死死压在心底：“有，以后告诉你。” 他不敢说，那个十四岁在网吧随手帮过他的少年，成了他从泥泞爬向巅峰的唯一执念。 他更不敢说，天价空降YLY，不是为了名利，只是想站在离宋沐辰最近的地方。 三年蛰伏，一朝并肩，宋沐辰终于重拾S8冠军的锋芒，在赛场上大杀四方。 全联盟都在欢呼神级下路诞生，只有关程在无数个",
+      "word_count": "5.75万",
+      "popularity": "1.59万",
+      "status": "连载中",
+      "update_time": "昨天 23:42",
+      "channel": "",
+      "gender": "",
+      "rank_change": -5,
+      "history_days": 4
+    },
+    {
+      "rank": 21,
+      "book_name": "几乎是幻想",
+      "book_url": "https://www.gongzicp.com/novel-2361270.html",
+      "author": "东哑巴",
+      "author_url": "https://www.gongzicp.com/zone/author-178072.html",
+      "tags": [
+        "综合",
+        "破镜重圆",
+        "酸甜",
+        "救赎"
+      ],
+      "all_tags": [
+        "综合",
+        "破镜重圆",
+        "酸甜",
+        "救赎"
+      ],
+      "primary_tag": "综合",
+      "abstract": "重力系偏执酷哥攻x外热内冷耳聋受 破镜重圆，追妻，经典酸甜口 - 许之余在貌合神离的婚姻下煎熬四年，终于对丈夫陈聿衍提出离婚。 提离婚当天，他清楚地听见陈聿衍的声音绕过助听器直达神经： “真讨厌，不想离。” 许之余：？ 他抬眼看去，面前的男人还是同往常一样面沉似水、不近人情，看离婚协议书的表情像在看垃圾。 这种亲昵委屈的撒娇怎么可能是他的心声？ 许之余只当自己疯了，在又一次提起离婚失败后，他终于委",
+      "word_count": "3.32万",
+      "popularity": "2.60万",
+      "status": "连载中",
+      "update_time": "昨天 16:36",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 8
+    },
+    {
+      "rank": 22,
+      "book_name": "嚣鸟依人",
+      "book_url": "https://www.gongzicp.com/novel-2360477.html",
+      "author": "灯下粥",
+      "author_url": "https://www.gongzicp.com/zone/author-873990.html",
+      "tags": [
+        "都市",
+        "年下装乖",
+        "狗血",
+        "酸甜",
+        "强强",
+        "HE",
+        "年下"
+      ],
+      "all_tags": [
+        "都市",
+        "年下装乖",
+        "狗血",
+        "酸甜",
+        "强强",
+        "HE",
+        "年下"
+      ],
+      "primary_tag": "都市",
+      "abstract": "(小老板)心软直男受×装纯白切黑攻(医学生) * 十七岁，陈椋进城摸爬滚打。 从底层的四处打零工，一路干到了老街小老板。 二十五岁，陈椋生意做大做强，小店扩张。 同时，非常积极地存老婆本。 然而，并没有“老婆”出现。 陈椋被一个比自己整整小五岁的男生追求了。 当天晚上，清纯男大羞涩腼腆地对他说： “哥，我对你一见钟情。” 但陈椋是一个直男，于是义正词严地拒绝了，并且打算耐心开导小朋友—— 一个月后",
+      "word_count": "3.46万",
+      "popularity": "1.75万",
+      "status": "连载中",
+      "update_time": "昨天 00:45",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 8
+    },
+    {
+      "rank": 23,
+      "book_name": "稚眠",
+      "book_url": "https://www.gongzicp.com/novel-2367019.html",
+      "author": "苦牛奶",
+      "author_url": "https://www.gongzicp.com/zone/author-968405.html",
+      "tags": [
+        "青春",
+        "美攻帅受",
+        "年下",
+        "慢热"
+      ],
+      "all_tags": [
+        "青春",
+        "美攻帅受",
+        "年下",
+        "慢热"
+      ],
+      "primary_tag": "青春",
+      "abstract": "方稚眠搬来的夏天，陈嘉还有两个月高考。 同住一间房，同睡一张床。 陈嘉以为会很不方便。 后来他发现，真正不方便的不是多了个人。 方稚眠什么都不用做，只要在那里，陈嘉就已经受不了。 方稚眠×陈嘉 冷淡萌妹攻×克制的自我攻略受",
+      "word_count": "3",
+      "popularity": "1,625",
+      "status": "连载中",
+      "update_time": "昨天 10:16",
+      "channel": "",
+      "gender": "",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 24,
+      "book_name": "史官今天拒不和离",
+      "book_url": "https://www.gongzicp.com/novel-2365387.html",
+      "author": "听雨吞酒",
+      "author_url": "https://www.gongzicp.com/zone/author-1127727.html",
+      "tags": [
+        "综合",
+        "强强",
+        "情投意合",
+        "轻喜剧",
+        "掉马",
+        "欢喜冤家"
+      ],
+      "all_tags": [
+        "综合",
+        "强强",
+        "情投意合",
+        "轻喜剧",
+        "掉马",
+        "欢喜冤家"
+      ],
+      "primary_tag": "综合",
+      "abstract": "大邺朝最荒唐的一桩赐婚，莫过于太后把全京城嘴最毒的史官，塞给了最惹不起的异姓王。 满朝文武都在等谢怀砚被镇北王扫地出门。毕竟一个是落笔如刀的冷面文臣，一个是杀伐果断的草莽武将，任谁看都是相看两厌的死局。 洞房花烛夜，谢怀砚铺纸研墨，白纸黑字写下五个字：三年后和离。 萧彻不仅没掀桌，反而笑吟吟地按了手印，妥善地收进匣中。 后来，朝堂上的日子比话本子还离奇。 御史台声泪俱下弹劾王爷拥兵自重。史官在侧，",
+      "word_count": "2.10万",
+      "popularity": "8,295",
+      "status": "连载中",
+      "update_time": "昨天 19:24",
+      "channel": "",
+      "gender": "",
+      "rank_change": -6,
+      "history_days": 4
+    },
+    {
+      "rank": 25,
+      "book_name": "神仙住在小岛",
+      "book_url": "https://www.gongzicp.com/novel-2367021.html",
+      "author": "圆不汤",
+      "author_url": "https://www.gongzicp.com/zone/author-1155327.html",
+      "tags": [
+        "综合",
+        "轻松搞笑",
+        "年下",
+        "美1帅0",
+        "特殊设定",
+        "强强"
+      ],
+      "all_tags": [
+        "综合",
+        "轻松搞笑",
+        "年下",
+        "美1帅0",
+        "特殊设定",
+        "强强"
+      ],
+      "primary_tag": "综合",
+      "abstract": "文案请稍等几天…… 绿茶美人攻x没心眼俊朗受",
+      "word_count": "4",
+      "popularity": "1,531",
+      "status": "连载中",
+      "update_time": "昨天 18:45",
+      "channel": "",
+      "gender": "",
+      "rank_change": "new",
+      "history_days": 1
+    },
+    {
+      "rank": 26,
+      "book_name": "就你也配",
+      "book_url": "https://www.gongzicp.com/novel-2360301.html",
+      "author": "四夭鹿",
+      "author_url": "https://www.gongzicp.com/zone/author-876651.html",
+      "tags": [
+        "都市",
+        "狗血",
+        "先婚后爱",
+        "双海王",
+        "强制",
+        "互撩拉扯",
+        "欢喜冤家"
+      ],
+      "all_tags": [
+        "都市",
+        "狗血",
+        "先婚后爱",
+        "双海王",
+        "强制",
+        "互撩拉扯",
+        "欢喜冤家"
+      ],
+      "primary_tag": "都市",
+      "abstract": "痞坏浪荡赛车手（权野）X 风流钓系麻烦精（温知筑） 权野这辈子只翻过一次车，那就是在温知筑身上。 他是GT赛车职业车手，也是富三代公子哥，靠着这个双重身份，他万花丛中过，片叶都沾身。 而温知筑是这些片叶中最扎手的一朵。 勾他，撩他，最后一脚把他踹进海里。 他发誓再有机会，一定要狠狠踹回去。没想到老天爷跟他开了个大玩笑，家族安排的联姻对象，正是那个惹他厌的人。 权野揪住他的衣领：“敢把我踹下海，这笔",
+      "word_count": "3.52万",
+      "popularity": "2.76万",
+      "status": "连载中",
+      "update_time": "昨天 12:00",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 8
     },
     {
       "rank": 27,
+      "book_name": "十年十天",
+      "book_url": "https://www.gongzicp.com/novel-2364791.html",
+      "author": "高山水",
+      "author_url": "https://www.gongzicp.com/zone/author-749166.html",
+      "tags": [
+        "青春",
+        "校园",
+        "竹马",
+        "HE",
+        "直男受"
+      ],
+      "all_tags": [
+        "青春",
+        "校园",
+        "竹马",
+        "HE",
+        "直男受"
+      ],
+      "primary_tag": "青春",
+      "abstract": "南星辰偷偷喜欢他的发小十年了，他自认为将这份感情永远藏在心底也没关系的，可是，他的竹马要谈恋爱了。 面对竹马的一次次反常，他无法忍受地做了一件错事... 喜欢一个人十年，忘记这段感情只需十天 怎么可能",
+      "word_count": "1.78万",
+      "popularity": "6,667",
+      "status": "连载中",
+      "update_time": "昨天 18:00",
+      "channel": "",
+      "gender": "",
+      "rank_change": 2,
+      "history_days": 5
+    },
+    {
+      "rank": 28,
       "book_name": "被甩的前男友咋变金主啦",
       "book_url": "https://www.gongzicp.com/novel-2353218.html",
       "author": "我有一只小蛐蛐",
@@ -983,17 +967,52 @@
       ],
       "primary_tag": "综合",
       "abstract": "等上三年又三年，人一生能有多少个三年。 许安承认，他真的很缺钱。 三年前缺钱生活。 挤在狭小无光的城中村，只为逃离窒息家庭追求自由，在垃圾桶旁捡到一只小狗陆泽。 可没有物质的爱情就是一盘散沙，许安心一横在二十岁生日当天甩了他。 三年后缺钱救命 分开后的三年里，许安起早摸黑，只为赚够妈妈的医药费，白天卖房，晚上陪酒。 可靠体力赚钱什么时候才是个头，许安陪酒失足，本来以为要走上不归路，却阴差阳错撞上陆",
-      "word_count": "5.93万",
-      "popularity": "1.97万",
+      "word_count": "6.26万",
+      "popularity": "2.09万",
       "status": "连载中",
       "update_time": "昨天 19:04",
       "channel": "",
       "gender": "",
-      "rank_change": 0,
-      "history_days": 19
+      "rank_change": -1,
+      "history_days": 20
     },
     {
-      "rank": 28,
+      "rank": 29,
+      "book_name": "许君白首",
+      "book_url": "https://www.gongzicp.com/novel-2356964.html",
+      "author": "晓棠",
+      "author_url": "https://www.gongzicp.com/zone/author-90813.html",
+      "tags": [
+        "宫廷",
+        "狗血",
+        "虐恋",
+        "强强",
+        "正剧",
+        "剧情",
+        "oe"
+      ],
+      "all_tags": [
+        "宫廷",
+        "狗血",
+        "虐恋",
+        "强强",
+        "正剧",
+        "剧情",
+        "oe"
+      ],
+      "primary_tag": "宫廷",
+      "abstract": "大珩新皇登基 天下乱局方兴未艾 南诏小国倒戈未成 厚颜无耻遣太子前来请罪 朝堂上一时唇枪舌剑 “宵小之辈不可姑息，杀鸡儆猴。” “战事初歇，休养生息之际，不宜树敌。” 两派针锋，互不相让。 僵局之下，手握重兵从边疆千里飞驰而来的王爷语出惊人：“臣求取南诏太子段时芩。” 众人：“……” “……” “……” “王爷，辱敌之举，不必搭上自己吧。就算这南诏太子沉鱼落雁，天人之姿，聪敏慧黠，人见人爱，……可",
+      "word_count": "5.97万",
+      "popularity": "2.66万",
+      "status": "连载中",
+      "update_time": "昨天 10:54",
+      "channel": "",
+      "gender": "",
+      "rank_change": -9,
+      "history_days": 15
+    },
+    {
+      "rank": 30,
       "book_name": "有我好果子吃",
       "book_url": "https://www.gongzicp.com/novel-2348075.html",
       "author": "多美哩",
@@ -1019,147 +1038,75 @@
       "primary_tag": "都市",
       "abstract": "方玮伊谈了两段自由恋爱结果都很糟心，这次他决定听老一辈的去相亲，找个踏实肯干的试一试。 - 周冶X方玮伊",
       "word_count": "6.97万",
-      "popularity": "2.96万",
+      "popularity": "2.98万",
       "status": "连载中",
-      "update_time": "30 分钟前",
+      "update_time": "昨天 10:00",
       "channel": "",
       "gender": "",
-      "rank_change": -6,
-      "history_days": 19
-    },
-    {
-      "rank": 29,
-      "book_name": "十年十天",
-      "book_url": "https://www.gongzicp.com/novel-2364791.html",
-      "author": "高山水",
-      "author_url": "https://www.gongzicp.com/zone/author-749166.html",
-      "tags": [
-        "青春",
-        "校园",
-        "竹马",
-        "HE",
-        "直男受"
-      ],
-      "all_tags": [
-        "青春",
-        "校园",
-        "竹马",
-        "HE",
-        "直男受"
-      ],
-      "primary_tag": "青春",
-      "abstract": "南星辰偷偷喜欢他的发小十年了，他自认为将这份感情永远藏在心底也没关系的，可是，他的竹马要谈恋爱了。 面对竹马的一次次反常，他无法忍受地做了一件错事... 喜欢一个人十年，忘记这段感情只需十天 怎么可能",
-      "word_count": "1.41万",
-      "popularity": "5,231",
-      "status": "连载中",
-      "update_time": "昨天 18:00",
-      "channel": "",
-      "gender": "",
-      "rank_change": -6,
-      "history_days": 4
-    },
-    {
-      "rank": 30,
-      "book_name": "沸骨",
-      "book_url": "https://www.gongzicp.com/novel-2365394.html",
-      "author": "地转偏向力",
-      "author_url": "https://www.gongzicp.com/zone/author-110190.html",
-      "tags": [
-        "都市",
-        "悬疑",
-        "刑侦",
-        "强强",
-        "HE"
-      ],
-      "all_tags": [
-        "都市",
-        "悬疑",
-        "刑侦",
-        "强强",
-        "HE"
-      ],
-      "primary_tag": "都市",
-      "abstract": "刑事侦查科科长穆霆（攻）X刑侦支队支队长唐啼（受） 华国某知名国际导演被爆诈骗逃跑出境，两个月后，其尸体出现在了一座东南亚的小岛上。惠东市公安局刑侦支队支队长唐啼与同事受派前往岛屿调查此事。 然而登岛当天，接应的岛国同事刑事侦查科科长穆霆迟迟未出现，最后一次发送消息时，手机上跳出了好友验证…… 唐啼:这是在挑衅？ 三分钟后，对面来电:实在抱歉，刚才是实习生操作失误。 好不容易来到警务局，谁料又被通",
-      "word_count": "1.69万",
-      "popularity": "6,658",
-      "status": "连载中",
-      "update_time": "57 分钟前",
-      "channel": "",
-      "gender": "",
-      "rank_change": -15,
-      "history_days": 3
+      "rank_change": -2,
+      "history_days": 20
     },
     {
       "rank": 31,
-      "book_name": "安生烟火",
-      "book_url": "https://www.gongzicp.com/novel-2366613.html",
-      "author": "灵境",
-      "author_url": "https://www.gongzicp.com/zone/author-113689.html",
+      "book_name": "霞慕尼爱情故事",
+      "book_url": "https://www.gongzicp.com/novel-2364915.html",
+      "author": "故人入梦",
+      "author_url": "https://www.gongzicp.com/zone/author-58447.html",
       "tags": [
         "都市",
-        "甜宠",
-        "逆袭",
-        "爽文",
-        "市井烟火"
+        "正剧",
+        "破镜重圆",
+        "虐恋情深",
+        "强强"
       ],
       "all_tags": [
         "都市",
-        "甜宠",
-        "逆袭",
-        "爽文",
-        "市井烟火"
+        "正剧",
+        "破镜重圆",
+        "虐恋情深",
+        "强强"
       ],
       "primary_tag": "都市",
-      "abstract": "糙汉猛男攻X甜软小可怜受 如果说给安锦的前半生贴几个标签，那大抵是“软”、“胆小”、“没主见”之类的，有钱人家的小少爷一朝破产沦落到靠开甜品店为生。 有个好心大哥经常扫空他的临期打折面包，一天安锦上门送面包，看见大哥只穿了条裤子，挂着围裙哐哐剁肉，那肌肉线条要多性感有多性感。 白峻：我都穿成这样色诱了！媳妇儿怎么还不上钩？求助，很急，在线等！",
-      "word_count": "3",
-      "popularity": "1,283",
+      "abstract": "当浪漫主义遇到现实主义（敏感细腻受×冷静理性攻） 十年前沈岑和安德蒙是同学，那个时候的沈岑有多平凡，安德蒙就有多耀眼。他曾经对这个男人交付过最最毫无保留的真心，对方却在他最最猝不及防的时候转身离开。 十年后沈岑是享誉国际的钢琴家，安德蒙成了户外运动员，也是知名纪录片电影音乐制作人。重逢在勃朗峰下的霞慕尼小镇，沈岑原本以为已经死去的记忆一点一点苏醒蔓延。 偏偏身边的人无视他一切明示暗示，将一场巧合之",
+      "word_count": "9",
+      "popularity": "3,947",
       "status": "连载中",
-      "update_time": "昨天 20:21",
+      "update_time": "昨天 20:00",
+      "channel": "",
+      "gender": "",
+      "rank_change": null,
+      "history_days": 3
+    },
+    {
+      "rank": 32,
+      "book_name": "无言以对",
+      "book_url": "https://www.gongzicp.com/novel-2367202.html",
+      "author": "温飞飞",
+      "author_url": "https://www.gongzicp.com/zone/author-29328.html",
+      "tags": [
+        "都市",
+        "豪门",
+        "虐恋",
+        "HE",
+        "年下"
+      ],
+      "all_tags": [
+        "都市",
+        "豪门",
+        "虐恋",
+        "HE",
+        "年下"
+      ],
+      "primary_tag": "都市",
+      "abstract": "“那场可笑的婚姻，那个名义上的妻子，世俗的任何形式，都不会动摇你的地位。没人比你更重要。” “你爱我，所以……你赢不了我。” “家族反对，世俗不容，但我一意孤行。” 豪门恩怨，三人纠葛；两颗心指向同一个人。 簿言（受）：豪门养子，进退维谷，左右为难，艰难抉择 闻令：既要又要，不放人。 闻野：心机年下，只要人。 HE。15w字左右。狗血且雷。",
+      "word_count": "3",
+      "popularity": "1,176",
+      "status": "连载中",
+      "update_time": "昨天 17:32",
       "channel": "",
       "gender": "",
       "rank_change": "new",
       "history_days": 1
-    },
-    {
-      "rank": 32,
-      "book_name": "年少无为",
-      "book_url": "https://www.gongzicp.com/novel-2356940.html",
-      "author": "黔生",
-      "author_url": "https://www.gongzicp.com/zone/author-628006.html",
-      "tags": [
-        "都市",
-        "互攻",
-        "恨海情天",
-        "偏执",
-        "年少扶持",
-        "虐恋",
-        "年少情深",
-        "包含回忆录",
-        "破镜难圆",
-        "年少时期千禧年"
-      ],
-      "all_tags": [
-        "都市",
-        "互攻",
-        "恨海情天",
-        "偏执",
-        "年少扶持",
-        "虐恋",
-        "年少情深",
-        "包含回忆录",
-        "破镜难圆",
-        "年少时期千禧年"
-      ],
-      "primary_tag": "都市",
-      "abstract": "年少无为时，我仍旧记得那个夏天，破烂出租屋里，那“吱呀——”的风扇懒散地旋转着，燥热闷人的气息蔓延，我们却总是不肯放开彼此，紧紧相拥，那时的我们亲密无间，对于彼此既有爱意又是愧疚。 如今三十而立，同住在精装房里的我们，却在这个最初成为“家”的地方不在拥抱，时间交错，言语难达。餐桌两旁，你我相对而坐，却缄默无言，如今，我不敢再说你还爱我，所以我们之间只是否只剩愧疚与无法诉诸于口的关于那些年的委屈。 ",
-      "word_count": "8",
-      "popularity": "4,204",
-      "status": "连载中",
-      "update_time": "昨天 13:04",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 2
     },
     {
       "rank": 33,
@@ -1183,17 +1130,75 @@
       ],
       "primary_tag": "武侠",
       "abstract": "被师兄师姐师父保护的很好的傻剑客林惊寒下山办事，意外救下手无缚鸡之力的琴师谢朔雪，之后两小只行走江湖的故事 林惊寒：你跟着我干什么？ 谢朔雪：我怕被人灭口（可怜） 林惊寒：好吧好吧，小爷罩你 （一年后） 林惊寒：你不是手无缚鸡之力吗？ 谢朔雪：（踢石子）对啊。 林惊寒：不是有人要灭口吗？ 谢朔雪：（吹口哨ing） 一句话简介： 一箫一剑平生意，负尽狂名五十年",
-      "word_count": "5.60万",
-      "popularity": "2.24万",
+      "word_count": "5.90万",
+      "popularity": "2.36万",
       "status": "连载中",
       "update_time": "昨天 11:00",
       "channel": "",
       "gender": "",
-      "rank_change": -8,
-      "history_days": 18
+      "rank_change": 0,
+      "history_days": 19
     },
     {
       "rank": 34,
+      "book_name": "犯春",
+      "book_url": "https://www.gongzicp.com/novel-2356011.html",
+      "author": "何赋生",
+      "author_url": "https://www.gongzicp.com/zone/author-94575.html",
+      "tags": [
+        "都市",
+        "HE",
+        "追妻火葬场"
+      ],
+      "all_tags": [
+        "都市",
+        "HE",
+        "追妻火葬场"
+      ],
+      "primary_tag": "都市",
+      "abstract": "经纪人X模特 梁家文见到薛小春的第一面就知道，自己签下他就是犯蠢。 梁家文是模特圈的金牌经纪人，在名利场浮沉八年，见过太多特别的。 圈里人都知道他有三不原则： 从不带新人。 从不主动拉资源。 从不嘴上饶人。 薛小春从山里来，误打误撞成了签约模特，见到梁家文的第一面，就把他当做了自己的信仰。 他信任这个人，比任何人都多。 梁家文知道那些是什么，但他不能说。名利场里，他教过太多人怎么红，却从没有人教过",
+      "word_count": "6.04万",
+      "popularity": "2.10万",
+      "status": "连载中",
+      "update_time": "昨天 18:18",
+      "channel": "",
+      "gender": "",
+      "rank_change": 5,
+      "history_days": 19
+    },
+    {
+      "rank": 35,
+      "book_name": "沸骨",
+      "book_url": "https://www.gongzicp.com/novel-2365394.html",
+      "author": "地转偏向力",
+      "author_url": "https://www.gongzicp.com/zone/author-110190.html",
+      "tags": [
+        "都市",
+        "悬疑",
+        "刑侦",
+        "强强",
+        "HE"
+      ],
+      "all_tags": [
+        "都市",
+        "悬疑",
+        "刑侦",
+        "强强",
+        "HE"
+      ],
+      "primary_tag": "都市",
+      "abstract": "刑事侦查科科长穆霆（攻）X刑侦支队支队长唐啼（受） 华国某知名国际导演被爆诈骗逃跑出境，两个月后，其尸体出现在了一座东南亚的小岛上。惠东市公安局刑侦支队支队长唐啼与同事受派前往岛屿调查此事。 然而登岛当天，接应的岛国同事刑事侦查科科长穆霆迟迟未出现，最后一次发送消息时，手机上跳出了好友验证…… 唐啼:这是在挑衅？ 三分钟后，对面来电:实在抱歉，刚才是实习生操作失误。 好不容易来到警务局，谁料又被通",
+      "word_count": "1.69万",
+      "popularity": "7,089",
+      "status": "连载中",
+      "update_time": "昨天 09:32",
+      "channel": "",
+      "gender": "",
+      "rank_change": -5,
+      "history_days": 4
+    },
+    {
+      "rank": 36,
       "book_name": "众生苦",
       "book_url": "https://www.gongzicp.com/novel-2362208.html",
       "author": "茄子包",
@@ -1223,391 +1228,176 @@
       "primary_tag": "综合",
       "abstract": "2009年的初夏，许家崖里搬来了一个年轻人，带着妹妹成为了李则的邻居。 年轻人会用那双褐色的眼睛朝李则笑，李则的名字在他嘴里滚一圈出来，都仿佛浸了山泉水。 李则喊他哥，结果渐渐的，这个字儿变味了。 李则觉得全都怪这个人。 再然后，许家崖拆了，人、爱、眼泪，什么都没了。 烈火烧尽，苦你，悲我，恨别离。 心机哭包绿茶攻×心软自来熟直男受 李则×杨煦 阅读指南： *1v1，已全文存稿 *《缺爱者关于白骑",
       "word_count": "2.32万",
-      "popularity": "8,824",
+      "popularity": "9,154",
       "status": "连载中",
-      "update_time": "8 小时前",
+      "update_time": "昨天 01:51",
       "channel": "",
       "gender": "",
       "rank_change": -2,
-      "history_days": 7
-    },
-    {
-      "rank": 35,
-      "book_name": "失足盲心",
-      "book_url": "https://www.gongzicp.com/novel-2352167.html",
-      "author": "幡茶",
-      "author_url": "https://www.gongzicp.com/zone/author-778579.html",
-      "tags": [
-        "都市",
-        "HE",
-        "甜宠",
-        "年下",
-        "浪子",
-        "偏执"
-      ],
-      "all_tags": [
-        "都市",
-        "HE",
-        "甜宠",
-        "年下",
-        "浪子",
-        "偏执"
-      ],
-      "primary_tag": "都市",
-      "abstract": "聂南心善，回老家还带了个文盲，供他吃供他住还供他上学，就当个弟弟养在身边，生活也不至于那么的枯燥乏味。 蒋淮，一个孤儿，最渴望的是能有人管他，面对突如其来的哥哥更是依赖，巴不得黏在他哥身上，又感激倾慕，恨不得掏心掏肺。 但日子一长，蒋淮慢慢发现，似乎聂南对谁都很好，还是不一样的那种，而他们越是亲呢暧昧，蒋淮越是抓心挠肝。 为什么就不能只对他一个人好？凭什么他们可以自己不行？ 事情转变在一个寻常天。",
-      "word_count": "3.49万",
-      "popularity": "1.30万",
-      "status": "连载中",
-      "update_time": "昨天 12:00",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 10
-    },
-    {
-      "rank": 36,
-      "book_name": "清坛",
-      "book_url": "https://www.gongzicp.com/novel-2358218.html",
-      "author": "三改火",
-      "author_url": "https://www.gongzicp.com/zone/author-47916.html",
-      "tags": [
-        "综合",
-        "探险",
-        "第一人称",
-        "剧情",
-        "年上",
-        "蜂窝煤笑面虎神棍1",
-        "嘴比命硬倒霉律师0"
-      ],
-      "all_tags": [
-        "综合",
-        "探险",
-        "第一人称",
-        "剧情",
-        "年上",
-        "蜂窝煤笑面虎神棍1",
-        "嘴比命硬倒霉律师0"
-      ],
-      "primary_tag": "综合",
-      "abstract": "我是周叙，今年25岁，是北京君山律师事务所的一名实习律师。 一切要从王永君他爹在福建苍江的项目出了事说起。几张来历不明的照片，一份措辞诡异的契约，还有一栋据说会吃人的老厝。王永君叫我一块走一趟，说是处理产权纠纷。同行的还有一位在法教百坛中颇有威望的年轻收坛先生，专门料理这些供不下去也送不走的东西——不替人求神拜佛，只负责清坛伐祀。 初次见面，这个叫祝燕山的神棍戴着墨镜，盯着我看了很久。 “你年纪轻",
-      "word_count": "3.42万",
-      "popularity": "1.51万",
-      "status": "连载中",
-      "update_time": "昨天 00:01",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 6
+      "history_days": 8
     },
     {
       "rank": 37,
-      "book_name": "社畜也会有春天",
-      "book_url": "https://www.gongzicp.com/novel-2362241.html",
-      "author": "风却月",
-      "author_url": "https://www.gongzicp.com/zone/author-1172058.html",
+      "book_name": "几多苦来几多甘",
+      "book_url": "https://www.gongzicp.com/novel-2355895.html",
+      "author": "需持",
+      "author_url": "https://www.gongzicp.com/zone/author-992708.html",
       "tags": [
-        "都市",
-        "破镜重圆",
-        "强取豪夺",
-        "救赎",
-        "拉扯"
+        "民国",
+        "下南洋",
+        "成长",
+        "1V1",
+        "HE",
+        "年代文"
       ],
       "all_tags": [
-        "都市",
-        "破镜重圆",
-        "强取豪夺",
-        "救赎",
-        "拉扯"
+        "民国",
+        "下南洋",
+        "成长",
+        "1V1",
+        "HE",
+        "年代文"
       ],
-      "primary_tag": "都市",
-      "abstract": "复合吧，我不知道你会暴富，他一直在等这句话等了足足五年。 于明怀最近有点发愁。 现在他搭手在露台上，垂眸看着下边的某个人，那是五年前抛弃他的前任。 为什么他还不找自己复合，明明我已经变得那么有钱了。当初给他买那么点廉价的小东西都稀罕得要命，眼睛亮的不行。 现在于明怀穿得一身金光璀璨，富贵逼人，为什么某人始终不用正眼看他。 好烦。 于是他决定按照学习资料里写的那样，对前任虐身虐心地狠狠报复他。 以至",
-      "word_count": "7",
-      "popularity": "5,362",
+      "primary_tag": "民国",
+      "abstract": "大哥的银信断了有半年之久。 在地主家当长工的谢续行苦等不来转机，反而当时带大哥下南洋的那个水客，带回来一个凶信——他说大哥过身了。 民国元年，虚岁十九的谢续行带着沉重的行李同阿妈轻轻的目汁，义无反顾地上船。 他要去马来亚，去赚钱，去给大哥捡骨 ，带大哥归乡。 九死一生也无畏。 • 钟刻尘从会记事起，就一直过着樵燥米白的生活，只因他爸早早过番，赚到了大钱，让他不单止衣食无忧，还能一直在学堂读书。 但",
+      "word_count": "3.82万",
+      "popularity": "1.48万",
       "status": "连载中",
-      "update_time": "昨天 23:23",
+      "update_time": "昨天 21:14",
       "channel": "",
       "gender": "",
       "rank_change": null,
-      "history_days": 2
-    },
-    {
-      "rank": 38,
-      "book_name": "好好",
-      "book_url": "https://www.gongzicp.com/novel-2355967.html",
-      "author": "艾叶团子",
-      "author_url": "https://www.gongzicp.com/zone/author-698951.html",
-      "tags": [
-        "青春",
-        "竹马",
-        "情投意合",
-        "甜宠",
-        "轻松",
-        "市井",
-        "年下",
-        "成长"
-      ],
-      "all_tags": [
-        "青春",
-        "竹马",
-        "情投意合",
-        "甜宠",
-        "轻松",
-        "市井",
-        "年下",
-        "成长"
-      ],
-      "primary_tag": "青春",
-      "abstract": "顾向西幼年时在外婆家待了半年，认了周泽当哥。 顾向西在16岁那年回到外婆家，不想让周泽当他哥了。 顾向西在上大学后跟周泽说你考虑考虑我。 周泽摸了摸他的头，告诉他：“我大概是弯了。” 又又是竹马文，我干回老本行了：） ps：年下，别站反了",
-      "word_count": "5.71万",
-      "popularity": "1.89万",
-      "status": "连载中",
-      "update_time": "昨天 03:16",
-      "channel": "",
-      "gender": "",
-      "rank_change": -8,
-      "history_days": 18
-    },
-    {
-      "rank": 39,
-      "book_name": "犯春",
-      "book_url": "https://www.gongzicp.com/novel-2356011.html",
-      "author": "何赋生",
-      "author_url": "https://www.gongzicp.com/zone/author-94575.html",
-      "tags": [
-        "都市",
-        "HE",
-        "追妻火葬场"
-      ],
-      "all_tags": [
-        "都市",
-        "HE",
-        "追妻火葬场"
-      ],
-      "primary_tag": "都市",
-      "abstract": "经纪人X模特 梁家文见到薛小春的第一面就知道，自己签下他就是犯蠢。 梁家文是模特圈的金牌经纪人，在名利场浮沉八年，见过太多特别的。 圈里人都知道他有三不原则： 从不带新人。 从不主动拉资源。 从不嘴上饶人。 薛小春从山里来，误打误撞成了签约模特，见到梁家文的第一面，就把他当做了自己的信仰。 他信任这个人，比任何人都多。 梁家文知道那些是什么，但他不能说。名利场里，他教过太多人怎么红，却从没有人教过",
-      "word_count": "5.73万",
-      "popularity": "1.99万",
-      "status": "连载中",
-      "update_time": "昨天 18:18",
-      "channel": "",
-      "gender": "",
-      "rank_change": -8,
-      "history_days": 18
-    },
-    {
-      "rank": 40,
-      "book_name": "钓星",
-      "book_url": "https://www.gongzicp.com/novel-2352707.html",
-      "author": "小熊校长",
-      "author_url": "https://www.gongzicp.com/zone/author-572991.html",
-      "tags": [
-        "都市",
-        "搞笑",
-        "年下",
-        "轻松",
-        "甜宠",
-        "娱乐圈",
-        "暗恋",
-        "钓系",
-        "HE",
-        "剧情",
-        "欢喜冤家"
-      ],
-      "all_tags": [
-        "都市",
-        "搞笑",
-        "年下",
-        "轻松",
-        "甜宠",
-        "娱乐圈",
-        "暗恋",
-        "钓系",
-        "HE",
-        "剧情",
-        "欢喜冤家"
-      ],
-      "primary_tag": "都市",
-      "abstract": "AI新贵凌岱峰赚了钱，第一个心愿就是包养童年男神。 当年有颜值有演技的白月光程蕴，如今在景区穿着廉价戏服当NPC，卖蠢撒娇，尬舞互动发银票。 凌岱峰看得心情复杂，当即托人递了话。 程蕴拒绝了。 凌岱峰：…… 问题不大，换个方案： 《关于与程蕴建立长期包养关系的流程、预算与风险控制》 于是，程蕴莫名其妙地接到了一堆工作，逐渐和这位出手大方、衣着朴素、说话直来直去的凌总熟悉起来。 就是有时候太直了。 ",
-      "word_count": "4.98万",
-      "popularity": "1.93万",
-      "status": "连载中",
-      "update_time": "昨天 19:58",
-      "channel": "",
-      "gender": "",
-      "rank_change": null,
-      "history_days": 8
+      "history_days": 14
     }
   ],
   "insights": {
     "blue_ocean": [
       {
-        "tag": "网游",
+        "tag": "一见钟情",
         "count": 1,
-        "avg_popularity": 9732
-      },
-      {
-        "tag": "千禧年代",
-        "count": 1,
-        "avg_popularity": 8824
-      },
-      {
-        "tag": "日常",
-        "count": 1,
-        "avg_popularity": 8824
+        "avg_popularity": 9910
       },
       {
         "tag": "高岭之花",
         "count": 1,
-        "avg_popularity": 7951
+        "avg_popularity": 9910
       },
       {
         "tag": "忠犬攻",
         "count": 1,
-        "avg_popularity": 7951
+        "avg_popularity": 9910
+      },
+      {
+        "tag": "直球攻",
+        "count": 1,
+        "avg_popularity": 9910
+      },
+      {
+        "tag": "傲娇受",
+        "count": 1,
+        "avg_popularity": 9910
       }
     ],
     "viral_books": [
       {
-        "rank": 2,
-        "book_name": "及时雨停",
-        "author": "亭灯眠",
-        "tags": [
-          "青春",
-          "HE",
-          "救赎",
-          "互宠",
-          "校园",
-          "小狗年下",
-          "只对受萌感十足攻",
-          "除攻外冷酷无情受"
-        ],
-        "word_count": "3.88万",
-        "popularity": "3.52万",
-        "abstract": "“当及时雨停后，万籁俱静时，残存心里的是荒芜空虚更多呢，还是欣喜庆幸更多呢？” 直球的冷脸萌受×敏感的热脸萌攻 祁青黎×陈澍恒 有少爷命没少爷病最后甩了少爷身份的祁青黎把自己打包回乡，把自己打包进新的生活里，最后把自己打包到陈澍恒的心头上。 嗯......挺好。 遇到理想型毫不犹豫地一见钟情，但自己似乎没开窍怎么办？那身兼数职的陈澍恒就帮他，帮他，还是帮他，随叫随到、随时待命，最后帮他帮到搭上自己"
-      },
-      {
         "rank": 3,
-        "book_name": "永不止息",
-        "author": "鸥贝贝",
+        "book_name": "爱神爱神请回头",
+        "author": "味心理论",
         "tags": [
           "架空",
-          "强强",
-          "相爱相杀",
-          "HE",
-          "剧情",
-          "向哨",
-          "废土",
-          "双向救赎",
-          "年上"
-        ],
-        "word_count": "3.96万",
-        "popularity": "2.61万",
-        "abstract": "顾濯x凌域 「白切黑斯文败类向导攻x高武力嘴硬心软哨兵受」 「白马x黑狼」 凌域作为白塔第一混子哨兵，顶着S+的等级，有班不上，有活不干，有钱不赚 空闲时间全去练他的格斗技巧 某天，他被高层强行塞给全塔唯一S级向导顾濯，并强制绑定了深度链接 凌域以为这只是一场各取所需的的搭档协议 谁知道顾濯这位表面高岭之花的斯文败类，不仅图他的武力值，还图他这个人 最要命的是—— 因为一场互殴，全世界都以为他是上"
-      },
-      {
-        "rank": 8,
-        "book_name": "救命！前老板成了合租对象",
-        "author": "云和漾",
-        "tags": [
-          "都市",
-          "原耽",
-          "甜宠",
-          "HE"
-        ],
-        "word_count": "1.66万",
-        "popularity": "6,505",
-        "abstract": "嘴硬霸总×嘴毒秘书 贺明远，前霸总，公司破产欠债二百三十七万，唯一剩下的资产是三套定制西装和一张嘴。陈嘉树，前秘书，被拖欠八个月工资，跑路当天在电梯里跟前老板一起被催债的堵了个正着。 为还债，两人被迫合租城中村，开起“代吵架”网店。贺总负责端着架子输出气势，小陈负责讲逻辑算成本。第一单被菜市场大妈拿芹菜抽了三下，第二单被小学生班主任请家长。眼看要凉，贺总直播拆最后一块劳力士，小陈嘴瓢喊了句“家人们"
-      },
-      {
-        "rank": 11,
-        "book_name": "需求不明确",
-        "author": "喵在",
-        "tags": [
-          "都市",
-          "双向暗恋",
+          "先做后爱",
           "年上",
-          "牛马",
-          "社畜",
-          "HE",
-          "打工人"
+          "ABO",
+          "娱乐圈",
+          "论坛体"
         ],
-        "word_count": "1.36万",
-        "popularity": "5,752",
-        "abstract": "唐聿×沈漾 游戏制作人×游戏市场 这两个职业真的有谈恋爱的风险吗，老大？！ *暂无存稿，随时改稿，写到哪算哪的小甜饼"
+        "word_count": "1.27万",
+        "popularity": "3.70万",
+        "abstract": "分区：佩佩小组·娱乐八卦·匿名灌水 【李涛】有人扒一下左培禹和向海川吗？这俩绝对有故事！ 【主楼】 已知这俩从小就是邻居，两个人还都是Alpha，那肯定不对付吧，怎么隔壁楼爆出他俩接吻照！ 1L：好像他们本来要出演同一部电视剧，后来粉丝闹事给停了？ 2L：我朋友是那个剧组的，听说他们俩在酒店里还发生关系了呢，当时他们住的那一条走廊真是，味大无需多言（睡醒删，非人脉姐） 3L：我是他们高中同学！我作"
       },
       {
-        "rank": 17,
-        "book_name": "骗子五诫",
-        "author": "晤爻",
+        "rank": 23,
+        "book_name": "稚眠",
+        "author": "苦牛奶",
         "tags": [
-          "都市",
-          "HE",
-          "强强",
-          "剧情",
-          "正剧"
-        ],
-        "word_count": "8",
-        "popularity": "2,618",
-        "abstract": "优雅疯批顶级骗子 X 冷峻腹黑资本大佬 柯让 X 谭理玉 柯让有一百种方式让你相信他的谎言。 他可以是奥地利伯爵的私生子，可以是上流社会的精英，也可以是任何你需要他成为的人。 毕竟最好的骗局是让对方以为自己占了便宜。所以他永远慢半拍开口，永远让对方觉得自己是聪明人。 直到他遇见谭理玉。 他哄他两千万，他追了他三个月。 他哄他五千万，他陪他演了半年戏。 他哄他两个亿，他却朝他越走越近。 后来他才知道"
-      },
-      {
-        "rank": 31,
-        "book_name": "安生烟火",
-        "author": "灵境",
-        "tags": [
-          "都市",
-          "甜宠",
-          "逆袭",
-          "爽文",
-          "市井烟火"
+          "青春",
+          "美攻帅受",
+          "年下",
+          "慢热"
         ],
         "word_count": "3",
-        "popularity": "1,283",
-        "abstract": "糙汉猛男攻X甜软小可怜受 如果说给安锦的前半生贴几个标签，那大抵是“软”、“胆小”、“没主见”之类的，有钱人家的小少爷一朝破产沦落到靠开甜品店为生。 有个好心大哥经常扫空他的临期打折面包，一天安锦上门送面包，看见大哥只穿了条裤子，挂着围裙哐哐剁肉，那肌肉线条要多性感有多性感。 白峻：我都穿成这样色诱了！媳妇儿怎么还不上钩？求助，很急，在线等！"
+        "popularity": "1,625",
+        "abstract": "方稚眠搬来的夏天，陈嘉还有两个月高考。 同住一间房，同睡一张床。 陈嘉以为会很不方便。 后来他发现，真正不方便的不是多了个人。 方稚眠什么都不用做，只要在那里，陈嘉就已经受不了。 方稚眠×陈嘉 冷淡萌妹攻×克制的自我攻略受"
+      },
+      {
+        "rank": 25,
+        "book_name": "神仙住在小岛",
+        "author": "圆不汤",
+        "tags": [
+          "综合",
+          "轻松搞笑",
+          "年下",
+          "美1帅0",
+          "特殊设定",
+          "强强"
+        ],
+        "word_count": "4",
+        "popularity": "1,531",
+        "abstract": "文案请稍等几天…… 绿茶美人攻x没心眼俊朗受"
+      },
+      {
+        "rank": 32,
+        "book_name": "无言以对",
+        "author": "温飞飞",
+        "tags": [
+          "都市",
+          "豪门",
+          "虐恋",
+          "HE",
+          "年下"
+        ],
+        "word_count": "3",
+        "popularity": "1,176",
+        "abstract": "“那场可笑的婚姻，那个名义上的妻子，世俗的任何形式，都不会动摇你的地位。没人比你更重要。” “你爱我，所以……你赢不了我。” “家族反对，世俗不容，但我一意孤行。” 豪门恩怨，三人纠葛；两颗心指向同一个人。 簿言（受）：豪门养子，进退维谷，左右为难，艰难抉择 闻令：既要又要，不放人。 闻野：心机年下，只要人。 HE。15w字左右。狗血且雷。"
       }
     ],
     "tag_trends_7d": {
       "都市": {
-        "current": 22,
-        "previous": 24,
-        "change": -2
-      },
-      "青春": {
-        "current": 5,
-        "previous": 2,
-        "change": 3
+        "current": 21,
+        "previous": 22,
+        "change": -1
       },
       "架空": {
-        "current": 2,
-        "previous": 1,
+        "current": 3,
+        "previous": 2,
+        "change": 1
+      },
+      "青春": {
+        "current": 3,
+        "previous": 2,
         "change": 1
       },
       "综合": {
-        "current": 5,
-        "previous": 7,
-        "change": -2
-      },
-      "灵异": {
-        "current": 1,
-        "previous": 1,
-        "change": 0
-      },
-      "宫廷": {
-        "current": 2,
-        "previous": 2,
-        "change": 0
+        "current": 6,
+        "previous": 14,
+        "change": -8
       },
       "现代": {
         "current": 1,
         "previous": 0,
         "change": 1
       },
-      "推理": {
+      "宫廷": {
         "current": 1,
-        "previous": 0,
-        "change": 1
+        "previous": 2,
+        "change": -1
       },
       "武侠": {
+        "current": 1,
+        "previous": 1,
+        "change": 0
+      },
+      "民国": {
         "current": 1,
         "previous": 1,
         "change": 0
@@ -1615,49 +1405,44 @@
     },
     "tag_trends_30d": {
       "都市": {
-        "current": 22,
-        "previous": 13,
-        "change": 9
-      },
-      "青春": {
-        "current": 5,
-        "previous": 2,
-        "change": 3
+        "current": 21,
+        "previous": 9,
+        "change": 12
       },
       "架空": {
-        "current": 2,
-        "previous": 11,
-        "change": -9
+        "current": 3,
+        "previous": 10,
+        "change": -7
+      },
+      "青春": {
+        "current": 3,
+        "previous": 2,
+        "change": 1
       },
       "综合": {
-        "current": 5,
-        "previous": 9,
-        "change": -4
-      },
-      "灵异": {
-        "current": 1,
-        "previous": 0,
-        "change": 1
-      },
-      "宫廷": {
-        "current": 2,
-        "previous": 1,
-        "change": 1
+        "current": 6,
+        "previous": 6,
+        "change": 0
       },
       "现代": {
         "current": 1,
         "previous": 0,
         "change": 1
       },
-      "推理": {
+      "宫廷": {
         "current": 1,
-        "previous": 0,
-        "change": 1
+        "previous": 1,
+        "change": 0
       },
       "武侠": {
         "current": 1,
         "previous": 0,
         "change": 1
+      },
+      "民国": {
+        "current": 1,
+        "previous": 2,
+        "change": -1
       }
     }
   }
