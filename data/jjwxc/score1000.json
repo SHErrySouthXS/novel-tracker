@@ -1,6 +1,6 @@
 {
-  "update_time": "2026-11-26 04:10:43",
-  "update_date": "2026-11-26",
+  "update_time": "2026-11-27 04:06:47",
+  "update_date": "2026-11-27",
   "update_month": "2026-11",
   "total_count": 1000,
   "source": "晋江文学城·积分榜Top1000",
@@ -16114,7 +16114,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5897690624,
+      "score": 5897432576,
       "score_display": "5.9G",
       "abstract": "嘴炮一时爽，追妻火葬场",
       "status": "完结",
@@ -16126,6 +16126,43 @@
     },
     {
       "rank": 402,
+      "book_id": "8385881",
+      "book_name": "雾里青",
+      "author": "明开夜合",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "都市",
+        "情有独钟",
+        "业界精英"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "近代现代",
+        "爱情",
+        "都市",
+        "情有独钟",
+        "业界精英"
+      ],
+      "score": 5887413760,
+      "score_display": "5.9G",
+      "abstract": "别一直看着他，也请看看我。",
+      "status": "完结",
+      "word_count": "32.1万",
+      "publish_time": "2023-10-15 11:01:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8385881",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=984254"
+    },
+    {
+      "rank": 403,
       "book_id": "2938340",
       "book_name": "攻略那个渣攻[快穿]",
       "author": "即墨遥",
@@ -16155,7 +16192,7 @@
         "爽文",
         "轻松"
       ],
-      "score": 5887028736,
+      "score": 5886421504,
       "score_display": "5.9G",
       "abstract": "攻略渣攻，虐渣打脸",
       "status": "完结",
@@ -16164,43 +16201,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=2938340",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=160612"
-    },
-    {
-      "rank": 403,
-      "book_id": "8385881",
-      "book_name": "雾里青",
-      "author": "明开夜合",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "情有独钟",
-        "业界精英"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "近代现代",
-        "爱情",
-        "都市",
-        "情有独钟",
-        "业界精英"
-      ],
-      "score": 5886557184,
-      "score_display": "5.9G",
-      "abstract": "别一直看着他，也请看看我。",
-      "status": "完结",
-      "word_count": "32.1万",
-      "publish_time": "2023-10-15 11:01:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=8385881",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=984254"
     },
     {
       "rank": 404,
@@ -16235,7 +16235,7 @@
         "轻松",
         "全息"
       ],
-      "score": 5881884672,
+      "score": 5882161664,
       "score_display": "5.9G",
       "abstract": "从头开始的天才",
       "status": "完结",
@@ -16278,7 +16278,7 @@
         "治愈",
         "美强惨"
       ],
-      "score": 5876318208,
+      "score": 5876100096,
       "score_display": "5.9G",
       "abstract": "第一次当统的我心态崩了QAQ",
       "status": "完结",
@@ -16319,7 +16319,7 @@
         "复仇虐渣",
         "轻松"
       ],
-      "score": 5875006976,
+      "score": 5875115520,
       "score_display": "5.9G",
       "abstract": "腹黑太子攻攻略质子受",
       "status": "完结",
@@ -16360,7 +16360,7 @@
         "轻松",
         "沙雕"
       ],
-      "score": 5870816768,
+      "score": 5871113728,
       "score_display": "5.9G",
       "abstract": "在一群偶像派中谐星出道",
       "status": "完结",
@@ -16399,7 +16399,7 @@
         "朝堂",
         "正剧"
       ],
-      "score": 5866892800,
+      "score": 5866506240,
       "score_display": "5.9G",
       "abstract": "从孤女到青史留名",
       "status": "完结",
@@ -16434,7 +16434,7 @@
         "幻想空间",
         "轻松"
       ],
-      "score": 5858318336,
+      "score": 5858086400,
       "score_display": "5.9G",
       "abstract": "任时光匆匆流去",
       "status": "完结",
@@ -16475,7 +16475,7 @@
         "穿书",
         "正剧"
       ],
-      "score": 5855269888,
+      "score": 5855177216,
       "score_display": "5.9G",
       "abstract": "公主和高僧",
       "status": "完结",
@@ -16514,7 +16514,7 @@
         "甜文",
         "爆笑"
       ],
-      "score": 5853229568,
+      "score": 5853100544,
       "score_display": "5.9G",
       "abstract": "你为什么这么像反派？",
       "status": "完结",
@@ -16549,7 +16549,7 @@
         "天之骄子",
         "正剧"
       ],
-      "score": 5826771456,
+      "score": 5826246656,
       "score_display": "5.8G",
       "abstract": "傻白甜X美强惨Bking",
       "status": "完结",
@@ -16586,7 +16586,7 @@
         "全息",
         "咸鱼"
       ],
-      "score": 5804966912,
+      "score": 5809791488,
       "score_display": "5.8G",
       "abstract": "豆腐嘴刀子心的赛博阴阳师",
       "status": "连载中",
@@ -16629,7 +16629,7 @@
         "轻松",
         "电竞"
       ],
-      "score": 5804483072,
+      "score": 5804588032,
       "score_display": "5.8G",
       "abstract": "下路大型虐狗现场",
       "status": "完结",
@@ -16670,7 +16670,7 @@
         "系统",
         "正剧"
       ],
-      "score": 5803384832,
+      "score": 5803067392,
       "score_display": "5.8G",
       "abstract": "洗到自己都感动哭泣",
       "status": "完结",
@@ -16709,7 +16709,7 @@
         "业界精英",
         "甜文"
       ],
-      "score": 5801362944,
+      "score": 5802616320,
       "score_display": "5.8G",
       "abstract": "藏南高原的晩星会乘风而眠。",
       "status": "完结",
@@ -16750,7 +16750,7 @@
         "古代幻想",
         "轻松"
       ],
-      "score": 5793578496,
+      "score": 5794046464,
       "score_display": "5.8G",
       "abstract": "别救我欸。",
       "status": "完结",
@@ -16791,7 +16791,7 @@
         "天之骄子",
         "正剧"
       ],
-      "score": 5791722496,
+      "score": 5791505408,
       "score_display": "5.8G",
       "abstract": "一生中最美好的瞬间",
       "status": "完结",
@@ -16834,7 +16834,7 @@
         "成长",
         "轻松"
       ],
-      "score": 5785598976,
+      "score": 5785464832,
       "score_display": "5.8G",
       "abstract": "精灵王攻VS小妖精受",
       "status": "完结",
@@ -16875,7 +16875,7 @@
         "升级流",
         "转生"
       ],
-      "score": 5776111616,
+      "score": 5776324096,
       "score_display": "5.8G",
       "abstract": "人间地狱，我为恶魔。",
       "status": "完结",
@@ -16916,7 +16916,7 @@
         "轻松",
         "暗恋"
       ],
-      "score": 5771503104,
+      "score": 5771205632,
       "score_display": "5.8G",
       "abstract": "你是我唯一的选择",
       "status": "完结",
@@ -16957,7 +16957,7 @@
         "爽文",
         "轻松"
       ],
-      "score": 5765423104,
+      "score": 5765545472,
       "score_display": "5.8G",
       "abstract": "永远臣服于温柔",
       "status": "完结",
@@ -16998,7 +16998,7 @@
         "甜文",
         "正剧"
       ],
-      "score": 5763776000,
+      "score": 5763334656,
       "score_display": "5.8G",
       "abstract": "追妻火葬场",
       "status": "完结",
@@ -17037,7 +17037,7 @@
         "穿书",
         "轻松"
       ],
-      "score": 5754206208,
+      "score": 5753739776,
       "score_display": "5.8G",
       "abstract": "摆烂的正确姿势",
       "status": "完结",
@@ -17078,7 +17078,7 @@
         "轻松",
         "暗恋"
       ],
-      "score": 5748674560,
+      "score": 5748116992,
       "score_display": "5.7G",
       "abstract": "双向暗恋/久别重逢",
       "status": "完结",
@@ -17119,7 +17119,7 @@
         "爽文",
         "轻松"
       ],
-      "score": 5736227328,
+      "score": 5735588352,
       "score_display": "5.7G",
       "abstract": "穿书少女X重生大佬",
       "status": "完结",
@@ -17162,7 +17162,7 @@
         "正剧",
         "废土"
       ],
-      "score": 5726024192,
+      "score": 5726601216,
       "score_display": "5.7G",
       "abstract": "一起长大，努力活下去",
       "status": "完结",
@@ -17201,7 +17201,7 @@
         "轻松",
         "天选之子"
       ],
-      "score": 5706515456,
+      "score": 5706139648,
       "score_display": "5.7G",
       "abstract": "我真的只是普通人",
       "status": "完结",
@@ -17242,7 +17242,7 @@
         "悬疑推理",
         "正剧"
       ],
-      "score": 5696125952,
+      "score": 5695627776,
       "score_display": "5.7G",
       "abstract": "越好看的保镖就越会打人",
       "status": "完结",
@@ -17254,49 +17254,6 @@
     },
     {
       "rank": 430,
-      "book_id": "4354574",
-      "book_name": "师父他太难了",
-      "author": "扶华",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "架空历史",
-      "theme": "仙侠",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "架空历史",
-        "仙侠",
-        "魔幻",
-        "情有独钟",
-        "穿越时空",
-        "甜文",
-        "轻松",
-        "师徒"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "架空历史",
-        "仙侠",
-        "魔幻",
-        "情有独钟",
-        "穿越时空",
-        "甜文",
-        "轻松",
-        "师徒"
-      ],
-      "score": 5685715456,
-      "score_display": "5.7G",
-      "abstract": "师父是熊猫妖！",
-      "status": "完结",
-      "word_count": "58.9万",
-      "publish_time": "2019-10-08 22:22:22",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=4354574",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=957820"
-    },
-    {
-      "rank": 431,
       "book_id": "6430464",
       "book_name": "原来我不是精神病啊",
       "author": "深海手术刀",
@@ -17328,7 +17285,7 @@
         "轻松",
         "克苏鲁"
       ],
-      "score": 5684691968,
+      "score": 5685847552,
       "score_display": "5.7G",
       "abstract": "不是人外，是人内。（笔芯）",
       "status": "完结",
@@ -17337,6 +17294,49 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=6430464",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1012567"
+    },
+    {
+      "rank": 431,
+      "book_id": "4354574",
+      "book_name": "师父他太难了",
+      "author": "扶华",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "架空历史",
+      "theme": "仙侠",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "架空历史",
+        "仙侠",
+        "魔幻",
+        "情有独钟",
+        "穿越时空",
+        "甜文",
+        "轻松",
+        "师徒"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "架空历史",
+        "仙侠",
+        "魔幻",
+        "情有独钟",
+        "穿越时空",
+        "甜文",
+        "轻松",
+        "师徒"
+      ],
+      "score": 5685546496,
+      "score_display": "5.7G",
+      "abstract": "师父是熊猫妖！",
+      "status": "完结",
+      "word_count": "58.9万",
+      "publish_time": "2019-10-08 22:22:22",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=4354574",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=957820"
     },
     {
       "rank": 432,
@@ -17367,7 +17367,7 @@
         "复仇虐渣",
         "正剧"
       ],
-      "score": 5680076800,
+      "score": 5680724480,
       "score_display": "5.7G",
       "abstract": "十年饮冰，难凉热血",
       "status": "完结",
@@ -17406,7 +17406,7 @@
         "仙侠修真",
         "东方玄幻"
       ],
-      "score": 5679271936,
+      "score": 5679212544,
       "score_display": "5.7G",
       "abstract": "此剑如我心。",
       "status": "完结",
@@ -17449,7 +17449,7 @@
         "成长",
         "沙雕"
       ],
-      "score": 5675465728,
+      "score": 5675590656,
       "score_display": "5.7G",
       "abstract": "没有我你可怎么活",
       "status": "完结",
@@ -17488,7 +17488,7 @@
         "校园",
         "沙雕"
       ],
-      "score": 5670764544,
+      "score": 5670397952,
       "score_display": "5.7G",
       "abstract": "破锅烂盖作真爱，北美pdf文学",
       "status": "完结",
@@ -17529,7 +17529,7 @@
         "校园",
         "轻松"
       ],
-      "score": 5669095936,
+      "score": 5668817920,
       "score_display": "5.7G",
       "abstract": "我让让辣",
       "status": "完结",
@@ -17568,7 +17568,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5660026368,
+      "score": 5659744256,
       "score_display": "5.7G",
       "abstract": "说了禁止犯规你怎么没完了？",
       "status": "完结",
@@ -17607,7 +17607,7 @@
         "重生",
         "正剧"
       ],
-      "score": 5659208192,
+      "score": 5658921984,
       "score_display": "5.7G",
       "abstract": "双重生",
       "status": "完结",
@@ -17642,7 +17642,7 @@
         "宫廷侯爵",
         "正剧"
       ],
-      "score": 5652122624,
+      "score": 5652022272,
       "score_display": "5.7G",
       "abstract": "高门贵女vs寒门权臣",
       "status": "完结",
@@ -17683,7 +17683,7 @@
         "校园",
         "轻松"
       ],
-      "score": 5649693696,
+      "score": 5649240576,
       "score_display": "5.6G",
       "abstract": "躁动小甜文",
       "status": "完结",
@@ -17726,7 +17726,7 @@
         "爽文",
         "轻松"
       ],
-      "score": 5648363008,
+      "score": 5648524800,
       "score_display": "5.6G",
       "abstract": "校园无限流，团队逃生解谜",
       "status": "完结",
@@ -17761,7 +17761,7 @@
         "快穿",
         "正剧"
       ],
-      "score": 5648181248,
+      "score": 5647918080,
       "score_display": "5.6G",
       "abstract": "我诱你入地狱，我送你回人间",
       "status": "完结",
@@ -17802,7 +17802,7 @@
         "重生",
         "正剧"
       ],
-      "score": 5637274624,
+      "score": 5637121536,
       "score_display": "5.6G",
       "abstract": "渣王爷重生好好做人的故事",
       "status": "完结",
@@ -17841,7 +17841,7 @@
         "宫斗",
         "系统"
       ],
-      "score": 5633169408,
+      "score": 5633406464,
       "score_display": "5.6G",
       "abstract": "颜控是没有好下场的！",
       "status": "完结",
@@ -17878,7 +17878,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5613857280,
+      "score": 5613350400,
       "score_display": "5.6G",
       "abstract": "小可怜重生后的甜宠日常",
       "status": "完结",
@@ -17917,7 +17917,7 @@
         "正剧",
         "狗血"
       ],
-      "score": 5601697792,
+      "score": 5605113856,
       "score_display": "5.6G",
       "abstract": "一个太监的爱恨情仇",
       "status": "完结",
@@ -17956,7 +17956,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5589165056,
+      "score": 5588799488,
       "score_display": "5.6G",
       "abstract": "真的，早晚都要喜欢我，别挣扎了",
       "status": "完结",
@@ -17997,7 +17997,7 @@
         "爽文",
         "正剧"
       ],
-      "score": 5588806656,
+      "score": 5588609536,
       "score_display": "5.6G",
       "abstract": "戏精穿进苦情剧",
       "status": "完结",
@@ -18038,7 +18038,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5587158016,
+      "score": 5587133952,
       "score_display": "5.6G",
       "abstract": "认错男朋友的我，只好换了新男友",
       "status": "完结",
@@ -18081,7 +18081,7 @@
         "爆笑",
         "沙雕"
       ],
-      "score": 5583174656,
+      "score": 5582779392,
       "score_display": "5.6G",
       "abstract": "走出半生归来仍是沙雕。",
       "status": "完结",
@@ -18124,7 +18124,7 @@
         "狗血",
         "剧透"
       ],
-      "score": 5580641792,
+      "score": 5582370816,
       "score_display": "5.6G",
       "abstract": "他们却为我着迷",
       "status": "连载中",
@@ -18165,7 +18165,7 @@
         "甜文",
         "正剧"
       ],
-      "score": 5574857728,
+      "score": 5575093248,
       "score_display": "5.6G",
       "abstract": "这一声明目张胆的老婆",
       "status": "完结",
@@ -18208,7 +18208,7 @@
         "正剧",
         "囤货"
       ],
-      "score": 5570767872,
+      "score": 5570943488,
       "score_display": "5.6G",
       "abstract": "囤货！在打造的安全屋里活下去！",
       "status": "连载中",
@@ -18251,7 +18251,7 @@
         "团宠",
         "美强惨"
       ],
-      "score": 5565222400,
+      "score": 5565092864,
       "score_display": "5.6G",
       "abstract": "恨是最浓烈的爱",
       "status": "完结",
@@ -18286,7 +18286,7 @@
         "天作之合",
         "正剧"
       ],
-      "score": 5559485440,
+      "score": 5559377408,
       "score_display": "5.6G",
       "abstract": "落魄的闺阁小姐X死去的少年将军",
       "status": "完结",
@@ -18329,7 +18329,7 @@
         "成长",
         "轻松"
       ],
-      "score": 5552100352,
+      "score": 5551741440,
       "score_display": "5.6G",
       "abstract": "搅家精被剧透后，去搅街了",
       "status": "完结",
@@ -18370,7 +18370,7 @@
         "成长",
         "救赎"
       ],
-      "score": 5547400704,
+      "score": 5548522496,
       "score_display": "5.5G",
       "abstract": "真爱不死",
       "status": "完结",
@@ -18411,7 +18411,7 @@
         "穿书",
         "轻松"
       ],
-      "score": 5545684992,
+      "score": 5545737216,
       "score_display": "5.5G",
       "abstract": "【正文完结】情敌每天都想标记我",
       "status": "完结",
@@ -18444,7 +18444,7 @@
         "传奇",
         "穿越时空"
       ],
-      "score": 5545581056,
+      "score": 5545074176,
       "score_display": "5.5G",
       "abstract": "古代庶女的消极怠工人生",
       "status": "完结",
@@ -18485,7 +18485,7 @@
         "爽文",
         "轻松"
       ],
-      "score": 5542258688,
+      "score": 5542039552,
       "score_display": "5.5G",
       "abstract": "民国票房我最高",
       "status": "完结",
@@ -18524,7 +18524,7 @@
         "快穿",
         "救赎"
       ],
-      "score": 5538407936,
+      "score": 5538701312,
       "score_display": "5.5G",
       "abstract": "成为怪物们的救世主",
       "status": "完结",
@@ -18567,7 +18567,7 @@
         "穿书",
         "轻松"
       ],
-      "score": 5536705024,
+      "score": 5537460736,
       "score_display": "5.5G",
       "abstract": "悔不当初QAQ",
       "status": "完结",
@@ -18579,47 +18579,6 @@
     },
     {
       "rank": 463,
-      "book_id": "4085937",
-      "book_name": "人设番外",
-      "author": "稚楚",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "年下",
-        "情有独钟",
-        "天作之合",
-        "娱乐圈",
-        "轻松"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "近代现代",
-        "爱情",
-        "年下",
-        "情有独钟",
-        "天作之合",
-        "娱乐圈",
-        "轻松"
-      ],
-      "score": 5526206976,
-      "score_display": "5.5G",
-      "abstract": "我只喜欢你的人设的番外",
-      "status": "连载中",
-      "word_count": "2.6万",
-      "publish_time": "2019-03-21 17:00:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=4085937",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2273078"
-    },
-    {
-      "rank": 464,
       "book_id": "7794553",
       "book_name": "饲养小怪物",
       "author": "狮子星系",
@@ -18649,7 +18608,7 @@
         "爽文",
         "读档流"
       ],
-      "score": 5526200320,
+      "score": 5526528000,
       "score_display": "5.5G",
       "abstract": "小怪物在我下线后暴走了",
       "status": "完结",
@@ -18658,6 +18617,47 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=7794553",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=3458556"
+    },
+    {
+      "rank": 464,
+      "book_id": "4085937",
+      "book_name": "人设番外",
+      "author": "稚楚",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "年下",
+        "情有独钟",
+        "天作之合",
+        "娱乐圈",
+        "轻松"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "近代现代",
+        "爱情",
+        "年下",
+        "情有独钟",
+        "天作之合",
+        "娱乐圈",
+        "轻松"
+      ],
+      "score": 5525981184,
+      "score_display": "5.5G",
+      "abstract": "我只喜欢你的人设的番外",
+      "status": "连载中",
+      "word_count": "2.6万",
+      "publish_time": "2019-03-21 17:00:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=4085937",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2273078"
     },
     {
       "rank": 465,
@@ -18686,7 +18686,7 @@
         "异世大陆",
         "正剧"
       ],
-      "score": 5520963072,
+      "score": 5520712704,
       "score_display": "5.5G",
       "abstract": "大冒险",
       "status": "完结",
@@ -18727,7 +18727,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5519733248,
+      "score": 5519499264,
       "score_display": "5.5G",
       "abstract": "两个魔王的神仙爱情",
       "status": "完结",
@@ -18768,7 +18768,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5510691840,
+      "score": 5510346752,
       "score_display": "5.5G",
       "abstract": "追妻火葬场。",
       "status": "完结",
@@ -18807,7 +18807,7 @@
         "爽文",
         "预知"
       ],
-      "score": 5507097088,
+      "score": 5507397632,
       "score_display": "5.5G",
       "abstract": "从全世界的梦中路过",
       "status": "连载中",
@@ -18846,7 +18846,7 @@
         "成长",
         "正剧"
       ],
-      "score": 5506018816,
+      "score": 5506587648,
       "score_display": "5.5G",
       "abstract": "说好一起长大。",
       "status": "完结",
@@ -18889,7 +18889,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5499079168,
+      "score": 5499425792,
       "score_display": "5.5G",
       "abstract": "狗血瓜【完结】",
       "status": "完结",
@@ -18928,7 +18928,7 @@
         "穿书",
         "轻松"
       ],
-      "score": 5498477056,
+      "score": 5498256384,
       "score_display": "5.5G",
       "abstract": "我观夫君他有病？",
       "status": "完结",
@@ -18969,7 +18969,7 @@
         "轻松",
         "日常"
       ],
-      "score": 5497050112,
+      "score": 5496662528,
       "score_display": "5.5G",
       "abstract": "从小公主到皇太女",
       "status": "完结",
@@ -19010,7 +19010,7 @@
         "朝堂",
         "轻松"
       ],
-      "score": 5491869184,
+      "score": 5491578880,
       "score_display": "5.5G",
       "abstract": "为了保命，我和战神先婚后爱了",
       "status": "完结",
@@ -19051,7 +19051,7 @@
         "基建",
         "轻松"
       ],
-      "score": 5489176064,
+      "score": 5489115648,
       "score_display": "5.5G",
       "abstract": "重建荒芜星！",
       "status": "完结",
@@ -19094,11 +19094,11 @@
         "文野",
         "咒回"
       ],
-      "score": 5473329664,
+      "score": 5477181952,
       "score_display": "5.5G",
       "abstract": "我是揍敌客家的宝宝哒！",
       "status": "连载中",
-      "word_count": "656.9万",
+      "word_count": "657.6万",
       "publish_time": "2024-05-13 17:00:00",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=8608728",
@@ -19135,7 +19135,7 @@
         "朝堂",
         "轻松"
       ],
-      "score": 5466620416,
+      "score": 5466528256,
       "score_display": "5.5G",
       "abstract": "纨绔我是专业的！",
       "status": "完结",
@@ -19176,7 +19176,7 @@
         "轻松",
         "单元文"
       ],
-      "score": 5460713472,
+      "score": 5461834752,
       "score_display": "5.5G",
       "abstract": "嘿嘿，当然不是了^ ^",
       "status": "完结",
@@ -19217,7 +19217,7 @@
         "相爱相杀",
         "正剧"
       ],
-      "score": 5455843328,
+      "score": 5458549248,
       "score_display": "5.5G",
       "abstract": "别拔剑有话好——",
       "status": "完结",
@@ -19258,7 +19258,7 @@
         "快穿",
         "轻松"
       ],
-      "score": 5449962496,
+      "score": 5449459712,
       "score_display": "5.4G",
       "abstract": "每天都在为了活着被迫演戏",
       "status": "完结",
@@ -19301,7 +19301,7 @@
         "轻松",
         "沙雕"
       ],
-      "score": 5445524992,
+      "score": 5446064128,
       "score_display": "5.4G",
       "abstract": "垂死病中惊坐起，前夫竟是我自己",
       "status": "完结",
@@ -19344,7 +19344,7 @@
         "轻松",
         "港风"
       ],
-      "score": 5441508864,
+      "score": 5441729536,
       "score_display": "5.4G",
       "abstract": "【钓系美人翻车实录】",
       "status": "完结",
@@ -19385,7 +19385,7 @@
         "爽文",
         "正剧"
       ],
-      "score": 5426513408,
+      "score": 5426339328,
       "score_display": "5.4G",
       "abstract": "很遗憾你被非自然工程大学录取",
       "status": "完结",
@@ -19422,7 +19422,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5425937920,
+      "score": 5425651200,
       "score_display": "5.4G",
       "abstract": "千载不返，惟余青山。",
       "status": "完结",
@@ -19465,7 +19465,7 @@
         "逆袭",
         "轻松"
       ],
-      "score": 5424630272,
+      "score": 5424150016,
       "score_display": "5.4G",
       "abstract": "异界文化传播之旅。",
       "status": "完结",
@@ -19504,7 +19504,7 @@
         "穿书",
         "正剧"
       ],
-      "score": 5424221696,
+      "score": 5423856128,
       "score_display": "5.4G",
       "abstract": "小可怜进化成鬼见愁的励志故事。",
       "status": "完结",
@@ -19547,7 +19547,7 @@
         "轻松",
         "学霸"
       ],
-      "score": 5418027520,
+      "score": 5419662848,
       "score_display": "5.4G",
       "abstract": "热血甜美校园文",
       "status": "完结",
@@ -19559,47 +19559,6 @@
     },
     {
       "rank": 487,
-      "book_id": "3581942",
-      "book_name": "你也有今天",
-      "author": "叶斐然",
-      "channel": "言情",
-      "nature": "原创",
-      "genre": "言情",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "言情",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "欢喜冤家",
-        "业界精英",
-        "甜文",
-        "轻松"
-      ],
-      "all_tags": [
-        "原创",
-        "言情",
-        "近代现代",
-        "爱情",
-        "都市",
-        "欢喜冤家",
-        "业界精英",
-        "甜文",
-        "轻松"
-      ],
-      "score": 5416701952,
-      "score_display": "5.4G",
-      "abstract": "哼！",
-      "status": "完结",
-      "word_count": "54.3万",
-      "publish_time": "2018-10-24 08:00:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=3581942",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2245255"
-    },
-    {
-      "rank": 488,
       "book_id": "10626543",
       "book_name": "全民求生:从小木屋到魔法农场",
       "author": "时如意",
@@ -19629,15 +19588,56 @@
         "异能",
         "爽文"
       ],
-      "score": 5410940416,
+      "score": 5418289152,
       "score_display": "5.4G",
       "abstract": "末世玩家在求生游戏过神仙日子啦",
       "status": "连载中",
-      "word_count": "107.1万",
+      "word_count": "107.4万",
       "publish_time": "2026-03-25 00:42:23",
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=10626543",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=5668961"
+    },
+    {
+      "rank": 488,
+      "book_id": "3581942",
+      "book_name": "你也有今天",
+      "author": "叶斐然",
+      "channel": "言情",
+      "nature": "原创",
+      "genre": "言情",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "言情",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "都市",
+        "欢喜冤家",
+        "业界精英",
+        "甜文",
+        "轻松"
+      ],
+      "all_tags": [
+        "原创",
+        "言情",
+        "近代现代",
+        "爱情",
+        "都市",
+        "欢喜冤家",
+        "业界精英",
+        "甜文",
+        "轻松"
+      ],
+      "score": 5416389120,
+      "score_display": "5.4G",
+      "abstract": "哼！",
+      "status": "完结",
+      "word_count": "54.3万",
+      "publish_time": "2018-10-24 08:00:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=3581942",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=2245255"
     },
     {
       "rank": 489,
@@ -19670,7 +19670,7 @@
         "甜文",
         "正剧"
       ],
-      "score": 5410916352,
+      "score": 5410851328,
       "score_display": "5.4G",
       "abstract": "不喜欢她？真香！追妻火葬场！",
       "status": "完结",
@@ -19711,7 +19711,7 @@
         "异想天开",
         "轻松"
       ],
-      "score": 5408342528,
+      "score": 5407834624,
       "score_display": "5.4G",
       "abstract": "劳动者的奋斗",
       "status": "完结",
@@ -19723,6 +19723,43 @@
     },
     {
       "rank": 491,
+      "book_id": "2731618",
+      "book_name": "我就是来借个火",
+      "author": "巫哲",
+      "channel": "纯爱",
+      "nature": "原创",
+      "genre": "纯爱",
+      "era": "近代现代",
+      "theme": "爱情",
+      "primary_tag": "纯爱",
+      "secondary_tags": [
+        "近代现代",
+        "爱情",
+        "都市",
+        "欢喜冤家",
+        "轻松"
+      ],
+      "all_tags": [
+        "原创",
+        "纯爱",
+        "近代现代",
+        "爱情",
+        "都市",
+        "欢喜冤家",
+        "轻松"
+      ],
+      "score": 5405874176,
+      "score_display": "5.4G",
+      "abstract": "大叔，借个火",
+      "status": "完结",
+      "word_count": "34.7万",
+      "publish_time": "2016-05-08 10:00:00",
+      "thumb_url": "",
+      "book_url": "https://www.jjwxc.net/onebook.php?novelid=2731618",
+      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=570049"
+    },
+    {
+      "rank": 492,
       "book_id": "5794450",
       "book_name": "我真没想和大佬协议结婚",
       "author": "三千风雪",
@@ -19752,7 +19789,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5406025216,
+      "score": 5405630976,
       "score_display": "5.4G",
       "abstract": "凑合过吧，能离咋的",
       "status": "完结",
@@ -19761,43 +19798,6 @@
       "thumb_url": "",
       "book_url": "https://www.jjwxc.net/onebook.php?novelid=5794450",
       "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=1738869"
-    },
-    {
-      "rank": 492,
-      "book_id": "2731618",
-      "book_name": "我就是来借个火",
-      "author": "巫哲",
-      "channel": "纯爱",
-      "nature": "原创",
-      "genre": "纯爱",
-      "era": "近代现代",
-      "theme": "爱情",
-      "primary_tag": "纯爱",
-      "secondary_tags": [
-        "近代现代",
-        "爱情",
-        "都市",
-        "欢喜冤家",
-        "轻松"
-      ],
-      "all_tags": [
-        "原创",
-        "纯爱",
-        "近代现代",
-        "爱情",
-        "都市",
-        "欢喜冤家",
-        "轻松"
-      ],
-      "score": 5405945856,
-      "score_display": "5.4G",
-      "abstract": "大叔，借个火",
-      "status": "完结",
-      "word_count": "34.7万",
-      "publish_time": "2016-05-08 10:00:00",
-      "thumb_url": "",
-      "book_url": "https://www.jjwxc.net/onebook.php?novelid=2731618",
-      "author_url": "https://www.jjwxc.net/oneauthor.php?authorid=570049"
     },
     {
       "rank": 493,
@@ -19828,7 +19828,7 @@
         "朝堂",
         "成长"
       ],
-      "score": 5392452608,
+      "score": 5392604672,
       "score_display": "5.4G",
       "abstract": "皇兄你为什么用这种眼神看我！",
       "status": "完结",
@@ -19863,7 +19863,7 @@
         "悬疑推理",
         "正剧"
       ],
-      "score": 5390979584,
+      "score": 5390863872,
       "score_display": "5.4G",
       "abstract": "她看你看她看你",
       "status": "完结",
@@ -19900,7 +19900,7 @@
         "甜文",
         "正剧"
       ],
-      "score": 5389191168,
+      "score": 5388747776,
       "score_display": "5.4G",
       "abstract": "建筑师x方案设计实习生",
       "status": "完结",
@@ -19941,7 +19941,7 @@
         "爽文",
         "轻松"
       ],
-      "score": 5387626496,
+      "score": 5387519488,
       "score_display": "5.4G",
       "abstract": "纵不得好死，也要拥他在怀。",
       "status": "完结",
@@ -19984,7 +19984,7 @@
         "正剧",
         "真假少爷"
       ],
-      "score": 5384642560,
+      "score": 5386064896,
       "score_display": "5.4G",
       "abstract": "真太子复仇记",
       "status": "完结",
@@ -20027,7 +20027,7 @@
         "爽文",
         "热血"
       ],
-      "score": 5382067712,
+      "score": 5382088704,
       "score_display": "5.4G",
       "abstract": "热血乐队vs热烈爱情",
       "status": "连载中",
@@ -20066,7 +20066,7 @@
         "甜文",
         "轻松"
       ],
-      "score": 5373326848,
+      "score": 5373347840,
       "score_display": "5.4G",
       "abstract": "女刺青师和重点高中政教主任。",
       "status": "完结",
@@ -20103,7 +20103,7 @@
         "相爱相杀",
         "轻松"
       ],
-      "score": 5370571776,
+      "score": 5370817536,
       "score_display": "5.4G",
       "abstract": "扒一扒我那求而不得的妖鬼夫君",
       "status": "完结",
